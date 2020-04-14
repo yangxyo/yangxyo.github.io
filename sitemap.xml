@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.xyang.xin/hexo-advance/</loc>
+    <loc>http://blog.xyang.xin/book-rhydybs/</loc>
     
-    <lastmod>2020-04-14T15:09:11.888Z</lastmod>
+    <lastmod>2020-04-14T15:16:55.873Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.xyang.xin/book-rhydybs/</loc>
+    <loc>http://blog.xyang.xin/book-hsxzs/</loc>
     
-    <lastmod>2020-04-14T14:28:30.442Z</lastmod>
+    <lastmod>2020-04-14T15:16:51.465Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.xyang.xin/hexo-advance/</loc>
+    
+    <lastmod>2020-04-14T15:09:11.888Z</lastmod>
     
   </url>
   
@@ -138,13 +145,6 @@
     <loc>http://blog.xyang.xin/scaffold/</loc>
     
     <lastmod>2020-04-14T14:11:32.966Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/book-hsxzs/</loc>
-    
-    <lastmod>2020-04-14T14:11:06.008Z</lastmod>
     
   </url>
   
