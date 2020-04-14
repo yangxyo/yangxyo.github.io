@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>韶 光</title>
+  <icon>http://blog.xyang.xin/icon.png</icon>
+  <subtitle>sweeney&#39;s personal blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://blog.xyang.xin/"/>
+  <updated>2020-04-14T13:56:13.456Z</updated>
+  <id>http://blog.xyang.xin/</id>
+  
+  <author>
+    <name>Sweeney Yang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac 大扫除🧹</title>
+    <link href="http://blog.xyang.xin/macos-clean/"/>
+    <id>http://blog.xyang.xin/macos-clean/</id>
+    <published>2020-04-13T14:07:22.000Z</published>
+    <updated>2020-04-14T13:56:13.456Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。&lt;/p&gt;
+&lt;p&gt;通过以下命令可以查看当前路径下的所有文件及文件夹大小并从大到小排列，以 KB 为单位显示。&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;du -sk *| sort -rn&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;以下命令就是以K，M，G为单位，提高信息的可读性，但是不能正确按文件大小排序。&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;du -sh *&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="MacOS" scheme="http://blog.xyang.xin/tags/MacOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解构赋值 ———【一天一个 es6 语法】</title>
+    <link href="http://blog.xyang.xin/es6-everyday-3/"/>
+    <id>http://blog.xyang.xin/es6-everyday-3/</id>
+    <published>2020-03-31T15:51:49.000Z</published>
+    <updated>2020-03-31T08:10:00.025Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;何为解构赋值&quot;&gt;&lt;a href=&quot;#何为解构赋值&quot; class=&quot;headerlink&quot; title=&quot;何为解构赋值&quot;&gt;&lt;/a&gt;何为解构赋值&lt;/h2&gt;&lt;p&gt;解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。&lt;/p&gt;
+&lt;h2 id=&quot;基本用法&quot;&gt;&lt;a href=&quot;#基本用法&quot; class=&quot;headerlink&quot; title=&quot;基本用法&quot;&gt;&lt;/a&gt;基本用法&lt;/h2&gt;&lt;h3 id=&quot;对象解构赋值&quot;&gt;&lt;a href=&quot;#对象解构赋值&quot; class=&quot;headerlink&quot; title=&quot;对象解构赋值&quot;&gt;&lt;/a&gt;对象解构赋值&lt;/h3&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span 
+      
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="【一天一个 es6 语法】" scheme="http://blog.xyang.xin/tags/%E3%80%90%E4%B8%80%E5%A4%A9%E4%B8%80%E4%B8%AA-es6-%E8%AF%AD%E6%B3%95%E3%80%91/"/>
+    
+      <category term="javascript" scheme="http://blog.xyang.xin/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
+    <link href="http://blog.xyang.xin/es6-everday-2/"/>
+    <id>http://blog.xyang.xin/es6-everday-2/</id>
+    <published>2020-03-29T19:13:56.000Z</published>
+    <updated>2020-03-31T08:30:08.571Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Function&quot;&gt;&lt;a href=&quot;#Function&quot; class=&quot;headerlink&quot; title=&quot;Function&quot;&gt;&lt;/a&gt;Function&lt;/h2&gt;&lt;p&gt;每个函数都是 &lt;code&gt;Function&lt;/code&gt; 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用&lt;strong&gt;函数声明语法&lt;/strong&gt;定义的：&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;sum&lt;/span&gt; (
+      
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="【一天一个 es6 语法】" scheme="http://blog.xyang.xin/tags/%E3%80%90%E4%B8%80%E5%A4%A9%E4%B8%80%E4%B8%AA-es6-%E8%AF%AD%E6%B3%95%E3%80%91/"/>
+    
+      <category term="javascript" scheme="http://blog.xyang.xin/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Symbol ———【一天一个 es6 语法】</title>
+    <link href="http://blog.xyang.xin/es6-everday-1/"/>
+    <id>http://blog.xyang.xin/es6-everday-1/</id>
+    <published>2020-03-25T21:28:59.000Z</published>
+    <updated>2020-03-31T07:54:28.608Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;什么是-Symbol&quot;&gt;&lt;a href=&quot;#什么是-Symbol&quot; class=&quot;headerlink&quot; title=&quot;什么是 Symbol?&quot;&gt;&lt;/a&gt;什么是 Symbol?&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; 😻 = 😺 × 😍;  &lt;span class=&quot;comment&quot;&gt;// SyntaxError&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;（爆笑）这当然不是 Symbol。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Undefined&lt;/li&gt;
+&lt;li&gt;Null&lt;/li&gt;
+&lt;li&gt;Boolean&lt;/li&gt;
+&lt;li&gt;Number&lt;/li&gt;
+&lt;li&gt;String&lt;/li&gt;
+&lt;li&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="【一天一个 es6 语法】" scheme="http://blog.xyang.xin/tags/%E3%80%90%E4%B8%80%E5%A4%A9%E4%B8%80%E4%B8%AA-es6-%E8%AF%AD%E6%B3%95%E3%80%91/"/>
+    
+      <category term="javascript" scheme="http://blog.xyang.xin/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vim 多文件类型自动补全方案</title>
+    <link href="http://blog.xyang.xin/vim-multiple-filetype-deoplete/"/>
+    <id>http://blog.xyang.xin/vim-multiple-filetype-deoplete/</id>
+    <published>2020-03-17T15:27:51.000Z</published>
+    <updated>2020-03-18T13:16:56.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。&lt;/p&gt;
+&lt;p&gt;根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。&lt;br&gt;几乎每个 vim user 的 vimrc 中都会有如下配置：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;filetype plugin indent on&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;其中的 filetype on
+      
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="vim" scheme="http://blog.xyang.xin/tags/vim/"/>
+    
+      <category term="multiple filetype" scheme="http://blog.xyang.xin/tags/multiple-filetype/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTTP 代理与 Socks5 代理</title>
+    <link href="http://blog.xyang.xin/proxy-http-socks5/"/>
+    <id>http://blog.xyang.xin/proxy-http-socks5/</id>
+    <published>2020-03-15T13:06:07.000Z</published>
+    <updated>2020-03-16T04:48:26.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;本文通过实践经历基本的认识 HTTP 代理与 Socks5 代理的用法与理解其精髓。同时也解决 go get 库无法下载的问题。&lt;/p&gt;
+&lt;h2 id=&quot;渐渐&quot;&gt;&lt;a href=&quot;#渐渐&quot; class=&quot;headerlink&quot; title=&quot;渐渐&quot;&gt;&lt;/a&gt;渐渐&lt;/h2&gt;&lt;p&gt;终端走代理我最初接触到的是 HTTP 代理，这篇文章可以见证(&lt;a href=&quot;https://blog.xyang.xin/proxy-teach/index.html&quot;&gt;代理服务器 | 韶 光&lt;/a&gt;)。当然我的这些实践都是基于 shadowsocks 这款产品。随后我又接触了 Socks5 代理，因为简单其更快，又隐隐觉得其更底层，通过以下代码配置：&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span cla
+      
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>HTTP 代理与 Socks5 代理</title>
+    <link href="http://blog.xyang.xin/proxy-http-socks5%202/"/>
+    <id>http://blog.xyang.xin/proxy-http-socks5%202/</id>
+    <published>2020-03-15T13:06:07.000Z</published>
+    <updated>2020-03-19T15:30:57.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;本文通过实践经历基本的认识 HTTP 代理与 Socks5 代理的用法与理解其精髓。同时也解决 go get 库无法下载的问题。&lt;/p&gt;
+&lt;h2 id=&quot;渐渐&quot;&gt;&lt;a href=&quot;#渐渐&quot; class=&quot;headerlink&quot; title=&quot;渐渐&quot;&gt;&lt;/a&gt;渐渐&lt;/h2&gt;&lt;p&gt;终端走代理我最初接触到的是 HTTP 代理，这篇文章可以见证(&lt;a href=&quot;https://blog.xyang.xin/proxy-teach/index.html&quot;&gt;代理服务器 | 韶 光&lt;/a&gt;)。当然我的这些实践都是基于 shadowsocks 这款产品。随后我又接触了 Socks5 代理，因为简单其更快，又隐隐觉得其更底层，通过以下代码配置：&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span cla
+      
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>《如何阅读一本书》读书笔记</title>
+    <link href="http://blog.xyang.xin/book-rhydybs/"/>
+    <id>http://blog.xyang.xin/book-rhydybs/</id>
+    <published>2019-09-01T19:36:24.000Z</published>
+    <updated>2019-09-23T08:14:08.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-09%2Frhydybs.jpeg&quot; alt=&quot;rhydybs.jpeg-w140&quot;&gt;&lt;br&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-09%2F%E3%80%8A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6%E3%80%8B.png&quot; alt=&quot;《如何阅读一本书》.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;图中对《如何阅读一本书》的脉络要点进行总结，用于阅读时的参考。（图谱内容较多，建议保存后浏览）。&lt;/p&gt;
+&lt;p&gt;书中提出了四种阅读层次，层次逐级递增，较高层次的阅读包含较低层次的阅读。基础阅读是对字词句意思的理解，是阅读的基础。使用检视阅读来理清书的脉络，来甄别一本书是否值得读，是否适合现在读。使用分析阅读来细细品味一本好书。主题阅读适用于学术研究
+      
+    
+    </summary>
+    
+    
+      <category term="人文修养" scheme="http://blog.xyang.xin/categories/%E4%BA%BA%E6%96%87%E4%BF%AE%E5%85%BB/"/>
+    
+    
+      <category term="读书笔记" scheme="http://blog.xyang.xin/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="阅读" scheme="http://blog.xyang.xin/tags/%E9%98%85%E8%AF%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《一本小小的红色写作书》读书笔记</title>
+    <link href="http://blog.xyang.xin/book-hsxzs/"/>
+    <id>http://blog.xyang.xin/book-hsxzs/</id>
+    <published>2019-07-11T16:47:31.000Z</published>
+    <updated>2019-09-23T08:14:19.152Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-05%2F1558180143.png&quot; alt=&quot;1558180143.png-w140&quot;&gt;&lt;br&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-07%2F%E4%B8%80%E6%9C%AC%E5%B0%8F%E5%B0%8F%E7%9A%84%E7%BA%A2%E8%89%B2%E5%86%99%E4%BD%9C%E4%B9%A6.png&quot; alt=&quot;一本小小的红色写作书.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;图中对《一本小小的红色写作书》的脉络要点进行总结，用于写作中的参考。（图谱内容较多，建议保存后浏览）&lt;/p&gt;
+&lt;h2 id=&quot;注释&quot;&gt;&lt;a href=&quot;#注释&quot; class=&quot;headerlink&quot; title=&quot;注释&quot;&gt;&lt;/a&gt;注释&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;引导句&lt;br&gt; 在一篇个人随笔中，这句话可以作为引导语
+      
+    
+    </summary>
+    
+    
+      <category term="人文修养" scheme="http://blog.xyang.xin/categories/%E4%BA%BA%E6%96%87%E4%BF%AE%E5%85%BB/"/>
+    
+    
+      <category term="读书笔记" scheme="http://blog.xyang.xin/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="写作" scheme="http://blog.xyang.xin/tags/%E5%86%99%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo + NexT 博客搭建进阶</title>
+    <link href="http://blog.xyang.xin/hexo-advance/"/>
+    <id>http://blog.xyang.xin/hexo-advance/</id>
+    <published>2019-05-14T15:13:08.000Z</published>
+    <updated>2019-10-05T13:14:12.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Github-Pages-不被百度抓取的方法&quot;&gt;&lt;a href=&quot;#Github-Pages-不被百度抓取的方法&quot; class=&quot;headerlink&quot; title=&quot;Github Pages 不被百度抓取的方法&quot;&gt;&lt;/a&gt;Github Pages 不被百度抓取的方法&lt;/h2&gt;&lt;p&gt;可使用如下三种方法：&lt;/p&gt;
+&lt;h3 id=&quot;CDN-解析&quot;&gt;&lt;a href=&quot;#CDN-解析&quot; class=&quot;headerlink&quot; title=&quot;CDN 解析&quot;&gt;&lt;/a&gt;CDN 解析&lt;/h3&gt;&lt;h3 id=&quot;Coding-Pages-并通过-CNAME-实现国内外分流，国内走-Coding-Pages-国外走-Github-Pages（不推荐较慢）&quot;&gt;&lt;a href=&quot;#Coding-Pages-并通过-CNAME-实现国内外分流，国内走-Coding-Pages-国外走-Github-Pages（不推荐较慢）&quot; class=&quot;headerlink&quot; title=&quot;Coding Pages 并通过 CNAME 实现国内外分流，国内走 Coding Pages 国外走 Github Pag
+      
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="hexo" scheme="http://blog.xyang.xin/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决远程服务器重装系统导致的 mac 终端无法连接的问题</title>
+    <link href="http://blog.xyang.xin/mac-ssh-error/"/>
+    <id>http://blog.xyang.xin/mac-ssh-error/</id>
+    <published>2019-02-26T19:52:38.000Z</published>
+    <updated>2019-09-20T14:34:34.820Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png&quot; alt=&quot;2019-05-14 at 17.17.png&quot;&gt;&lt;br&gt;known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。&lt;/p&gt;
+&lt;h2 id=&quot;通过如下两种方案解决该问题&quot;&gt;&lt;a href=&quot;#通过如下两种方案解决该问题&quot; class=&quot;headerlink&quot; title=&quot;通过如下两种方案解决该问题&quot;&gt;&lt;/a&gt;通过如下两种方案解决该问题&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;输入命令(推荐)：&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh-keygen -R服务器ip
+      
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Linux" scheme="http://blog.xyang.xin/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代理服务器</title>
+    <link href="http://blog.xyang.xin/proxy-teach/"/>
+    <id>http://blog.xyang.xin/proxy-teach/</id>
+    <published>2019-02-24T00:31:12.000Z</published>
+    <updated>2020-02-09T06:30:38.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;推荐两款比较好的代理服务器端产品：&lt;/p&gt;
+&lt;h2 id=&quot;1-ss&quot;&gt;&lt;a href=&quot;#1-ss&quot; class=&quot;headerlink&quot; title=&quot;1. ss&quot;&gt;&lt;/a&gt;1. ss&lt;/h2&gt;&lt;h3 id=&quot;服务器端&quot;&gt;&lt;a href=&quot;#服务器端&quot; class=&quot;headerlink&quot; title=&quot;服务器端&quot;&gt;&lt;/a&gt;服务器端&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/teddysun/shadowsocks_install/tree/master&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;teddysun/shadowsocks_install at master&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;安装命令&quot;&gt;&lt;a href=&quot;#安装命令&quot; class=&quot;headerlink&quot; title=&quot;安装命令&quot;&gt;&lt;/a&gt;安装命令&lt;/h4&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br
+      
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>journal-2019-02-15</title>
+    <link href="http://blog.xyang.xin/journal-2019-02-15/"/>
+    <id>http://blog.xyang.xin/journal-2019-02-15/</id>
+    <published>2019-02-15T14:49:59.000Z</published>
+    <updated>2019-05-14T10:09:58.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;小孩成长与人才发展&quot;&gt;&lt;a href=&quot;#小孩成长与人才发展&quot; class=&quot;headerlink&quot; title=&quot;小孩成长与人才发展&quot;&gt;&lt;/a&gt;小孩成长与人才发展&lt;/h2&gt;&lt;p&gt;小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。&lt;/p&gt;
+&lt;p&gt;孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。&lt;/p&gt;
+&lt;p&gt;国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。&lt;/p&gt;
+&lt;p&gt;参考：&lt;a href=&quot;http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《基层减负 不是简单做
+      
+    
+    </summary>
+    
+    
+      <category term="日志" scheme="http://blog.xyang.xin/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>React-Vim 开发环境</title>
+    <link href="http://blog.xyang.xin/vim-react/"/>
+    <id>http://blog.xyang.xin/vim-react/</id>
+    <published>2019-01-31T06:23:08.000Z</published>
+    <updated>2019-05-15T08:20:35.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;实现功能&quot;&gt;&lt;a href=&quot;#实现功能&quot; class=&quot;headerlink&quot; title=&quot;实现功能&quot;&gt;&lt;/a&gt;实现功能&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;react 代码高亮、自动补全。&lt;/li&gt;
+&lt;li&gt;执行&lt;code&gt;./node_modules/.bin/eslint --fix src/App.js&lt;/code&gt; 即可对App.js 进行代码错误检测和格式化。&lt;/li&gt;
+&lt;li&gt;变更代码自动对代码进行格式化。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;换源&quot;&gt;&lt;a href=&quot;#换源&quot; class=&quot;headerlink&quot; title=&quot;换源&quot;&gt;&lt;/a&gt;换源&lt;/h2&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm config set registry
+      
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="vim" scheme="http://blog.xyang.xin/tags/vim/"/>
+    
+      <category term="react" scheme="http://blog.xyang.xin/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac 配置上云神器 Mackup</title>
+    <link href="http://blog.xyang.xin/mackup/"/>
+    <id>http://blog.xyang.xin/mackup/</id>
+    <published>2018-12-25T14:41:47.000Z</published>
+    <updated>2020-03-03T04:23:01.763Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lra/mackup&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;mackup&lt;/a&gt; 是一款受关注度很高的开源软件，可运行于 osx 和 linux 系统。用于保持应用程序设置同步，可快捷的备份许多流行的应用程序。&lt;/p&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;有 brew 和 pip 两种推荐安装方式。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install Mackup&lt;br&gt;&lt;code&gt;brew install mackup&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Install Mackup with PIP&lt;br&gt;&lt;code&gt;pip install --upgrade mackup&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;还需要简单的&lt;a href=&quot;https://github.
+      
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="开发工具" scheme="http://blog.xyang.xin/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>由简入深配置 iTem2 终端</title>
+    <link href="http://blog.xyang.xin/iterm2/"/>
+    <id>http://blog.xyang.xin/iterm2/</id>
+    <published>2018-12-21T17:25:34.000Z</published>
+    <updated>2019-01-31T00:11:28.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;iTerm2&quot;&gt;&lt;a href=&quot;#iTerm2&quot; class=&quot;headerlink&quot; title=&quot;iTerm2&quot;&gt;&lt;/a&gt;iTerm2&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;从 bash 切换到 zsh&lt;br&gt;使用系统自带的 zsh:&lt;/p&gt;
+  &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;    chsh -s &amp;#x2F;bin&amp;#x2F;zsh&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#96;&amp;#96;&amp;#96; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 使用第三方的 zsh  &lt;
+      
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="开发工具" scheme="http://blog.xyang.xin/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>目标和关键成果法 (Objectives and Key Results)</title>
+    <link href="http://blog.xyang.xin/OKRs/"/>
+    <id>http://blog.xyang.xin/OKRs/</id>
+    <published>2018-11-27T20:33:57.000Z</published>
+    <updated>2018-12-21T09:28:22.178Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;The Objective is the direction.&lt;br&gt;The key results have to be measured.&lt;br&gt;Yes.No.Simple&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;Why&quot;&gt;&lt;a href=&quot;#Why&quot; class=&quot;headerlink&quot; title=&quot;Why&quot;&gt;&lt;/a&gt;Why&lt;/h1&gt;&lt;p&gt;Being took to the wrong objectives is unacceptable.&lt;br&gt;被带向错误的目标是让人无法接受的。&lt;/p&gt;
+&lt;p&gt;Truly transformational teams combine their ambitions to their passion and to their purpose，and they develop a clear and compelling sense of why.&lt;br&gt;真正变革型的团队都会将自己的雄心、热情和目标结合到一起，他们很清楚为何要做，且理由令人信服。&lt;/p&gt;
+&lt;h1 id=&quot;Objective&quot;&gt;&lt;a hr
+      
+    
+    </summary>
+    
+    
+      <category term="方法" scheme="http://blog.xyang.xin/categories/%E6%96%B9%E6%B3%95/"/>
+    
+    
+      <category term="方法" scheme="http://blog.xyang.xin/tags/%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>包管理</title>
+    <link href="http://blog.xyang.xin/package-management/"/>
+    <id>http://blog.xyang.xin/package-management/</id>
+    <published>2018-10-26T15:27:58.000Z</published>
+    <updated>2020-03-15T09:47:00.866Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;大部分成熟的操作系统有着各种不同的包管理器，某些软件也有自己的包管理器。&lt;/p&gt;
+&lt;h2 id=&quot;系统包管理器&quot;&gt;&lt;a href=&quot;#系统包管理器&quot; class=&quot;headerlink&quot; title=&quot;系统包管理器&quot;&gt;&lt;/a&gt;系统包管理器&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;CentOS&lt;ul&gt;
+&lt;li&gt;yum&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Gentoo    &lt;ul&gt;
+&lt;li&gt;emerge&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MacOS     &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://brew.sh/index_zh-cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Homebrew&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Homebrew 已经成为一款跨平台的包管理器 &lt;a href=&quot;https://github.com/Linuxbrew/brew/blob/master/README.md&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Linuxbrew&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul
+      
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="包管理" scheme="http://blog.xyang.xin/tags/%E5%8C%85%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编程语言之 Java</title>
+    <link href="http://blog.xyang.xin/java-language/"/>
+    <id>http://blog.xyang.xin/java-language/</id>
+    <published>2018-10-25T20:14:11.000Z</published>
+    <updated>2019-07-27T13:09:22.304Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Integer-parseInt-与-Integer-valueOf-的比较&quot;&gt;&lt;a href=&quot;#Integer-parseInt-与-Integer-valueOf-的比较&quot; class=&quot;headerlink&quot; title=&quot;Integer.parseInt() 与 Integer.valueOf() 的比较&quot;&gt;&lt;/a&gt;Integer.parseInt() 与 Integer.valueOf() 的比较&lt;/h1&gt;&lt;p&gt;Integer.parseInt() 和 Integer.valueOf() 都是用来 将String转换为Int的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Integer.parseInt()，返回一个原子类型int.&lt;ul&gt;
+&lt;li&gt;parseInt() 只是调用parseInt, 并且返回原子类型int.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Integer.valueOf(), 返回的是封装的Integer对象。&lt;ul&gt;
+&lt;li&gt;valueOf 也会调用parseInt, 但是返回Integer对象。而且它会维护一个cache，如果int值在cach
+      
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="java" scheme="http://blog.xyang.xin/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vim 自动补全之 YCM</title>
+    <link href="http://blog.xyang.xin/shell-java/"/>
+    <id>http://blog.xyang.xin/shell-java/</id>
+    <published>2018-10-23T23:54:02.000Z</published>
+    <updated>2020-03-01T11:07:06.426Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;IDEA 打开得太慢了，我需要一款轻量级的 IDE，不想装其他乱七八糟的编译器咋办？搞事情！&lt;/p&gt;
+&lt;h2 id=&quot;sublime&quot;&gt;&lt;a href=&quot;#sublime&quot; class=&quot;headerlink&quot; title=&quot;sublime&quot;&gt;&lt;/a&gt;sublime&lt;/h2&gt;&lt;p&gt;sublime 通过简单的配置后可以实现 java 代码的高亮提示和编译功能，并且大多编译错误也能基本上精确到行。&lt;br&gt;然而 sublime 内置的终端无法输入，虽然在日常的算法中输入操作很少涉及，, 但还是很不爽。&lt;/p&gt;
+&lt;h2 id=&quot;Vim&quot;&gt;&lt;a href=&quot;#Vim&quot; class=&quot;headerlink&quot; title=&quot;Vim&quot;&gt;&lt;/a&gt;Vim&lt;/h2&gt;&lt;p&gt;这里需要一定的 Vim 基础，新手请执行 &lt;code&gt;vimtutor&lt;/code&gt; 查看 Vim 官方教程，再继续往后看。&lt;br&gt;在终端通过 java 命令即可实现 java 代码的编译与运行。&lt;br&gt;vim 不过起到的是编辑器的作用。&lt;br&gt;对于编辑器我们不仅有高亮的基本要求，同样也需要基本的代码补全功能, Vim 的 YCM 插
+      
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="开发工具" scheme="http://blog.xyang.xin/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+</feed>
