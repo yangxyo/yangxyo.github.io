@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.xyang.xin/macos-clean/</loc>
+    
+    <lastmod>2020-04-15T14:43:03.689Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.xyang.xin/hexo-advance/</loc>
     
     <lastmod>2020-04-15T04:24:47.288Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>http://blog.xyang.xin/es6-everyday-3/</loc>
     
     <lastmod>2020-04-14T14:17:53.869Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/macos-clean/</loc>
-    
-    <lastmod>2020-04-14T14:17:32.381Z</lastmod>
     
   </url>
   

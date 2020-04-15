@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>阿里云 ECS 使用</title>
-    <url>/ECS/</url>
-    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><a href="https://www.alibabacloud.com/help/zh/doc-detail/25367.htm?spm=a2c63.p38356.b99.2.615e1bbcsZH9Ry" target="_blank" rel="noopener">阿里云官方文档</a></p>
-<a id="more"></a>
-
-<h2 id="远程连接服务器常用的几种方式"><a href="#远程连接服务器常用的几种方式" class="headerlink" title="远程连接服务器常用的几种方式"></a>远程连接服务器常用的几种方式</h2><p>SSH —— 远程<br>SFTF —— 文件传输，22端口</p>
-<h2 id="安全组"><a href="#安全组" class="headerlink" title="安全组"></a>安全组</h2><h2 id="设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口"><a href="#设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口" class="headerlink" title="设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口"></a>设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口</h2><ol>
-<li>设置端口范围 22/22 协议类型自定义TCP 授权对象公网ip，22端口常用于ssh连接。</li>
-<li>设置端口范围 80/80 协议类型自定义TCP 授权对象0.0.0.0/0。<br>允许所有人通过 http 访问你的服务器。<br>80 端口常用于 http 协议访问 web 网站。相对应的 443 端口用于 https 协议访问 web 网站。3306 端口常用于数据库远程连接。出于安全考虑：如果向所有人打开 22 端口和 3306 端口，应当确保密码的复杂程度，以防强行爆破。对于新手建议将 22 端口和 3306 端口设置为仅允许指定IP访问。</li>
-</ol>
-<h2 id="设置公网出方向-——-服务器出口的限制"><a href="#设置公网出方向-——-服务器出口的限制" class="headerlink" title="设置公网出方向 —— 服务器出口的限制"></a>设置公网出方向 —— 服务器出口的限制</h2><p>没有特殊需求不需要设置。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>云服务</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>目标和关键成果法 (Objectives and Key Results)</title>
     <url>/OKRs/</url>
     <content><![CDATA[<blockquote>
@@ -41,6 +21,29 @@
       </categories>
       <tags>
         <tag>方法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
+    <url>/acme-sh/</url>
+    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
+<ul>
+<li>http 认证方式</li>
+<li>dns 方式<a id="more"></a>
+
+</li>
+</ul>
+<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
+<p><a href="https://github.com/Neilpang/acme.sh/wiki/说明" target="_blank" rel="noopener">github 安装说明</a></p>
+<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssl</tag>
+        <tag>acme.sh</tag>
+        <tag>letsencrypt</tag>
       </tags>
   </entry>
   <entry>
@@ -75,26 +78,23 @@
       </tags>
   </entry>
   <entry>
-    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
-    <url>/acme-sh/</url>
-    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
-<ul>
-<li>http 认证方式</li>
-<li>dns 方式<a id="more"></a>
+    <title>阿里云 ECS 使用</title>
+    <url>/ECS/</url>
+    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><a href="https://www.alibabacloud.com/help/zh/doc-detail/25367.htm?spm=a2c63.p38356.b99.2.615e1bbcsZH9Ry" target="_blank" rel="noopener">阿里云官方文档</a></p>
+<a id="more"></a>
 
-</li>
-</ul>
-<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
-<p><a href="https://github.com/Neilpang/acme.sh/wiki/说明" target="_blank" rel="noopener">github 安装说明</a></p>
-<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
+<h2 id="远程连接服务器常用的几种方式"><a href="#远程连接服务器常用的几种方式" class="headerlink" title="远程连接服务器常用的几种方式"></a>远程连接服务器常用的几种方式</h2><p>SSH —— 远程<br>SFTF —— 文件传输，22端口</p>
+<h2 id="安全组"><a href="#安全组" class="headerlink" title="安全组"></a>安全组</h2><h2 id="设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口"><a href="#设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口" class="headerlink" title="设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口"></a>设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口</h2><ol>
+<li>设置端口范围 22/22 协议类型自定义TCP 授权对象公网ip，22端口常用于ssh连接。</li>
+<li>设置端口范围 80/80 协议类型自定义TCP 授权对象0.0.0.0/0。<br>允许所有人通过 http 访问你的服务器。<br>80 端口常用于 http 协议访问 web 网站。相对应的 443 端口用于 https 协议访问 web 网站。3306 端口常用于数据库远程连接。出于安全考虑：如果向所有人打开 22 端口和 3306 端口，应当确保密码的复杂程度，以防强行爆破。对于新手建议将 22 端口和 3306 端口设置为仅允许指定IP访问。</li>
+</ol>
+<h2 id="设置公网出方向-——-服务器出口的限制"><a href="#设置公网出方向-——-服务器出口的限制" class="headerlink" title="设置公网出方向 —— 服务器出口的限制"></a>设置公网出方向 —— 服务器出口的限制</h2><p>没有特殊需求不需要设置。</p>
+]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>ssl</tag>
-        <tag>acme.sh</tag>
-        <tag>letsencrypt</tag>
+        <tag>云服务</tag>
       </tags>
   </entry>
   <entry>
@@ -150,47 +150,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Symbol ———【一天一个 es6 语法】</title>
-    <url>/es6-everday-1/</url>
-    <content><![CDATA[<h2 id="什么是-Symbol"><a href="#什么是-Symbol" class="headerlink" title="什么是 Symbol?"></a>什么是 Symbol?</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> 😻 = 😺 × 😍;  <span class="comment">// SyntaxError</span></span><br></pre></td></tr></table></figure>
-<p>（爆笑）这当然不是 Symbol。</p>
-<ul>
-<li>Undefined</li>
-<li>Null</li>
-<li>Boolean</li>
-<li>Number</li>
-<li>String</li>
-<li>Object</li>
-</ul>
-<p>Symbol 是值，不是字符串，不是对象，是第七种原始数据类型。每个从<code>Symbol()</code>返回的 symbol 值都是唯一的。<strong>一个 symbol 值能作为对象属性的标识符；这是该数据类型仅有的目的</strong>。</p>
-<a id="more"></a>
-<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><p>通过以下代码就创建一个 Symbol 类型的值。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Symbol([description])</span></span><br><span class="line"><span class="keyword">let</span> s = <span class="built_in">Symbol</span>(<span class="string">"我就是我"</span>);</span><br><span class="line"><span class="keyword">typeof</span> s;</span><br><span class="line"><span class="comment">// "symbol"</span></span><br></pre></td></tr></table></figure>
-<p>Symbol 中的参数对程序无实际意义，仅供调试助记。不支持语法： <code>new Symbol()</code></p>
-<p>不能自动转换为字符串：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> s = <span class="built_in">Symbol</span>();</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">" your symbol is"</span> + sym);</span><br><span class="line"><span class="comment">// TypeError: can't convert symbol to string</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">`your symbol is <span class="subst">$&#123;sym&#125;</span>`</span>)</span><br><span class="line"><span class="comment">// TypeError: can't conver symbol to string</span></span><br></pre></td></tr></table></figure>
-<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> _items = <span class="built_in">Symbol</span>(<span class="string">'stackItems'</span>);</span><br><span class="line"></span><br><span class="line">interface Stack &#123;</span><br><span class="line">  [_items]: any[];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Stack</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>() &#123;</span><br><span class="line">    <span class="keyword">this</span>[_items] = [];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 添加一个新元素到栈顶</span></span><br><span class="line">  push(element:any)&#123;</span><br><span class="line">    <span class="keyword">this</span>[_items].push(element);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 移除栈顶的元素，同时返回</span></span><br><span class="line">  pop() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items].pop();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 返回栈顶的元素</span></span><br><span class="line">  peek() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items][<span class="keyword">this</span>[_items].length - <span class="number">1</span>];</span><br><span class="line">  &#125;;</span><br><span class="line">  <span class="comment">// 没有任何元素true，否则false</span></span><br><span class="line">  isEmpty() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items].length === <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 移除栈里的所有元素</span></span><br><span class="line">  clear() &#123;</span><br><span class="line">    <span class="keyword">this</span>[_items] = [];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 返回栈里的元素个数</span></span><br><span class="line">  size() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items].length;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  print() &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.toString());</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  toString() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items].toString();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getSymbol</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">const</span> stack = <span class="keyword">new</span> Stack();</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Object</span>.getOwnPropertySymbols(stack);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">testSymbol</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> stack = <span class="keyword">new</span> Stack();</span><br><span class="line">  <span class="keyword">return</span> stack[_items];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(testSymbol());</span><br><span class="line"><span class="comment">// []</span></span><br><span class="line"><span class="built_in">console</span>.log(getSymbol()[<span class="number">0</span>]);</span><br><span class="line"><span class="comment">// Symbol(stackItems)</span></span><br></pre></td></tr></table></figure>
-
-<p>注意区别 <code>stack[_items]</code> 和<code>stack[&#39;_items&#39;]</code></p>
-<p>前者是访问属性名为 Symbol 的特殊方式。<br>后者是访问一般属性的方法与 <code>stack._items</code>相同。</p>
-<p>我猜测正因为这种特殊的访问方式使其无法通过<code>for...in</code>，<code>for...of</code>或 <code>Object.keys()</code> 等方法枚举。</p>
-<p>通过 <code>testSymbol()</code> 方法在我看来，其并不能达到实现私有变量的目的，仅仅使属性名或方法名不与别人提供的对象产生冲突。是一种保证每个属性名独一无二的方式。</p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/" target="_blank" rel="noopener">ES6 In Depth: Symbols - Mozilla Hacks - the Web developer blog</a></li>
-<li><a href="https://es6.ruanyifeng.com/#docs/symbol" target="_blank" rel="noopener">Symbol - ECMAScript 6入门</a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Symbol" target="_blank" rel="noopener">Symbol - JavaScript | MDN</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>【一天一个 es6 语法】</tag>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
     <url>/es6-everday-2/</url>
     <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p>每个函数都是 <code>Function</code> 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用<strong>函数声明语法</strong>定义的：</p>
@@ -221,6 +180,47 @@
 <h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
 <li>《Javascript 高级程序设计（第3版）》</li>
 <li><a href="https://es6.ruanyifeng.com/#docs/function" target="_blank" rel="noopener">函数的扩展 - ECMAScript 6入门</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>【一天一个 es6 语法】</tag>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Symbol ———【一天一个 es6 语法】</title>
+    <url>/es6-everday-1/</url>
+    <content><![CDATA[<h2 id="什么是-Symbol"><a href="#什么是-Symbol" class="headerlink" title="什么是 Symbol?"></a>什么是 Symbol?</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> 😻 = 😺 × 😍;  <span class="comment">// SyntaxError</span></span><br></pre></td></tr></table></figure>
+<p>（爆笑）这当然不是 Symbol。</p>
+<ul>
+<li>Undefined</li>
+<li>Null</li>
+<li>Boolean</li>
+<li>Number</li>
+<li>String</li>
+<li>Object</li>
+</ul>
+<p>Symbol 是值，不是字符串，不是对象，是第七种原始数据类型。每个从<code>Symbol()</code>返回的 symbol 值都是唯一的。<strong>一个 symbol 值能作为对象属性的标识符；这是该数据类型仅有的目的</strong>。</p>
+<a id="more"></a>
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><p>通过以下代码就创建一个 Symbol 类型的值。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Symbol([description])</span></span><br><span class="line"><span class="keyword">let</span> s = <span class="built_in">Symbol</span>(<span class="string">"我就是我"</span>);</span><br><span class="line"><span class="keyword">typeof</span> s;</span><br><span class="line"><span class="comment">// "symbol"</span></span><br></pre></td></tr></table></figure>
+<p>Symbol 中的参数对程序无实际意义，仅供调试助记。不支持语法： <code>new Symbol()</code></p>
+<p>不能自动转换为字符串：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> s = <span class="built_in">Symbol</span>();</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">" your symbol is"</span> + sym);</span><br><span class="line"><span class="comment">// TypeError: can't convert symbol to string</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">`your symbol is <span class="subst">$&#123;sym&#125;</span>`</span>)</span><br><span class="line"><span class="comment">// TypeError: can't conver symbol to string</span></span><br></pre></td></tr></table></figure>
+<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> _items = <span class="built_in">Symbol</span>(<span class="string">'stackItems'</span>);</span><br><span class="line"></span><br><span class="line">interface Stack &#123;</span><br><span class="line">  [_items]: any[];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Stack</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>() &#123;</span><br><span class="line">    <span class="keyword">this</span>[_items] = [];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 添加一个新元素到栈顶</span></span><br><span class="line">  push(element:any)&#123;</span><br><span class="line">    <span class="keyword">this</span>[_items].push(element);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 移除栈顶的元素，同时返回</span></span><br><span class="line">  pop() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items].pop();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 返回栈顶的元素</span></span><br><span class="line">  peek() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items][<span class="keyword">this</span>[_items].length - <span class="number">1</span>];</span><br><span class="line">  &#125;;</span><br><span class="line">  <span class="comment">// 没有任何元素true，否则false</span></span><br><span class="line">  isEmpty() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items].length === <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 移除栈里的所有元素</span></span><br><span class="line">  clear() &#123;</span><br><span class="line">    <span class="keyword">this</span>[_items] = [];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 返回栈里的元素个数</span></span><br><span class="line">  size() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items].length;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  print() &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.toString());</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  toString() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items].toString();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getSymbol</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">const</span> stack = <span class="keyword">new</span> Stack();</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Object</span>.getOwnPropertySymbols(stack);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">testSymbol</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> stack = <span class="keyword">new</span> Stack();</span><br><span class="line">  <span class="keyword">return</span> stack[_items];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(testSymbol());</span><br><span class="line"><span class="comment">// []</span></span><br><span class="line"><span class="built_in">console</span>.log(getSymbol()[<span class="number">0</span>]);</span><br><span class="line"><span class="comment">// Symbol(stackItems)</span></span><br></pre></td></tr></table></figure>
+
+<p>注意区别 <code>stack[_items]</code> 和<code>stack[&#39;_items&#39;]</code></p>
+<p>前者是访问属性名为 Symbol 的特殊方式。<br>后者是访问一般属性的方法与 <code>stack._items</code>相同。</p>
+<p>我猜测正因为这种特殊的访问方式使其无法通过<code>for...in</code>，<code>for...of</code>或 <code>Object.keys()</code> 等方法枚举。</p>
+<p>通过 <code>testSymbol()</code> 方法在我看来，其并不能达到实现私有变量的目的，仅仅使属性名或方法名不与别人提供的对象产生冲突。是一种保证每个属性名独一无二的方式。</p>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/" target="_blank" rel="noopener">ES6 In Depth: Symbols - Mozilla Hacks - the Web developer blog</a></li>
+<li><a href="https://es6.ruanyifeng.com/#docs/symbol" target="_blank" rel="noopener">Symbol - ECMAScript 6入门</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Symbol" target="_blank" rel="noopener">Symbol - JavaScript | MDN</a></li>
 </ul>
 ]]></content>
       <categories>
@@ -383,6 +383,29 @@
       </tags>
   </entry>
   <entry>
+    <title>编程语言之 Java</title>
+    <url>/java-language/</url>
+    <content><![CDATA[<h1 id="Integer-parseInt-与-Integer-valueOf-的比较"><a href="#Integer-parseInt-与-Integer-valueOf-的比较" class="headerlink" title="Integer.parseInt() 与 Integer.valueOf() 的比较"></a>Integer.parseInt() 与 Integer.valueOf() 的比较</h1><p>Integer.parseInt() 和 Integer.valueOf() 都是用来 将String转换为Int的。</p>
+<ul>
+<li>Integer.parseInt()，返回一个原子类型int.<ul>
+<li>parseInt() 只是调用parseInt, 并且返回原子类型int.</li>
+</ul>
+</li>
+<li>Integer.valueOf(), 返回的是封装的Integer对象。<ul>
+<li>valueOf 也会调用parseInt, 但是返回Integer对象。而且它会维护一个cache，如果int值在cache范围内，直接从cache中取对象，如果不在，则会新创建一个对象。</li>
+</ul>
+</li>
+</ul>
+<p>如果我们只是需要一个int值，parseInt是合适的，而且效率要高，但是如果用valueOf就多此一举了，性能会下降。<br><a href="https://www.imooc.com/article/37688" target="_blank" rel="noopener">🐱文章</a></p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo 博客进阶</title>
     <url>/hexo-advance/</url>
     <content><![CDATA[<h2 id="文章简介"><a href="#文章简介" class="headerlink" title="文章简介"></a>文章简介</h2><p>本文介绍 Hexo 博客的一些进阶操作。</p>
@@ -477,29 +500,6 @@
       </categories>
       <tags>
         <tag>开发工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>编程语言之 Java</title>
-    <url>/java-language/</url>
-    <content><![CDATA[<h1 id="Integer-parseInt-与-Integer-valueOf-的比较"><a href="#Integer-parseInt-与-Integer-valueOf-的比较" class="headerlink" title="Integer.parseInt() 与 Integer.valueOf() 的比较"></a>Integer.parseInt() 与 Integer.valueOf() 的比较</h1><p>Integer.parseInt() 和 Integer.valueOf() 都是用来 将String转换为Int的。</p>
-<ul>
-<li>Integer.parseInt()，返回一个原子类型int.<ul>
-<li>parseInt() 只是调用parseInt, 并且返回原子类型int.</li>
-</ul>
-</li>
-<li>Integer.valueOf(), 返回的是封装的Integer对象。<ul>
-<li>valueOf 也会调用parseInt, 但是返回Integer对象。而且它会维护一个cache，如果int值在cache范围内，直接从cache中取对象，如果不在，则会新创建一个对象。</li>
-</ul>
-</li>
-</ul>
-<p>如果我们只是需要一个int值，parseInt是合适的，而且效率要高，但是如果用valueOf就多此一举了，性能会下降。<br><a href="https://www.imooc.com/article/37688" target="_blank" rel="noopener">🐱文章</a></p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -628,86 +628,6 @@
       </tags>
   </entry>
   <entry>
-    <title>包管理</title>
-    <url>/package-management/</url>
-    <content><![CDATA[<p>大部分成熟的操作系统有着各种不同的包管理器，某些软件也有自己的包管理器。</p>
-<h2 id="系统包管理器"><a href="#系统包管理器" class="headerlink" title="系统包管理器"></a>系统包管理器</h2><ul>
-<li>CentOS<ul>
-<li>yum</li>
-</ul>
-</li>
-<li>Gentoo    <ul>
-<li>emerge</li>
-</ul>
-</li>
-<li>MacOS     <ul>
-<li><a href="https://brew.sh/index_zh-cn" target="_blank" rel="noopener">Homebrew</a><ul>
-<li>Homebrew 已经成为一款跨平台的包管理器 <a href="https://github.com/Linuxbrew/brew/blob/master/README.md" target="_blank" rel="noopener">Linuxbrew</a><a id="more"></a>
-<h2 id="软件包管理器"><a href="#软件包管理器" class="headerlink" title="软件包管理器"></a>软件包管理器</h2></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Vim<ul>
-<li><a href="https://github.com/junegunn/vim-plug" target="_blank" rel="noopener">vim-plug</a><ul>
-<li>支持多线程下载速度快，推荐使用。</li>
-</ul>
-</li>
-<li><a href="https://github.com/VundleVim/Vundle.vim" target="_blank" rel="noopener">vundle</a><ul>
-<li>老牌</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Node.js<ul>
-<li>npm<ul>
-<li>国内源<ul>
-<li><code>npm config set registry https://registry.npm.taobao.org</code></li>
-<li><code>npm config set disturl https://npm.taobao.org/dist</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>yarn<ul>
-<li>facebook 研发</li>
-<li>国内源<ul>
-<li><code>yarn config set registry https://registry.npm.taobao.org --global</code></li>
-<li><code>yarn config set disturl https://npm.taobao.org/dist --global</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Java <ul>
-<li>maven</li>
-</ul>
-</li>
-<li>Go<ul>
-<li>dep</li>
-<li>go modules</li>
-</ul>
-</li>
-</ul>
-<h2 id="Homebrew"><a href="#Homebrew" class="headerlink" title="Homebrew"></a>Homebrew</h2><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">% brew search # 搜索包</span><br><span class="line">% brew install # 安装包</span><br><span class="line">% brew uninstall # 删除包</span><br><span class="line">% brew update # 更新包</span><br><span class="line">% brew upgrade # 升级包</span><br><span class="line">% brew cleanup # 清理旧包</span><br></pre></td></tr></table></figure>
-
-<h3 id="MacOS-下的-brew-cask"><a href="#MacOS-下的-brew-cask" class="headerlink" title="MacOS 下的 brew cask"></a>MacOS 下的 brew cask</h3><p>用于安装有图像界面的 app 以及驱动<br><code>brew install brew-cask</code></p>
-<p>如果遇到问题可以先执行如下命令：<br><code>git -C &quot;$(brew --repo homebrew/core)&quot; fetch --unshallow</code></p>
-<h3 id="Homebrew-换源"><a href="#Homebrew-换源" class="headerlink" title="Homebrew 换源"></a>Homebrew 换源</h3><p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/" target="_blank" rel="noopener">Homebrew | 镜像站使用帮助 | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a></p>
-<h3 id="Homebrew-换回官方源"><a href="#Homebrew-换回官方源" class="headerlink" title="Homebrew 换回官方源"></a>Homebrew 换回官方源</h3><ul>
-<li>重置 brew.git    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &quot;$(brew --repo)&quot;</span><br><span class="line">git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;Homebrew&#x2F;brew.git</span><br></pre></td></tr></table></figure></li>
-<li>重置 Homebrew-core：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &quot;$(brew --repo)&#x2F;Library&#x2F;Taps&#x2F;homebrew&#x2F;homebrew-core&quot;</span><br><span class="line">git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;Homebrew&#x2F;homebrew-core.git</span><br></pre></td></tr></table></figure></li>
-<li>源更新<br><code>brew update</code></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>包管理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mac 大扫除🧹</title>
     <url>/macos-clean/</url>
     <content><![CDATA[<p>基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。</p>
@@ -830,6 +750,86 @@
       </categories>
   </entry>
   <entry>
+    <title>包管理</title>
+    <url>/package-management/</url>
+    <content><![CDATA[<p>大部分成熟的操作系统有着各种不同的包管理器，某些软件也有自己的包管理器。</p>
+<h2 id="系统包管理器"><a href="#系统包管理器" class="headerlink" title="系统包管理器"></a>系统包管理器</h2><ul>
+<li>CentOS<ul>
+<li>yum</li>
+</ul>
+</li>
+<li>Gentoo    <ul>
+<li>emerge</li>
+</ul>
+</li>
+<li>MacOS     <ul>
+<li><a href="https://brew.sh/index_zh-cn" target="_blank" rel="noopener">Homebrew</a><ul>
+<li>Homebrew 已经成为一款跨平台的包管理器 <a href="https://github.com/Linuxbrew/brew/blob/master/README.md" target="_blank" rel="noopener">Linuxbrew</a><a id="more"></a>
+<h2 id="软件包管理器"><a href="#软件包管理器" class="headerlink" title="软件包管理器"></a>软件包管理器</h2></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Vim<ul>
+<li><a href="https://github.com/junegunn/vim-plug" target="_blank" rel="noopener">vim-plug</a><ul>
+<li>支持多线程下载速度快，推荐使用。</li>
+</ul>
+</li>
+<li><a href="https://github.com/VundleVim/Vundle.vim" target="_blank" rel="noopener">vundle</a><ul>
+<li>老牌</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Node.js<ul>
+<li>npm<ul>
+<li>国内源<ul>
+<li><code>npm config set registry https://registry.npm.taobao.org</code></li>
+<li><code>npm config set disturl https://npm.taobao.org/dist</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>yarn<ul>
+<li>facebook 研发</li>
+<li>国内源<ul>
+<li><code>yarn config set registry https://registry.npm.taobao.org --global</code></li>
+<li><code>yarn config set disturl https://npm.taobao.org/dist --global</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Java <ul>
+<li>maven</li>
+</ul>
+</li>
+<li>Go<ul>
+<li>dep</li>
+<li>go modules</li>
+</ul>
+</li>
+</ul>
+<h2 id="Homebrew"><a href="#Homebrew" class="headerlink" title="Homebrew"></a>Homebrew</h2><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">% brew search # 搜索包</span><br><span class="line">% brew install # 安装包</span><br><span class="line">% brew uninstall # 删除包</span><br><span class="line">% brew update # 更新包</span><br><span class="line">% brew upgrade # 升级包</span><br><span class="line">% brew cleanup # 清理旧包</span><br></pre></td></tr></table></figure>
+
+<h3 id="MacOS-下的-brew-cask"><a href="#MacOS-下的-brew-cask" class="headerlink" title="MacOS 下的 brew cask"></a>MacOS 下的 brew cask</h3><p>用于安装有图像界面的 app 以及驱动<br><code>brew install brew-cask</code></p>
+<p>如果遇到问题可以先执行如下命令：<br><code>git -C &quot;$(brew --repo homebrew/core)&quot; fetch --unshallow</code></p>
+<h3 id="Homebrew-换源"><a href="#Homebrew-换源" class="headerlink" title="Homebrew 换源"></a>Homebrew 换源</h3><p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/" target="_blank" rel="noopener">Homebrew | 镜像站使用帮助 | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a></p>
+<h3 id="Homebrew-换回官方源"><a href="#Homebrew-换回官方源" class="headerlink" title="Homebrew 换回官方源"></a>Homebrew 换回官方源</h3><ul>
+<li>重置 brew.git    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &quot;$(brew --repo)&quot;</span><br><span class="line">git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;Homebrew&#x2F;brew.git</span><br></pre></td></tr></table></figure></li>
+<li>重置 Homebrew-core：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &quot;$(brew --repo)&#x2F;Library&#x2F;Taps&#x2F;homebrew&#x2F;homebrew-core&quot;</span><br><span class="line">git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;Homebrew&#x2F;homebrew-core.git</span><br></pre></td></tr></table></figure></li>
+<li>源更新<br><code>brew update</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>包管理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>代理服务器</title>
     <url>/proxy-teach/</url>
     <content><![CDATA[<p>推荐两款比较好的代理服务器端产品：</p>
@@ -869,27 +869,6 @@
       </categories>
   </entry>
   <entry>
-    <title>程序中的 “脚手架”</title>
-    <url>/scaffold/</url>
-    <content><![CDATA[<blockquote>
-<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
-</blockquote>
-<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
-<a id="more"></a>
-
-<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
-<li><a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener">facebook/create-react-app</a></li>
-<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>信息技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>SSM 错误集锦</title>
     <url>/ssm-Error/</url>
     <content><![CDATA[<ol>
@@ -923,6 +902,27 @@
       </categories>
       <tags>
         <tag>ssm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>程序中的 “脚手架”</title>
+    <url>/scaffold/</url>
+    <content><![CDATA[<blockquote>
+<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
+</blockquote>
+<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
+<a id="more"></a>
+
+<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
+<li><a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener">facebook/create-react-app</a></li>
+<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>信息技术</tag>
       </tags>
   </entry>
   <entry>
@@ -995,37 +995,6 @@
       </tags>
   </entry>
   <entry>
-    <title>vim 多文件类型自动补全方案</title>
-    <url>/vim-multiple-filetype-deoplete/</url>
-    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
-<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>其中的 filetype on 表示：</p>
-<blockquote>
-<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
-</blockquote>
-<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
-<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
-<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">'nvim'</span>)</span><br><span class="line">  Plug <span class="string">'Shougo/deoplete.nvim'</span>, &#123; <span class="string">'do'</span>: <span class="string">':UpdateRemotePlugins'</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">'Shougo/deoplete.nvim'</span></span><br><span class="line">  Plug <span class="string">'roxma/nvim-yarp'</span></span><br><span class="line">  Plug <span class="string">'roxma/vim-hug-neovim-rpc'</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">'Shougo/context_filetype.vim'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">'g:context_filetype#same_filetypes'</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">'filetype'</span> :<span class="string">'javascript'</span>, <span class="string">'start'</span>: <span class="string">'&lt;script&gt;'</span>, <span class="string">'end'</span>: <span class="string">'&lt;/script&gt;'</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">'filetype'</span> :<span class="string">'css'</span>, <span class="string">'start'</span>: <span class="string">'&lt;style&gt;'</span>, <span class="string">'end'</span>: <span class="string">'&lt;/style&gt;'</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">" deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">'omni'</span>, <span class="string">'functions'</span>, &#123;</span><br><span class="line">\ <span class="string">'css'</span>: [<span class="string">'csscomplete#CompleteCSS'</span>],</span><br><span class="line">\ <span class="string">'javascript'</span>: [<span class="string">'javascriptcomplete#CompleteJS'</span>],</span><br><span class="line">\ <span class="string">'html'</span>: [<span class="string">'htmlcomplete#CompleteTags'</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">'omni'</span>, <span class="string">'input_patterns'</span>, &#123;</span><br><span class="line">\ <span class="string">'javascript'</span>: <span class="string">'[^. *\t]\.\w*'</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">" 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">"\&lt;C-n&gt;"</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">"\&lt;TAB&gt;"</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> "&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">'.'</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">'.'</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">'\s'</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">"&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
-<p>执行 :PlugInstall</p>
-<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
-<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">'range'</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">'filetype'</span>: <span class="string">'css'</span>&#125;</span><br></pre></td></tr></table></figure>
-<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
-<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
-<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py" target="_blank" rel="noopener">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>multiple filetype</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>React-Vim 开发环境</title>
     <url>/vim-react/</url>
     <content><![CDATA[<h2 id="实现功能"><a href="#实现功能" class="headerlink" title="实现功能"></a>实现功能</h2><ol>
@@ -1058,6 +1027,37 @@
       <tags>
         <tag>vim</tag>
         <tag>react</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vim 多文件类型自动补全方案</title>
+    <url>/vim-multiple-filetype-deoplete/</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
+<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>其中的 filetype on 表示：</p>
+<blockquote>
+<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
+</blockquote>
+<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
+<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
+<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">'nvim'</span>)</span><br><span class="line">  Plug <span class="string">'Shougo/deoplete.nvim'</span>, &#123; <span class="string">'do'</span>: <span class="string">':UpdateRemotePlugins'</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">'Shougo/deoplete.nvim'</span></span><br><span class="line">  Plug <span class="string">'roxma/nvim-yarp'</span></span><br><span class="line">  Plug <span class="string">'roxma/vim-hug-neovim-rpc'</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">'Shougo/context_filetype.vim'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">'g:context_filetype#same_filetypes'</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">'filetype'</span> :<span class="string">'javascript'</span>, <span class="string">'start'</span>: <span class="string">'&lt;script&gt;'</span>, <span class="string">'end'</span>: <span class="string">'&lt;/script&gt;'</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">'filetype'</span> :<span class="string">'css'</span>, <span class="string">'start'</span>: <span class="string">'&lt;style&gt;'</span>, <span class="string">'end'</span>: <span class="string">'&lt;/style&gt;'</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">" deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">'omni'</span>, <span class="string">'functions'</span>, &#123;</span><br><span class="line">\ <span class="string">'css'</span>: [<span class="string">'csscomplete#CompleteCSS'</span>],</span><br><span class="line">\ <span class="string">'javascript'</span>: [<span class="string">'javascriptcomplete#CompleteJS'</span>],</span><br><span class="line">\ <span class="string">'html'</span>: [<span class="string">'htmlcomplete#CompleteTags'</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">'omni'</span>, <span class="string">'input_patterns'</span>, &#123;</span><br><span class="line">\ <span class="string">'javascript'</span>: <span class="string">'[^. *\t]\.\w*'</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">" 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">"\&lt;C-n&gt;"</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">"\&lt;TAB&gt;"</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> "&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">'.'</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">'.'</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">'\s'</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">"&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
+<p>执行 :PlugInstall</p>
+<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
+<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">'range'</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">'filetype'</span>: <span class="string">'css'</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
+<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
+<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py" target="_blank" rel="noopener">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>multiple filetype</tag>
       </tags>
   </entry>
 </search>
