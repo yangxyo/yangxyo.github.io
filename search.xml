@@ -1,29 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>目标和关键成果法 (Objectives and Key Results)</title>
-    <url>/OKRs/</url>
-    <content><![CDATA[<blockquote>
-<p>The Objective is the direction.<br>The key results have to be measured.<br>Yes.No.Simple</p>
-</blockquote>
-<h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>Being took to the wrong objectives is unacceptable.<br>被带向错误的目标是让人无法接受的。</p>
-<a id="more"></a>
-
-<p>Truly transformational teams combine their ambitions to their passion and to their purpose，and they develop a clear and compelling sense of why.<br>真正变革型的团队都会将自己的雄心、热情和目标结合到一起，他们很清楚为何要做，且理由令人信服。</p>
-<h1 id="Objective"><a href="#Objective" class="headerlink" title="Objective"></a>Objective</h1><p>Significant (重要)<br>Concrete （具体）<br>Action-oriented （以行动为导向）<br>Inspirational （激励人心）</p>
-<p>If the heart doesn’t find a perfect rhyme with the head, then your passion means nothing.<br>如果内心找不到与大脑和谐的韵律，你的热情就毫无用处。</p>
-<h1 id="Good-key-results"><a href="#Good-key-results" class="headerlink" title="Good key results"></a>Good key results</h1><p>Specific &amp; Time-bound（明确、有时间限制）<br>Aggressive Yet Realistic（激进、现实）<br>Measurable &amp; Verifiable (可衡量、可评估)</p>
-<h1 id="Why-1"><a href="#Why-1" class="headerlink" title="Why"></a>Why</h1><p>OKRs as transparent vessels, that are made from the whats and hows of our ambitions. What really matters is the why that we pour into those vessels. Thats’s why we do our work.<br> OKRS 可以看做是一个透明的容器，它由野心勃勃的“做什么”和“怎么做”构成。 真正的关键在于放进容器中的“为什么” 那是我们工作的原因。</p>
-<h1 id="Write-down-your"><a href="#Write-down-your" class="headerlink" title="Write down your"></a>Write down your</h1><p>Values (the right metrics)<br>Objectives<br>Key results</p>
-]]></content>
-      <categories>
-        <category>方法</category>
-      </categories>
-      <tags>
-        <tag>方法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>阿里云 ECS 使用</title>
     <url>/ECS/</url>
     <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><a href="https://www.alibabacloud.com/help/zh/doc-detail/25367.htm?spm=a2c63.p38356.b99.2.615e1bbcsZH9Ry" target="_blank" rel="noopener">阿里云官方文档</a></p>
@@ -44,26 +21,26 @@
       </tags>
   </entry>
   <entry>
-    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
-    <url>/acme-sh/</url>
-    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
-<ul>
-<li>http 认证方式</li>
-<li>dns 方式<a id="more"></a>
+    <title>目标和关键成果法 (Objectives and Key Results)</title>
+    <url>/OKRs/</url>
+    <content><![CDATA[<blockquote>
+<p>The Objective is the direction.<br>The key results have to be measured.<br>Yes.No.Simple</p>
+</blockquote>
+<h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>Being took to the wrong objectives is unacceptable.<br>被带向错误的目标是让人无法接受的。</p>
+<a id="more"></a>
 
-</li>
-</ul>
-<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
-<p><a href="https://github.com/Neilpang/acme.sh/wiki/说明" target="_blank" rel="noopener">github 安装说明</a></p>
-<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
+<p>Truly transformational teams combine their ambitions to their passion and to their purpose，and they develop a clear and compelling sense of why.<br>真正变革型的团队都会将自己的雄心、热情和目标结合到一起，他们很清楚为何要做，且理由令人信服。</p>
+<h1 id="Objective"><a href="#Objective" class="headerlink" title="Objective"></a>Objective</h1><p>Significant (重要)<br>Concrete （具体）<br>Action-oriented （以行动为导向）<br>Inspirational （激励人心）</p>
+<p>If the heart doesn’t find a perfect rhyme with the head, then your passion means nothing.<br>如果内心找不到与大脑和谐的韵律，你的热情就毫无用处。</p>
+<h1 id="Good-key-results"><a href="#Good-key-results" class="headerlink" title="Good key results"></a>Good key results</h1><p>Specific &amp; Time-bound（明确、有时间限制）<br>Aggressive Yet Realistic（激进、现实）<br>Measurable &amp; Verifiable (可衡量、可评估)</p>
+<h1 id="Why-1"><a href="#Why-1" class="headerlink" title="Why"></a>Why</h1><p>OKRs as transparent vessels, that are made from the whats and hows of our ambitions. What really matters is the why that we pour into those vessels. Thats’s why we do our work.<br> OKRS 可以看做是一个透明的容器，它由野心勃勃的“做什么”和“怎么做”构成。 真正的关键在于放进容器中的“为什么” 那是我们工作的原因。</p>
+<h1 id="Write-down-your"><a href="#Write-down-your" class="headerlink" title="Write down your"></a>Write down your</h1><p>Values (the right metrics)<br>Objectives<br>Key results</p>
+]]></content>
       <categories>
-        <category>信息技术</category>
+        <category>方法</category>
       </categories>
       <tags>
-        <tag>ssl</tag>
-        <tag>acme.sh</tag>
-        <tag>letsencrypt</tag>
+        <tag>方法</tag>
       </tags>
   </entry>
   <entry>
@@ -95,6 +72,29 @@
       </categories>
       <tags>
         <tag>中国</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
+    <url>/acme-sh/</url>
+    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
+<ul>
+<li>http 认证方式</li>
+<li>dns 方式<a id="more"></a>
+
+</li>
+</ul>
+<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
+<p><a href="https://github.com/Neilpang/acme.sh/wiki/说明" target="_blank" rel="noopener">github 安装说明</a></p>
+<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssl</tag>
+        <tag>acme.sh</tag>
+        <tag>letsencrypt</tag>
       </tags>
   </entry>
   <entry>
@@ -515,19 +515,6 @@
       </categories>
   </entry>
   <entry>
-    <title>鲁迅</title>
-    <url>/luxun/</url>
-    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
-<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>鲁迅</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>切换 Shell 需谨慎</title>
     <url>/linux-user/</url>
     <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
@@ -543,6 +530,19 @@
       </categories>
       <tags>
         <tag>Shell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鲁迅</title>
+    <url>/luxun/</url>
+    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
+<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>鲁迅</tag>
       </tags>
   </entry>
   <entry>
@@ -628,60 +628,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Mac 大扫除🧹</title>
-    <url>/macos-clean/</url>
-    <content><![CDATA[<p>基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。</p>
-<p>通过以下命令可以查看当前路径下的所有文件及文件夹大小并从大到小排列，以 KB 为单位显示。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sk *| sort -rn</span><br></pre></td></tr></table></figure>
-<p>以下命令就是以K，M，G为单位，提高信息的可读性，但是不能正确按文件大小排序。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sh *</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-
-<h2 id="用户文件清理"><a href="#用户文件清理" class="headerlink" title="用户文件清理"></a>用户文件清理</h2><p>我们称<code>～/</code>目录下的文件为用户文件。</p>
-<ol>
-<li>卸载不必要的应用，使用 柠檬清理 或者 AppCleaner 都是免费的。</li>
-<li>通过 柠檬清理，CleanMyMac 等软件清理垃圾，删除无用的大文件，这类软件都只有管理用户文件的能力。</li>
-<li>软件的配置、下载的插件等不能直接删除，应选择性删除：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;Library&#x2F;Application Support&#x2F;</span><br></pre></td></tr></table></figure>
-<ol>
-<li>应用的缓存文件可以直接删除，不放心的话使用 trash 将其放入垃圾篓，如有异常还原便可，不用担心开不了机，用户文件也就是 ~/ 目录下的文件，是不会影响系统运行的：</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/Library/Caches/*</span><br><span class="line">// or</span><br><span class="line">brew install trash</span><br><span class="line">trash ~/Library/Caches/*</span><br></pre></td></tr></table></figure>
-<h2 id="“系统文件”清理"><a href="#“系统文件”清理" class="headerlink" title="“系统文件”清理"></a>“系统文件”清理</h2><h3 id="清理文件定位"><a href="#清理文件定位" class="headerlink" title="清理文件定位"></a>清理文件定位</h3><p>Catalina中，系统文件从原本的文件系统中分离了，组成独立的文件系统，并且把这个文件系统从设计上设定为只能读取，不能写入。<br><img data-src="http://images.xyang.xin/2020-04%2F1586700714.png" alt="1586700714.png"> </p>
-<p>而其他文件和数据存储在Macintosh HD - Data卷中，挂载在<code>/System/Volumes/Data</code>目录下，在Finder中和系统卷一样显示为Macintosh HD。<br><img data-src="http://images.xyang.xin/2020-04%2F1586754964.png" alt="1586754964.png"></p>
-<p>如何区分数据卷和系统卷呢？<br>可以说除<code>/System/Volumes/Data</code>目录下的文件，其他都是数据卷文件。</p>
-<p>我们还可以发现一个怪异的现象，最明显的是<code>/Users</code>和<code>/Applications</code>同样出现在<code>/System/Volumes/Data/Applications</code>和<code>/System/Volumes/Data/Users</code>，而且内容相同、检测出来大小都相同，并且没有占用额外的空间。</p>
-<p>这里用到的是 “Bi-directional wormhole in path traversal” （路径遍历中的双向虫洞）—— Firmlinks，一种新的文件类型对象，类似于符号链接。通过以下命令可以查看哪些文件创建了Firmlinks：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /usr/share/firmlinks</span><br></pre></td></tr></table></figure>
-<p><img data-src="http://images.xyang.xin/2020-04%2F1586753548.png" alt="1586753548.png"></p>
-<h3 id="开始清理"><a href="#开始清理" class="headerlink" title="开始清理"></a>开始清理</h3><p>系统卷不能修改和写入，所以不会产生额外的垃圾，删除一些不用的系统应用是可以的，比如国际象棋，但是它们都不怎么占空间，所以没大必要。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo rm -rf /System/Applications/Chess.app/</span><br></pre></td></tr></table></figure>
-
-<p>我们实际上就是对 数据卷 进行清理。暂且把除去<code>/Users</code>用户文件外的文件都称为系统文件吧，因为它们很多都是与系统功能相关的，</p>
-<p>通过<code>du -sk *| sort -rn</code>命令，以下六个文件夹占的空间比较大：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">30210188	Users</span><br><span class="line">18391484	Applications</span><br><span class="line">6144100	private</span><br><span class="line">4822752	usr</span><br><span class="line">4179388	System</span><br><span class="line">3856812	Library</span><br></pre></td></tr></table></figure>
-<p><code>Users</code>是用户文件我们已经清理过了<code>Applications</code>是用户下载的应用，也清理过了，重点研究后面四个文件夹。</p>
-<p><code>/System/Volumes/Data/private/var/vm</code> 这里面删了又有，我删过，并没有产生什么意外。其中 sleepimage 是用于休眠期间存储主存的内容；swapfile 用于虚拟内存存储，当物理内存满了，系统会自动“调出”未被积极使用的数据，并将其存储于 swapfile。这两个都可以关闭，但是都不建议。</p>
-<p><code>/System/Volumes/Data/System/Library/Speech</code> 占了两个多G空间是语音相关的文件<code>say 你好</code>系统就会说<code>你好</code>。</p>
-<p><code>/System/Volumes/Data/usr</code>，usr是Unix System Resource的缩写，也就是Unix操作系统软件资源，很多通过命令行安装的软件都存放在这里，比如mac包管理器brew安装的软件都存放在里面，<code>brew uninstall</code>只会卸载软件本身而不会卸载相关依赖，通过以下命令可以安全的卸载brew安装的软件及其依赖：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew tap beeftornado&#x2F;rmtree</span><br><span class="line">brew rmtree XX</span><br></pre></td></tr></table></figure>
-
-<p>其实基于不同的使用习惯和用途，会产生不同的垃圾，用 <code>du</code> 命令一层层的分析查看，了解其内容含义，再清除是比较好的方法。</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://support.apple.com/en-us/HT210650" target="_blank" rel="noopener">About the read-only system volume in macOS Catalina - Apple Support</a></li>
-<li><a href="https://sspai.com/post/57052" target="_blank" rel="noopener">当 Mac 升级到 Catalina 时，苹果在硬盘里施了点魔法 - 少数派</a></li>
-<li><a href="https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf" target="_blank" rel="noopener">https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>MacOS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>包管理</title>
     <url>/package-management/</url>
     <content><![CDATA[<p>大部分成熟的操作系统有着各种不同的包管理器，某些软件也有自己的包管理器。</p>
@@ -759,6 +705,60 @@
       </categories>
       <tags>
         <tag>包管理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac 大扫除🧹</title>
+    <url>/macos-clean/</url>
+    <content><![CDATA[<p>基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。</p>
+<p>通过以下命令可以查看当前路径下的所有文件及文件夹大小并从大到小排列，以 KB 为单位显示。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sk *| sort -rn</span><br></pre></td></tr></table></figure>
+<p>以下命令就是以K，M，G为单位，提高信息的可读性，但是不能正确按文件大小排序。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sh *</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+
+<h2 id="用户文件清理"><a href="#用户文件清理" class="headerlink" title="用户文件清理"></a>用户文件清理</h2><p>我们称<code>～/</code>目录下的文件为用户文件。</p>
+<ol>
+<li>卸载不必要的应用，使用 柠檬清理 或者 AppCleaner 都是免费的。</li>
+<li>通过 柠檬清理，CleanMyMac 等软件清理垃圾，删除无用的大文件，这类软件都只有管理用户文件的能力。</li>
+<li>软件的配置、下载的插件等不能直接删除，应选择性删除：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;Library&#x2F;Application Support&#x2F;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>应用的缓存文件可以直接删除，不放心的话使用 trash 将其放入垃圾篓，如有异常还原便可，不用担心开不了机，用户文件也就是 ~/ 目录下的文件，是不会影响系统运行的：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/Library/Caches/*</span><br><span class="line">// or</span><br><span class="line">brew install trash</span><br><span class="line">trash ~/Library/Caches/*</span><br></pre></td></tr></table></figure>
+<h2 id="“系统文件”清理"><a href="#“系统文件”清理" class="headerlink" title="“系统文件”清理"></a>“系统文件”清理</h2><h3 id="清理文件定位"><a href="#清理文件定位" class="headerlink" title="清理文件定位"></a>清理文件定位</h3><p>Catalina中，系统文件从原本的文件系统中分离了，组成独立的文件系统，并且把这个文件系统从设计上设定为只能读取，不能写入。<br><img data-src="http://images.xyang.xin/2020-04%2F1586700714.png" alt="1586700714.png"> </p>
+<p>而其他文件和数据存储在Macintosh HD - Data卷中，挂载在<code>/System/Volumes/Data</code>目录下，在Finder中和系统卷一样显示为Macintosh HD。<br><img data-src="http://images.xyang.xin/2020-04%2F1586754964.png" alt="1586754964.png"></p>
+<p>如何区分数据卷和系统卷呢？<br>可以说除<code>/System/Volumes/Data</code>目录下的文件，其他都是数据卷文件。</p>
+<p>我们还可以发现一个怪异的现象，最明显的是<code>/Users</code>和<code>/Applications</code>同样出现在<code>/System/Volumes/Data/Applications</code>和<code>/System/Volumes/Data/Users</code>，而且内容相同、检测出来大小都相同，并且没有占用额外的空间。</p>
+<p>这里用到的是 “Bi-directional wormhole in path traversal” （路径遍历中的双向虫洞）—— Firmlinks，一种新的文件类型对象，类似于符号链接。通过以下命令可以查看哪些文件创建了Firmlinks：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /usr/share/firmlinks</span><br></pre></td></tr></table></figure>
+<p><img data-src="http://images.xyang.xin/2020-04%2F1586753548.png" alt="1586753548.png"></p>
+<h3 id="开始清理"><a href="#开始清理" class="headerlink" title="开始清理"></a>开始清理</h3><p>系统卷不能修改和写入，所以不会产生额外的垃圾，删除一些不用的系统应用是可以的，比如国际象棋，但是它们都不怎么占空间，所以没大必要。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo rm -rf /System/Applications/Chess.app/</span><br></pre></td></tr></table></figure>
+
+<p>我们实际上就是对 数据卷 进行清理。暂且把除去<code>/Users</code>用户文件外的文件都称为系统文件吧，因为它们很多都是与系统功能相关的，</p>
+<p>通过<code>du -sk *| sort -rn</code>命令，以下六个文件夹占的空间比较大：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">30210188	Users</span><br><span class="line">18391484	Applications</span><br><span class="line">6144100	private</span><br><span class="line">4822752	usr</span><br><span class="line">4179388	System</span><br><span class="line">3856812	Library</span><br></pre></td></tr></table></figure>
+<p><code>Users</code>是用户文件我们已经清理过了<code>Applications</code>是用户下载的应用，也清理过了，重点研究后面四个文件夹。</p>
+<p><code>/System/Volumes/Data/private/var/vm</code> 这里面删了又有，我删过，并没有产生什么意外。其中 sleepimage 是用于休眠期间存储主存的内容；swapfile 用于虚拟内存存储，当物理内存满了，系统会自动“调出”未被积极使用的数据，并将其存储于 swapfile。这两个都可以关闭，但是都不建议。</p>
+<p><code>/System/Volumes/Data/System/Library/Speech</code> 占了两个多G空间是语音相关的文件<code>say 你好</code>系统就会说<code>你好</code>。</p>
+<p><code>/System/Volumes/Data/usr</code>，usr是Unix System Resource的缩写，也就是Unix操作系统软件资源，很多通过命令行安装的软件都存放在这里，比如mac包管理器brew安装的软件都存放在里面，<code>brew uninstall</code>只会卸载软件本身而不会卸载相关依赖，通过以下命令可以安全的卸载brew安装的软件及其依赖：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew tap beeftornado&#x2F;rmtree</span><br><span class="line">brew rmtree XX</span><br></pre></td></tr></table></figure>
+
+<p>其实基于不同的使用习惯和用途，会产生不同的垃圾，用 <code>du</code> 命令一层层的分析查看，了解其内容含义，再清除是比较好的方法。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://support.apple.com/en-us/HT210650" target="_blank" rel="noopener">About the read-only system volume in macOS Catalina - Apple Support</a></li>
+<li><a href="https://sspai.com/post/57052" target="_blank" rel="noopener">当 Mac 升级到 Catalina 时，苹果在硬盘里施了点魔法 - 少数派</a></li>
+<li><a href="https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf" target="_blank" rel="noopener">https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>MacOS</tag>
       </tags>
   </entry>
   <entry>
@@ -890,6 +890,42 @@
       </tags>
   </entry>
   <entry>
+    <title>SSM 错误集锦</title>
+    <url>/ssm-Error/</url>
+    <content><![CDATA[<ol>
+<li>class path resource [spring/] cannot be resolved to URL because it does not exist</li>
+</ol>
+<ul>
+<li>条件：这是非编译情况下利用mvn的插件war:war生成war包，运行后所报的错误。</li>
+<li>原因：未将resources下的配置文件引入war包中。</li>
+<li>解决方法：先执行代码，再生成war包。<a id="more"></a></li>
+</ul>
+<ol start="2">
+<li>check the manual that corresponds to your MySQL server version for the right syntax to use near … , The error may involve .insert-Inline</li>
+</ol>
+<ul>
+<li>原因：mysql 向数据库插入数据时错误， 可能触及到mysql的保留字，例如 key。</li>
+<li>解决办法： 插入语句不能起别名，该方式不可取。加键盘左上角的撇号，例<code>key</code>。</li>
+</ul>
+<ol start="3">
+<li><p>java.lang.Double cannot be cast to java.lang.String<br>list中查出来个别数据是 double，转换为 String。<br>String periodTime = String.valueOf(list.get(0));</p>
+</li>
+<li><p>Error running ‘tomcat’: Can’t find catalina.jar</p>
+</li>
+</ol>
+<ul>
+<li>原因：tomcat 升级导致路径改变</li>
+<li>解决办法：Idea 在 Edit Configuration 中修改 tomcat 路径至 libexec</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vim 自动补全之 YCM</title>
     <url>/shell-java/</url>
     <content><![CDATA[<p>IDEA 打开得太慢了，我需要一款轻量级的 IDE，不想装其他乱七八糟的编译器咋办？搞事情！</p>
@@ -941,42 +977,6 @@
       </categories>
       <tags>
         <tag>开发工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SSM 错误集锦</title>
-    <url>/ssm-Error/</url>
-    <content><![CDATA[<ol>
-<li>class path resource [spring/] cannot be resolved to URL because it does not exist</li>
-</ol>
-<ul>
-<li>条件：这是非编译情况下利用mvn的插件war:war生成war包，运行后所报的错误。</li>
-<li>原因：未将resources下的配置文件引入war包中。</li>
-<li>解决方法：先执行代码，再生成war包。<a id="more"></a></li>
-</ul>
-<ol start="2">
-<li>check the manual that corresponds to your MySQL server version for the right syntax to use near … , The error may involve .insert-Inline</li>
-</ol>
-<ul>
-<li>原因：mysql 向数据库插入数据时错误， 可能触及到mysql的保留字，例如 key。</li>
-<li>解决办法： 插入语句不能起别名，该方式不可取。加键盘左上角的撇号，例<code>key</code>。</li>
-</ul>
-<ol start="3">
-<li><p>java.lang.Double cannot be cast to java.lang.String<br>list中查出来个别数据是 double，转换为 String。<br>String periodTime = String.valueOf(list.get(0));</p>
-</li>
-<li><p>Error running ‘tomcat’: Can’t find catalina.jar</p>
-</li>
-</ol>
-<ul>
-<li>原因：tomcat 升级导致路径改变</li>
-<li>解决办法：Idea 在 Edit Configuration 中修改 tomcat 路径至 libexec</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>ssm</tag>
       </tags>
   </entry>
   <entry>

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.xyang.xin/hexo-advance/</loc>
+    
+    <lastmod>2020-04-15T04:24:47.288Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.xyang.xin/404.html</loc>
     
     <lastmod>2020-04-15T04:13:54.838Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>http://blog.xyang.xin/book-hsxzs/</loc>
     
     <lastmod>2020-04-14T15:16:51.465Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/hexo-advance/</loc>
-    
-    <lastmod>2020-04-14T15:09:11.888Z</lastmod>
     
   </url>
   

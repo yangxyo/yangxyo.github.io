@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://blog.xyang.xin/hexo-advance/</loc>
+    <lastmod>2020-04-15</lastmod>
+  </url>  <url>
     <loc>http://blog.xyang.xin/book-rhydybs/</loc>
     <lastmod>2020-04-14</lastmod>
   </url>  <url>
     <loc>http://blog.xyang.xin/book-hsxzs/</loc>
-    <lastmod>2020-04-14</lastmod>
-  </url>  <url>
-    <loc>http://blog.xyang.xin/hexo-advance/</loc>
     <lastmod>2020-04-14</lastmod>
   </url>  <url>
     <loc>http://blog.xyang.xin/es6-everyday-3/</loc>
