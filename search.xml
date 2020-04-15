@@ -21,52 +21,6 @@
       </tags>
   </entry>
   <entry>
-    <title>目标和关键成果法 (Objectives and Key Results)</title>
-    <url>/OKRs/</url>
-    <content><![CDATA[<blockquote>
-<p>The Objective is the direction.<br>The key results have to be measured.<br>Yes.No.Simple</p>
-</blockquote>
-<h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>Being took to the wrong objectives is unacceptable.<br>被带向错误的目标是让人无法接受的。</p>
-<a id="more"></a>
-
-<p>Truly transformational teams combine their ambitions to their passion and to their purpose，and they develop a clear and compelling sense of why.<br>真正变革型的团队都会将自己的雄心、热情和目标结合到一起，他们很清楚为何要做，且理由令人信服。</p>
-<h1 id="Objective"><a href="#Objective" class="headerlink" title="Objective"></a>Objective</h1><p>Significant (重要)<br>Concrete （具体）<br>Action-oriented （以行动为导向）<br>Inspirational （激励人心）</p>
-<p>If the heart doesn’t find a perfect rhyme with the head, then your passion means nothing.<br>如果内心找不到与大脑和谐的韵律，你的热情就毫无用处。</p>
-<h1 id="Good-key-results"><a href="#Good-key-results" class="headerlink" title="Good key results"></a>Good key results</h1><p>Specific &amp; Time-bound（明确、有时间限制）<br>Aggressive Yet Realistic（激进、现实）<br>Measurable &amp; Verifiable (可衡量、可评估)</p>
-<h1 id="Why-1"><a href="#Why-1" class="headerlink" title="Why"></a>Why</h1><p>OKRs as transparent vessels, that are made from the whats and hows of our ambitions. What really matters is the why that we pour into those vessels. Thats’s why we do our work.<br> OKRS 可以看做是一个透明的容器，它由野心勃勃的“做什么”和“怎么做”构成。 真正的关键在于放进容器中的“为什么” 那是我们工作的原因。</p>
-<h1 id="Write-down-your"><a href="#Write-down-your" class="headerlink" title="Write down your"></a>Write down your</h1><p>Values (the right metrics)<br>Objectives<br>Key results</p>
-]]></content>
-      <categories>
-        <category>方法</category>
-      </categories>
-      <tags>
-        <tag>方法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
-    <url>/acme-sh/</url>
-    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
-<ul>
-<li>http 认证方式</li>
-<li>dns 方式<a id="more"></a>
-
-</li>
-</ul>
-<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
-<p><a href="https://github.com/Neilpang/acme.sh/wiki/说明" target="_blank" rel="noopener">github 安装说明</a></p>
-<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>ssl</tag>
-        <tag>acme.sh</tag>
-        <tag>letsencrypt</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《厉害了我的国》(2018)讲述纲要</title>
     <url>/amazing-china/</url>
     <content><![CDATA[<h1 id="《厉害了我的国》-2018-讲述纲要"><a href="#《厉害了我的国》-2018-讲述纲要" class="headerlink" title="《厉害了我的国》(2018)讲述纲要"></a>《厉害了我的国》(2018)讲述纲要</h1><blockquote>
@@ -95,6 +49,51 @@
       </categories>
       <tags>
         <tag>中国</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《如何阅读一本书》读书笔记</title>
+    <url>/book-rhydybs/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-09%2Frhydybs.jpeg" alt="rhydybs.jpeg-w140"></p>
+<a id="more"></a>
+<p><img data-src="http://images.xyang.xin/2019-09%2F%E3%80%8A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6%E3%80%8B.png" alt="《如何阅读一本书》.png"></p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《如何阅读一本书》的脉络要点进行总结，用于阅读时的参考。（图谱内容较多，建议保存后浏览）。</p>
+<p>书中提出了四种阅读层次，层次逐级递增，较高层次的阅读包含较低层次的阅读。基础阅读是对字词句意思的理解，是阅读的基础。使用检视阅读来理清书的脉络，来甄别一本书是否值得读，是否适合现在读。使用分析阅读来细细品味一本好书。主题阅读适用于学术研究或对自己感兴趣的问题的探究性学习。</p>
+<!-- more -->
+<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><p>读者是要“发现”书中隐藏着的骨架。而作者则是以制造骨架为开始，但却想办法把骨架“隐藏”起来。他的目的是，用艺术的手法将骨架隐藏起来，或是说，在骨架上添加血肉。</p>
+<p>所谓文章的清楚明白，就是跟纲要的区隔是否清楚有关，所谓文章的前后一贯，就是能把不同的重点条理有序地排列出来。</p>
+<p>这个捷径是要靠你的检视阅读技巧来建立的。你收集好书目之后，要做的第一件事是检视书单上所有的书。在做检视阅读之前，绝不要用分析阅读来阅读。检视阅读不会让你明白有关主题的所有错综复杂的内容，或是作者所有的洞察力，但却具有两种基本的功能。第一，它会让你对自己想要研究的主题有个清晰的概念，这样接下来你针对某几本书做分析阅读时，会大有助益。第二，它会简化你的书目到一个合理的程度。</p>
+<p>能够熟练检视阅读的读者，不但能在心中将书籍分类，而且能对内容有一个粗浅的了解。他也会用非常短的时间就发现，这本书谈的内容对他研究的主题到底重不重要————这可能要等到读下本书的时候才能发现。但是有两件事至少他已经知道其中之一。那就是他不是发现这本书必须回头再读一次，以获得启发，便是知道不论这本书多有趣又多丰富，却毫无启发性，因此不值得重新再读。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
+    <url>/acme-sh/</url>
+    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
+<ul>
+<li>http 认证方式</li>
+<li>dns 方式<a id="more"></a>
+
+</li>
+</ul>
+<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
+<p><a href="https://github.com/Neilpang/acme.sh/wiki/说明" target="_blank" rel="noopener">github 安装说明</a></p>
+<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssl</tag>
+        <tag>acme.sh</tag>
+        <tag>letsencrypt</tag>
       </tags>
   </entry>
   <entry>
@@ -128,25 +127,130 @@
       </tags>
   </entry>
   <entry>
-    <title>《如何阅读一本书》读书笔记</title>
-    <url>/book-rhydybs/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-09%2Frhydybs.jpeg" alt="rhydybs.jpeg-w140"></p>
+    <title>解构赋值 ———【一天一个 es6 语法】</title>
+    <url>/es6-everyday-3/</url>
+    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
 <a id="more"></a>
-<p><img data-src="http://images.xyang.xin/2019-09%2F%E3%80%8A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6%E3%80%8B.png" alt="《如何阅读一本书》.png"></p>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《如何阅读一本书》的脉络要点进行总结，用于阅读时的参考。（图谱内容较多，建议保存后浏览）。</p>
-<p>书中提出了四种阅读层次，层次逐级递增，较高层次的阅读包含较低层次的阅读。基础阅读是对字词句意思的理解，是阅读的基础。使用检视阅读来理清书的脉络，来甄别一本书是否值得读，是否适合现在读。使用分析阅读来细细品味一本好书。主题阅读适用于学术研究或对自己感兴趣的问题的探究性学习。</p>
-<!-- more -->
-<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><p>读者是要“发现”书中隐藏着的骨架。而作者则是以制造骨架为开始，但却想办法把骨架“隐藏”起来。他的目的是，用艺术的手法将骨架隐藏起来，或是说，在骨架上添加血肉。</p>
-<p>所谓文章的清楚明白，就是跟纲要的区隔是否清楚有关，所谓文章的前后一贯，就是能把不同的重点条理有序地排列出来。</p>
-<p>这个捷径是要靠你的检视阅读技巧来建立的。你收集好书目之后，要做的第一件事是检视书单上所有的书。在做检视阅读之前，绝不要用分析阅读来阅读。检视阅读不会让你明白有关主题的所有错综复杂的内容，或是作者所有的洞察力，但却具有两种基本的功能。第一，它会让你对自己想要研究的主题有个清晰的概念，这样接下来你针对某几本书做分析阅读时，会大有助益。第二，它会简化你的书目到一个合理的程度。</p>
-<p>能够熟练检视阅读的读者，不但能在心中将书籍分类，而且能对内容有一个粗浅的了解。他也会用非常短的时间就发现，这本书谈的内容对他研究的主题到底重不重要————这可能要等到读下本书的时候才能发现。但是有两件事至少他已经知道其中之一。那就是他不是发现这本书必须回头再读一次，以获得启发，便是知道不论这本书多有趣又多丰富，却毫无启发性，因此不值得重新再读。</p>
+
+<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">"Bill"</span>,</span><br><span class="line">    lastnNme: <span class="string">"Wilson"</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
+<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">"Kirkwood"</span>, <span class="string">"Squaw"</span>, <span class="string">"Alpine"</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">"Kirkwood"</span>, <span class="string">"Squaw"</span>, <span class="string">"Alpine"</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">"hello"</span>;</span><br><span class="line">a <span class="comment">// "h"</span></span><br><span class="line">b <span class="comment">// "e"</span></span><br><span class="line">c <span class="comment">// "l"</span></span><br><span class="line">d <span class="comment">// "l"</span></span><br><span class="line">e <span class="comment">// "o"</span></span><br></pre></td></tr></table></figure>
+<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">"hello"</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank" rel="noopener">解构赋值 - JavaScript | MDN</a></li>
+<li><a href="https://es6.ruanyifeng.com/#docs/destructuring" target="_blank" rel="noopener">变量的解构赋值 - ECMAScript 6入门</a></li>
+<li>《React 学习手册》</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>【一天一个 es6 语法】</tag>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>目标和关键成果法 (Objectives and Key Results)</title>
+    <url>/OKRs/</url>
+    <content><![CDATA[<blockquote>
+<p>The Objective is the direction.<br>The key results have to be measured.<br>Yes.No.Simple</p>
+</blockquote>
+<h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>Being took to the wrong objectives is unacceptable.<br>被带向错误的目标是让人无法接受的。</p>
+<a id="more"></a>
+
+<p>Truly transformational teams combine their ambitions to their passion and to their purpose，and they develop a clear and compelling sense of why.<br>真正变革型的团队都会将自己的雄心、热情和目标结合到一起，他们很清楚为何要做，且理由令人信服。</p>
+<h1 id="Objective"><a href="#Objective" class="headerlink" title="Objective"></a>Objective</h1><p>Significant (重要)<br>Concrete （具体）<br>Action-oriented （以行动为导向）<br>Inspirational （激励人心）</p>
+<p>If the heart doesn’t find a perfect rhyme with the head, then your passion means nothing.<br>如果内心找不到与大脑和谐的韵律，你的热情就毫无用处。</p>
+<h1 id="Good-key-results"><a href="#Good-key-results" class="headerlink" title="Good key results"></a>Good key results</h1><p>Specific &amp; Time-bound（明确、有时间限制）<br>Aggressive Yet Realistic（激进、现实）<br>Measurable &amp; Verifiable (可衡量、可评估)</p>
+<h1 id="Why-1"><a href="#Why-1" class="headerlink" title="Why"></a>Why</h1><p>OKRs as transparent vessels, that are made from the whats and hows of our ambitions. What really matters is the why that we pour into those vessels. Thats’s why we do our work.<br> OKRS 可以看做是一个透明的容器，它由野心勃勃的“做什么”和“怎么做”构成。 真正的关键在于放进容器中的“为什么” 那是我们工作的原因。</p>
+<h1 id="Write-down-your"><a href="#Write-down-your" class="headerlink" title="Write down your"></a>Write down your</h1><p>Values (the right metrics)<br>Objectives<br>Key results</p>
+]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>方法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>人生</title>
+    <url>/flesh/</url>
+    <content><![CDATA[<h2 id="他的话可信吗"><a href="#他的话可信吗" class="headerlink" title="他的话可信吗"></a>他的话可信吗</h2><blockquote>
+<p>听人谈话的时候，我们需要了解这人是谁，他是处在何种角度，代表何种阶级谈话的。</p>
+</blockquote>
+<p>他的话是他的经验之谈，是他从权威的书籍中得知，论坛上看到，还是他仅仅只是为了让你相信而虚构或者是一个看似正确而往往值得商榷的。</p>
+<a id="more"></a>
+
+<h2 id="好话"><a href="#好话" class="headerlink" title="好话"></a>好话</h2><blockquote>
+<p>听见好话一定要多长心眼，好话会让你做出的决策违背初心，待后知后觉，晚矣。</p>
+</blockquote>
+<p>投票软件多少是有漏洞的，从开发人员的角度利用漏洞刷票是很容易被发现，且破坏比赛的公平度的。很多亲人朋友呢很支持我，感觉一个投票闹得挺辛苦的。就不得不在群里向主办方反馈，不一会儿开发投票软件公司的老总进来了，也不说是解决问题。</p>
+<p>主办方第一轮给出的结果，随便找个理由，说没有刷票行为。<br>网络投票看是否刷票，一般都是看着某一天投票数是否波动过大，尤其是最后一天，或者票数数量过多，咱们开始怀疑刷票。然而这都只是怀疑，技术部门要是不想解决也是没办法的。<br>然而当投票网站上有访问量和投票数那就不一样了，当投票数大于访问量？这是什么怪物？页面都没被访问，你又是怎么点击投票按钮的，这就是异常刷票了。</p>
+<p>这种情况主办方如果不证明是系统漏洞，抑或是抓出一个有刷票行为的队伍来，那这个主办方麻烦就大了，网络舆情还是很管用的。</p>
+<p>后面主办方不得不抓出了一个，五天投票，前面四天总共几十票，最后一天下午飙几万的队伍。据肉眼观察肯定是不止一个的。</p>
+<p>但是同时那个老总私聊到我，简单的说“本科进决赛很优秀了，有时间聊一下”。再加上我本身对这软件公司是没有敌意的，因为系统安全性技术比较难，本身抱着的态度就是能找出刷票的队伍，解决问题就行了。</p>
+<p>他这一句话导致的最终结果就是，简单的将刷票最厉害的队伍解决了，而放下了第一轮结果所公布的无赖行为和更多的不公平性的愤懑。</p>
+<p>一句好话让我对公平性诉求，从解决，到最简单的解决。</p>
+<h2 id="解决生活中的难题"><a href="#解决生活中的难题" class="headerlink" title="解决生活中的难题"></a>解决生活中的难题</h2><p>倘若有条件自己给自己安排一件难题，例如考研究生、公务员，不是生活强加给我们的，那便是为了多一种生活体验。抱着解决问题的心态去攻坚克难，坚持下去完整的度过有计划的每一天便是一种胜利。</p>
+<h2 id="为什么不同"><a href="#为什么不同" class="headerlink" title="为什么不同"></a>为什么不同</h2><p>假若我们抱怨，抱怨自己没有出生在名门旺族，抱怨自己没有一个好看的脸蛋。然而人之所以是自己，正是源于这些后天难以更改的不同之处。</p>
 ]]></content>
       <categories>
         <category>人文修养</category>
       </categories>
       <tags>
-        <tag>读书笔记</tag>
-        <tag>阅读</tag>
+        <tag>人生</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>由简入深配置 iTem2 终端</title>
+    <url>/iterm2/</url>
+    <content><![CDATA[<h1 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h1><p>brew 安装 zsh<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install zsh</span><br><span class="line">sudo chsh -s &#x2F;usr&#x2F;local&#x2F;bin&#x2F;zsh</span><br></pre></td></tr></table></figure><br>从 zsh 切换回 bash<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chsh -s &#x2F;bin&#x2F;bash</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>PS：如果从 bash 切换到 zsh，但想保留 bash 所设置的环境变量，可在 .zshrc文件末尾添加 </p>
+<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source ~&#x2F;.bash_profile</span><br></pre></td></tr></table></figure></code></pre><p>安装 oh my zsh  </p>
+<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl -L https:&#x2F;&#x2F;github.com&#x2F;robbyrussell&#x2F;oh-my-zsh&#x2F;raw&#x2F;master&#x2F;tools&#x2F;install.sh | sh</span><br></pre></td></tr></table></figure></code></pre><h2 id="自动提示命令"><a href="#自动提示命令" class="headerlink" title="自动提示命令"></a>自动提示命令</h2><p>我们输入命令时，终端会自动提示你接下来可能要输入的命令，这时按 → 便可输出这些命令，非常方便。<br>设置如下：</p>
+<ul>
+<li><p>克隆仓库到本地 ~/.oh-my-zsh/custom/plugins 路径下</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone git:&#x2F;&#x2F;github.com&#x2F;zsh-users&#x2F;zsh-autosuggestions $ZSH_CUSTOM&#x2F;plugins&#x2F;zsh-autosuggestions</span><br></pre></td></tr></table></figure></li>
+<li><p>用 vim  ~/.zshrc 打开文件，下滑找到插件设置命令，默认是 <code>plugins=(git)</code> ，我们把它修改为</p>
+<p>  <code>plugins=(zsh-autosuggestions git)</code></p>
+</li>
+<li><p>要修改提示命令的颜色才看得到效果<br><img data-src="https://images.xyang.xin/2018-11/1541985092.png" alt="-c666"><br>然后这样 vim 的颜色也会随之改变</p>
+</li>
+<li><p>修改提示颜色在 .zshrc 文件中添加如下命令</p>
+<p>  <code>ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=&#39;fg=value&#39;</code></p>
+</li>
+</ul>
+<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>安装成功后，用vim ~/.zshrc打开隐藏文件，修改主题为agnoster</p>
+<p>PS：<a href="https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf" target="_blank" rel="noopener">zsh主题</a>，参考主题连接选择自己喜欢的主题。</p>
+<pre><code>`ZSH_THEME=&quot;agnoster&quot;`</code></pre><p>应用这个主题需要特殊的字体支持，否则会出现乱码情况，这时我们来配置字体：</p>
+<ul>
+<li><p>使用<a href="https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf" target="_blank" rel="noopener"> Meslo</a> 字体，点开连接点击 view raw 下载字体。</p>
+</li>
+<li><p>安装字体到系统字体册。</p>
+<h2 id="语法高亮"><a href="#语法高亮" class="headerlink" title="语法高亮"></a>语法高亮</h2><p>  <code>brew install zsh-syntax-highlighting</code><br>在.zshrc中追加以下内容:  </p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source &#x2F;usr&#x2F;local&#x2F;share&#x2F;zsh-syntax-highlighting&#x2F;zsh-syntax-highlighting.zsh</span><br><span class="line">plugins&#x3D;(</span><br><span class="line">    git</span><br><span class="line">    zsh-autosuggestions</span><br><span class="line">    zsh-syntax-highlighting # 务必在最后</span><br><span class="line">    ）</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="给-iTerm-中Vim配色"><a href="#给-iTerm-中Vim配色" class="headerlink" title="给 iTerm 中Vim配色"></a>给 iTerm 中Vim配色</h2><p>首先<a href="https://github.com/altercation/solarized" target="_blank" rel="noopener">下载solarized</a>  </p>
+<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd solarized  </span><br><span class="line">$ cd vim-colors-solarized&#x2F;colors  </span><br><span class="line">$ mkdir -p ~&#x2F;.vim&#x2F;colors   </span><br><span class="line">$ cp solarized.vim ~&#x2F;.vim&#x2F;colors&#x2F;</span><br><span class="line">$ vi ~&#x2F;.vimrc</span><br></pre></td></tr></table></figure></code></pre><p>加入下面三行设置即可：  </p>
+<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">syntax enable  </span><br><span class="line">set background&#x3D;dark  </span><br><span class="line">colorscheme solarized</span><br></pre></td></tr></table></figure></code></pre><h2 id="给ls配色"><a href="#给ls配色" class="headerlink" title="给ls配色"></a>给ls配色</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim .zshrc</span><br><span class="line">export LSCOLORS&#x3D;&quot;exfxcxdxbxexexabagacad&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装-thefuck-纠错插件"><a href="#安装-thefuck-纠错插件" class="headerlink" title="安装 thefuck 纠错插件"></a>安装 thefuck 纠错插件</h2><p><code>brew install thefuck</code><br>修正上一条错误的输入</p>
+<h2 id="安装-autojump"><a href="#安装-autojump" class="headerlink" title="安装 autojump"></a>安装 autojump</h2><p><code>brew install autojump</code><br> // zshrc新增<br> [[ -s $(brew –prefix)/etc/profile.d/autojump.sh ]] &amp;&amp; . $(brew –prefix)/etc/profile.d/autojump.sh<br> // 生效配置<br><code>source ~/.zshrc</code></p>
+<h2 id="让终端走代理"><a href="#让终端走代理" class="headerlink" title="让终端走代理"></a>让终端走代理</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export http_proxy&#x3D;http:&#x2F;&#x2F;127.0.0.1:1080;export https_proxy&#x3D;http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">curl pub.dartlang.org  # 无输出则设置成功</span><br><span class="line"># 需要代理服务器支持 http</span><br></pre></td></tr></table></figure>
+<h2 id="iterm2-vim-开启滚轮"><a href="#iterm2-vim-开启滚轮" class="headerlink" title="iterm2 vim 开启滚轮"></a>iterm2 vim 开启滚轮</h2><p>在 iterm2中配置如下<br><img data-src="https://images.xyang.xin/2018-11/1541989133.png" alt="-c666"></p>
+<h2 id="配置-download-with-scp"><a href="#配置-download-with-scp" class="headerlink" title="配置 download with scp"></a>配置 download with scp</h2><p>在 shell 配置文件的 item2 配置<em>之后</em>加上：<br><code>export iterm2_hostname=远程服务器公网Ip</code><br>也可以在 .iterm2_shell_integration.zsh 文件里面直接改。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>开发工具</tag>
       </tags>
   </entry>
   <entry>
@@ -229,61 +333,6 @@
       <tags>
         <tag>【一天一个 es6 语法】</tag>
         <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解构赋值 ———【一天一个 es6 语法】</title>
-    <url>/es6-everyday-3/</url>
-    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
-<a id="more"></a>
-
-<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">"Bill"</span>,</span><br><span class="line">    lastnNme: <span class="string">"Wilson"</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
-<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">"Kirkwood"</span>, <span class="string">"Squaw"</span>, <span class="string">"Alpine"</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">"Kirkwood"</span>, <span class="string">"Squaw"</span>, <span class="string">"Alpine"</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
-<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">"hello"</span>;</span><br><span class="line">a <span class="comment">// "h"</span></span><br><span class="line">b <span class="comment">// "e"</span></span><br><span class="line">c <span class="comment">// "l"</span></span><br><span class="line">d <span class="comment">// "l"</span></span><br><span class="line">e <span class="comment">// "o"</span></span><br></pre></td></tr></table></figure>
-<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">"hello"</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank" rel="noopener">解构赋值 - JavaScript | MDN</a></li>
-<li><a href="https://es6.ruanyifeng.com/#docs/destructuring" target="_blank" rel="noopener">变量的解构赋值 - ECMAScript 6入门</a></li>
-<li>《React 学习手册》</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>【一天一个 es6 语法】</tag>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>人生</title>
-    <url>/flesh/</url>
-    <content><![CDATA[<h2 id="他的话可信吗"><a href="#他的话可信吗" class="headerlink" title="他的话可信吗"></a>他的话可信吗</h2><blockquote>
-<p>听人谈话的时候，我们需要了解这人是谁，他是处在何种角度，代表何种阶级谈话的。</p>
-</blockquote>
-<p>他的话是他的经验之谈，是他从权威的书籍中得知，论坛上看到，还是他仅仅只是为了让你相信而虚构或者是一个看似正确而往往值得商榷的。</p>
-<a id="more"></a>
-
-<h2 id="好话"><a href="#好话" class="headerlink" title="好话"></a>好话</h2><blockquote>
-<p>听见好话一定要多长心眼，好话会让你做出的决策违背初心，待后知后觉，晚矣。</p>
-</blockquote>
-<p>投票软件多少是有漏洞的，从开发人员的角度利用漏洞刷票是很容易被发现，且破坏比赛的公平度的。很多亲人朋友呢很支持我，感觉一个投票闹得挺辛苦的。就不得不在群里向主办方反馈，不一会儿开发投票软件公司的老总进来了，也不说是解决问题。</p>
-<p>主办方第一轮给出的结果，随便找个理由，说没有刷票行为。<br>网络投票看是否刷票，一般都是看着某一天投票数是否波动过大，尤其是最后一天，或者票数数量过多，咱们开始怀疑刷票。然而这都只是怀疑，技术部门要是不想解决也是没办法的。<br>然而当投票网站上有访问量和投票数那就不一样了，当投票数大于访问量？这是什么怪物？页面都没被访问，你又是怎么点击投票按钮的，这就是异常刷票了。</p>
-<p>这种情况主办方如果不证明是系统漏洞，抑或是抓出一个有刷票行为的队伍来，那这个主办方麻烦就大了，网络舆情还是很管用的。</p>
-<p>后面主办方不得不抓出了一个，五天投票，前面四天总共几十票，最后一天下午飙几万的队伍。据肉眼观察肯定是不止一个的。</p>
-<p>但是同时那个老总私聊到我，简单的说“本科进决赛很优秀了，有时间聊一下”。再加上我本身对这软件公司是没有敌意的，因为系统安全性技术比较难，本身抱着的态度就是能找出刷票的队伍，解决问题就行了。</p>
-<p>他这一句话导致的最终结果就是，简单的将刷票最厉害的队伍解决了，而放下了第一轮结果所公布的无赖行为和更多的不公平性的愤懑。</p>
-<p>一句好话让我对公平性诉求，从解决，到最简单的解决。</p>
-<h2 id="解决生活中的难题"><a href="#解决生活中的难题" class="headerlink" title="解决生活中的难题"></a>解决生活中的难题</h2><p>倘若有条件自己给自己安排一件难题，例如考研究生、公务员，不是生活强加给我们的，那便是为了多一种生活体验。抱着解决问题的心态去攻坚克难，坚持下去完整的度过有计划的每一天便是一种胜利。</p>
-<h2 id="为什么不同"><a href="#为什么不同" class="headerlink" title="为什么不同"></a>为什么不同</h2><p>假若我们抱怨，抱怨自己没有出生在名门旺族，抱怨自己没有一个好看的脸蛋。然而人之所以是自己，正是源于这些后天难以更改的不同之处。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>人生</tag>
       </tags>
   </entry>
   <entry>
@@ -431,55 +480,6 @@
       </tags>
   </entry>
   <entry>
-    <title>由简入深配置 iTem2 终端</title>
-    <url>/iterm2/</url>
-    <content><![CDATA[<h1 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h1><p>brew 安装 zsh<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install zsh</span><br><span class="line">sudo chsh -s &#x2F;usr&#x2F;local&#x2F;bin&#x2F;zsh</span><br></pre></td></tr></table></figure><br>从 zsh 切换回 bash<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chsh -s &#x2F;bin&#x2F;bash</span><br></pre></td></tr></table></figure></p>
-<a id="more"></a>
-<p>PS：如果从 bash 切换到 zsh，但想保留 bash 所设置的环境变量，可在 .zshrc文件末尾添加 </p>
-<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source ~&#x2F;.bash_profile</span><br></pre></td></tr></table></figure></code></pre><p>安装 oh my zsh  </p>
-<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl -L https:&#x2F;&#x2F;github.com&#x2F;robbyrussell&#x2F;oh-my-zsh&#x2F;raw&#x2F;master&#x2F;tools&#x2F;install.sh | sh</span><br></pre></td></tr></table></figure></code></pre><h2 id="自动提示命令"><a href="#自动提示命令" class="headerlink" title="自动提示命令"></a>自动提示命令</h2><p>我们输入命令时，终端会自动提示你接下来可能要输入的命令，这时按 → 便可输出这些命令，非常方便。<br>设置如下：</p>
-<ul>
-<li><p>克隆仓库到本地 ~/.oh-my-zsh/custom/plugins 路径下</p>
-  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone git:&#x2F;&#x2F;github.com&#x2F;zsh-users&#x2F;zsh-autosuggestions $ZSH_CUSTOM&#x2F;plugins&#x2F;zsh-autosuggestions</span><br></pre></td></tr></table></figure></li>
-<li><p>用 vim  ~/.zshrc 打开文件，下滑找到插件设置命令，默认是 <code>plugins=(git)</code> ，我们把它修改为</p>
-<p>  <code>plugins=(zsh-autosuggestions git)</code></p>
-</li>
-<li><p>要修改提示命令的颜色才看得到效果<br><img data-src="https://images.xyang.xin/2018-11/1541985092.png" alt="-c666"><br>然后这样 vim 的颜色也会随之改变</p>
-</li>
-<li><p>修改提示颜色在 .zshrc 文件中添加如下命令</p>
-<p>  <code>ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=&#39;fg=value&#39;</code></p>
-</li>
-</ul>
-<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>安装成功后，用vim ~/.zshrc打开隐藏文件，修改主题为agnoster</p>
-<p>PS：<a href="https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf" target="_blank" rel="noopener">zsh主题</a>，参考主题连接选择自己喜欢的主题。</p>
-<pre><code>`ZSH_THEME=&quot;agnoster&quot;`</code></pre><p>应用这个主题需要特殊的字体支持，否则会出现乱码情况，这时我们来配置字体：</p>
-<ul>
-<li><p>使用<a href="https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf" target="_blank" rel="noopener"> Meslo</a> 字体，点开连接点击 view raw 下载字体。</p>
-</li>
-<li><p>安装字体到系统字体册。</p>
-<h2 id="语法高亮"><a href="#语法高亮" class="headerlink" title="语法高亮"></a>语法高亮</h2><p>  <code>brew install zsh-syntax-highlighting</code><br>在.zshrc中追加以下内容:  </p>
-  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source &#x2F;usr&#x2F;local&#x2F;share&#x2F;zsh-syntax-highlighting&#x2F;zsh-syntax-highlighting.zsh</span><br><span class="line">plugins&#x3D;(</span><br><span class="line">    git</span><br><span class="line">    zsh-autosuggestions</span><br><span class="line">    zsh-syntax-highlighting # 务必在最后</span><br><span class="line">    ）</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h2 id="给-iTerm-中Vim配色"><a href="#给-iTerm-中Vim配色" class="headerlink" title="给 iTerm 中Vim配色"></a>给 iTerm 中Vim配色</h2><p>首先<a href="https://github.com/altercation/solarized" target="_blank" rel="noopener">下载solarized</a>  </p>
-<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd solarized  </span><br><span class="line">$ cd vim-colors-solarized&#x2F;colors  </span><br><span class="line">$ mkdir -p ~&#x2F;.vim&#x2F;colors   </span><br><span class="line">$ cp solarized.vim ~&#x2F;.vim&#x2F;colors&#x2F;</span><br><span class="line">$ vi ~&#x2F;.vimrc</span><br></pre></td></tr></table></figure></code></pre><p>加入下面三行设置即可：  </p>
-<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">syntax enable  </span><br><span class="line">set background&#x3D;dark  </span><br><span class="line">colorscheme solarized</span><br></pre></td></tr></table></figure></code></pre><h2 id="给ls配色"><a href="#给ls配色" class="headerlink" title="给ls配色"></a>给ls配色</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim .zshrc</span><br><span class="line">export LSCOLORS&#x3D;&quot;exfxcxdxbxexexabagacad&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="安装-thefuck-纠错插件"><a href="#安装-thefuck-纠错插件" class="headerlink" title="安装 thefuck 纠错插件"></a>安装 thefuck 纠错插件</h2><p><code>brew install thefuck</code><br>修正上一条错误的输入</p>
-<h2 id="安装-autojump"><a href="#安装-autojump" class="headerlink" title="安装 autojump"></a>安装 autojump</h2><p><code>brew install autojump</code><br> // zshrc新增<br> [[ -s $(brew –prefix)/etc/profile.d/autojump.sh ]] &amp;&amp; . $(brew –prefix)/etc/profile.d/autojump.sh<br> // 生效配置<br><code>source ~/.zshrc</code></p>
-<h2 id="让终端走代理"><a href="#让终端走代理" class="headerlink" title="让终端走代理"></a>让终端走代理</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export http_proxy&#x3D;http:&#x2F;&#x2F;127.0.0.1:1080;export https_proxy&#x3D;http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">curl pub.dartlang.org  # 无输出则设置成功</span><br><span class="line"># 需要代理服务器支持 http</span><br></pre></td></tr></table></figure>
-<h2 id="iterm2-vim-开启滚轮"><a href="#iterm2-vim-开启滚轮" class="headerlink" title="iterm2 vim 开启滚轮"></a>iterm2 vim 开启滚轮</h2><p>在 iterm2中配置如下<br><img data-src="https://images.xyang.xin/2018-11/1541989133.png" alt="-c666"></p>
-<h2 id="配置-download-with-scp"><a href="#配置-download-with-scp" class="headerlink" title="配置 download with scp"></a>配置 download with scp</h2><p>在 shell 配置文件的 item2 配置<em>之后</em>加上：<br><code>export iterm2_hostname=远程服务器公网Ip</code><br>也可以在 .iterm2_shell_integration.zsh 文件里面直接改。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>开发工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>编程语言之 Java</title>
     <url>/java-language/</url>
     <content><![CDATA[<h1 id="Integer-parseInt-与-Integer-valueOf-的比较"><a href="#Integer-parseInt-与-Integer-valueOf-的比较" class="headerlink" title="Integer.parseInt() 与 Integer.valueOf() 的比较"></a>Integer.parseInt() 与 Integer.valueOf() 的比较</h1><p>Integer.parseInt() 和 Integer.valueOf() 都是用来 将String转换为Int的。</p>
@@ -513,58 +513,6 @@
       <categories>
         <category>日志</category>
       </categories>
-  </entry>
-  <entry>
-    <title>切换 Shell 需谨慎</title>
-    <url>/linux-user/</url>
-    <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
-<a id="more"></a>
-
-<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><p>执行<code>chsh -s /bin/zsh</code>命令切换成功。<br>自此导致 root 用户无法验证登陆。</p>
-<p>庆幸这台服务器不止一个用户。<br>通过普通用户登陆服务器，执行 su 命令显示如下：<br><img data-src="https://images.xyang.xin/2018-10/1539333225.png" alt="执行 su 命令"></p>
-<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>解决办法如下：<br>sudo vim /etc/passwd 将 root 用户所对应的 Shell 改回 Bash。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>一台服务器应该有至少两个以上的用户。<br>下次再遇到一次这样的服务器😢再去具体研究一下。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>Shell</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>鲁迅</title>
-    <url>/luxun/</url>
-    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
-<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>鲁迅</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决远程服务器重装系统导致的 mac 终端无法连接的问题</title>
-    <url>/mac-ssh-error/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png" alt="2019-05-14 at 17.17.png"><br>known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。</p>
-<h2 id="通过如下两种方案解决该问题"><a href="#通过如下两种方案解决该问题" class="headerlink" title="通过如下两种方案解决该问题"></a>通过如下两种方案解决该问题</h2><ol>
-<li><p>输入命令(推荐)：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -R服务器ip地址</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-</li>
-<li><p>删除下面文件中相关 ip 的信息（公匙）<br>~/.ssh/known_hosts</p>
-</li>
-</ol>
-<p>.ssh文件为隐藏文件夹可通过 command + shift + . 查看。或者直接：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/.ssh/known_hosts</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
   </entry>
   <entry>
     <title>Mac 配置上云神器 Mackup</title>
@@ -628,6 +576,24 @@
       </tags>
   </entry>
   <entry>
+    <title>切换 Shell 需谨慎</title>
+    <url>/linux-user/</url>
+    <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
+<a id="more"></a>
+
+<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><p>执行<code>chsh -s /bin/zsh</code>命令切换成功。<br>自此导致 root 用户无法验证登陆。</p>
+<p>庆幸这台服务器不止一个用户。<br>通过普通用户登陆服务器，执行 su 命令显示如下：<br><img data-src="https://images.xyang.xin/2018-10/1539333225.png" alt="执行 su 命令"></p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>解决办法如下：<br>sudo vim /etc/passwd 将 root 用户所对应的 Shell 改回 Bash。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>一台服务器应该有至少两个以上的用户。<br>下次再遇到一次这样的服务器😢再去具体研究一下。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>Shell</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Mac 大扫除🧹</title>
     <url>/macos-clean/</url>
     <content><![CDATA[<p>基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。</p>
@@ -680,6 +646,74 @@
       <tags>
         <tag>MacOS</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>HTTP 代理与 Socks5 代理</title>
+    <url>/proxy-http-socks5/</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>本文通过实践经历基本的认识 HTTP 代理与 Socks5 代理的用法与理解其精髓。同时也解决 go get 库无法下载的问题。</p>
+<a id="more"></a>
+<h2 id="渐渐"><a href="#渐渐" class="headerlink" title="渐渐"></a>渐渐</h2><p>终端走代理我最初接触到的是 HTTP 代理，这篇文章可以见证(<a href="https://blog.xyang.xin/proxy-teach/index.html">代理服务器 | 韶 光</a>)。当然我的这些实践都是基于 shadowsocks 这款产品。随后我又接触了 Socks5 代理，因为简单其更快，又隐隐觉得其更底层，通过以下代码配置：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> .zshrc</span></span><br><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br></pre></td></tr></table></figure>
+<p>仍然要开 <em>全局模式</em> 终端才能走代理。</p>
+<p>虽然没有使用 HTTP 代理，但是很长一段时间我都没有关闭 <em>启用 HTTP 代理</em> 这个按钮，直到一天我连接手机热点 shadowsocks 闪退，我才关闭将其关闭了。这更显 Socks5 代理的优秀。</p>
+<h2 id="今天"><a href="#今天" class="headerlink" title="今天"></a>今天</h2><p>当我重新安装 <a href="https://github.com/fatih/vim-go" target="_blank" rel="noopener">vim-go</a>,并执行 <code>:GoUpdateBinaries</code> 故事又开始了。<br>显示类似于如下的一系列报错：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim-go: Updating guru. Reinstalling golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master to folder &#x2F;Users&#x2F;sweeney&#x2F;Documents&#x2F;code&#x2F;go&#x2F;bin</span><br><span class="line">vim-go: Error installing golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: go get golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: invalid version: Get &quot;https:&#x2F;&#x2F;proxy.golang.org&#x2F;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru&#x2F;@v&#x2F;master.info&quot;: dial tcp 172.217.24.17:443: i&#x2F;o</span><br><span class="line">timeout</span><br></pre></td></tr></table></figure>
+<p>首先我对 socks5 是很相信的，天生的认为其是较为底层的代理，应该不存在 HTTP 能代理而 Socks5 不能代理的情况。</p>
+<p>“应该” 呵呵，所以我就耗了近一个半小时在这里。</p>
+<p>以上问题其实和直接执行 <code>go get golang.org/x/tools/cmd/guru</code>，然后输出如下错误是一个道理。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">unrecognized import path &quot;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru&quot;: https fetch: Get &quot;https:&#x2F;&#x2F;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru?go-get&#x3D;1&quot;: dial tcp 216.239.37.1:443: i&#x2F;o timeout</span><br></pre></td></tr></table></figure>
+<p>都是 go get 无法从 golang.org 下载包。</p>
+<p>虽然 <code>curl golang.org</code> 能够访问这个网站，但是还是无法下载包。</p>
+<h2 id="Socks5-vs-HTTP"><a href="#Socks5-vs-HTTP" class="headerlink" title="Socks5 vs HTTP"></a>Socks5 vs HTTP</h2><table>
+<thead>
+<tr>
+<th></th>
+<th align="center">HTTP Proxy</th>
+<th align="center">Socks5 Proxy</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>功能</td>
+<td align="center">http 代理对于使用浏览器上网的用户很重要。</td>
+<td align="center">并不使用 http 协议，是更通用，更低级别的代理。</td>
+</tr>
+<tr>
+<td>安全</td>
+<td align="center">被传输的数据极可能被查看。</td>
+<td align="center">由于SOCKS无法读取数据，因此查看数据的几率很小。</td>
+</tr>
+<tr>
+<td>速度</td>
+<td align="center">速度较慢。</td>
+<td align="center">通用服务器速度快。</td>
+</tr>
+<tr>
+<td>连接工具</td>
+<td align="center">任何工具。</td>
+<td align="center">有限制工具。</td>
+</tr>
+<tr>
+<td>建议</td>
+<td align="center">传输少量数据。</td>
+<td align="center">传输大体积的速度。</td>
+</tr>
+</tbody></table>
+<p>SOCKS 作用在 OSI 模型的第四层 —— 会话层上。SOCKS4 只能代理TCP协议，而 SOCKS5 什么协议都可以代理。HTTP工作在应用层上，Socks代理只是简单地传递数据包，而不必关心是何种应用协议(比如 FTP、HTTP 和 NNTP 请求)，所以Socks代理服务器比应用层代理服务器要快得多。<br><img data-src="http://images.xyang.xin/2020-03%2Fnetwork.png" alt="network.png"></p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br><span class="line">export http_proxy=socks5://127.0.0.1:20808</span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">alias</span> go=<span class="string">'http_proxy=socks5://127.0.0.1:20808 go'</span></span></span><br></pre></td></tr></table></figure>
+
+<h2 id="遗留问题"><a href="#遗留问题" class="headerlink" title="遗留问题"></a>遗留问题</h2><p>我还是不知道为什么 ALL_PROXY 没对 go get 生效，而 http_proxy 生效了。并且经过测试，不是大小写的问题。</p>
+<hr>
+<p>参考文献：</p>
+<ul>
+<li><a href="https://dzone.com/articles/breaking-down-complex-differences-of-socks-vs-http" target="_blank" rel="noopener">Breaking Down Differences Between SOCKS vs HTTP Proxy - DZone Security</a></li>
+<li><a href="https://colobu.com/2017/01/26/how-to-go-get-behind-GFW/" target="_blank" rel="noopener">如何在长城后面go get一些库 | 鸟窝</a></li>
+<li><a href="http://www.yunlianip.com/News-getinfo-id-61.html" target="_blank" rel="noopener">SOCKS5代理和HTTP代理有什么区别？-云连代理</a></li>
+<li><a href="https://stackoverflow.com/questions/10383299/how-do-i-configure-go-command-to-use-a-proxy" target="_blank" rel="noopener">How do I configure go command to use a proxy? - Stack Overflow</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
   </entry>
   <entry>
     <title>包管理</title>
@@ -762,72 +796,38 @@
       </tags>
   </entry>
   <entry>
-    <title>HTTP 代理与 Socks5 代理</title>
-    <url>/proxy-http-socks5/</url>
-    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>本文通过实践经历基本的认识 HTTP 代理与 Socks5 代理的用法与理解其精髓。同时也解决 go get 库无法下载的问题。</p>
+    <title>解决远程服务器重装系统导致的 mac 终端无法连接的问题</title>
+    <url>/mac-ssh-error/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png" alt="2019-05-14 at 17.17.png"><br>known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。</p>
+<h2 id="通过如下两种方案解决该问题"><a href="#通过如下两种方案解决该问题" class="headerlink" title="通过如下两种方案解决该问题"></a>通过如下两种方案解决该问题</h2><ol>
+<li><p>输入命令(推荐)：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -R服务器ip地址</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h2 id="渐渐"><a href="#渐渐" class="headerlink" title="渐渐"></a>渐渐</h2><p>终端走代理我最初接触到的是 HTTP 代理，这篇文章可以见证(<a href="https://blog.xyang.xin/proxy-teach/index.html">代理服务器 | 韶 光</a>)。当然我的这些实践都是基于 shadowsocks 这款产品。随后我又接触了 Socks5 代理，因为简单其更快，又隐隐觉得其更底层，通过以下代码配置：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> .zshrc</span></span><br><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br></pre></td></tr></table></figure>
-<p>仍然要开 <em>全局模式</em> 终端才能走代理。</p>
-<p>虽然没有使用 HTTP 代理，但是很长一段时间我都没有关闭 <em>启用 HTTP 代理</em> 这个按钮，直到一天我连接手机热点 shadowsocks 闪退，我才关闭将其关闭了。这更显 Socks5 代理的优秀。</p>
-<h2 id="今天"><a href="#今天" class="headerlink" title="今天"></a>今天</h2><p>当我重新安装 <a href="https://github.com/fatih/vim-go" target="_blank" rel="noopener">vim-go</a>,并执行 <code>:GoUpdateBinaries</code> 故事又开始了。<br>显示类似于如下的一系列报错：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim-go: Updating guru. Reinstalling golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master to folder &#x2F;Users&#x2F;sweeney&#x2F;Documents&#x2F;code&#x2F;go&#x2F;bin</span><br><span class="line">vim-go: Error installing golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: go get golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: invalid version: Get &quot;https:&#x2F;&#x2F;proxy.golang.org&#x2F;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru&#x2F;@v&#x2F;master.info&quot;: dial tcp 172.217.24.17:443: i&#x2F;o</span><br><span class="line">timeout</span><br></pre></td></tr></table></figure>
-<p>首先我对 socks5 是很相信的，天生的认为其是较为底层的代理，应该不存在 HTTP 能代理而 Socks5 不能代理的情况。</p>
-<p>“应该” 呵呵，所以我就耗了近一个半小时在这里。</p>
-<p>以上问题其实和直接执行 <code>go get golang.org/x/tools/cmd/guru</code>，然后输出如下错误是一个道理。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">unrecognized import path &quot;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru&quot;: https fetch: Get &quot;https:&#x2F;&#x2F;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru?go-get&#x3D;1&quot;: dial tcp 216.239.37.1:443: i&#x2F;o timeout</span><br></pre></td></tr></table></figure>
-<p>都是 go get 无法从 golang.org 下载包。</p>
-<p>虽然 <code>curl golang.org</code> 能够访问这个网站，但是还是无法下载包。</p>
-<h2 id="Socks5-vs-HTTP"><a href="#Socks5-vs-HTTP" class="headerlink" title="Socks5 vs HTTP"></a>Socks5 vs HTTP</h2><table>
-<thead>
-<tr>
-<th></th>
-<th align="center">HTTP Proxy</th>
-<th align="center">Socks5 Proxy</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>功能</td>
-<td align="center">http 代理对于使用浏览器上网的用户很重要。</td>
-<td align="center">并不使用 http 协议，是更通用，更低级别的代理。</td>
-</tr>
-<tr>
-<td>安全</td>
-<td align="center">被传输的数据极可能被查看。</td>
-<td align="center">由于SOCKS无法读取数据，因此查看数据的几率很小。</td>
-</tr>
-<tr>
-<td>速度</td>
-<td align="center">速度较慢。</td>
-<td align="center">通用服务器速度快。</td>
-</tr>
-<tr>
-<td>连接工具</td>
-<td align="center">任何工具。</td>
-<td align="center">有限制工具。</td>
-</tr>
-<tr>
-<td>建议</td>
-<td align="center">传输少量数据。</td>
-<td align="center">传输大体积的速度。</td>
-</tr>
-</tbody></table>
-<p>SOCKS 作用在 OSI 模型的第四层 —— 会话层上。SOCKS4 只能代理TCP协议，而 SOCKS5 什么协议都可以代理。HTTP工作在应用层上，Socks代理只是简单地传递数据包，而不必关心是何种应用协议(比如 FTP、HTTP 和 NNTP 请求)，所以Socks代理服务器比应用层代理服务器要快得多。<br><img data-src="http://images.xyang.xin/2020-03%2Fnetwork.png" alt="network.png"></p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br><span class="line">export http_proxy=socks5://127.0.0.1:20808</span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">alias</span> go=<span class="string">'http_proxy=socks5://127.0.0.1:20808 go'</span></span></span><br></pre></td></tr></table></figure>
-
-<h2 id="遗留问题"><a href="#遗留问题" class="headerlink" title="遗留问题"></a>遗留问题</h2><p>我还是不知道为什么 ALL_PROXY 没对 go get 生效，而 http_proxy 生效了。并且经过测试，不是大小写的问题。</p>
-<hr>
-<p>参考文献：</p>
-<ul>
-<li><a href="https://dzone.com/articles/breaking-down-complex-differences-of-socks-vs-http" target="_blank" rel="noopener">Breaking Down Differences Between SOCKS vs HTTP Proxy - DZone Security</a></li>
-<li><a href="https://colobu.com/2017/01/26/how-to-go-get-behind-GFW/" target="_blank" rel="noopener">如何在长城后面go get一些库 | 鸟窝</a></li>
-<li><a href="http://www.yunlianip.com/News-getinfo-id-61.html" target="_blank" rel="noopener">SOCKS5代理和HTTP代理有什么区别？-云连代理</a></li>
-<li><a href="https://stackoverflow.com/questions/10383299/how-do-i-configure-go-command-to-use-a-proxy" target="_blank" rel="noopener">How do I configure go command to use a proxy? - Stack Overflow</a></li>
-</ul>
-]]></content>
+</li>
+<li><p>删除下面文件中相关 ip 的信息（公匙）<br>~/.ssh/known_hosts</p>
+</li>
+</ol>
+<p>.ssh文件为隐藏文件夹可通过 command + shift + . 查看。或者直接：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/.ssh/known_hosts</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鲁迅</title>
+    <url>/luxun/</url>
+    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
+<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>鲁迅</tag>
+      </tags>
   </entry>
   <entry>
     <title>代理服务器</title>
@@ -867,6 +867,42 @@
       <categories>
         <category>信息技术</category>
       </categories>
+  </entry>
+  <entry>
+    <title>SSM 错误集锦</title>
+    <url>/ssm-Error/</url>
+    <content><![CDATA[<ol>
+<li>class path resource [spring/] cannot be resolved to URL because it does not exist</li>
+</ol>
+<ul>
+<li>条件：这是非编译情况下利用mvn的插件war:war生成war包，运行后所报的错误。</li>
+<li>原因：未将resources下的配置文件引入war包中。</li>
+<li>解决方法：先执行代码，再生成war包。<a id="more"></a></li>
+</ul>
+<ol start="2">
+<li>check the manual that corresponds to your MySQL server version for the right syntax to use near … , The error may involve .insert-Inline</li>
+</ol>
+<ul>
+<li>原因：mysql 向数据库插入数据时错误， 可能触及到mysql的保留字，例如 key。</li>
+<li>解决办法： 插入语句不能起别名，该方式不可取。加键盘左上角的撇号，例<code>key</code>。</li>
+</ul>
+<ol start="3">
+<li><p>java.lang.Double cannot be cast to java.lang.String<br>list中查出来个别数据是 double，转换为 String。<br>String periodTime = String.valueOf(list.get(0));</p>
+</li>
+<li><p>Error running ‘tomcat’: Can’t find catalina.jar</p>
+</li>
+</ol>
+<ul>
+<li>原因：tomcat 升级导致路径改变</li>
+<li>解决办法：Idea 在 Edit Configuration 中修改 tomcat 路径至 libexec</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssm</tag>
+      </tags>
   </entry>
   <entry>
     <title>程序中的 “脚手架”</title>
@@ -941,42 +977,6 @@
       </categories>
       <tags>
         <tag>开发工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SSM 错误集锦</title>
-    <url>/ssm-Error/</url>
-    <content><![CDATA[<ol>
-<li>class path resource [spring/] cannot be resolved to URL because it does not exist</li>
-</ol>
-<ul>
-<li>条件：这是非编译情况下利用mvn的插件war:war生成war包，运行后所报的错误。</li>
-<li>原因：未将resources下的配置文件引入war包中。</li>
-<li>解决方法：先执行代码，再生成war包。<a id="more"></a></li>
-</ul>
-<ol start="2">
-<li>check the manual that corresponds to your MySQL server version for the right syntax to use near … , The error may involve .insert-Inline</li>
-</ol>
-<ul>
-<li>原因：mysql 向数据库插入数据时错误， 可能触及到mysql的保留字，例如 key。</li>
-<li>解决办法： 插入语句不能起别名，该方式不可取。加键盘左上角的撇号，例<code>key</code>。</li>
-</ul>
-<ol start="3">
-<li><p>java.lang.Double cannot be cast to java.lang.String<br>list中查出来个别数据是 double，转换为 String。<br>String periodTime = String.valueOf(list.get(0));</p>
-</li>
-<li><p>Error running ‘tomcat’: Can’t find catalina.jar</p>
-</li>
-</ol>
-<ul>
-<li>原因：tomcat 升级导致路径改变</li>
-<li>解决办法：Idea 在 Edit Configuration 中修改 tomcat 路径至 libexec</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>ssm</tag>
       </tags>
   </entry>
   <entry>
