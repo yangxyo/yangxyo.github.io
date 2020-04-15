@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>阿里云 ECS 使用</title>
+    <url>/ECS/</url>
+    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><a href="https://www.alibabacloud.com/help/zh/doc-detail/25367.htm?spm=a2c63.p38356.b99.2.615e1bbcsZH9Ry" target="_blank" rel="noopener">阿里云官方文档</a></p>
+<a id="more"></a>
+
+<h2 id="远程连接服务器常用的几种方式"><a href="#远程连接服务器常用的几种方式" class="headerlink" title="远程连接服务器常用的几种方式"></a>远程连接服务器常用的几种方式</h2><p>SSH —— 远程<br>SFTF —— 文件传输，22端口</p>
+<h2 id="安全组"><a href="#安全组" class="headerlink" title="安全组"></a>安全组</h2><h2 id="设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口"><a href="#设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口" class="headerlink" title="设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口"></a>设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口</h2><ol>
+<li>设置端口范围 22/22 协议类型自定义TCP 授权对象公网ip，22端口常用于ssh连接。</li>
+<li>设置端口范围 80/80 协议类型自定义TCP 授权对象0.0.0.0/0。<br>允许所有人通过 http 访问你的服务器。<br>80 端口常用于 http 协议访问 web 网站。相对应的 443 端口用于 https 协议访问 web 网站。3306 端口常用于数据库远程连接。出于安全考虑：如果向所有人打开 22 端口和 3306 端口，应当确保密码的复杂程度，以防强行爆破。对于新手建议将 22 端口和 3306 端口设置为仅允许指定IP访问。</li>
+</ol>
+<h2 id="设置公网出方向-——-服务器出口的限制"><a href="#设置公网出方向-——-服务器出口的限制" class="headerlink" title="设置公网出方向 —— 服务器出口的限制"></a>设置公网出方向 —— 服务器出口的限制</h2><p>没有特殊需求不需要设置。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>云服务</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>目标和关键成果法 (Objectives and Key Results)</title>
     <url>/OKRs/</url>
     <content><![CDATA[<blockquote>
@@ -78,26 +98,6 @@
       </tags>
   </entry>
   <entry>
-    <title>阿里云 ECS 使用</title>
-    <url>/ECS/</url>
-    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><a href="https://www.alibabacloud.com/help/zh/doc-detail/25367.htm?spm=a2c63.p38356.b99.2.615e1bbcsZH9Ry" target="_blank" rel="noopener">阿里云官方文档</a></p>
-<a id="more"></a>
-
-<h2 id="远程连接服务器常用的几种方式"><a href="#远程连接服务器常用的几种方式" class="headerlink" title="远程连接服务器常用的几种方式"></a>远程连接服务器常用的几种方式</h2><p>SSH —— 远程<br>SFTF —— 文件传输，22端口</p>
-<h2 id="安全组"><a href="#安全组" class="headerlink" title="安全组"></a>安全组</h2><h2 id="设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口"><a href="#设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口" class="headerlink" title="设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口"></a>设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口</h2><ol>
-<li>设置端口范围 22/22 协议类型自定义TCP 授权对象公网ip，22端口常用于ssh连接。</li>
-<li>设置端口范围 80/80 协议类型自定义TCP 授权对象0.0.0.0/0。<br>允许所有人通过 http 访问你的服务器。<br>80 端口常用于 http 协议访问 web 网站。相对应的 443 端口用于 https 协议访问 web 网站。3306 端口常用于数据库远程连接。出于安全考虑：如果向所有人打开 22 端口和 3306 端口，应当确保密码的复杂程度，以防强行爆破。对于新手建议将 22 端口和 3306 端口设置为仅允许指定IP访问。</li>
-</ol>
-<h2 id="设置公网出方向-——-服务器出口的限制"><a href="#设置公网出方向-——-服务器出口的限制" class="headerlink" title="设置公网出方向 —— 服务器出口的限制"></a>设置公网出方向 —— 服务器出口的限制</h2><p>没有特殊需求不需要设置。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>云服务</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《一本小小的红色写作书》读书笔记</title>
     <url>/book-hsxzs/</url>
     <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F1558180143.png" alt="1558180143.png-w140"></p>
@@ -150,47 +150,6 @@
       </tags>
   </entry>
   <entry>
-    <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
-    <url>/es6-everday-2/</url>
-    <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p>每个函数都是 <code>Function</code> 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用<strong>函数声明语法</strong>定义的：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span> (<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>这与下面使用<strong>函数表达式</strong>定义函数的方式几乎相差无几：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>最后一种定义函数的方式是使用<code>Function</code>构造函数，最后一个参数始终都被看成是函数体，而前面的参数则枚举出了新函数的参数：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Function</span>(<span class="string">"num1"</span>, <span class="string">"num2"</span>, <span class="string">"return num1 + num2"</span>)</span><br></pre></td></tr></table></figure>
-
-<p>其中<strong>函数声明语法</strong>具有函数声明提升（function declaration hoisting）,解析器会率先读取函数声明，并使其在执行任何代码之前可用。其余的时候<strong>函数声明</strong>与<strong>函数表达式</strong>的语法其实是等价的。</p>
-<p>箭头函数针对的是<strong>函数表达式</strong>定义的函数。</p>
-<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"xxx"</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="params">para</span> =&gt;</span> para + <span class="string">"xxx"</span>;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para1, para2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(para1 + <span class="string">" and "</span> + para2);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function">(<span class="params">para1, para2</span>) =&gt;</span> <span class="built_in">console</span>.log(para1 + <span class="string">" and "</span> + para2);</span><br></pre></td></tr></table></figure>
-
-<p>从形式上来看也就是把<strong>函数表达式</strong>定义的函数，function 去掉，在参数括号外面加 =&gt; 。没有参数用()占位，只有一个参数时可以省略括号，后面的代码块部分多于一条语句就要用大括号括起来，而只有一条语句可以省略大括号，如果是 return 语句，还可以省略 return。</p>
-<p>当然仅仅为了好看，箭头函数存在的意义并不大。</p>
-<h2 id="使用注意点"><a href="#使用注意点" class="headerlink" title="使用注意点"></a>使用注意点</h2><p>（1）函数体内的 this 对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">// Cannot read property 'join' of undefined</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//chicken, hamburger, French Fries</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function">(<span class="params">delay=<span class="number">1000</span></span>)=&gt;</span> &#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//Cannot read property 'join' of undefined</span></span><br></pre></td></tr></table></figure>
-<p>第三段代码将 <code>print</code> 函数声明改为一个箭头函数的形式意味着其中关键字 <code>this</code> 指代的对象就是 <code>object</code>（浏览器中是 <code>window</code>）。<br><code>setTimeout()</code>方法设置一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码，上面的代码都是 1s 后执行 <code>console.log</code> 所在的函数。</p>
-<p>（2）不可使用<code>arguments</code>对象，如果要用，可以用扩展运算符(<code>...</code>)将函数参数搜集到一个数组中。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">...theArgs</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> theArgs;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>（3）箭头函数没有自己的 <code>this</code>。<br>不能用 <code>call()</code>、<code>apply()</code>、<code>bind()</code> 这些方法去改变 <code>this</code> 的指向。</p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li>《Javascript 高级程序设计（第3版）》</li>
-<li><a href="https://es6.ruanyifeng.com/#docs/function" target="_blank" rel="noopener">函数的扩展 - ECMAScript 6入门</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>【一天一个 es6 语法】</tag>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Symbol ———【一天一个 es6 语法】</title>
     <url>/es6-everday-1/</url>
     <content><![CDATA[<h2 id="什么是-Symbol"><a href="#什么是-Symbol" class="headerlink" title="什么是 Symbol?"></a>什么是 Symbol?</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> 😻 = 😺 × 😍;  <span class="comment">// SyntaxError</span></span><br></pre></td></tr></table></figure>
@@ -221,6 +180,47 @@
 <li><a href="https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/" target="_blank" rel="noopener">ES6 In Depth: Symbols - Mozilla Hacks - the Web developer blog</a></li>
 <li><a href="https://es6.ruanyifeng.com/#docs/symbol" target="_blank" rel="noopener">Symbol - ECMAScript 6入门</a></li>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Symbol" target="_blank" rel="noopener">Symbol - JavaScript | MDN</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>【一天一个 es6 语法】</tag>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
+    <url>/es6-everday-2/</url>
+    <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p>每个函数都是 <code>Function</code> 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用<strong>函数声明语法</strong>定义的：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span> (<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>这与下面使用<strong>函数表达式</strong>定义函数的方式几乎相差无几：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>最后一种定义函数的方式是使用<code>Function</code>构造函数，最后一个参数始终都被看成是函数体，而前面的参数则枚举出了新函数的参数：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Function</span>(<span class="string">"num1"</span>, <span class="string">"num2"</span>, <span class="string">"return num1 + num2"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>其中<strong>函数声明语法</strong>具有函数声明提升（function declaration hoisting）,解析器会率先读取函数声明，并使其在执行任何代码之前可用。其余的时候<strong>函数声明</strong>与<strong>函数表达式</strong>的语法其实是等价的。</p>
+<p>箭头函数针对的是<strong>函数表达式</strong>定义的函数。</p>
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"xxx"</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="params">para</span> =&gt;</span> para + <span class="string">"xxx"</span>;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para1, para2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(para1 + <span class="string">" and "</span> + para2);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function">(<span class="params">para1, para2</span>) =&gt;</span> <span class="built_in">console</span>.log(para1 + <span class="string">" and "</span> + para2);</span><br></pre></td></tr></table></figure>
+
+<p>从形式上来看也就是把<strong>函数表达式</strong>定义的函数，function 去掉，在参数括号外面加 =&gt; 。没有参数用()占位，只有一个参数时可以省略括号，后面的代码块部分多于一条语句就要用大括号括起来，而只有一条语句可以省略大括号，如果是 return 语句，还可以省略 return。</p>
+<p>当然仅仅为了好看，箭头函数存在的意义并不大。</p>
+<h2 id="使用注意点"><a href="#使用注意点" class="headerlink" title="使用注意点"></a>使用注意点</h2><p>（1）函数体内的 this 对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">// Cannot read property 'join' of undefined</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//chicken, hamburger, French Fries</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function">(<span class="params">delay=<span class="number">1000</span></span>)=&gt;</span> &#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//Cannot read property 'join' of undefined</span></span><br></pre></td></tr></table></figure>
+<p>第三段代码将 <code>print</code> 函数声明改为一个箭头函数的形式意味着其中关键字 <code>this</code> 指代的对象就是 <code>object</code>（浏览器中是 <code>window</code>）。<br><code>setTimeout()</code>方法设置一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码，上面的代码都是 1s 后执行 <code>console.log</code> 所在的函数。</p>
+<p>（2）不可使用<code>arguments</code>对象，如果要用，可以用扩展运算符(<code>...</code>)将函数参数搜集到一个数组中。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">...theArgs</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> theArgs;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>（3）箭头函数没有自己的 <code>this</code>。<br>不能用 <code>call()</code>、<code>apply()</code>、<code>bind()</code> 这些方法去改变 <code>this</code> 的指向。</p>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li>《Javascript 高级程序设计（第3版）》</li>
+<li><a href="https://es6.ruanyifeng.com/#docs/function" target="_blank" rel="noopener">函数的扩展 - ECMAScript 6入门</a></li>
 </ul>
 ]]></content>
       <categories>
@@ -383,29 +383,6 @@
       </tags>
   </entry>
   <entry>
-    <title>编程语言之 Java</title>
-    <url>/java-language/</url>
-    <content><![CDATA[<h1 id="Integer-parseInt-与-Integer-valueOf-的比较"><a href="#Integer-parseInt-与-Integer-valueOf-的比较" class="headerlink" title="Integer.parseInt() 与 Integer.valueOf() 的比较"></a>Integer.parseInt() 与 Integer.valueOf() 的比较</h1><p>Integer.parseInt() 和 Integer.valueOf() 都是用来 将String转换为Int的。</p>
-<ul>
-<li>Integer.parseInt()，返回一个原子类型int.<ul>
-<li>parseInt() 只是调用parseInt, 并且返回原子类型int.</li>
-</ul>
-</li>
-<li>Integer.valueOf(), 返回的是封装的Integer对象。<ul>
-<li>valueOf 也会调用parseInt, 但是返回Integer对象。而且它会维护一个cache，如果int值在cache范围内，直接从cache中取对象，如果不在，则会新创建一个对象。</li>
-</ul>
-</li>
-</ul>
-<p>如果我们只是需要一个int值，parseInt是合适的，而且效率要高，但是如果用valueOf就多此一举了，性能会下降。<br><a href="https://www.imooc.com/article/37688" target="_blank" rel="noopener">🐱文章</a></p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo 博客进阶</title>
     <url>/hexo-advance/</url>
     <content><![CDATA[<h2 id="文章简介"><a href="#文章简介" class="headerlink" title="文章简介"></a>文章简介</h2><p>本文介绍 Hexo 博客的一些进阶操作。</p>
@@ -515,6 +492,29 @@
       </categories>
   </entry>
   <entry>
+    <title>编程语言之 Java</title>
+    <url>/java-language/</url>
+    <content><![CDATA[<h1 id="Integer-parseInt-与-Integer-valueOf-的比较"><a href="#Integer-parseInt-与-Integer-valueOf-的比较" class="headerlink" title="Integer.parseInt() 与 Integer.valueOf() 的比较"></a>Integer.parseInt() 与 Integer.valueOf() 的比较</h1><p>Integer.parseInt() 和 Integer.valueOf() 都是用来 将String转换为Int的。</p>
+<ul>
+<li>Integer.parseInt()，返回一个原子类型int.<ul>
+<li>parseInt() 只是调用parseInt, 并且返回原子类型int.</li>
+</ul>
+</li>
+<li>Integer.valueOf(), 返回的是封装的Integer对象。<ul>
+<li>valueOf 也会调用parseInt, 但是返回Integer对象。而且它会维护一个cache，如果int值在cache范围内，直接从cache中取对象，如果不在，则会新创建一个对象。</li>
+</ul>
+</li>
+</ul>
+<p>如果我们只是需要一个int值，parseInt是合适的，而且效率要高，但是如果用valueOf就多此一举了，性能会下降。<br><a href="https://www.imooc.com/article/37688" target="_blank" rel="noopener">🐱文章</a></p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>切换 Shell 需谨慎</title>
     <url>/linux-user/</url>
     <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
@@ -543,27 +543,6 @@
       </categories>
       <tags>
         <tag>鲁迅</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决远程服务器重装系统导致的 mac 终端无法连接的问题</title>
-    <url>/mac-ssh-error/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png" alt="2019-05-14 at 17.17.png"><br>known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。</p>
-<h2 id="通过如下两种方案解决该问题"><a href="#通过如下两种方案解决该问题" class="headerlink" title="通过如下两种方案解决该问题"></a>通过如下两种方案解决该问题</h2><ol>
-<li><p>输入命令(推荐)：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -R服务器ip地址</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-</li>
-<li><p>删除下面文件中相关 ip 的信息（公匙）<br>~/.ssh/known_hosts</p>
-</li>
-</ol>
-<p>.ssh文件为隐藏文件夹可通过 command + shift + . 查看。或者直接：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/.ssh/known_hosts</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -628,6 +607,27 @@
       </tags>
   </entry>
   <entry>
+    <title>解决远程服务器重装系统导致的 mac 终端无法连接的问题</title>
+    <url>/mac-ssh-error/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png" alt="2019-05-14 at 17.17.png"><br>known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。</p>
+<h2 id="通过如下两种方案解决该问题"><a href="#通过如下两种方案解决该问题" class="headerlink" title="通过如下两种方案解决该问题"></a>通过如下两种方案解决该问题</h2><ol>
+<li><p>输入命令(推荐)：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -R服务器ip地址</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+</li>
+<li><p>删除下面文件中相关 ip 的信息（公匙）<br>~/.ssh/known_hosts</p>
+</li>
+</ol>
+<p>.ssh文件为隐藏文件夹可通过 command + shift + . 查看。或者直接：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/.ssh/known_hosts</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Mac 大扫除🧹</title>
     <url>/macos-clean/</url>
     <content><![CDATA[<p>基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。</p>
@@ -680,74 +680,6 @@
       <tags>
         <tag>MacOS</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>HTTP 代理与 Socks5 代理</title>
-    <url>/proxy-http-socks5/</url>
-    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>本文通过实践经历基本的认识 HTTP 代理与 Socks5 代理的用法与理解其精髓。同时也解决 go get 库无法下载的问题。</p>
-<a id="more"></a>
-<h2 id="渐渐"><a href="#渐渐" class="headerlink" title="渐渐"></a>渐渐</h2><p>终端走代理我最初接触到的是 HTTP 代理，这篇文章可以见证(<a href="https://blog.xyang.xin/proxy-teach/index.html">代理服务器 | 韶 光</a>)。当然我的这些实践都是基于 shadowsocks 这款产品。随后我又接触了 Socks5 代理，因为简单其更快，又隐隐觉得其更底层，通过以下代码配置：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> .zshrc</span></span><br><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br></pre></td></tr></table></figure>
-<p>仍然要开 <em>全局模式</em> 终端才能走代理。</p>
-<p>虽然没有使用 HTTP 代理，但是很长一段时间我都没有关闭 <em>启用 HTTP 代理</em> 这个按钮，直到一天我连接手机热点 shadowsocks 闪退，我才关闭将其关闭了。这更显 Socks5 代理的优秀。</p>
-<h2 id="今天"><a href="#今天" class="headerlink" title="今天"></a>今天</h2><p>当我重新安装 <a href="https://github.com/fatih/vim-go" target="_blank" rel="noopener">vim-go</a>,并执行 <code>:GoUpdateBinaries</code> 故事又开始了。<br>显示类似于如下的一系列报错：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim-go: Updating guru. Reinstalling golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master to folder &#x2F;Users&#x2F;sweeney&#x2F;Documents&#x2F;code&#x2F;go&#x2F;bin</span><br><span class="line">vim-go: Error installing golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: go get golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: invalid version: Get &quot;https:&#x2F;&#x2F;proxy.golang.org&#x2F;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru&#x2F;@v&#x2F;master.info&quot;: dial tcp 172.217.24.17:443: i&#x2F;o</span><br><span class="line">timeout</span><br></pre></td></tr></table></figure>
-<p>首先我对 socks5 是很相信的，天生的认为其是较为底层的代理，应该不存在 HTTP 能代理而 Socks5 不能代理的情况。</p>
-<p>“应该” 呵呵，所以我就耗了近一个半小时在这里。</p>
-<p>以上问题其实和直接执行 <code>go get golang.org/x/tools/cmd/guru</code>，然后输出如下错误是一个道理。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">unrecognized import path &quot;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru&quot;: https fetch: Get &quot;https:&#x2F;&#x2F;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru?go-get&#x3D;1&quot;: dial tcp 216.239.37.1:443: i&#x2F;o timeout</span><br></pre></td></tr></table></figure>
-<p>都是 go get 无法从 golang.org 下载包。</p>
-<p>虽然 <code>curl golang.org</code> 能够访问这个网站，但是还是无法下载包。</p>
-<h2 id="Socks5-vs-HTTP"><a href="#Socks5-vs-HTTP" class="headerlink" title="Socks5 vs HTTP"></a>Socks5 vs HTTP</h2><table>
-<thead>
-<tr>
-<th></th>
-<th align="center">HTTP Proxy</th>
-<th align="center">Socks5 Proxy</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>功能</td>
-<td align="center">http 代理对于使用浏览器上网的用户很重要。</td>
-<td align="center">并不使用 http 协议，是更通用，更低级别的代理。</td>
-</tr>
-<tr>
-<td>安全</td>
-<td align="center">被传输的数据极可能被查看。</td>
-<td align="center">由于SOCKS无法读取数据，因此查看数据的几率很小。</td>
-</tr>
-<tr>
-<td>速度</td>
-<td align="center">速度较慢。</td>
-<td align="center">通用服务器速度快。</td>
-</tr>
-<tr>
-<td>连接工具</td>
-<td align="center">任何工具。</td>
-<td align="center">有限制工具。</td>
-</tr>
-<tr>
-<td>建议</td>
-<td align="center">传输少量数据。</td>
-<td align="center">传输大体积的速度。</td>
-</tr>
-</tbody></table>
-<p>SOCKS 作用在 OSI 模型的第四层 —— 会话层上。SOCKS4 只能代理TCP协议，而 SOCKS5 什么协议都可以代理。HTTP工作在应用层上，Socks代理只是简单地传递数据包，而不必关心是何种应用协议(比如 FTP、HTTP 和 NNTP 请求)，所以Socks代理服务器比应用层代理服务器要快得多。<br><img data-src="http://images.xyang.xin/2020-03%2Fnetwork.png" alt="network.png"></p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br><span class="line">export http_proxy=socks5://127.0.0.1:20808</span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">alias</span> go=<span class="string">'http_proxy=socks5://127.0.0.1:20808 go'</span></span></span><br></pre></td></tr></table></figure>
-
-<h2 id="遗留问题"><a href="#遗留问题" class="headerlink" title="遗留问题"></a>遗留问题</h2><p>我还是不知道为什么 ALL_PROXY 没对 go get 生效，而 http_proxy 生效了。并且经过测试，不是大小写的问题。</p>
-<hr>
-<p>参考文献：</p>
-<ul>
-<li><a href="https://dzone.com/articles/breaking-down-complex-differences-of-socks-vs-http" target="_blank" rel="noopener">Breaking Down Differences Between SOCKS vs HTTP Proxy - DZone Security</a></li>
-<li><a href="https://colobu.com/2017/01/26/how-to-go-get-behind-GFW/" target="_blank" rel="noopener">如何在长城后面go get一些库 | 鸟窝</a></li>
-<li><a href="http://www.yunlianip.com/News-getinfo-id-61.html" target="_blank" rel="noopener">SOCKS5代理和HTTP代理有什么区别？-云连代理</a></li>
-<li><a href="https://stackoverflow.com/questions/10383299/how-do-i-configure-go-command-to-use-a-proxy" target="_blank" rel="noopener">How do I configure go command to use a proxy? - Stack Overflow</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
   </entry>
   <entry>
     <title>包管理</title>
@@ -830,6 +762,74 @@
       </tags>
   </entry>
   <entry>
+    <title>HTTP 代理与 Socks5 代理</title>
+    <url>/proxy-http-socks5/</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>本文通过实践经历基本的认识 HTTP 代理与 Socks5 代理的用法与理解其精髓。同时也解决 go get 库无法下载的问题。</p>
+<a id="more"></a>
+<h2 id="渐渐"><a href="#渐渐" class="headerlink" title="渐渐"></a>渐渐</h2><p>终端走代理我最初接触到的是 HTTP 代理，这篇文章可以见证(<a href="https://blog.xyang.xin/proxy-teach/index.html">代理服务器 | 韶 光</a>)。当然我的这些实践都是基于 shadowsocks 这款产品。随后我又接触了 Socks5 代理，因为简单其更快，又隐隐觉得其更底层，通过以下代码配置：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> .zshrc</span></span><br><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br></pre></td></tr></table></figure>
+<p>仍然要开 <em>全局模式</em> 终端才能走代理。</p>
+<p>虽然没有使用 HTTP 代理，但是很长一段时间我都没有关闭 <em>启用 HTTP 代理</em> 这个按钮，直到一天我连接手机热点 shadowsocks 闪退，我才关闭将其关闭了。这更显 Socks5 代理的优秀。</p>
+<h2 id="今天"><a href="#今天" class="headerlink" title="今天"></a>今天</h2><p>当我重新安装 <a href="https://github.com/fatih/vim-go" target="_blank" rel="noopener">vim-go</a>,并执行 <code>:GoUpdateBinaries</code> 故事又开始了。<br>显示类似于如下的一系列报错：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim-go: Updating guru. Reinstalling golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master to folder &#x2F;Users&#x2F;sweeney&#x2F;Documents&#x2F;code&#x2F;go&#x2F;bin</span><br><span class="line">vim-go: Error installing golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: go get golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: invalid version: Get &quot;https:&#x2F;&#x2F;proxy.golang.org&#x2F;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru&#x2F;@v&#x2F;master.info&quot;: dial tcp 172.217.24.17:443: i&#x2F;o</span><br><span class="line">timeout</span><br></pre></td></tr></table></figure>
+<p>首先我对 socks5 是很相信的，天生的认为其是较为底层的代理，应该不存在 HTTP 能代理而 Socks5 不能代理的情况。</p>
+<p>“应该” 呵呵，所以我就耗了近一个半小时在这里。</p>
+<p>以上问题其实和直接执行 <code>go get golang.org/x/tools/cmd/guru</code>，然后输出如下错误是一个道理。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">unrecognized import path &quot;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru&quot;: https fetch: Get &quot;https:&#x2F;&#x2F;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru?go-get&#x3D;1&quot;: dial tcp 216.239.37.1:443: i&#x2F;o timeout</span><br></pre></td></tr></table></figure>
+<p>都是 go get 无法从 golang.org 下载包。</p>
+<p>虽然 <code>curl golang.org</code> 能够访问这个网站，但是还是无法下载包。</p>
+<h2 id="Socks5-vs-HTTP"><a href="#Socks5-vs-HTTP" class="headerlink" title="Socks5 vs HTTP"></a>Socks5 vs HTTP</h2><table>
+<thead>
+<tr>
+<th></th>
+<th align="center">HTTP Proxy</th>
+<th align="center">Socks5 Proxy</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>功能</td>
+<td align="center">http 代理对于使用浏览器上网的用户很重要。</td>
+<td align="center">并不使用 http 协议，是更通用，更低级别的代理。</td>
+</tr>
+<tr>
+<td>安全</td>
+<td align="center">被传输的数据极可能被查看。</td>
+<td align="center">由于SOCKS无法读取数据，因此查看数据的几率很小。</td>
+</tr>
+<tr>
+<td>速度</td>
+<td align="center">速度较慢。</td>
+<td align="center">通用服务器速度快。</td>
+</tr>
+<tr>
+<td>连接工具</td>
+<td align="center">任何工具。</td>
+<td align="center">有限制工具。</td>
+</tr>
+<tr>
+<td>建议</td>
+<td align="center">传输少量数据。</td>
+<td align="center">传输大体积的速度。</td>
+</tr>
+</tbody></table>
+<p>SOCKS 作用在 OSI 模型的第四层 —— 会话层上。SOCKS4 只能代理TCP协议，而 SOCKS5 什么协议都可以代理。HTTP工作在应用层上，Socks代理只是简单地传递数据包，而不必关心是何种应用协议(比如 FTP、HTTP 和 NNTP 请求)，所以Socks代理服务器比应用层代理服务器要快得多。<br><img data-src="http://images.xyang.xin/2020-03%2Fnetwork.png" alt="network.png"></p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br><span class="line">export http_proxy=socks5://127.0.0.1:20808</span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">alias</span> go=<span class="string">'http_proxy=socks5://127.0.0.1:20808 go'</span></span></span><br></pre></td></tr></table></figure>
+
+<h2 id="遗留问题"><a href="#遗留问题" class="headerlink" title="遗留问题"></a>遗留问题</h2><p>我还是不知道为什么 ALL_PROXY 没对 go get 生效，而 http_proxy 生效了。并且经过测试，不是大小写的问题。</p>
+<hr>
+<p>参考文献：</p>
+<ul>
+<li><a href="https://dzone.com/articles/breaking-down-complex-differences-of-socks-vs-http" target="_blank" rel="noopener">Breaking Down Differences Between SOCKS vs HTTP Proxy - DZone Security</a></li>
+<li><a href="https://colobu.com/2017/01/26/how-to-go-get-behind-GFW/" target="_blank" rel="noopener">如何在长城后面go get一些库 | 鸟窝</a></li>
+<li><a href="http://www.yunlianip.com/News-getinfo-id-61.html" target="_blank" rel="noopener">SOCKS5代理和HTTP代理有什么区别？-云连代理</a></li>
+<li><a href="https://stackoverflow.com/questions/10383299/how-do-i-configure-go-command-to-use-a-proxy" target="_blank" rel="noopener">How do I configure go command to use a proxy? - Stack Overflow</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+  </entry>
+  <entry>
     <title>代理服务器</title>
     <url>/proxy-teach/</url>
     <content><![CDATA[<p>推荐两款比较好的代理服务器端产品：</p>
@@ -867,42 +867,6 @@
       <categories>
         <category>信息技术</category>
       </categories>
-  </entry>
-  <entry>
-    <title>SSM 错误集锦</title>
-    <url>/ssm-Error/</url>
-    <content><![CDATA[<ol>
-<li>class path resource [spring/] cannot be resolved to URL because it does not exist</li>
-</ol>
-<ul>
-<li>条件：这是非编译情况下利用mvn的插件war:war生成war包，运行后所报的错误。</li>
-<li>原因：未将resources下的配置文件引入war包中。</li>
-<li>解决方法：先执行代码，再生成war包。<a id="more"></a></li>
-</ul>
-<ol start="2">
-<li>check the manual that corresponds to your MySQL server version for the right syntax to use near … , The error may involve .insert-Inline</li>
-</ol>
-<ul>
-<li>原因：mysql 向数据库插入数据时错误， 可能触及到mysql的保留字，例如 key。</li>
-<li>解决办法： 插入语句不能起别名，该方式不可取。加键盘左上角的撇号，例<code>key</code>。</li>
-</ul>
-<ol start="3">
-<li><p>java.lang.Double cannot be cast to java.lang.String<br>list中查出来个别数据是 double，转换为 String。<br>String periodTime = String.valueOf(list.get(0));</p>
-</li>
-<li><p>Error running ‘tomcat’: Can’t find catalina.jar</p>
-</li>
-</ol>
-<ul>
-<li>原因：tomcat 升级导致路径改变</li>
-<li>解决办法：Idea 在 Edit Configuration 中修改 tomcat 路径至 libexec</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>ssm</tag>
-      </tags>
   </entry>
   <entry>
     <title>程序中的 “脚手架”</title>
@@ -980,6 +944,42 @@
       </tags>
   </entry>
   <entry>
+    <title>SSM 错误集锦</title>
+    <url>/ssm-Error/</url>
+    <content><![CDATA[<ol>
+<li>class path resource [spring/] cannot be resolved to URL because it does not exist</li>
+</ol>
+<ul>
+<li>条件：这是非编译情况下利用mvn的插件war:war生成war包，运行后所报的错误。</li>
+<li>原因：未将resources下的配置文件引入war包中。</li>
+<li>解决方法：先执行代码，再生成war包。<a id="more"></a></li>
+</ul>
+<ol start="2">
+<li>check the manual that corresponds to your MySQL server version for the right syntax to use near … , The error may involve .insert-Inline</li>
+</ol>
+<ul>
+<li>原因：mysql 向数据库插入数据时错误， 可能触及到mysql的保留字，例如 key。</li>
+<li>解决办法： 插入语句不能起别名，该方式不可取。加键盘左上角的撇号，例<code>key</code>。</li>
+</ul>
+<ol start="3">
+<li><p>java.lang.Double cannot be cast to java.lang.String<br>list中查出来个别数据是 double，转换为 String。<br>String periodTime = String.valueOf(list.get(0));</p>
+</li>
+<li><p>Error running ‘tomcat’: Can’t find catalina.jar</p>
+</li>
+</ol>
+<ul>
+<li>原因：tomcat 升级导致路径改变</li>
+<li>解决办法：Idea 在 Edit Configuration 中修改 tomcat 路径至 libexec</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SSM 问题集锦</title>
     <url>/ssm-question/</url>
     <content><![CDATA[<h1 id="SSM-问题集锦"><a href="#SSM-问题集锦" class="headerlink" title="SSM 问题集锦"></a>SSM 问题集锦</h1><h2 id="SSM-基础的搭建过程"><a href="#SSM-基础的搭建过程" class="headerlink" title="SSM 基础的搭建过程"></a>SSM 基础的搭建过程</h2><p><a href="https://blog.csdn.net/yangxinyujy/article/details/80656771" target="_blank" rel="noopener">IntelliJ IDEA 创建 Maven 管理下的 SSM 项目基础全过程</a><br><a href="https://github.com/yangxinyujy/ssmdemo" target="_blank" rel="noopener">yangxinyujy/ssmdemo: ssm 基础框架</a></p>
@@ -992,6 +992,37 @@
       </categories>
       <tags>
         <tag>ssm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vim 多文件类型自动补全方案</title>
+    <url>/vim-multiple-filetype-deoplete/</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
+<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>其中的 filetype on 表示：</p>
+<blockquote>
+<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
+</blockquote>
+<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
+<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
+<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">'nvim'</span>)</span><br><span class="line">  Plug <span class="string">'Shougo/deoplete.nvim'</span>, &#123; <span class="string">'do'</span>: <span class="string">':UpdateRemotePlugins'</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">'Shougo/deoplete.nvim'</span></span><br><span class="line">  Plug <span class="string">'roxma/nvim-yarp'</span></span><br><span class="line">  Plug <span class="string">'roxma/vim-hug-neovim-rpc'</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">'Shougo/context_filetype.vim'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">'g:context_filetype#same_filetypes'</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">'filetype'</span> :<span class="string">'javascript'</span>, <span class="string">'start'</span>: <span class="string">'&lt;script&gt;'</span>, <span class="string">'end'</span>: <span class="string">'&lt;/script&gt;'</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">'filetype'</span> :<span class="string">'css'</span>, <span class="string">'start'</span>: <span class="string">'&lt;style&gt;'</span>, <span class="string">'end'</span>: <span class="string">'&lt;/style&gt;'</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">" deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">'omni'</span>, <span class="string">'functions'</span>, &#123;</span><br><span class="line">\ <span class="string">'css'</span>: [<span class="string">'csscomplete#CompleteCSS'</span>],</span><br><span class="line">\ <span class="string">'javascript'</span>: [<span class="string">'javascriptcomplete#CompleteJS'</span>],</span><br><span class="line">\ <span class="string">'html'</span>: [<span class="string">'htmlcomplete#CompleteTags'</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">'omni'</span>, <span class="string">'input_patterns'</span>, &#123;</span><br><span class="line">\ <span class="string">'javascript'</span>: <span class="string">'[^. *\t]\.\w*'</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">" 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">"\&lt;C-n&gt;"</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">"\&lt;TAB&gt;"</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> "&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">'.'</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">'.'</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">'\s'</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">"&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
+<p>执行 :PlugInstall</p>
+<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
+<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">'range'</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">'filetype'</span>: <span class="string">'css'</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
+<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
+<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py" target="_blank" rel="noopener">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>multiple filetype</tag>
       </tags>
   </entry>
   <entry>
@@ -1027,37 +1058,6 @@
       <tags>
         <tag>vim</tag>
         <tag>react</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vim 多文件类型自动补全方案</title>
-    <url>/vim-multiple-filetype-deoplete/</url>
-    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
-<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>其中的 filetype on 表示：</p>
-<blockquote>
-<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
-</blockquote>
-<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
-<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
-<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">'nvim'</span>)</span><br><span class="line">  Plug <span class="string">'Shougo/deoplete.nvim'</span>, &#123; <span class="string">'do'</span>: <span class="string">':UpdateRemotePlugins'</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">'Shougo/deoplete.nvim'</span></span><br><span class="line">  Plug <span class="string">'roxma/nvim-yarp'</span></span><br><span class="line">  Plug <span class="string">'roxma/vim-hug-neovim-rpc'</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">'Shougo/context_filetype.vim'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">'g:context_filetype#same_filetypes'</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">'filetype'</span> :<span class="string">'javascript'</span>, <span class="string">'start'</span>: <span class="string">'&lt;script&gt;'</span>, <span class="string">'end'</span>: <span class="string">'&lt;/script&gt;'</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">'filetype'</span> :<span class="string">'css'</span>, <span class="string">'start'</span>: <span class="string">'&lt;style&gt;'</span>, <span class="string">'end'</span>: <span class="string">'&lt;/style&gt;'</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">" deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">'omni'</span>, <span class="string">'functions'</span>, &#123;</span><br><span class="line">\ <span class="string">'css'</span>: [<span class="string">'csscomplete#CompleteCSS'</span>],</span><br><span class="line">\ <span class="string">'javascript'</span>: [<span class="string">'javascriptcomplete#CompleteJS'</span>],</span><br><span class="line">\ <span class="string">'html'</span>: [<span class="string">'htmlcomplete#CompleteTags'</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">'omni'</span>, <span class="string">'input_patterns'</span>, &#123;</span><br><span class="line">\ <span class="string">'javascript'</span>: <span class="string">'[^. *\t]\.\w*'</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">" 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">"\&lt;C-n&gt;"</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">"\&lt;TAB&gt;"</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> "&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">'.'</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">'.'</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">'\s'</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">"&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
-<p>执行 :PlugInstall</p>
-<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
-<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">'range'</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">'filetype'</span>: <span class="string">'css'</span>&#125;</span><br></pre></td></tr></table></figure>
-<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
-<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
-<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py" target="_blank" rel="noopener">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>multiple filetype</tag>
       </tags>
   </entry>
 </search>
