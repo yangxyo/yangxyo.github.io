@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>韶 光</title>
   <icon>http://blog.xyang.xin/icon.png</icon>
-  <subtitle>sweeney&#39;s personal blog</subtitle>
+  <subtitle>Yang Xinyu&#39;s Personal Blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.xyang.xin/"/>
@@ -10,7 +10,7 @@
   <id>http://blog.xyang.xin/</id>
   
   <author>
-    <name>Sweeney Yang</name>
+    <name>杨欣雨</name>
     
   </author>
   
