@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.xyang.xin/"/>
-  <updated>2020-04-18T08:15:40.312Z</updated>
+  <updated>2020-05-12T06:04:45.134Z</updated>
   <id>http://blog.xyang.xin/</id>
   
   <author>
@@ -21,16 +21,11 @@
     <link href="http://blog.xyang.xin/macos-problems/"/>
     <id>http://blog.xyang.xin/macos-problems/</id>
     <published>2020-04-18T16:15:08.000Z</published>
-    <updated>2020-04-18T08:15:40.312Z</updated>
+    <updated>2020-05-12T06:04:45.134Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2020-04/macoshero.jpg&quot; alt=&quot;macoshero.jpg -w600&quot;&gt;&lt;br&gt;记录 MacOS 使用过程中遇到的问题及解决办法，解决办法不是万用的，只是有可能解决你遇到的与我相同或类似的问题，但是不会损害你的电脑。&lt;/p&gt;
-&lt;h2 id=&quot;Finder-无法打开或持续未响应（2020）&quot;&gt;&lt;a href=&quot;#Finder-无法打开或持续未响应（2020）&quot; class=&quot;headerlink&quot; title=&quot;Finder 无法打开或持续未响应（2020）&quot;&gt;&lt;/a&gt;Finder 无法打开或持续未响应（2020）&lt;/h2&gt;&lt;p&gt;解决办法：&lt;br&gt;磁盘工具 -&amp;gt; Macintosh HD（系统盘）-&amp;gt; 急救&lt;br&gt;磁盘工具在以下路径：&lt;/p&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td clas
-      
+      &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2020-04/macoshero.jpg&quot; alt=&quot;macoshero.jpg -w600&quot;&gt;&lt;br&gt;记录 MacOS 使用过程中遇到的问题及解决办法，解决办法不是万用的，只是有可能解决你遇到的与我相同或类似的问题，但是不会损害你的电脑。&lt;/p&gt;
     
     </summary>
     
