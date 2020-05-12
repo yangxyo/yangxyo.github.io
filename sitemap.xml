@@ -2,6 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.xyang.xin/proxy-teach/</loc>
+    
+    <lastmod>2020-05-11T10:05:29.433Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.xyang.xin/macos-problems/</loc>
+    
+    <lastmod>2020-04-18T08:15:40.312Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.xyang.xin/journal-2019-02-15/</loc>
+    
+    <lastmod>2020-04-18T07:49:16.246Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.xyang.xin/mackup/</loc>
+    
+    <lastmod>2020-04-18T07:49:09.163Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.xyang.xin/iterm2/</loc>
+    
+    <lastmod>2020-04-18T07:49:06.311Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.xyang.xin/OKRs/</loc>
+    
+    <lastmod>2020-04-18T07:49:03.135Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.xyang.xin/luxun/</loc>
+    
+    <lastmod>2020-04-18T07:48:58.867Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.xyang.xin/java-language/</loc>
+    
+    <lastmod>2020-04-18T07:48:52.736Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.xyang.xin/package-management/</loc>
+    
+    <lastmod>2020-04-18T07:48:49.626Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.xyang.xin/amazing-china/</loc>
+    
+    <lastmod>2020-04-18T07:48:44.293Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.xyang.xin/macos-clean/</loc>
     
     <lastmod>2020-04-16T13:45:42.108Z</lastmod>
@@ -107,51 +177,9 @@
   </url>
   
   <url>
-    <loc>http://blog.xyang.xin/amazing-china/</loc>
-    
-    <lastmod>2020-04-14T14:15:20.264Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/package-management/</loc>
-    
-    <lastmod>2020-04-14T14:15:12.499Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.xyang.xin/ssm-Error/</loc>
     
     <lastmod>2020-04-14T14:14:48.621Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/luxun/</loc>
-    
-    <lastmod>2020-04-14T14:14:03.773Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/OKRs/</loc>
-    
-    <lastmod>2020-04-14T14:13:45.162Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/iterm2/</loc>
-    
-    <lastmod>2020-04-14T14:13:28.231Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/mackup/</loc>
-    
-    <lastmod>2020-04-14T14:11:51.072Z</lastmod>
     
   </url>
   
@@ -173,20 +201,6 @@
     <loc>http://blog.xyang.xin/mac-ssh-error/</loc>
     
     <lastmod>2020-04-14T14:10:54.201Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/proxy-teach/</loc>
-    
-    <lastmod>2020-04-14T14:10:52.834Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/journal-2019-02-15/</loc>
-    
-    <lastmod>2020-04-14T14:10:51.063Z</lastmod>
     
   </url>
   
@@ -215,13 +229,6 @@
     <loc>http://blog.xyang.xin/es6-everday-2/</loc>
     
     <lastmod>2020-04-14T14:01:39.301Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/java-language/</loc>
-    
-    <lastmod>2019-07-27T13:09:22.304Z</lastmod>
     
   </url>
   
