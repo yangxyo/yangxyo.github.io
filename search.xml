@@ -287,54 +287,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo 博客进阶</title>
-    <url>/hexo-advance/</url>
-    <content><![CDATA[<h2 id="文章简介"><a href="#文章简介" class="headerlink" title="文章简介"></a>文章简介</h2><p>本文介绍 Hexo 博客的一些进阶操作。</p>
-<ul>
-<li>解决 Github Pages 不被百度抓取的问题；</li>
-<li>使用 gulp 压缩资源，实现访问加速。</li>
-<li>在博客中添加音频和视频；<a id="more"></a>
-<h2 id="Github-Pages-不被百度抓取的方法"><a href="#Github-Pages-不被百度抓取的方法" class="headerlink" title="Github Pages 不被百度抓取的方法"></a>Github Pages 不被百度抓取的方法</h2>并通过域名 CNAME 实现国内外分流，<h3 id="Coding-Pages"><a href="#Coding-Pages" class="headerlink" title="Coding Pages"></a>Coding Pages</h3><a href="https://help.coding.net/docs/devops/cd/static-website.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE" target="_blank" rel="noopener">CODING 静态网站服务 - CODING 帮助中心</a></li>
-</ul>
-<h3 id="私有的-OSS"><a href="#私有的-OSS" class="headerlink" title="私有的 OSS"></a>私有的 OSS</h3><p>以阿里云oss为例<br><img data-src="https://images.xyang.xin/2020-04/1586841854.png" alt="开通子目录首页"></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-oss</span><br></pre></td></tr></table></figure>
-<p><code>_config.yml</code> 配置</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">oss</span></span><br><span class="line">  <span class="attr">accessKeyId:</span> <span class="string">&lt;your</span> <span class="string">accessKeyId&gt;</span></span><br><span class="line">  <span class="attr">accessKeySecret:</span> <span class="string">&lt;your</span> <span class="string">accessKeySecret&gt;</span></span><br><span class="line">  <span class="attr">bucket:</span> <span class="string">&lt;your</span> <span class="string">bucket&gt;</span></span><br><span class="line">  <span class="attr">region:</span> <span class="string">&lt;your</span> <span class="string">region&gt;</span></span><br></pre></td></tr></table></figure>
-<p>  其中 region 以北京地区的 oss 为例填 <code>oss-cn-beijing</code></p>
-<h2 id="使用-gulp-压缩资源"><a href="#使用-gulp-压缩资源" class="headerlink" title="使用 gulp 压缩资源"></a>使用 gulp 压缩资源</h2><p>使用 gulp 压缩资源，提高访问速度。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install gulp-cli -g</span><br><span class="line">npm install gulp gulp-htmlclean gulp-htmlmin gulp-imagemin gulp-clean-css gulp-uglify --save-dev</span><br></pre></td></tr></table></figure>
-
-<p>项目根目录新建<code>gulpfile.babel.js</code>，添加如下内容：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> gulp <span class="keyword">from</span> <span class="string">'gulp'</span></span><br><span class="line"><span class="keyword">import</span> cleancss <span class="keyword">from</span> <span class="string">'gulp-clean-css'</span></span><br><span class="line"><span class="keyword">import</span> uglify <span class="keyword">from</span> <span class="string">'gulp-uglify-es'</span></span><br><span class="line"><span class="keyword">import</span> htmlmin <span class="keyword">from</span> <span class="string">'gulp-htmlmin'</span></span><br><span class="line"><span class="keyword">import</span> htmlclean <span class="keyword">from</span> <span class="string">'gulp-htmlclean'</span></span><br><span class="line"><span class="keyword">import</span> imagemin <span class="keyword">from</span> <span class="string">'gulp-imagemin'</span></span><br><span class="line"><span class="keyword">import</span> babel <span class="keyword">from</span> <span class="string">'gulp-babel'</span></span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'minify-html'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/**/*.html'</span>)</span><br><span class="line">    .pipe(htmlclean(&#123;</span><br><span class="line">      protect: <span class="regexp">/&lt;\!--%fooTemplate\b.*?%--&gt;/g</span>,</span><br><span class="line">      edit: <span class="function">(<span class="params">html</span>) =&gt;</span> &#123; <span class="keyword">return</span> html.replace(<span class="regexp">/\begg(s?)\b/ig</span>, <span class="string">'omelet$1'</span>); &#125;</span><br><span class="line">    &#125;))</span><br><span class="line">    .pipe(htmlmin(&#123;</span><br><span class="line">      removeComments: <span class="literal">true</span>,</span><br><span class="line">      collapseWhitespace: <span class="literal">true</span>,</span><br><span class="line">      collapseBooleanAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeEmptyAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeScriptTypeAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeStyleLinkTypeAttributes: <span class="literal">true</span>,</span><br><span class="line">      minifyJS: <span class="literal">true</span>,</span><br><span class="line">      minifyCSS: <span class="literal">true</span>,</span><br><span class="line">    &#125;))</span><br><span class="line">    .on(<span class="string">'error'</span>, (err) =&gt; &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'html Error!'</span>, err.message);</span><br><span class="line">      <span class="keyword">this</span>.end();</span><br><span class="line">    &#125;)</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'clean-css'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/**/*.css'</span>)</span><br><span class="line">    .pipe(cleancss())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'minify-js'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/js/**/*.js'</span>)</span><br><span class="line">    .pipe(uglify())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'minify-images'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/images/**/*.*'</span>)</span><br><span class="line">    .pipe(imagemin())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public/images'</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'default'</span>, gulp.parallel(<span class="string">'minify-html'</span>, <span class="string">'clean-css'</span>, <span class="string">'minify-js'</span>, <span class="string">'minify-images'</span>, (done) =&gt; &#123;</span><br><span class="line">  done();</span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
-<p>由于是 es6 语法， 需要使用 babel 转译。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install --save-dev gulp-babel @babel/register @babel/preset-env @babel/core</span><br></pre></td></tr></table></figure>
-<p>创建<code>.babel.json</code> 文件，添加内容如下：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"presets"</span>: [</span><br><span class="line">    <span class="string">"@babel/env"</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"plugins"</span>: []</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>终端执行如下命令即可：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g &amp;&amp; gulp</span><br></pre></td></tr></table></figure>
-
-<p>如有报错，可以尝试删除<code>node_modules</code>文件，然后重新执行<code>npm install</code>。</p>
-<h2 id="在博客中插入音频与视频"><a href="#在博客中插入音频与视频" class="headerlink" title="在博客中插入音频与视频"></a>在博客中插入音频与视频</h2><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><h4 id="更快捷的方案一"><a href="#更快捷的方案一" class="headerlink" title="更快捷的方案一"></a>更快捷的方案一</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">430</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"XXX"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=430 height=86 src="https://music.xyang.xin/%E5%9C%A8%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E7%9B%B8%E9%81%87.mp3"></iframe>
-
-<h4 id="更强大的方案二（Github）"><a href="#更强大的方案二（Github）" class="headerlink" title="更强大的方案二（Github）"></a>更强大的方案二（<a href="https://github.com/MoePlayer/hexo-tag-aplayer#usage" target="_blank" rel="noopener">Github</a>）</h4><h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><h4 id="更快捷的标签方式"><a href="#更快捷的标签方式" class="headerlink" title="更快捷的标签方式"></a>更快捷的标签方式</h4><p>iframe 将web页嵌入到另一个网页</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">"854"</span> <span class="attr">height</span>=<span class="string">"480"</span> <span class="attr">src</span>=<span class="string">"//player.bilibili.com/player.html?aid=51918958&amp;cid=90895494&amp;page=1"</span> <span class="attr">scrolling</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">framespacing</span>=<span class="string">"0"</span> <span class="attr">allowfullscreen</span>=<span class="string">"true"</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<iframe width="854" height="480" src="//player.bilibili.com/player.html?aid=51918958&cid=90895494&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<h4 id="更强大的-hexo-tag-dplayer-插件"><a href="#更强大的-hexo-tag-dplayer-插件" class="headerlink" title="更强大的 hexo-tag-dplayer 插件"></a>更强大的 <a href="https://github.com/MoePlayer/hexo-tag-dplayer" target="_blank" rel="noopener">hexo-tag-dplayer</a> 插件</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-tag-dplayer --save</span><br></pre></td></tr></table></figure>
-
-<h3 id="PDF"><a href="#PDF" class="headerlink" title="PDF"></a>PDF</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">object</span> <span class="attr">data</span>=<span class="string">"mypdf.pdf"</span> <span class="attr">type</span>=<span class="string">"application/pdf"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">width</span>=<span class="string">"800"</span> <span class="attr">height</span>=<span class="string">"1200"</span> <span class="attr">typemustmatch</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>You don't have a PDF plugin, but you can <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"myfile.pdf"</span>&gt;</span>download the PDF file.<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/%E5%85%B6%E4%BB%96%E5%B5%8C%E5%85%A5%E6%8A%80%E6%9C%AF" target="_blank" rel="noopener">从对象到iframe - 其他嵌入技术 - 学习 Web 开发 | MDN</a><br><a href="https://luanzhuxian.github.io/post/e5ac3b51.html" target="_blank" rel="noopener">使用 Gulp 压缩 Hexo | 栾铸显的博客</a><br><a href="https://shuoit.net/tech-notes/use-gulp-to-speed-hexo-1547999542.html" target="_blank" rel="noopener">引入gulp压缩整站资源进一步提高写作效率 - 说IT</a></p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于 GitHub Pages 的 Hexo+NexT 博客搭建</title>
     <url>/githubpages-hexo-next/</url>
     <content><![CDATA[<h1 id="基于-GitHub-Pages-的-Hexo-NexT-博客-——-引导篇"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客-——-引导篇" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客 —— 引导篇"></a>基于 GitHub Pages 的 Hexo + NexT 博客 —— 引导篇</h1><h2 id="基于-GitHub-Pages-的-Hexo-NexT-博客概述"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客概述" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客概述"></a>基于 GitHub Pages 的 Hexo + NexT 博客概述</h2><p>使用这一套博客系统架构您将获得稳定免费、美观、易定制的个人博客。通过 Markdown 语法编辑文章，git命令发布文章，优雅的博客发布体验。</p>
@@ -422,6 +374,54 @@
 <h3 id="底部背景颜色与透明度"><a href="#底部背景颜色与透明度" class="headerlink" title="底部背景颜色与透明度"></a>底部背景颜色与透明度</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.footer &#123;</span><br><span class="line">          background:rgba(13,26,31,0.8) none repeat scroll !important;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">开始使用 - NexT 使用文档</a></p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo 博客进阶</title>
+    <url>/hexo-advance/</url>
+    <content><![CDATA[<h2 id="文章简介"><a href="#文章简介" class="headerlink" title="文章简介"></a>文章简介</h2><p>本文介绍 Hexo 博客的一些进阶操作。</p>
+<ul>
+<li>解决 Github Pages 不被百度抓取的问题；</li>
+<li>使用 gulp 压缩资源，实现访问加速。</li>
+<li>在博客中添加音频和视频；<a id="more"></a>
+<h2 id="Github-Pages-不被百度抓取的方法"><a href="#Github-Pages-不被百度抓取的方法" class="headerlink" title="Github Pages 不被百度抓取的方法"></a>Github Pages 不被百度抓取的方法</h2>并通过域名 CNAME 实现国内外分流，<h3 id="Coding-Pages"><a href="#Coding-Pages" class="headerlink" title="Coding Pages"></a>Coding Pages</h3><a href="https://help.coding.net/docs/devops/cd/static-website.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE" target="_blank" rel="noopener">CODING 静态网站服务 - CODING 帮助中心</a></li>
+</ul>
+<h3 id="私有的-OSS"><a href="#私有的-OSS" class="headerlink" title="私有的 OSS"></a>私有的 OSS</h3><p>以阿里云oss为例<br><img data-src="https://images.xyang.xin/2020-04/1586841854.png" alt="开通子目录首页"></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-oss</span><br></pre></td></tr></table></figure>
+<p><code>_config.yml</code> 配置</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">oss</span></span><br><span class="line">  <span class="attr">accessKeyId:</span> <span class="string">&lt;your</span> <span class="string">accessKeyId&gt;</span></span><br><span class="line">  <span class="attr">accessKeySecret:</span> <span class="string">&lt;your</span> <span class="string">accessKeySecret&gt;</span></span><br><span class="line">  <span class="attr">bucket:</span> <span class="string">&lt;your</span> <span class="string">bucket&gt;</span></span><br><span class="line">  <span class="attr">region:</span> <span class="string">&lt;your</span> <span class="string">region&gt;</span></span><br></pre></td></tr></table></figure>
+<p>  其中 region 以北京地区的 oss 为例填 <code>oss-cn-beijing</code></p>
+<h2 id="使用-gulp-压缩资源"><a href="#使用-gulp-压缩资源" class="headerlink" title="使用 gulp 压缩资源"></a>使用 gulp 压缩资源</h2><p>使用 gulp 压缩资源，提高访问速度。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install gulp-cli -g</span><br><span class="line">npm install gulp gulp-htmlclean gulp-htmlmin gulp-imagemin gulp-clean-css gulp-uglify --save-dev</span><br></pre></td></tr></table></figure>
+
+<p>项目根目录新建<code>gulpfile.babel.js</code>，添加如下内容：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> gulp <span class="keyword">from</span> <span class="string">'gulp'</span></span><br><span class="line"><span class="keyword">import</span> cleancss <span class="keyword">from</span> <span class="string">'gulp-clean-css'</span></span><br><span class="line"><span class="keyword">import</span> uglify <span class="keyword">from</span> <span class="string">'gulp-uglify-es'</span></span><br><span class="line"><span class="keyword">import</span> htmlmin <span class="keyword">from</span> <span class="string">'gulp-htmlmin'</span></span><br><span class="line"><span class="keyword">import</span> htmlclean <span class="keyword">from</span> <span class="string">'gulp-htmlclean'</span></span><br><span class="line"><span class="keyword">import</span> imagemin <span class="keyword">from</span> <span class="string">'gulp-imagemin'</span></span><br><span class="line"><span class="keyword">import</span> babel <span class="keyword">from</span> <span class="string">'gulp-babel'</span></span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'minify-html'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/**/*.html'</span>)</span><br><span class="line">    .pipe(htmlclean(&#123;</span><br><span class="line">      protect: <span class="regexp">/&lt;\!--%fooTemplate\b.*?%--&gt;/g</span>,</span><br><span class="line">      edit: <span class="function">(<span class="params">html</span>) =&gt;</span> &#123; <span class="keyword">return</span> html.replace(<span class="regexp">/\begg(s?)\b/ig</span>, <span class="string">'omelet$1'</span>); &#125;</span><br><span class="line">    &#125;))</span><br><span class="line">    .pipe(htmlmin(&#123;</span><br><span class="line">      removeComments: <span class="literal">true</span>,</span><br><span class="line">      collapseWhitespace: <span class="literal">true</span>,</span><br><span class="line">      collapseBooleanAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeEmptyAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeScriptTypeAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeStyleLinkTypeAttributes: <span class="literal">true</span>,</span><br><span class="line">      minifyJS: <span class="literal">true</span>,</span><br><span class="line">      minifyCSS: <span class="literal">true</span>,</span><br><span class="line">    &#125;))</span><br><span class="line">    .on(<span class="string">'error'</span>, (err) =&gt; &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'html Error!'</span>, err.message);</span><br><span class="line">      <span class="keyword">this</span>.end();</span><br><span class="line">    &#125;)</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'clean-css'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/**/*.css'</span>)</span><br><span class="line">    .pipe(cleancss())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'minify-js'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/js/**/*.js'</span>)</span><br><span class="line">    .pipe(uglify())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'minify-images'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/images/**/*.*'</span>)</span><br><span class="line">    .pipe(imagemin())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public/images'</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'default'</span>, gulp.parallel(<span class="string">'minify-html'</span>, <span class="string">'clean-css'</span>, <span class="string">'minify-js'</span>, <span class="string">'minify-images'</span>, (done) =&gt; &#123;</span><br><span class="line">  done();</span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
+<p>由于是 es6 语法， 需要使用 babel 转译。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install --save-dev gulp-babel @babel/register @babel/preset-env @babel/core</span><br></pre></td></tr></table></figure>
+<p>创建<code>.babel.json</code> 文件，添加内容如下：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"presets"</span>: [</span><br><span class="line">    <span class="string">"@babel/env"</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"plugins"</span>: []</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>终端执行如下命令即可：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g &amp;&amp; gulp</span><br></pre></td></tr></table></figure>
+
+<p>如有报错，可以尝试删除<code>node_modules</code>文件，然后重新执行<code>npm install</code>。</p>
+<h2 id="在博客中插入音频与视频"><a href="#在博客中插入音频与视频" class="headerlink" title="在博客中插入音频与视频"></a>在博客中插入音频与视频</h2><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><h4 id="更快捷的方案一"><a href="#更快捷的方案一" class="headerlink" title="更快捷的方案一"></a>更快捷的方案一</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">430</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"XXX"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=430 height=86 src="https://music.xyang.xin/%E5%9C%A8%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E7%9B%B8%E9%81%87.mp3"></iframe>
+
+<h4 id="更强大的方案二（Github）"><a href="#更强大的方案二（Github）" class="headerlink" title="更强大的方案二（Github）"></a>更强大的方案二（<a href="https://github.com/MoePlayer/hexo-tag-aplayer#usage" target="_blank" rel="noopener">Github</a>）</h4><h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><h4 id="更快捷的标签方式"><a href="#更快捷的标签方式" class="headerlink" title="更快捷的标签方式"></a>更快捷的标签方式</h4><p>iframe 将web页嵌入到另一个网页</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">"854"</span> <span class="attr">height</span>=<span class="string">"480"</span> <span class="attr">src</span>=<span class="string">"//player.bilibili.com/player.html?aid=51918958&amp;cid=90895494&amp;page=1"</span> <span class="attr">scrolling</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">framespacing</span>=<span class="string">"0"</span> <span class="attr">allowfullscreen</span>=<span class="string">"true"</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<iframe width="854" height="480" src="//player.bilibili.com/player.html?aid=51918958&cid=90895494&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h4 id="更强大的-hexo-tag-dplayer-插件"><a href="#更强大的-hexo-tag-dplayer-插件" class="headerlink" title="更强大的 hexo-tag-dplayer 插件"></a>更强大的 <a href="https://github.com/MoePlayer/hexo-tag-dplayer" target="_blank" rel="noopener">hexo-tag-dplayer</a> 插件</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-tag-dplayer --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="PDF"><a href="#PDF" class="headerlink" title="PDF"></a>PDF</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">object</span> <span class="attr">data</span>=<span class="string">"mypdf.pdf"</span> <span class="attr">type</span>=<span class="string">"application/pdf"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">width</span>=<span class="string">"800"</span> <span class="attr">height</span>=<span class="string">"1200"</span> <span class="attr">typemustmatch</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>You don't have a PDF plugin, but you can <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"myfile.pdf"</span>&gt;</span>download the PDF file.<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/%E5%85%B6%E4%BB%96%E5%B5%8C%E5%85%A5%E6%8A%80%E6%9C%AF" target="_blank" rel="noopener">从对象到iframe - 其他嵌入技术 - 学习 Web 开发 | MDN</a><br><a href="https://luanzhuxian.github.io/post/e5ac3b51.html" target="_blank" rel="noopener">使用 Gulp 压缩 Hexo | 栾铸显的博客</a><br><a href="https://shuoit.net/tech-notes/use-gulp-to-speed-hexo-1547999542.html" target="_blank" rel="noopener">引入gulp压缩整站资源进一步提高写作效率 - 说IT</a></p>
 ]]></content>
       <categories>
         <category>信息技术</category>
@@ -1069,42 +1069,6 @@
       </tags>
   </entry>
   <entry>
-    <title>SSM 错误集锦</title>
-    <url>/ssm-Error/</url>
-    <content><![CDATA[<ol>
-<li>class path resource [spring/] cannot be resolved to URL because it does not exist</li>
-</ol>
-<ul>
-<li>条件：这是非编译情况下利用mvn的插件war:war生成war包，运行后所报的错误。</li>
-<li>原因：未将resources下的配置文件引入war包中。</li>
-<li>解决方法：先执行代码，再生成war包。<a id="more"></a></li>
-</ul>
-<ol start="2">
-<li>check the manual that corresponds to your MySQL server version for the right syntax to use near … , The error may involve .insert-Inline</li>
-</ol>
-<ul>
-<li>原因：mysql 向数据库插入数据时错误， 可能触及到mysql的保留字，例如 key。</li>
-<li>解决办法： 插入语句不能起别名，该方式不可取。加键盘左上角的撇号，例<code>key</code>。</li>
-</ul>
-<ol start="3">
-<li><p>java.lang.Double cannot be cast to java.lang.String<br>list中查出来个别数据是 double，转换为 String。<br>String periodTime = String.valueOf(list.get(0));</p>
-</li>
-<li><p>Error running ‘tomcat’: Can’t find catalina.jar</p>
-</li>
-</ol>
-<ul>
-<li>原因：tomcat 升级导致路径改变</li>
-<li>解决办法：Idea 在 Edit Configuration 中修改 tomcat 路径至 libexec</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>ssm</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux 剪贴板小技巧</title>
     <url>/ssh-clipboard-iterm2/</url>
     <content><![CDATA[<h2 id="初步识-vim-剪贴板"><a href="#初步识-vim-剪贴板" class="headerlink" title="初步识 vim 剪贴板"></a>初步识 vim 剪贴板</h2><p>对于文本的复制粘贴，系统会提供剪贴板，剪贴板在 vim 中被称为寄存器，并且 vim 有很多寄存器，寄存器使用的语法：<code>&quot;{register}</code>，当然了寄存器指令不会单独使用，后面都会跟代表复制的 <code>y</code> 或代表粘贴的 <code>p</code>，执行 <code>&quot;ay</code> 就将选中的内容复制到了 <code>a</code> 寄存器，<a id="more"></a>寄存器都是有自己的名字的，感兴趣的同学，欲知详细内容请参见帮助文档：<code>:help registers</code>。</p>
@@ -1159,6 +1123,42 @@ Selection-&gt;Application in terminal may access clipboard</code>（选择开启
         <tag>Linux</tag>
         <tag>剪贴板</tag>
         <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SSM 错误集锦</title>
+    <url>/ssm-Error/</url>
+    <content><![CDATA[<ol>
+<li>class path resource [spring/] cannot be resolved to URL because it does not exist</li>
+</ol>
+<ul>
+<li>条件：这是非编译情况下利用mvn的插件war:war生成war包，运行后所报的错误。</li>
+<li>原因：未将resources下的配置文件引入war包中。</li>
+<li>解决方法：先执行代码，再生成war包。<a id="more"></a></li>
+</ul>
+<ol start="2">
+<li>check the manual that corresponds to your MySQL server version for the right syntax to use near … , The error may involve .insert-Inline</li>
+</ol>
+<ul>
+<li>原因：mysql 向数据库插入数据时错误， 可能触及到mysql的保留字，例如 key。</li>
+<li>解决办法： 插入语句不能起别名，该方式不可取。加键盘左上角的撇号，例<code>key</code>。</li>
+</ul>
+<ol start="3">
+<li><p>java.lang.Double cannot be cast to java.lang.String<br>list中查出来个别数据是 double，转换为 String。<br>String periodTime = String.valueOf(list.get(0));</p>
+</li>
+<li><p>Error running ‘tomcat’: Can’t find catalina.jar</p>
+</li>
+</ol>
+<ul>
+<li>原因：tomcat 升级导致路径改变</li>
+<li>解决办法：Idea 在 Edit Configuration 中修改 tomcat 路径至 libexec</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssm</tag>
       </tags>
   </entry>
   <entry>
