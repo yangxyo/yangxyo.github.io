@@ -191,6 +191,47 @@
       </tags>
   </entry>
   <entry>
+    <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
+    <url>/es6-everday-2/</url>
+    <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p>每个函数都是 <code>Function</code> 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用<strong>函数声明语法</strong>定义的：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span> (<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>这与下面使用<strong>函数表达式</strong>定义函数的方式几乎相差无几：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>最后一种定义函数的方式是使用<code>Function</code>构造函数，最后一个参数始终都被看成是函数体，而前面的参数则枚举出了新函数的参数：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Function</span>(<span class="string">"num1"</span>, <span class="string">"num2"</span>, <span class="string">"return num1 + num2"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>其中<strong>函数声明语法</strong>具有函数声明提升（function declaration hoisting）,解析器会率先读取函数声明，并使其在执行任何代码之前可用。其余的时候<strong>函数声明</strong>与<strong>函数表达式</strong>的语法其实是等价的。</p>
+<p>箭头函数针对的是<strong>函数表达式</strong>定义的函数。</p>
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"xxx"</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="params">para</span> =&gt;</span> para + <span class="string">"xxx"</span>;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para1, para2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(para1 + <span class="string">" and "</span> + para2);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function">(<span class="params">para1, para2</span>) =&gt;</span> <span class="built_in">console</span>.log(para1 + <span class="string">" and "</span> + para2);</span><br></pre></td></tr></table></figure>
+
+<p>从形式上来看也就是把<strong>函数表达式</strong>定义的函数，function 去掉，在参数括号外面加 =&gt; 。没有参数用()占位，只有一个参数时可以省略括号，后面的代码块部分多于一条语句就要用大括号括起来，而只有一条语句可以省略大括号，如果是 return 语句，还可以省略 return。</p>
+<p>当然仅仅为了好看，箭头函数存在的意义并不大。</p>
+<h2 id="使用注意点"><a href="#使用注意点" class="headerlink" title="使用注意点"></a>使用注意点</h2><p>（1）函数体内的 this 对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">// Cannot read property 'join' of undefined</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//chicken, hamburger, French Fries</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function">(<span class="params">delay=<span class="number">1000</span></span>)=&gt;</span> &#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//Cannot read property 'join' of undefined</span></span><br></pre></td></tr></table></figure>
+<p>第三段代码将 <code>print</code> 函数声明改为一个箭头函数的形式意味着其中关键字 <code>this</code> 指代的对象就是 <code>object</code>（浏览器中是 <code>window</code>）。<br><code>setTimeout()</code>方法设置一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码，上面的代码都是 1s 后执行 <code>console.log</code> 所在的函数。</p>
+<p>（2）不可使用<code>arguments</code>对象，如果要用，可以用扩展运算符(<code>...</code>)将函数参数搜集到一个数组中。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">...theArgs</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> theArgs;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>（3）箭头函数没有自己的 <code>this</code>。<br>不能用 <code>call()</code>、<code>apply()</code>、<code>bind()</code> 这些方法去改变 <code>this</code> 的指向。</p>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li>《Javascript 高级程序设计（第3版）》</li>
+<li><a href="https://es6.ruanyifeng.com/#docs/function" target="_blank" rel="noopener">函数的扩展 - ECMAScript 6入门</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>【一天一个 es6 语法】</tag>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>解构赋值 ———【一天一个 es6 语法】</title>
     <url>/es6-everyday-3/</url>
     <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
@@ -246,44 +287,51 @@
       </tags>
   </entry>
   <entry>
-    <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
-    <url>/es6-everday-2/</url>
-    <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p>每个函数都是 <code>Function</code> 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用<strong>函数声明语法</strong>定义的：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span> (<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>这与下面使用<strong>函数表达式</strong>定义函数的方式几乎相差无几：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>最后一种定义函数的方式是使用<code>Function</code>构造函数，最后一个参数始终都被看成是函数体，而前面的参数则枚举出了新函数的参数：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Function</span>(<span class="string">"num1"</span>, <span class="string">"num2"</span>, <span class="string">"return num1 + num2"</span>)</span><br></pre></td></tr></table></figure>
-
-<p>其中<strong>函数声明语法</strong>具有函数声明提升（function declaration hoisting）,解析器会率先读取函数声明，并使其在执行任何代码之前可用。其余的时候<strong>函数声明</strong>与<strong>函数表达式</strong>的语法其实是等价的。</p>
-<p>箭头函数针对的是<strong>函数表达式</strong>定义的函数。</p>
-<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"xxx"</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="params">para</span> =&gt;</span> para + <span class="string">"xxx"</span>;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para1, para2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(para1 + <span class="string">" and "</span> + para2);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function">(<span class="params">para1, para2</span>) =&gt;</span> <span class="built_in">console</span>.log(para1 + <span class="string">" and "</span> + para2);</span><br></pre></td></tr></table></figure>
-
-<p>从形式上来看也就是把<strong>函数表达式</strong>定义的函数，function 去掉，在参数括号外面加 =&gt; 。没有参数用()占位，只有一个参数时可以省略括号，后面的代码块部分多于一条语句就要用大括号括起来，而只有一条语句可以省略大括号，如果是 return 语句，还可以省略 return。</p>
-<p>当然仅仅为了好看，箭头函数存在的意义并不大。</p>
-<h2 id="使用注意点"><a href="#使用注意点" class="headerlink" title="使用注意点"></a>使用注意点</h2><p>（1）函数体内的 this 对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">// Cannot read property 'join' of undefined</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//chicken, hamburger, French Fries</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function">(<span class="params">delay=<span class="number">1000</span></span>)=&gt;</span> &#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//Cannot read property 'join' of undefined</span></span><br></pre></td></tr></table></figure>
-<p>第三段代码将 <code>print</code> 函数声明改为一个箭头函数的形式意味着其中关键字 <code>this</code> 指代的对象就是 <code>object</code>（浏览器中是 <code>window</code>）。<br><code>setTimeout()</code>方法设置一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码，上面的代码都是 1s 后执行 <code>console.log</code> 所在的函数。</p>
-<p>（2）不可使用<code>arguments</code>对象，如果要用，可以用扩展运算符(<code>...</code>)将函数参数搜集到一个数组中。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">...theArgs</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> theArgs;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>（3）箭头函数没有自己的 <code>this</code>。<br>不能用 <code>call()</code>、<code>apply()</code>、<code>bind()</code> 这些方法去改变 <code>this</code> 的指向。</p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li>《Javascript 高级程序设计（第3版）》</li>
-<li><a href="https://es6.ruanyifeng.com/#docs/function" target="_blank" rel="noopener">函数的扩展 - ECMAScript 6入门</a></li>
+    <title>Hexo 博客进阶</title>
+    <url>/hexo-advance/</url>
+    <content><![CDATA[<h2 id="文章简介"><a href="#文章简介" class="headerlink" title="文章简介"></a>文章简介</h2><p>本文介绍 Hexo 博客的一些进阶操作。</p>
+<ul>
+<li>解决 Github Pages 不被百度抓取的问题；</li>
+<li>使用 gulp 压缩资源，实现访问加速。</li>
+<li>在博客中添加音频和视频；<a id="more"></a>
+<h2 id="Github-Pages-不被百度抓取的方法"><a href="#Github-Pages-不被百度抓取的方法" class="headerlink" title="Github Pages 不被百度抓取的方法"></a>Github Pages 不被百度抓取的方法</h2>并通过域名 CNAME 实现国内外分流，<h3 id="Coding-Pages"><a href="#Coding-Pages" class="headerlink" title="Coding Pages"></a>Coding Pages</h3><a href="https://help.coding.net/docs/devops/cd/static-website.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE" target="_blank" rel="noopener">CODING 静态网站服务 - CODING 帮助中心</a></li>
 </ul>
+<h3 id="私有的-OSS"><a href="#私有的-OSS" class="headerlink" title="私有的 OSS"></a>私有的 OSS</h3><p>以阿里云oss为例<br><img data-src="https://images.xyang.xin/2020-04/1586841854.png" alt="开通子目录首页"></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-oss</span><br></pre></td></tr></table></figure>
+<p><code>_config.yml</code> 配置</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">oss</span></span><br><span class="line">  <span class="attr">accessKeyId:</span> <span class="string">&lt;your</span> <span class="string">accessKeyId&gt;</span></span><br><span class="line">  <span class="attr">accessKeySecret:</span> <span class="string">&lt;your</span> <span class="string">accessKeySecret&gt;</span></span><br><span class="line">  <span class="attr">bucket:</span> <span class="string">&lt;your</span> <span class="string">bucket&gt;</span></span><br><span class="line">  <span class="attr">region:</span> <span class="string">&lt;your</span> <span class="string">region&gt;</span></span><br></pre></td></tr></table></figure>
+<p>  其中 region 以北京地区的 oss 为例填 <code>oss-cn-beijing</code></p>
+<h2 id="使用-gulp-压缩资源"><a href="#使用-gulp-压缩资源" class="headerlink" title="使用 gulp 压缩资源"></a>使用 gulp 压缩资源</h2><p>使用 gulp 压缩资源，提高访问速度。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install gulp-cli -g</span><br><span class="line">npm install gulp gulp-htmlclean gulp-htmlmin gulp-imagemin gulp-clean-css gulp-uglify --save-dev</span><br></pre></td></tr></table></figure>
+
+<p>项目根目录新建<code>gulpfile.babel.js</code>，添加如下内容：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> gulp <span class="keyword">from</span> <span class="string">'gulp'</span></span><br><span class="line"><span class="keyword">import</span> cleancss <span class="keyword">from</span> <span class="string">'gulp-clean-css'</span></span><br><span class="line"><span class="keyword">import</span> uglify <span class="keyword">from</span> <span class="string">'gulp-uglify-es'</span></span><br><span class="line"><span class="keyword">import</span> htmlmin <span class="keyword">from</span> <span class="string">'gulp-htmlmin'</span></span><br><span class="line"><span class="keyword">import</span> htmlclean <span class="keyword">from</span> <span class="string">'gulp-htmlclean'</span></span><br><span class="line"><span class="keyword">import</span> imagemin <span class="keyword">from</span> <span class="string">'gulp-imagemin'</span></span><br><span class="line"><span class="keyword">import</span> babel <span class="keyword">from</span> <span class="string">'gulp-babel'</span></span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'minify-html'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/**/*.html'</span>)</span><br><span class="line">    .pipe(htmlclean(&#123;</span><br><span class="line">      protect: <span class="regexp">/&lt;\!--%fooTemplate\b.*?%--&gt;/g</span>,</span><br><span class="line">      edit: <span class="function">(<span class="params">html</span>) =&gt;</span> &#123; <span class="keyword">return</span> html.replace(<span class="regexp">/\begg(s?)\b/ig</span>, <span class="string">'omelet$1'</span>); &#125;</span><br><span class="line">    &#125;))</span><br><span class="line">    .pipe(htmlmin(&#123;</span><br><span class="line">      removeComments: <span class="literal">true</span>,</span><br><span class="line">      collapseWhitespace: <span class="literal">true</span>,</span><br><span class="line">      collapseBooleanAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeEmptyAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeScriptTypeAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeStyleLinkTypeAttributes: <span class="literal">true</span>,</span><br><span class="line">      minifyJS: <span class="literal">true</span>,</span><br><span class="line">      minifyCSS: <span class="literal">true</span>,</span><br><span class="line">    &#125;))</span><br><span class="line">    .on(<span class="string">'error'</span>, (err) =&gt; &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'html Error!'</span>, err.message);</span><br><span class="line">      <span class="keyword">this</span>.end();</span><br><span class="line">    &#125;)</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'clean-css'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/**/*.css'</span>)</span><br><span class="line">    .pipe(cleancss())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'minify-js'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/js/**/*.js'</span>)</span><br><span class="line">    .pipe(uglify())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'minify-images'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/images/**/*.*'</span>)</span><br><span class="line">    .pipe(imagemin())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public/images'</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'default'</span>, gulp.parallel(<span class="string">'minify-html'</span>, <span class="string">'clean-css'</span>, <span class="string">'minify-js'</span>, <span class="string">'minify-images'</span>, (done) =&gt; &#123;</span><br><span class="line">  done();</span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
+<p>由于是 es6 语法， 需要使用 babel 转译。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install --save-dev gulp-babel @babel/register @babel/preset-env @babel/core</span><br></pre></td></tr></table></figure>
+<p>创建<code>.babel.json</code> 文件，添加内容如下：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"presets"</span>: [</span><br><span class="line">    <span class="string">"@babel/env"</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"plugins"</span>: []</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>终端执行如下命令即可：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g &amp;&amp; gulp</span><br></pre></td></tr></table></figure>
+
+<p>如有报错，可以尝试删除<code>node_modules</code>文件，然后重新执行<code>npm install</code>。</p>
+<h2 id="在博客中插入音频与视频"><a href="#在博客中插入音频与视频" class="headerlink" title="在博客中插入音频与视频"></a>在博客中插入音频与视频</h2><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><h4 id="更快捷的方案一"><a href="#更快捷的方案一" class="headerlink" title="更快捷的方案一"></a>更快捷的方案一</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">430</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"XXX"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=430 height=86 src="https://music.xyang.xin/%E5%9C%A8%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E7%9B%B8%E9%81%87.mp3"></iframe>
+
+<h4 id="更强大的方案二（Github）"><a href="#更强大的方案二（Github）" class="headerlink" title="更强大的方案二（Github）"></a>更强大的方案二（<a href="https://github.com/MoePlayer/hexo-tag-aplayer#usage" target="_blank" rel="noopener">Github</a>）</h4><h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><h4 id="更快捷的标签方式"><a href="#更快捷的标签方式" class="headerlink" title="更快捷的标签方式"></a>更快捷的标签方式</h4><p>iframe 将web页嵌入到另一个网页</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">"854"</span> <span class="attr">height</span>=<span class="string">"480"</span> <span class="attr">src</span>=<span class="string">"//player.bilibili.com/player.html?aid=51918958&amp;cid=90895494&amp;page=1"</span> <span class="attr">scrolling</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">framespacing</span>=<span class="string">"0"</span> <span class="attr">allowfullscreen</span>=<span class="string">"true"</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<iframe width="854" height="480" src="//player.bilibili.com/player.html?aid=51918958&cid=90895494&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h4 id="更强大的-hexo-tag-dplayer-插件"><a href="#更强大的-hexo-tag-dplayer-插件" class="headerlink" title="更强大的 hexo-tag-dplayer 插件"></a>更强大的 <a href="https://github.com/MoePlayer/hexo-tag-dplayer" target="_blank" rel="noopener">hexo-tag-dplayer</a> 插件</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-tag-dplayer --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="PDF"><a href="#PDF" class="headerlink" title="PDF"></a>PDF</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">object</span> <span class="attr">data</span>=<span class="string">"mypdf.pdf"</span> <span class="attr">type</span>=<span class="string">"application/pdf"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">width</span>=<span class="string">"800"</span> <span class="attr">height</span>=<span class="string">"1200"</span> <span class="attr">typemustmatch</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>You don't have a PDF plugin, but you can <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"myfile.pdf"</span>&gt;</span>download the PDF file.<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/%E5%85%B6%E4%BB%96%E5%B5%8C%E5%85%A5%E6%8A%80%E6%9C%AF" target="_blank" rel="noopener">从对象到iframe - 其他嵌入技术 - 学习 Web 开发 | MDN</a><br><a href="https://luanzhuxian.github.io/post/e5ac3b51.html" target="_blank" rel="noopener">使用 Gulp 压缩 Hexo | 栾铸显的博客</a><br><a href="https://shuoit.net/tech-notes/use-gulp-to-speed-hexo-1547999542.html" target="_blank" rel="noopener">引入gulp压缩整站资源进一步提高写作效率 - 说IT</a></p>
 ]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>【一天一个 es6 语法】</tag>
-        <tag>javascript</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -383,89 +431,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo 博客进阶</title>
-    <url>/hexo-advance/</url>
-    <content><![CDATA[<h2 id="文章简介"><a href="#文章简介" class="headerlink" title="文章简介"></a>文章简介</h2><p>本文介绍 Hexo 博客的一些进阶操作。</p>
-<ul>
-<li>解决 Github Pages 不被百度抓取的问题；</li>
-<li>使用 gulp 压缩资源，实现访问加速。</li>
-<li>在博客中添加音频和视频；<a id="more"></a>
-<h2 id="Github-Pages-不被百度抓取的方法"><a href="#Github-Pages-不被百度抓取的方法" class="headerlink" title="Github Pages 不被百度抓取的方法"></a>Github Pages 不被百度抓取的方法</h2>并通过域名 CNAME 实现国内外分流，<h3 id="Coding-Pages"><a href="#Coding-Pages" class="headerlink" title="Coding Pages"></a>Coding Pages</h3><a href="https://help.coding.net/docs/devops/cd/static-website.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE" target="_blank" rel="noopener">CODING 静态网站服务 - CODING 帮助中心</a></li>
-</ul>
-<h3 id="私有的-OSS"><a href="#私有的-OSS" class="headerlink" title="私有的 OSS"></a>私有的 OSS</h3><p>以阿里云oss为例<br><img data-src="https://images.xyang.xin/2020-04/1586841854.png" alt="开通子目录首页"></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-oss</span><br></pre></td></tr></table></figure>
-<p><code>_config.yml</code> 配置</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">oss</span></span><br><span class="line">  <span class="attr">accessKeyId:</span> <span class="string">&lt;your</span> <span class="string">accessKeyId&gt;</span></span><br><span class="line">  <span class="attr">accessKeySecret:</span> <span class="string">&lt;your</span> <span class="string">accessKeySecret&gt;</span></span><br><span class="line">  <span class="attr">bucket:</span> <span class="string">&lt;your</span> <span class="string">bucket&gt;</span></span><br><span class="line">  <span class="attr">region:</span> <span class="string">&lt;your</span> <span class="string">region&gt;</span></span><br></pre></td></tr></table></figure>
-<p>  其中 region 以北京地区的 oss 为例填 <code>oss-cn-beijing</code></p>
-<h2 id="使用-gulp-压缩资源"><a href="#使用-gulp-压缩资源" class="headerlink" title="使用 gulp 压缩资源"></a>使用 gulp 压缩资源</h2><p>使用 gulp 压缩资源，提高访问速度。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install gulp-cli -g</span><br><span class="line">npm install gulp gulp-htmlclean gulp-htmlmin gulp-imagemin gulp-clean-css gulp-uglify --save-dev</span><br></pre></td></tr></table></figure>
-
-<p>项目根目录新建<code>gulpfile.babel.js</code>，添加如下内容：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> gulp <span class="keyword">from</span> <span class="string">'gulp'</span></span><br><span class="line"><span class="keyword">import</span> cleancss <span class="keyword">from</span> <span class="string">'gulp-clean-css'</span></span><br><span class="line"><span class="keyword">import</span> uglify <span class="keyword">from</span> <span class="string">'gulp-uglify-es'</span></span><br><span class="line"><span class="keyword">import</span> htmlmin <span class="keyword">from</span> <span class="string">'gulp-htmlmin'</span></span><br><span class="line"><span class="keyword">import</span> htmlclean <span class="keyword">from</span> <span class="string">'gulp-htmlclean'</span></span><br><span class="line"><span class="keyword">import</span> imagemin <span class="keyword">from</span> <span class="string">'gulp-imagemin'</span></span><br><span class="line"><span class="keyword">import</span> babel <span class="keyword">from</span> <span class="string">'gulp-babel'</span></span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'minify-html'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/**/*.html'</span>)</span><br><span class="line">    .pipe(htmlclean(&#123;</span><br><span class="line">      protect: <span class="regexp">/&lt;\!--%fooTemplate\b.*?%--&gt;/g</span>,</span><br><span class="line">      edit: <span class="function">(<span class="params">html</span>) =&gt;</span> &#123; <span class="keyword">return</span> html.replace(<span class="regexp">/\begg(s?)\b/ig</span>, <span class="string">'omelet$1'</span>); &#125;</span><br><span class="line">    &#125;))</span><br><span class="line">    .pipe(htmlmin(&#123;</span><br><span class="line">      removeComments: <span class="literal">true</span>,</span><br><span class="line">      collapseWhitespace: <span class="literal">true</span>,</span><br><span class="line">      collapseBooleanAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeEmptyAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeScriptTypeAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeStyleLinkTypeAttributes: <span class="literal">true</span>,</span><br><span class="line">      minifyJS: <span class="literal">true</span>,</span><br><span class="line">      minifyCSS: <span class="literal">true</span>,</span><br><span class="line">    &#125;))</span><br><span class="line">    .on(<span class="string">'error'</span>, (err) =&gt; &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'html Error!'</span>, err.message);</span><br><span class="line">      <span class="keyword">this</span>.end();</span><br><span class="line">    &#125;)</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'clean-css'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/**/*.css'</span>)</span><br><span class="line">    .pipe(cleancss())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'minify-js'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/js/**/*.js'</span>)</span><br><span class="line">    .pipe(uglify())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'minify-images'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/images/**/*.*'</span>)</span><br><span class="line">    .pipe(imagemin())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public/images'</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'default'</span>, gulp.parallel(<span class="string">'minify-html'</span>, <span class="string">'clean-css'</span>, <span class="string">'minify-js'</span>, <span class="string">'minify-images'</span>, (done) =&gt; &#123;</span><br><span class="line">  done();</span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
-<p>由于是 es6 语法， 需要使用 babel 转译。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install --save-dev gulp-babel @babel/register @babel/preset-env @babel/core</span><br></pre></td></tr></table></figure>
-<p>创建<code>.babel.json</code> 文件，添加内容如下：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"presets"</span>: [</span><br><span class="line">    <span class="string">"@babel/env"</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"plugins"</span>: []</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>终端执行如下命令即可：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g &amp;&amp; gulp</span><br></pre></td></tr></table></figure>
-
-<p>如有报错，可以尝试删除<code>node_modules</code>文件，然后重新执行<code>npm install</code>。</p>
-<h2 id="在博客中插入音频与视频"><a href="#在博客中插入音频与视频" class="headerlink" title="在博客中插入音频与视频"></a>在博客中插入音频与视频</h2><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><h4 id="更快捷的方案一"><a href="#更快捷的方案一" class="headerlink" title="更快捷的方案一"></a>更快捷的方案一</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">430</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"XXX"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=430 height=86 src="https://music.xyang.xin/%E5%9C%A8%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E7%9B%B8%E9%81%87.mp3"></iframe>
-
-<h4 id="更强大的方案二（Github）"><a href="#更强大的方案二（Github）" class="headerlink" title="更强大的方案二（Github）"></a>更强大的方案二（<a href="https://github.com/MoePlayer/hexo-tag-aplayer#usage" target="_blank" rel="noopener">Github</a>）</h4><h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><h4 id="更快捷的标签方式"><a href="#更快捷的标签方式" class="headerlink" title="更快捷的标签方式"></a>更快捷的标签方式</h4><p>iframe 将web页嵌入到另一个网页</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">"854"</span> <span class="attr">height</span>=<span class="string">"480"</span> <span class="attr">src</span>=<span class="string">"//player.bilibili.com/player.html?aid=51918958&amp;cid=90895494&amp;page=1"</span> <span class="attr">scrolling</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">framespacing</span>=<span class="string">"0"</span> <span class="attr">allowfullscreen</span>=<span class="string">"true"</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<iframe width="854" height="480" src="//player.bilibili.com/player.html?aid=51918958&cid=90895494&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<h4 id="更强大的-hexo-tag-dplayer-插件"><a href="#更强大的-hexo-tag-dplayer-插件" class="headerlink" title="更强大的 hexo-tag-dplayer 插件"></a>更强大的 <a href="https://github.com/MoePlayer/hexo-tag-dplayer" target="_blank" rel="noopener">hexo-tag-dplayer</a> 插件</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-tag-dplayer --save</span><br></pre></td></tr></table></figure>
-
-<h3 id="PDF"><a href="#PDF" class="headerlink" title="PDF"></a>PDF</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">object</span> <span class="attr">data</span>=<span class="string">"mypdf.pdf"</span> <span class="attr">type</span>=<span class="string">"application/pdf"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">width</span>=<span class="string">"800"</span> <span class="attr">height</span>=<span class="string">"1200"</span> <span class="attr">typemustmatch</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>You don't have a PDF plugin, but you can <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"myfile.pdf"</span>&gt;</span>download the PDF file.<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/%E5%85%B6%E4%BB%96%E5%B5%8C%E5%85%A5%E6%8A%80%E6%9C%AF" target="_blank" rel="noopener">从对象到iframe - 其他嵌入技术 - 学习 Web 开发 | MDN</a><br><a href="https://luanzhuxian.github.io/post/e5ac3b51.html" target="_blank" rel="noopener">使用 Gulp 压缩 Hexo | 栾铸显的博客</a><br><a href="https://shuoit.net/tech-notes/use-gulp-to-speed-hexo-1547999542.html" target="_blank" rel="noopener">引入gulp压缩整站资源进一步提高写作效率 - 说IT</a></p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>编程语言之 Java</title>
-    <url>/java-language/</url>
-    <content><![CDATA[<h1 id="Integer-parseInt-与-Integer-valueOf-的比较"><a href="#Integer-parseInt-与-Integer-valueOf-的比较" class="headerlink" title="Integer.parseInt() 与 Integer.valueOf() 的比较"></a>Integer.parseInt() 与 Integer.valueOf() 的比较</h1><p>Integer.parseInt() 和 Integer.valueOf() 都是用来 将String转换为Int的。</p>
-<ul>
-<li>Integer.parseInt()，返回一个原子类型int.<ul>
-<li>parseInt() 只是调用parseInt, 并且返回原子类型int.</li>
-</ul>
-</li>
-<li>Integer.valueOf(), 返回的是封装的Integer对象。<ul>
-<li>valueOf 也会调用parseInt, 但是返回Integer对象。而且它会维护一个cache，如果int值在cache范围内，直接从cache中取对象，如果不在，则会新创建一个对象。</li>
-</ul>
-</li>
-</ul>
-<p>如果我们只是需要一个int值，parseInt是合适的，而且效率要高，但是如果用valueOf就多此一举了，性能会下降。<br><a href="https://www.imooc.com/article/37688" target="_blank" rel="noopener">🐱文章</a></p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>journal-2019-02-15</title>
-    <url>/journal-2019-02-15/</url>
-    <content><![CDATA[<h2 id="小孩成长与人才发展"><a href="#小孩成长与人才发展" class="headerlink" title="小孩成长与人才发展"></a>小孩成长与人才发展</h2><p>小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。</p>
-<p>孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。</p>
-<p>国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。</p>
-<p>参考：<a href="http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm" target="_blank" rel="noopener">《基层减负 不是简单做减法》《求是》2019/03 </a></p>
-]]></content>
-      <categories>
-        <category>日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>由简入深配置 iTem2 终端</title>
     <url>/iterm2/</url>
     <content><![CDATA[<h1 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h1><p>brew 安装 zsh<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install zsh</span><br><span class="line">sudo chsh -s &#x2F;usr&#x2F;local&#x2F;bin&#x2F;zsh</span><br></pre></td></tr></table></figure><br>从 zsh 切换回 bash<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chsh -s &#x2F;bin&#x2F;bash</span><br></pre></td></tr></table></figure></p>
@@ -515,17 +480,39 @@
       </tags>
   </entry>
   <entry>
-    <title>鲁迅</title>
-    <url>/luxun/</url>
-    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
-<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
+    <title>编程语言之 Java</title>
+    <url>/java-language/</url>
+    <content><![CDATA[<h1 id="Integer-parseInt-与-Integer-valueOf-的比较"><a href="#Integer-parseInt-与-Integer-valueOf-的比较" class="headerlink" title="Integer.parseInt() 与 Integer.valueOf() 的比较"></a>Integer.parseInt() 与 Integer.valueOf() 的比较</h1><p>Integer.parseInt() 和 Integer.valueOf() 都是用来 将String转换为Int的。</p>
+<ul>
+<li>Integer.parseInt()，返回一个原子类型int.<ul>
+<li>parseInt() 只是调用parseInt, 并且返回原子类型int.</li>
+</ul>
+</li>
+<li>Integer.valueOf(), 返回的是封装的Integer对象。<ul>
+<li>valueOf 也会调用parseInt, 但是返回Integer对象。而且它会维护一个cache，如果int值在cache范围内，直接从cache中取对象，如果不在，则会新创建一个对象。</li>
+</ul>
+</li>
+</ul>
+<p>如果我们只是需要一个int值，parseInt是合适的，而且效率要高，但是如果用valueOf就多此一举了，性能会下降。<br><a href="https://www.imooc.com/article/37688" target="_blank" rel="noopener">🐱文章</a></p>
 ]]></content>
       <categories>
-        <category>人文修养</category>
+        <category>信息技术</category>
       </categories>
       <tags>
-        <tag>鲁迅</tag>
+        <tag>java</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>journal-2019-02-15</title>
+    <url>/journal-2019-02-15/</url>
+    <content><![CDATA[<h2 id="小孩成长与人才发展"><a href="#小孩成长与人才发展" class="headerlink" title="小孩成长与人才发展"></a>小孩成长与人才发展</h2><p>小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。</p>
+<p>孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。</p>
+<p>国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。</p>
+<p>参考：<a href="http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm" target="_blank" rel="noopener">《基层减负 不是简单做减法》《求是》2019/03 </a></p>
+]]></content>
+      <categories>
+        <category>日志</category>
+      </categories>
   </entry>
   <entry>
     <title>切换 Shell 需谨慎</title>
@@ -543,6 +530,19 @@
       </categories>
       <tags>
         <tag>Shell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鲁迅</title>
+    <url>/luxun/</url>
+    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
+<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>鲁迅</tag>
       </tags>
   </entry>
   <entry>
@@ -922,117 +922,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Vim 自动补全之 YCM</title>
-    <url>/shell-java/</url>
-    <content><![CDATA[<p>IDEA 打开得太慢了，我需要一款轻量级的 IDE，不想装其他乱七八糟的编译器咋办？搞事情！</p>
-<a id="more"></a>
-<h2 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h2><p>sublime 通过简单的配置后可以实现 java 代码的高亮提示和编译功能，并且大多编译错误也能基本上精确到行。<br>然而 sublime 内置的终端无法输入，虽然在日常的算法中输入操作很少涉及，, 但还是很不爽。</p>
-<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>这里需要一定的 Vim 基础，新手请执行 <code>vimtutor</code> 查看 Vim 官方教程，再继续往后看。<br>在终端通过 java 命令即可实现 java 代码的编译与运行。<br>vim 不过起到的是编辑器的作用。<br>对于编辑器我们不仅有高亮的基本要求，同样也需要基本的代码补全功能, Vim 的 YCM 插件能较好的实现代码补全功能。<br>下面介绍通过 vim 的 vim-plug 插件管理器 来安装 YCM 。</p>
-<h2 id="预备工作"><a href="#预备工作" class="headerlink" title="预备工作"></a>预备工作</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br><span class="line">brew install cmake vim</span><br></pre></td></tr></table></figure>
-
-<h2 id="vim-plug-安装"><a href="#vim-plug-安装" class="headerlink" title="vim-plug 安装"></a>vim-plug 安装</h2><p><a href="https://github.com/junegunn/vim-plug" target="_blank" rel="noopener">junegunn/vim-plug</a></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -fLo ~/.vim/autoload/plug.vim --create-dirs \</span><br><span class="line">    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</span><br></pre></td></tr></table></figure>
-<h2 id="安装-YCM"><a href="#安装-YCM" class="headerlink" title="安装 YCM"></a>安装 YCM</h2><p><a href="https://github.com/Valloric/YouCompleteMe" target="_blank" rel="noopener">YCM Github</a></p>
-<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>YCM 可通过 vim-plug 下载，而安装使用则需要进一步的编译。</p>
-<p>在 .vimrc 文件中添加 <code>Plug &#39;Valloric/YouCompleteMe&#39;</code> 再执行 :PluginInstall 即可。</p>
-<h3 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h3><p>YCM 基于 cmake 进行编译的，所以在安装之前如下命令先通过 brew 安装 cmake。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">python3 .&#x2F;install.py --java-completer</span><br></pre></td></tr></table></figure>
-<p>请使用 python3 。</p>
-<p>安装好之后，由于我的 python3 缺乏很多依赖性，通过以下命令检验 python 所缺乏的依赖。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd</span><br><span class="line">cp ycmd&#x2F;default_settings.json . &amp; python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
-<p>如果输出如下，是 python 环境的问题考虑重启然后重装：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[1]    8629 segmentation fault  python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
-<p>若有如下报错：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ModuleNotFoundError: No module named &#39;bottle&#39;</span><br><span class="line">ModuleNotFoundError: No module named &#39;waitress&#39;</span><br></pre></td></tr></table></figure>
-<p>逐句执行 <code>pip3 install bottle</code> <code>pip3 install waitress</code>即可解决。<br>如果显示是：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">No module named &#39;ycm_core&#39;</span><br></pre></td></tr></table></figure>
-<p>是没有问题的</p>
-<h2 id="YCM-安装-C-family-的自动补全"><a href="#YCM-安装-C-family-的自动补全" class="headerlink" title="YCM 安装 C-family 的自动补全"></a>YCM 安装 C-family 的自动补全</h2><h3 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">python3 .&#x2F;install.py --clang-completer</span><br></pre></td></tr></table></figure>
-<h3 id="安装-ycm-gennerator"><a href="#安装-ycm-gennerator" class="headerlink" title="安装 ycm-gennerator"></a>安装 ycm-gennerator</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Plugin &#39;rdnetto&#x2F;YCM-Generator&#39;</span><br></pre></td></tr></table></figure>
-<h3 id="生成-ycm-extra-conf-py-文件到-YCM-中"><a href="#生成-ycm-extra-conf-py-文件到-YCM-中" class="headerlink" title="生成 .ycm_extra_conf.py 文件到 YCM 中"></a>生成 .ycm_extra_conf.py 文件到 YCM 中</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python3 .ycm_extra_conf.py ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd</span><br></pre></td></tr></table></figure>
-<h3 id="在-vimrc-中添加"><a href="#在-vimrc-中添加" class="headerlink" title="在 ~/.vimrc 中添加"></a>在 ~/.vimrc 中添加</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let g:ycm_global_ycm_extra_conf &#x3D; &#39;～&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd&#x2F;.ycm_extra_conf.py&#39;</span><br></pre></td></tr></table></figure>
-
-<h2 id="go-语言"><a href="#go-语言" class="headerlink" title="go 语言"></a>go 语言</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --go-completer</span><br></pre></td></tr></table></figure>
-
-<h2 id="其他语言参数"><a href="#其他语言参数" class="headerlink" title="其他语言参数"></a>其他语言参数</h2><ul>
-<li>C family support: <code>python3 ./install.py --clang-completer</code></li>
-<li>C# support: <code>python3 ./install.py --cs-completer</code>（install Mono with Homebrew or by downloading the <a href="http://www.mono-project.com/docs/getting-started/install/mac/" target="_blank" rel="noopener">Mono macOS package</a> ）</li>
-<li>Go support: <code>python3 ./install.py --go-completer</code> </li>
-<li>JavaScript and TypeScript support: <code>python3 ./install.py --ts-completer</code> </li>
-<li>Rust support: <code>python3 ./install.py --rust-completer</code></li>
-<li>Java support: <code>python3 ./install.py --java-completer</code></li>
-</ul>
-<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:PlugUpdate</span><br></pre></td></tr></table></figure>
-<p>或</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">git clean -f</span><br><span class="line">git pull</span><br><span class="line">git submodule update --recursive --init</span><br><span class="line">.&#x2F;install.py --go-completer</span><br></pre></td></tr></table></figure>
-
-<h2 id="错误解决"><a href="#错误解决" class="headerlink" title="错误解决"></a>错误解决</h2><p>升级 catalina 后 brew 安装的 python3 执行异常，解决方案如下：<br><a href="https://forums.developer.apple.com/thread/119429" target="_blank" rel="noopener">My application crashed with invalid load of lib… |Apple Developer Forums</a></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;zsh</span><br><span class="line">brew update &amp; brew upgrade &amp; brew install openssl</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;openssl&#x2F;1.0.2t&#x2F;lib</span><br><span class="line">sudo cp libssl.1.0.0.dylib libcrypto.1.0.0.dylib &#x2F;usr&#x2F;local&#x2F;lib&#x2F;</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;lib</span><br><span class="line">mv libssl.dylib libssl_bak.dylib</span><br><span class="line">mv libcrypto.dylib libcrypto_bak.dylib</span><br><span class="line">sudo ln -s libssl.1.0.0.dylib libssl.dylib</span><br><span class="line">sudo ln -s libcrypto.1.0.0.dylib libcrypto.dylib</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>开发工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux 剪贴板小技巧</title>
-    <url>/ssh-clipboard-iterm2/</url>
-    <content><![CDATA[<h2 id="初步识-vim-剪贴板"><a href="#初步识-vim-剪贴板" class="headerlink" title="初步识 vim 剪贴板"></a>初步识 vim 剪贴板</h2><p>对于文本的复制粘贴，系统会提供剪贴板，剪贴板在 vim 中被称为寄存器，并且 vim 有很多寄存器，寄存器使用的语法：<code>&quot;{register}</code>，当然了寄存器指令不会单独使用，后面都会跟代表复制的 <code>y</code> 或代表粘贴的 <code>p</code>，执行 <code>&quot;ay</code> 就将选中的内容复制到了 <code>a</code> 寄存器，<a id="more"></a>寄存器都是有自己的名字的，感兴趣的同学，欲知详细内容请参见帮助文档：<code>:help registers</code>。</p>
-<p>那咱们平时执行 <code>yy</code> 或者选中 <code>y</code> 使用的寄存器叫什么名字呢？它叫匿名寄存器 (<code>&quot;&quot;</code>)。<code>y</code> 就等于 <code>&quot;&quot;y</code>。</p>
-<p>比较重要的是，系统剪贴板寄存器 <code>&quot;*</code>。通过 <code>&quot;*p</code> 就可以把系统剪贴板上的内容粘贴到 vim 文件内了。</p>
-<p><code>*p</code> 从系统剪贴板粘贴容易，而要从 vim 复制到系统剪贴板，首先选中文本，然后执行 <code>&quot;*y</code>，这多麻烦，所以我选择：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="comment">" .vimrc</span></span><br><span class="line"><span class="keyword">set</span> clipboard=unnamed</span><br></pre></td></tr></table></figure>
-<p>这样就让系统剪贴板 (<code>&quot;*</code>) 和匿名剪贴板 (<code>&quot;&quot;</code>) 内容保持同步了。<code>y</code> 就同时等效于 <code>&quot;&quot;y</code> 、 <code>&quot;*y</code> ，而 <code>p</code> 等价于 <code>&quot;&quot;p</code>、<code>&quot;*p</code> 以及 <code>command+v</code> 或者 Windows 的 <code>ctrl+v</code>。</p>
-<h2 id="远程剪贴板操作"><a href="#远程剪贴板操作" class="headerlink" title="远程剪贴板操作"></a>远程剪贴板操作</h2><p>通过 SSH 连接到了一台远程 Linux 服务器，这时候该任何复制粘贴呢？</p>
-<p>Someone said at once: “Stupid! Mac 上当然是鼠标选中然后 <code>command+c</code>、<code>command+v</code> 了，Windows 上是 <code>ctrl+c</code>、<code>ctrl+v</code>，虽然 <code>ctrl+v</code> 会和 vim 切换成可视模式冲突，但是我用 <code>ctrl+shift+v</code> 就解决了。”</p>
-<p>这方法很便捷，并且我也经常使用，但是在使用过程中主要遇到以下两个问题：</p>
-<ol>
-<li>如果你的 vim 开启了行号，鼠标选中多行的时候，会选中行号，复制下来的内容也会也行号。我的 vim 是默认开启行号的。</li>
-<li>只能复制一个窗口大小的内容。</li>
-</ol>
-<p>其实还有一个问题，就是不能完全脱离鼠标，我是三分之二键盘党，所以我认为这不是主要问题。</p>
-<p>这些问题不是都已经解决了吗？如果设置了 <code>set clipboard=unnamed</code>，直接选中（注意不是鼠标选中，而是 vim 中的选中 <code>shift+v</code> 上下键）然后 <code>y</code>，然后 <code>p</code>。那你试试 <code>command+v</code> 或 <code>ctrl+v</code> 呢？保证不是你刚刚复制的内容。</p>
-<p>短路了吧？重新认识一下，你现在同时使用了两个系统，一个是本地，一个是远程服务器，<code>y</code> 复制的内容在远程服务器上呢，还在你公司，在杭州，在北京，还是在海外呢？</p>
-<p>那我不用 <code>command+v</code> 可好，有 <code>p</code>，还少按一个键。</p>
-<p>漂亮！你已经找到答案了。</p>
-<h3 id="剪贴板远程传送"><a href="#剪贴板远程传送" class="headerlink" title="剪贴板远程传送"></a>剪贴板远程传送</h3><p>那如果我想将远程服务器的一段字符传送到本地呢？有人说 <strong>scp</strong>，但在实际操作中，通过 <strong>scp</strong> 或者 <strong>ftp</strong>，传送文件还 ok，传送一段文本的即时性就太差了。</p>
-<p>找到两种比较好的办法，但是针对的客户端是 Mac 或者 Linux，据了解 Windows 自带有 Linux 子系统，可以开启试试。</p>
-<p>方法一：</p>
-<blockquote>
-<p>该方法使用了一个叫 <strong>clipper</strong> 的 <strong>go</strong> 语言程序，以及 <strong>vim-clipper</strong> 插件，两个项目的链接都在下面。但是我没有用过这种方式，一方面配置较多，而且要在本地跑额外的程序，可能功能比较强大但是我用不了这么多，另一方面就是有第二种比较适合我的方式。</p>
-</blockquote>
-<ul>
-<li><a href="https://github.com/wincent/clipper" target="_blank" rel="noopener">wincent/clipper: ✂️ Clipboard access for local and remote tmux sessions</a></li>
-<li><a href="https://github.com/wincent/vim-clipper" target="_blank" rel="noopener">wincent/vim-clipper: Clipper integration for Vim</a></li>
-</ul>
-<p>For Mac User:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> brew install clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> brew services start clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh -R localhost:8377:localhost:8377 user@host.example.org</span></span><br></pre></td></tr></table></figure>
-
-<p>For Linux User:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yum install golang</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> git://git.wincent.com/clipper.git</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> go build</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo cp clipper /usr/<span class="built_in">local</span>/bin</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> cp contrib/linux/systemd-service/clipper.service ~/.config/systemd/user</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user daemon-reload</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user <span class="built_in">enable</span> clipper.service</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user start clipper.service</span></span><br></pre></td></tr></table></figure>
-
-<p>方法二：<br>该方式，仅适合使用 <strong>Mac</strong> 及 <strong>iTerm.app</strong> 的用户。</p>
-<p><code>iTerm-&gt;Perferences-&gt;
-Selection-&gt;Application in terminal may access clipboard</code>（选择开启），可能版本更新这个功能的位置会有所变动。</p>
-<p>在远程服务器执行如下命令(如果使用的是<strong>bash</strong>将<strong>zsh</strong>改为<strong>bash</strong>即可)：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd</span><br><span class="line">$ curl -L https:&#x2F;&#x2F;iterm2.com&#x2F;shell_integration&#x2F;install_shell_integration_and_utilities.sh | zsh</span><br></pre></td></tr></table></figure>
-<p>命令下载<code>.iterm2_shell_integration.zsh</code>脚本到用户根目录，还有一些小程序到<code>~/.iterm2</code>目录下，<br>并在<code>.zshrc</code>末尾生成<code>test -e &quot;${HOME}/.iterm2_shell_integration.zsh&quot; &amp;&amp; source &quot;${HOME}/.iterm2_shell_integration.zsh&quot;</code><br>卸载的时候也只需要将这三个部分删除掉即可。</p>
-<p>在vim配置文件<code>.vimrc</code>下添加如下代码：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if !empty(&#39;~&#x2F;.iterm2&#x2F;it2copy&#39;)</span><br><span class="line">  vmap &lt;silent&gt; &lt;Leader&gt;y :&#39;&lt;,&#39;&gt;:w !~&#x2F;.iterm2&#x2F;it2copy&lt;CR&gt;&lt;CR&gt;</span><br><span class="line">endif</span><br></pre></td></tr></table></figure>
-
-<p>此时<code>shift+v</code>选中文本，执行 <code>&lt;leader&gt;y</code>，文本就到你本地的剪贴板啦。不信你就<code>command+v</code>。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>剪贴板</tag>
-        <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>搜索引擎使用技巧</title>
     <url>/se-operators/</url>
     <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F05%2F29%2F1590724982.png?x-oss-process=style/title_800" alt="1590724982.png"></p>
@@ -1123,7 +1012,60 @@ Selection-&gt;Application in terminal may access clipboard</code>（选择开启
         <tag>SE</tag>
         <tag>搜索引擎</tag>
         <tag>Google</tag>
-        <tag>ASO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vim 自动补全之 YCM</title>
+    <url>/shell-java/</url>
+    <content><![CDATA[<p>IDEA 打开得太慢了，我需要一款轻量级的 IDE，不想装其他乱七八糟的编译器咋办？搞事情！</p>
+<a id="more"></a>
+<h2 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h2><p>sublime 通过简单的配置后可以实现 java 代码的高亮提示和编译功能，并且大多编译错误也能基本上精确到行。<br>然而 sublime 内置的终端无法输入，虽然在日常的算法中输入操作很少涉及，, 但还是很不爽。</p>
+<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>这里需要一定的 Vim 基础，新手请执行 <code>vimtutor</code> 查看 Vim 官方教程，再继续往后看。<br>在终端通过 java 命令即可实现 java 代码的编译与运行。<br>vim 不过起到的是编辑器的作用。<br>对于编辑器我们不仅有高亮的基本要求，同样也需要基本的代码补全功能, Vim 的 YCM 插件能较好的实现代码补全功能。<br>下面介绍通过 vim 的 vim-plug 插件管理器 来安装 YCM 。</p>
+<h2 id="预备工作"><a href="#预备工作" class="headerlink" title="预备工作"></a>预备工作</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br><span class="line">brew install cmake vim</span><br></pre></td></tr></table></figure>
+
+<h2 id="vim-plug-安装"><a href="#vim-plug-安装" class="headerlink" title="vim-plug 安装"></a>vim-plug 安装</h2><p><a href="https://github.com/junegunn/vim-plug" target="_blank" rel="noopener">junegunn/vim-plug</a></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -fLo ~/.vim/autoload/plug.vim --create-dirs \</span><br><span class="line">    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</span><br></pre></td></tr></table></figure>
+<h2 id="安装-YCM"><a href="#安装-YCM" class="headerlink" title="安装 YCM"></a>安装 YCM</h2><p><a href="https://github.com/Valloric/YouCompleteMe" target="_blank" rel="noopener">YCM Github</a></p>
+<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>YCM 可通过 vim-plug 下载，而安装使用则需要进一步的编译。</p>
+<p>在 .vimrc 文件中添加 <code>Plug &#39;Valloric/YouCompleteMe&#39;</code> 再执行 :PluginInstall 即可。</p>
+<h3 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h3><p>YCM 基于 cmake 进行编译的，所以在安装之前如下命令先通过 brew 安装 cmake。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">python3 .&#x2F;install.py --java-completer</span><br></pre></td></tr></table></figure>
+<p>请使用 python3 。</p>
+<p>安装好之后，由于我的 python3 缺乏很多依赖性，通过以下命令检验 python 所缺乏的依赖。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd</span><br><span class="line">cp ycmd&#x2F;default_settings.json . &amp; python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
+<p>如果输出如下，是 python 环境的问题考虑重启然后重装：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[1]    8629 segmentation fault  python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
+<p>若有如下报错：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ModuleNotFoundError: No module named &#39;bottle&#39;</span><br><span class="line">ModuleNotFoundError: No module named &#39;waitress&#39;</span><br></pre></td></tr></table></figure>
+<p>逐句执行 <code>pip3 install bottle</code> <code>pip3 install waitress</code>即可解决。<br>如果显示是：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">No module named &#39;ycm_core&#39;</span><br></pre></td></tr></table></figure>
+<p>是没有问题的</p>
+<h2 id="YCM-安装-C-family-的自动补全"><a href="#YCM-安装-C-family-的自动补全" class="headerlink" title="YCM 安装 C-family 的自动补全"></a>YCM 安装 C-family 的自动补全</h2><h3 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">python3 .&#x2F;install.py --clang-completer</span><br></pre></td></tr></table></figure>
+<h3 id="安装-ycm-gennerator"><a href="#安装-ycm-gennerator" class="headerlink" title="安装 ycm-gennerator"></a>安装 ycm-gennerator</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Plugin &#39;rdnetto&#x2F;YCM-Generator&#39;</span><br></pre></td></tr></table></figure>
+<h3 id="生成-ycm-extra-conf-py-文件到-YCM-中"><a href="#生成-ycm-extra-conf-py-文件到-YCM-中" class="headerlink" title="生成 .ycm_extra_conf.py 文件到 YCM 中"></a>生成 .ycm_extra_conf.py 文件到 YCM 中</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python3 .ycm_extra_conf.py ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd</span><br></pre></td></tr></table></figure>
+<h3 id="在-vimrc-中添加"><a href="#在-vimrc-中添加" class="headerlink" title="在 ~/.vimrc 中添加"></a>在 ~/.vimrc 中添加</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let g:ycm_global_ycm_extra_conf &#x3D; &#39;～&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd&#x2F;.ycm_extra_conf.py&#39;</span><br></pre></td></tr></table></figure>
+
+<h2 id="go-语言"><a href="#go-语言" class="headerlink" title="go 语言"></a>go 语言</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --go-completer</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他语言参数"><a href="#其他语言参数" class="headerlink" title="其他语言参数"></a>其他语言参数</h2><ul>
+<li>C family support: <code>python3 ./install.py --clang-completer</code></li>
+<li>C# support: <code>python3 ./install.py --cs-completer</code>（install Mono with Homebrew or by downloading the <a href="http://www.mono-project.com/docs/getting-started/install/mac/" target="_blank" rel="noopener">Mono macOS package</a> ）</li>
+<li>Go support: <code>python3 ./install.py --go-completer</code> </li>
+<li>JavaScript and TypeScript support: <code>python3 ./install.py --ts-completer</code> </li>
+<li>Rust support: <code>python3 ./install.py --rust-completer</code></li>
+<li>Java support: <code>python3 ./install.py --java-completer</code></li>
+</ul>
+<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:PlugUpdate</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">git clean -f</span><br><span class="line">git pull</span><br><span class="line">git submodule update --recursive --init</span><br><span class="line">.&#x2F;install.py --go-completer</span><br></pre></td></tr></table></figure>
+
+<h2 id="错误解决"><a href="#错误解决" class="headerlink" title="错误解决"></a>错误解决</h2><p>升级 catalina 后 brew 安装的 python3 执行异常，解决方案如下：<br><a href="https://forums.developer.apple.com/thread/119429" target="_blank" rel="noopener">My application crashed with invalid load of lib… |Apple Developer Forums</a></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;zsh</span><br><span class="line">brew update &amp; brew upgrade &amp; brew install openssl</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;openssl&#x2F;1.0.2t&#x2F;lib</span><br><span class="line">sudo cp libssl.1.0.0.dylib libcrypto.1.0.0.dylib &#x2F;usr&#x2F;local&#x2F;lib&#x2F;</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;lib</span><br><span class="line">mv libssl.dylib libssl_bak.dylib</span><br><span class="line">mv libcrypto.dylib libcrypto_bak.dylib</span><br><span class="line">sudo ln -s libssl.1.0.0.dylib libssl.dylib</span><br><span class="line">sudo ln -s libcrypto.1.0.0.dylib libcrypto.dylib</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>开发工具</tag>
       </tags>
   </entry>
   <entry>
@@ -1160,6 +1102,63 @@ Selection-&gt;Application in terminal may access clipboard</code>（选择开启
       </categories>
       <tags>
         <tag>ssm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 剪贴板小技巧</title>
+    <url>/ssh-clipboard-iterm2/</url>
+    <content><![CDATA[<h2 id="初步识-vim-剪贴板"><a href="#初步识-vim-剪贴板" class="headerlink" title="初步识 vim 剪贴板"></a>初步识 vim 剪贴板</h2><p>对于文本的复制粘贴，系统会提供剪贴板，剪贴板在 vim 中被称为寄存器，并且 vim 有很多寄存器，寄存器使用的语法：<code>&quot;{register}</code>，当然了寄存器指令不会单独使用，后面都会跟代表复制的 <code>y</code> 或代表粘贴的 <code>p</code>，执行 <code>&quot;ay</code> 就将选中的内容复制到了 <code>a</code> 寄存器，<a id="more"></a>寄存器都是有自己的名字的，感兴趣的同学，欲知详细内容请参见帮助文档：<code>:help registers</code>。</p>
+<p>那咱们平时执行 <code>yy</code> 或者选中 <code>y</code> 使用的寄存器叫什么名字呢？它叫匿名寄存器 (<code>&quot;&quot;</code>)。<code>y</code> 就等于 <code>&quot;&quot;y</code>。</p>
+<p>比较重要的是，系统剪贴板寄存器 <code>&quot;*</code>。通过 <code>&quot;*p</code> 就可以把系统剪贴板上的内容粘贴到 vim 文件内了。</p>
+<p><code>*p</code> 从系统剪贴板粘贴容易，而要从 vim 复制到系统剪贴板，首先选中文本，然后执行 <code>&quot;*y</code>，这多麻烦，所以我选择：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="comment">" .vimrc</span></span><br><span class="line"><span class="keyword">set</span> clipboard=unnamed</span><br></pre></td></tr></table></figure>
+<p>这样就让系统剪贴板 (<code>&quot;*</code>) 和匿名剪贴板 (<code>&quot;&quot;</code>) 内容保持同步了。<code>y</code> 就同时等效于 <code>&quot;&quot;y</code> 、 <code>&quot;*y</code> ，而 <code>p</code> 等价于 <code>&quot;&quot;p</code>、<code>&quot;*p</code> 以及 <code>command+v</code> 或者 Windows 的 <code>ctrl+v</code>。</p>
+<h2 id="远程剪贴板操作"><a href="#远程剪贴板操作" class="headerlink" title="远程剪贴板操作"></a>远程剪贴板操作</h2><p>通过 SSH 连接到了一台远程 Linux 服务器，这时候该任何复制粘贴呢？</p>
+<p>Someone said at once: “Stupid! Mac 上当然是鼠标选中然后 <code>command+c</code>、<code>command+v</code> 了，Windows 上是 <code>ctrl+c</code>、<code>ctrl+v</code>，虽然 <code>ctrl+v</code> 会和 vim 切换成可视模式冲突，但是我用 <code>ctrl+shift+v</code> 就解决了。”</p>
+<p>这方法很便捷，并且我也经常使用，但是在使用过程中主要遇到以下两个问题：</p>
+<ol>
+<li>如果你的 vim 开启了行号，鼠标选中多行的时候，会选中行号，复制下来的内容也会也行号。我的 vim 是默认开启行号的。</li>
+<li>只能复制一个窗口大小的内容。</li>
+</ol>
+<p>其实还有一个问题，就是不能完全脱离鼠标，我是三分之二键盘党，所以我认为这不是主要问题。</p>
+<p>这些问题不是都已经解决了吗？如果设置了 <code>set clipboard=unnamed</code>，直接选中（注意不是鼠标选中，而是 vim 中的选中 <code>shift+v</code> 上下键）然后 <code>y</code>，然后 <code>p</code>。那你试试 <code>command+v</code> 或 <code>ctrl+v</code> 呢？保证不是你刚刚复制的内容。</p>
+<p>短路了吧？重新认识一下，你现在同时使用了两个系统，一个是本地，一个是远程服务器，<code>y</code> 复制的内容在远程服务器上呢，还在你公司，在杭州，在北京，还是在海外呢？</p>
+<p>那我不用 <code>command+v</code> 可好，有 <code>p</code>，还少按一个键。</p>
+<p>漂亮！你已经找到答案了。</p>
+<h3 id="剪贴板远程传送"><a href="#剪贴板远程传送" class="headerlink" title="剪贴板远程传送"></a>剪贴板远程传送</h3><p>那如果我想将远程服务器的一段字符传送到本地呢？有人说 <strong>scp</strong>，但在实际操作中，通过 <strong>scp</strong> 或者 <strong>ftp</strong>，传送文件还 ok，传送一段文本的即时性就太差了。</p>
+<p>找到两种比较好的办法，但是针对的客户端是 Mac 或者 Linux，据了解 Windows 自带有 Linux 子系统，可以开启试试。</p>
+<p>方法一：</p>
+<blockquote>
+<p>该方法使用了一个叫 <strong>clipper</strong> 的 <strong>go</strong> 语言程序，以及 <strong>vim-clipper</strong> 插件，两个项目的链接都在下面。但是我没有用过这种方式，一方面配置较多，而且要在本地跑额外的程序，可能功能比较强大但是我用不了这么多，另一方面就是有第二种比较适合我的方式。</p>
+</blockquote>
+<ul>
+<li><a href="https://github.com/wincent/clipper" target="_blank" rel="noopener">wincent/clipper: ✂️ Clipboard access for local and remote tmux sessions</a></li>
+<li><a href="https://github.com/wincent/vim-clipper" target="_blank" rel="noopener">wincent/vim-clipper: Clipper integration for Vim</a></li>
+</ul>
+<p>For Mac User:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> brew install clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> brew services start clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh -R localhost:8377:localhost:8377 user@host.example.org</span></span><br></pre></td></tr></table></figure>
+
+<p>For Linux User:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yum install golang</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> git://git.wincent.com/clipper.git</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> go build</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo cp clipper /usr/<span class="built_in">local</span>/bin</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> cp contrib/linux/systemd-service/clipper.service ~/.config/systemd/user</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user daemon-reload</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user <span class="built_in">enable</span> clipper.service</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user start clipper.service</span></span><br></pre></td></tr></table></figure>
+
+<p>方法二：<br>该方式，仅适合使用 <strong>Mac</strong> 及 <strong>iTerm.app</strong> 的用户。</p>
+<p><code>iTerm-&gt;Perferences-&gt;
+Selection-&gt;Application in terminal may access clipboard</code>（选择开启），可能版本更新这个功能的位置会有所变动。</p>
+<p>在远程服务器执行如下命令(如果使用的是<strong>bash</strong>将<strong>zsh</strong>改为<strong>bash</strong>即可)：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd</span><br><span class="line">$ curl -L https:&#x2F;&#x2F;iterm2.com&#x2F;shell_integration&#x2F;install_shell_integration_and_utilities.sh | zsh</span><br></pre></td></tr></table></figure>
+<p>命令下载<code>.iterm2_shell_integration.zsh</code>脚本到用户根目录，还有一些小程序到<code>~/.iterm2</code>目录下，<br>并在<code>.zshrc</code>末尾生成<code>test -e &quot;${HOME}/.iterm2_shell_integration.zsh&quot; &amp;&amp; source &quot;${HOME}/.iterm2_shell_integration.zsh&quot;</code><br>卸载的时候也只需要将这三个部分删除掉即可。</p>
+<p>在vim配置文件<code>.vimrc</code>下添加如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if !empty(&#39;~&#x2F;.iterm2&#x2F;it2copy&#39;)</span><br><span class="line">  vmap &lt;silent&gt; &lt;Leader&gt;y :&#39;&lt;,&#39;&gt;:w !~&#x2F;.iterm2&#x2F;it2copy&lt;CR&gt;&lt;CR&gt;</span><br><span class="line">endif</span><br></pre></td></tr></table></figure>
+
+<p>此时<code>shift+v</code>选中文本，执行 <code>&lt;leader&gt;y</code>，文本就到你本地的剪贴板啦。不信你就<code>command+v</code>。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>剪贴板</tag>
+        <tag>Vim</tag>
       </tags>
   </entry>
   <entry>
