@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://blog.xyang.xin/macos-problems/</loc>
-    <lastmod>2020-05-12</lastmod>
+    <loc>http://blog.xyang.xin/ssh-clipboard-iterm2/</loc>
+    <lastmod>2020-06-03</lastmod>
+  </url>  <url>
+    <loc>http://blog.xyang.xin/se-operators/</loc>
+    <lastmod>2020-06-03</lastmod>
+  </url>  <url>
+    <loc>http://blog.xyang.xin/book-rhydybs/</loc>
+    <lastmod>2020-05-31</lastmod>
+  </url>  <url>
+    <loc>http://blog.xyang.xin/book-hsxzs/</loc>
+    <lastmod>2020-05-31</lastmod>
   </url>  <url>
     <loc>http://blog.xyang.xin/proxy-teach/</loc>
-    <lastmod>2020-05-11</lastmod>
+    <lastmod>2020-05-30</lastmod>
+  </url>  <url>
+    <loc>http://blog.xyang.xin/macos-problems/</loc>
+    <lastmod>2020-05-29</lastmod>
   </url>  <url>
     <loc>http://blog.xyang.xin/journal-2019-02-15/</loc>
     <lastmod>2020-04-18</lastmod>
@@ -36,12 +48,6 @@
   </url>  <url>
     <loc>http://blog.xyang.xin/hexo-advance/</loc>
     <lastmod>2020-04-15</lastmod>
-  </url>  <url>
-    <loc>http://blog.xyang.xin/book-rhydybs/</loc>
-    <lastmod>2020-04-14</lastmod>
-  </url>  <url>
-    <loc>http://blog.xyang.xin/book-hsxzs/</loc>
-    <lastmod>2020-04-14</lastmod>
   </url>  <url>
     <loc>http://blog.xyang.xin/es6-everyday-3/</loc>
     <lastmod>2020-04-14</lastmod>

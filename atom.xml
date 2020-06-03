@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.xyang.xin/"/>
-  <updated>2020-05-12T06:04:45.134Z</updated>
+  <updated>2020-06-03T09:04:00.445Z</updated>
   <id>http://blog.xyang.xin/</id>
   
   <author>
@@ -17,15 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Linux 剪贴板小技巧</title>
+    <link href="http://blog.xyang.xin/ssh-clipboard-iterm2/"/>
+    <id>http://blog.xyang.xin/ssh-clipboard-iterm2/</id>
+    <published>2020-05-30T22:07:30.000Z</published>
+    <updated>2020-06-03T09:04:00.445Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;初步识-vim-剪贴板&quot;&gt;&lt;a href=&quot;#初步识-vim-剪贴板&quot; class=&quot;headerlink&quot; title=&quot;初步识 vim 剪贴板&quot;&gt;&lt;/a&gt;初步识 vim 剪贴板&lt;/h2&gt;&lt;p&gt;对于文本的复制粘贴，系统会提供剪贴板，剪贴板在 vim 中被称为寄存器，并且 vim 有很多寄存器，寄存器使用的语法：&lt;code&gt;&amp;quot;{register}&lt;/code&gt;，当然了寄存器指令不会单独使用，后面都会跟代表复制的 &lt;code&gt;y&lt;/code&gt; 或代表粘贴的 &lt;code&gt;p&lt;/code&gt;，执行 &lt;code&gt;&amp;quot;ay&lt;/code&gt; 就将选中的内容复制到了 &lt;code&gt;a&lt;/code&gt; 寄存器，
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Linux" scheme="http://blog.xyang.xin/tags/Linux/"/>
+    
+      <category term="剪贴板" scheme="http://blog.xyang.xin/tags/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
+    
+      <category term="Vim" scheme="http://blog.xyang.xin/tags/Vim/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Mac 小问题</title>
     <link href="http://blog.xyang.xin/macos-problems/"/>
     <id>http://blog.xyang.xin/macos-problems/</id>
     <published>2020-04-18T16:15:08.000Z</published>
-    <updated>2020-05-12T06:04:45.134Z</updated>
+    <updated>2020-05-29T04:08:11.423Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2020-04/macoshero.jpg&quot; alt=&quot;macoshero.jpg -w600&quot;&gt;&lt;br&gt;记录 MacOS 使用过程中遇到的问题及解决办法，解决办法不是万用的，只是有可能解决你遇到的与我相同或类似的问题，但是不会损害你的电脑。&lt;/p&gt;
+      &lt;p&gt;记录 MacOS 使用过程中遇到的问题及解决办法，解决办法不是万用的，只是有可能解决你遇到的与我相同或类似的问题，但是不会损害你的电脑。&lt;/p&gt;
     
     </summary>
     
@@ -34,6 +59,34 @@
     
     
       <category term="MacOS" scheme="http://blog.xyang.xin/tags/MacOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搜索引擎使用技巧</title>
+    <link href="http://blog.xyang.xin/se-operators/"/>
+    <id>http://blog.xyang.xin/se-operators/</id>
+    <published>2020-04-18T16:15:08.000Z</published>
+    <updated>2020-06-03T09:03:57.001Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2020%2F05%2F29%2F1590724982.png?x-oss-process=style/title_800&quot; alt=&quot;1590724982.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;生活离不开搜索引擎了，我曾尝试在思考，是不是未来的开卷考试，会允许使用某个特定的搜索引擎。
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="SE" scheme="http://blog.xyang.xin/tags/SE/"/>
+    
+      <category term="搜索引擎" scheme="http://blog.xyang.xin/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/"/>
+    
+      <category term="Google" scheme="http://blog.xyang.xin/tags/Google/"/>
+    
+      <category term="ASO" scheme="http://blog.xyang.xin/tags/ASO/"/>
     
   </entry>
   
@@ -191,11 +244,11 @@
     <link href="http://blog.xyang.xin/book-rhydybs/"/>
     <id>http://blog.xyang.xin/book-rhydybs/</id>
     <published>2019-09-01T19:36:24.000Z</published>
-    <updated>2020-04-14T15:16:55.873Z</updated>
+    <updated>2020-05-31T08:54:39.031Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-09%2Frhydybs.jpeg&quot; alt=&quot;rhydybs.jpeg-w140&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-09%2Frhydybs.jpeg?x-oss-process=style/title_140&quot; alt=&quot;rhydybs.jpeg-w140&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -214,11 +267,11 @@
     <link href="http://blog.xyang.xin/book-hsxzs/"/>
     <id>http://blog.xyang.xin/book-hsxzs/</id>
     <published>2019-07-11T16:47:31.000Z</published>
-    <updated>2020-04-14T15:16:51.465Z</updated>
+    <updated>2020-05-31T08:54:19.534Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-05%2F1558180143.png&quot; alt=&quot;1558180143.png-w140&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-05%2F1558180143.png?x-oss-process=style/title_140&quot; alt=&quot;1558180143.png-w140&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -286,11 +339,11 @@
     <link href="http://blog.xyang.xin/proxy-teach/"/>
     <id>http://blog.xyang.xin/proxy-teach/</id>
     <published>2019-02-24T00:31:12.000Z</published>
-    <updated>2020-05-11T10:05:29.433Z</updated>
+    <updated>2020-05-30T04:02:01.050Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;代理服务器 &amp;amp;&amp;amp; VPN&lt;/p&gt;
+      &lt;p&gt;推荐了一款代理客户端软件，并介绍了其对应服务器端的搭建过程。&lt;/p&gt;
     
     </summary>
     
@@ -447,58 +500,6 @@
     
     
       <category term="包管理" scheme="http://blog.xyang.xin/tags/%E5%8C%85%E7%AE%A1%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>编程语言之 Java</title>
-    <link href="http://blog.xyang.xin/java-language/"/>
-    <id>http://blog.xyang.xin/java-language/</id>
-    <published>2018-10-25T20:14:11.000Z</published>
-    <updated>2020-04-18T07:48:52.736Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Integer-parseInt-与-Integer-valueOf-的比较&quot;&gt;&lt;a href=&quot;#Integer-parseInt-与-Integer-valueOf-的比较&quot; class=&quot;headerlink&quot; title=&quot;Integer.parseInt() 与 Integer.valueOf() 的比较&quot;&gt;&lt;/a&gt;Integer.parseInt() 与 Integer.valueOf() 的比较&lt;/h1&gt;&lt;p&gt;Integer.parseInt() 和 Integer.valueOf() 都是用来 将String转换为Int的。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Integer.parseInt()，返回一个原子类型int.&lt;ul&gt;
-&lt;li&gt;parseInt() 只是调用parseInt, 并且返回原子类型int.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Integer.valueOf(), 返回的是封装的Integer对象。&lt;ul&gt;
-&lt;li&gt;valueOf 也会调用parseInt, 但是返回Integer对象。而且它会维护一个cache，如果int值在cach
-      
-    
-    </summary>
-    
-    
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="java" scheme="http://blog.xyang.xin/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vim 自动补全之 YCM</title>
-    <link href="http://blog.xyang.xin/shell-java/"/>
-    <id>http://blog.xyang.xin/shell-java/</id>
-    <published>2018-10-23T23:54:02.000Z</published>
-    <updated>2020-04-14T14:16:34.914Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;IDEA 打开得太慢了，我需要一款轻量级的 IDE，不想装其他乱七八糟的编译器咋办？搞事情！&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="开发工具" scheme="http://blog.xyang.xin/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
