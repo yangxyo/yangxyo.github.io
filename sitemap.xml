@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.xyang.xin/proxy-teach/</loc>
+    
+    <lastmod>2020-06-03T12:54:20.556Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.xyang.xin/se-operators/</loc>
     
     <lastmod>2020-06-03T12:32:32.653Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://blog.xyang.xin/book-hsxzs/</loc>
     
     <lastmod>2020-05-31T08:54:19.534Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/proxy-teach/</loc>
-    
-    <lastmod>2020-05-30T04:02:01.050Z</lastmod>
     
   </url>
   

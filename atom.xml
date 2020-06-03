@@ -337,11 +337,11 @@
     <link href="http://blog.xyang.xin/proxy-teach/"/>
     <id>http://blog.xyang.xin/proxy-teach/</id>
     <published>2019-02-24T00:31:12.000Z</published>
-    <updated>2020-05-30T04:02:01.050Z</updated>
+    <updated>2020-06-03T12:54:20.556Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;推荐了一款代理客户端软件，并介绍了其对应服务器端的搭建过程。&lt;/p&gt;
+      &lt;p&gt;推荐了一款代理客户端软件，并介绍了其对应服务器端的搭建过程。主要包含：shadowsocks-libev、kuptun 加速。&lt;/p&gt;
     
     </summary>
     
