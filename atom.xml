@@ -68,15 +68,15 @@
   </entry>
   
   <entry>
-    <title>Mac 小问题</title>
+    <title>Mac 小问题 —— iCloud 未响应</title>
     <link href="http://blog.xyang.xin/macos-problems/"/>
     <id>http://blog.xyang.xin/macos-problems/</id>
     <published>2020-04-18T16:15:08.000Z</published>
-    <updated>2020-06-04T11:29:27.358Z</updated>
+    <updated>2020-06-05T04:52:33.956Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;记录 MacOS 使用过程中遇到的问题及解决办法，解决办法不是万用的，只是有可能解决你遇到的与我相同或类似的问题，但是不会损害你的电脑。&lt;/p&gt;
+      &lt;p&gt;使用 iCloud Drive 将文件上传到云端，防止数据丢失，同时可以实现多台设备的协同工作。但是在使用 iCloud Drive 的过程中我遇到了程序未响应，iCoud 文件上传阻塞的问题。&lt;/p&gt;
     
     </summary>
     
@@ -85,6 +85,10 @@
     
     
       <category term="MacOS" scheme="http://blog.xyang.xin/tags/MacOS/"/>
+    
+      <category term="Finder" scheme="http://blog.xyang.xin/tags/Finder/"/>
+    
+      <category term="iCloud" scheme="http://blog.xyang.xin/tags/iCloud/"/>
     
   </entry>
   

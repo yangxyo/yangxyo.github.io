@@ -287,54 +287,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo 博客进阶</title>
-    <url>/hexo-advance/</url>
-    <content><![CDATA[<h2 id="文章简介"><a href="#文章简介" class="headerlink" title="文章简介"></a>文章简介</h2><p>本文介绍 Hexo 博客的一些进阶操作。</p>
-<ul>
-<li>解决 Github Pages 不被百度抓取的问题；</li>
-<li>使用 gulp 压缩资源，实现访问加速。</li>
-<li>在博客中添加音频和视频；<a id="more"></a>
-<h2 id="Github-Pages-不被百度抓取的方法"><a href="#Github-Pages-不被百度抓取的方法" class="headerlink" title="Github Pages 不被百度抓取的方法"></a>Github Pages 不被百度抓取的方法</h2>并通过域名 CNAME 实现国内外分流，<h3 id="Coding-Pages"><a href="#Coding-Pages" class="headerlink" title="Coding Pages"></a>Coding Pages</h3><a href="https://help.coding.net/docs/devops/cd/static-website.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE" target="_blank" rel="noopener">CODING 静态网站服务 - CODING 帮助中心</a></li>
-</ul>
-<h3 id="私有的-OSS"><a href="#私有的-OSS" class="headerlink" title="私有的 OSS"></a>私有的 OSS</h3><p>以阿里云oss为例<br><img data-src="https://images.xyang.xin/2020-04/1586841854.png" alt="开通子目录首页"></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-oss</span><br></pre></td></tr></table></figure>
-<p><code>_config.yml</code> 配置</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">oss</span></span><br><span class="line">  <span class="attr">accessKeyId:</span> <span class="string">&lt;your</span> <span class="string">accessKeyId&gt;</span></span><br><span class="line">  <span class="attr">accessKeySecret:</span> <span class="string">&lt;your</span> <span class="string">accessKeySecret&gt;</span></span><br><span class="line">  <span class="attr">bucket:</span> <span class="string">&lt;your</span> <span class="string">bucket&gt;</span></span><br><span class="line">  <span class="attr">region:</span> <span class="string">&lt;your</span> <span class="string">region&gt;</span></span><br></pre></td></tr></table></figure>
-<p>  其中 region 以北京地区的 oss 为例填 <code>oss-cn-beijing</code></p>
-<h2 id="使用-gulp-压缩资源"><a href="#使用-gulp-压缩资源" class="headerlink" title="使用 gulp 压缩资源"></a>使用 gulp 压缩资源</h2><p>使用 gulp 压缩资源，提高访问速度。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install gulp-cli -g</span><br><span class="line">npm install gulp gulp-htmlclean gulp-htmlmin gulp-imagemin gulp-clean-css gulp-uglify --save-dev</span><br></pre></td></tr></table></figure>
-
-<p>项目根目录新建<code>gulpfile.babel.js</code>，添加如下内容：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> gulp <span class="keyword">from</span> <span class="string">'gulp'</span></span><br><span class="line"><span class="keyword">import</span> cleancss <span class="keyword">from</span> <span class="string">'gulp-clean-css'</span></span><br><span class="line"><span class="keyword">import</span> uglify <span class="keyword">from</span> <span class="string">'gulp-uglify-es'</span></span><br><span class="line"><span class="keyword">import</span> htmlmin <span class="keyword">from</span> <span class="string">'gulp-htmlmin'</span></span><br><span class="line"><span class="keyword">import</span> htmlclean <span class="keyword">from</span> <span class="string">'gulp-htmlclean'</span></span><br><span class="line"><span class="keyword">import</span> imagemin <span class="keyword">from</span> <span class="string">'gulp-imagemin'</span></span><br><span class="line"><span class="keyword">import</span> babel <span class="keyword">from</span> <span class="string">'gulp-babel'</span></span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'minify-html'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/**/*.html'</span>)</span><br><span class="line">    .pipe(htmlclean(&#123;</span><br><span class="line">      protect: <span class="regexp">/&lt;\!--%fooTemplate\b.*?%--&gt;/g</span>,</span><br><span class="line">      edit: <span class="function">(<span class="params">html</span>) =&gt;</span> &#123; <span class="keyword">return</span> html.replace(<span class="regexp">/\begg(s?)\b/ig</span>, <span class="string">'omelet$1'</span>); &#125;</span><br><span class="line">    &#125;))</span><br><span class="line">    .pipe(htmlmin(&#123;</span><br><span class="line">      removeComments: <span class="literal">true</span>,</span><br><span class="line">      collapseWhitespace: <span class="literal">true</span>,</span><br><span class="line">      collapseBooleanAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeEmptyAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeScriptTypeAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeStyleLinkTypeAttributes: <span class="literal">true</span>,</span><br><span class="line">      minifyJS: <span class="literal">true</span>,</span><br><span class="line">      minifyCSS: <span class="literal">true</span>,</span><br><span class="line">    &#125;))</span><br><span class="line">    .on(<span class="string">'error'</span>, (err) =&gt; &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'html Error!'</span>, err.message);</span><br><span class="line">      <span class="keyword">this</span>.end();</span><br><span class="line">    &#125;)</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'clean-css'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/**/*.css'</span>)</span><br><span class="line">    .pipe(cleancss())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'minify-js'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/js/**/*.js'</span>)</span><br><span class="line">    .pipe(uglify())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'minify-images'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/images/**/*.*'</span>)</span><br><span class="line">    .pipe(imagemin())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public/images'</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'default'</span>, gulp.parallel(<span class="string">'minify-html'</span>, <span class="string">'clean-css'</span>, <span class="string">'minify-js'</span>, <span class="string">'minify-images'</span>, (done) =&gt; &#123;</span><br><span class="line">  done();</span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
-<p>由于是 es6 语法， 需要使用 babel 转译。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install --save-dev gulp-babel @babel/register @babel/preset-env @babel/core</span><br></pre></td></tr></table></figure>
-<p>创建<code>.babel.json</code> 文件，添加内容如下：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"presets"</span>: [</span><br><span class="line">    <span class="string">"@babel/env"</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"plugins"</span>: []</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>终端执行如下命令即可：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g &amp;&amp; gulp</span><br></pre></td></tr></table></figure>
-
-<p>如有报错，可以尝试删除<code>node_modules</code>文件，然后重新执行<code>npm install</code>。</p>
-<h2 id="在博客中插入音频与视频"><a href="#在博客中插入音频与视频" class="headerlink" title="在博客中插入音频与视频"></a>在博客中插入音频与视频</h2><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><h4 id="更快捷的方案一"><a href="#更快捷的方案一" class="headerlink" title="更快捷的方案一"></a>更快捷的方案一</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">430</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"XXX"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=430 height=86 src="https://music.xyang.xin/%E5%9C%A8%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E7%9B%B8%E9%81%87.mp3"></iframe>
-
-<h4 id="更强大的方案二（Github）"><a href="#更强大的方案二（Github）" class="headerlink" title="更强大的方案二（Github）"></a>更强大的方案二（<a href="https://github.com/MoePlayer/hexo-tag-aplayer#usage" target="_blank" rel="noopener">Github</a>）</h4><h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><h4 id="更快捷的标签方式"><a href="#更快捷的标签方式" class="headerlink" title="更快捷的标签方式"></a>更快捷的标签方式</h4><p>iframe 将web页嵌入到另一个网页</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">"854"</span> <span class="attr">height</span>=<span class="string">"480"</span> <span class="attr">src</span>=<span class="string">"//player.bilibili.com/player.html?aid=51918958&amp;cid=90895494&amp;page=1"</span> <span class="attr">scrolling</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">framespacing</span>=<span class="string">"0"</span> <span class="attr">allowfullscreen</span>=<span class="string">"true"</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<iframe width="854" height="480" src="//player.bilibili.com/player.html?aid=51918958&cid=90895494&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<h4 id="更强大的-hexo-tag-dplayer-插件"><a href="#更强大的-hexo-tag-dplayer-插件" class="headerlink" title="更强大的 hexo-tag-dplayer 插件"></a>更强大的 <a href="https://github.com/MoePlayer/hexo-tag-dplayer" target="_blank" rel="noopener">hexo-tag-dplayer</a> 插件</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-tag-dplayer --save</span><br></pre></td></tr></table></figure>
-
-<h3 id="PDF"><a href="#PDF" class="headerlink" title="PDF"></a>PDF</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">object</span> <span class="attr">data</span>=<span class="string">"mypdf.pdf"</span> <span class="attr">type</span>=<span class="string">"application/pdf"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">width</span>=<span class="string">"800"</span> <span class="attr">height</span>=<span class="string">"1200"</span> <span class="attr">typemustmatch</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>You don't have a PDF plugin, but you can <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"myfile.pdf"</span>&gt;</span>download the PDF file.<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/%E5%85%B6%E4%BB%96%E5%B5%8C%E5%85%A5%E6%8A%80%E6%9C%AF" target="_blank" rel="noopener">从对象到iframe - 其他嵌入技术 - 学习 Web 开发 | MDN</a><br><a href="https://luanzhuxian.github.io/post/e5ac3b51.html" target="_blank" rel="noopener">使用 Gulp 压缩 Hexo | 栾铸显的博客</a><br><a href="https://shuoit.net/tech-notes/use-gulp-to-speed-hexo-1547999542.html" target="_blank" rel="noopener">引入gulp压缩整站资源进一步提高写作效率 - 说IT</a></p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于 GitHub Pages 的 Hexo+NexT 博客搭建</title>
     <url>/githubpages-hexo-next/</url>
     <content><![CDATA[<h1 id="基于-GitHub-Pages-的-Hexo-NexT-博客-——-引导篇"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客-——-引导篇" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客 —— 引导篇"></a>基于 GitHub Pages 的 Hexo + NexT 博客 —— 引导篇</h1><h2 id="基于-GitHub-Pages-的-Hexo-NexT-博客概述"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客概述" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客概述"></a>基于 GitHub Pages 的 Hexo + NexT 博客概述</h2><p>使用这一套博客系统架构您将获得稳定免费、美观、易定制的个人博客。通过 Markdown 语法编辑文章，git命令发布文章，优雅的博客发布体验。</p>
@@ -422,6 +374,54 @@
 <h3 id="底部背景颜色与透明度"><a href="#底部背景颜色与透明度" class="headerlink" title="底部背景颜色与透明度"></a>底部背景颜色与透明度</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.footer &#123;</span><br><span class="line">          background:rgba(13,26,31,0.8) none repeat scroll !important;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">开始使用 - NexT 使用文档</a></p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo 博客进阶</title>
+    <url>/hexo-advance/</url>
+    <content><![CDATA[<h2 id="文章简介"><a href="#文章简介" class="headerlink" title="文章简介"></a>文章简介</h2><p>本文介绍 Hexo 博客的一些进阶操作。</p>
+<ul>
+<li>解决 Github Pages 不被百度抓取的问题；</li>
+<li>使用 gulp 压缩资源，实现访问加速。</li>
+<li>在博客中添加音频和视频；<a id="more"></a>
+<h2 id="Github-Pages-不被百度抓取的方法"><a href="#Github-Pages-不被百度抓取的方法" class="headerlink" title="Github Pages 不被百度抓取的方法"></a>Github Pages 不被百度抓取的方法</h2>并通过域名 CNAME 实现国内外分流，<h3 id="Coding-Pages"><a href="#Coding-Pages" class="headerlink" title="Coding Pages"></a>Coding Pages</h3><a href="https://help.coding.net/docs/devops/cd/static-website.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE" target="_blank" rel="noopener">CODING 静态网站服务 - CODING 帮助中心</a></li>
+</ul>
+<h3 id="私有的-OSS"><a href="#私有的-OSS" class="headerlink" title="私有的 OSS"></a>私有的 OSS</h3><p>以阿里云oss为例<br><img data-src="https://images.xyang.xin/2020-04/1586841854.png" alt="开通子目录首页"></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-oss</span><br></pre></td></tr></table></figure>
+<p><code>_config.yml</code> 配置</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">oss</span></span><br><span class="line">  <span class="attr">accessKeyId:</span> <span class="string">&lt;your</span> <span class="string">accessKeyId&gt;</span></span><br><span class="line">  <span class="attr">accessKeySecret:</span> <span class="string">&lt;your</span> <span class="string">accessKeySecret&gt;</span></span><br><span class="line">  <span class="attr">bucket:</span> <span class="string">&lt;your</span> <span class="string">bucket&gt;</span></span><br><span class="line">  <span class="attr">region:</span> <span class="string">&lt;your</span> <span class="string">region&gt;</span></span><br></pre></td></tr></table></figure>
+<p>  其中 region 以北京地区的 oss 为例填 <code>oss-cn-beijing</code></p>
+<h2 id="使用-gulp-压缩资源"><a href="#使用-gulp-压缩资源" class="headerlink" title="使用 gulp 压缩资源"></a>使用 gulp 压缩资源</h2><p>使用 gulp 压缩资源，提高访问速度。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install gulp-cli -g</span><br><span class="line">npm install gulp gulp-htmlclean gulp-htmlmin gulp-imagemin gulp-clean-css gulp-uglify --save-dev</span><br></pre></td></tr></table></figure>
+
+<p>项目根目录新建<code>gulpfile.babel.js</code>，添加如下内容：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> gulp <span class="keyword">from</span> <span class="string">'gulp'</span></span><br><span class="line"><span class="keyword">import</span> cleancss <span class="keyword">from</span> <span class="string">'gulp-clean-css'</span></span><br><span class="line"><span class="keyword">import</span> uglify <span class="keyword">from</span> <span class="string">'gulp-uglify-es'</span></span><br><span class="line"><span class="keyword">import</span> htmlmin <span class="keyword">from</span> <span class="string">'gulp-htmlmin'</span></span><br><span class="line"><span class="keyword">import</span> htmlclean <span class="keyword">from</span> <span class="string">'gulp-htmlclean'</span></span><br><span class="line"><span class="keyword">import</span> imagemin <span class="keyword">from</span> <span class="string">'gulp-imagemin'</span></span><br><span class="line"><span class="keyword">import</span> babel <span class="keyword">from</span> <span class="string">'gulp-babel'</span></span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'minify-html'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/**/*.html'</span>)</span><br><span class="line">    .pipe(htmlclean(&#123;</span><br><span class="line">      protect: <span class="regexp">/&lt;\!--%fooTemplate\b.*?%--&gt;/g</span>,</span><br><span class="line">      edit: <span class="function">(<span class="params">html</span>) =&gt;</span> &#123; <span class="keyword">return</span> html.replace(<span class="regexp">/\begg(s?)\b/ig</span>, <span class="string">'omelet$1'</span>); &#125;</span><br><span class="line">    &#125;))</span><br><span class="line">    .pipe(htmlmin(&#123;</span><br><span class="line">      removeComments: <span class="literal">true</span>,</span><br><span class="line">      collapseWhitespace: <span class="literal">true</span>,</span><br><span class="line">      collapseBooleanAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeEmptyAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeScriptTypeAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeStyleLinkTypeAttributes: <span class="literal">true</span>,</span><br><span class="line">      minifyJS: <span class="literal">true</span>,</span><br><span class="line">      minifyCSS: <span class="literal">true</span>,</span><br><span class="line">    &#125;))</span><br><span class="line">    .on(<span class="string">'error'</span>, (err) =&gt; &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'html Error!'</span>, err.message);</span><br><span class="line">      <span class="keyword">this</span>.end();</span><br><span class="line">    &#125;)</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'clean-css'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/**/*.css'</span>)</span><br><span class="line">    .pipe(cleancss())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'minify-js'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/js/**/*.js'</span>)</span><br><span class="line">    .pipe(uglify())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'minify-images'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/images/**/*.*'</span>)</span><br><span class="line">    .pipe(imagemin())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public/images'</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'default'</span>, gulp.parallel(<span class="string">'minify-html'</span>, <span class="string">'clean-css'</span>, <span class="string">'minify-js'</span>, <span class="string">'minify-images'</span>, (done) =&gt; &#123;</span><br><span class="line">  done();</span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
+<p>由于是 es6 语法， 需要使用 babel 转译。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install --save-dev gulp-babel @babel/register @babel/preset-env @babel/core</span><br></pre></td></tr></table></figure>
+<p>创建<code>.babel.json</code> 文件，添加内容如下：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"presets"</span>: [</span><br><span class="line">    <span class="string">"@babel/env"</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"plugins"</span>: []</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>终端执行如下命令即可：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g &amp;&amp; gulp</span><br></pre></td></tr></table></figure>
+
+<p>如有报错，可以尝试删除<code>node_modules</code>文件，然后重新执行<code>npm install</code>。</p>
+<h2 id="在博客中插入音频与视频"><a href="#在博客中插入音频与视频" class="headerlink" title="在博客中插入音频与视频"></a>在博客中插入音频与视频</h2><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><h4 id="更快捷的方案一"><a href="#更快捷的方案一" class="headerlink" title="更快捷的方案一"></a>更快捷的方案一</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">430</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"XXX"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=430 height=86 src="https://music.xyang.xin/%E5%9C%A8%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E7%9B%B8%E9%81%87.mp3"></iframe>
+
+<h4 id="更强大的方案二（Github）"><a href="#更强大的方案二（Github）" class="headerlink" title="更强大的方案二（Github）"></a>更强大的方案二（<a href="https://github.com/MoePlayer/hexo-tag-aplayer#usage" target="_blank" rel="noopener">Github</a>）</h4><h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><h4 id="更快捷的标签方式"><a href="#更快捷的标签方式" class="headerlink" title="更快捷的标签方式"></a>更快捷的标签方式</h4><p>iframe 将web页嵌入到另一个网页</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">"854"</span> <span class="attr">height</span>=<span class="string">"480"</span> <span class="attr">src</span>=<span class="string">"//player.bilibili.com/player.html?aid=51918958&amp;cid=90895494&amp;page=1"</span> <span class="attr">scrolling</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">framespacing</span>=<span class="string">"0"</span> <span class="attr">allowfullscreen</span>=<span class="string">"true"</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<iframe width="854" height="480" src="//player.bilibili.com/player.html?aid=51918958&cid=90895494&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h4 id="更强大的-hexo-tag-dplayer-插件"><a href="#更强大的-hexo-tag-dplayer-插件" class="headerlink" title="更强大的 hexo-tag-dplayer 插件"></a>更强大的 <a href="https://github.com/MoePlayer/hexo-tag-dplayer" target="_blank" rel="noopener">hexo-tag-dplayer</a> 插件</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-tag-dplayer --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="PDF"><a href="#PDF" class="headerlink" title="PDF"></a>PDF</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">object</span> <span class="attr">data</span>=<span class="string">"mypdf.pdf"</span> <span class="attr">type</span>=<span class="string">"application/pdf"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">width</span>=<span class="string">"800"</span> <span class="attr">height</span>=<span class="string">"1200"</span> <span class="attr">typemustmatch</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>You don't have a PDF plugin, but you can <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"myfile.pdf"</span>&gt;</span>download the PDF file.<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/%E5%85%B6%E4%BB%96%E5%B5%8C%E5%85%A5%E6%8A%80%E6%9C%AF" target="_blank" rel="noopener">从对象到iframe - 其他嵌入技术 - 学习 Web 开发 | MDN</a><br><a href="https://luanzhuxian.github.io/post/e5ac3b51.html" target="_blank" rel="noopener">使用 Gulp 压缩 Hexo | 栾铸显的博客</a><br><a href="https://shuoit.net/tech-notes/use-gulp-to-speed-hexo-1547999542.html" target="_blank" rel="noopener">引入gulp压缩整站资源进一步提高写作效率 - 说IT</a></p>
 ]]></content>
       <categories>
         <category>信息技术</category>
@@ -628,35 +628,86 @@
       </tags>
   </entry>
   <entry>
-    <title>Mac 小问题</title>
-    <url>/macos-problems/</url>
-    <content><![CDATA[<p>记录 MacOS 使用过程中遇到的问题及解决办法，解决办法不是万用的，只是有可能解决你遇到的与我相同或类似的问题，但是不会损害你的电脑。</p>
+    <title>Mac 大扫除🧹</title>
+    <url>/macos-clean/</url>
+    <content><![CDATA[<p>基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。</p>
+<p>通过以下命令可以查看当前路径下的所有文件及文件夹大小并从大到小排列，以 KB 为单位显示。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sk *| sort -rn</span><br></pre></td></tr></table></figure>
+<p>以下命令就是以K，M，G为单位，提高信息的可读性，但是不能正确按文件大小排序。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sh *</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 
-<h2 id="Finder-无法打开或持续未响应（2020）"><a href="#Finder-无法打开或持续未响应（2020）" class="headerlink" title="Finder 无法打开或持续未响应（2020）"></a>Finder 无法打开或持续未响应（2020）</h2><p>解决办法：<br>磁盘工具 -&gt; Macintosh HD（系统盘）-&gt; 急救<br>磁盘工具在以下路径：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">/System/Applications/Utilities/Disk Utility.app</span><br></pre></td></tr></table></figure>
+<h2 id="用户文件清理"><a href="#用户文件清理" class="headerlink" title="用户文件清理"></a>用户文件清理</h2><p>我们称<code>～/</code>目录下的文件为用户文件。</p>
+<ol>
+<li>卸载不必要的应用，使用 柠檬清理 或者 AppCleaner 都是免费的。</li>
+<li>通过 柠檬清理，CleanMyMac 等软件清理垃圾，删除无用的大文件，这类软件都只有管理用户文件的能力。</li>
+<li>软件的配置、下载的插件等不能直接删除，应选择性删除：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;Library&#x2F;Application Support&#x2F;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>应用的缓存文件可以直接删除，不放心的话使用 trash 将其放入垃圾篓，如有异常还原便可，不用担心开不了机，用户文件也就是 ~/ 目录下的文件，是不会影响系统运行的：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/Library/Caches/*</span><br><span class="line">// or</span><br><span class="line">brew install trash</span><br><span class="line">trash ~/Library/Caches/*</span><br></pre></td></tr></table></figure>
+<h2 id="“系统文件”清理"><a href="#“系统文件”清理" class="headerlink" title="“系统文件”清理"></a>“系统文件”清理</h2><h3 id="清理文件定位"><a href="#清理文件定位" class="headerlink" title="清理文件定位"></a>清理文件定位</h3><p>Catalina中，系统文件从原本的文件系统中分离了，组成独立的文件系统，并且把这个文件系统从设计上设定为只能读取，不能写入。<br><img data-src="http://images.xyang.xin/2020-04%2F1586700714.png" alt="1586700714.png"> </p>
+<p>而其他文件和数据存储在Macintosh HD - Data卷中，挂载在<code>/System/Volumes/Data</code>目录下，在Finder中和系统卷一样显示为Macintosh HD。<br><img data-src="http://images.xyang.xin/2020-04%2F1586754964.png" alt="1586754964.png"></p>
+<p>如何区分数据卷和系统卷呢？<br>可以说除<code>/System/Volumes/Data</code>目录下的文件，其他都是数据卷文件。</p>
+<p>我们还可以发现一个怪异的现象，最明显的是<code>/Users</code>和<code>/Applications</code>同样出现在<code>/System/Volumes/Data/Applications</code>和<code>/System/Volumes/Data/Users</code>，而且内容相同、检测出来大小都相同，并且没有占用额外的空间。</p>
+<p>这里用到的是 “Bi-directional wormhole in path traversal” （路径遍历中的双向虫洞）—— Firmlinks，一种新的文件类型对象，类似于符号链接。通过以下命令可以查看哪些文件创建了Firmlinks：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /usr/share/firmlinks</span><br></pre></td></tr></table></figure>
+<p><img data-src="http://images.xyang.xin/2020-04%2F1586753548.png" alt="1586753548.png"></p>
+<h3 id="开始清理"><a href="#开始清理" class="headerlink" title="开始清理"></a>开始清理</h3><p>系统卷不能修改和写入，所以不会产生额外的垃圾，删除一些不用的系统应用是可以的，比如国际象棋，但是它们都不怎么占空间，所以没大必要。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo rm -rf /System/Applications/Chess.app/</span><br></pre></td></tr></table></figure>
 
-<p>急救操作不会对你的电脑造成任何损害，甚至还有所优化。</p>
-<p>网上有的答案说，删除如下文件：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">~<span class="regexp">/Library/</span>Preferences/com.apple.finder.plist</span><br></pre></td></tr></table></figure>
-<p>对我来说并不管用，删除该文件仅仅清空了用户对访达的一些自定义设置。</p>
-<h2 id="打开-iCloud-云盘文件夹极其缓慢（2020）"><a href="#打开-iCloud-云盘文件夹极其缓慢（2020）" class="headerlink" title="打开 iCloud 云盘文件夹极其缓慢（2020）"></a>打开 iCloud 云盘文件夹极其缓慢（2020）</h2><p>遇到的问题是：在访达中点击iCloud云盘系统就会出现转圈圈的标志，使用快捷键<code>command+alt+esc</code>（强制退出应用程序）就会看到访达处于未响应状态，这个时间会持续很久。</p>
-<p>解决办法：<br>系统偏好 -&gt; Apple ID -&gt; 取消勾选iCloud云盘 -&gt; 保留副本 -&gt; 重新勾选iCloud云盘</p>
-<p>此操作造成的后果是mac需要很长的一段时间和云端同步，这取决于你icloud存储的文件大小，并不会影响其他。</p>
-<p>发现几天几夜也没同步完，经过诸多排查，例如，修改 DNS：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">114.114.114.114</span><br><span class="line">8.8.8.8</span><br></pre></td></tr></table></figure>
-<p>不仅没起作用，还影响了访问其他网页。最后删除 DNS 配置，刷新 DNS 缓存：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ dscacheutil -flushcache</span><br><span class="line">$ sudo killall -HUP mDNSResponder</span><br></pre></td></tr></table></figure>
+<p>我们实际上就是对 数据卷 进行清理。暂且把除去<code>/Users</code>用户文件外的文件都称为系统文件吧，因为它们很多都是与系统功能相关的，</p>
+<p>通过<code>du -sk *| sort -rn</code>命令，以下六个文件夹占的空间比较大：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">30210188	Users</span><br><span class="line">18391484	Applications</span><br><span class="line">6144100	private</span><br><span class="line">4822752	usr</span><br><span class="line">4179388	System</span><br><span class="line">3856812	Library</span><br></pre></td></tr></table></figure>
+<p><code>Users</code>是用户文件我们已经清理过了<code>Applications</code>是用户下载的应用，也清理过了，重点研究后面四个文件夹。</p>
+<p><code>/System/Volumes/Data/private/var/vm</code> 这里面删了又有，我删过，并没有产生什么意外。其中 sleepimage 是用于休眠期间存储主存的内容；swapfile 用于虚拟内存存储，当物理内存满了，系统会自动“调出”未被积极使用的数据，并将其存储于 swapfile。这两个都可以关闭，但是都不建议。</p>
+<p><code>/System/Volumes/Data/System/Library/Speech</code> 占了两个多G空间是语音相关的文件<code>say 你好</code>系统就会说<code>你好</code>。</p>
+<p><code>/System/Volumes/Data/usr</code>，usr是Unix System Resource的缩写，也就是Unix操作系统软件资源，很多通过命令行安装的软件都存放在这里，比如mac包管理器brew安装的软件都存放在里面，<code>brew uninstall</code>只会卸载软件本身而不会卸载相关依赖，通过以下命令可以安全的卸载brew安装的软件及其依赖：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew tap beeftornado&#x2F;rmtree</span><br><span class="line">brew rmtree XX</span><br></pre></td></tr></table></figure>
 
-<p>后面想到可能是我开了代理的问题，代理软件-&gt;偏好设置-&gt;忽略这些主机和域名的代理设置-&gt;添加：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">*.icloud.com</span><br></pre></td></tr></table></figure>
-<p>还是没啥反应，就想上icloud网页端看看，浏览器刚访问：<a href="http://icloud.com，就看见开始飞速上传了" target="_blank" rel="noopener">http://icloud.com，就看见开始飞速上传了</a>……</p>
+<p>其实基于不同的使用习惯和用途，会产生不同的垃圾，用 <code>du</code> 命令一层层的分析查看，了解其内容含义，再清除是比较好的方法。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://support.apple.com/en-us/HT210650" target="_blank" rel="noopener">About the read-only system volume in macOS Catalina - Apple Support</a></li>
+<li><a href="https://sspai.com/post/57052" target="_blank" rel="noopener">当 Mac 升级到 Catalina 时，苹果在硬盘里施了点魔法 - 少数派</a></li>
+<li><a href="https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf" target="_blank" rel="noopener">https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf</a></li>
+</ul>
 ]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
         <tag>MacOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac 小问题 —— iCloud 未响应</title>
+    <url>/macos-problems/</url>
+    <content><![CDATA[<p>使用 iCloud Drive 将文件上传到云端，防止数据丢失，同时可以实现多台设备的协同工作。但是在使用 iCloud Drive 的过程中我遇到了程序未响应，iCoud 文件上传阻塞的问题。</p>
+<a id="more"></a>
+
+<h2 id="Finder-无法打开或持续未响应"><a href="#Finder-无法打开或持续未响应" class="headerlink" title="Finder 无法打开或持续未响应"></a>Finder 无法打开或持续未响应</h2><p>解决办法：<br>磁盘工具 -&gt; Macintosh HD（系统盘）-&gt; 急救<br>磁盘工具在以下路径：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">/System/Applications/Utilities/Disk Utility.app</span><br></pre></td></tr></table></figure>
+
+<p>急救操作不会对你的电脑造成任何损害，甚至还有所优化。</p>
+<h2 id="打开-iCloud-云盘文件夹极其缓慢"><a href="#打开-iCloud-云盘文件夹极其缓慢" class="headerlink" title="打开 iCloud 云盘文件夹极其缓慢"></a>打开 iCloud 云盘文件夹极其缓慢</h2><p>遇到的问题是：在访达中点击iCloud云盘系统就会出现转圈圈的标志，使用快捷键<code>command+alt+esc</code>（强制退出应用程序）就会看到访达处于未响应状态，这个时间会持续很久。</p>
+<p>解决办法：<br>系统偏好 -&gt; Apple ID -&gt; 取消勾选iCloud云盘 -&gt; 保留副本 -&gt; 重新勾选iCloud云盘</p>
+<p>此操作造成的后果是mac需要很长的一段时间和云端同步，这取决于你icloud存储的文件大小，并不会影响其他。</p>
+<h2 id="文件无法上传排查"><a href="#文件无法上传排查" class="headerlink" title="文件无法上传排查"></a>文件无法上传排查</h2><p>iCloud 连续几天几夜也没同步完，经过诸多排查，例如，修改 DNS：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">114.114.114.114</span><br><span class="line">8.8.8.8</span><br></pre></td></tr></table></figure>
+<p>不仅没起作用，还影响了访问其他网页。最后删除 DNS 配置，刷新 DNS 缓存：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ dscacheutil -flushcache</span><br><span class="line">$ sudo killall -HUP mDNSResponder</span><br></pre></td></tr></table></figure>
+
+<p>最后排查出是因为，我开发代码的工作目录都设置在了 iCloud 云盘里，文件体积虽然不大，却有上万个细小的文件，不知道是不是 iCloud 设置了某种限制，导致上传阻塞，最后将代码都移出 iCloud 问题就解决了。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>MacOS</tag>
+        <tag>Finder</tag>
+        <tag>iCloud</tag>
       </tags>
   </entry>
   <entry>
@@ -740,58 +791,72 @@
       </tags>
   </entry>
   <entry>
-    <title>Mac 大扫除🧹</title>
-    <url>/macos-clean/</url>
-    <content><![CDATA[<p>基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。</p>
-<p>通过以下命令可以查看当前路径下的所有文件及文件夹大小并从大到小排列，以 KB 为单位显示。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sk *| sort -rn</span><br></pre></td></tr></table></figure>
-<p>以下命令就是以K，M，G为单位，提高信息的可读性，但是不能正确按文件大小排序。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sh *</span><br></pre></td></tr></table></figure>
+    <title>HTTP 代理与 Socks5 代理</title>
+    <url>/proxy-http-socks5/</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>本文通过实践经历基本的认识 HTTP 代理与 Socks5 代理的用法与理解其精髓。同时也解决 go get 库无法下载的问题。</p>
 <a id="more"></a>
+<h2 id="渐渐"><a href="#渐渐" class="headerlink" title="渐渐"></a>渐渐</h2><p>终端走代理我最初接触到的是 HTTP 代理，这篇文章可以见证(<a href="https://blog.xyang.xin/proxy-teach/index.html">代理服务器 | 韶 光</a>)。当然我的这些实践都是基于 shadowsocks 这款产品。随后我又接触了 Socks5 代理，因为简单其更快，又隐隐觉得其更底层，通过以下代码配置：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> .zshrc</span></span><br><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br></pre></td></tr></table></figure>
+<p>仍然要开 <em>全局模式</em> 终端才能走代理。</p>
+<p>虽然没有使用 HTTP 代理，但是很长一段时间我都没有关闭 <em>启用 HTTP 代理</em> 这个按钮，直到一天我连接手机热点 shadowsocks 闪退，我才关闭将其关闭了。这更显 Socks5 代理的优秀。</p>
+<h2 id="今天"><a href="#今天" class="headerlink" title="今天"></a>今天</h2><p>当我重新安装 <a href="https://github.com/fatih/vim-go" target="_blank" rel="noopener">vim-go</a>,并执行 <code>:GoUpdateBinaries</code> 故事又开始了。<br>显示类似于如下的一系列报错：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim-go: Updating guru. Reinstalling golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master to folder &#x2F;Users&#x2F;sweeney&#x2F;Documents&#x2F;code&#x2F;go&#x2F;bin</span><br><span class="line">vim-go: Error installing golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: go get golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: invalid version: Get &quot;https:&#x2F;&#x2F;proxy.golang.org&#x2F;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru&#x2F;@v&#x2F;master.info&quot;: dial tcp 172.217.24.17:443: i&#x2F;o</span><br><span class="line">timeout</span><br></pre></td></tr></table></figure>
+<p>首先我对 socks5 是很相信的，天生的认为其是较为底层的代理，应该不存在 HTTP 能代理而 Socks5 不能代理的情况。</p>
+<p>“应该” 呵呵，所以我就耗了近一个半小时在这里。</p>
+<p>以上问题其实和直接执行 <code>go get golang.org/x/tools/cmd/guru</code>，然后输出如下错误是一个道理。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">unrecognized import path &quot;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru&quot;: https fetch: Get &quot;https:&#x2F;&#x2F;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru?go-get&#x3D;1&quot;: dial tcp 216.239.37.1:443: i&#x2F;o timeout</span><br></pre></td></tr></table></figure>
+<p>都是 go get 无法从 golang.org 下载包。</p>
+<p>虽然 <code>curl golang.org</code> 能够访问这个网站，但是还是无法下载包。</p>
+<h2 id="Socks5-vs-HTTP"><a href="#Socks5-vs-HTTP" class="headerlink" title="Socks5 vs HTTP"></a>Socks5 vs HTTP</h2><table>
+<thead>
+<tr>
+<th></th>
+<th align="center">HTTP Proxy</th>
+<th align="center">Socks5 Proxy</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>功能</td>
+<td align="center">http 代理对于使用浏览器上网的用户很重要。</td>
+<td align="center">并不使用 http 协议，是更通用，更低级别的代理。</td>
+</tr>
+<tr>
+<td>安全</td>
+<td align="center">被传输的数据极可能被查看。</td>
+<td align="center">由于SOCKS无法读取数据，因此查看数据的几率很小。</td>
+</tr>
+<tr>
+<td>速度</td>
+<td align="center">速度较慢。</td>
+<td align="center">通用服务器速度快。</td>
+</tr>
+<tr>
+<td>连接工具</td>
+<td align="center">任何工具。</td>
+<td align="center">有限制工具。</td>
+</tr>
+<tr>
+<td>建议</td>
+<td align="center">传输少量数据。</td>
+<td align="center">传输大体积的速度。</td>
+</tr>
+</tbody></table>
+<p>SOCKS 作用在 OSI 模型的第四层 —— 会话层上。SOCKS4 只能代理TCP协议，而 SOCKS5 什么协议都可以代理。HTTP工作在应用层上，Socks代理只是简单地传递数据包，而不必关心是何种应用协议(比如 FTP、HTTP 和 NNTP 请求)，所以Socks代理服务器比应用层代理服务器要快得多。<br><img data-src="http://images.xyang.xin/2020-03%2Fnetwork.png" alt="network.png"></p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br><span class="line">export http_proxy=socks5://127.0.0.1:20808</span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">alias</span> go=<span class="string">'http_proxy=socks5://127.0.0.1:20808 go'</span></span></span><br></pre></td></tr></table></figure>
 
-<h2 id="用户文件清理"><a href="#用户文件清理" class="headerlink" title="用户文件清理"></a>用户文件清理</h2><p>我们称<code>～/</code>目录下的文件为用户文件。</p>
-<ol>
-<li>卸载不必要的应用，使用 柠檬清理 或者 AppCleaner 都是免费的。</li>
-<li>通过 柠檬清理，CleanMyMac 等软件清理垃圾，删除无用的大文件，这类软件都只有管理用户文件的能力。</li>
-<li>软件的配置、下载的插件等不能直接删除，应选择性删除：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;Library&#x2F;Application Support&#x2F;</span><br></pre></td></tr></table></figure>
-<ol>
-<li>应用的缓存文件可以直接删除，不放心的话使用 trash 将其放入垃圾篓，如有异常还原便可，不用担心开不了机，用户文件也就是 ~/ 目录下的文件，是不会影响系统运行的：</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/Library/Caches/*</span><br><span class="line">// or</span><br><span class="line">brew install trash</span><br><span class="line">trash ~/Library/Caches/*</span><br></pre></td></tr></table></figure>
-<h2 id="“系统文件”清理"><a href="#“系统文件”清理" class="headerlink" title="“系统文件”清理"></a>“系统文件”清理</h2><h3 id="清理文件定位"><a href="#清理文件定位" class="headerlink" title="清理文件定位"></a>清理文件定位</h3><p>Catalina中，系统文件从原本的文件系统中分离了，组成独立的文件系统，并且把这个文件系统从设计上设定为只能读取，不能写入。<br><img data-src="http://images.xyang.xin/2020-04%2F1586700714.png" alt="1586700714.png"> </p>
-<p>而其他文件和数据存储在Macintosh HD - Data卷中，挂载在<code>/System/Volumes/Data</code>目录下，在Finder中和系统卷一样显示为Macintosh HD。<br><img data-src="http://images.xyang.xin/2020-04%2F1586754964.png" alt="1586754964.png"></p>
-<p>如何区分数据卷和系统卷呢？<br>可以说除<code>/System/Volumes/Data</code>目录下的文件，其他都是数据卷文件。</p>
-<p>我们还可以发现一个怪异的现象，最明显的是<code>/Users</code>和<code>/Applications</code>同样出现在<code>/System/Volumes/Data/Applications</code>和<code>/System/Volumes/Data/Users</code>，而且内容相同、检测出来大小都相同，并且没有占用额外的空间。</p>
-<p>这里用到的是 “Bi-directional wormhole in path traversal” （路径遍历中的双向虫洞）—— Firmlinks，一种新的文件类型对象，类似于符号链接。通过以下命令可以查看哪些文件创建了Firmlinks：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /usr/share/firmlinks</span><br></pre></td></tr></table></figure>
-<p><img data-src="http://images.xyang.xin/2020-04%2F1586753548.png" alt="1586753548.png"></p>
-<h3 id="开始清理"><a href="#开始清理" class="headerlink" title="开始清理"></a>开始清理</h3><p>系统卷不能修改和写入，所以不会产生额外的垃圾，删除一些不用的系统应用是可以的，比如国际象棋，但是它们都不怎么占空间，所以没大必要。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo rm -rf /System/Applications/Chess.app/</span><br></pre></td></tr></table></figure>
-
-<p>我们实际上就是对 数据卷 进行清理。暂且把除去<code>/Users</code>用户文件外的文件都称为系统文件吧，因为它们很多都是与系统功能相关的，</p>
-<p>通过<code>du -sk *| sort -rn</code>命令，以下六个文件夹占的空间比较大：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">30210188	Users</span><br><span class="line">18391484	Applications</span><br><span class="line">6144100	private</span><br><span class="line">4822752	usr</span><br><span class="line">4179388	System</span><br><span class="line">3856812	Library</span><br></pre></td></tr></table></figure>
-<p><code>Users</code>是用户文件我们已经清理过了<code>Applications</code>是用户下载的应用，也清理过了，重点研究后面四个文件夹。</p>
-<p><code>/System/Volumes/Data/private/var/vm</code> 这里面删了又有，我删过，并没有产生什么意外。其中 sleepimage 是用于休眠期间存储主存的内容；swapfile 用于虚拟内存存储，当物理内存满了，系统会自动“调出”未被积极使用的数据，并将其存储于 swapfile。这两个都可以关闭，但是都不建议。</p>
-<p><code>/System/Volumes/Data/System/Library/Speech</code> 占了两个多G空间是语音相关的文件<code>say 你好</code>系统就会说<code>你好</code>。</p>
-<p><code>/System/Volumes/Data/usr</code>，usr是Unix System Resource的缩写，也就是Unix操作系统软件资源，很多通过命令行安装的软件都存放在这里，比如mac包管理器brew安装的软件都存放在里面，<code>brew uninstall</code>只会卸载软件本身而不会卸载相关依赖，通过以下命令可以安全的卸载brew安装的软件及其依赖：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew tap beeftornado&#x2F;rmtree</span><br><span class="line">brew rmtree XX</span><br></pre></td></tr></table></figure>
-
-<p>其实基于不同的使用习惯和用途，会产生不同的垃圾，用 <code>du</code> 命令一层层的分析查看，了解其内容含义，再清除是比较好的方法。</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://support.apple.com/en-us/HT210650" target="_blank" rel="noopener">About the read-only system volume in macOS Catalina - Apple Support</a></li>
-<li><a href="https://sspai.com/post/57052" target="_blank" rel="noopener">当 Mac 升级到 Catalina 时，苹果在硬盘里施了点魔法 - 少数派</a></li>
-<li><a href="https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf" target="_blank" rel="noopener">https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf</a></li>
+<h2 id="遗留问题"><a href="#遗留问题" class="headerlink" title="遗留问题"></a>遗留问题</h2><p>我还是不知道为什么 ALL_PROXY 没对 go get 生效，而 http_proxy 生效了。并且经过测试，不是大小写的问题。</p>
+<hr>
+<p>参考文献：</p>
+<ul>
+<li><a href="https://dzone.com/articles/breaking-down-complex-differences-of-socks-vs-http" target="_blank" rel="noopener">Breaking Down Differences Between SOCKS vs HTTP Proxy - DZone Security</a></li>
+<li><a href="https://colobu.com/2017/01/26/how-to-go-get-behind-GFW/" target="_blank" rel="noopener">如何在长城后面go get一些库 | 鸟窝</a></li>
+<li><a href="http://www.yunlianip.com/News-getinfo-id-61.html" target="_blank" rel="noopener">SOCKS5代理和HTTP代理有什么区别？-云连代理</a></li>
+<li><a href="https://stackoverflow.com/questions/10383299/how-do-i-configure-go-command-to-use-a-proxy" target="_blank" rel="noopener">How do I configure go command to use a proxy? - Stack Overflow</a></li>
 </ul>
 ]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
-      <tags>
-        <tag>MacOS</tag>
-      </tags>
   </entry>
   <entry>
     <title>代理服务器</title>
@@ -872,74 +937,6 @@
       <tags>
         <tag>信息技术</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>HTTP 代理与 Socks5 代理</title>
-    <url>/proxy-http-socks5/</url>
-    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>本文通过实践经历基本的认识 HTTP 代理与 Socks5 代理的用法与理解其精髓。同时也解决 go get 库无法下载的问题。</p>
-<a id="more"></a>
-<h2 id="渐渐"><a href="#渐渐" class="headerlink" title="渐渐"></a>渐渐</h2><p>终端走代理我最初接触到的是 HTTP 代理，这篇文章可以见证(<a href="https://blog.xyang.xin/proxy-teach/index.html">代理服务器 | 韶 光</a>)。当然我的这些实践都是基于 shadowsocks 这款产品。随后我又接触了 Socks5 代理，因为简单其更快，又隐隐觉得其更底层，通过以下代码配置：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> .zshrc</span></span><br><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br></pre></td></tr></table></figure>
-<p>仍然要开 <em>全局模式</em> 终端才能走代理。</p>
-<p>虽然没有使用 HTTP 代理，但是很长一段时间我都没有关闭 <em>启用 HTTP 代理</em> 这个按钮，直到一天我连接手机热点 shadowsocks 闪退，我才关闭将其关闭了。这更显 Socks5 代理的优秀。</p>
-<h2 id="今天"><a href="#今天" class="headerlink" title="今天"></a>今天</h2><p>当我重新安装 <a href="https://github.com/fatih/vim-go" target="_blank" rel="noopener">vim-go</a>,并执行 <code>:GoUpdateBinaries</code> 故事又开始了。<br>显示类似于如下的一系列报错：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim-go: Updating guru. Reinstalling golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master to folder &#x2F;Users&#x2F;sweeney&#x2F;Documents&#x2F;code&#x2F;go&#x2F;bin</span><br><span class="line">vim-go: Error installing golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: go get golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: invalid version: Get &quot;https:&#x2F;&#x2F;proxy.golang.org&#x2F;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru&#x2F;@v&#x2F;master.info&quot;: dial tcp 172.217.24.17:443: i&#x2F;o</span><br><span class="line">timeout</span><br></pre></td></tr></table></figure>
-<p>首先我对 socks5 是很相信的，天生的认为其是较为底层的代理，应该不存在 HTTP 能代理而 Socks5 不能代理的情况。</p>
-<p>“应该” 呵呵，所以我就耗了近一个半小时在这里。</p>
-<p>以上问题其实和直接执行 <code>go get golang.org/x/tools/cmd/guru</code>，然后输出如下错误是一个道理。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">unrecognized import path &quot;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru&quot;: https fetch: Get &quot;https:&#x2F;&#x2F;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru?go-get&#x3D;1&quot;: dial tcp 216.239.37.1:443: i&#x2F;o timeout</span><br></pre></td></tr></table></figure>
-<p>都是 go get 无法从 golang.org 下载包。</p>
-<p>虽然 <code>curl golang.org</code> 能够访问这个网站，但是还是无法下载包。</p>
-<h2 id="Socks5-vs-HTTP"><a href="#Socks5-vs-HTTP" class="headerlink" title="Socks5 vs HTTP"></a>Socks5 vs HTTP</h2><table>
-<thead>
-<tr>
-<th></th>
-<th align="center">HTTP Proxy</th>
-<th align="center">Socks5 Proxy</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>功能</td>
-<td align="center">http 代理对于使用浏览器上网的用户很重要。</td>
-<td align="center">并不使用 http 协议，是更通用，更低级别的代理。</td>
-</tr>
-<tr>
-<td>安全</td>
-<td align="center">被传输的数据极可能被查看。</td>
-<td align="center">由于SOCKS无法读取数据，因此查看数据的几率很小。</td>
-</tr>
-<tr>
-<td>速度</td>
-<td align="center">速度较慢。</td>
-<td align="center">通用服务器速度快。</td>
-</tr>
-<tr>
-<td>连接工具</td>
-<td align="center">任何工具。</td>
-<td align="center">有限制工具。</td>
-</tr>
-<tr>
-<td>建议</td>
-<td align="center">传输少量数据。</td>
-<td align="center">传输大体积的速度。</td>
-</tr>
-</tbody></table>
-<p>SOCKS 作用在 OSI 模型的第四层 —— 会话层上。SOCKS4 只能代理TCP协议，而 SOCKS5 什么协议都可以代理。HTTP工作在应用层上，Socks代理只是简单地传递数据包，而不必关心是何种应用协议(比如 FTP、HTTP 和 NNTP 请求)，所以Socks代理服务器比应用层代理服务器要快得多。<br><img data-src="http://images.xyang.xin/2020-03%2Fnetwork.png" alt="network.png"></p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br><span class="line">export http_proxy=socks5://127.0.0.1:20808</span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">alias</span> go=<span class="string">'http_proxy=socks5://127.0.0.1:20808 go'</span></span></span><br></pre></td></tr></table></figure>
-
-<h2 id="遗留问题"><a href="#遗留问题" class="headerlink" title="遗留问题"></a>遗留问题</h2><p>我还是不知道为什么 ALL_PROXY 没对 go get 生效，而 http_proxy 生效了。并且经过测试，不是大小写的问题。</p>
-<hr>
-<p>参考文献：</p>
-<ul>
-<li><a href="https://dzone.com/articles/breaking-down-complex-differences-of-socks-vs-http" target="_blank" rel="noopener">Breaking Down Differences Between SOCKS vs HTTP Proxy - DZone Security</a></li>
-<li><a href="https://colobu.com/2017/01/26/how-to-go-get-behind-GFW/" target="_blank" rel="noopener">如何在长城后面go get一些库 | 鸟窝</a></li>
-<li><a href="http://www.yunlianip.com/News-getinfo-id-61.html" target="_blank" rel="noopener">SOCKS5代理和HTTP代理有什么区别？-云连代理</a></li>
-<li><a href="https://stackoverflow.com/questions/10383299/how-do-i-configure-go-command-to-use-a-proxy" target="_blank" rel="noopener">How do I configure go command to use a proxy? - Stack Overflow</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
   </entry>
   <entry>
     <title>搜索引擎使用技巧</title>
@@ -1089,6 +1086,63 @@
       </tags>
   </entry>
   <entry>
+    <title>Linux 剪贴板小技巧</title>
+    <url>/ssh-clipboard-iterm2/</url>
+    <content><![CDATA[<h2 id="初步识-vim-剪贴板"><a href="#初步识-vim-剪贴板" class="headerlink" title="初步识 vim 剪贴板"></a>初步识 vim 剪贴板</h2><p>对于文本的复制粘贴，系统会提供剪贴板，剪贴板在 vim 中被称为寄存器，并且 vim 有很多寄存器，寄存器使用的语法：<code>&quot;{register}</code>，当然了寄存器指令不会单独使用，后面都会跟代表复制的 <code>y</code> 或代表粘贴的 <code>p</code>，执行 <code>&quot;ay</code> 就将选中的内容复制到了 <code>a</code> 寄存器，<a id="more"></a>寄存器都是有自己的名字的，感兴趣的同学，欲知详细内容请参见帮助文档：<code>:help registers</code>。</p>
+<p>那咱们平时执行 <code>yy</code> 或者选中 <code>y</code> 使用的寄存器叫什么名字呢？它叫匿名寄存器 (<code>&quot;&quot;</code>)。<code>y</code> 就等于 <code>&quot;&quot;y</code>。</p>
+<p>比较重要的是，系统剪贴板寄存器 <code>&quot;*</code>。通过 <code>&quot;*p</code> 就可以把系统剪贴板上的内容粘贴到 vim 文件内了。</p>
+<p><code>*p</code> 从系统剪贴板粘贴容易，而要从 vim 复制到系统剪贴板，首先选中文本，然后执行 <code>&quot;*y</code>，这多麻烦，所以我选择：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="comment">" .vimrc</span></span><br><span class="line"><span class="keyword">set</span> clipboard=unnamed</span><br></pre></td></tr></table></figure>
+<p>这样就让系统剪贴板 (<code>&quot;*</code>) 和匿名剪贴板 (<code>&quot;&quot;</code>) 内容保持同步了。<code>y</code> 就同时等效于 <code>&quot;&quot;y</code> 、 <code>&quot;*y</code> ，而 <code>p</code> 等价于 <code>&quot;&quot;p</code>、<code>&quot;*p</code> 以及 <code>command+v</code> 或者 Windows 的 <code>ctrl+v</code>。</p>
+<h2 id="远程剪贴板操作"><a href="#远程剪贴板操作" class="headerlink" title="远程剪贴板操作"></a>远程剪贴板操作</h2><p>通过 SSH 连接到了一台远程 Linux 服务器，这时候该任何复制粘贴呢？</p>
+<p>Someone said at once: “Stupid! Mac 上当然是鼠标选中然后 <code>command+c</code>、<code>command+v</code> 了，Windows 上是 <code>ctrl+c</code>、<code>ctrl+v</code>，虽然 <code>ctrl+v</code> 会和 vim 切换成可视模式冲突，但是我用 <code>ctrl+shift+v</code> 就解决了。”</p>
+<p>这方法很便捷，并且我也经常使用，但是在使用过程中主要遇到以下两个问题：</p>
+<ol>
+<li>如果你的 vim 开启了行号，鼠标选中多行的时候，会选中行号，复制下来的内容也会也行号。我的 vim 是默认开启行号的。</li>
+<li>只能复制一个窗口大小的内容。</li>
+</ol>
+<p>其实还有一个问题，就是不能完全脱离鼠标，我是三分之二键盘党，所以我认为这不是主要问题。</p>
+<p>这些问题不是都已经解决了吗？如果设置了 <code>set clipboard=unnamed</code>，直接选中（注意不是鼠标选中，而是 vim 中的选中 <code>shift+v</code> 上下键）然后 <code>y</code>，然后 <code>p</code>。那你试试 <code>command+v</code> 或 <code>ctrl+v</code> 呢？保证不是你刚刚复制的内容。</p>
+<p>短路了吧？重新认识一下，你现在同时使用了两个系统，一个是本地，一个是远程服务器，<code>y</code> 复制的内容在远程服务器上呢，还在你公司，在杭州，在北京，还是在海外呢？</p>
+<p>那我不用 <code>command+v</code> 可好，有 <code>p</code>，还少按一个键。</p>
+<p>漂亮！你已经找到答案了。</p>
+<h3 id="剪贴板远程传送"><a href="#剪贴板远程传送" class="headerlink" title="剪贴板远程传送"></a>剪贴板远程传送</h3><p>那如果我想将远程服务器的一段字符传送到本地呢？有人说 <strong>scp</strong>，但在实际操作中，通过 <strong>scp</strong> 或者 <strong>ftp</strong>，传送文件还 ok，传送一段文本的即时性就太差了。</p>
+<p>找到两种比较好的办法，但是针对的客户端是 Mac 或者 Linux，据了解 Windows 自带有 Linux 子系统，可以开启试试。</p>
+<p>方法一：</p>
+<blockquote>
+<p>该方法使用了一个叫 <strong>clipper</strong> 的 <strong>go</strong> 语言程序，以及 <strong>vim-clipper</strong> 插件，两个项目的链接都在下面。但是我没有用过这种方式，一方面配置较多，而且要在本地跑额外的程序，可能功能比较强大但是我用不了这么多，另一方面就是有第二种比较适合我的方式。</p>
+</blockquote>
+<ul>
+<li><a href="https://github.com/wincent/clipper" target="_blank" rel="noopener">wincent/clipper: ✂️ Clipboard access for local and remote tmux sessions</a></li>
+<li><a href="https://github.com/wincent/vim-clipper" target="_blank" rel="noopener">wincent/vim-clipper: Clipper integration for Vim</a></li>
+</ul>
+<p>For Mac User:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> brew install clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> brew services start clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh -R localhost:8377:localhost:8377 user@host.example.org</span></span><br></pre></td></tr></table></figure>
+
+<p>For Linux User:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yum install golang</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> git://git.wincent.com/clipper.git</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> go build</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo cp clipper /usr/<span class="built_in">local</span>/bin</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> cp contrib/linux/systemd-service/clipper.service ~/.config/systemd/user</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user daemon-reload</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user <span class="built_in">enable</span> clipper.service</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user start clipper.service</span></span><br></pre></td></tr></table></figure>
+
+<p>方法二：<br>该方式，仅适合使用 <strong>Mac</strong> 及 <strong>iTerm.app</strong> 的用户。</p>
+<p><code>iTerm-&gt;Perferences-&gt;
+Selection-&gt;Application in terminal may access clipboard</code>（选择开启），可能版本更新这个功能的位置会有所变动。</p>
+<p>在远程服务器执行如下命令(如果使用的是<strong>bash</strong>将<strong>zsh</strong>改为<strong>bash</strong>即可)：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd</span><br><span class="line">$ curl -L https:&#x2F;&#x2F;iterm2.com&#x2F;shell_integration&#x2F;install_shell_integration_and_utilities.sh | zsh</span><br></pre></td></tr></table></figure>
+<p>命令下载<code>.iterm2_shell_integration.zsh</code>脚本到用户根目录，还有一些小程序到<code>~/.iterm2</code>目录下，<br>并在<code>.zshrc</code>末尾生成<code>test -e &quot;${HOME}/.iterm2_shell_integration.zsh&quot; &amp;&amp; source &quot;${HOME}/.iterm2_shell_integration.zsh&quot;</code><br>卸载的时候也只需要将这三个部分删除掉即可。</p>
+<p>在vim配置文件<code>.vimrc</code>下添加如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if !empty(&#39;~&#x2F;.iterm2&#x2F;it2copy&#39;)</span><br><span class="line">  vmap &lt;silent&gt; &lt;Leader&gt;y :&#39;&lt;,&#39;&gt;:w !~&#x2F;.iterm2&#x2F;it2copy&lt;CR&gt;&lt;CR&gt;</span><br><span class="line">endif</span><br></pre></td></tr></table></figure>
+
+<p>此时<code>shift+v</code>选中文本，执行 <code>&lt;leader&gt;y</code>，文本就到你本地的剪贴板啦。不信你就<code>command+v</code>。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>剪贴板</tag>
+        <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SSM 错误集锦</title>
     <url>/ssm-Error/</url>
     <content><![CDATA[<ol>
@@ -1203,63 +1257,6 @@
       <tags>
         <tag>vim</tag>
         <tag>react</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux 剪贴板小技巧</title>
-    <url>/ssh-clipboard-iterm2/</url>
-    <content><![CDATA[<h2 id="初步识-vim-剪贴板"><a href="#初步识-vim-剪贴板" class="headerlink" title="初步识 vim 剪贴板"></a>初步识 vim 剪贴板</h2><p>对于文本的复制粘贴，系统会提供剪贴板，剪贴板在 vim 中被称为寄存器，并且 vim 有很多寄存器，寄存器使用的语法：<code>&quot;{register}</code>，当然了寄存器指令不会单独使用，后面都会跟代表复制的 <code>y</code> 或代表粘贴的 <code>p</code>，执行 <code>&quot;ay</code> 就将选中的内容复制到了 <code>a</code> 寄存器，<a id="more"></a>寄存器都是有自己的名字的，感兴趣的同学，欲知详细内容请参见帮助文档：<code>:help registers</code>。</p>
-<p>那咱们平时执行 <code>yy</code> 或者选中 <code>y</code> 使用的寄存器叫什么名字呢？它叫匿名寄存器 (<code>&quot;&quot;</code>)。<code>y</code> 就等于 <code>&quot;&quot;y</code>。</p>
-<p>比较重要的是，系统剪贴板寄存器 <code>&quot;*</code>。通过 <code>&quot;*p</code> 就可以把系统剪贴板上的内容粘贴到 vim 文件内了。</p>
-<p><code>*p</code> 从系统剪贴板粘贴容易，而要从 vim 复制到系统剪贴板，首先选中文本，然后执行 <code>&quot;*y</code>，这多麻烦，所以我选择：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="comment">" .vimrc</span></span><br><span class="line"><span class="keyword">set</span> clipboard=unnamed</span><br></pre></td></tr></table></figure>
-<p>这样就让系统剪贴板 (<code>&quot;*</code>) 和匿名剪贴板 (<code>&quot;&quot;</code>) 内容保持同步了。<code>y</code> 就同时等效于 <code>&quot;&quot;y</code> 、 <code>&quot;*y</code> ，而 <code>p</code> 等价于 <code>&quot;&quot;p</code>、<code>&quot;*p</code> 以及 <code>command+v</code> 或者 Windows 的 <code>ctrl+v</code>。</p>
-<h2 id="远程剪贴板操作"><a href="#远程剪贴板操作" class="headerlink" title="远程剪贴板操作"></a>远程剪贴板操作</h2><p>通过 SSH 连接到了一台远程 Linux 服务器，这时候该任何复制粘贴呢？</p>
-<p>Someone said at once: “Stupid! Mac 上当然是鼠标选中然后 <code>command+c</code>、<code>command+v</code> 了，Windows 上是 <code>ctrl+c</code>、<code>ctrl+v</code>，虽然 <code>ctrl+v</code> 会和 vim 切换成可视模式冲突，但是我用 <code>ctrl+shift+v</code> 就解决了。”</p>
-<p>这方法很便捷，并且我也经常使用，但是在使用过程中主要遇到以下两个问题：</p>
-<ol>
-<li>如果你的 vim 开启了行号，鼠标选中多行的时候，会选中行号，复制下来的内容也会也行号。我的 vim 是默认开启行号的。</li>
-<li>只能复制一个窗口大小的内容。</li>
-</ol>
-<p>其实还有一个问题，就是不能完全脱离鼠标，我是三分之二键盘党，所以我认为这不是主要问题。</p>
-<p>这些问题不是都已经解决了吗？如果设置了 <code>set clipboard=unnamed</code>，直接选中（注意不是鼠标选中，而是 vim 中的选中 <code>shift+v</code> 上下键）然后 <code>y</code>，然后 <code>p</code>。那你试试 <code>command+v</code> 或 <code>ctrl+v</code> 呢？保证不是你刚刚复制的内容。</p>
-<p>短路了吧？重新认识一下，你现在同时使用了两个系统，一个是本地，一个是远程服务器，<code>y</code> 复制的内容在远程服务器上呢，还在你公司，在杭州，在北京，还是在海外呢？</p>
-<p>那我不用 <code>command+v</code> 可好，有 <code>p</code>，还少按一个键。</p>
-<p>漂亮！你已经找到答案了。</p>
-<h3 id="剪贴板远程传送"><a href="#剪贴板远程传送" class="headerlink" title="剪贴板远程传送"></a>剪贴板远程传送</h3><p>那如果我想将远程服务器的一段字符传送到本地呢？有人说 <strong>scp</strong>，但在实际操作中，通过 <strong>scp</strong> 或者 <strong>ftp</strong>，传送文件还 ok，传送一段文本的即时性就太差了。</p>
-<p>找到两种比较好的办法，但是针对的客户端是 Mac 或者 Linux，据了解 Windows 自带有 Linux 子系统，可以开启试试。</p>
-<p>方法一：</p>
-<blockquote>
-<p>该方法使用了一个叫 <strong>clipper</strong> 的 <strong>go</strong> 语言程序，以及 <strong>vim-clipper</strong> 插件，两个项目的链接都在下面。但是我没有用过这种方式，一方面配置较多，而且要在本地跑额外的程序，可能功能比较强大但是我用不了这么多，另一方面就是有第二种比较适合我的方式。</p>
-</blockquote>
-<ul>
-<li><a href="https://github.com/wincent/clipper" target="_blank" rel="noopener">wincent/clipper: ✂️ Clipboard access for local and remote tmux sessions</a></li>
-<li><a href="https://github.com/wincent/vim-clipper" target="_blank" rel="noopener">wincent/vim-clipper: Clipper integration for Vim</a></li>
-</ul>
-<p>For Mac User:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> brew install clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> brew services start clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh -R localhost:8377:localhost:8377 user@host.example.org</span></span><br></pre></td></tr></table></figure>
-
-<p>For Linux User:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yum install golang</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> git://git.wincent.com/clipper.git</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> go build</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo cp clipper /usr/<span class="built_in">local</span>/bin</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> cp contrib/linux/systemd-service/clipper.service ~/.config/systemd/user</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user daemon-reload</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user <span class="built_in">enable</span> clipper.service</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user start clipper.service</span></span><br></pre></td></tr></table></figure>
-
-<p>方法二：<br>该方式，仅适合使用 <strong>Mac</strong> 及 <strong>iTerm.app</strong> 的用户。</p>
-<p><code>iTerm-&gt;Perferences-&gt;
-Selection-&gt;Application in terminal may access clipboard</code>（选择开启），可能版本更新这个功能的位置会有所变动。</p>
-<p>在远程服务器执行如下命令(如果使用的是<strong>bash</strong>将<strong>zsh</strong>改为<strong>bash</strong>即可)：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd</span><br><span class="line">$ curl -L https:&#x2F;&#x2F;iterm2.com&#x2F;shell_integration&#x2F;install_shell_integration_and_utilities.sh | zsh</span><br></pre></td></tr></table></figure>
-<p>命令下载<code>.iterm2_shell_integration.zsh</code>脚本到用户根目录，还有一些小程序到<code>~/.iterm2</code>目录下，<br>并在<code>.zshrc</code>末尾生成<code>test -e &quot;${HOME}/.iterm2_shell_integration.zsh&quot; &amp;&amp; source &quot;${HOME}/.iterm2_shell_integration.zsh&quot;</code><br>卸载的时候也只需要将这三个部分删除掉即可。</p>
-<p>在vim配置文件<code>.vimrc</code>下添加如下代码：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if !empty(&#39;~&#x2F;.iterm2&#x2F;it2copy&#39;)</span><br><span class="line">  vmap &lt;silent&gt; &lt;Leader&gt;y :&#39;&lt;,&#39;&gt;:w !~&#x2F;.iterm2&#x2F;it2copy&lt;CR&gt;&lt;CR&gt;</span><br><span class="line">endif</span><br></pre></td></tr></table></figure>
-
-<p>此时<code>shift+v</code>选中文本，执行 <code>&lt;leader&gt;y</code>，文本就到你本地的剪贴板啦。不信你就<code>command+v</code>。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>剪贴板</tag>
-        <tag>Vim</tag>
       </tags>
   </entry>
 </search>
