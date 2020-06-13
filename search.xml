@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>阿里云 ECS 使用</title>
-    <url>/ECS/</url>
-    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><a href="https://www.alibabacloud.com/help/zh/doc-detail/25367.htm?spm=a2c63.p38356.b99.2.615e1bbcsZH9Ry" target="_blank" rel="noopener">阿里云官方文档</a></p>
-<a id="more"></a>
-
-<h2 id="远程连接服务器常用的几种方式"><a href="#远程连接服务器常用的几种方式" class="headerlink" title="远程连接服务器常用的几种方式"></a>远程连接服务器常用的几种方式</h2><p>SSH —— 远程<br>SFTF —— 文件传输，22端口</p>
-<h2 id="安全组"><a href="#安全组" class="headerlink" title="安全组"></a>安全组</h2><h2 id="设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口"><a href="#设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口" class="headerlink" title="设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口"></a>设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口</h2><ol>
-<li>设置端口范围 22/22 协议类型自定义TCP 授权对象公网ip，22端口常用于ssh连接。</li>
-<li>设置端口范围 80/80 协议类型自定义TCP 授权对象0.0.0.0/0。<br>允许所有人通过 http 访问你的服务器。<br>80 端口常用于 http 协议访问 web 网站。相对应的 443 端口用于 https 协议访问 web 网站。3306 端口常用于数据库远程连接。出于安全考虑：如果向所有人打开 22 端口和 3306 端口，应当确保密码的复杂程度，以防强行爆破。对于新手建议将 22 端口和 3306 端口设置为仅允许指定IP访问。</li>
-</ol>
-<h2 id="设置公网出方向-——-服务器出口的限制"><a href="#设置公网出方向-——-服务器出口的限制" class="headerlink" title="设置公网出方向 —— 服务器出口的限制"></a>设置公网出方向 —— 服务器出口的限制</h2><p>没有特殊需求不需要设置。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>云服务</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>目标和关键成果法 (Objectives and Key Results)</title>
     <url>/OKRs/</url>
     <content><![CDATA[<blockquote>
@@ -44,26 +24,53 @@
       </tags>
   </entry>
   <entry>
-    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
-    <url>/acme-sh/</url>
-    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
-<ul>
-<li>http 认证方式</li>
-<li>dns 方式<a id="more"></a>
-
+    <title>《一本小小的红色写作书》读书笔记</title>
+    <url>/book-hsxzs/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F1558180143.png?x-oss-process=style/title_140" alt="1558180143.png-w140"></p>
+<a id="more"></a>
+<p><img data-src="http://images.xyang.xin/2019-07%2F%E4%B8%80%E6%9C%AC%E5%B0%8F%E5%B0%8F%E7%9A%84%E7%BA%A2%E8%89%B2%E5%86%99%E4%BD%9C%E4%B9%A6.png" alt="一本小小的红色写作书.png"></p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《一本小小的红色写作书》的脉络要点进行总结，用于写作中的参考。（图谱内容较多，建议保存后浏览）</p>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ol>
+<li><p>引导句<br> 在一篇个人随笔中，这句话可以作为引导语，放在文章的最开头：<br>我将通过详述个人和职业生涯的三个特殊的转折点，来呈现我是个什么样的人：凭借曲棍球奖学金上大学时期、与维和部队共同度过的一年、入职伦敦一家商贸企业期间。</p>
+<p> 在商务报告中，以下句子可以作为引导语，放在报告的最开头：<br>基于最近调查所得信息，本报告概述了我们公司面临的三大问题：员工流失、店铺盗窃和低水平客户服务。</p>
 </li>
-</ul>
-<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
-<p><a href="https://github.com/Neilpang/acme.sh/wiki/说明" target="_blank" rel="noopener">github 安装说明</a></p>
-<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
+<li><p>类比<br> 生产部门与销售部门、营销部门之间的关系，使用“枪和子弹”类比：“生产部门生产子弹，营销部门瞄枪，销售部门扣动扳机。”</p>
+</li>
+<li><p>暗喻<br> 他有钢铁般的勇气。</p>
+</li>
+<li><p>正式<br> 无缩略形式和人称代词。</p>
+</li>
+</ol>
+<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><p>当你说一件事情的时候，确保你说清楚了。如此，你言说的机会才合理。</p>
+<h3 id="风格"><a href="#风格" class="headerlink" title="风格"></a>风格</h3><p>简短地展现以便他们阅读，清楚地展现以便他们欣赏，如画般地展现以便他们记忆，最重要的是，准确地展现以便他们被它的光明所指引。</p>
+<h3 id="可读性"><a href="#可读性" class="headerlink" title="可读性"></a>可读性</h3><p>第一稿的愉悦源于欺骗自己它离真正的作品已经相当接近了；其后稿的愉悦部分源于意识到自己没有被第一稿蒙骗。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>写作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阿里云 ECS 使用</title>
+    <url>/ECS/</url>
+    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><a href="https://www.alibabacloud.com/help/zh/doc-detail/25367.htm?spm=a2c63.p38356.b99.2.615e1bbcsZH9Ry" target="_blank" rel="noopener">阿里云官方文档</a></p>
+<a id="more"></a>
+
+<h2 id="远程连接服务器常用的几种方式"><a href="#远程连接服务器常用的几种方式" class="headerlink" title="远程连接服务器常用的几种方式"></a>远程连接服务器常用的几种方式</h2><p>SSH —— 远程<br>SFTF —— 文件传输，22端口</p>
+<h2 id="安全组"><a href="#安全组" class="headerlink" title="安全组"></a>安全组</h2><h2 id="设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口"><a href="#设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口" class="headerlink" title="设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口"></a>设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口</h2><ol>
+<li>设置端口范围 22/22 协议类型自定义TCP 授权对象公网ip，22端口常用于ssh连接。</li>
+<li>设置端口范围 80/80 协议类型自定义TCP 授权对象0.0.0.0/0。<br>允许所有人通过 http 访问你的服务器。<br>80 端口常用于 http 协议访问 web 网站。相对应的 443 端口用于 https 协议访问 web 网站。3306 端口常用于数据库远程连接。出于安全考虑：如果向所有人打开 22 端口和 3306 端口，应当确保密码的复杂程度，以防强行爆破。对于新手建议将 22 端口和 3306 端口设置为仅允许指定IP访问。</li>
+</ol>
+<h2 id="设置公网出方向-——-服务器出口的限制"><a href="#设置公网出方向-——-服务器出口的限制" class="headerlink" title="设置公网出方向 —— 服务器出口的限制"></a>设置公网出方向 —— 服务器出口的限制</h2><p>没有特殊需求不需要设置。</p>
+]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>ssl</tag>
-        <tag>acme.sh</tag>
-        <tag>letsencrypt</tag>
+        <tag>云服务</tag>
       </tags>
   </entry>
   <entry>
@@ -95,36 +102,6 @@
       </categories>
       <tags>
         <tag>中国</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《一本小小的红色写作书》读书笔记</title>
-    <url>/book-hsxzs/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F1558180143.png?x-oss-process=style/title_140" alt="1558180143.png-w140"></p>
-<a id="more"></a>
-<p><img data-src="http://images.xyang.xin/2019-07%2F%E4%B8%80%E6%9C%AC%E5%B0%8F%E5%B0%8F%E7%9A%84%E7%BA%A2%E8%89%B2%E5%86%99%E4%BD%9C%E4%B9%A6.png" alt="一本小小的红色写作书.png"></p>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《一本小小的红色写作书》的脉络要点进行总结，用于写作中的参考。（图谱内容较多，建议保存后浏览）</p>
-<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ol>
-<li><p>引导句<br> 在一篇个人随笔中，这句话可以作为引导语，放在文章的最开头：<br>我将通过详述个人和职业生涯的三个特殊的转折点，来呈现我是个什么样的人：凭借曲棍球奖学金上大学时期、与维和部队共同度过的一年、入职伦敦一家商贸企业期间。</p>
-<p> 在商务报告中，以下句子可以作为引导语，放在报告的最开头：<br>基于最近调查所得信息，本报告概述了我们公司面临的三大问题：员工流失、店铺盗窃和低水平客户服务。</p>
-</li>
-<li><p>类比<br> 生产部门与销售部门、营销部门之间的关系，使用“枪和子弹”类比：“生产部门生产子弹，营销部门瞄枪，销售部门扣动扳机。”</p>
-</li>
-<li><p>暗喻<br> 他有钢铁般的勇气。</p>
-</li>
-<li><p>正式<br> 无缩略形式和人称代词。</p>
-</li>
-</ol>
-<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><p>当你说一件事情的时候，确保你说清楚了。如此，你言说的机会才合理。</p>
-<h3 id="风格"><a href="#风格" class="headerlink" title="风格"></a>风格</h3><p>简短地展现以便他们阅读，清楚地展现以便他们欣赏，如画般地展现以便他们记忆，最重要的是，准确地展现以便他们被它的光明所指引。</p>
-<h3 id="可读性"><a href="#可读性" class="headerlink" title="可读性"></a>可读性</h3><p>第一稿的愉悦源于欺骗自己它离真正的作品已经相当接近了；其后稿的愉悦部分源于意识到自己没有被第一稿蒙骗。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>写作</tag>
       </tags>
   </entry>
   <entry>
@@ -287,6 +264,29 @@
       </tags>
   </entry>
   <entry>
+    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
+    <url>/acme-sh/</url>
+    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
+<ul>
+<li>http 认证方式</li>
+<li>dns 方式<a id="more"></a>
+
+</li>
+</ul>
+<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
+<p><a href="https://github.com/Neilpang/acme.sh/wiki/说明" target="_blank" rel="noopener">github 安装说明</a></p>
+<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssl</tag>
+        <tag>acme.sh</tag>
+        <tag>letsencrypt</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于 GitHub Pages 的 Hexo+NexT 博客搭建</title>
     <url>/githubpages-hexo-next/</url>
     <content><![CDATA[<h1 id="基于-GitHub-Pages-的-Hexo-NexT-博客-——-引导篇"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客-——-引导篇" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客 —— 引导篇"></a>基于 GitHub Pages 的 Hexo + NexT 博客 —— 引导篇</h1><h2 id="基于-GitHub-Pages-的-Hexo-NexT-博客概述"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客概述" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客概述"></a>基于 GitHub Pages 的 Hexo + NexT 博客概述</h2><p>使用这一套博客系统架构您将获得稳定免费、美观、易定制的个人博客。通过 Markdown 语法编辑文章，git命令发布文章，优雅的博客发布体验。</p>
@@ -431,6 +431,24 @@
       </tags>
   </entry>
   <entry>
+    <title>切换 Shell 需谨慎</title>
+    <url>/linux-user/</url>
+    <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
+<a id="more"></a>
+
+<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><p>执行<code>chsh -s /bin/zsh</code>命令切换成功。<br>自此导致 root 用户无法验证登陆。</p>
+<p>庆幸这台服务器不止一个用户。<br>通过普通用户登陆服务器，执行 su 命令显示如下：<br><img data-src="https://images.xyang.xin/2018-10/1539333225.png" alt="执行 su 命令"></p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>解决办法如下：<br>sudo vim /etc/passwd 将 root 用户所对应的 Shell 改回 Bash。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>一台服务器应该有至少两个以上的用户。<br>下次再遇到一次这样的服务器😢再去具体研究一下。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>Shell</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>由简入深配置 iTem2 终端</title>
     <url>/iterm2/</url>
     <content><![CDATA[<h1 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h1><p>brew 安装 zsh<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install zsh</span><br><span class="line">sudo chsh -s &#x2F;usr&#x2F;local&#x2F;bin&#x2F;zsh</span><br></pre></td></tr></table></figure><br>从 zsh 切换回 bash<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chsh -s &#x2F;bin&#x2F;bash</span><br></pre></td></tr></table></figure></p>
@@ -480,59 +498,6 @@
       </tags>
   </entry>
   <entry>
-    <title>编程语言之 Java</title>
-    <url>/java-language/</url>
-    <content><![CDATA[<h1 id="Integer-parseInt-与-Integer-valueOf-的比较"><a href="#Integer-parseInt-与-Integer-valueOf-的比较" class="headerlink" title="Integer.parseInt() 与 Integer.valueOf() 的比较"></a>Integer.parseInt() 与 Integer.valueOf() 的比较</h1><p>Integer.parseInt() 和 Integer.valueOf() 都是用来 将String转换为Int的。</p>
-<ul>
-<li>Integer.parseInt()，返回一个原子类型int.<ul>
-<li>parseInt() 只是调用parseInt, 并且返回原子类型int.</li>
-</ul>
-</li>
-<li>Integer.valueOf(), 返回的是封装的Integer对象。<ul>
-<li>valueOf 也会调用parseInt, 但是返回Integer对象。而且它会维护一个cache，如果int值在cache范围内，直接从cache中取对象，如果不在，则会新创建一个对象。</li>
-</ul>
-</li>
-</ul>
-<p>如果我们只是需要一个int值，parseInt是合适的，而且效率要高，但是如果用valueOf就多此一举了，性能会下降。<br><a href="https://www.imooc.com/article/37688" target="_blank" rel="noopener">🐱文章</a></p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>journal-2019-02-15</title>
-    <url>/journal-2019-02-15/</url>
-    <content><![CDATA[<h2 id="小孩成长与人才发展"><a href="#小孩成长与人才发展" class="headerlink" title="小孩成长与人才发展"></a>小孩成长与人才发展</h2><p>小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。</p>
-<p>孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。</p>
-<p>国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。</p>
-<p>参考：<a href="http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm" target="_blank" rel="noopener">《基层减负 不是简单做减法》《求是》2019/03 </a></p>
-]]></content>
-      <categories>
-        <category>日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>切换 Shell 需谨慎</title>
-    <url>/linux-user/</url>
-    <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
-<a id="more"></a>
-
-<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><p>执行<code>chsh -s /bin/zsh</code>命令切换成功。<br>自此导致 root 用户无法验证登陆。</p>
-<p>庆幸这台服务器不止一个用户。<br>通过普通用户登陆服务器，执行 su 命令显示如下：<br><img data-src="https://images.xyang.xin/2018-10/1539333225.png" alt="执行 su 命令"></p>
-<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>解决办法如下：<br>sudo vim /etc/passwd 将 root 用户所对应的 Shell 改回 Bash。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>一台服务器应该有至少两个以上的用户。<br>下次再遇到一次这样的服务器😢再去具体研究一下。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>Shell</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>鲁迅</title>
     <url>/luxun/</url>
     <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
@@ -546,24 +511,32 @@
       </tags>
   </entry>
   <entry>
-    <title>解决远程服务器重装系统导致的 mac 终端无法连接的问题</title>
-    <url>/mac-ssh-error/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png" alt="2019-05-14 at 17.17.png"><br>known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。</p>
-<h2 id="通过如下两种方案解决该问题"><a href="#通过如下两种方案解决该问题" class="headerlink" title="通过如下两种方案解决该问题"></a>通过如下两种方案解决该问题</h2><ol>
-<li><p>输入命令(推荐)：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -R服务器ip地址</span><br></pre></td></tr></table></figure>
+    <title>Mac 小问题 —— iCloud 未响应</title>
+    <url>/macos-problems/</url>
+    <content><![CDATA[<p>使用 iCloud Drive 将文件上传到云端，防止数据丢失，同时可以实现多台设备的协同工作。但是在使用 iCloud Drive 的过程中我遇到了程序未响应，iCoud 文件上传阻塞的问题。</p>
 <a id="more"></a>
-</li>
-<li><p>删除下面文件中相关 ip 的信息（公匙）<br>~/.ssh/known_hosts</p>
-</li>
-</ol>
-<p>.ssh文件为隐藏文件夹可通过 command + shift + . 查看。或者直接：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/.ssh/known_hosts</span><br></pre></td></tr></table></figure>]]></content>
+
+<h2 id="Finder-无法打开或持续未响应"><a href="#Finder-无法打开或持续未响应" class="headerlink" title="Finder 无法打开或持续未响应"></a>Finder 无法打开或持续未响应</h2><p>解决办法：<br>磁盘工具 -&gt; Macintosh HD（系统盘）-&gt; 急救<br>磁盘工具在以下路径：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">/System/Applications/Utilities/Disk Utility.app</span><br></pre></td></tr></table></figure>
+
+<p>急救操作不会对你的电脑造成任何损害，甚至还有所优化。</p>
+<h2 id="打开-iCloud-云盘文件夹极其缓慢"><a href="#打开-iCloud-云盘文件夹极其缓慢" class="headerlink" title="打开 iCloud 云盘文件夹极其缓慢"></a>打开 iCloud 云盘文件夹极其缓慢</h2><p>遇到的问题是：在访达中点击iCloud云盘系统就会出现转圈圈的标志，使用快捷键<code>command+alt+esc</code>（强制退出应用程序）就会看到访达处于未响应状态，这个时间会持续很久。</p>
+<p>解决办法：<br>系统偏好 -&gt; Apple ID -&gt; 取消勾选iCloud云盘 -&gt; 保留副本 -&gt; 重新勾选iCloud云盘</p>
+<p>此操作造成的后果是mac需要很长的一段时间和云端同步，这取决于你icloud存储的文件大小，并不会影响其他。</p>
+<h2 id="文件无法上传排查"><a href="#文件无法上传排查" class="headerlink" title="文件无法上传排查"></a>文件无法上传排查</h2><p>iCloud 连续几天几夜也没同步完，经过诸多排查，例如，修改 DNS：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">114.114.114.114</span><br><span class="line">8.8.8.8</span><br></pre></td></tr></table></figure>
+<p>不仅没起作用，还影响了访问其他网页。最后删除 DNS 配置，刷新 DNS 缓存：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ dscacheutil -flushcache</span><br><span class="line">$ sudo killall -HUP mDNSResponder</span><br></pre></td></tr></table></figure>
+
+<p>最后排查出是因为，我开发代码的工作目录都设置在了 iCloud 云盘里，文件体积虽然不大，却有上万个细小的文件，不知道是不是 iCloud 设置了某种限制，导致上传阻塞，最后将代码都移出 iCloud 问题就解决了。</p>
+]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
+        <tag>MacOS</tag>
+        <tag>Finder</tag>
+        <tag>iCloud</tag>
       </tags>
   </entry>
   <entry>
@@ -621,93 +594,59 @@
       </tags>
   </entry>
   <entry>
-    <title>Mac 小问题 —— iCloud 未响应</title>
-    <url>/macos-problems/</url>
-    <content><![CDATA[<p>使用 iCloud Drive 将文件上传到云端，防止数据丢失，同时可以实现多台设备的协同工作。但是在使用 iCloud Drive 的过程中我遇到了程序未响应，iCoud 文件上传阻塞的问题。</p>
-<a id="more"></a>
-
-<h2 id="Finder-无法打开或持续未响应"><a href="#Finder-无法打开或持续未响应" class="headerlink" title="Finder 无法打开或持续未响应"></a>Finder 无法打开或持续未响应</h2><p>解决办法：<br>磁盘工具 -&gt; Macintosh HD（系统盘）-&gt; 急救<br>磁盘工具在以下路径：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">/System/Applications/Utilities/Disk Utility.app</span><br></pre></td></tr></table></figure>
-
-<p>急救操作不会对你的电脑造成任何损害，甚至还有所优化。</p>
-<h2 id="打开-iCloud-云盘文件夹极其缓慢"><a href="#打开-iCloud-云盘文件夹极其缓慢" class="headerlink" title="打开 iCloud 云盘文件夹极其缓慢"></a>打开 iCloud 云盘文件夹极其缓慢</h2><p>遇到的问题是：在访达中点击iCloud云盘系统就会出现转圈圈的标志，使用快捷键<code>command+alt+esc</code>（强制退出应用程序）就会看到访达处于未响应状态，这个时间会持续很久。</p>
-<p>解决办法：<br>系统偏好 -&gt; Apple ID -&gt; 取消勾选iCloud云盘 -&gt; 保留副本 -&gt; 重新勾选iCloud云盘</p>
-<p>此操作造成的后果是mac需要很长的一段时间和云端同步，这取决于你icloud存储的文件大小，并不会影响其他。</p>
-<h2 id="文件无法上传排查"><a href="#文件无法上传排查" class="headerlink" title="文件无法上传排查"></a>文件无法上传排查</h2><p>iCloud 连续几天几夜也没同步完，经过诸多排查，例如，修改 DNS：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">114.114.114.114</span><br><span class="line">8.8.8.8</span><br></pre></td></tr></table></figure>
-<p>不仅没起作用，还影响了访问其他网页。最后删除 DNS 配置，刷新 DNS 缓存：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ dscacheutil -flushcache</span><br><span class="line">$ sudo killall -HUP mDNSResponder</span><br></pre></td></tr></table></figure>
-
-<p>最后排查出是因为，我开发代码的工作目录都设置在了 iCloud 云盘里，文件体积虽然不大，却有上万个细小的文件，不知道是不是 iCloud 设置了某种限制，导致上传阻塞，最后将代码都移出 iCloud 问题就解决了。</p>
+    <title>journal-2019-02-15</title>
+    <url>/journal-2019-02-15/</url>
+    <content><![CDATA[<h2 id="小孩成长与人才发展"><a href="#小孩成长与人才发展" class="headerlink" title="小孩成长与人才发展"></a>小孩成长与人才发展</h2><p>小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。</p>
+<p>孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。</p>
+<p>国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。</p>
+<p>参考：<a href="http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm" target="_blank" rel="noopener">《基层减负 不是简单做减法》《求是》2019/03 </a></p>
+]]></content>
+      <categories>
+        <category>日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>编程语言之 Java</title>
+    <url>/java-language/</url>
+    <content><![CDATA[<h1 id="Integer-parseInt-与-Integer-valueOf-的比较"><a href="#Integer-parseInt-与-Integer-valueOf-的比较" class="headerlink" title="Integer.parseInt() 与 Integer.valueOf() 的比较"></a>Integer.parseInt() 与 Integer.valueOf() 的比较</h1><p>Integer.parseInt() 和 Integer.valueOf() 都是用来 将String转换为Int的。</p>
+<ul>
+<li>Integer.parseInt()，返回一个原子类型int.<ul>
+<li>parseInt() 只是调用parseInt, 并且返回原子类型int.</li>
+</ul>
+</li>
+<li>Integer.valueOf(), 返回的是封装的Integer对象。<ul>
+<li>valueOf 也会调用parseInt, 但是返回Integer对象。而且它会维护一个cache，如果int值在cache范围内，直接从cache中取对象，如果不在，则会新创建一个对象。</li>
+</ul>
+</li>
+</ul>
+<p>如果我们只是需要一个int值，parseInt是合适的，而且效率要高，但是如果用valueOf就多此一举了，性能会下降。<br><a href="https://www.imooc.com/article/37688" target="_blank" rel="noopener">🐱文章</a></p>
 ]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>MacOS</tag>
-        <tag>Finder</tag>
-        <tag>iCloud</tag>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
-    <title>Mac 配置上云神器 Mackup</title>
-    <url>/mackup/</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="https://github.com/lra/mackup" target="_blank" rel="noopener">mackup</a> 是一款受关注度很高的开源软件，可运行于 osx 和 linux 系统。用于保持应用程序设置同步，可快捷的备份许多流行的应用程序。</p>
+    <title>解决远程服务器重装系统导致的 mac 终端无法连接的问题</title>
+    <url>/mac-ssh-error/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png" alt="2019-05-14 at 17.17.png"><br>known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。</p>
+<h2 id="通过如下两种方案解决该问题"><a href="#通过如下两种方案解决该问题" class="headerlink" title="通过如下两种方案解决该问题"></a>通过如下两种方案解决该问题</h2><ol>
+<li><p>输入命令(推荐)：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -R服务器ip地址</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>有 brew 和 pip 两种推荐安装方式。</p>
-<ul>
-<li>Install Mackup<br><code>brew install mackup</code></li>
-<li>Install Mackup with PIP<br><code>pip install --upgrade mackup</code></li>
-</ul>
-<p>还需要简单的<a href="https://github.com/lra/mackup/tree/master/doc" target="_blank" rel="noopener">配置</a>才可使用。</p>
-<p>创建 ～/.mackup.cfg 文件，根据需要添加配置。</p>
-<p>可添加的配置如下：</p>
-<ol>
-<li><p>支持存储引擎：Dropbox、Google Drive、iCloud、Copy。<br> 例如选择存储到 icloud 添加如下配置即可：</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; icloud</span><br></pre></td></tr></table></figure></li>
-<li><p>备份到指定文件夹。</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; file_system</span><br><span class="line">path &#x3D; some&#x2F;folder&#x2F;in&#x2F;your&#x2F;home（空格不需要转义）</span><br></pre></td></tr></table></figure>
-<p> 指向存储引擎的路径怎么样？是不是就支持所有的存储引擎了呢。</p>
 </li>
-<li><p>支持修改备份文件夹的名字，改为隐藏文件夹。（备份隐藏起来了）</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; icloud</span><br><span class="line">directory &#x3D; .config&#x2F;mackup</span><br></pre></td></tr></table></figure></li>
-<li><p>选择你所要备份的应用。</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[applications_to_sync]</span><br><span class="line">ssh</span><br><span class="line">adium</span><br></pre></td></tr></table></figure></li>
-<li><p>选择你不想备份的应用。</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[applications_to_ignore]</span><br><span class="line">ssh</span><br><span class="line">adium</span><br></pre></td></tr></table></figure></li>
-<li><p>向官方提交支持应用的申请。</p>
-</li>
-<li><p>自定义很方便！</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir ~&#x2F;.mackup</span><br><span class="line">touch ~&#x2F;.mackup&#x2F;my-files.cfg</span><br></pre></td></tr></table></figure>
-<p> 在 my-files.cfg 中配置如下</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[application]</span><br><span class="line">name &#x3D; XXX </span><br><span class="line"></span><br><span class="line">[configuration_files]</span><br><span class="line">Library&#x2F;XXX         (从 Library 开始末尾无 &#x2F;)</span><br></pre></td></tr></table></figure>
-
-
+<li><p>删除下面文件中相关 ip 的信息（公匙）<br>~/.ssh/known_hosts</p>
 </li>
 </ol>
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>备份应用的设置：</p>
-<pre><code>`mackup backup`</code></pre><p>强制同意备份请求：</p>
-<pre><code>`mackup backup -f`</code></pre><p>使用备份的设置：</p>
-<pre><code>`mackup restore`</code></pre><p>应用不进行备份处理：</p>
-<pre><code>`mackup uninstall`</code></pre><p>使用帮助：</p>
-<pre><code>`mackup -h`</code></pre><h2 id="注意⚠️"><a href="#注意⚠️" class="headerlink" title="注意⚠️"></a>注意⚠️</h2><p>我最初使用 Mackup 只是为了备份配置，日后更换电脑方便，而没有去理解它的精髓，所以造成了不必要的时间损失，重新手动配置了诸多环境。认识到是自己操作不当所造成后，也只能为它写下这篇博客。</p>
-<p>mackup 的备份命令说执行的并不是 copy。“保持应用程序设置同步”才是它的核心要义。<br>mackup backup 相当于如下三个命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cp ~/.gitconfig ~/Dropbox/Mackup/.gitconfig</span><br><span class="line">rm ~/.gitconfig</span><br><span class="line">ln -s ~/Dropbox/Mackup/.gitconfig ~/.gitconfig</span><br></pre></td></tr></table></figure>
-<ol>
-<li>将配置拷贝到你所配置的 mackup 备份路径之下。</li>
-<li>删除原本的配置。</li>
-<li>将备份后的路径软链接到原来的路径下。</li>
-</ol>
-<p>每台电脑都使用云上的配置，从而达到了应用程序设置同步的目的。<br>同时使用软链接的方式节省了一定的存储空间。</p>
-<p>那如果把云上的配置删了怎么办呢？那么备份过的应用都只有一个软链接。。。<br>清空了垃圾篓，这个时候该咋办呢😢，做数据恢复？还是通过云近期删除找回，icloud 我是没找回过。</p>
-<p>所以理解了之后，记得执行 <code>mackup uninstall</code> 再删。😣<br>修改 mac 账户名名称前也记得 <code>mackup uninstall</code>.</p>
-]]></content>
+<p>.ssh文件为隐藏文件夹可通过 command + shift + . 查看。或者直接：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/.ssh/known_hosts</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>开发工具</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -791,6 +730,79 @@
       </tags>
   </entry>
   <entry>
+    <title>代理服务器</title>
+    <url>/proxy-teach/</url>
+    <content><![CDATA[<p>主要包含：shadowsocks-libev、kuptun 的配置和优化。基于亚马逊云学生机。</p>
+<a id="more"></a>
+<h2 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h2><p><a href="https://www.emptyus.com/download.php" target="_blank" rel="noopener">Shadowsocks X - A secure socks5 proxy</a><br><a href="https://github.com/shadowsocks" target="_blank" rel="noopener">shadowsocks</a></p>
+<h2 id="终端走代理"><a href="#终端走代理" class="headerlink" title="终端走代理"></a>终端走代理</h2><p>命令开启和关闭终端走代理：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">export</span> ALL_PROXY=socks5://127.0.0.1:20808</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">export</span> HTTP_PROXY=socks5://127.0.0.1:20808</span></span><br></pre></td></tr></table></figure>
+<p>检测代理结果（全局模式）：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ curl myip.ipip.net</span><br></pre></td></tr></table></figure>
+
+<h2 id="服务器端"><a href="#服务器端" class="headerlink" title="服务器端"></a>服务器端</h2><p><a href="https://github.com/teddysun/shadowsocks_install/tree/master" target="_blank" rel="noopener">teddysun/shadowsocks_install at master</a></p>
+<h3 id="安装命令"><a href="#安装命令" class="headerlink" title="安装命令"></a>安装命令</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget --no-check-certificate -O shadowsocks-libev.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-libev.sh</span><br><span class="line">chmod +x shadowsocks-libev.sh</span><br><span class="line">./shadowsocks-libev.sh 2&gt;&amp;1 | tee shadowsocks-libev.log</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Tip：脚本目前不支持 Centos8，为什么选择 libev 版本，因为其它版本停止维护了。</p>
+</blockquote>
+<p>加密算法推荐使用<code>aes-256-gcm</code>。安装好后就可以通过下面的命令使用了：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ./shadowsocks-libev.sh uninstall   <span class="comment"># 卸载 SS</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> /etc/init.d/shadowsocks start      <span class="comment"># 启动 SS</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> /etc/init.d/shadowsocks stop       <span class="comment"># 停止 SS</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> /etc/init.d/shadowsocks restart    <span class="comment"># 重启 SS</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> /etc/init.d/shadowsocks status     <span class="comment"># 状态 SS</span></span></span><br></pre></td></tr></table></figure>
+
+<p>要开机自启还是得自己动手：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> vim /usr/lib/systemd/system/shadowsocks_libev.service</span></span><br></pre></td></tr></table></figure>
+<p>加入如下配置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description&#x3D;shadowsocks_libev</span><br><span class="line">Wants&#x3D;network.target</span><br><span class="line">After&#x3D;syslog.target network-online.target</span><br><span class="line">[Service]</span><br><span class="line">Type&#x3D;simple</span><br><span class="line">Environment&#x3D;GOGC&#x3D;20</span><br><span class="line">ExecStart&#x3D;</span><br><span class="line">ExecStart&#x3D;&#x2F;usr&#x2F;local&#x2F;bin&#x2F;ss-server -c &#x2F;etc&#x2F;shadowsocks-libev&#x2F;config.json</span><br><span class="line">Restart&#x3D;on-failure</span><br><span class="line">RestartSec&#x3D;10</span><br><span class="line">KillMode&#x3D;process</span><br><span class="line">LimitNOFILE&#x3D;65536</span><br><span class="line">[Install]</span><br><span class="line">WantedBy&#x3D;multi-user.target</span><br></pre></td></tr></table></figure>
+<p>运行命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl <span class="built_in">enable</span> shadowsocks_libev</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl start shadowsocks_libev</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl restart shadowsocks_libev</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl status shadowsocks_libev -l</span></span><br></pre></td></tr></table></figure>
+
+<p>配置文件在这里：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ vim &#x2F;etc&#x2F;shadowsocks-libev&#x2F;config.json</span><br></pre></td></tr></table></figure>
+<p>大多数来说脚本默认的配置就很好了，如果有异常的话就显式的运行程序来查看日志：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo /usr/<span class="built_in">local</span>/bin/ss-server</span></span><br></pre></td></tr></table></figure>
+<h2 id="优化加速"><a href="#优化加速" class="headerlink" title="优化加速"></a>优化加速</h2><h3 id="服务器端加速"><a href="#服务器端加速" class="headerlink" title="服务器端加速"></a>服务器端加速</h3><p>从 4.9 开始，Linux 内核已经用上了该算法。通过以下命令检测主机是否开启 BBR：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">lsmod | grep bbr</span><br></pre></td></tr></table></figure>
+<p>如果有返回值请跳过，如果没有，可通过以下步骤安装。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo su</span><br><span class="line">$ wget --no-check-certificate https:&#x2F;&#x2F;github.com&#x2F;teddysun&#x2F;across&#x2F;raw&#x2F;master&#x2F;bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; .&#x2F;bbr.sh</span><br></pre></td></tr></table></figure>
+<p>输入 <code>lsmod | grep bbr</code> ，出现 <code>tcp_bbr</code> 即说明 BBR 已经启动。</p>
+<h3 id="双端加速"><a href="#双端加速" class="headerlink" title="双端加速"></a>双端加速</h3><p>服务器端安装：<br><a href="https://github.com/xtaci/kcptun" target="_blank" rel="noopener">xtaci/kcptun</a><br>Kcptun 是一个非常简单和快速的，基于 KCP 协议的 UDP 隧道，它可以将 TCP 流转换为 KCP+UDP 流。它以比 TCP 浪费10%-20%的带宽的代价，和极少的资源占用，以达到降低多倍延迟的效果。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo yum install golang -y</span><br><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;xtaci&#x2F;kcptun.git</span><br><span class="line">$ cd kcptun</span><br><span class="line">$ .&#x2F;build-release.sh</span><br><span class="line">$ cd build</span><br><span class="line">&#x2F;&#x2F; 选择合适的版本</span><br><span class="line">$ sudo mv server_linux_amd64 &#x2F;usr&#x2F;local&#x2F;bin&#x2F;kcptun_server</span><br><span class="line">$</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">Wants=network.target</span><br></pre></td></tr></table></figure>
+
+<p>建议在<code>sysctl.conf</code>中添加以下配置，优化 UDP 包的搬运速度：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo vim /etc/sysctl.conf</span></span><br></pre></td></tr></table></figure>
+<p>写入以下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># KCP: for better handling of UDP packets</span><br><span class="line">net.core.rmem_max&#x3D;26214400 &#x2F;&#x2F; BDP - bandwidth delay product</span><br><span class="line">net.core.rmem_default&#x3D;26214400</span><br><span class="line">net.core.wmem_max&#x3D;26214400</span><br><span class="line">net.core.wmem_default&#x3D;26214400</span><br><span class="line">net.core.netdev_max_backlog&#x3D;2048 &#x2F;&#x2F; proportional to -rcvwnd</span><br></pre></td></tr></table></figure>
+<p>运行以下命令生成配置：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo sysctl --system</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://wiki.archlinux.org/index.php/Sysctl#Enable_BBR" target="_blank" rel="noopener">更多性能优化配置</a><br>在用户目录<code>~</code>创建<code>kcptun.json</code>配置文件如下：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"listen"</span>: <span class="string">":4000"</span>,</span><br><span class="line">  <span class="attr">"target"</span>: <span class="string">"127.0.0.1:14376"</span>,</span><br><span class="line">  <span class="attr">"mode"</span>: <span class="string">"fast3"</span>,</span><br><span class="line">  <span class="attr">"dscp"</span>: <span class="number">46</span>,</span><br><span class="line">  <span class="attr">"crypt"</span>: <span class="string">"salsa20"</span>,</span><br><span class="line">  <span class="attr">"key"</span>: <span class="string">"1q2w3e4r."</span>,</span><br><span class="line">  <span class="attr">"sockbuf"</span>:<span class="number">16777217</span>,</span><br><span class="line">  <span class="attr">"nocomp"</span>:<span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> vim /usr/lib/systemd/system/kcptun_server.service</span></span><br></pre></td></tr></table></figure>
+<p>添加配置如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description&#x3D;kcptun</span><br><span class="line">Wants&#x3D;network.target</span><br><span class="line">After&#x3D;syslog.target network-online.target</span><br><span class="line">[Service]</span><br><span class="line">Type&#x3D;simple</span><br><span class="line">Environment&#x3D;GOGC&#x3D;20</span><br><span class="line">ExecStart&#x3D;</span><br><span class="line">ExecStart&#x3D;&#x2F;usr&#x2F;local&#x2F;bin&#x2F;kcptun_server -c &#x2F;home&#x2F;ec2-user&#x2F;kcptun.json</span><br><span class="line">Restart&#x3D;on-failure</span><br><span class="line">RestartSec&#x3D;10</span><br><span class="line">KillMode&#x3D;process</span><br><span class="line">LimitNOFILE&#x3D;65536</span><br><span class="line">[Install]</span><br><span class="line">WantedBy&#x3D;multi-user.target</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 设置开机自启</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl <span class="built_in">enable</span> kcptun_server</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 启动服务</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl restart kcptun_server</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看服务运行状态，测试是否配置成功</span></span><br><span class="line">sudo systemctl status kcptun_server  -l</span><br></pre></td></tr></table></figure>
+<p>修改配置文件后，需要重新加载配置文件，然后重新启动相关服务</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo systemctl daemon-reload</span><br><span class="line">$ sudo systemctl restart kcptun_server</span><br></pre></td></tr></table></figure>
+
+<p>客户端 Kcptun 配置如图：<br><img data-src="http://images.xyang.xin/2020%2F06%2F03%2F1591188770.png" alt="1591188770.png"><br>Arguments:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-autoexpire 900 -sockbuf 16777217</span><br></pre></td></tr></table></figure>
+
+<h2 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h2><p>通过上面的配置，目前而言使用效果不差。但是会不间断的出现“断流”，ssh 可以正常连接服务器，这是必然的。同样的情况出现在，相关业务商家都会提供不同地区的 N 多节点，但是同一时间可以正常使用的也就一两个。</p>
+<p>我觉得最简单靠谱的就是，使用常用的端口如 443 或 80。</p>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ lsmod | grep bbr                   # 状态 BBR</span><br><span class="line">$ sudo systemctl daemon-reload       # 重新加载 systemctl 配置文件</span><br><span class="line"></span><br><span class="line">$ .&#x2F;shadowsocks-libev.sh uninstall   # 卸载 SS</span><br><span class="line">$ &#x2F;etc&#x2F;init.d&#x2F;shadowsocks start      # 启动 SS</span><br><span class="line">$ &#x2F;etc&#x2F;init.d&#x2F;shadowsocks stop       # 停止 SS</span><br><span class="line">$ &#x2F;etc&#x2F;init.d&#x2F;shadowsocks restart    # 重启 SS</span><br><span class="line">$ &#x2F;etc&#x2F;init.d&#x2F;shadowsocks status     # 状态 SS</span><br><span class="line"></span><br><span class="line">$ sudo systemctl restart shadowsocks_libev</span><br><span class="line">$ sudo systemctl status shadowsocks_libev -l</span><br><span class="line"></span><br><span class="line">$ sudo systemctl restart kcptun_server # 启动 kcptun</span><br><span class="line">$ sudo systemctl status kcptun_server  -l # 查看 systemctl 服务运行状态</span><br></pre></td></tr></table></figure>
+
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html" target="_blank" rel="noopener">Systemd 入门教程：实战篇 - 阮一峰的网络日志</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+  </entry>
+  <entry>
     <title>HTTP 代理与 Socks5 代理</title>
     <url>/proxy-http-socks5/</url>
     <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>本文通过实践经历基本的认识 HTTP 代理与 Socks5 代理的用法与理解其精髓。同时也解决 go get 库无法下载的问题。</p>
@@ -852,65 +864,6 @@
 <li><a href="https://colobu.com/2017/01/26/how-to-go-get-behind-GFW/" target="_blank" rel="noopener">如何在长城后面go get一些库 | 鸟窝</a></li>
 <li><a href="http://www.yunlianip.com/News-getinfo-id-61.html" target="_blank" rel="noopener">SOCKS5代理和HTTP代理有什么区别？-云连代理</a></li>
 <li><a href="https://stackoverflow.com/questions/10383299/how-do-i-configure-go-command-to-use-a-proxy" target="_blank" rel="noopener">How do I configure go command to use a proxy? - Stack Overflow</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>代理服务器</title>
-    <url>/proxy-teach/</url>
-    <content><![CDATA[<p>推荐了一款代理客户端软件，并介绍了其对应服务器端的搭建过程。主要包含：shadowsocks-libev、kuptun 加速。</p>
-<a id="more"></a>
-<h2 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h2><p><a href="https://www.emptyus.com/download.php" target="_blank" rel="noopener">Shadowsocks X - A secure socks5 proxy</a><br><a href="https://github.com/shadowsocks" target="_blank" rel="noopener">shadowsocks</a></p>
-<h2 id="终端走代理"><a href="#终端走代理" class="headerlink" title="终端走代理"></a>终端走代理</h2><p>命令开启和关闭终端走代理：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">export</span> ALL_PROXY=socks5://127.0.0.1:20808</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">export</span> HTTP_PROXY=socks5://127.0.0.1:20808</span></span><br></pre></td></tr></table></figure>
-<p>检测代理结果（全局模式）：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ curl myip.ipip.net</span><br></pre></td></tr></table></figure>
-
-<h2 id="服务器端"><a href="#服务器端" class="headerlink" title="服务器端"></a>服务器端</h2><p><a href="https://github.com/teddysun/shadowsocks_install/tree/master" target="_blank" rel="noopener">teddysun/shadowsocks_install at master</a></p>
-<h3 id="安装命令"><a href="#安装命令" class="headerlink" title="安装命令"></a>安装命令</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget --no-check-certificate -O shadowsocks-libev.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-libev.sh</span><br><span class="line">chmod +x shadowsocks-libev.sh</span><br><span class="line">./shadowsocks-libev.sh 2&gt;&amp;1 | tee shadowsocks-libev.log</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>Tip：脚本目前不支持 Centos8，为什么选择 libev 版本，因为其它版本大多停止维护了。</p>
-</blockquote>
-<h3 id="加密算法推荐"><a href="#加密算法推荐" class="headerlink" title="加密算法推荐"></a>加密算法推荐</h3><ul>
-<li><code>aes-256-gcm</code></li>
-<li><code>aes-192-gcm</code></li>
-<li><code>aes-128-gcm</code></li>
-</ul>
-<h2 id="优化加速"><a href="#优化加速" class="headerlink" title="优化加速"></a>优化加速</h2><h3 id="服务器端加速"><a href="#服务器端加速" class="headerlink" title="服务器端加速"></a>服务器端加速</h3><p>从 4.9 开始，Linux 内核已经用上了该算法。通过以下命令检测主机是否开启 BBR：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">lsmod | grep bbr</span><br></pre></td></tr></table></figure>
-<p>如果有返回值请跳过，如果没有，可通过以下步骤安装。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo su</span><br><span class="line">$ wget --no-check-certificate https:&#x2F;&#x2F;github.com&#x2F;teddysun&#x2F;across&#x2F;raw&#x2F;master&#x2F;bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; .&#x2F;bbr.sh</span><br></pre></td></tr></table></figure>
-<p>输入 <code>lsmod | grep bbr</code> ，出现 <code>tcp_bbr</code> 即说明 BBR 已经启动。</p>
-<h3 id="双端加速"><a href="#双端加速" class="headerlink" title="双端加速"></a>双端加速</h3><p>服务器端安装：<br><a href="https://github.com/xtaci/kcptun" target="_blank" rel="noopener">xtaci/kcptun</a></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo yum install golang -y</span><br><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;xtaci&#x2F;kcptun.git</span><br><span class="line">$ cd kcptun</span><br><span class="line">$ .&#x2F;build-release.sh</span><br><span class="line">$ cd build</span><br><span class="line">&#x2F;&#x2F; 选择合适的版本</span><br><span class="line">$ sudo mv server_linux_amd64 &#x2F;usr&#x2F;local&#x2F;bin&#x2F;kcptun_server</span><br><span class="line">$</span><br></pre></td></tr></table></figure>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">Wants=network.target</span><br></pre></td></tr></table></figure>
-
-<p>建议在<code>sysctl.conf</code>中添加以下配置，优化 UDP 包的搬运速度：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo vim /etc/sysctl.conf</span></span><br></pre></td></tr></table></figure>
-<p>写入以下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># KCP: for better handling of UDP packets</span><br><span class="line">net.core.rmem_max&#x3D;26214400 &#x2F;&#x2F; BDP - bandwidth delay product</span><br><span class="line">net.core.rmem_default&#x3D;26214400</span><br><span class="line">net.core.wmem_max&#x3D;26214400</span><br><span class="line">net.core.wmem_default&#x3D;26214400</span><br><span class="line">net.core.netdev_max_backlog&#x3D;2048 &#x2F;&#x2F; proportional to -rcvwnd</span><br></pre></td></tr></table></figure>
-
-<p>在用户目录<code>~</code>创建<code>kcptun.json</code>配置文件如下：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"listen"</span>: <span class="string">":4000"</span>,</span><br><span class="line">  <span class="attr">"target"</span>: <span class="string">"127.0.0.1:14376"</span>,</span><br><span class="line">  <span class="attr">"mode"</span>: <span class="string">"fast3"</span>,</span><br><span class="line">  <span class="attr">"dscp"</span>: <span class="number">46</span>,</span><br><span class="line">  <span class="attr">"crypt"</span>: <span class="string">"salsa20"</span>,</span><br><span class="line">  <span class="attr">"key"</span>: <span class="string">"1q2w3e4r."</span>,</span><br><span class="line">  <span class="attr">"sockbuf"</span>:<span class="number">16777217</span>,</span><br><span class="line">  <span class="attr">"nocomp"</span>:<span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> vim /usr/lib/systemd/system/kcptun_server.service</span></span><br></pre></td></tr></table></figure>
-<p>添加配置如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description&#x3D;Kcptun</span><br><span class="line">After&#x3D;network.target</span><br><span class="line">Wants&#x3D;network.target</span><br><span class="line">[Service]</span><br><span class="line">ExecStart&#x3D;</span><br><span class="line">ExecStart&#x3D;&#x2F;usr&#x2F;local&#x2F;bin&#x2F;kcptun_server -c $&#123;whoami&#125;&#x2F;kcptun.json</span><br><span class="line">ExecReload&#x3D;&#x2F;bin&#x2F;kill -HUP $MAINPID</span><br><span class="line">RestartSec&#x3D;1min</span><br><span class="line">Restart&#x3D;on-failure</span><br><span class="line">[Install]</span><br><span class="line">WantedBy&#x3D;multi-user.target</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 设置开机自启</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl <span class="built_in">enable</span> kcptun_server</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 启动服务</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl restart kcptun_server</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看服务运行状态，测试是否配置成功</span></span><br><span class="line">sudo systemctl status kcptun_server  -l</span><br></pre></td></tr></table></figure>
-<p>修改配置文件后，需要重新加载配置文件，然后重新启动相关服务</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo systemctl daemon-reload</span><br><span class="line">$ sudo systemctl restart kcptun_server</span><br></pre></td></tr></table></figure>
-
-<p>客户端 Kcptun 配置如图：<br><img data-src="http://images.xyang.xin/2020%2F06%2F03%2F1591188770.png" alt="1591188770.png"><br>Arguments:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-autoexpire 900 -sockbuf 16777217</span><br></pre></td></tr></table></figure>
-<h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ .&#x2F;shadowsocks-libev.sh uninstall   # 卸载 SS</span><br><span class="line">$ &#x2F;etc&#x2F;init.d&#x2F;shadowsocks start      # 启动 SS</span><br><span class="line">$ &#x2F;etc&#x2F;init.d&#x2F;shadowsocks stop       # 停止 SS</span><br><span class="line">$ &#x2F;etc&#x2F;init.d&#x2F;shadowsocks restart    # 重启 SS</span><br><span class="line">$ &#x2F;etc&#x2F;init.d&#x2F;shadowsocks status     # 状态 SS</span><br><span class="line">$ lsmod | grep bbr                   # 状态 BBR</span><br><span class="line">$ $ sudo systemctl restart kcptun_server # 启动 kcptun</span><br></pre></td></tr></table></figure>
-
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html" target="_blank" rel="noopener">Systemd 入门教程：实战篇 - 阮一峰的网络日志</a></li>
 </ul>
 ]]></content>
       <categories>
@@ -1065,27 +1018,6 @@
       </tags>
   </entry>
   <entry>
-    <title>程序中的 “脚手架”</title>
-    <url>/scaffold/</url>
-    <content><![CDATA[<blockquote>
-<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
-</blockquote>
-<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
-<a id="more"></a>
-
-<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
-<li><a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener">facebook/create-react-app</a></li>
-<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>信息技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux 剪贴板小技巧</title>
     <url>/ssh-clipboard-iterm2/</url>
     <content><![CDATA[<h2 id="初步识-vim-剪贴板"><a href="#初步识-vim-剪贴板" class="headerlink" title="初步识 vim 剪贴板"></a>初步识 vim 剪贴板</h2><p>对于文本的复制粘贴，系统会提供剪贴板，剪贴板在 vim 中被称为寄存器，并且 vim 有很多寄存器，寄存器使用的语法：<code>&quot;{register}</code>，当然了寄存器指令不会单独使用，后面都会跟代表复制的 <code>y</code> 或代表粘贴的 <code>p</code>，执行 <code>&quot;ay</code> 就将选中的内容复制到了 <code>a</code> 寄存器，<a id="more"></a>寄存器都是有自己的名字的，感兴趣的同学，欲知详细内容请参见帮助文档：<code>:help registers</code>。</p>
@@ -1143,6 +1075,37 @@ Selection-&gt;Application in terminal may access clipboard</code>（选择开启
       </tags>
   </entry>
   <entry>
+    <title>vim 多文件类型自动补全方案</title>
+    <url>/vim-multiple-filetype-deoplete/</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
+<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>其中的 filetype on 表示：</p>
+<blockquote>
+<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
+</blockquote>
+<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
+<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
+<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">'nvim'</span>)</span><br><span class="line">  Plug <span class="string">'Shougo/deoplete.nvim'</span>, &#123; <span class="string">'do'</span>: <span class="string">':UpdateRemotePlugins'</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">'Shougo/deoplete.nvim'</span></span><br><span class="line">  Plug <span class="string">'roxma/nvim-yarp'</span></span><br><span class="line">  Plug <span class="string">'roxma/vim-hug-neovim-rpc'</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">'Shougo/context_filetype.vim'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">'g:context_filetype#same_filetypes'</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">'filetype'</span> :<span class="string">'javascript'</span>, <span class="string">'start'</span>: <span class="string">'&lt;script&gt;'</span>, <span class="string">'end'</span>: <span class="string">'&lt;/script&gt;'</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">'filetype'</span> :<span class="string">'css'</span>, <span class="string">'start'</span>: <span class="string">'&lt;style&gt;'</span>, <span class="string">'end'</span>: <span class="string">'&lt;/style&gt;'</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">" deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">'omni'</span>, <span class="string">'functions'</span>, &#123;</span><br><span class="line">\ <span class="string">'css'</span>: [<span class="string">'csscomplete#CompleteCSS'</span>],</span><br><span class="line">\ <span class="string">'javascript'</span>: [<span class="string">'javascriptcomplete#CompleteJS'</span>],</span><br><span class="line">\ <span class="string">'html'</span>: [<span class="string">'htmlcomplete#CompleteTags'</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">'omni'</span>, <span class="string">'input_patterns'</span>, &#123;</span><br><span class="line">\ <span class="string">'javascript'</span>: <span class="string">'[^. *\t]\.\w*'</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">" 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">"\&lt;C-n&gt;"</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">"\&lt;TAB&gt;"</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> "&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">'.'</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">'.'</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">'\s'</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">"&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
+<p>执行 :PlugInstall</p>
+<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
+<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">'range'</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">'filetype'</span>: <span class="string">'css'</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
+<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
+<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py" target="_blank" rel="noopener">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>multiple filetype</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SSM 错误集锦</title>
     <url>/ssm-Error/</url>
     <content><![CDATA[<ol>
@@ -1179,52 +1142,6 @@ Selection-&gt;Application in terminal may access clipboard</code>（选择开启
       </tags>
   </entry>
   <entry>
-    <title>SSM 问题集锦</title>
-    <url>/ssm-question/</url>
-    <content><![CDATA[<h1 id="SSM-问题集锦"><a href="#SSM-问题集锦" class="headerlink" title="SSM 问题集锦"></a>SSM 问题集锦</h1><h2 id="SSM-基础的搭建过程"><a href="#SSM-基础的搭建过程" class="headerlink" title="SSM 基础的搭建过程"></a>SSM 基础的搭建过程</h2><p><a href="https://blog.csdn.net/yangxinyujy/article/details/80656771" target="_blank" rel="noopener">IntelliJ IDEA 创建 Maven 管理下的 SSM 项目基础全过程</a><br><a href="https://github.com/yangxinyujy/ssmdemo" target="_blank" rel="noopener">yangxinyujy/ssmdemo: ssm 基础框架</a></p>
-<a id="more"></a>
-
-<h2 id="Tomcat-部署时-war-和-war-exploded-区别"><a href="#Tomcat-部署时-war-和-war-exploded-区别" class="headerlink" title="Tomcat 部署时 war 和 war exploded 区别"></a>Tomcat 部署时 war 和 war exploded 区别</h2><p>war 模式：将WEB工程以包的形式上传到服务器，可以称之为是发布模式，这是先打成 war 包，再发布；<br>war exploded模式：将 WEB 工程以当前文件夹的位置关系上传到服务器，通过直接把文件夹、jsp 页面 、classes 等,移到 Tomcat 部署文件夹里面的方式，进行加载部署。因此这种方式支持热部署，一般在开发的时候也是用这种方式。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>ssm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vim 多文件类型自动补全方案</title>
-    <url>/vim-multiple-filetype-deoplete/</url>
-    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
-<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>其中的 filetype on 表示：</p>
-<blockquote>
-<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
-</blockquote>
-<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
-<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
-<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">'nvim'</span>)</span><br><span class="line">  Plug <span class="string">'Shougo/deoplete.nvim'</span>, &#123; <span class="string">'do'</span>: <span class="string">':UpdateRemotePlugins'</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">'Shougo/deoplete.nvim'</span></span><br><span class="line">  Plug <span class="string">'roxma/nvim-yarp'</span></span><br><span class="line">  Plug <span class="string">'roxma/vim-hug-neovim-rpc'</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">'Shougo/context_filetype.vim'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">'g:context_filetype#same_filetypes'</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">'filetype'</span> :<span class="string">'javascript'</span>, <span class="string">'start'</span>: <span class="string">'&lt;script&gt;'</span>, <span class="string">'end'</span>: <span class="string">'&lt;/script&gt;'</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">'filetype'</span> :<span class="string">'css'</span>, <span class="string">'start'</span>: <span class="string">'&lt;style&gt;'</span>, <span class="string">'end'</span>: <span class="string">'&lt;/style&gt;'</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">" deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">'omni'</span>, <span class="string">'functions'</span>, &#123;</span><br><span class="line">\ <span class="string">'css'</span>: [<span class="string">'csscomplete#CompleteCSS'</span>],</span><br><span class="line">\ <span class="string">'javascript'</span>: [<span class="string">'javascriptcomplete#CompleteJS'</span>],</span><br><span class="line">\ <span class="string">'html'</span>: [<span class="string">'htmlcomplete#CompleteTags'</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">'omni'</span>, <span class="string">'input_patterns'</span>, &#123;</span><br><span class="line">\ <span class="string">'javascript'</span>: <span class="string">'[^. *\t]\.\w*'</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">" 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">"\&lt;C-n&gt;"</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">"\&lt;TAB&gt;"</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> "&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">'.'</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">'.'</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">'\s'</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">"&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
-<p>执行 :PlugInstall</p>
-<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
-<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">'range'</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">'filetype'</span>: <span class="string">'css'</span>&#125;</span><br></pre></td></tr></table></figure>
-<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
-<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
-<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py" target="_blank" rel="noopener">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>multiple filetype</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>React-Vim 开发环境</title>
     <url>/vim-react/</url>
     <content><![CDATA[<h2 id="实现功能"><a href="#实现功能" class="headerlink" title="实现功能"></a>实现功能</h2><ol>
@@ -1257,6 +1174,103 @@ Selection-&gt;Application in terminal may access clipboard</code>（选择开启
       <tags>
         <tag>vim</tag>
         <tag>react</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SSM 问题集锦</title>
+    <url>/ssm-question/</url>
+    <content><![CDATA[<h1 id="SSM-问题集锦"><a href="#SSM-问题集锦" class="headerlink" title="SSM 问题集锦"></a>SSM 问题集锦</h1><h2 id="SSM-基础的搭建过程"><a href="#SSM-基础的搭建过程" class="headerlink" title="SSM 基础的搭建过程"></a>SSM 基础的搭建过程</h2><p><a href="https://blog.csdn.net/yangxinyujy/article/details/80656771" target="_blank" rel="noopener">IntelliJ IDEA 创建 Maven 管理下的 SSM 项目基础全过程</a><br><a href="https://github.com/yangxinyujy/ssmdemo" target="_blank" rel="noopener">yangxinyujy/ssmdemo: ssm 基础框架</a></p>
+<a id="more"></a>
+
+<h2 id="Tomcat-部署时-war-和-war-exploded-区别"><a href="#Tomcat-部署时-war-和-war-exploded-区别" class="headerlink" title="Tomcat 部署时 war 和 war exploded 区别"></a>Tomcat 部署时 war 和 war exploded 区别</h2><p>war 模式：将WEB工程以包的形式上传到服务器，可以称之为是发布模式，这是先打成 war 包，再发布；<br>war exploded模式：将 WEB 工程以当前文件夹的位置关系上传到服务器，通过直接把文件夹、jsp 页面 、classes 等,移到 Tomcat 部署文件夹里面的方式，进行加载部署。因此这种方式支持热部署，一般在开发的时候也是用这种方式。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac 配置上云神器 Mackup</title>
+    <url>/mackup/</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="https://github.com/lra/mackup" target="_blank" rel="noopener">mackup</a> 是一款受关注度很高的开源软件，可运行于 osx 和 linux 系统。用于保持应用程序设置同步，可快捷的备份许多流行的应用程序。</p>
+<a id="more"></a>
+
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>有 brew 和 pip 两种推荐安装方式。</p>
+<ul>
+<li>Install Mackup<br><code>brew install mackup</code></li>
+<li>Install Mackup with PIP<br><code>pip install --upgrade mackup</code></li>
+</ul>
+<p>还需要简单的<a href="https://github.com/lra/mackup/tree/master/doc" target="_blank" rel="noopener">配置</a>才可使用。</p>
+<p>创建 ～/.mackup.cfg 文件，根据需要添加配置。</p>
+<p>可添加的配置如下：</p>
+<ol>
+<li><p>支持存储引擎：Dropbox、Google Drive、iCloud、Copy。<br> 例如选择存储到 icloud 添加如下配置即可：</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; icloud</span><br></pre></td></tr></table></figure></li>
+<li><p>备份到指定文件夹。</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; file_system</span><br><span class="line">path &#x3D; some&#x2F;folder&#x2F;in&#x2F;your&#x2F;home（空格不需要转义）</span><br></pre></td></tr></table></figure>
+<p> 指向存储引擎的路径怎么样？是不是就支持所有的存储引擎了呢。</p>
+</li>
+<li><p>支持修改备份文件夹的名字，改为隐藏文件夹。（备份隐藏起来了）</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; icloud</span><br><span class="line">directory &#x3D; .config&#x2F;mackup</span><br></pre></td></tr></table></figure></li>
+<li><p>选择你所要备份的应用。</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[applications_to_sync]</span><br><span class="line">ssh</span><br><span class="line">adium</span><br></pre></td></tr></table></figure></li>
+<li><p>选择你不想备份的应用。</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[applications_to_ignore]</span><br><span class="line">ssh</span><br><span class="line">adium</span><br></pre></td></tr></table></figure></li>
+<li><p>向官方提交支持应用的申请。</p>
+</li>
+<li><p>自定义很方便！</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir ~&#x2F;.mackup</span><br><span class="line">touch ~&#x2F;.mackup&#x2F;my-files.cfg</span><br></pre></td></tr></table></figure>
+<p> 在 my-files.cfg 中配置如下</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[application]</span><br><span class="line">name &#x3D; XXX </span><br><span class="line"></span><br><span class="line">[configuration_files]</span><br><span class="line">Library&#x2F;XXX         (从 Library 开始末尾无 &#x2F;)</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>备份应用的设置：</p>
+<pre><code>`mackup backup`</code></pre><p>强制同意备份请求：</p>
+<pre><code>`mackup backup -f`</code></pre><p>使用备份的设置：</p>
+<pre><code>`mackup restore`</code></pre><p>应用不进行备份处理：</p>
+<pre><code>`mackup uninstall`</code></pre><p>使用帮助：</p>
+<pre><code>`mackup -h`</code></pre><h2 id="注意⚠️"><a href="#注意⚠️" class="headerlink" title="注意⚠️"></a>注意⚠️</h2><p>我最初使用 Mackup 只是为了备份配置，日后更换电脑方便，而没有去理解它的精髓，所以造成了不必要的时间损失，重新手动配置了诸多环境。认识到是自己操作不当所造成后，也只能为它写下这篇博客。</p>
+<p>mackup 的备份命令说执行的并不是 copy。“保持应用程序设置同步”才是它的核心要义。<br>mackup backup 相当于如下三个命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cp ~/.gitconfig ~/Dropbox/Mackup/.gitconfig</span><br><span class="line">rm ~/.gitconfig</span><br><span class="line">ln -s ~/Dropbox/Mackup/.gitconfig ~/.gitconfig</span><br></pre></td></tr></table></figure>
+<ol>
+<li>将配置拷贝到你所配置的 mackup 备份路径之下。</li>
+<li>删除原本的配置。</li>
+<li>将备份后的路径软链接到原来的路径下。</li>
+</ol>
+<p>每台电脑都使用云上的配置，从而达到了应用程序设置同步的目的。<br>同时使用软链接的方式节省了一定的存储空间。</p>
+<p>那如果把云上的配置删了怎么办呢？那么备份过的应用都只有一个软链接。。。<br>清空了垃圾篓，这个时候该咋办呢😢，做数据恢复？还是通过云近期删除找回，icloud 我是没找回过。</p>
+<p>所以理解了之后，记得执行 <code>mackup uninstall</code> 再删。😣<br>修改 mac 账户名名称前也记得 <code>mackup uninstall</code>.</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>开发工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>程序中的 “脚手架”</title>
+    <url>/scaffold/</url>
+    <content><![CDATA[<blockquote>
+<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
+</blockquote>
+<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
+<a id="more"></a>
+
+<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
+<li><a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener">facebook/create-react-app</a></li>
+<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>信息技术</tag>
       </tags>
   </entry>
 </search>
