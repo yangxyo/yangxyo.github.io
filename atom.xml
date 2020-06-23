@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.xyang.xin/"/>
-  <updated>2020-06-03T09:04:00.445Z</updated>
+  <updated>2020-06-23T11:25:05.097Z</updated>
   <id>http://blog.xyang.xin/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vim8 操作简记</title>
+    <link href="http://blog.xyang.xin/vim-manipulate/"/>
+    <id>http://blog.xyang.xin/vim-manipulate/</id>
+    <published>2020-06-23T13:50:03.000Z</published>
+    <updated>2020-06-23T11:25:05.097Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Normal 模式是 Vim 默认打开状态。我们可以通过 Normal 模式，任何其它模式，我们可以在 Normal 模式下对文本进行浏览、排版、修改。Normal 模式在 Vim 中具有举足轻重的作用。&lt;/p&gt;
+&lt;p&gt;在 Normal 模式下，除了基本的移动指令 (j、k、h、l)、插入指令 (i、a)、撤销指令 (u、U) 等。Vim 通过 “操作符 + 运作命令 = 操作”（出自《Vim 实用技巧 第 2 版》） 扩展出了大量的操作指令。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Vim" scheme="http://blog.xyang.xin/tags/Vim/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux 剪贴板小技巧</title>
@@ -72,7 +94,7 @@
     <link href="http://blog.xyang.xin/macos-problems/"/>
     <id>http://blog.xyang.xin/macos-problems/</id>
     <published>2020-04-18T16:15:08.000Z</published>
-    <updated>2020-06-05T04:52:33.956Z</updated>
+    <updated>2020-06-18T09:37:26.606Z</updated>
     
     <summary type="html">
     
@@ -317,14 +339,15 @@
     <link href="http://blog.xyang.xin/mac-ssh-error/"/>
     <id>http://blog.xyang.xin/mac-ssh-error/</id>
     <published>2019-02-26T19:52:38.000Z</published>
-    <updated>2020-04-14T14:10:54.201Z</updated>
+    <updated>2020-06-20T12:58:31.471Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png&quot; alt=&quot;2019-05-14 at 17.17.png&quot;&gt;&lt;br&gt;known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。&lt;/p&gt;
+      &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png&quot; alt=&quot;2019-05-14 at 17.17.png&quot;&gt;&lt;br&gt;WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!&lt;/p&gt;
+&lt;p&gt;known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。&lt;/p&gt;
 &lt;h2 id=&quot;通过如下两种方案解决该问题&quot;&gt;&lt;a href=&quot;#通过如下两种方案解决该问题&quot; class=&quot;headerlink&quot; title=&quot;通过如下两种方案解决该问题&quot;&gt;&lt;/a&gt;通过如下两种方案解决该问题&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;输入命令(推荐)：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh-keygen -R服务器ip地址&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh-keygen -R45.40.106.111&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -341,7 +364,7 @@
     <link href="http://blog.xyang.xin/proxy-teach/"/>
     <id>http://blog.xyang.xin/proxy-teach/</id>
     <published>2019-02-24T00:31:12.000Z</published>
-    <updated>2020-06-13T11:40:02.951Z</updated>
+    <updated>2020-06-21T13:54:26.069Z</updated>
     
     <summary type="html">
     
@@ -432,7 +455,7 @@
     <link href="http://blog.xyang.xin/iterm2/"/>
     <id>http://blog.xyang.xin/iterm2/</id>
     <published>2018-12-21T17:25:34.000Z</published>
-    <updated>2020-04-18T07:49:06.311Z</updated>
+    <updated>2020-06-20T14:17:14.641Z</updated>
     
     <summary type="html">
     
@@ -469,39 +492,6 @@
     
     
       <category term="方法" scheme="http://blog.xyang.xin/tags/%E6%96%B9%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>包管理</title>
-    <link href="http://blog.xyang.xin/package-management/"/>
-    <id>http://blog.xyang.xin/package-management/</id>
-    <published>2018-10-26T15:27:58.000Z</published>
-    <updated>2020-04-18T07:48:49.626Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;大部分成熟的操作系统有着各种不同的包管理器，某些软件也有自己的包管理器。&lt;/p&gt;
-&lt;h2 id=&quot;系统包管理器&quot;&gt;&lt;a href=&quot;#系统包管理器&quot; class=&quot;headerlink&quot; title=&quot;系统包管理器&quot;&gt;&lt;/a&gt;系统包管理器&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;CentOS&lt;ul&gt;
-&lt;li&gt;yum&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Gentoo    &lt;ul&gt;
-&lt;li&gt;emerge&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MacOS     &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://brew.sh/index_zh-cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Homebrew&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;Homebrew 已经成为一款跨平台的包管理器 &lt;a href=&quot;https://github.com/Linuxbrew/brew/blob/master/README.md&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Linuxbrew&lt;/a&gt;
-    
-    </summary>
-    
-    
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="包管理" scheme="http://blog.xyang.xin/tags/%E5%8C%85%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
