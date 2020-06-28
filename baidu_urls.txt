@@ -1,3 +1,4 @@
+http://blog.xyang.xin/vim-plugin-everday-1/
 http://blog.xyang.xin/vim-manipulate/
 http://blog.xyang.xin/ssh-clipboard-iterm2/
 http://blog.xyang.xin/se-operators/
