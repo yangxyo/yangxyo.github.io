@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://blog.xyang.xin/vim-plugin-everday-1/</loc>
-    <lastmod>2020-06-28</lastmod>
+    <loc>http://blog.xyang.xin/github-download-folder/</loc>
+    <lastmod>2020-07-09</lastmod>
+  </url>  <url>
+    <loc>http://blog.xyang.xin/vim-plugin-everday-2/</loc>
+    <lastmod>2020-07-09</lastmod>
+  </url>  <url>
+    <loc>http://blog.xyang.xin/es6-everday-1/</loc>
+    <lastmod>2020-07-08</lastmod>
   </url>  <url>
     <loc>http://blog.xyang.xin/vim-manipulate/</loc>
-    <lastmod>2020-06-23</lastmod>
+    <lastmod>2020-07-06</lastmod>
+  </url>  <url>
+    <loc>http://blog.xyang.xin/vim-plugin-everday-1/</loc>
+    <lastmod>2020-06-29</lastmod>
   </url>  <url>
     <loc>http://blog.xyang.xin/proxy-teach/</loc>
     <lastmod>2020-06-21</lastmod>
@@ -95,9 +104,6 @@
     <lastmod>2020-04-14</lastmod>
   </url>  <url>
     <loc>http://blog.xyang.xin/vim-multiple-filetype-deoplete/</loc>
-    <lastmod>2020-04-14</lastmod>
-  </url>  <url>
-    <loc>http://blog.xyang.xin/es6-everday-1/</loc>
     <lastmod>2020-04-14</lastmod>
   </url>  <url>
     <loc>http://blog.xyang.xin/es6-everday-2/</loc>

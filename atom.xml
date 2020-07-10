@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.xyang.xin/"/>
-  <updated>2020-06-28T06:53:01.677Z</updated>
+  <updated>2020-07-09T15:15:23.133Z</updated>
   <id>http://blog.xyang.xin/</id>
   
   <author>
@@ -17,11 +17,63 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>从 Github 下载目标仓库指定文件夹</title>
+    <link href="http://blog.xyang.xin/github-download-folder/"/>
+    <id>http://blog.xyang.xin/github-download-folder/</id>
+    <published>2020-07-09T21:19:34.000Z</published>
+    <updated>2020-07-09T15:15:23.133Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;从 Github 下载目标仓库指定文件夹。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Github" scheme="http://blog.xyang.xin/tags/Github/"/>
+    
+      <category term="git-svn" scheme="http://blog.xyang.xin/tags/git-svn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vim-fugitive ——【一天一个 vim 插件】</title>
+    <link href="http://blog.xyang.xin/vim-plugin-everday-2/"/>
+    <id>http://blog.xyang.xin/vim-plugin-everday-2/</id>
+    <published>2020-06-29T12:01:14.000Z</published>
+    <updated>2020-07-09T13:18:34.381Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;作为一个 10k+ star 的 vim 插件，&lt;a href=&quot;https://github.com/tpope/vim-fugitive&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;tpope/vim-fugitive&lt;/a&gt; 自称为 Git 的第一 Vim 插件并不为过。Fugitive 让你在当前 buffer 缓冲区通过&lt;code&gt;:Git&lt;/code&gt;或&lt;code&gt;:G&lt;/code&gt;，可以直接使用 git 命令。可以看作是&lt;code&gt;!git XX&lt;/code&gt; 命令的改进和优化，除了使用 silent，静默模式外，你不会看到 “Press ENTER or type command to continue”，还对一些命令进行了优化。&lt;/p&gt;
+&lt;h2 id=&quot;温故&quot;&gt;&lt;a href=&quot;#温故&quot; class=&quot;headerlink&quot; title=&quot;温故&quot;&gt;&lt;/a&gt;温故&lt;/h2&gt;&lt;p&gt;回顾一下上一个插件 vim-gitgutter 的使用方法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;[c&lt;/code&gt; 和 &lt;code&gt;]c&lt;/code&gt; 在有所变动的区
+      
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="vim" scheme="http://blog.xyang.xin/tags/vim/"/>
+    
+      <category term="一天一个 vim 插件" scheme="http://blog.xyang.xin/tags/%E4%B8%80%E5%A4%A9%E4%B8%80%E4%B8%AA-vim-%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>vim-gitgutter ——【一天一个 vim 插件】</title>
     <link href="http://blog.xyang.xin/vim-plugin-everday-1/"/>
     <id>http://blog.xyang.xin/vim-plugin-everday-1/</id>
     <published>2020-06-28T12:03:02.000Z</published>
-    <updated>2020-06-28T06:53:01.677Z</updated>
+    <updated>2020-06-29T07:29:20.957Z</updated>
     
     <summary type="html">
     
@@ -50,7 +102,7 @@
     <link href="http://blog.xyang.xin/vim-manipulate/"/>
     <id>http://blog.xyang.xin/vim-manipulate/</id>
     <published>2020-06-23T13:50:03.000Z</published>
-    <updated>2020-06-23T11:25:05.097Z</updated>
+    <updated>2020-07-06T12:09:02.366Z</updated>
     
     <summary type="html">
     
@@ -86,9 +138,9 @@
     
       <category term="Linux" scheme="http://blog.xyang.xin/tags/Linux/"/>
     
-      <category term="Vim" scheme="http://blog.xyang.xin/tags/Vim/"/>
-    
       <category term="剪贴板" scheme="http://blog.xyang.xin/tags/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
+    
+      <category term="Vim" scheme="http://blog.xyang.xin/tags/Vim/"/>
     
   </entry>
   
@@ -220,7 +272,7 @@
     <link href="http://blog.xyang.xin/es6-everday-1/"/>
     <id>http://blog.xyang.xin/es6-everday-1/</id>
     <published>2020-03-25T21:28:59.000Z</published>
-    <updated>2020-04-14T14:01:39.312Z</updated>
+    <updated>2020-07-08T12:06:23.675Z</updated>
     
     <summary type="html">
     
@@ -233,8 +285,9 @@
 &lt;li&gt;Number&lt;/li&gt;
 &lt;li&gt;String&lt;/li&gt;
 &lt;li&gt;Object&lt;/li&gt;
+&lt;li&gt;Symbol (ES2015 新增)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Symbol 是值，不是字符串，不是对象，是第七种原始数据类型。每个从&lt;code&gt;Symbol()&lt;/code&gt;返回的 symbol 值都是唯一的。&lt;strong&gt;一个 symbol 值能作为对象属性的标识符；这是该数据类型仅有的目的&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;Symbol 不是字符串，不是对象，是第七种原始数据类型。每个从&lt;code&gt;Symbol()&lt;/code&gt;返回的 symbol 类型的值都是唯一的。&lt;strong&gt;一个 symbol 类型的值能作为对象属性的标识符；这是该数据类型仅有的目的&lt;/strong&gt;。&lt;/p&gt;
     
     </summary>
     
@@ -455,48 +508,6 @@
       <category term="vim" scheme="http://blog.xyang.xin/tags/vim/"/>
     
       <category term="react" scheme="http://blog.xyang.xin/tags/react/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac 配置上云神器 Mackup</title>
-    <link href="http://blog.xyang.xin/mackup/"/>
-    <id>http://blog.xyang.xin/mackup/</id>
-    <published>2018-12-25T14:41:47.000Z</published>
-    <updated>2020-04-18T07:49:09.163Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lra/mackup&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;mackup&lt;/a&gt; 是一款受关注度很高的开源软件，可运行于 osx 和 linux 系统。用于保持应用程序设置同步，可快捷的备份许多流行的应用程序。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="开发工具" scheme="http://blog.xyang.xin/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>由简入深配置 iTem2 终端</title>
-    <link href="http://blog.xyang.xin/iterm2/"/>
-    <id>http://blog.xyang.xin/iterm2/</id>
-    <published>2018-12-21T17:25:34.000Z</published>
-    <updated>2020-06-20T14:17:14.641Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;iTerm2&quot;&gt;&lt;a href=&quot;#iTerm2&quot; class=&quot;headerlink&quot; title=&quot;iTerm2&quot;&gt;&lt;/a&gt;iTerm2&lt;/h1&gt;&lt;p&gt;brew 安装 zsh&lt;br&gt;    &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew install zsh&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo chsh -s &amp;#x2F;usr&amp;#x2F;local&amp;#x2F;bin&amp;#x2F;zsh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;从 zsh 切换回 bash&lt;br&gt;    &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;chsh -s &amp;#x2F;bin&amp;#x2F;bash&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="开发工具" scheme="http://blog.xyang.xin/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
