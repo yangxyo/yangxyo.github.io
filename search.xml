@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>目标和关键成果法 (Objectives and Key Results)</title>
-    <url>/OKRs/</url>
-    <content><![CDATA[<blockquote>
-<p>The Objective is the direction.<br>The key results have to be measured.<br>Yes.No.Simple</p>
-</blockquote>
-<h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>Being took to the wrong objectives is unacceptable.<br>被带向错误的目标是让人无法接受的。</p>
+    <title>阿里云 ECS 使用</title>
+    <url>/ECS/</url>
+    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><a href="https://www.alibabacloud.com/help/zh/doc-detail/25367.htm?spm=a2c63.p38356.b99.2.615e1bbcsZH9Ry" target="_blank" rel="noopener">阿里云官方文档</a></p>
 <a id="more"></a>
 
-<p>Truly transformational teams combine their ambitions to their passion and to their purpose，and they develop a clear and compelling sense of why.<br>真正变革型的团队都会将自己的雄心、热情和目标结合到一起，他们很清楚为何要做，且理由令人信服。</p>
-<h1 id="Objective"><a href="#Objective" class="headerlink" title="Objective"></a>Objective</h1><p>Significant (重要)<br>Concrete （具体）<br>Action-oriented （以行动为导向）<br>Inspirational （激励人心）</p>
-<p>If the heart doesn’t find a perfect rhyme with the head, then your passion means nothing.<br>如果内心找不到与大脑和谐的韵律，你的热情就毫无用处。</p>
-<h1 id="Good-key-results"><a href="#Good-key-results" class="headerlink" title="Good key results"></a>Good key results</h1><p>Specific &amp; Time-bound（明确、有时间限制）<br>Aggressive Yet Realistic（激进、现实）<br>Measurable &amp; Verifiable (可衡量、可评估)</p>
-<h1 id="Why-1"><a href="#Why-1" class="headerlink" title="Why"></a>Why</h1><p>OKRs as transparent vessels, that are made from the whats and hows of our ambitions. What really matters is the why that we pour into those vessels. Thats’s why we do our work.<br> OKRS 可以看做是一个透明的容器，它由野心勃勃的“做什么”和“怎么做”构成。 真正的关键在于放进容器中的“为什么” 那是我们工作的原因。</p>
-<h1 id="Write-down-your"><a href="#Write-down-your" class="headerlink" title="Write down your"></a>Write down your</h1><p>Values (the right metrics)<br>Objectives<br>Key results</p>
+<h2 id="远程连接服务器常用的几种方式"><a href="#远程连接服务器常用的几种方式" class="headerlink" title="远程连接服务器常用的几种方式"></a>远程连接服务器常用的几种方式</h2><p>SSH —— 远程<br>SFTF —— 文件传输，22端口</p>
+<h2 id="安全组"><a href="#安全组" class="headerlink" title="安全组"></a>安全组</h2><h2 id="设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口"><a href="#设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口" class="headerlink" title="设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口"></a>设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口</h2><ol>
+<li>设置端口范围 22/22 协议类型自定义TCP 授权对象公网ip，22端口常用于ssh连接。</li>
+<li>设置端口范围 80/80 协议类型自定义TCP 授权对象0.0.0.0/0。<br>允许所有人通过 http 访问你的服务器。<br>80 端口常用于 http 协议访问 web 网站。相对应的 443 端口用于 https 协议访问 web 网站。3306 端口常用于数据库远程连接。出于安全考虑：如果向所有人打开 22 端口和 3306 端口，应当确保密码的复杂程度，以防强行爆破。对于新手建议将 22 端口和 3306 端口设置为仅允许指定IP访问。</li>
+</ol>
+<h2 id="设置公网出方向-——-服务器出口的限制"><a href="#设置公网出方向-——-服务器出口的限制" class="headerlink" title="设置公网出方向 —— 服务器出口的限制"></a>设置公网出方向 —— 服务器出口的限制</h2><p>没有特殊需求不需要设置。</p>
 ]]></content>
       <categories>
-        <category>方法</category>
+        <category>信息技术</category>
       </categories>
       <tags>
-        <tag>方法</tag>
+        <tag>云服务</tag>
       </tags>
   </entry>
   <entry>
@@ -55,23 +52,71 @@
       </tags>
   </entry>
   <entry>
-    <title>阿里云 ECS 使用</title>
-    <url>/ECS/</url>
-    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><a href="https://www.alibabacloud.com/help/zh/doc-detail/25367.htm?spm=a2c63.p38356.b99.2.615e1bbcsZH9Ry" target="_blank" rel="noopener">阿里云官方文档</a></p>
+    <title>目标和关键成果法 (Objectives and Key Results)</title>
+    <url>/OKRs/</url>
+    <content><![CDATA[<blockquote>
+<p>The Objective is the direction.<br>The key results have to be measured.<br>Yes.No.Simple</p>
+</blockquote>
+<h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>Being took to the wrong objectives is unacceptable.<br>被带向错误的目标是让人无法接受的。</p>
 <a id="more"></a>
 
-<h2 id="远程连接服务器常用的几种方式"><a href="#远程连接服务器常用的几种方式" class="headerlink" title="远程连接服务器常用的几种方式"></a>远程连接服务器常用的几种方式</h2><p>SSH —— 远程<br>SFTF —— 文件传输，22端口</p>
-<h2 id="安全组"><a href="#安全组" class="headerlink" title="安全组"></a>安全组</h2><h2 id="设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口"><a href="#设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口" class="headerlink" title="设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口"></a>设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口</h2><ol>
-<li>设置端口范围 22/22 协议类型自定义TCP 授权对象公网ip，22端口常用于ssh连接。</li>
-<li>设置端口范围 80/80 协议类型自定义TCP 授权对象0.0.0.0/0。<br>允许所有人通过 http 访问你的服务器。<br>80 端口常用于 http 协议访问 web 网站。相对应的 443 端口用于 https 协议访问 web 网站。3306 端口常用于数据库远程连接。出于安全考虑：如果向所有人打开 22 端口和 3306 端口，应当确保密码的复杂程度，以防强行爆破。对于新手建议将 22 端口和 3306 端口设置为仅允许指定IP访问。</li>
-</ol>
-<h2 id="设置公网出方向-——-服务器出口的限制"><a href="#设置公网出方向-——-服务器出口的限制" class="headerlink" title="设置公网出方向 —— 服务器出口的限制"></a>设置公网出方向 —— 服务器出口的限制</h2><p>没有特殊需求不需要设置。</p>
+<p>Truly transformational teams combine their ambitions to their passion and to their purpose，and they develop a clear and compelling sense of why.<br>真正变革型的团队都会将自己的雄心、热情和目标结合到一起，他们很清楚为何要做，且理由令人信服。</p>
+<h1 id="Objective"><a href="#Objective" class="headerlink" title="Objective"></a>Objective</h1><p>Significant (重要)<br>Concrete （具体）<br>Action-oriented （以行动为导向）<br>Inspirational （激励人心）</p>
+<p>If the heart doesn’t find a perfect rhyme with the head, then your passion means nothing.<br>如果内心找不到与大脑和谐的韵律，你的热情就毫无用处。</p>
+<h1 id="Good-key-results"><a href="#Good-key-results" class="headerlink" title="Good key results"></a>Good key results</h1><p>Specific &amp; Time-bound（明确、有时间限制）<br>Aggressive Yet Realistic（激进、现实）<br>Measurable &amp; Verifiable (可衡量、可评估)</p>
+<h1 id="Why-1"><a href="#Why-1" class="headerlink" title="Why"></a>Why</h1><p>OKRs as transparent vessels, that are made from the whats and hows of our ambitions. What really matters is the why that we pour into those vessels. Thats’s why we do our work.<br> OKRS 可以看做是一个透明的容器，它由野心勃勃的“做什么”和“怎么做”构成。 真正的关键在于放进容器中的“为什么” 那是我们工作的原因。</p>
+<h1 id="Write-down-your"><a href="#Write-down-your" class="headerlink" title="Write down your"></a>Write down your</h1><p>Values (the right metrics)<br>Objectives<br>Key results</p>
 ]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>方法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
+    <url>/acme-sh/</url>
+    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
+<ul>
+<li>http 认证方式</li>
+<li>dns 方式<a id="more"></a>
+
+</li>
+</ul>
+<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
+<p><a href="https://github.com/Neilpang/acme.sh/wiki/说明" target="_blank" rel="noopener">github 安装说明</a></p>
+<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>云服务</tag>
+        <tag>ssl</tag>
+        <tag>acme.sh</tag>
+        <tag>letsencrypt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《如何阅读一本书》读书笔记</title>
+    <url>/book-rhydybs/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-09%2Frhydybs.jpeg?x-oss-process=style/title_140" alt="rhydybs.jpeg-w140"></p>
+<a id="more"></a>
+<p><img data-src="http://images.xyang.xin/2019-09%2F%E3%80%8A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6%E3%80%8B.png" alt="《如何阅读一本书》.png"></p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《如何阅读一本书》的脉络要点进行总结，用于阅读时的参考。（图谱内容较多，建议保存后浏览）。</p>
+<p>书中提出了四种阅读层次，层次逐级递增，较高层次的阅读包含较低层次的阅读。基础阅读是对字词句意思的理解，是阅读的基础。使用检视阅读来理清书的脉络，来甄别一本书是否值得读，是否适合现在读。使用分析阅读来细细品味一本好书。主题阅读适用于学术研究或对自己感兴趣的问题的探究性学习。</p>
+<!-- more -->
+<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><p>读者是要“发现”书中隐藏着的骨架。而作者则是以制造骨架为开始，但却想办法把骨架“隐藏”起来。他的目的是，用艺术的手法将骨架隐藏起来，或是说，在骨架上添加血肉。</p>
+<p>所谓文章的清楚明白，就是跟纲要的区隔是否清楚有关，所谓文章的前后一贯，就是能把不同的重点条理有序地排列出来。</p>
+<p>这个捷径是要靠你的检视阅读技巧来建立的。你收集好书目之后，要做的第一件事是检视书单上所有的书。在做检视阅读之前，绝不要用分析阅读来阅读。检视阅读不会让你明白有关主题的所有错综复杂的内容，或是作者所有的洞察力，但却具有两种基本的功能。第一，它会让你对自己想要研究的主题有个清晰的概念，这样接下来你针对某几本书做分析阅读时，会大有助益。第二，它会简化你的书目到一个合理的程度。</p>
+<p>能够熟练检视阅读的读者，不但能在心中将书籍分类，而且能对内容有一个粗浅的了解。他也会用非常短的时间就发现，这本书谈的内容对他研究的主题到底重不重要————这可能要等到读下本书的时候才能发现。但是有两件事至少他已经知道其中之一。那就是他不是发现这本书必须回头再读一次，以获得启发，便是知道不论这本书多有趣又多丰富，却毫无启发性，因此不值得重新再读。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>阅读</tag>
       </tags>
   </entry>
   <entry>
@@ -117,29 +162,6 @@
       </tags>
   </entry>
   <entry>
-    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
-    <url>/acme-sh/</url>
-    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
-<ul>
-<li>http 认证方式</li>
-<li>dns 方式<a id="more"></a>
-
-</li>
-</ul>
-<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
-<p><a href="https://github.com/Neilpang/acme.sh/wiki/说明" target="_blank" rel="noopener">github 安装说明</a></p>
-<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>ssl</tag>
-        <tag>acme.sh</tag>
-        <tag>letsencrypt</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《一本小小的红色写作书》读书笔记</title>
     <url>/book-hsxzs/</url>
     <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F1558180143.png?x-oss-process=style/title_140" alt="1558180143.png-w140"></p>
@@ -167,28 +189,6 @@
       <tags>
         <tag>读书笔记</tag>
         <tag>写作</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《如何阅读一本书》读书笔记</title>
-    <url>/book-rhydybs/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-09%2Frhydybs.jpeg?x-oss-process=style/title_140" alt="rhydybs.jpeg-w140"></p>
-<a id="more"></a>
-<p><img data-src="http://images.xyang.xin/2019-09%2F%E3%80%8A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6%E3%80%8B.png" alt="《如何阅读一本书》.png"></p>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《如何阅读一本书》的脉络要点进行总结，用于阅读时的参考。（图谱内容较多，建议保存后浏览）。</p>
-<p>书中提出了四种阅读层次，层次逐级递增，较高层次的阅读包含较低层次的阅读。基础阅读是对字词句意思的理解，是阅读的基础。使用检视阅读来理清书的脉络，来甄别一本书是否值得读，是否适合现在读。使用分析阅读来细细品味一本好书。主题阅读适用于学术研究或对自己感兴趣的问题的探究性学习。</p>
-<!-- more -->
-<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><p>读者是要“发现”书中隐藏着的骨架。而作者则是以制造骨架为开始，但却想办法把骨架“隐藏”起来。他的目的是，用艺术的手法将骨架隐藏起来，或是说，在骨架上添加血肉。</p>
-<p>所谓文章的清楚明白，就是跟纲要的区隔是否清楚有关，所谓文章的前后一贯，就是能把不同的重点条理有序地排列出来。</p>
-<p>这个捷径是要靠你的检视阅读技巧来建立的。你收集好书目之后，要做的第一件事是检视书单上所有的书。在做检视阅读之前，绝不要用分析阅读来阅读。检视阅读不会让你明白有关主题的所有错综复杂的内容，或是作者所有的洞察力，但却具有两种基本的功能。第一，它会让你对自己想要研究的主题有个清晰的概念，这样接下来你针对某几本书做分析阅读时，会大有助益。第二，它会简化你的书目到一个合理的程度。</p>
-<p>能够熟练检视阅读的读者，不但能在心中将书籍分类，而且能对内容有一个粗浅的了解。他也会用非常短的时间就发现，这本书谈的内容对他研究的主题到底重不重要————这可能要等到读下本书的时候才能发现。但是有两件事至少他已经知道其中之一。那就是他不是发现这本书必须回头再读一次，以获得启发，便是知道不论这本书多有趣又多丰富，却毫无启发性，因此不值得重新再读。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>阅读</tag>
       </tags>
   </entry>
   <entry>
@@ -227,203 +227,6 @@
       <tags>
         <tag>Github</tag>
         <tag>git-svn</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
-    <url>/es6-everday-2/</url>
-    <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p>每个函数都是 <code>Function</code> 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用<strong>函数声明语法</strong>定义的：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span> (<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>这与下面使用<strong>函数表达式</strong>定义函数的方式几乎相差无几：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>最后一种定义函数的方式是使用<code>Function</code>构造函数，最后一个参数始终都被看成是函数体，而前面的参数则枚举出了新函数的参数：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Function</span>(<span class="string">"num1"</span>, <span class="string">"num2"</span>, <span class="string">"return num1 + num2"</span>)</span><br></pre></td></tr></table></figure>
-
-<p>其中<strong>函数声明语法</strong>具有函数声明提升（function declaration hoisting）,解析器会率先读取函数声明，并使其在执行任何代码之前可用。其余的时候<strong>函数声明</strong>与<strong>函数表达式</strong>的语法其实是等价的。</p>
-<p>箭头函数针对的是<strong>函数表达式</strong>定义的函数。</p>
-<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"xxx"</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="params">para</span> =&gt;</span> para + <span class="string">"xxx"</span>;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para1, para2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(para1 + <span class="string">" and "</span> + para2);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function">(<span class="params">para1, para2</span>) =&gt;</span> <span class="built_in">console</span>.log(para1 + <span class="string">" and "</span> + para2);</span><br></pre></td></tr></table></figure>
-
-<p>从形式上来看也就是把<strong>函数表达式</strong>定义的函数，function 去掉，在参数括号外面加 =&gt; 。没有参数用()占位，只有一个参数时可以省略括号，后面的代码块部分多于一条语句就要用大括号括起来，而只有一条语句可以省略大括号，如果是 return 语句，还可以省略 return。</p>
-<p>当然仅仅为了好看，箭头函数存在的意义并不大。</p>
-<h2 id="使用注意点"><a href="#使用注意点" class="headerlink" title="使用注意点"></a>使用注意点</h2><p>（1）函数体内的 this 对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">// Cannot read property 'join' of undefined</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//chicken, hamburger, French Fries</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function">(<span class="params">delay=<span class="number">1000</span></span>)=&gt;</span> &#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//Cannot read property 'join' of undefined</span></span><br></pre></td></tr></table></figure>
-<p>第三段代码将 <code>print</code> 函数声明改为一个箭头函数的形式意味着其中关键字 <code>this</code> 指代的对象就是 <code>object</code>（浏览器中是 <code>window</code>）。<br><code>setTimeout()</code>方法设置一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码，上面的代码都是 1s 后执行 <code>console.log</code> 所在的函数。</p>
-<p>（2）不可使用<code>arguments</code>对象，如果要用，可以用扩展运算符(<code>...</code>)将函数参数搜集到一个数组中。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">...theArgs</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> theArgs;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>（3）箭头函数没有自己的 <code>this</code>。<br>不能用 <code>call()</code>、<code>apply()</code>、<code>bind()</code> 这些方法去改变 <code>this</code> 的指向。</p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li>《Javascript 高级程序设计（第3版）》</li>
-<li><a href="https://es6.ruanyifeng.com/#docs/function" target="_blank" rel="noopener">函数的扩展 - ECMAScript 6入门</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>【一天一个 es6 语法】</tag>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解构赋值 ———【一天一个 es6 语法】</title>
-    <url>/es6-everyday-3/</url>
-    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
-<a id="more"></a>
-
-<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">"Bill"</span>,</span><br><span class="line">    lastnNme: <span class="string">"Wilson"</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
-<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">"Kirkwood"</span>, <span class="string">"Squaw"</span>, <span class="string">"Alpine"</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">"Kirkwood"</span>, <span class="string">"Squaw"</span>, <span class="string">"Alpine"</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
-<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">"hello"</span>;</span><br><span class="line">a <span class="comment">// "h"</span></span><br><span class="line">b <span class="comment">// "e"</span></span><br><span class="line">c <span class="comment">// "l"</span></span><br><span class="line">d <span class="comment">// "l"</span></span><br><span class="line">e <span class="comment">// "o"</span></span><br></pre></td></tr></table></figure>
-<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">"hello"</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank" rel="noopener">解构赋值 - JavaScript | MDN</a></li>
-<li><a href="https://es6.ruanyifeng.com/#docs/destructuring" target="_blank" rel="noopener">变量的解构赋值 - ECMAScript 6入门</a></li>
-<li>《React 学习手册》</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>【一天一个 es6 语法】</tag>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>人生</title>
-    <url>/flesh/</url>
-    <content><![CDATA[<h2 id="他的话可信吗"><a href="#他的话可信吗" class="headerlink" title="他的话可信吗"></a>他的话可信吗</h2><blockquote>
-<p>听人谈话的时候，我们需要了解这人是谁，他是处在何种角度，代表何种阶级谈话的。</p>
-</blockquote>
-<p>他的话是他的经验之谈，是他从权威的书籍中得知，论坛上看到，还是他仅仅只是为了让你相信而虚构或者是一个看似正确而往往值得商榷的。</p>
-<a id="more"></a>
-
-<h2 id="好话"><a href="#好话" class="headerlink" title="好话"></a>好话</h2><blockquote>
-<p>听见好话一定要多长心眼，好话会让你做出的决策违背初心，待后知后觉，晚矣。</p>
-</blockquote>
-<p>投票软件多少是有漏洞的，从开发人员的角度利用漏洞刷票是很容易被发现，且破坏比赛的公平度的。很多亲人朋友呢很支持我，感觉一个投票闹得挺辛苦的。就不得不在群里向主办方反馈，不一会儿开发投票软件公司的老总进来了，也不说是解决问题。</p>
-<p>主办方第一轮给出的结果，随便找个理由，说没有刷票行为。<br>网络投票看是否刷票，一般都是看着某一天投票数是否波动过大，尤其是最后一天，或者票数数量过多，咱们开始怀疑刷票。然而这都只是怀疑，技术部门要是不想解决也是没办法的。<br>然而当投票网站上有访问量和投票数那就不一样了，当投票数大于访问量？这是什么怪物？页面都没被访问，你又是怎么点击投票按钮的，这就是异常刷票了。</p>
-<p>这种情况主办方如果不证明是系统漏洞，抑或是抓出一个有刷票行为的队伍来，那这个主办方麻烦就大了，网络舆情还是很管用的。</p>
-<p>后面主办方不得不抓出了一个，五天投票，前面四天总共几十票，最后一天下午飙几万的队伍。据肉眼观察肯定是不止一个的。</p>
-<p>但是同时那个老总私聊到我，简单的说“本科进决赛很优秀了，有时间聊一下”。再加上我本身对这软件公司是没有敌意的，因为系统安全性技术比较难，本身抱着的态度就是能找出刷票的队伍，解决问题就行了。</p>
-<p>他这一句话导致的最终结果就是，简单的将刷票最厉害的队伍解决了，而放下了第一轮结果所公布的无赖行为和更多的不公平性的愤懑。</p>
-<p>一句好话让我对公平性诉求，从解决，到最简单的解决。</p>
-<h2 id="解决生活中的难题"><a href="#解决生活中的难题" class="headerlink" title="解决生活中的难题"></a>解决生活中的难题</h2><p>倘若有条件自己给自己安排一件难题，例如考研究生、公务员，不是生活强加给我们的，那便是为了多一种生活体验。抱着解决问题的心态去攻坚克难，坚持下去完整的度过有计划的每一天便是一种胜利。</p>
-<h2 id="为什么不同"><a href="#为什么不同" class="headerlink" title="为什么不同"></a>为什么不同</h2><p>假若我们抱怨，抱怨自己没有出生在名门旺族，抱怨自己没有一个好看的脸蛋。然而人之所以是自己，正是源于这些后天难以更改的不同之处。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>人生</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo 博客进阶</title>
-    <url>/hexo-advance/</url>
-    <content><![CDATA[<h2 id="文章简介"><a href="#文章简介" class="headerlink" title="文章简介"></a>文章简介</h2><p>本文介绍 Hexo 博客的一些进阶操作。</p>
-<ul>
-<li>解决 Github Pages 不被百度抓取的问题；</li>
-<li>使用 gulp 压缩资源，实现访问加速。</li>
-<li>在博客中添加音频和视频；<a id="more"></a>
-<h2 id="Github-Pages-不被百度抓取的方法"><a href="#Github-Pages-不被百度抓取的方法" class="headerlink" title="Github Pages 不被百度抓取的方法"></a>Github Pages 不被百度抓取的方法</h2>并通过域名 CNAME 实现国内外分流，<h3 id="Coding-Pages"><a href="#Coding-Pages" class="headerlink" title="Coding Pages"></a>Coding Pages</h3><a href="https://help.coding.net/docs/devops/cd/static-website.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE" target="_blank" rel="noopener">CODING 静态网站服务 - CODING 帮助中心</a></li>
-</ul>
-<h3 id="私有的-OSS"><a href="#私有的-OSS" class="headerlink" title="私有的 OSS"></a>私有的 OSS</h3><p>以阿里云oss为例<br><img data-src="https://images.xyang.xin/2020-04/1586841854.png" alt="开通子目录首页"></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-oss</span><br></pre></td></tr></table></figure>
-<p><code>_config.yml</code> 配置</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">oss</span></span><br><span class="line">  <span class="attr">accessKeyId:</span> <span class="string">&lt;your</span> <span class="string">accessKeyId&gt;</span></span><br><span class="line">  <span class="attr">accessKeySecret:</span> <span class="string">&lt;your</span> <span class="string">accessKeySecret&gt;</span></span><br><span class="line">  <span class="attr">bucket:</span> <span class="string">&lt;your</span> <span class="string">bucket&gt;</span></span><br><span class="line">  <span class="attr">region:</span> <span class="string">&lt;your</span> <span class="string">region&gt;</span></span><br></pre></td></tr></table></figure>
-<p>  其中 region 以北京地区的 oss 为例填 <code>oss-cn-beijing</code></p>
-<h2 id="使用-gulp-压缩资源"><a href="#使用-gulp-压缩资源" class="headerlink" title="使用 gulp 压缩资源"></a>使用 gulp 压缩资源</h2><p>使用 gulp 压缩资源，提高访问速度。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install gulp-cli -g</span><br><span class="line">npm install gulp gulp-htmlclean gulp-htmlmin gulp-imagemin gulp-clean-css gulp-uglify --save-dev</span><br></pre></td></tr></table></figure>
-
-<p>项目根目录新建<code>gulpfile.babel.js</code>，添加如下内容：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> gulp <span class="keyword">from</span> <span class="string">'gulp'</span></span><br><span class="line"><span class="keyword">import</span> cleancss <span class="keyword">from</span> <span class="string">'gulp-clean-css'</span></span><br><span class="line"><span class="keyword">import</span> uglify <span class="keyword">from</span> <span class="string">'gulp-uglify-es'</span></span><br><span class="line"><span class="keyword">import</span> htmlmin <span class="keyword">from</span> <span class="string">'gulp-htmlmin'</span></span><br><span class="line"><span class="keyword">import</span> htmlclean <span class="keyword">from</span> <span class="string">'gulp-htmlclean'</span></span><br><span class="line"><span class="keyword">import</span> imagemin <span class="keyword">from</span> <span class="string">'gulp-imagemin'</span></span><br><span class="line"><span class="keyword">import</span> babel <span class="keyword">from</span> <span class="string">'gulp-babel'</span></span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'minify-html'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/**/*.html'</span>)</span><br><span class="line">    .pipe(htmlclean(&#123;</span><br><span class="line">      protect: <span class="regexp">/&lt;\!--%fooTemplate\b.*?%--&gt;/g</span>,</span><br><span class="line">      edit: <span class="function">(<span class="params">html</span>) =&gt;</span> &#123; <span class="keyword">return</span> html.replace(<span class="regexp">/\begg(s?)\b/ig</span>, <span class="string">'omelet$1'</span>); &#125;</span><br><span class="line">    &#125;))</span><br><span class="line">    .pipe(htmlmin(&#123;</span><br><span class="line">      removeComments: <span class="literal">true</span>,</span><br><span class="line">      collapseWhitespace: <span class="literal">true</span>,</span><br><span class="line">      collapseBooleanAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeEmptyAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeScriptTypeAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeStyleLinkTypeAttributes: <span class="literal">true</span>,</span><br><span class="line">      minifyJS: <span class="literal">true</span>,</span><br><span class="line">      minifyCSS: <span class="literal">true</span>,</span><br><span class="line">    &#125;))</span><br><span class="line">    .on(<span class="string">'error'</span>, (err) =&gt; &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'html Error!'</span>, err.message);</span><br><span class="line">      <span class="keyword">this</span>.end();</span><br><span class="line">    &#125;)</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'clean-css'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/**/*.css'</span>)</span><br><span class="line">    .pipe(cleancss())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'minify-js'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/js/**/*.js'</span>)</span><br><span class="line">    .pipe(uglify())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'minify-images'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/images/**/*.*'</span>)</span><br><span class="line">    .pipe(imagemin())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public/images'</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'default'</span>, gulp.parallel(<span class="string">'minify-html'</span>, <span class="string">'clean-css'</span>, <span class="string">'minify-js'</span>, <span class="string">'minify-images'</span>, (done) =&gt; &#123;</span><br><span class="line">  done();</span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
-<p>由于是 es6 语法， 需要使用 babel 转译。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install --save-dev gulp-babel @babel/register @babel/preset-env @babel/core</span><br></pre></td></tr></table></figure>
-<p>创建<code>.babel.json</code> 文件，添加内容如下：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"presets"</span>: [</span><br><span class="line">    <span class="string">"@babel/env"</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"plugins"</span>: []</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>终端执行如下命令即可：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g &amp;&amp; gulp</span><br></pre></td></tr></table></figure>
-
-<p>如有报错，可以尝试删除<code>node_modules</code>文件，然后重新执行<code>npm install</code>。</p>
-<h2 id="在博客中插入音频与视频"><a href="#在博客中插入音频与视频" class="headerlink" title="在博客中插入音频与视频"></a>在博客中插入音频与视频</h2><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><h4 id="更快捷的方案一"><a href="#更快捷的方案一" class="headerlink" title="更快捷的方案一"></a>更快捷的方案一</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">430</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"XXX"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=430 height=86 src="https://music.xyang.xin/%E5%9C%A8%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E7%9B%B8%E9%81%87.mp3"></iframe>
-
-<h4 id="更强大的方案二（Github）"><a href="#更强大的方案二（Github）" class="headerlink" title="更强大的方案二（Github）"></a>更强大的方案二（<a href="https://github.com/MoePlayer/hexo-tag-aplayer#usage" target="_blank" rel="noopener">Github</a>）</h4><h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><h4 id="更快捷的标签方式"><a href="#更快捷的标签方式" class="headerlink" title="更快捷的标签方式"></a>更快捷的标签方式</h4><p>iframe 将web页嵌入到另一个网页</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">"854"</span> <span class="attr">height</span>=<span class="string">"480"</span> <span class="attr">src</span>=<span class="string">"//player.bilibili.com/player.html?aid=51918958&amp;cid=90895494&amp;page=1"</span> <span class="attr">scrolling</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">framespacing</span>=<span class="string">"0"</span> <span class="attr">allowfullscreen</span>=<span class="string">"true"</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<iframe width="854" height="480" src="//player.bilibili.com/player.html?aid=51918958&cid=90895494&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<h4 id="更强大的-hexo-tag-dplayer-插件"><a href="#更强大的-hexo-tag-dplayer-插件" class="headerlink" title="更强大的 hexo-tag-dplayer 插件"></a>更强大的 <a href="https://github.com/MoePlayer/hexo-tag-dplayer" target="_blank" rel="noopener">hexo-tag-dplayer</a> 插件</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-tag-dplayer --save</span><br></pre></td></tr></table></figure>
-
-<h3 id="PDF"><a href="#PDF" class="headerlink" title="PDF"></a>PDF</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">object</span> <span class="attr">data</span>=<span class="string">"mypdf.pdf"</span> <span class="attr">type</span>=<span class="string">"application/pdf"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">width</span>=<span class="string">"800"</span> <span class="attr">height</span>=<span class="string">"1200"</span> <span class="attr">typemustmatch</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>You don't have a PDF plugin, but you can <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"myfile.pdf"</span>&gt;</span>download the PDF file.<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/%E5%85%B6%E4%BB%96%E5%B5%8C%E5%85%A5%E6%8A%80%E6%9C%AF" target="_blank" rel="noopener">从对象到iframe - 其他嵌入技术 - 学习 Web 开发 | MDN</a><br><a href="https://luanzhuxian.github.io/post/e5ac3b51.html" target="_blank" rel="noopener">使用 Gulp 压缩 Hexo | 栾铸显的博客</a><br><a href="https://shuoit.net/tech-notes/use-gulp-to-speed-hexo-1547999542.html" target="_blank" rel="noopener">引入gulp压缩整站资源进一步提高写作效率 - 说IT</a></p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>由简入深配置 iTem2 终端</title>
-    <url>/iterm2/</url>
-    <content><![CDATA[<h1 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h1><p>brew 安装 zsh<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install zsh</span><br><span class="line">sudo chsh -s &#x2F;usr&#x2F;local&#x2F;bin&#x2F;zsh</span><br></pre></td></tr></table></figure><br>从 zsh 切换回 bash<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chsh -s &#x2F;bin&#x2F;bash</span><br></pre></td></tr></table></figure></p>
-<a id="more"></a>
-<p>PS：如果从 bash 切换到 zsh，但想保留 bash 所设置的环境变量，可在 .zshrc文件末尾添加 </p>
-<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source ~&#x2F;.bash_profile</span><br></pre></td></tr></table></figure></code></pre><p>安装 oh my zsh  </p>
-<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl -L https:&#x2F;&#x2F;github.com&#x2F;robbyrussell&#x2F;oh-my-zsh&#x2F;raw&#x2F;master&#x2F;tools&#x2F;install.sh | sh</span><br></pre></td></tr></table></figure></code></pre><h2 id="自动提示命令"><a href="#自动提示命令" class="headerlink" title="自动提示命令"></a>自动提示命令</h2><p>我们输入命令时，终端会自动提示你接下来可能要输入的命令，这时按 → 便可输出这些命令，非常方便。<br>设置如下：</p>
-<ul>
-<li><p>克隆仓库到本地 ~/.oh-my-zsh/custom/plugins 路径下</p>
-  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone git:&#x2F;&#x2F;github.com&#x2F;zsh-users&#x2F;zsh-autosuggestions $ZSH_CUSTOM&#x2F;plugins&#x2F;zsh-autosuggestions</span><br></pre></td></tr></table></figure></li>
-<li><p>用 vim  ~/.zshrc 打开文件，下滑找到插件设置命令，默认是 <code>plugins=(git)</code> ，我们把它修改为</p>
-<p>  <code>plugins=(zsh-autosuggestions git)</code></p>
-</li>
-<li><p>要修改提示命令的颜色才看得到效果<br><img data-src="https://images.xyang.xin/2018-11/1541985092.png" alt="-c666"><br>然后这样 vim 的颜色也会随之改变</p>
-</li>
-<li><p>修改提示颜色在 .zshrc 文件中添加如下命令</p>
-<p>  <code>ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=&#39;fg=value&#39;</code></p>
-</li>
-</ul>
-<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>安装成功后，用vim ~/.zshrc打开隐藏文件，修改主题为agnoster</p>
-<p>PS：<a href="https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf" target="_blank" rel="noopener">zsh主题</a>，参考主题连接选择自己喜欢的主题。</p>
-<pre><code>`ZSH_THEME=&quot;agnoster&quot;`</code></pre><p>应用这个主题需要特殊的字体支持，否则会出现乱码情况，这时我们来配置字体：</p>
-<ul>
-<li><p>使用<a href="https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf" target="_blank" rel="noopener"> Meslo</a> 字体，点开连接点击 view raw 下载字体。</p>
-</li>
-<li><p>安装字体到系统字体册。</p>
-<h2 id="语法高亮"><a href="#语法高亮" class="headerlink" title="语法高亮"></a>语法高亮</h2><p>  <code>brew install zsh-syntax-highlighting</code><br>在.zshrc中追加以下内容:  </p>
-  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source &#x2F;usr&#x2F;local&#x2F;share&#x2F;zsh-syntax-highlighting&#x2F;zsh-syntax-highlighting.zsh</span><br><span class="line">plugins&#x3D;(</span><br><span class="line">    git</span><br><span class="line">    zsh-autosuggestions</span><br><span class="line">    zsh-syntax-highlighting # 务必在最后</span><br><span class="line">    ）</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h2 id="给-iTerm-中Vim配色"><a href="#给-iTerm-中Vim配色" class="headerlink" title="给 iTerm 中Vim配色"></a>给 iTerm 中Vim配色</h2><p>首先<a href="https://github.com/altercation/solarized" target="_blank" rel="noopener">下载solarized</a>  </p>
-<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd solarized  </span><br><span class="line">$ cd vim-colors-solarized&#x2F;colors  </span><br><span class="line">$ mkdir -p ~&#x2F;.vim&#x2F;colors   </span><br><span class="line">$ cp solarized.vim ~&#x2F;.vim&#x2F;colors&#x2F;</span><br><span class="line">$ vi ~&#x2F;.vimrc</span><br></pre></td></tr></table></figure></code></pre><p>加入下面三行设置即可：  </p>
-<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">syntax enable  </span><br><span class="line">set background&#x3D;dark  </span><br><span class="line">colorscheme solarized</span><br></pre></td></tr></table></figure></code></pre><h2 id="给ls配色"><a href="#给ls配色" class="headerlink" title="给ls配色"></a>给ls配色</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim .zshrc</span><br><span class="line">export LSCOLORS&#x3D;&quot;exfxcxdxbxexexabagacad&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="安装-thefuck-纠错插件"><a href="#安装-thefuck-纠错插件" class="headerlink" title="安装 thefuck 纠错插件"></a>安装 thefuck 纠错插件</h2><p><code>brew install thefuck</code><br>修正上一条错误的输入</p>
-<h2 id="安装-autojump"><a href="#安装-autojump" class="headerlink" title="安装 autojump"></a>安装 autojump</h2><p><code>brew install autojump</code><br> // zshrc新增<br> [[ -s $(brew –prefix)/etc/profile.d/autojump.sh ]] &amp;&amp; . $(brew –prefix)/etc/profile.d/autojump.sh<br> // 生效配置<br><code>source ~/.zshrc</code></p>
-<h2 id="让终端走代理"><a href="#让终端走代理" class="headerlink" title="让终端走代理"></a>让终端走代理</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export http_proxy&#x3D;http:&#x2F;&#x2F;127.0.0.1:1080;export https_proxy&#x3D;http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">curl pub.dartlang.org  # 无输出则设置成功</span><br><span class="line"># 需要代理服务器支持 http</span><br></pre></td></tr></table></figure>
-<h2 id="iterm2-vim-开启滚轮"><a href="#iterm2-vim-开启滚轮" class="headerlink" title="iterm2 vim 开启滚轮"></a>iterm2 vim 开启滚轮</h2><p>在 iterm2中配置如下<br><img data-src="https://images.xyang.xin/2018-11/1541989133.png" alt="-c666"></p>
-<h2 id="配置-download-with-scp"><a href="#配置-download-with-scp" class="headerlink" title="配置 download with scp"></a>配置 download with scp</h2><p>本地和服务器都需要安装 iterm2 的 shell integration。</p>
-<p>在服务器端配置文件 <code>.zshrc</code> 下面这段<strong>之后</strong>：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">test -e &quot;$&#123;HOME&#125;&#x2F;.iterm2_shell_integration.zsh&quot; &amp;&amp; source &quot;$&#123;HOME&#125;&#x2F;.iterm2_shell_integration.zsh&quot; || true</span><br></pre></td></tr></table></figure>
-<p>添加：<br><code>export iterm2_hostname=远程服务器公网Ip</code></p>
-<p>在服务器端，ls 然后点击鼠标右键，可以下载文件。<br>在客户端，拖拽，然后按住 option 键，拖拽至服务器终端，可以进行上传。<br>使用的是 scp 协议。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>开发工具</tag>
       </tags>
   </entry>
   <entry>
@@ -523,6 +326,233 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo 博客进阶</title>
+    <url>/hexo-advance/</url>
+    <content><![CDATA[<h2 id="文章简介"><a href="#文章简介" class="headerlink" title="文章简介"></a>文章简介</h2><p>本文介绍 Hexo 博客的一些进阶操作。</p>
+<ul>
+<li>解决 Github Pages 不被百度抓取的问题；</li>
+<li>使用 gulp 压缩资源，实现访问加速。</li>
+<li>在博客中添加音频和视频；<a id="more"></a>
+<h2 id="Github-Pages-不被百度抓取的方法"><a href="#Github-Pages-不被百度抓取的方法" class="headerlink" title="Github Pages 不被百度抓取的方法"></a>Github Pages 不被百度抓取的方法</h2>并通过域名 CNAME 实现国内外分流，<h3 id="Coding-Pages"><a href="#Coding-Pages" class="headerlink" title="Coding Pages"></a>Coding Pages</h3><a href="https://help.coding.net/docs/devops/cd/static-website.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE" target="_blank" rel="noopener">CODING 静态网站服务 - CODING 帮助中心</a></li>
+</ul>
+<h3 id="私有的-OSS"><a href="#私有的-OSS" class="headerlink" title="私有的 OSS"></a>私有的 OSS</h3><p>以阿里云oss为例<br><img data-src="https://images.xyang.xin/2020-04/1586841854.png" alt="开通子目录首页"></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-oss</span><br></pre></td></tr></table></figure>
+<p><code>_config.yml</code> 配置</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">oss</span></span><br><span class="line">  <span class="attr">accessKeyId:</span> <span class="string">&lt;your</span> <span class="string">accessKeyId&gt;</span></span><br><span class="line">  <span class="attr">accessKeySecret:</span> <span class="string">&lt;your</span> <span class="string">accessKeySecret&gt;</span></span><br><span class="line">  <span class="attr">bucket:</span> <span class="string">&lt;your</span> <span class="string">bucket&gt;</span></span><br><span class="line">  <span class="attr">region:</span> <span class="string">&lt;your</span> <span class="string">region&gt;</span></span><br></pre></td></tr></table></figure>
+<p>  其中 region 以北京地区的 oss 为例填 <code>oss-cn-beijing</code></p>
+<h2 id="使用-gulp-压缩资源"><a href="#使用-gulp-压缩资源" class="headerlink" title="使用 gulp 压缩资源"></a>使用 gulp 压缩资源</h2><p>使用 gulp 压缩资源，提高访问速度。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install gulp-cli -g</span><br><span class="line">npm install gulp gulp-htmlclean gulp-htmlmin gulp-imagemin gulp-clean-css gulp-uglify --save-dev</span><br></pre></td></tr></table></figure>
+
+<p>项目根目录新建<code>gulpfile.babel.js</code>，添加如下内容：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> gulp <span class="keyword">from</span> <span class="string">'gulp'</span></span><br><span class="line"><span class="keyword">import</span> cleancss <span class="keyword">from</span> <span class="string">'gulp-clean-css'</span></span><br><span class="line"><span class="keyword">import</span> uglify <span class="keyword">from</span> <span class="string">'gulp-uglify-es'</span></span><br><span class="line"><span class="keyword">import</span> htmlmin <span class="keyword">from</span> <span class="string">'gulp-htmlmin'</span></span><br><span class="line"><span class="keyword">import</span> htmlclean <span class="keyword">from</span> <span class="string">'gulp-htmlclean'</span></span><br><span class="line"><span class="keyword">import</span> imagemin <span class="keyword">from</span> <span class="string">'gulp-imagemin'</span></span><br><span class="line"><span class="keyword">import</span> babel <span class="keyword">from</span> <span class="string">'gulp-babel'</span></span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'minify-html'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/**/*.html'</span>)</span><br><span class="line">    .pipe(htmlclean(&#123;</span><br><span class="line">      protect: <span class="regexp">/&lt;\!--%fooTemplate\b.*?%--&gt;/g</span>,</span><br><span class="line">      edit: <span class="function">(<span class="params">html</span>) =&gt;</span> &#123; <span class="keyword">return</span> html.replace(<span class="regexp">/\begg(s?)\b/ig</span>, <span class="string">'omelet$1'</span>); &#125;</span><br><span class="line">    &#125;))</span><br><span class="line">    .pipe(htmlmin(&#123;</span><br><span class="line">      removeComments: <span class="literal">true</span>,</span><br><span class="line">      collapseWhitespace: <span class="literal">true</span>,</span><br><span class="line">      collapseBooleanAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeEmptyAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeScriptTypeAttributes: <span class="literal">true</span>,</span><br><span class="line">      removeStyleLinkTypeAttributes: <span class="literal">true</span>,</span><br><span class="line">      minifyJS: <span class="literal">true</span>,</span><br><span class="line">      minifyCSS: <span class="literal">true</span>,</span><br><span class="line">    &#125;))</span><br><span class="line">    .on(<span class="string">'error'</span>, (err) =&gt; &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'html Error!'</span>, err.message);</span><br><span class="line">      <span class="keyword">this</span>.end();</span><br><span class="line">    &#125;)</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'clean-css'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/**/*.css'</span>)</span><br><span class="line">    .pipe(cleancss())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'minify-js'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/js/**/*.js'</span>)</span><br><span class="line">    .pipe(uglify())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'minify-images'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./public/images/**/*.*'</span>)</span><br><span class="line">    .pipe(imagemin())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./public/images'</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'default'</span>, gulp.parallel(<span class="string">'minify-html'</span>, <span class="string">'clean-css'</span>, <span class="string">'minify-js'</span>, <span class="string">'minify-images'</span>, (done) =&gt; &#123;</span><br><span class="line">  done();</span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
+<p>由于是 es6 语法， 需要使用 babel 转译。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install --save-dev gulp-babel @babel/register @babel/preset-env @babel/core</span><br></pre></td></tr></table></figure>
+<p>创建<code>.babel.json</code> 文件，添加内容如下：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"presets"</span>: [</span><br><span class="line">    <span class="string">"@babel/env"</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"plugins"</span>: []</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>终端执行如下命令即可：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g &amp;&amp; gulp</span><br></pre></td></tr></table></figure>
+
+<p>如有报错，可以尝试删除<code>node_modules</code>文件，然后重新执行<code>npm install</code>。</p>
+<h2 id="在博客中插入音频与视频"><a href="#在博客中插入音频与视频" class="headerlink" title="在博客中插入音频与视频"></a>在博客中插入音频与视频</h2><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><h4 id="更快捷的方案一"><a href="#更快捷的方案一" class="headerlink" title="更快捷的方案一"></a>更快捷的方案一</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">430</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"XXX"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=430 height=86 src="https://music.xyang.xin/%E5%9C%A8%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E7%9B%B8%E9%81%87.mp3"></iframe>
+
+<h4 id="更强大的方案二（Github）"><a href="#更强大的方案二（Github）" class="headerlink" title="更强大的方案二（Github）"></a>更强大的方案二（<a href="https://github.com/MoePlayer/hexo-tag-aplayer#usage" target="_blank" rel="noopener">Github</a>）</h4><h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><h4 id="更快捷的标签方式"><a href="#更快捷的标签方式" class="headerlink" title="更快捷的标签方式"></a>更快捷的标签方式</h4><p>iframe 将web页嵌入到另一个网页</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">"854"</span> <span class="attr">height</span>=<span class="string">"480"</span> <span class="attr">src</span>=<span class="string">"//player.bilibili.com/player.html?aid=51918958&amp;cid=90895494&amp;page=1"</span> <span class="attr">scrolling</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">framespacing</span>=<span class="string">"0"</span> <span class="attr">allowfullscreen</span>=<span class="string">"true"</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<iframe width="854" height="480" src="//player.bilibili.com/player.html?aid=51918958&cid=90895494&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h4 id="更强大的-hexo-tag-dplayer-插件"><a href="#更强大的-hexo-tag-dplayer-插件" class="headerlink" title="更强大的 hexo-tag-dplayer 插件"></a>更强大的 <a href="https://github.com/MoePlayer/hexo-tag-dplayer" target="_blank" rel="noopener">hexo-tag-dplayer</a> 插件</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-tag-dplayer --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="PDF"><a href="#PDF" class="headerlink" title="PDF"></a>PDF</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">object</span> <span class="attr">data</span>=<span class="string">"mypdf.pdf"</span> <span class="attr">type</span>=<span class="string">"application/pdf"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">width</span>=<span class="string">"800"</span> <span class="attr">height</span>=<span class="string">"1200"</span> <span class="attr">typemustmatch</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>You don't have a PDF plugin, but you can <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"myfile.pdf"</span>&gt;</span>download the PDF file.<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/%E5%85%B6%E4%BB%96%E5%B5%8C%E5%85%A5%E6%8A%80%E6%9C%AF" target="_blank" rel="noopener">从对象到iframe - 其他嵌入技术 - 学习 Web 开发 | MDN</a><br><a href="https://luanzhuxian.github.io/post/e5ac3b51.html" target="_blank" rel="noopener">使用 Gulp 压缩 Hexo | 栾铸显的博客</a><br><a href="https://shuoit.net/tech-notes/use-gulp-to-speed-hexo-1547999542.html" target="_blank" rel="noopener">引入gulp压缩整站资源进一步提高写作效率 - 说IT</a></p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
+    <url>/es6-everday-2/</url>
+    <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p>每个函数都是 <code>Function</code> 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用<strong>函数声明语法</strong>定义的：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span> (<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>这与下面使用<strong>函数表达式</strong>定义函数的方式几乎相差无几：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>最后一种定义函数的方式是使用<code>Function</code>构造函数，最后一个参数始终都被看成是函数体，而前面的参数则枚举出了新函数的参数：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Function</span>(<span class="string">"num1"</span>, <span class="string">"num2"</span>, <span class="string">"return num1 + num2"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>其中<strong>函数声明语法</strong>具有函数声明提升（function declaration hoisting）,解析器会率先读取函数声明，并使其在执行任何代码之前可用。其余的时候<strong>函数声明</strong>与<strong>函数表达式</strong>的语法其实是等价的。</p>
+<p>箭头函数针对的是<strong>函数表达式</strong>定义的函数。</p>
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"xxx"</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="params">para</span> =&gt;</span> para + <span class="string">"xxx"</span>;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para1, para2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(para1 + <span class="string">" and "</span> + para2);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function">(<span class="params">para1, para2</span>) =&gt;</span> <span class="built_in">console</span>.log(para1 + <span class="string">" and "</span> + para2);</span><br></pre></td></tr></table></figure>
+
+<p>从形式上来看也就是把<strong>函数表达式</strong>定义的函数，function 去掉，在参数括号外面加 =&gt; 。没有参数用()占位，只有一个参数时可以省略括号，后面的代码块部分多于一条语句就要用大括号括起来，而只有一条语句可以省略大括号，如果是 return 语句，还可以省略 return。</p>
+<p>当然仅仅为了好看，箭头函数存在的意义并不大。</p>
+<h2 id="使用注意点"><a href="#使用注意点" class="headerlink" title="使用注意点"></a>使用注意点</h2><p>（1）函数体内的 this 对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">// Cannot read property 'join' of undefined</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//chicken, hamburger, French Fries</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function">(<span class="params">delay=<span class="number">1000</span></span>)=&gt;</span> &#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//Cannot read property 'join' of undefined</span></span><br></pre></td></tr></table></figure>
+<p>第三段代码将 <code>print</code> 函数声明改为一个箭头函数的形式意味着其中关键字 <code>this</code> 指代的对象就是 <code>object</code>（浏览器中是 <code>window</code>）。<br><code>setTimeout()</code>方法设置一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码，上面的代码都是 1s 后执行 <code>console.log</code> 所在的函数。</p>
+<p>（2）不可使用<code>arguments</code>对象，如果要用，可以用扩展运算符(<code>...</code>)将函数参数搜集到一个数组中。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">...theArgs</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> theArgs;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>（3）箭头函数没有自己的 <code>this</code>。<br>不能用 <code>call()</code>、<code>apply()</code>、<code>bind()</code> 这些方法去改变 <code>this</code> 的指向。</p>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li>《Javascript 高级程序设计（第3版）》</li>
+<li><a href="https://es6.ruanyifeng.com/#docs/function" target="_blank" rel="noopener">函数的扩展 - ECMAScript 6入门</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>【一天一个 es6 语法】</tag>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解构赋值 ———【一天一个 es6 语法】</title>
+    <url>/es6-everyday-3/</url>
+    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
+<a id="more"></a>
+
+<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">"Bill"</span>,</span><br><span class="line">    lastnNme: <span class="string">"Wilson"</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
+<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">"Kirkwood"</span>, <span class="string">"Squaw"</span>, <span class="string">"Alpine"</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">"Kirkwood"</span>, <span class="string">"Squaw"</span>, <span class="string">"Alpine"</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">"hello"</span>;</span><br><span class="line">a <span class="comment">// "h"</span></span><br><span class="line">b <span class="comment">// "e"</span></span><br><span class="line">c <span class="comment">// "l"</span></span><br><span class="line">d <span class="comment">// "l"</span></span><br><span class="line">e <span class="comment">// "o"</span></span><br></pre></td></tr></table></figure>
+<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">"hello"</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank" rel="noopener">解构赋值 - JavaScript | MDN</a></li>
+<li><a href="https://es6.ruanyifeng.com/#docs/destructuring" target="_blank" rel="noopener">变量的解构赋值 - ECMAScript 6入门</a></li>
+<li>《React 学习手册》</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>【一天一个 es6 语法】</tag>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>人生</title>
+    <url>/flesh/</url>
+    <content><![CDATA[<h2 id="他的话可信吗"><a href="#他的话可信吗" class="headerlink" title="他的话可信吗"></a>他的话可信吗</h2><blockquote>
+<p>听人谈话的时候，我们需要了解这人是谁，他是处在何种角度，代表何种阶级谈话的。</p>
+</blockquote>
+<p>他的话是他的经验之谈，是他从权威的书籍中得知，论坛上看到，还是他仅仅只是为了让你相信而虚构或者是一个看似正确而往往值得商榷的。</p>
+<a id="more"></a>
+
+<h2 id="好话"><a href="#好话" class="headerlink" title="好话"></a>好话</h2><blockquote>
+<p>听见好话一定要多长心眼，好话会让你做出的决策违背初心，待后知后觉，晚矣。</p>
+</blockquote>
+<p>投票软件多少是有漏洞的，从开发人员的角度利用漏洞刷票是很容易被发现，且破坏比赛的公平度的。很多亲人朋友呢很支持我，感觉一个投票闹得挺辛苦的。就不得不在群里向主办方反馈，不一会儿开发投票软件公司的老总进来了，也不说是解决问题。</p>
+<p>主办方第一轮给出的结果，随便找个理由，说没有刷票行为。<br>网络投票看是否刷票，一般都是看着某一天投票数是否波动过大，尤其是最后一天，或者票数数量过多，咱们开始怀疑刷票。然而这都只是怀疑，技术部门要是不想解决也是没办法的。<br>然而当投票网站上有访问量和投票数那就不一样了，当投票数大于访问量？这是什么怪物？页面都没被访问，你又是怎么点击投票按钮的，这就是异常刷票了。</p>
+<p>这种情况主办方如果不证明是系统漏洞，抑或是抓出一个有刷票行为的队伍来，那这个主办方麻烦就大了，网络舆情还是很管用的。</p>
+<p>后面主办方不得不抓出了一个，五天投票，前面四天总共几十票，最后一天下午飙几万的队伍。据肉眼观察肯定是不止一个的。</p>
+<p>但是同时那个老总私聊到我，简单的说“本科进决赛很优秀了，有时间聊一下”。再加上我本身对这软件公司是没有敌意的，因为系统安全性技术比较难，本身抱着的态度就是能找出刷票的队伍，解决问题就行了。</p>
+<p>他这一句话导致的最终结果就是，简单的将刷票最厉害的队伍解决了，而放下了第一轮结果所公布的无赖行为和更多的不公平性的愤懑。</p>
+<p>一句好话让我对公平性诉求，从解决，到最简单的解决。</p>
+<h2 id="解决生活中的难题"><a href="#解决生活中的难题" class="headerlink" title="解决生活中的难题"></a>解决生活中的难题</h2><p>倘若有条件自己给自己安排一件难题，例如考研究生、公务员，不是生活强加给我们的，那便是为了多一种生活体验。抱着解决问题的心态去攻坚克难，坚持下去完整的度过有计划的每一天便是一种胜利。</p>
+<h2 id="为什么不同"><a href="#为什么不同" class="headerlink" title="为什么不同"></a>为什么不同</h2><p>假若我们抱怨，抱怨自己没有出生在名门旺族，抱怨自己没有一个好看的脸蛋。然而人之所以是自己，正是源于这些后天难以更改的不同之处。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>人生</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>由简入深配置 iTem2 终端</title>
+    <url>/iterm2/</url>
+    <content><![CDATA[<h1 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h1><p>brew 安装 zsh<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install zsh</span><br><span class="line">sudo chsh -s &#x2F;usr&#x2F;local&#x2F;bin&#x2F;zsh</span><br></pre></td></tr></table></figure><br>从 zsh 切换回 bash<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chsh -s &#x2F;bin&#x2F;bash</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>PS：如果从 bash 切换到 zsh，但想保留 bash 所设置的环境变量，可在 .zshrc文件末尾添加 </p>
+<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source ~&#x2F;.bash_profile</span><br></pre></td></tr></table></figure></code></pre><p>安装 oh my zsh  </p>
+<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl -L https:&#x2F;&#x2F;github.com&#x2F;robbyrussell&#x2F;oh-my-zsh&#x2F;raw&#x2F;master&#x2F;tools&#x2F;install.sh | sh</span><br></pre></td></tr></table></figure></code></pre><h2 id="自动提示命令"><a href="#自动提示命令" class="headerlink" title="自动提示命令"></a>自动提示命令</h2><p>我们输入命令时，终端会自动提示你接下来可能要输入的命令，这时按 → 便可输出这些命令，非常方便。<br>设置如下：</p>
+<ul>
+<li><p>克隆仓库到本地 ~/.oh-my-zsh/custom/plugins 路径下</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone git:&#x2F;&#x2F;github.com&#x2F;zsh-users&#x2F;zsh-autosuggestions $ZSH_CUSTOM&#x2F;plugins&#x2F;zsh-autosuggestions</span><br></pre></td></tr></table></figure></li>
+<li><p>用 vim  ~/.zshrc 打开文件，下滑找到插件设置命令，默认是 <code>plugins=(git)</code> ，我们把它修改为</p>
+<p>  <code>plugins=(zsh-autosuggestions git)</code></p>
+</li>
+<li><p>要修改提示命令的颜色才看得到效果<br><img data-src="https://images.xyang.xin/2018-11/1541985092.png" alt="-c666"><br>然后这样 vim 的颜色也会随之改变</p>
+</li>
+<li><p>修改提示颜色在 .zshrc 文件中添加如下命令</p>
+<p>  <code>ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=&#39;fg=value&#39;</code></p>
+</li>
+</ul>
+<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>安装成功后，用vim ~/.zshrc打开隐藏文件，修改主题为agnoster</p>
+<p>PS：<a href="https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf" target="_blank" rel="noopener">zsh主题</a>，参考主题连接选择自己喜欢的主题。</p>
+<pre><code>`ZSH_THEME=&quot;agnoster&quot;`</code></pre><p>应用这个主题需要特殊的字体支持，否则会出现乱码情况，这时我们来配置字体：</p>
+<ul>
+<li><p>使用<a href="https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf" target="_blank" rel="noopener"> Meslo</a> 字体，点开连接点击 view raw 下载字体。</p>
+</li>
+<li><p>安装字体到系统字体册。</p>
+<h2 id="语法高亮"><a href="#语法高亮" class="headerlink" title="语法高亮"></a>语法高亮</h2><p>  <code>brew install zsh-syntax-highlighting</code><br>在.zshrc中追加以下内容:  </p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source &#x2F;usr&#x2F;local&#x2F;share&#x2F;zsh-syntax-highlighting&#x2F;zsh-syntax-highlighting.zsh</span><br><span class="line">plugins&#x3D;(</span><br><span class="line">    git</span><br><span class="line">    zsh-autosuggestions</span><br><span class="line">    zsh-syntax-highlighting # 务必在最后</span><br><span class="line">    ）</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="给-iTerm-中Vim配色"><a href="#给-iTerm-中Vim配色" class="headerlink" title="给 iTerm 中Vim配色"></a>给 iTerm 中Vim配色</h2><p>首先<a href="https://github.com/altercation/solarized" target="_blank" rel="noopener">下载solarized</a>  </p>
+<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd solarized  </span><br><span class="line">$ cd vim-colors-solarized&#x2F;colors  </span><br><span class="line">$ mkdir -p ~&#x2F;.vim&#x2F;colors   </span><br><span class="line">$ cp solarized.vim ~&#x2F;.vim&#x2F;colors&#x2F;</span><br><span class="line">$ vi ~&#x2F;.vimrc</span><br></pre></td></tr></table></figure></code></pre><p>加入下面三行设置即可：  </p>
+<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">syntax enable  </span><br><span class="line">set background&#x3D;dark  </span><br><span class="line">colorscheme solarized</span><br></pre></td></tr></table></figure></code></pre><h2 id="给ls配色"><a href="#给ls配色" class="headerlink" title="给ls配色"></a>给ls配色</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim .zshrc</span><br><span class="line">export LSCOLORS&#x3D;&quot;exfxcxdxbxexexabagacad&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装-thefuck-纠错插件"><a href="#安装-thefuck-纠错插件" class="headerlink" title="安装 thefuck 纠错插件"></a>安装 thefuck 纠错插件</h2><p><code>brew install thefuck</code><br>修正上一条错误的输入</p>
+<h2 id="安装-autojump"><a href="#安装-autojump" class="headerlink" title="安装 autojump"></a>安装 autojump</h2><p><code>brew install autojump</code><br> // zshrc新增<br> [[ -s $(brew –prefix)/etc/profile.d/autojump.sh ]] &amp;&amp; . $(brew –prefix)/etc/profile.d/autojump.sh<br> // 生效配置<br><code>source ~/.zshrc</code></p>
+<h2 id="让终端走代理"><a href="#让终端走代理" class="headerlink" title="让终端走代理"></a>让终端走代理</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export http_proxy&#x3D;http:&#x2F;&#x2F;127.0.0.1:1080;export https_proxy&#x3D;http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">curl pub.dartlang.org  # 无输出则设置成功</span><br><span class="line"># 需要代理服务器支持 http</span><br></pre></td></tr></table></figure>
+<h2 id="iterm2-vim-开启滚轮"><a href="#iterm2-vim-开启滚轮" class="headerlink" title="iterm2 vim 开启滚轮"></a>iterm2 vim 开启滚轮</h2><p>在 iterm2中配置如下<br><img data-src="https://images.xyang.xin/2018-11/1541989133.png" alt="-c666"></p>
+<h2 id="配置-download-with-scp"><a href="#配置-download-with-scp" class="headerlink" title="配置 download with scp"></a>配置 download with scp</h2><p>本地和服务器都需要安装 iterm2 的 shell integration。</p>
+<p>在服务器端配置文件 <code>.zshrc</code> 下面这段<strong>之后</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">test -e &quot;$&#123;HOME&#125;&#x2F;.iterm2_shell_integration.zsh&quot; &amp;&amp; source &quot;$&#123;HOME&#125;&#x2F;.iterm2_shell_integration.zsh&quot; || true</span><br></pre></td></tr></table></figure>
+<p>添加：<br><code>export iterm2_hostname=远程服务器公网Ip</code></p>
+<p>在服务器端，ls 然后点击鼠标右键，可以下载文件。<br>在客户端，拖拽，然后按住 option 键，拖拽至服务器终端，可以进行上传。<br>使用的是 scp 协议。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>开发工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>journal-2019-02-15</title>
+    <url>/journal-2019-02-15/</url>
+    <content><![CDATA[<h2 id="小孩成长与人才发展"><a href="#小孩成长与人才发展" class="headerlink" title="小孩成长与人才发展"></a>小孩成长与人才发展</h2><p>小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。</p>
+<p>孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。</p>
+<p>国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。</p>
+<p>参考：<a href="http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm" target="_blank" rel="noopener">《基层减负 不是简单做减法》《求是》2019/03 </a></p>
+]]></content>
+      <categories>
+        <category>日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>切换 Shell 需谨慎</title>
+    <url>/linux-user/</url>
+    <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
+<a id="more"></a>
+
+<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><p>执行<code>chsh -s /bin/zsh</code>命令切换成功。<br>自此导致 root 用户无法验证登陆。</p>
+<p>庆幸这台服务器不止一个用户。<br>通过普通用户登陆服务器，执行 su 命令显示如下：<br><img data-src="https://images.xyang.xin/2018-10/1539333225.png" alt="执行 su 命令"></p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>解决办法如下：<br>sudo vim /etc/passwd 将 root 用户所对应的 Shell 改回 Bash。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>一台服务器应该有至少两个以上的用户。<br>下次再遇到一次这样的服务器😢再去具体研究一下。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>Shell</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>编程语言之 Java</title>
     <url>/java-language/</url>
     <content><![CDATA[<h1 id="Integer-parseInt-与-Integer-valueOf-的比较"><a href="#Integer-parseInt-与-Integer-valueOf-的比较" class="headerlink" title="Integer.parseInt() 与 Integer.valueOf() 的比较"></a>Integer.parseInt() 与 Integer.valueOf() 的比较</h1><p>Integer.parseInt() 和 Integer.valueOf() 都是用来 将String转换为Int的。</p>
@@ -544,36 +574,6 @@
       <tags>
         <tag>java</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>切换 Shell 需谨慎</title>
-    <url>/linux-user/</url>
-    <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
-<a id="more"></a>
-
-<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><p>执行<code>chsh -s /bin/zsh</code>命令切换成功。<br>自此导致 root 用户无法验证登陆。</p>
-<p>庆幸这台服务器不止一个用户。<br>通过普通用户登陆服务器，执行 su 命令显示如下：<br><img data-src="https://images.xyang.xin/2018-10/1539333225.png" alt="执行 su 命令"></p>
-<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>解决办法如下：<br>sudo vim /etc/passwd 将 root 用户所对应的 Shell 改回 Bash。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>一台服务器应该有至少两个以上的用户。<br>下次再遇到一次这样的服务器😢再去具体研究一下。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>Shell</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>journal-2019-02-15</title>
-    <url>/journal-2019-02-15/</url>
-    <content><![CDATA[<h2 id="小孩成长与人才发展"><a href="#小孩成长与人才发展" class="headerlink" title="小孩成长与人才发展"></a>小孩成长与人才发展</h2><p>小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。</p>
-<p>孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。</p>
-<p>国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。</p>
-<p>参考：<a href="http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm" target="_blank" rel="noopener">《基层减负 不是简单做减法》《求是》2019/03 </a></p>
-]]></content>
-      <categories>
-        <category>日志</category>
-      </categories>
   </entry>
   <entry>
     <title>鲁迅</title>
@@ -767,74 +767,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HTTP 代理与 Socks5 代理</title>
-    <url>/proxy-http-socks5/</url>
-    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>本文通过实践经历基本的认识 HTTP 代理与 Socks5 代理的用法与理解其精髓。同时也解决 go get 库无法下载的问题。</p>
-<a id="more"></a>
-<h2 id="渐渐"><a href="#渐渐" class="headerlink" title="渐渐"></a>渐渐</h2><p>终端走代理我最初接触到的是 HTTP 代理，这篇文章可以见证(<a href="https://blog.xyang.xin/proxy-teach/index.html">代理服务器 | 韶 光</a>)。当然我的这些实践都是基于 shadowsocks 这款产品。随后我又接触了 Socks5 代理，因为简单其更快，又隐隐觉得其更底层，通过以下代码配置：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> .zshrc</span></span><br><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br></pre></td></tr></table></figure>
-<p>仍然要开 <em>全局模式</em> 终端才能走代理。</p>
-<p>虽然没有使用 HTTP 代理，但是很长一段时间我都没有关闭 <em>启用 HTTP 代理</em> 这个按钮，直到一天我连接手机热点 shadowsocks 闪退，我才关闭将其关闭了。这更显 Socks5 代理的优秀。</p>
-<h2 id="今天"><a href="#今天" class="headerlink" title="今天"></a>今天</h2><p>当我重新安装 <a href="https://github.com/fatih/vim-go" target="_blank" rel="noopener">vim-go</a>,并执行 <code>:GoUpdateBinaries</code> 故事又开始了。<br>显示类似于如下的一系列报错：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim-go: Updating guru. Reinstalling golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master to folder &#x2F;Users&#x2F;sweeney&#x2F;Documents&#x2F;code&#x2F;go&#x2F;bin</span><br><span class="line">vim-go: Error installing golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: go get golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: invalid version: Get &quot;https:&#x2F;&#x2F;proxy.golang.org&#x2F;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru&#x2F;@v&#x2F;master.info&quot;: dial tcp 172.217.24.17:443: i&#x2F;o</span><br><span class="line">timeout</span><br></pre></td></tr></table></figure>
-<p>首先我对 socks5 是很相信的，天生的认为其是较为底层的代理，应该不存在 HTTP 能代理而 Socks5 不能代理的情况。</p>
-<p>“应该” 呵呵，所以我就耗了近一个半小时在这里。</p>
-<p>以上问题其实和直接执行 <code>go get golang.org/x/tools/cmd/guru</code>，然后输出如下错误是一个道理。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">unrecognized import path &quot;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru&quot;: https fetch: Get &quot;https:&#x2F;&#x2F;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru?go-get&#x3D;1&quot;: dial tcp 216.239.37.1:443: i&#x2F;o timeout</span><br></pre></td></tr></table></figure>
-<p>都是 go get 无法从 golang.org 下载包。</p>
-<p>虽然 <code>curl golang.org</code> 能够访问这个网站，但是还是无法下载包。</p>
-<h2 id="Socks5-vs-HTTP"><a href="#Socks5-vs-HTTP" class="headerlink" title="Socks5 vs HTTP"></a>Socks5 vs HTTP</h2><table>
-<thead>
-<tr>
-<th></th>
-<th align="center">HTTP Proxy</th>
-<th align="center">Socks5 Proxy</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>功能</td>
-<td align="center">http 代理对于使用浏览器上网的用户很重要。</td>
-<td align="center">并不使用 http 协议，是更通用，更低级别的代理。</td>
-</tr>
-<tr>
-<td>安全</td>
-<td align="center">被传输的数据极可能被查看。</td>
-<td align="center">由于SOCKS无法读取数据，因此查看数据的几率很小。</td>
-</tr>
-<tr>
-<td>速度</td>
-<td align="center">速度较慢。</td>
-<td align="center">通用服务器速度快。</td>
-</tr>
-<tr>
-<td>连接工具</td>
-<td align="center">任何工具。</td>
-<td align="center">有限制工具。</td>
-</tr>
-<tr>
-<td>建议</td>
-<td align="center">传输少量数据。</td>
-<td align="center">传输大体积的速度。</td>
-</tr>
-</tbody></table>
-<p>SOCKS 作用在 OSI 模型的第四层 —— 会话层上。SOCKS4 只能代理TCP协议，而 SOCKS5 什么协议都可以代理。HTTP工作在应用层上，Socks代理只是简单地传递数据包，而不必关心是何种应用协议(比如 FTP、HTTP 和 NNTP 请求)，所以Socks代理服务器比应用层代理服务器要快得多。<br><img data-src="http://images.xyang.xin/2020-03%2Fnetwork.png" alt="network.png"></p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br><span class="line">export http_proxy=socks5://127.0.0.1:20808</span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">alias</span> go=<span class="string">'http_proxy=socks5://127.0.0.1:20808 go'</span></span></span><br></pre></td></tr></table></figure>
-
-<h2 id="遗留问题"><a href="#遗留问题" class="headerlink" title="遗留问题"></a>遗留问题</h2><p>我还是不知道为什么 ALL_PROXY 没对 go get 生效，而 http_proxy 生效了。并且经过测试，不是大小写的问题。</p>
-<hr>
-<p>参考文献：</p>
-<ul>
-<li><a href="https://dzone.com/articles/breaking-down-complex-differences-of-socks-vs-http" target="_blank" rel="noopener">Breaking Down Differences Between SOCKS vs HTTP Proxy - DZone Security</a></li>
-<li><a href="https://colobu.com/2017/01/26/how-to-go-get-behind-GFW/" target="_blank" rel="noopener">如何在长城后面go get一些库 | 鸟窝</a></li>
-<li><a href="http://www.yunlianip.com/News-getinfo-id-61.html" target="_blank" rel="noopener">SOCKS5代理和HTTP代理有什么区别？-云连代理</a></li>
-<li><a href="https://stackoverflow.com/questions/10383299/how-do-i-configure-go-command-to-use-a-proxy" target="_blank" rel="noopener">How do I configure go command to use a proxy? - Stack Overflow</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-  </entry>
-  <entry>
     <title>包管理</title>
     <url>/package-management/</url>
     <content><![CDATA[<p>大部分成熟的操作系统有着各种不同的包管理器，某些软件也有自己的包管理器。</p>
@@ -913,6 +845,153 @@
       <tags>
         <tag>包管理</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>学习 CSS 时忽视的几个知识点</title>
+    <url>/note-hings-i-wish-id-known-about-css/</url>
+    <content><![CDATA[<p><a href="https://cssfordesigners.com/articles/things-i-wish-id-known-about-css" target="_blank" rel="noopener">Things I Wish I’d Known About CSS</a></p>
+<p>文章的作者以老式的方式构建网站：查看网站源代码、复制然后修改，而没有经过阅读书籍等系统性的学习。作者在 1999 年就使用这种方式了，当时写的还是这种代码： <code>&lt;font size=&quot;4&quot; color=&quot;#000000&quot;&gt;</code>。而当 CSS 面世的时候，作者没有改变自己的学习方法，而错过了太多基本知识。文章主要介绍的是作者希望早点学到的东西。</p>
+<a id="more"></a>
+
+<h2 id="Block-inline-and-inline-block"><a href="#Block-inline-and-inline-block" class="headerlink" title="Block, inline and inline-block"></a>Block, inline and inline-block</h2><ul>
+<li><code>block</code> 元素水平扩展以占据一整行（就像标题）。我们可以对它们运用垂直 margin；</li>
+<li><code>inline</code> 元素仅水平扩展到足以容纳其内容（就像 <code>strong</code> 或者 <code>em</code> 元素）；</li>
+<li><code>inline-block</code> 元素像 <code>inline</code> 元素，但是你可以对它们运用垂直的 margin（对 <code>button</code> 之类的元素有用）；</li>
+</ul>
+<h2 id="图片是内联的"><a href="#图片是内联的" class="headerlink" title="图片是内联的"></a>图片是内联的</h2><p><code>img</code> 元素默认是内联的，一般来说没什么问题，但是在尝试定位图像或添加垂直边距时会引起混乱。建议添加如下规则：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123;<span class="attribute">display</span>: block;&#125;</span><br></pre></td></tr></table></figure>
+<p>也可以添加 <code>max-width: 100%;</code> 以阻止块级元素突破容器。<br><a href="https://github.com/necolas/normalize.css/blob/master/normalize.css" target="_blank" rel="noopener">normalize.css</a> 里面没有，我觉得是否添加智者见智。</p>
+<h2 id="计算宽度"><a href="#计算宽度" class="headerlink" title="计算宽度"></a>计算宽度</h2><p>默认情况下，盒子的宽度 / 高度是通过将以下各项相加得出的：</p>
+<ul>
+<li>Content area（内容）</li>
+<li>Padding area（内边距）</li>
+<li>Border area（边框）</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.box-class</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">2em</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">0.1rem</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>包含 <code>.box-class</code> 类的属性的盒子的宽度就是 <code>50% + 4em + 0.2rem</code><br>默认情况下，我们用 css 设置的 <code>width</code> 属性指的仅仅只是 Content area（内容）部分的宽度。</p>
+<p>下列代码将应用于所有元素，使得 <code>width</code> 属性设置的为上述三者相加的值。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">* &#123;<span class="attribute">box-sizing</span>: border-box;&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Padding-amp-margin-不一样"><a href="#Padding-amp-margin-不一样" class="headerlink" title="Padding &amp; margin 不一样"></a>Padding &amp; margin 不一样</h2><p>CSS 盒模型还有一个重要的组成部分 <code>margin</code>。</p>
+<ul>
+<li><code>margin</code> 是元素之间的间隔</li>
+<li><code>padding</code> 是内容和边框之间的间隔</li>
+</ul>
+<h2 id="Margins-崩塌"><a href="#Margins-崩塌" class="headerlink" title="Margins 崩塌"></a>Margins 崩塌</h2><p>当边距崩塌时，它们将合并在一起，从而使两个元素之间的间隔变为两个边距中较大的一个。较小的边距基本上结束在较大的边距之内。</p>
+<p>当两个边距相遇时，较大的边距会吸收较小的边距。如果边距值相同，则它们会相互吸收。</p>
+<p>假设我们有两个相邻的 block 元素，上面一个设置 <code>margin-bottom: 1em</code> 下面一个设置 <code>margin-top: 1.5em</code>，这两个元素间的间距将合并为 <code>1.5em</code> 而不是 <code>1em + 1.5em</code>。</p>
+<blockquote>
+<p>Note: 当父元素设置为 <code>display: grid</code> 或 <code>display: flex</code> 时，边距不会崩塌。</p>
+</blockquote>
+<h2 id="浏览器具有默认样式表"><a href="#浏览器具有默认样式表" class="headerlink" title="浏览器具有默认样式表"></a>浏览器具有默认样式表</h2><p>CSS(Cascading Style Sheets) 是层叠样式表。我们必须记住，始终存在默认的浏览器样式表。它会在任何自定义样式表之前加载，而我们可以很轻易的覆盖它们。</p>
+<p>声明的样式因浏览器而异。抹平差异的方法主要有两种，任选其一：</p>
+<ol>
+<li>CSS 重置，将所有默认样式都设置为“零”，例如 <a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank" rel="noopener">https://meyerweb.com/eric/tools/css/reset/</a></li>
+<li>normalize.css, 对默认样式进行微调，使它们在不同的浏览器中具有相似的外观：<a href="http://necolas.github.io/normalize.css/" target="_blank" rel="noopener">http://necolas.github.io/normalize.css/</a></li>
+</ol>
+<h2 id="任何地方都使用相对单位"><a href="#任何地方都使用相对单位" class="headerlink" title="任何地方都使用相对单位"></a>任何地方都使用相对单位</h2><p>我们可以将 <code>em</code> 用于 <code>@media</code> 查询和垂直边距，而将 <code>rem</code> 用于一致的边框宽度。</p>
+<h2 id="before-和-after-需要-content"><a href="#before-和-after-需要-content" class="headerlink" title="::before 和 ::after 需要 content"></a>::before 和 ::after 需要 content</h2><p>当我们使用 <code>::before</code> 或者 <code>::after</code> 伪元素时，需要添加 <code>content</code> 属性，即使它的值为空白：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.some-class::before &#123;content: &#39;&#39;;&#125;</span><br></pre></td></tr></table></figure>
+<p>如果不包含此属性，伪元素将不会显示。</p>
+<h2 id="ch-单位"><a href="#ch-单位" class="headerlink" title="ch 单位"></a>ch 单位</h2><p>ch(character)，大致基于一行的字符数来设置宽度的时候 <code>ch</code> 很有用。</p>
+<p>1ch 就是数字 0 的宽度。</p>
+<p>1ch 通常比平均字符宽度宽 20％到 30％。</p>
+<h2 id="Normal-flow（正常布局流）"><a href="#Normal-flow（正常布局流）" class="headerlink" title="Normal flow（正常布局流）"></a>Normal flow（正常布局流）</h2><p>“normal flow” 的意思是出现在页面上的元素和在源代码中实现的方式相同。<br>例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;h2&gt;Heading&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;p&gt;Paragraph text.&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure>
+<p>我们期望的是 <code>&lt;h2&gt;Heading&lt;/h2&gt;</code> 出现在 <code>&lt;p&gt;Paragraph text.&lt;/p&gt;</code> 的之前 / 顶部。这就是 <em>normal flow</em>。</p>
+<p>而绝对定位和浮动就脱离了 <em>normal flow</em>。</p>
+<h2 id="风格化-focus-状态"><a href="#风格化-focus-状态" class="headerlink" title="风格化 :focus 状态"></a>风格化 :focus 状态</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: black;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>,</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:focus</span>,</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我们最好为 <code>:focus</code> 状态添加不同的样式。因为例如鼠标悬停或者已经激活，用户再按[tab]键，<code>:focus</code>就不起作用了。</p>
+<p>为防止晚出现的规则覆盖前面出现的规则，按照如下顺序定义规则：<br>link、visited、focus、hover、active（缩写为 LVPHA）<br>或者 LVHFA 的顺序也是可以的。</p>
+<h2 id="nth-child"><a href="#nth-child" class="headerlink" title=":nth-child()"></a>:nth-child()</h2><p><code>p:nth-child()</code>计算所有同级元素<br><code>p:nth-of-type()</code>仅计算同级的p元素</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>:nth-child()<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph one.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph two.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph three.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph four.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph five.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph six.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">:nth-child(even)</span> &#123;</span><br><span class="line">	<span class="attribute">background</span>: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img data-src="http://images.xyang.xin/2020%2F07%2F25%2F1595610186.png" alt="1595610186.png"></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">:nth-of-type(even)</span> &#123;</span><br><span class="line">	<span class="attribute">background</span>: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img data-src="http://images.xyang.xin/2020%2F07%2F25%2F1595610292.png" alt="1595610292.png"></p>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>掌握CSS的基础知识很容易，但是了解事情的方式和原因对编写更好的CSS至关重要。</p>
+<p>花时间学习这些东西不仅帮助我更快地编写CSS，而且还使我的代码更高效，更灵活。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://cssfordesigners.com/articles/things-i-wish-id-known-about-css" target="_blank" rel="noopener">Things I Wish I’d Known About CSS</a></li>
+<li>《HTML5 与 CSS3 基础教程 (第 8 版)》</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>note</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTTP 代理与 Socks5 代理</title>
+    <url>/proxy-http-socks5/</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>本文通过实践经历基本的认识 HTTP 代理与 Socks5 代理的用法与理解其精髓。同时也解决 go get 库无法下载的问题。</p>
+<a id="more"></a>
+<h2 id="渐渐"><a href="#渐渐" class="headerlink" title="渐渐"></a>渐渐</h2><p>终端走代理我最初接触到的是 HTTP 代理，这篇文章可以见证(<a href="https://blog.xyang.xin/proxy-teach/index.html">代理服务器 | 韶 光</a>)。当然我的这些实践都是基于 shadowsocks 这款产品。随后我又接触了 Socks5 代理，因为简单其更快，又隐隐觉得其更底层，通过以下代码配置：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> .zshrc</span></span><br><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br></pre></td></tr></table></figure>
+<p>仍然要开 <em>全局模式</em> 终端才能走代理。</p>
+<p>虽然没有使用 HTTP 代理，但是很长一段时间我都没有关闭 <em>启用 HTTP 代理</em> 这个按钮，直到一天我连接手机热点 shadowsocks 闪退，我才关闭将其关闭了。这更显 Socks5 代理的优秀。</p>
+<h2 id="今天"><a href="#今天" class="headerlink" title="今天"></a>今天</h2><p>当我重新安装 <a href="https://github.com/fatih/vim-go" target="_blank" rel="noopener">vim-go</a>,并执行 <code>:GoUpdateBinaries</code> 故事又开始了。<br>显示类似于如下的一系列报错：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim-go: Updating guru. Reinstalling golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master to folder &#x2F;Users&#x2F;sweeney&#x2F;Documents&#x2F;code&#x2F;go&#x2F;bin</span><br><span class="line">vim-go: Error installing golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: go get golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru@master: invalid version: Get &quot;https:&#x2F;&#x2F;proxy.golang.org&#x2F;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru&#x2F;@v&#x2F;master.info&quot;: dial tcp 172.217.24.17:443: i&#x2F;o</span><br><span class="line">timeout</span><br></pre></td></tr></table></figure>
+<p>首先我对 socks5 是很相信的，天生的认为其是较为底层的代理，应该不存在 HTTP 能代理而 Socks5 不能代理的情况。</p>
+<p>“应该” 呵呵，所以我就耗了近一个半小时在这里。</p>
+<p>以上问题其实和直接执行 <code>go get golang.org/x/tools/cmd/guru</code>，然后输出如下错误是一个道理。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">unrecognized import path &quot;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru&quot;: https fetch: Get &quot;https:&#x2F;&#x2F;golang.org&#x2F;x&#x2F;tools&#x2F;cmd&#x2F;guru?go-get&#x3D;1&quot;: dial tcp 216.239.37.1:443: i&#x2F;o timeout</span><br></pre></td></tr></table></figure>
+<p>都是 go get 无法从 golang.org 下载包。</p>
+<p>虽然 <code>curl golang.org</code> 能够访问这个网站，但是还是无法下载包。</p>
+<h2 id="Socks5-vs-HTTP"><a href="#Socks5-vs-HTTP" class="headerlink" title="Socks5 vs HTTP"></a>Socks5 vs HTTP</h2><table>
+<thead>
+<tr>
+<th></th>
+<th align="center">HTTP Proxy</th>
+<th align="center">Socks5 Proxy</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>功能</td>
+<td align="center">http 代理对于使用浏览器上网的用户很重要。</td>
+<td align="center">并不使用 http 协议，是更通用，更低级别的代理。</td>
+</tr>
+<tr>
+<td>安全</td>
+<td align="center">被传输的数据极可能被查看。</td>
+<td align="center">由于SOCKS无法读取数据，因此查看数据的几率很小。</td>
+</tr>
+<tr>
+<td>速度</td>
+<td align="center">速度较慢。</td>
+<td align="center">通用服务器速度快。</td>
+</tr>
+<tr>
+<td>连接工具</td>
+<td align="center">任何工具。</td>
+<td align="center">有限制工具。</td>
+</tr>
+<tr>
+<td>建议</td>
+<td align="center">传输少量数据。</td>
+<td align="center">传输大体积的速度。</td>
+</tr>
+</tbody></table>
+<p>SOCKS 作用在 OSI 模型的第四层 —— 会话层上。SOCKS4 只能代理TCP协议，而 SOCKS5 什么协议都可以代理。HTTP工作在应用层上，Socks代理只是简单地传递数据包，而不必关心是何种应用协议(比如 FTP、HTTP 和 NNTP 请求)，所以Socks代理服务器比应用层代理服务器要快得多。<br><img data-src="http://images.xyang.xin/2020-03%2Fnetwork.png" alt="network.png"></p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br><span class="line">export http_proxy=socks5://127.0.0.1:20808</span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">alias</span> go=<span class="string">'http_proxy=socks5://127.0.0.1:20808 go'</span></span></span><br></pre></td></tr></table></figure>
+
+<h2 id="遗留问题"><a href="#遗留问题" class="headerlink" title="遗留问题"></a>遗留问题</h2><p>我还是不知道为什么 ALL_PROXY 没对 go get 生效，而 http_proxy 生效了。并且经过测试，不是大小写的问题。</p>
+<hr>
+<p>参考文献：</p>
+<ul>
+<li><a href="https://dzone.com/articles/breaking-down-complex-differences-of-socks-vs-http" target="_blank" rel="noopener">Breaking Down Differences Between SOCKS vs HTTP Proxy - DZone Security</a></li>
+<li><a href="https://colobu.com/2017/01/26/how-to-go-get-behind-GFW/" target="_blank" rel="noopener">如何在长城后面go get一些库 | 鸟窝</a></li>
+<li><a href="http://www.yunlianip.com/News-getinfo-id-61.html" target="_blank" rel="noopener">SOCKS5代理和HTTP代理有什么区别？-云连代理</a></li>
+<li><a href="https://stackoverflow.com/questions/10383299/how-do-i-configure-go-command-to-use-a-proxy" target="_blank" rel="noopener">How do I configure go command to use a proxy? - Stack Overflow</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
   </entry>
   <entry>
     <title>代理服务器</title>
@@ -1018,6 +1097,60 @@
       </categories>
   </entry>
   <entry>
+    <title>Vim 自动补全之 YCM</title>
+    <url>/shell-java/</url>
+    <content><![CDATA[<p>IDEA 打开得太慢了，我需要一款轻量级的 IDE，不想装其他乱七八糟的编译器咋办？搞事情！</p>
+<a id="more"></a>
+<h2 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h2><p>sublime 通过简单的配置后可以实现 java 代码的高亮提示和编译功能，并且大多编译错误也能基本上精确到行。<br>然而 sublime 内置的终端无法输入，虽然在日常的算法中输入操作很少涉及，, 但还是很不爽。</p>
+<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>这里需要一定的 Vim 基础，新手请执行 <code>vimtutor</code> 查看 Vim 官方教程，再继续往后看。<br>在终端通过 java 命令即可实现 java 代码的编译与运行。<br>vim 不过起到的是编辑器的作用。<br>对于编辑器我们不仅有高亮的基本要求，同样也需要基本的代码补全功能, Vim 的 YCM 插件能较好的实现代码补全功能。<br>下面介绍通过 vim 的 vim-plug 插件管理器 来安装 YCM 。</p>
+<h2 id="预备工作"><a href="#预备工作" class="headerlink" title="预备工作"></a>预备工作</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br><span class="line">brew install cmake vim</span><br></pre></td></tr></table></figure>
+
+<h2 id="vim-plug-安装"><a href="#vim-plug-安装" class="headerlink" title="vim-plug 安装"></a>vim-plug 安装</h2><p><a href="https://github.com/junegunn/vim-plug" target="_blank" rel="noopener">junegunn/vim-plug</a></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -fLo ~/.vim/autoload/plug.vim --create-dirs \</span><br><span class="line">    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</span><br></pre></td></tr></table></figure>
+<h2 id="安装-YCM"><a href="#安装-YCM" class="headerlink" title="安装 YCM"></a>安装 YCM</h2><p><a href="https://github.com/Valloric/YouCompleteMe" target="_blank" rel="noopener">YCM Github</a></p>
+<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>YCM 可通过 vim-plug 下载，而安装使用则需要进一步的编译。</p>
+<p>在 .vimrc 文件中添加 <code>Plug &#39;Valloric/YouCompleteMe&#39;</code> 再执行 :PluginInstall 即可。</p>
+<h3 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h3><p>YCM 基于 cmake 进行编译的，所以在安装之前如下命令先通过 brew 安装 cmake。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">python3 .&#x2F;install.py --java-completer</span><br></pre></td></tr></table></figure>
+<p>请使用 python3 。</p>
+<p>安装好之后，由于我的 python3 缺乏很多依赖性，通过以下命令检验 python 所缺乏的依赖。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd</span><br><span class="line">cp ycmd&#x2F;default_settings.json . &amp; python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
+<p>如果输出如下，是 python 环境的问题考虑重启然后重装：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[1]    8629 segmentation fault  python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
+<p>若有如下报错：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ModuleNotFoundError: No module named &#39;bottle&#39;</span><br><span class="line">ModuleNotFoundError: No module named &#39;waitress&#39;</span><br></pre></td></tr></table></figure>
+<p>逐句执行 <code>pip3 install bottle</code> <code>pip3 install waitress</code>即可解决。<br>如果显示是：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">No module named &#39;ycm_core&#39;</span><br></pre></td></tr></table></figure>
+<p>是没有问题的</p>
+<h2 id="YCM-安装-C-family-的自动补全"><a href="#YCM-安装-C-family-的自动补全" class="headerlink" title="YCM 安装 C-family 的自动补全"></a>YCM 安装 C-family 的自动补全</h2><h3 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">python3 .&#x2F;install.py --clang-completer</span><br></pre></td></tr></table></figure>
+<h3 id="安装-ycm-gennerator"><a href="#安装-ycm-gennerator" class="headerlink" title="安装 ycm-gennerator"></a>安装 ycm-gennerator</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Plugin &#39;rdnetto&#x2F;YCM-Generator&#39;</span><br></pre></td></tr></table></figure>
+<h3 id="生成-ycm-extra-conf-py-文件到-YCM-中"><a href="#生成-ycm-extra-conf-py-文件到-YCM-中" class="headerlink" title="生成 .ycm_extra_conf.py 文件到 YCM 中"></a>生成 .ycm_extra_conf.py 文件到 YCM 中</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python3 .ycm_extra_conf.py ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd</span><br></pre></td></tr></table></figure>
+<h3 id="在-vimrc-中添加"><a href="#在-vimrc-中添加" class="headerlink" title="在 ~/.vimrc 中添加"></a>在 ~/.vimrc 中添加</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let g:ycm_global_ycm_extra_conf &#x3D; &#39;～&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd&#x2F;.ycm_extra_conf.py&#39;</span><br></pre></td></tr></table></figure>
+
+<h2 id="go-语言"><a href="#go-语言" class="headerlink" title="go 语言"></a>go 语言</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --go-completer</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他语言参数"><a href="#其他语言参数" class="headerlink" title="其他语言参数"></a>其他语言参数</h2><ul>
+<li>C family support: <code>python3 ./install.py --clang-completer</code></li>
+<li>C# support: <code>python3 ./install.py --cs-completer</code>（install Mono with Homebrew or by downloading the <a href="http://www.mono-project.com/docs/getting-started/install/mac/" target="_blank" rel="noopener">Mono macOS package</a> ）</li>
+<li>Go support: <code>python3 ./install.py --go-completer</code> </li>
+<li>JavaScript and TypeScript support: <code>python3 ./install.py --ts-completer</code> </li>
+<li>Rust support: <code>python3 ./install.py --rust-completer</code></li>
+<li>Java support: <code>python3 ./install.py --java-completer</code></li>
+</ul>
+<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:PlugUpdate</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">git clean -f</span><br><span class="line">git pull</span><br><span class="line">git submodule update --recursive --init</span><br><span class="line">.&#x2F;install.py --go-completer</span><br></pre></td></tr></table></figure>
+
+<h2 id="错误解决"><a href="#错误解决" class="headerlink" title="错误解决"></a>错误解决</h2><p>升级 catalina 后 brew 安装的 python3 执行异常，解决方案如下：<br><a href="https://forums.developer.apple.com/thread/119429" target="_blank" rel="noopener">My application crashed with invalid load of lib… |Apple Developer Forums</a></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;zsh</span><br><span class="line">brew update &amp; brew upgrade &amp; brew install openssl</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;openssl&#x2F;1.0.2t&#x2F;lib</span><br><span class="line">sudo cp libssl.1.0.0.dylib libcrypto.1.0.0.dylib &#x2F;usr&#x2F;local&#x2F;lib&#x2F;</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;lib</span><br><span class="line">mv libssl.dylib libssl_bak.dylib</span><br><span class="line">mv libcrypto.dylib libcrypto_bak.dylib</span><br><span class="line">sudo ln -s libssl.1.0.0.dylib libssl.dylib</span><br><span class="line">sudo ln -s libcrypto.1.0.0.dylib libcrypto.dylib</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>开发工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搜索引擎使用技巧</title>
     <url>/se-operators/</url>
     <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F05%2F29%2F1590724982.png?x-oss-process=style/title_800" alt="1590724982.png"></p>
@@ -1111,81 +1244,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Vim 自动补全之 YCM</title>
-    <url>/shell-java/</url>
-    <content><![CDATA[<p>IDEA 打开得太慢了，我需要一款轻量级的 IDE，不想装其他乱七八糟的编译器咋办？搞事情！</p>
-<a id="more"></a>
-<h2 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h2><p>sublime 通过简单的配置后可以实现 java 代码的高亮提示和编译功能，并且大多编译错误也能基本上精确到行。<br>然而 sublime 内置的终端无法输入，虽然在日常的算法中输入操作很少涉及，, 但还是很不爽。</p>
-<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>这里需要一定的 Vim 基础，新手请执行 <code>vimtutor</code> 查看 Vim 官方教程，再继续往后看。<br>在终端通过 java 命令即可实现 java 代码的编译与运行。<br>vim 不过起到的是编辑器的作用。<br>对于编辑器我们不仅有高亮的基本要求，同样也需要基本的代码补全功能, Vim 的 YCM 插件能较好的实现代码补全功能。<br>下面介绍通过 vim 的 vim-plug 插件管理器 来安装 YCM 。</p>
-<h2 id="预备工作"><a href="#预备工作" class="headerlink" title="预备工作"></a>预备工作</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br><span class="line">brew install cmake vim</span><br></pre></td></tr></table></figure>
-
-<h2 id="vim-plug-安装"><a href="#vim-plug-安装" class="headerlink" title="vim-plug 安装"></a>vim-plug 安装</h2><p><a href="https://github.com/junegunn/vim-plug" target="_blank" rel="noopener">junegunn/vim-plug</a></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -fLo ~/.vim/autoload/plug.vim --create-dirs \</span><br><span class="line">    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</span><br></pre></td></tr></table></figure>
-<h2 id="安装-YCM"><a href="#安装-YCM" class="headerlink" title="安装 YCM"></a>安装 YCM</h2><p><a href="https://github.com/Valloric/YouCompleteMe" target="_blank" rel="noopener">YCM Github</a></p>
-<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>YCM 可通过 vim-plug 下载，而安装使用则需要进一步的编译。</p>
-<p>在 .vimrc 文件中添加 <code>Plug &#39;Valloric/YouCompleteMe&#39;</code> 再执行 :PluginInstall 即可。</p>
-<h3 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h3><p>YCM 基于 cmake 进行编译的，所以在安装之前如下命令先通过 brew 安装 cmake。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">python3 .&#x2F;install.py --java-completer</span><br></pre></td></tr></table></figure>
-<p>请使用 python3 。</p>
-<p>安装好之后，由于我的 python3 缺乏很多依赖性，通过以下命令检验 python 所缺乏的依赖。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd</span><br><span class="line">cp ycmd&#x2F;default_settings.json . &amp; python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
-<p>如果输出如下，是 python 环境的问题考虑重启然后重装：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[1]    8629 segmentation fault  python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
-<p>若有如下报错：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ModuleNotFoundError: No module named &#39;bottle&#39;</span><br><span class="line">ModuleNotFoundError: No module named &#39;waitress&#39;</span><br></pre></td></tr></table></figure>
-<p>逐句执行 <code>pip3 install bottle</code> <code>pip3 install waitress</code>即可解决。<br>如果显示是：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">No module named &#39;ycm_core&#39;</span><br></pre></td></tr></table></figure>
-<p>是没有问题的</p>
-<h2 id="YCM-安装-C-family-的自动补全"><a href="#YCM-安装-C-family-的自动补全" class="headerlink" title="YCM 安装 C-family 的自动补全"></a>YCM 安装 C-family 的自动补全</h2><h3 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">python3 .&#x2F;install.py --clang-completer</span><br></pre></td></tr></table></figure>
-<h3 id="安装-ycm-gennerator"><a href="#安装-ycm-gennerator" class="headerlink" title="安装 ycm-gennerator"></a>安装 ycm-gennerator</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Plugin &#39;rdnetto&#x2F;YCM-Generator&#39;</span><br></pre></td></tr></table></figure>
-<h3 id="生成-ycm-extra-conf-py-文件到-YCM-中"><a href="#生成-ycm-extra-conf-py-文件到-YCM-中" class="headerlink" title="生成 .ycm_extra_conf.py 文件到 YCM 中"></a>生成 .ycm_extra_conf.py 文件到 YCM 中</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python3 .ycm_extra_conf.py ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd</span><br></pre></td></tr></table></figure>
-<h3 id="在-vimrc-中添加"><a href="#在-vimrc-中添加" class="headerlink" title="在 ~/.vimrc 中添加"></a>在 ~/.vimrc 中添加</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let g:ycm_global_ycm_extra_conf &#x3D; &#39;～&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd&#x2F;.ycm_extra_conf.py&#39;</span><br></pre></td></tr></table></figure>
-
-<h2 id="go-语言"><a href="#go-语言" class="headerlink" title="go 语言"></a>go 语言</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --go-completer</span><br></pre></td></tr></table></figure>
-
-<h2 id="其他语言参数"><a href="#其他语言参数" class="headerlink" title="其他语言参数"></a>其他语言参数</h2><ul>
-<li>C family support: <code>python3 ./install.py --clang-completer</code></li>
-<li>C# support: <code>python3 ./install.py --cs-completer</code>（install Mono with Homebrew or by downloading the <a href="http://www.mono-project.com/docs/getting-started/install/mac/" target="_blank" rel="noopener">Mono macOS package</a> ）</li>
-<li>Go support: <code>python3 ./install.py --go-completer</code> </li>
-<li>JavaScript and TypeScript support: <code>python3 ./install.py --ts-completer</code> </li>
-<li>Rust support: <code>python3 ./install.py --rust-completer</code></li>
-<li>Java support: <code>python3 ./install.py --java-completer</code></li>
-</ul>
-<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:PlugUpdate</span><br></pre></td></tr></table></figure>
-<p>或</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">git clean -f</span><br><span class="line">git pull</span><br><span class="line">git submodule update --recursive --init</span><br><span class="line">.&#x2F;install.py --go-completer</span><br></pre></td></tr></table></figure>
-
-<h2 id="错误解决"><a href="#错误解决" class="headerlink" title="错误解决"></a>错误解决</h2><p>升级 catalina 后 brew 安装的 python3 执行异常，解决方案如下：<br><a href="https://forums.developer.apple.com/thread/119429" target="_blank" rel="noopener">My application crashed with invalid load of lib… |Apple Developer Forums</a></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;zsh</span><br><span class="line">brew update &amp; brew upgrade &amp; brew install openssl</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;openssl&#x2F;1.0.2t&#x2F;lib</span><br><span class="line">sudo cp libssl.1.0.0.dylib libcrypto.1.0.0.dylib &#x2F;usr&#x2F;local&#x2F;lib&#x2F;</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;lib</span><br><span class="line">mv libssl.dylib libssl_bak.dylib</span><br><span class="line">mv libcrypto.dylib libcrypto_bak.dylib</span><br><span class="line">sudo ln -s libssl.1.0.0.dylib libssl.dylib</span><br><span class="line">sudo ln -s libcrypto.1.0.0.dylib libcrypto.dylib</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>开发工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>程序中的 “脚手架”</title>
-    <url>/scaffold/</url>
-    <content><![CDATA[<blockquote>
-<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
-</blockquote>
-<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
-<a id="more"></a>
-
-<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
-<li><a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener">facebook/create-react-app</a></li>
-<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>信息技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux 剪贴板小技巧</title>
     <url>/ssh-clipboard-iterm2/</url>
     <content><![CDATA[<h2 id="初步识-vim-剪贴板"><a href="#初步识-vim-剪贴板" class="headerlink" title="初步识 vim 剪贴板"></a>初步识 vim 剪贴板</h2><p>对于文本的复制粘贴，系统会提供剪贴板，剪贴板在 vim 中被称为寄存器，并且 vim 有很多寄存器，寄存器使用的语法：<code>&quot;{register}</code>，当然了寄存器指令不会单独使用，后面都会跟代表复制的 <code>y</code> 或代表粘贴的 <code>p</code>，执行 <code>&quot;ay</code> 就将选中的内容复制到了 <code>a</code> 寄存器，<a id="more"></a>寄存器都是有自己的名字的，感兴趣的同学，欲知详细内容请参见帮助文档：<code>:help registers</code>。</p>
@@ -1240,6 +1298,27 @@ Selection-&gt;Application in terminal may access clipboard</code>（选择开启
         <tag>Linux</tag>
         <tag>剪贴板</tag>
         <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>程序中的 “脚手架”</title>
+    <url>/scaffold/</url>
+    <content><![CDATA[<blockquote>
+<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
+</blockquote>
+<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
+<a id="more"></a>
+
+<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
+<li><a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener">facebook/create-react-app</a></li>
+<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>信息技术</tag>
       </tags>
   </entry>
   <entry>
@@ -1369,6 +1448,47 @@ Selection-&gt;Application in terminal may access clipboard</code>（选择开启
       </categories>
       <tags>
         <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vim-fugitive ——【一天一个 vim 插件】</title>
+    <url>/vim-plugin-everday-2/</url>
+    <content><![CDATA[<p>作为一个 10k+ star 的 vim 插件，<a href="https://github.com/tpope/vim-fugitive" target="_blank" rel="noopener">tpope/vim-fugitive</a> 自称为 Git 的第一 Vim 插件并不为过。Fugitive 让你在当前 buffer 缓冲区通过<code>:Git</code>或<code>:G</code>，可以直接使用 git 命令。可以看作是<code>!git XX</code> 命令的改进和优化，除了使用 silent，静默模式外，你不会看到 “Press ENTER or type command to continue”，还对一些命令进行了优化。</p>
+<h2 id="温故"><a href="#温故" class="headerlink" title="温故"></a>温故</h2><p>回顾一下上一个插件 vim-gitgutter 的使用方法：</p>
+<ul>
+<li><code>[c</code> 和 <code>]c</code> 在有所变动的区块间跳转。</li>
+<li><leader>hp，显示预览，hunk preview</li>
+<li><leader>hs，暂存代码块，hunk stage</li>
+<li><leader>hu，撤销更改，hunk undo</li>
+<li><leader>hd，禁用 gitgutter</li>
+<li><leader>he，启用 gitgutter</li>
+</ul>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ul>
+<li>所有命令都以<code>:G</code>或<code>:Git</code>打头，两种写法等价。</li>
+<li><code>:G -p {args}</code><ul>
+<li>运行任意 git 命令都可以加上，-p，这样将捕获输出到一个临时文件，并且对临时文件执行<code>:split</code>水平分割。如果使用<code>:0G -p {args}</code>，将用<code>:edit</code>代替。通常用于 diff 和 log 这个指令。</li>
+<li>例：<code>:G -p diff</code>,<code>:G --paginate diff</code></li>
+</ul>
+</li>
+<li><code>G</code><ul>
+<li>不带参数，会打开一个类似于 git-status 的简要窗口，在窗口中，使用 <code>g?</code> 将打开 fugitive-maps 快捷键映射帮助。</li>
+</ul>
+</li>
+<li><code>G push</code><ul>
+<li>执行 <code>git push</code></li>
+</ul>
+</li>
+<li><code>GBrowse</code></li>
+</ul>
+<hr>
+<p>待续：<br>由于我的很多 git 知识还不够完善，后面补充了再续写。<br>更多内容参见<code>:help fugitive</code></p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>一天一个 vim 插件</tag>
       </tags>
   </entry>
   <entry>
@@ -1528,47 +1648,6 @@ Selection-&gt;Application in terminal may access clipboard</code>（选择开启
       <tags>
         <tag>vim</tag>
         <tag>react</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vim-fugitive ——【一天一个 vim 插件】</title>
-    <url>/vim-plugin-everday-2/</url>
-    <content><![CDATA[<p>作为一个 10k+ star 的 vim 插件，<a href="https://github.com/tpope/vim-fugitive" target="_blank" rel="noopener">tpope/vim-fugitive</a> 自称为 Git 的第一 Vim 插件并不为过。Fugitive 让你在当前 buffer 缓冲区通过<code>:Git</code>或<code>:G</code>，可以直接使用 git 命令。可以看作是<code>!git XX</code> 命令的改进和优化，除了使用 silent，静默模式外，你不会看到 “Press ENTER or type command to continue”，还对一些命令进行了优化。</p>
-<h2 id="温故"><a href="#温故" class="headerlink" title="温故"></a>温故</h2><p>回顾一下上一个插件 vim-gitgutter 的使用方法：</p>
-<ul>
-<li><code>[c</code> 和 <code>]c</code> 在有所变动的区块间跳转。</li>
-<li><leader>hp，显示预览，hunk preview</li>
-<li><leader>hs，暂存代码块，hunk stage</li>
-<li><leader>hu，撤销更改，hunk undo</li>
-<li><leader>hd，禁用 gitgutter</li>
-<li><leader>he，启用 gitgutter</li>
-</ul>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ul>
-<li>所有命令都以<code>:G</code>或<code>:Git</code>打头，两种写法等价。</li>
-<li><code>:G -p {args}</code><ul>
-<li>运行任意 git 命令都可以加上，-p，这样将捕获输出到一个临时文件，并且对临时文件执行<code>:split</code>水平分割。如果使用<code>:0G -p {args}</code>，将用<code>:edit</code>代替。通常用于 diff 和 log 这个指令。</li>
-<li>例：<code>:G -p diff</code>,<code>:G --paginate diff</code></li>
-</ul>
-</li>
-<li><code>G</code><ul>
-<li>不带参数，会打开一个类似于 git-status 的简要窗口，在窗口中，使用 <code>g?</code> 将打开 fugitive-maps 快捷键映射帮助。</li>
-</ul>
-</li>
-<li><code>G push</code><ul>
-<li>执行 <code>git push</code></li>
-</ul>
-</li>
-<li><code>GBrowse</code></li>
-</ul>
-<hr>
-<p>待续：<br>由于我的很多 git 知识还不够完善，后面补充了再续写。<br>更多内容参见<code>:help fugitive</code></p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>一天一个 vim 插件</tag>
       </tags>
   </entry>
 </search>

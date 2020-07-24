@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.xyang.xin/"/>
-  <updated>2020-07-09T15:15:23.133Z</updated>
+  <updated>2020-07-24T17:05:54.626Z</updated>
   <id>http://blog.xyang.xin/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习 CSS 时忽视的几个知识点</title>
+    <link href="http://blog.xyang.xin/note-hings-i-wish-id-known-about-css/"/>
+    <id>http://blog.xyang.xin/note-hings-i-wish-id-known-about-css/</id>
+    <published>2020-07-24T11:09:19.000Z</published>
+    <updated>2020-07-24T17:05:54.626Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://cssfordesigners.com/articles/things-i-wish-id-known-about-css&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Things I Wish I’d Known About CSS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;文章的作者以老式的方式构建网站：查看网站源代码、复制然后修改，而没有经过阅读书籍等系统性的学习。作者在 1999 年就使用这种方式了，当时写的还是这种代码： &lt;code&gt;&amp;lt;font size=&amp;quot;4&amp;quot; color=&amp;quot;#000000&amp;quot;&amp;gt;&lt;/code&gt;。而当 CSS 面世的时候，作者没有改变自己的学习方法，而错过了太多基本知识。文章主要介绍的是作者希望早点学到的东西。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="css" scheme="http://blog.xyang.xin/tags/css/"/>
+    
+      <category term="note" scheme="http://blog.xyang.xin/tags/note/"/>
+    
+  </entry>
   
   <entry>
     <title>从 Github 下载目标仓库指定文件夹</title>
@@ -482,32 +506,6 @@
     
       <category term="日志" scheme="http://blog.xyang.xin/categories/%E6%97%A5%E5%BF%97/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>React-Vim 开发环境</title>
-    <link href="http://blog.xyang.xin/vim-react/"/>
-    <id>http://blog.xyang.xin/vim-react/</id>
-    <published>2019-01-31T06:23:08.000Z</published>
-    <updated>2020-04-14T14:11:37.595Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;实现功能&quot;&gt;&lt;a href=&quot;#实现功能&quot; class=&quot;headerlink&quot; title=&quot;实现功能&quot;&gt;&lt;/a&gt;实现功能&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;react 代码高亮、自动补全。&lt;/li&gt;
-&lt;li&gt;执行&lt;code&gt;./node_modules/.bin/eslint --fix src/App.js&lt;/code&gt; 即可对App.js 进行代码错误检测和格式化。&lt;/li&gt;
-&lt;li&gt;变更代码自动对代码进行格式化。
-    
-    </summary>
-    
-    
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="vim" scheme="http://blog.xyang.xin/tags/vim/"/>
-    
-      <category term="react" scheme="http://blog.xyang.xin/tags/react/"/>
     
   </entry>
   
