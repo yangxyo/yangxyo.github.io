@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.xyang.xin/es6-everday-1/</loc>
+    
+    <lastmod>2020-07-28T09:12:43.382Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.xyang.xin/note-hings-i-wish-id-known-about-css/</loc>
     
     <lastmod>2020-07-24T17:05:54.626Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://blog.xyang.xin/vim-plugin-everday-2/</loc>
     
     <lastmod>2020-07-09T13:18:34.381Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/es6-everday-1/</loc>
-    
-    <lastmod>2020-07-08T12:06:23.675Z</lastmod>
     
   </url>
   

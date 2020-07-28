@@ -1,57 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>阿里云 ECS 使用</title>
-    <url>/ECS/</url>
-    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><a href="https://www.alibabacloud.com/help/zh/doc-detail/25367.htm?spm=a2c63.p38356.b99.2.615e1bbcsZH9Ry" target="_blank" rel="noopener">阿里云官方文档</a></p>
-<a id="more"></a>
-
-<h2 id="远程连接服务器常用的几种方式"><a href="#远程连接服务器常用的几种方式" class="headerlink" title="远程连接服务器常用的几种方式"></a>远程连接服务器常用的几种方式</h2><p>SSH —— 远程<br>SFTF —— 文件传输，22端口</p>
-<h2 id="安全组"><a href="#安全组" class="headerlink" title="安全组"></a>安全组</h2><h2 id="设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口"><a href="#设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口" class="headerlink" title="设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口"></a>设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口</h2><ol>
-<li>设置端口范围 22/22 协议类型自定义TCP 授权对象公网ip，22端口常用于ssh连接。</li>
-<li>设置端口范围 80/80 协议类型自定义TCP 授权对象0.0.0.0/0。<br>允许所有人通过 http 访问你的服务器。<br>80 端口常用于 http 协议访问 web 网站。相对应的 443 端口用于 https 协议访问 web 网站。3306 端口常用于数据库远程连接。出于安全考虑：如果向所有人打开 22 端口和 3306 端口，应当确保密码的复杂程度，以防强行爆破。对于新手建议将 22 端口和 3306 端口设置为仅允许指定IP访问。</li>
-</ol>
-<h2 id="设置公网出方向-——-服务器出口的限制"><a href="#设置公网出方向-——-服务器出口的限制" class="headerlink" title="设置公网出方向 —— 服务器出口的限制"></a>设置公网出方向 —— 服务器出口的限制</h2><p>没有特殊需求不需要设置。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>云服务</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《厉害了我的国》(2018)讲述纲要</title>
-    <url>/amazing-china/</url>
-    <content><![CDATA[<h1 id="《厉害了我的国》-2018-讲述纲要"><a href="#《厉害了我的国》-2018-讲述纲要" class="headerlink" title="《厉害了我的国》(2018)讲述纲要"></a>《厉害了我的国》(2018)讲述纲要</h1><blockquote>
-<p>导演: 卫铁<br>类型: 纪录片<br>制片国家/地区: 中国大陆<br>语言: 汉语普通话<br>上映日期: 2018-03-02(中国大陆)<br>片长: 90分钟<br>又名: Amazing China</p>
-</blockquote>
-<a id="more"></a>
-
-<blockquote>
-<p>《厉害了，我的国》，以《辉煌中国》为基础素材制作的纪录电影。《辉煌中国》8个摄制组历时3个月，走遍全国31个省区市，拍摄了近3200个小时的高清纪实素材、300多个小时的航拍素材，采访了108位人物，记录下众多珍贵的历史瞬间。内容采用“内容众筹”的创新方式，搭建创作平台，面向全国征集五年来百姓眼中的成就故事、百姓身边的巨大变化，由百姓自己讲述精彩“中国故事”，众筹案例线索、照片、短视频等逾万条</p>
-</blockquote>
-<h2 id="基础设施建设，中国制造，创新引擎"><a href="#基础设施建设，中国制造，创新引擎" class="headerlink" title="基础设施建设，中国制造，创新引擎"></a>基础设施建设，中国制造，创新引擎</h2><h3 id="大国工程，交通运输业"><a href="#大国工程，交通运输业" class="headerlink" title="大国工程，交通运输业"></a>大国工程，交通运输业</h3><p>中国桥–港珠澳大桥<br>中国车–高铁<br>中国港口–智能码头<br>中国船</p>
-<h3 id="中国资源调配"><a href="#中国资源调配" class="headerlink" title="中国资源调配"></a>中国资源调配</h3><p>南水北调<br>西气东输二线<br>世界级特高压工程<br>信息资源–网络强国</p>
-<h2 id="自主创新"><a href="#自主创新" class="headerlink" title="自主创新"></a>自主创新</h2><h3 id="2017-05-05-大飞机梦"><a href="#2017-05-05-大飞机梦" class="headerlink" title="2017.05.05 大飞机梦"></a>2017.05.05 大飞机梦</h3><p>自主研发大飞机航电系统集成</p>
-<h3 id="自主制造海上钻井平台"><a href="#自主制造海上钻井平台" class="headerlink" title="自主制造海上钻井平台"></a>自主制造海上钻井平台</h3><h3 id="深海探测"><a href="#深海探测" class="headerlink" title="深海探测"></a>深海探测</h3><p>蛟龙号<br>中国深潜器</p>
-<h3 id="太空探测"><a href="#太空探测" class="headerlink" title="太空探测"></a>太空探测</h3><p>FAST射电望远镜（中国天眼）<br>嫦娥三号<br>量子卫星“墨子号”–量子通信<br>天宫二号–空间实验室</p>
-<h3 id="创新型青年人才"><a href="#创新型青年人才" class="headerlink" title="创新型青年人才"></a>创新型青年人才</h3><p>国家创新活力<br>科技发展希望</p>
-<h2 id="我国社会主要矛盾已经转化为人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾"><a href="#我国社会主要矛盾已经转化为人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾" class="headerlink" title="我国社会主要矛盾已经转化为人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾"></a>我国社会主要矛盾已经转化为人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾</h2><h3 id="缩减贫富差异"><a href="#缩减贫富差异" class="headerlink" title="缩减贫富差异"></a>缩减贫富差异</h3><p>精准扶贫<br>号召企业家向贫困地域发展<br>城乡一体化</p>
-<h3 id="生态平衡"><a href="#生态平衡" class="headerlink" title="生态平衡"></a>生态平衡</h3><p>新能源 光伏发电 风电 核电站<br>污染治理，退耕还林还草工程</p>
-<h3 id="教育平衡"><a href="#教育平衡" class="headerlink" title="教育平衡"></a>教育平衡</h3><p>乡村教师队伍支持计划<br>免费午餐</p>
-<h3 id="文化建设"><a href="#文化建设" class="headerlink" title="文化建设"></a>文化建设</h3><p>传统文化与时代精神<br>中华民族价值追求</p>
-<h3 id="医疗"><a href="#医疗" class="headerlink" title="医疗"></a>医疗</h3><p>家庭医生签约服务制度全覆盖</p>
-<h3 id="养老"><a href="#养老" class="headerlink" title="养老"></a>养老</h3><h3 id="公共安全–保障小康的隐形卫视"><a href="#公共安全–保障小康的隐形卫视" class="headerlink" title="公共安全–保障小康的隐形卫视"></a>公共安全–保障小康的隐形卫视</h3><h3 id="国家安全-军事"><a href="#国家安全-军事" class="headerlink" title="国家安全-军事"></a>国家安全-军事</h3><h3 id="对外开放"><a href="#对外开放" class="headerlink" title="对外开放"></a>对外开放</h3><p>40年改革开放成就今日中国位于世界前列的国际地位<br>开着门，世界能够进入中国，中国也才能走向世界<br>一带一路<br>中欧经济联系紧密<br>桃李不言，下自成蹊  经济大融合 发展大联动 成功大共享<br>带动非洲繁荣<br>中国对外开放的追求–既要让自己过得好也要让别人过的好<br>建立人类命运共同体</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>中国</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>目标和关键成果法 (Objectives and Key Results)</title>
     <url>/OKRs/</url>
     <content><![CDATA[<blockquote>
@@ -98,67 +47,23 @@
       </tags>
   </entry>
   <entry>
-    <title>《如何阅读一本书》读书笔记</title>
-    <url>/book-rhydybs/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-09%2Frhydybs.jpeg?x-oss-process=style/title_140" alt="rhydybs.jpeg-w140"></p>
+    <title>阿里云 ECS 使用</title>
+    <url>/ECS/</url>
+    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><a href="https://www.alibabacloud.com/help/zh/doc-detail/25367.htm?spm=a2c63.p38356.b99.2.615e1bbcsZH9Ry" target="_blank" rel="noopener">阿里云官方文档</a></p>
 <a id="more"></a>
-<p><img data-src="http://images.xyang.xin/2019-09%2F%E3%80%8A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6%E3%80%8B.png" alt="《如何阅读一本书》.png"></p>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《如何阅读一本书》的脉络要点进行总结，用于阅读时的参考。（图谱内容较多，建议保存后浏览）。</p>
-<p>书中提出了四种阅读层次，层次逐级递增，较高层次的阅读包含较低层次的阅读。基础阅读是对字词句意思的理解，是阅读的基础。使用检视阅读来理清书的脉络，来甄别一本书是否值得读，是否适合现在读。使用分析阅读来细细品味一本好书。主题阅读适用于学术研究或对自己感兴趣的问题的探究性学习。</p>
-<!-- more -->
-<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><p>读者是要“发现”书中隐藏着的骨架。而作者则是以制造骨架为开始，但却想办法把骨架“隐藏”起来。他的目的是，用艺术的手法将骨架隐藏起来，或是说，在骨架上添加血肉。</p>
-<p>所谓文章的清楚明白，就是跟纲要的区隔是否清楚有关，所谓文章的前后一贯，就是能把不同的重点条理有序地排列出来。</p>
-<p>这个捷径是要靠你的检视阅读技巧来建立的。你收集好书目之后，要做的第一件事是检视书单上所有的书。在做检视阅读之前，绝不要用分析阅读来阅读。检视阅读不会让你明白有关主题的所有错综复杂的内容，或是作者所有的洞察力，但却具有两种基本的功能。第一，它会让你对自己想要研究的主题有个清晰的概念，这样接下来你针对某几本书做分析阅读时，会大有助益。第二，它会简化你的书目到一个合理的程度。</p>
-<p>能够熟练检视阅读的读者，不但能在心中将书籍分类，而且能对内容有一个粗浅的了解。他也会用非常短的时间就发现，这本书谈的内容对他研究的主题到底重不重要————这可能要等到读下本书的时候才能发现。但是有两件事至少他已经知道其中之一。那就是他不是发现这本书必须回头再读一次，以获得启发，便是知道不论这本书多有趣又多丰富，却毫无启发性，因此不值得重新再读。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>阅读</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Symbol ———【一天一个 es6 语法】</title>
-    <url>/es6-everday-1/</url>
-    <content><![CDATA[<h2 id="什么是-Symbol"><a href="#什么是-Symbol" class="headerlink" title="什么是 Symbol?"></a>什么是 Symbol?</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> 😻 = 😺 × 😍;  <span class="comment">// SyntaxError</span></span><br></pre></td></tr></table></figure>
-<p>（爆笑）这当然不是 Symbol。</p>
-<ul>
-<li>Undefined</li>
-<li>Null</li>
-<li>Boolean</li>
-<li>Number</li>
-<li>String</li>
-<li>Object</li>
-<li>Symbol (ES2015 新增)</li>
-</ul>
-<p>Symbol 不是字符串，不是对象，是第七种原始数据类型。每个从<code>Symbol()</code>返回的 symbol 类型的值都是唯一的。<strong>一个 symbol 类型的值能作为对象属性的标识符；这是该数据类型仅有的目的</strong>。</p>
-<a id="more"></a>
-<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><p>通过以下代码就创建一个 Symbol 类型的值。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Symbol([description])</span></span><br><span class="line"><span class="keyword">let</span> s = <span class="built_in">Symbol</span>(<span class="string">"我就是我"</span>);</span><br><span class="line"><span class="keyword">typeof</span> s;</span><br><span class="line"><span class="comment">// "symbol"</span></span><br></pre></td></tr></table></figure>
-<p>Symbol 中的参数对程序无实际意义，仅供调试助记。不支持语法： <code>new Symbol()</code></p>
-<p>不能自动转换为字符串：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> s = <span class="built_in">Symbol</span>();</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">" your symbol is"</span> + s);</span><br><span class="line"><span class="comment">// TypeError: can't convert symbol to string</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">`your symbol is <span class="subst">$&#123;s&#125;</span>`</span>)</span><br><span class="line"><span class="comment">// TypeError: can't conver symbol to string</span></span><br></pre></td></tr></table></figure>
-<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> _items = <span class="built_in">Symbol</span>(<span class="string">'stackItems'</span>);</span><br><span class="line"></span><br><span class="line">interface Stack &#123;</span><br><span class="line">  [_items]: any[];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Stack</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>() &#123;</span><br><span class="line">    <span class="keyword">this</span>[_items] = [];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 添加一个新元素到栈顶</span></span><br><span class="line">  push(element:any)&#123;</span><br><span class="line">    <span class="keyword">this</span>[_items].push(element);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 移除栈顶的元素，同时返回</span></span><br><span class="line">  pop() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items].pop();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 返回栈顶的元素</span></span><br><span class="line">  peek() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items][<span class="keyword">this</span>[_items].length - <span class="number">1</span>];</span><br><span class="line">  &#125;;</span><br><span class="line">  <span class="comment">// 没有任何元素true，否则false</span></span><br><span class="line">  isEmpty() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items].length === <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 移除栈里的所有元素</span></span><br><span class="line">  clear() &#123;</span><br><span class="line">    <span class="keyword">this</span>[_items] = [];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 返回栈里的元素个数</span></span><br><span class="line">  size() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items].length;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  print() &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.toString());</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  toString() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items].toString();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getSymbol</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">const</span> stack = <span class="keyword">new</span> Stack();</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Object</span>.getOwnPropertySymbols(stack);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">testSymbol</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> stack = <span class="keyword">new</span> Stack();</span><br><span class="line">  <span class="keyword">return</span> stack[_items];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(testSymbol());</span><br><span class="line"><span class="comment">// []</span></span><br><span class="line"><span class="built_in">console</span>.log(getSymbol()[<span class="number">0</span>]);</span><br><span class="line"><span class="comment">// Symbol(stackItems)</span></span><br></pre></td></tr></table></figure>
 
-<p>注意区别 <code>stack[_items]</code> 和<code>stack[&#39;_items&#39;]</code></p>
-<p>前者是访问属性名为 Symbol 的特殊方式。<br>后者是访问一般属性的方法与 <code>stack._items</code>相同。</p>
-<p>我猜测正因为这种特殊的访问方式使其无法通过<code>for...in</code>，<code>for...of</code>或 <code>Object.keys()</code> 等方法枚举。</p>
-<p>通过 <code>testSymbol()</code> 方法在我看来，其并不能达到实现私有变量的目的，仅仅使属性名或方法名不与别人提供的对象产生冲突。是一种保证每个属性名独一无二的方式。</p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/" target="_blank" rel="noopener">ES6 In Depth: Symbols - Mozilla Hacks - the Web developer blog</a></li>
-<li><a href="https://es6.ruanyifeng.com/#docs/symbol" target="_blank" rel="noopener">Symbol - ECMAScript 6入门</a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Symbol" target="_blank" rel="noopener">Symbol - JavaScript | MDN</a></li>
-</ul>
+<h2 id="远程连接服务器常用的几种方式"><a href="#远程连接服务器常用的几种方式" class="headerlink" title="远程连接服务器常用的几种方式"></a>远程连接服务器常用的几种方式</h2><p>SSH —— 远程<br>SFTF —— 文件传输，22端口</p>
+<h2 id="安全组"><a href="#安全组" class="headerlink" title="安全组"></a>安全组</h2><h2 id="设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口"><a href="#设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口" class="headerlink" title="设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口"></a>设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口</h2><ol>
+<li>设置端口范围 22/22 协议类型自定义TCP 授权对象公网ip，22端口常用于ssh连接。</li>
+<li>设置端口范围 80/80 协议类型自定义TCP 授权对象0.0.0.0/0。<br>允许所有人通过 http 访问你的服务器。<br>80 端口常用于 http 协议访问 web 网站。相对应的 443 端口用于 https 协议访问 web 网站。3306 端口常用于数据库远程连接。出于安全考虑：如果向所有人打开 22 端口和 3306 端口，应当确保密码的复杂程度，以防强行爆破。对于新手建议将 22 端口和 3306 端口设置为仅允许指定IP访问。</li>
+</ol>
+<h2 id="设置公网出方向-——-服务器出口的限制"><a href="#设置公网出方向-——-服务器出口的限制" class="headerlink" title="设置公网出方向 —— 服务器出口的限制"></a>设置公网出方向 —— 服务器出口的限制</h2><p>没有特殊需求不需要设置。</p>
 ]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>【一天一个 es6 语法】</tag>
-        <tag>javascript</tag>
+        <tag>云服务</tag>
       </tags>
   </entry>
   <entry>
@@ -189,6 +94,171 @@
       <tags>
         <tag>读书笔记</tag>
         <tag>写作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《厉害了我的国》(2018)讲述纲要</title>
+    <url>/amazing-china/</url>
+    <content><![CDATA[<h1 id="《厉害了我的国》-2018-讲述纲要"><a href="#《厉害了我的国》-2018-讲述纲要" class="headerlink" title="《厉害了我的国》(2018)讲述纲要"></a>《厉害了我的国》(2018)讲述纲要</h1><blockquote>
+<p>导演: 卫铁<br>类型: 纪录片<br>制片国家/地区: 中国大陆<br>语言: 汉语普通话<br>上映日期: 2018-03-02(中国大陆)<br>片长: 90分钟<br>又名: Amazing China</p>
+</blockquote>
+<a id="more"></a>
+
+<blockquote>
+<p>《厉害了，我的国》，以《辉煌中国》为基础素材制作的纪录电影。《辉煌中国》8个摄制组历时3个月，走遍全国31个省区市，拍摄了近3200个小时的高清纪实素材、300多个小时的航拍素材，采访了108位人物，记录下众多珍贵的历史瞬间。内容采用“内容众筹”的创新方式，搭建创作平台，面向全国征集五年来百姓眼中的成就故事、百姓身边的巨大变化，由百姓自己讲述精彩“中国故事”，众筹案例线索、照片、短视频等逾万条</p>
+</blockquote>
+<h2 id="基础设施建设，中国制造，创新引擎"><a href="#基础设施建设，中国制造，创新引擎" class="headerlink" title="基础设施建设，中国制造，创新引擎"></a>基础设施建设，中国制造，创新引擎</h2><h3 id="大国工程，交通运输业"><a href="#大国工程，交通运输业" class="headerlink" title="大国工程，交通运输业"></a>大国工程，交通运输业</h3><p>中国桥–港珠澳大桥<br>中国车–高铁<br>中国港口–智能码头<br>中国船</p>
+<h3 id="中国资源调配"><a href="#中国资源调配" class="headerlink" title="中国资源调配"></a>中国资源调配</h3><p>南水北调<br>西气东输二线<br>世界级特高压工程<br>信息资源–网络强国</p>
+<h2 id="自主创新"><a href="#自主创新" class="headerlink" title="自主创新"></a>自主创新</h2><h3 id="2017-05-05-大飞机梦"><a href="#2017-05-05-大飞机梦" class="headerlink" title="2017.05.05 大飞机梦"></a>2017.05.05 大飞机梦</h3><p>自主研发大飞机航电系统集成</p>
+<h3 id="自主制造海上钻井平台"><a href="#自主制造海上钻井平台" class="headerlink" title="自主制造海上钻井平台"></a>自主制造海上钻井平台</h3><h3 id="深海探测"><a href="#深海探测" class="headerlink" title="深海探测"></a>深海探测</h3><p>蛟龙号<br>中国深潜器</p>
+<h3 id="太空探测"><a href="#太空探测" class="headerlink" title="太空探测"></a>太空探测</h3><p>FAST射电望远镜（中国天眼）<br>嫦娥三号<br>量子卫星“墨子号”–量子通信<br>天宫二号–空间实验室</p>
+<h3 id="创新型青年人才"><a href="#创新型青年人才" class="headerlink" title="创新型青年人才"></a>创新型青年人才</h3><p>国家创新活力<br>科技发展希望</p>
+<h2 id="我国社会主要矛盾已经转化为人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾"><a href="#我国社会主要矛盾已经转化为人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾" class="headerlink" title="我国社会主要矛盾已经转化为人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾"></a>我国社会主要矛盾已经转化为人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾</h2><h3 id="缩减贫富差异"><a href="#缩减贫富差异" class="headerlink" title="缩减贫富差异"></a>缩减贫富差异</h3><p>精准扶贫<br>号召企业家向贫困地域发展<br>城乡一体化</p>
+<h3 id="生态平衡"><a href="#生态平衡" class="headerlink" title="生态平衡"></a>生态平衡</h3><p>新能源 光伏发电 风电 核电站<br>污染治理，退耕还林还草工程</p>
+<h3 id="教育平衡"><a href="#教育平衡" class="headerlink" title="教育平衡"></a>教育平衡</h3><p>乡村教师队伍支持计划<br>免费午餐</p>
+<h3 id="文化建设"><a href="#文化建设" class="headerlink" title="文化建设"></a>文化建设</h3><p>传统文化与时代精神<br>中华民族价值追求</p>
+<h3 id="医疗"><a href="#医疗" class="headerlink" title="医疗"></a>医疗</h3><p>家庭医生签约服务制度全覆盖</p>
+<h3 id="养老"><a href="#养老" class="headerlink" title="养老"></a>养老</h3><h3 id="公共安全–保障小康的隐形卫视"><a href="#公共安全–保障小康的隐形卫视" class="headerlink" title="公共安全–保障小康的隐形卫视"></a>公共安全–保障小康的隐形卫视</h3><h3 id="国家安全-军事"><a href="#国家安全-军事" class="headerlink" title="国家安全-军事"></a>国家安全-军事</h3><h3 id="对外开放"><a href="#对外开放" class="headerlink" title="对外开放"></a>对外开放</h3><p>40年改革开放成就今日中国位于世界前列的国际地位<br>开着门，世界能够进入中国，中国也才能走向世界<br>一带一路<br>中欧经济联系紧密<br>桃李不言，下自成蹊  经济大融合 发展大联动 成功大共享<br>带动非洲繁荣<br>中国对外开放的追求–既要让自己过得好也要让别人过的好<br>建立人类命运共同体</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>中国</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Symbol ———【一天一个 es6 语法】</title>
+    <url>/es6-everday-1/</url>
+    <content><![CDATA[<h2 id="什么是-Symbol"><a href="#什么是-Symbol" class="headerlink" title="什么是 Symbol?"></a>什么是 Symbol?</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> 😻 = 😺 × 😍;  <span class="comment">// SyntaxError</span></span><br></pre></td></tr></table></figure>
+<p>（爆笑）这当然不是 Symbol。</p>
+<ul>
+<li>Undefined</li>
+<li>Null</li>
+<li>Boolean</li>
+<li>Number</li>
+<li>String</li>
+<li>Object</li>
+<li>Symbol (ES2015 新增)</li>
+</ul>
+<p>Symbol 不是字符串，不是对象，是第七种原始数据类型。每个从<code>Symbol()</code>返回的 symbol 类型的值都是唯一的。<strong>一个 symbol 类型的值能作为对象属性的标识符；这是该数据类型仅有的目的</strong>。</p>
+<a id="more"></a>
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><p>通过以下代码就创建一个 Symbol 类型的值。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Symbol([description])</span></span><br><span class="line"><span class="keyword">let</span> s = <span class="built_in">Symbol</span>(<span class="string">"我就是我"</span>);</span><br><span class="line"><span class="keyword">typeof</span> s;</span><br><span class="line"><span class="comment">// "symbol"</span></span><br></pre></td></tr></table></figure>
+<p>Symbol 中的参数对程序无实际意义，仅供调试助记。不支持语法： <code>new Symbol()</code></p>
+<p>不能自动转换为字符串：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> s = <span class="built_in">Symbol</span>();</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">" your symbol is"</span> + s);</span><br><span class="line"><span class="comment">// TypeError: can't convert symbol to string</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">`your symbol is <span class="subst">$&#123;s&#125;</span>`</span>)</span><br><span class="line"><span class="comment">// TypeError: can't conver symbol to string</span></span><br></pre></td></tr></table></figure>
+<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><h3 id="对象中的私有属性"><a href="#对象中的私有属性" class="headerlink" title="对象中的私有属性"></a>对象中的私有属性</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> cat = <span class="built_in">Symbol</span>(<span class="string">"cat"</span>)</span><br><span class="line"><span class="keyword">let</span> dog = <span class="built_in">Symbol</span>(<span class="string">"dog"</span>)</span><br><span class="line"><span class="keyword">let</span> pig = <span class="built_in">Symbol</span>(<span class="string">"pig"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> obj = &#123; <span class="attr">property</span>: <span class="string">"这是一个动物乐园"</span>, [cat]: <span class="string">"金点渐层猫"</span>, [dog]: <span class="string">"二哈"</span>, [pig]: <span class="string">"藏香猪"</span> &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> prop <span class="keyword">in</span> obj) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(prop + <span class="string">": "</span> + obj[prop]</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 打印出 property: "这是一个动物乐园"</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.getOwnPropertySymbols(obj))</span><br><span class="line"><span class="comment">// 打印出 [ Symbol(cat), Symbol(dog), Symbol(pig) ]</span></span><br></pre></td></tr></table></figure>
+<p>基于 <code>symbol</code> 的私有属性对 <code>Object.entries</code>、 <code>Object.keys</code>、 <code>for...in</code> 等其它迭代器是不可见的。</p>
+<p><code>symbol</code> 属性对 <code>JSON.stringify</code> 方法也是不可见的额。</p>
+<h3 id="类中的私有属性"><a href="#类中的私有属性" class="headerlink" title="类中的私有属性"></a>类中的私有属性</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> _items = <span class="built_in">Symbol</span>(<span class="string">'stackItems'</span>);</span><br><span class="line"></span><br><span class="line">interface Stack &#123;</span><br><span class="line">  [_items]: any[];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Stack</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>() &#123;</span><br><span class="line">    <span class="keyword">this</span>[_items] = [];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 添加一个新元素到栈顶</span></span><br><span class="line">  push(element:any)&#123;</span><br><span class="line">    <span class="keyword">this</span>[_items].push(element);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 移除栈顶的元素，同时返回</span></span><br><span class="line">  pop() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items].pop();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 返回栈顶的元素</span></span><br><span class="line">  peek() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items][<span class="keyword">this</span>[_items].length - <span class="number">1</span>];</span><br><span class="line">  &#125;;</span><br><span class="line">  <span class="comment">// 没有任何元素true，否则false</span></span><br><span class="line">  isEmpty() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items].length === <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 移除栈里的所有元素</span></span><br><span class="line">  clear() &#123;</span><br><span class="line">    <span class="keyword">this</span>[_items] = [];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 返回栈里的元素个数</span></span><br><span class="line">  size() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items].length;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  print() &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.toString());</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  toString() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>[_items].toString();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getSymbol</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">const</span> stack = <span class="keyword">new</span> Stack();</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Object</span>.getOwnPropertySymbols(stack);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">testSymbol</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> stack = <span class="keyword">new</span> Stack();</span><br><span class="line">  <span class="keyword">return</span> stack[_items];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(testSymbol());</span><br><span class="line"><span class="comment">// []</span></span><br><span class="line"><span class="built_in">console</span>.log(getSymbol()[<span class="number">0</span>]);</span><br><span class="line"><span class="comment">// Symbol(stackItems)</span></span><br></pre></td></tr></table></figure>
+
+<p>注意区别 <code>stack[_items]</code> 和<code>stack[&#39;_items&#39;]</code></p>
+<p>前者是访问属性名为 Symbol 的特殊方式。<br>后者是访问一般属性的方法与 <code>stack._items</code>相同。</p>
+<p>我猜测正因为这种特殊的访问方式使其无法通过<code>for...in</code>，<code>for...of</code>或 <code>Object.keys()</code> 等方法枚举。</p>
+<p>通过 <code>testSymbol()</code> 方法在我看来，其并不能达到实现私有变量的目的，仅仅使属性名或方法名不与别人提供的对象产生冲突。是一种保证每个属性名独一无二的方式。</p>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/" target="_blank" rel="noopener">ES6 In Depth: Symbols - Mozilla Hacks - the Web developer blog</a></li>
+<li><a href="https://es6.ruanyifeng.com/#docs/symbol" target="_blank" rel="noopener">Symbol - ECMAScript 6入门</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Symbol" target="_blank" rel="noopener">Symbol - JavaScript | MDN</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>【一天一个 es6 语法】</tag>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
+    <url>/es6-everday-2/</url>
+    <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p>每个函数都是 <code>Function</code> 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用<strong>函数声明语法</strong>定义的：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span> (<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>这与下面使用<strong>函数表达式</strong>定义函数的方式几乎相差无几：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>最后一种定义函数的方式是使用<code>Function</code>构造函数，最后一个参数始终都被看成是函数体，而前面的参数则枚举出了新函数的参数：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Function</span>(<span class="string">"num1"</span>, <span class="string">"num2"</span>, <span class="string">"return num1 + num2"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>其中<strong>函数声明语法</strong>具有函数声明提升（function declaration hoisting）,解析器会率先读取函数声明，并使其在执行任何代码之前可用。其余的时候<strong>函数声明</strong>与<strong>函数表达式</strong>的语法其实是等价的。</p>
+<p>箭头函数针对的是<strong>函数表达式</strong>定义的函数。</p>
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"xxx"</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="params">para</span> =&gt;</span> para + <span class="string">"xxx"</span>;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para1, para2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(para1 + <span class="string">" and "</span> + para2);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function">(<span class="params">para1, para2</span>) =&gt;</span> <span class="built_in">console</span>.log(para1 + <span class="string">" and "</span> + para2);</span><br></pre></td></tr></table></figure>
+
+<p>从形式上来看也就是把<strong>函数表达式</strong>定义的函数，function 去掉，在参数括号外面加 =&gt; 。没有参数用()占位，只有一个参数时可以省略括号，后面的代码块部分多于一条语句就要用大括号括起来，而只有一条语句可以省略大括号，如果是 return 语句，还可以省略 return。</p>
+<p>当然仅仅为了好看，箭头函数存在的意义并不大。</p>
+<h2 id="使用注意点"><a href="#使用注意点" class="headerlink" title="使用注意点"></a>使用注意点</h2><p>（1）函数体内的 this 对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">// Cannot read property 'join' of undefined</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//chicken, hamburger, French Fries</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function">(<span class="params">delay=<span class="number">1000</span></span>)=&gt;</span> &#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//Cannot read property 'join' of undefined</span></span><br></pre></td></tr></table></figure>
+<p>第三段代码将 <code>print</code> 函数声明改为一个箭头函数的形式意味着其中关键字 <code>this</code> 指代的对象就是 <code>object</code>（浏览器中是 <code>window</code>）。<br><code>setTimeout()</code>方法设置一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码，上面的代码都是 1s 后执行 <code>console.log</code> 所在的函数。</p>
+<p>（2）不可使用<code>arguments</code>对象，如果要用，可以用扩展运算符(<code>...</code>)将函数参数搜集到一个数组中。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">...theArgs</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> theArgs;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>（3）箭头函数没有自己的 <code>this</code>。<br>不能用 <code>call()</code>、<code>apply()</code>、<code>bind()</code> 这些方法去改变 <code>this</code> 的指向。</p>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li>《Javascript 高级程序设计（第3版）》</li>
+<li><a href="https://es6.ruanyifeng.com/#docs/function" target="_blank" rel="noopener">函数的扩展 - ECMAScript 6入门</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>【一天一个 es6 语法】</tag>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《如何阅读一本书》读书笔记</title>
+    <url>/book-rhydybs/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-09%2Frhydybs.jpeg?x-oss-process=style/title_140" alt="rhydybs.jpeg-w140"></p>
+<a id="more"></a>
+<p><img data-src="http://images.xyang.xin/2019-09%2F%E3%80%8A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6%E3%80%8B.png" alt="《如何阅读一本书》.png"></p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《如何阅读一本书》的脉络要点进行总结，用于阅读时的参考。（图谱内容较多，建议保存后浏览）。</p>
+<p>书中提出了四种阅读层次，层次逐级递增，较高层次的阅读包含较低层次的阅读。基础阅读是对字词句意思的理解，是阅读的基础。使用检视阅读来理清书的脉络，来甄别一本书是否值得读，是否适合现在读。使用分析阅读来细细品味一本好书。主题阅读适用于学术研究或对自己感兴趣的问题的探究性学习。</p>
+<!-- more -->
+<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><p>读者是要“发现”书中隐藏着的骨架。而作者则是以制造骨架为开始，但却想办法把骨架“隐藏”起来。他的目的是，用艺术的手法将骨架隐藏起来，或是说，在骨架上添加血肉。</p>
+<p>所谓文章的清楚明白，就是跟纲要的区隔是否清楚有关，所谓文章的前后一贯，就是能把不同的重点条理有序地排列出来。</p>
+<p>这个捷径是要靠你的检视阅读技巧来建立的。你收集好书目之后，要做的第一件事是检视书单上所有的书。在做检视阅读之前，绝不要用分析阅读来阅读。检视阅读不会让你明白有关主题的所有错综复杂的内容，或是作者所有的洞察力，但却具有两种基本的功能。第一，它会让你对自己想要研究的主题有个清晰的概念，这样接下来你针对某几本书做分析阅读时，会大有助益。第二，它会简化你的书目到一个合理的程度。</p>
+<p>能够熟练检视阅读的读者，不但能在心中将书籍分类，而且能对内容有一个粗浅的了解。他也会用非常短的时间就发现，这本书谈的内容对他研究的主题到底重不重要————这可能要等到读下本书的时候才能发现。但是有两件事至少他已经知道其中之一。那就是他不是发现这本书必须回头再读一次，以获得启发，便是知道不论这本书多有趣又多丰富，却毫无启发性，因此不值得重新再读。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解构赋值 ———【一天一个 es6 语法】</title>
+    <url>/es6-everyday-3/</url>
+    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
+<a id="more"></a>
+
+<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">"Bill"</span>,</span><br><span class="line">    lastnNme: <span class="string">"Wilson"</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
+<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">"Kirkwood"</span>, <span class="string">"Squaw"</span>, <span class="string">"Alpine"</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">"Kirkwood"</span>, <span class="string">"Squaw"</span>, <span class="string">"Alpine"</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">"hello"</span>;</span><br><span class="line">a <span class="comment">// "h"</span></span><br><span class="line">b <span class="comment">// "e"</span></span><br><span class="line">c <span class="comment">// "l"</span></span><br><span class="line">d <span class="comment">// "l"</span></span><br><span class="line">e <span class="comment">// "o"</span></span><br></pre></td></tr></table></figure>
+<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">"hello"</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank" rel="noopener">解构赋值 - JavaScript | MDN</a></li>
+<li><a href="https://es6.ruanyifeng.com/#docs/destructuring" target="_blank" rel="noopener">变量的解构赋值 - ECMAScript 6入门</a></li>
+<li>《React 学习手册》</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>【一天一个 es6 语法】</tag>
+        <tag>javascript</tag>
       </tags>
   </entry>
   <entry>
@@ -227,6 +297,35 @@
       <tags>
         <tag>Github</tag>
         <tag>git-svn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>人生</title>
+    <url>/flesh/</url>
+    <content><![CDATA[<h2 id="他的话可信吗"><a href="#他的话可信吗" class="headerlink" title="他的话可信吗"></a>他的话可信吗</h2><blockquote>
+<p>听人谈话的时候，我们需要了解这人是谁，他是处在何种角度，代表何种阶级谈话的。</p>
+</blockquote>
+<p>他的话是他的经验之谈，是他从权威的书籍中得知，论坛上看到，还是他仅仅只是为了让你相信而虚构或者是一个看似正确而往往值得商榷的。</p>
+<a id="more"></a>
+
+<h2 id="好话"><a href="#好话" class="headerlink" title="好话"></a>好话</h2><blockquote>
+<p>听见好话一定要多长心眼，好话会让你做出的决策违背初心，待后知后觉，晚矣。</p>
+</blockquote>
+<p>投票软件多少是有漏洞的，从开发人员的角度利用漏洞刷票是很容易被发现，且破坏比赛的公平度的。很多亲人朋友呢很支持我，感觉一个投票闹得挺辛苦的。就不得不在群里向主办方反馈，不一会儿开发投票软件公司的老总进来了，也不说是解决问题。</p>
+<p>主办方第一轮给出的结果，随便找个理由，说没有刷票行为。<br>网络投票看是否刷票，一般都是看着某一天投票数是否波动过大，尤其是最后一天，或者票数数量过多，咱们开始怀疑刷票。然而这都只是怀疑，技术部门要是不想解决也是没办法的。<br>然而当投票网站上有访问量和投票数那就不一样了，当投票数大于访问量？这是什么怪物？页面都没被访问，你又是怎么点击投票按钮的，这就是异常刷票了。</p>
+<p>这种情况主办方如果不证明是系统漏洞，抑或是抓出一个有刷票行为的队伍来，那这个主办方麻烦就大了，网络舆情还是很管用的。</p>
+<p>后面主办方不得不抓出了一个，五天投票，前面四天总共几十票，最后一天下午飙几万的队伍。据肉眼观察肯定是不止一个的。</p>
+<p>但是同时那个老总私聊到我，简单的说“本科进决赛很优秀了，有时间聊一下”。再加上我本身对这软件公司是没有敌意的，因为系统安全性技术比较难，本身抱着的态度就是能找出刷票的队伍，解决问题就行了。</p>
+<p>他这一句话导致的最终结果就是，简单的将刷票最厉害的队伍解决了，而放下了第一轮结果所公布的无赖行为和更多的不公平性的愤懑。</p>
+<p>一句好话让我对公平性诉求，从解决，到最简单的解决。</p>
+<h2 id="解决生活中的难题"><a href="#解决生活中的难题" class="headerlink" title="解决生活中的难题"></a>解决生活中的难题</h2><p>倘若有条件自己给自己安排一件难题，例如考研究生、公务员，不是生活强加给我们的，那便是为了多一种生活体验。抱着解决问题的心态去攻坚克难，坚持下去完整的度过有计划的每一天便是一种胜利。</p>
+<h2 id="为什么不同"><a href="#为什么不同" class="headerlink" title="为什么不同"></a>为什么不同</h2><p>假若我们抱怨，抱怨自己没有出生在名门旺族，抱怨自己没有一个好看的脸蛋。然而人之所以是自己，正是源于这些后天难以更改的不同之处。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>人生</tag>
       </tags>
   </entry>
   <entry>
@@ -374,102 +473,6 @@
       </tags>
   </entry>
   <entry>
-    <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
-    <url>/es6-everday-2/</url>
-    <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p>每个函数都是 <code>Function</code> 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用<strong>函数声明语法</strong>定义的：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span> (<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>这与下面使用<strong>函数表达式</strong>定义函数的方式几乎相差无几：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>最后一种定义函数的方式是使用<code>Function</code>构造函数，最后一个参数始终都被看成是函数体，而前面的参数则枚举出了新函数的参数：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Function</span>(<span class="string">"num1"</span>, <span class="string">"num2"</span>, <span class="string">"return num1 + num2"</span>)</span><br></pre></td></tr></table></figure>
-
-<p>其中<strong>函数声明语法</strong>具有函数声明提升（function declaration hoisting）,解析器会率先读取函数声明，并使其在执行任何代码之前可用。其余的时候<strong>函数声明</strong>与<strong>函数表达式</strong>的语法其实是等价的。</p>
-<p>箭头函数针对的是<strong>函数表达式</strong>定义的函数。</p>
-<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"xxx"</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="params">para</span> =&gt;</span> para + <span class="string">"xxx"</span>;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para1, para2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(para1 + <span class="string">" and "</span> + para2);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function">(<span class="params">para1, para2</span>) =&gt;</span> <span class="built_in">console</span>.log(para1 + <span class="string">" and "</span> + para2);</span><br></pre></td></tr></table></figure>
-
-<p>从形式上来看也就是把<strong>函数表达式</strong>定义的函数，function 去掉，在参数括号外面加 =&gt; 。没有参数用()占位，只有一个参数时可以省略括号，后面的代码块部分多于一条语句就要用大括号括起来，而只有一条语句可以省略大括号，如果是 return 语句，还可以省略 return。</p>
-<p>当然仅仅为了好看，箭头函数存在的意义并不大。</p>
-<h2 id="使用注意点"><a href="#使用注意点" class="headerlink" title="使用注意点"></a>使用注意点</h2><p>（1）函数体内的 this 对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">// Cannot read property 'join' of undefined</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//chicken, hamburger, French Fries</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">"chicken"</span>, <span class="string">"hamburger"</span>, <span class="string">"French Fries"</span>],</span><br><span class="line">    print: <span class="function">(<span class="params">delay=<span class="number">1000</span></span>)=&gt;</span> &#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.resorts.join(<span class="string">","</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//Cannot read property 'join' of undefined</span></span><br></pre></td></tr></table></figure>
-<p>第三段代码将 <code>print</code> 函数声明改为一个箭头函数的形式意味着其中关键字 <code>this</code> 指代的对象就是 <code>object</code>（浏览器中是 <code>window</code>）。<br><code>setTimeout()</code>方法设置一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码，上面的代码都是 1s 后执行 <code>console.log</code> 所在的函数。</p>
-<p>（2）不可使用<code>arguments</code>对象，如果要用，可以用扩展运算符(<code>...</code>)将函数参数搜集到一个数组中。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">...theArgs</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> theArgs;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>（3）箭头函数没有自己的 <code>this</code>。<br>不能用 <code>call()</code>、<code>apply()</code>、<code>bind()</code> 这些方法去改变 <code>this</code> 的指向。</p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li>《Javascript 高级程序设计（第3版）》</li>
-<li><a href="https://es6.ruanyifeng.com/#docs/function" target="_blank" rel="noopener">函数的扩展 - ECMAScript 6入门</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>【一天一个 es6 语法】</tag>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解构赋值 ———【一天一个 es6 语法】</title>
-    <url>/es6-everyday-3/</url>
-    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
-<a id="more"></a>
-
-<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">"Bill"</span>,</span><br><span class="line">    lastnNme: <span class="string">"Wilson"</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
-<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">"Kirkwood"</span>, <span class="string">"Squaw"</span>, <span class="string">"Alpine"</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">"Kirkwood"</span>, <span class="string">"Squaw"</span>, <span class="string">"Alpine"</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
-<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">"hello"</span>;</span><br><span class="line">a <span class="comment">// "h"</span></span><br><span class="line">b <span class="comment">// "e"</span></span><br><span class="line">c <span class="comment">// "l"</span></span><br><span class="line">d <span class="comment">// "l"</span></span><br><span class="line">e <span class="comment">// "o"</span></span><br></pre></td></tr></table></figure>
-<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">"hello"</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank" rel="noopener">解构赋值 - JavaScript | MDN</a></li>
-<li><a href="https://es6.ruanyifeng.com/#docs/destructuring" target="_blank" rel="noopener">变量的解构赋值 - ECMAScript 6入门</a></li>
-<li>《React 学习手册》</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>【一天一个 es6 语法】</tag>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>人生</title>
-    <url>/flesh/</url>
-    <content><![CDATA[<h2 id="他的话可信吗"><a href="#他的话可信吗" class="headerlink" title="他的话可信吗"></a>他的话可信吗</h2><blockquote>
-<p>听人谈话的时候，我们需要了解这人是谁，他是处在何种角度，代表何种阶级谈话的。</p>
-</blockquote>
-<p>他的话是他的经验之谈，是他从权威的书籍中得知，论坛上看到，还是他仅仅只是为了让你相信而虚构或者是一个看似正确而往往值得商榷的。</p>
-<a id="more"></a>
-
-<h2 id="好话"><a href="#好话" class="headerlink" title="好话"></a>好话</h2><blockquote>
-<p>听见好话一定要多长心眼，好话会让你做出的决策违背初心，待后知后觉，晚矣。</p>
-</blockquote>
-<p>投票软件多少是有漏洞的，从开发人员的角度利用漏洞刷票是很容易被发现，且破坏比赛的公平度的。很多亲人朋友呢很支持我，感觉一个投票闹得挺辛苦的。就不得不在群里向主办方反馈，不一会儿开发投票软件公司的老总进来了，也不说是解决问题。</p>
-<p>主办方第一轮给出的结果，随便找个理由，说没有刷票行为。<br>网络投票看是否刷票，一般都是看着某一天投票数是否波动过大，尤其是最后一天，或者票数数量过多，咱们开始怀疑刷票。然而这都只是怀疑，技术部门要是不想解决也是没办法的。<br>然而当投票网站上有访问量和投票数那就不一样了，当投票数大于访问量？这是什么怪物？页面都没被访问，你又是怎么点击投票按钮的，这就是异常刷票了。</p>
-<p>这种情况主办方如果不证明是系统漏洞，抑或是抓出一个有刷票行为的队伍来，那这个主办方麻烦就大了，网络舆情还是很管用的。</p>
-<p>后面主办方不得不抓出了一个，五天投票，前面四天总共几十票，最后一天下午飙几万的队伍。据肉眼观察肯定是不止一个的。</p>
-<p>但是同时那个老总私聊到我，简单的说“本科进决赛很优秀了，有时间聊一下”。再加上我本身对这软件公司是没有敌意的，因为系统安全性技术比较难，本身抱着的态度就是能找出刷票的队伍，解决问题就行了。</p>
-<p>他这一句话导致的最终结果就是，简单的将刷票最厉害的队伍解决了，而放下了第一轮结果所公布的无赖行为和更多的不公平性的愤懑。</p>
-<p>一句好话让我对公平性诉求，从解决，到最简单的解决。</p>
-<h2 id="解决生活中的难题"><a href="#解决生活中的难题" class="headerlink" title="解决生活中的难题"></a>解决生活中的难题</h2><p>倘若有条件自己给自己安排一件难题，例如考研究生、公务员，不是生活强加给我们的，那便是为了多一种生活体验。抱着解决问题的心态去攻坚克难，坚持下去完整的度过有计划的每一天便是一种胜利。</p>
-<h2 id="为什么不同"><a href="#为什么不同" class="headerlink" title="为什么不同"></a>为什么不同</h2><p>假若我们抱怨，抱怨自己没有出生在名门旺族，抱怨自己没有一个好看的脸蛋。然而人之所以是自己，正是源于这些后天难以更改的不同之处。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>人生</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>由简入深配置 iTem2 终端</title>
     <url>/iterm2/</url>
     <content><![CDATA[<h1 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h1><p>brew 安装 zsh<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install zsh</span><br><span class="line">sudo chsh -s &#x2F;usr&#x2F;local&#x2F;bin&#x2F;zsh</span><br></pre></td></tr></table></figure><br>从 zsh 切换回 bash<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chsh -s &#x2F;bin&#x2F;bash</span><br></pre></td></tr></table></figure></p>
@@ -523,36 +526,6 @@
       </tags>
   </entry>
   <entry>
-    <title>journal-2019-02-15</title>
-    <url>/journal-2019-02-15/</url>
-    <content><![CDATA[<h2 id="小孩成长与人才发展"><a href="#小孩成长与人才发展" class="headerlink" title="小孩成长与人才发展"></a>小孩成长与人才发展</h2><p>小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。</p>
-<p>孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。</p>
-<p>国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。</p>
-<p>参考：<a href="http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm" target="_blank" rel="noopener">《基层减负 不是简单做减法》《求是》2019/03 </a></p>
-]]></content>
-      <categories>
-        <category>日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>切换 Shell 需谨慎</title>
-    <url>/linux-user/</url>
-    <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
-<a id="more"></a>
-
-<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><p>执行<code>chsh -s /bin/zsh</code>命令切换成功。<br>自此导致 root 用户无法验证登陆。</p>
-<p>庆幸这台服务器不止一个用户。<br>通过普通用户登陆服务器，执行 su 命令显示如下：<br><img data-src="https://images.xyang.xin/2018-10/1539333225.png" alt="执行 su 命令"></p>
-<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>解决办法如下：<br>sudo vim /etc/passwd 将 root 用户所对应的 Shell 改回 Bash。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>一台服务器应该有至少两个以上的用户。<br>下次再遇到一次这样的服务器😢再去具体研究一下。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>Shell</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>编程语言之 Java</title>
     <url>/java-language/</url>
     <content><![CDATA[<h1 id="Integer-parseInt-与-Integer-valueOf-的比较"><a href="#Integer-parseInt-与-Integer-valueOf-的比较" class="headerlink" title="Integer.parseInt() 与 Integer.valueOf() 的比较"></a>Integer.parseInt() 与 Integer.valueOf() 的比较</h1><p>Integer.parseInt() 和 Integer.valueOf() 都是用来 将String转换为Int的。</p>
@@ -576,17 +549,34 @@
       </tags>
   </entry>
   <entry>
-    <title>鲁迅</title>
-    <url>/luxun/</url>
-    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
-<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
+    <title>切换 Shell 需谨慎</title>
+    <url>/linux-user/</url>
+    <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
+<a id="more"></a>
+
+<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><p>执行<code>chsh -s /bin/zsh</code>命令切换成功。<br>自此导致 root 用户无法验证登陆。</p>
+<p>庆幸这台服务器不止一个用户。<br>通过普通用户登陆服务器，执行 su 命令显示如下：<br><img data-src="https://images.xyang.xin/2018-10/1539333225.png" alt="执行 su 命令"></p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>解决办法如下：<br>sudo vim /etc/passwd 将 root 用户所对应的 Shell 改回 Bash。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>一台服务器应该有至少两个以上的用户。<br>下次再遇到一次这样的服务器😢再去具体研究一下。</p>
 ]]></content>
       <categories>
-        <category>人文修养</category>
+        <category>信息技术</category>
       </categories>
       <tags>
-        <tag>鲁迅</tag>
+        <tag>Shell</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>journal-2019-02-15</title>
+    <url>/journal-2019-02-15/</url>
+    <content><![CDATA[<h2 id="小孩成长与人才发展"><a href="#小孩成长与人才发展" class="headerlink" title="小孩成长与人才发展"></a>小孩成长与人才发展</h2><p>小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。</p>
+<p>孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。</p>
+<p>国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。</p>
+<p>参考：<a href="http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm" target="_blank" rel="noopener">《基层减负 不是简单做减法》《求是》2019/03 </a></p>
+]]></content>
+      <categories>
+        <category>日志</category>
+      </categories>
   </entry>
   <entry>
     <title>解决远程服务器重装系统导致的 mac 终端无法连接的问题</title>
@@ -672,44 +662,95 @@
       </tags>
   </entry>
   <entry>
-    <title>Mac 小问题 —— iCloud 未响应</title>
-    <url>/macos-problems/</url>
-    <content><![CDATA[<p>使用 iCloud Drive 将文件上传到云端，防止数据丢失，同时可以实现多台设备的协同工作。但是在使用 iCloud Drive 的过程中我遇到了程序未响应，iCoud 文件上传阻塞的问题。</p>
+    <title>鲁迅</title>
+    <url>/luxun/</url>
+    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
+<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>鲁迅</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习 CSS 时忽视的几个知识点</title>
+    <url>/note-hings-i-wish-id-known-about-css/</url>
+    <content><![CDATA[<p><a href="https://cssfordesigners.com/articles/things-i-wish-id-known-about-css" target="_blank" rel="noopener">Things I Wish I’d Known About CSS</a></p>
+<p>文章的作者以老式的方式构建网站：查看网站源代码、复制然后修改，而没有经过阅读书籍等系统性的学习。作者在 1999 年就使用这种方式了，当时写的还是这种代码： <code>&lt;font size=&quot;4&quot; color=&quot;#000000&quot;&gt;</code>。而当 CSS 面世的时候，作者没有改变自己的学习方法，而错过了太多基本知识。文章主要介绍的是作者希望早点学到的东西。</p>
 <a id="more"></a>
 
-<h2 id="Finder-无法打开或持续未响应"><a href="#Finder-无法打开或持续未响应" class="headerlink" title="Finder 无法打开或持续未响应"></a>Finder 无法打开或持续未响应</h2><p>解决办法：<br>磁盘工具 -&gt; Macintosh HD（系统盘）-&gt; 急救<br>磁盘工具在以下路径：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">/System/Applications/Utilities/Disk Utility.app</span><br></pre></td></tr></table></figure>
+<h2 id="Block-inline-and-inline-block"><a href="#Block-inline-and-inline-block" class="headerlink" title="Block, inline and inline-block"></a>Block, inline and inline-block</h2><ul>
+<li><code>block</code> 元素水平扩展以占据一整行（就像标题）。我们可以对它们运用垂直 margin；</li>
+<li><code>inline</code> 元素仅水平扩展到足以容纳其内容（就像 <code>strong</code> 或者 <code>em</code> 元素）；</li>
+<li><code>inline-block</code> 元素像 <code>inline</code> 元素，但是你可以对它们运用垂直的 margin（对 <code>button</code> 之类的元素有用）；</li>
+</ul>
+<h2 id="图片是内联的"><a href="#图片是内联的" class="headerlink" title="图片是内联的"></a>图片是内联的</h2><p><code>img</code> 元素默认是内联的，一般来说没什么问题，但是在尝试定位图像或添加垂直边距时会引起混乱。建议添加如下规则：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123;<span class="attribute">display</span>: block;&#125;</span><br></pre></td></tr></table></figure>
+<p>也可以添加 <code>max-width: 100%;</code> 以阻止块级元素突破容器。<br><a href="https://github.com/necolas/normalize.css/blob/master/normalize.css" target="_blank" rel="noopener">normalize.css</a> 里面没有，我觉得是否添加智者见智。</p>
+<h2 id="计算宽度"><a href="#计算宽度" class="headerlink" title="计算宽度"></a>计算宽度</h2><p>默认情况下，盒子的宽度 / 高度是通过将以下各项相加得出的：</p>
+<ul>
+<li>Content area（内容）</li>
+<li>Padding area（内边距）</li>
+<li>Border area（边框）</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.box-class</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">2em</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">0.1rem</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>包含 <code>.box-class</code> 类的属性的盒子的宽度就是 <code>50% + 4em + 0.2rem</code><br>默认情况下，我们用 css 设置的 <code>width</code> 属性指的仅仅只是 Content area（内容）部分的宽度。</p>
+<p>下列代码将应用于所有元素，使得 <code>width</code> 属性设置的为上述三者相加的值。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">* &#123;<span class="attribute">box-sizing</span>: border-box;&#125;</span><br></pre></td></tr></table></figure>
 
-<p>急救操作不会对你的电脑造成任何损害，甚至还有所优化。</p>
-<h2 id="打开-iCloud-云盘文件夹极其缓慢"><a href="#打开-iCloud-云盘文件夹极其缓慢" class="headerlink" title="打开 iCloud 云盘文件夹极其缓慢"></a>打开 iCloud 云盘文件夹极其缓慢</h2><p>遇到的问题是：在访达中点击iCloud云盘系统就会出现转圈圈的标志，使用快捷键<code>command+alt+esc</code>（强制退出应用程序）就会看到访达处于未响应状态，这个时间会持续很久。</p>
-<p>解决办法：<br>系统偏好 -&gt; Apple ID -&gt; 取消勾选iCloud云盘 -&gt; 保留副本 -&gt; 重新勾选iCloud云盘</p>
-<p>此操作造成的后果是mac需要很长的一段时间和云端同步，这取决于你icloud存储的文件大小，并不会影响其他。</p>
-<h2 id="文件无法上传排查"><a href="#文件无法上传排查" class="headerlink" title="文件无法上传排查"></a>文件无法上传排查</h2><p>iCloud 连续几天几夜也没同步完，经过诸多排查，例如，修改 DNS：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">114.114.114.114</span><br><span class="line">8.8.8.8</span><br></pre></td></tr></table></figure>
-<p>不仅没起作用，还影响了访问其他网页。最后删除 DNS 配置，刷新 DNS 缓存：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ dscacheutil -flushcache</span><br><span class="line">$ sudo killall -HUP mDNSResponder</span><br></pre></td></tr></table></figure>
+<h2 id="Padding-amp-margin-不一样"><a href="#Padding-amp-margin-不一样" class="headerlink" title="Padding &amp; margin 不一样"></a>Padding &amp; margin 不一样</h2><p>CSS 盒模型还有一个重要的组成部分 <code>margin</code>。</p>
+<ul>
+<li><code>margin</code> 是元素之间的间隔</li>
+<li><code>padding</code> 是内容和边框之间的间隔</li>
+</ul>
+<h2 id="Margins-崩塌"><a href="#Margins-崩塌" class="headerlink" title="Margins 崩塌"></a>Margins 崩塌</h2><p>当边距崩塌时，它们将合并在一起，从而使两个元素之间的间隔变为两个边距中较大的一个。较小的边距基本上结束在较大的边距之内。</p>
+<p>当两个边距相遇时，较大的边距会吸收较小的边距。如果边距值相同，则它们会相互吸收。</p>
+<p>假设我们有两个相邻的 block 元素，上面一个设置 <code>margin-bottom: 1em</code> 下面一个设置 <code>margin-top: 1.5em</code>，这两个元素间的间距将合并为 <code>1.5em</code> 而不是 <code>1em + 1.5em</code>。</p>
+<blockquote>
+<p>Note: 当父元素设置为 <code>display: grid</code> 或 <code>display: flex</code> 时，边距不会崩塌。</p>
+</blockquote>
+<h2 id="浏览器具有默认样式表"><a href="#浏览器具有默认样式表" class="headerlink" title="浏览器具有默认样式表"></a>浏览器具有默认样式表</h2><p>CSS(Cascading Style Sheets) 是层叠样式表。我们必须记住，始终存在默认的浏览器样式表。它会在任何自定义样式表之前加载，而我们可以很轻易的覆盖它们。</p>
+<p>声明的样式因浏览器而异。抹平差异的方法主要有两种，任选其一：</p>
+<ol>
+<li>CSS 重置，将所有默认样式都设置为“零”，例如 <a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank" rel="noopener">https://meyerweb.com/eric/tools/css/reset/</a></li>
+<li>normalize.css, 对默认样式进行微调，使它们在不同的浏览器中具有相似的外观：<a href="http://necolas.github.io/normalize.css/" target="_blank" rel="noopener">http://necolas.github.io/normalize.css/</a></li>
+</ol>
+<h2 id="任何地方都使用相对单位"><a href="#任何地方都使用相对单位" class="headerlink" title="任何地方都使用相对单位"></a>任何地方都使用相对单位</h2><p>我们可以将 <code>em</code> 用于 <code>@media</code> 查询和垂直边距，而将 <code>rem</code> 用于一致的边框宽度。</p>
+<h2 id="before-和-after-需要-content"><a href="#before-和-after-需要-content" class="headerlink" title="::before 和 ::after 需要 content"></a>::before 和 ::after 需要 content</h2><p>当我们使用 <code>::before</code> 或者 <code>::after</code> 伪元素时，需要添加 <code>content</code> 属性，即使它的值为空白：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.some-class::before &#123;content: &#39;&#39;;&#125;</span><br></pre></td></tr></table></figure>
+<p>如果不包含此属性，伪元素将不会显示。</p>
+<h2 id="ch-单位"><a href="#ch-单位" class="headerlink" title="ch 单位"></a>ch 单位</h2><p>ch(character)，大致基于一行的字符数来设置宽度的时候 <code>ch</code> 很有用。</p>
+<p>1ch 就是数字 0 的宽度。</p>
+<p>1ch 通常比平均字符宽度宽 20％到 30％。</p>
+<h2 id="Normal-flow（正常布局流）"><a href="#Normal-flow（正常布局流）" class="headerlink" title="Normal flow（正常布局流）"></a>Normal flow（正常布局流）</h2><p>“normal flow” 的意思是出现在页面上的元素和在源代码中实现的方式相同。<br>例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;h2&gt;Heading&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;p&gt;Paragraph text.&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure>
+<p>我们期望的是 <code>&lt;h2&gt;Heading&lt;/h2&gt;</code> 出现在 <code>&lt;p&gt;Paragraph text.&lt;/p&gt;</code> 的之前 / 顶部。这就是 <em>normal flow</em>。</p>
+<p>而绝对定位和浮动就脱离了 <em>normal flow</em>。</p>
+<h2 id="风格化-focus-状态"><a href="#风格化-focus-状态" class="headerlink" title="风格化 :focus 状态"></a>风格化 :focus 状态</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: black;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>,</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:focus</span>,</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我们最好为 <code>:focus</code> 状态添加不同的样式。因为例如鼠标悬停或者已经激活，用户再按[tab]键，<code>:focus</code>就不起作用了。</p>
+<p>为防止晚出现的规则覆盖前面出现的规则，按照如下顺序定义规则：<br>link、visited、focus、hover、active（缩写为 LVPHA）<br>或者 LVHFA 的顺序也是可以的。</p>
+<h2 id="nth-child"><a href="#nth-child" class="headerlink" title=":nth-child()"></a>:nth-child()</h2><p><code>p:nth-child()</code>计算所有同级元素<br><code>p:nth-of-type()</code>仅计算同级的p元素</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>:nth-child()<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph one.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph two.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph three.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph four.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph five.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph six.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>最后排查出是因为，我开发代码的工作目录都设置在了 iCloud 云盘里，文件体积虽然不大，却有上万个细小的文件，不知道是不是 iCloud 设置了某种限制，导致上传阻塞，最后将代码都移出 iCloud 问题就解决了。</p>
-<p>后面又卡住了，收获到一个命令通过这个命令可以查看 iCloud 同步进度：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ brctl log -w</span><br></pre></td></tr></table></figure>
-<p>虽然没看懂运行的是什么，但是能够看到一直有东西在执行。<br>通过以下三个命令对 icloud 进行重置：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 杀死icloud同步进程</span><br><span class="line">$ killall bird</span><br><span class="line"># 删除 icloud 的配置文件</span><br><span class="line">$ rm -rf ~&#x2F;Library&#x2F;Application\ Support&#x2F;CloudDocs</span><br><span class="line"># 立刻关机</span><br><span class="line">$ shutdown -r now</span><br></pre></td></tr></table></figure>
-<p>不必担心文件丢失，效果与关闭重新关闭icloud同步类似。重新开启电脑后可以通过前面说到的命令查看 iCloud 同步的进度。</p>
-<p>也可以直接使用下面的脚本：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;bash</span><br><span class="line"></span><br><span class="line">if [[ $EUID -eq 0 ]]; then</span><br><span class="line">    echo &quot;Killing bird.&quot;</span><br><span class="line">    killall bird</span><br><span class="line">    echo &quot;Removing CloudDocs&quot;</span><br><span class="line">    cd ~&#x2F;Library&#x2F;Application\ Support</span><br><span class="line">    rm -rf CloudDocs</span><br><span class="line">    echo &quot;Immediately rebooting!&quot;</span><br><span class="line">    shutdown -r now</span><br><span class="line">else</span><br><span class="line">    echo &quot;</span><br><span class="line">    This script needs run as sudo. </span><br><span class="line">    Use CAUTION when doing so.</span><br><span class="line">    You accept full responsibility using this script.</span><br><span class="line">    You should know what it&#39;s doing BEFORE you run it.</span><br><span class="line">    &quot;</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
-
-<p>不必南辕北辙，越过中国的防火墙，iCloud 中国用户的文件存储在贵州云，而网上所谓的要获取验证文件，获取验证文件有香港的服务器。最后的任务就是等，我是让电脑喝着咖啡持续跑了接近一整天才同步完成的。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
-<li><a href="https://apple.stackexchange.com/questions/313716/icloud-drive-wont-sync-on-mac" target="_blank" rel="noopener">macos - iCloud Drive Won’t Sync on Mac - Ask Different</a></li>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">:nth-child(even)</span> &#123;</span><br><span class="line">	<span class="attribute">background</span>: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img data-src="http://images.xyang.xin/2020%2F07%2F25%2F1595610186.png" alt="1595610186.png"></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">:nth-of-type(even)</span> &#123;</span><br><span class="line">	<span class="attribute">background</span>: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img data-src="http://images.xyang.xin/2020%2F07%2F25%2F1595610292.png" alt="1595610292.png"></p>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>掌握CSS的基础知识很容易，但是了解事情的方式和原因对编写更好的CSS至关重要。</p>
+<p>花时间学习这些东西不仅帮助我更快地编写CSS，而且还使我的代码更高效，更灵活。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://cssfordesigners.com/articles/things-i-wish-id-known-about-css" target="_blank" rel="noopener">Things I Wish I’d Known About CSS</a></li>
+<li>《HTML5 与 CSS3 基础教程 (第 8 版)》</li>
 </ul>
 ]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>MacOS</tag>
-        <tag>Finder</tag>
-        <tag>iCloud</tag>
+        <tag>css</tag>
+        <tag>note</tag>
       </tags>
   </entry>
   <entry>
@@ -844,85 +885,6 @@
       </categories>
       <tags>
         <tag>包管理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学习 CSS 时忽视的几个知识点</title>
-    <url>/note-hings-i-wish-id-known-about-css/</url>
-    <content><![CDATA[<p><a href="https://cssfordesigners.com/articles/things-i-wish-id-known-about-css" target="_blank" rel="noopener">Things I Wish I’d Known About CSS</a></p>
-<p>文章的作者以老式的方式构建网站：查看网站源代码、复制然后修改，而没有经过阅读书籍等系统性的学习。作者在 1999 年就使用这种方式了，当时写的还是这种代码： <code>&lt;font size=&quot;4&quot; color=&quot;#000000&quot;&gt;</code>。而当 CSS 面世的时候，作者没有改变自己的学习方法，而错过了太多基本知识。文章主要介绍的是作者希望早点学到的东西。</p>
-<a id="more"></a>
-
-<h2 id="Block-inline-and-inline-block"><a href="#Block-inline-and-inline-block" class="headerlink" title="Block, inline and inline-block"></a>Block, inline and inline-block</h2><ul>
-<li><code>block</code> 元素水平扩展以占据一整行（就像标题）。我们可以对它们运用垂直 margin；</li>
-<li><code>inline</code> 元素仅水平扩展到足以容纳其内容（就像 <code>strong</code> 或者 <code>em</code> 元素）；</li>
-<li><code>inline-block</code> 元素像 <code>inline</code> 元素，但是你可以对它们运用垂直的 margin（对 <code>button</code> 之类的元素有用）；</li>
-</ul>
-<h2 id="图片是内联的"><a href="#图片是内联的" class="headerlink" title="图片是内联的"></a>图片是内联的</h2><p><code>img</code> 元素默认是内联的，一般来说没什么问题，但是在尝试定位图像或添加垂直边距时会引起混乱。建议添加如下规则：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123;<span class="attribute">display</span>: block;&#125;</span><br></pre></td></tr></table></figure>
-<p>也可以添加 <code>max-width: 100%;</code> 以阻止块级元素突破容器。<br><a href="https://github.com/necolas/normalize.css/blob/master/normalize.css" target="_blank" rel="noopener">normalize.css</a> 里面没有，我觉得是否添加智者见智。</p>
-<h2 id="计算宽度"><a href="#计算宽度" class="headerlink" title="计算宽度"></a>计算宽度</h2><p>默认情况下，盒子的宽度 / 高度是通过将以下各项相加得出的：</p>
-<ul>
-<li>Content area（内容）</li>
-<li>Padding area（内边距）</li>
-<li>Border area（边框）</li>
-</ul>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.box-class</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">2em</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">0.1rem</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>包含 <code>.box-class</code> 类的属性的盒子的宽度就是 <code>50% + 4em + 0.2rem</code><br>默认情况下，我们用 css 设置的 <code>width</code> 属性指的仅仅只是 Content area（内容）部分的宽度。</p>
-<p>下列代码将应用于所有元素，使得 <code>width</code> 属性设置的为上述三者相加的值。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">* &#123;<span class="attribute">box-sizing</span>: border-box;&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Padding-amp-margin-不一样"><a href="#Padding-amp-margin-不一样" class="headerlink" title="Padding &amp; margin 不一样"></a>Padding &amp; margin 不一样</h2><p>CSS 盒模型还有一个重要的组成部分 <code>margin</code>。</p>
-<ul>
-<li><code>margin</code> 是元素之间的间隔</li>
-<li><code>padding</code> 是内容和边框之间的间隔</li>
-</ul>
-<h2 id="Margins-崩塌"><a href="#Margins-崩塌" class="headerlink" title="Margins 崩塌"></a>Margins 崩塌</h2><p>当边距崩塌时，它们将合并在一起，从而使两个元素之间的间隔变为两个边距中较大的一个。较小的边距基本上结束在较大的边距之内。</p>
-<p>当两个边距相遇时，较大的边距会吸收较小的边距。如果边距值相同，则它们会相互吸收。</p>
-<p>假设我们有两个相邻的 block 元素，上面一个设置 <code>margin-bottom: 1em</code> 下面一个设置 <code>margin-top: 1.5em</code>，这两个元素间的间距将合并为 <code>1.5em</code> 而不是 <code>1em + 1.5em</code>。</p>
-<blockquote>
-<p>Note: 当父元素设置为 <code>display: grid</code> 或 <code>display: flex</code> 时，边距不会崩塌。</p>
-</blockquote>
-<h2 id="浏览器具有默认样式表"><a href="#浏览器具有默认样式表" class="headerlink" title="浏览器具有默认样式表"></a>浏览器具有默认样式表</h2><p>CSS(Cascading Style Sheets) 是层叠样式表。我们必须记住，始终存在默认的浏览器样式表。它会在任何自定义样式表之前加载，而我们可以很轻易的覆盖它们。</p>
-<p>声明的样式因浏览器而异。抹平差异的方法主要有两种，任选其一：</p>
-<ol>
-<li>CSS 重置，将所有默认样式都设置为“零”，例如 <a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank" rel="noopener">https://meyerweb.com/eric/tools/css/reset/</a></li>
-<li>normalize.css, 对默认样式进行微调，使它们在不同的浏览器中具有相似的外观：<a href="http://necolas.github.io/normalize.css/" target="_blank" rel="noopener">http://necolas.github.io/normalize.css/</a></li>
-</ol>
-<h2 id="任何地方都使用相对单位"><a href="#任何地方都使用相对单位" class="headerlink" title="任何地方都使用相对单位"></a>任何地方都使用相对单位</h2><p>我们可以将 <code>em</code> 用于 <code>@media</code> 查询和垂直边距，而将 <code>rem</code> 用于一致的边框宽度。</p>
-<h2 id="before-和-after-需要-content"><a href="#before-和-after-需要-content" class="headerlink" title="::before 和 ::after 需要 content"></a>::before 和 ::after 需要 content</h2><p>当我们使用 <code>::before</code> 或者 <code>::after</code> 伪元素时，需要添加 <code>content</code> 属性，即使它的值为空白：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.some-class::before &#123;content: &#39;&#39;;&#125;</span><br></pre></td></tr></table></figure>
-<p>如果不包含此属性，伪元素将不会显示。</p>
-<h2 id="ch-单位"><a href="#ch-单位" class="headerlink" title="ch 单位"></a>ch 单位</h2><p>ch(character)，大致基于一行的字符数来设置宽度的时候 <code>ch</code> 很有用。</p>
-<p>1ch 就是数字 0 的宽度。</p>
-<p>1ch 通常比平均字符宽度宽 20％到 30％。</p>
-<h2 id="Normal-flow（正常布局流）"><a href="#Normal-flow（正常布局流）" class="headerlink" title="Normal flow（正常布局流）"></a>Normal flow（正常布局流）</h2><p>“normal flow” 的意思是出现在页面上的元素和在源代码中实现的方式相同。<br>例如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;h2&gt;Heading&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;p&gt;Paragraph text.&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure>
-<p>我们期望的是 <code>&lt;h2&gt;Heading&lt;/h2&gt;</code> 出现在 <code>&lt;p&gt;Paragraph text.&lt;/p&gt;</code> 的之前 / 顶部。这就是 <em>normal flow</em>。</p>
-<p>而绝对定位和浮动就脱离了 <em>normal flow</em>。</p>
-<h2 id="风格化-focus-状态"><a href="#风格化-focus-状态" class="headerlink" title="风格化 :focus 状态"></a>风格化 :focus 状态</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: black;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>,</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:focus</span>,</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>我们最好为 <code>:focus</code> 状态添加不同的样式。因为例如鼠标悬停或者已经激活，用户再按[tab]键，<code>:focus</code>就不起作用了。</p>
-<p>为防止晚出现的规则覆盖前面出现的规则，按照如下顺序定义规则：<br>link、visited、focus、hover、active（缩写为 LVPHA）<br>或者 LVHFA 的顺序也是可以的。</p>
-<h2 id="nth-child"><a href="#nth-child" class="headerlink" title=":nth-child()"></a>:nth-child()</h2><p><code>p:nth-child()</code>计算所有同级元素<br><code>p:nth-of-type()</code>仅计算同级的p元素</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>:nth-child()<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph one.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph two.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph three.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph four.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph five.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph six.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">:nth-child(even)</span> &#123;</span><br><span class="line">	<span class="attribute">background</span>: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img data-src="http://images.xyang.xin/2020%2F07%2F25%2F1595610186.png" alt="1595610186.png"></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">:nth-of-type(even)</span> &#123;</span><br><span class="line">	<span class="attribute">background</span>: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img data-src="http://images.xyang.xin/2020%2F07%2F25%2F1595610292.png" alt="1595610292.png"></p>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>掌握CSS的基础知识很容易，但是了解事情的方式和原因对编写更好的CSS至关重要。</p>
-<p>花时间学习这些东西不仅帮助我更快地编写CSS，而且还使我的代码更高效，更灵活。</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://cssfordesigners.com/articles/things-i-wish-id-known-about-css" target="_blank" rel="noopener">Things I Wish I’d Known About CSS</a></li>
-<li>《HTML5 与 CSS3 基础教程 (第 8 版)》</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>css</tag>
-        <tag>note</tag>
       </tags>
   </entry>
   <entry>
@@ -1097,57 +1059,24 @@
       </categories>
   </entry>
   <entry>
-    <title>Vim 自动补全之 YCM</title>
-    <url>/shell-java/</url>
-    <content><![CDATA[<p>IDEA 打开得太慢了，我需要一款轻量级的 IDE，不想装其他乱七八糟的编译器咋办？搞事情！</p>
+    <title>程序中的 “脚手架”</title>
+    <url>/scaffold/</url>
+    <content><![CDATA[<blockquote>
+<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
+</blockquote>
+<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
 <a id="more"></a>
-<h2 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h2><p>sublime 通过简单的配置后可以实现 java 代码的高亮提示和编译功能，并且大多编译错误也能基本上精确到行。<br>然而 sublime 内置的终端无法输入，虽然在日常的算法中输入操作很少涉及，, 但还是很不爽。</p>
-<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>这里需要一定的 Vim 基础，新手请执行 <code>vimtutor</code> 查看 Vim 官方教程，再继续往后看。<br>在终端通过 java 命令即可实现 java 代码的编译与运行。<br>vim 不过起到的是编辑器的作用。<br>对于编辑器我们不仅有高亮的基本要求，同样也需要基本的代码补全功能, Vim 的 YCM 插件能较好的实现代码补全功能。<br>下面介绍通过 vim 的 vim-plug 插件管理器 来安装 YCM 。</p>
-<h2 id="预备工作"><a href="#预备工作" class="headerlink" title="预备工作"></a>预备工作</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br><span class="line">brew install cmake vim</span><br></pre></td></tr></table></figure>
 
-<h2 id="vim-plug-安装"><a href="#vim-plug-安装" class="headerlink" title="vim-plug 安装"></a>vim-plug 安装</h2><p><a href="https://github.com/junegunn/vim-plug" target="_blank" rel="noopener">junegunn/vim-plug</a></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -fLo ~/.vim/autoload/plug.vim --create-dirs \</span><br><span class="line">    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</span><br></pre></td></tr></table></figure>
-<h2 id="安装-YCM"><a href="#安装-YCM" class="headerlink" title="安装 YCM"></a>安装 YCM</h2><p><a href="https://github.com/Valloric/YouCompleteMe" target="_blank" rel="noopener">YCM Github</a></p>
-<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>YCM 可通过 vim-plug 下载，而安装使用则需要进一步的编译。</p>
-<p>在 .vimrc 文件中添加 <code>Plug &#39;Valloric/YouCompleteMe&#39;</code> 再执行 :PluginInstall 即可。</p>
-<h3 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h3><p>YCM 基于 cmake 进行编译的，所以在安装之前如下命令先通过 brew 安装 cmake。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">python3 .&#x2F;install.py --java-completer</span><br></pre></td></tr></table></figure>
-<p>请使用 python3 。</p>
-<p>安装好之后，由于我的 python3 缺乏很多依赖性，通过以下命令检验 python 所缺乏的依赖。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd</span><br><span class="line">cp ycmd&#x2F;default_settings.json . &amp; python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
-<p>如果输出如下，是 python 环境的问题考虑重启然后重装：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[1]    8629 segmentation fault  python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
-<p>若有如下报错：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ModuleNotFoundError: No module named &#39;bottle&#39;</span><br><span class="line">ModuleNotFoundError: No module named &#39;waitress&#39;</span><br></pre></td></tr></table></figure>
-<p>逐句执行 <code>pip3 install bottle</code> <code>pip3 install waitress</code>即可解决。<br>如果显示是：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">No module named &#39;ycm_core&#39;</span><br></pre></td></tr></table></figure>
-<p>是没有问题的</p>
-<h2 id="YCM-安装-C-family-的自动补全"><a href="#YCM-安装-C-family-的自动补全" class="headerlink" title="YCM 安装 C-family 的自动补全"></a>YCM 安装 C-family 的自动补全</h2><h3 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">python3 .&#x2F;install.py --clang-completer</span><br></pre></td></tr></table></figure>
-<h3 id="安装-ycm-gennerator"><a href="#安装-ycm-gennerator" class="headerlink" title="安装 ycm-gennerator"></a>安装 ycm-gennerator</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Plugin &#39;rdnetto&#x2F;YCM-Generator&#39;</span><br></pre></td></tr></table></figure>
-<h3 id="生成-ycm-extra-conf-py-文件到-YCM-中"><a href="#生成-ycm-extra-conf-py-文件到-YCM-中" class="headerlink" title="生成 .ycm_extra_conf.py 文件到 YCM 中"></a>生成 .ycm_extra_conf.py 文件到 YCM 中</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python3 .ycm_extra_conf.py ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd</span><br></pre></td></tr></table></figure>
-<h3 id="在-vimrc-中添加"><a href="#在-vimrc-中添加" class="headerlink" title="在 ~/.vimrc 中添加"></a>在 ~/.vimrc 中添加</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let g:ycm_global_ycm_extra_conf &#x3D; &#39;～&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd&#x2F;.ycm_extra_conf.py&#39;</span><br></pre></td></tr></table></figure>
-
-<h2 id="go-语言"><a href="#go-语言" class="headerlink" title="go 语言"></a>go 语言</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --go-completer</span><br></pre></td></tr></table></figure>
-
-<h2 id="其他语言参数"><a href="#其他语言参数" class="headerlink" title="其他语言参数"></a>其他语言参数</h2><ul>
-<li>C family support: <code>python3 ./install.py --clang-completer</code></li>
-<li>C# support: <code>python3 ./install.py --cs-completer</code>（install Mono with Homebrew or by downloading the <a href="http://www.mono-project.com/docs/getting-started/install/mac/" target="_blank" rel="noopener">Mono macOS package</a> ）</li>
-<li>Go support: <code>python3 ./install.py --go-completer</code> </li>
-<li>JavaScript and TypeScript support: <code>python3 ./install.py --ts-completer</code> </li>
-<li>Rust support: <code>python3 ./install.py --rust-completer</code></li>
-<li>Java support: <code>python3 ./install.py --java-completer</code></li>
+<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
+<li><a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener">facebook/create-react-app</a></li>
+<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
 </ul>
-<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:PlugUpdate</span><br></pre></td></tr></table></figure>
-<p>或</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">git clean -f</span><br><span class="line">git pull</span><br><span class="line">git submodule update --recursive --init</span><br><span class="line">.&#x2F;install.py --go-completer</span><br></pre></td></tr></table></figure>
-
-<h2 id="错误解决"><a href="#错误解决" class="headerlink" title="错误解决"></a>错误解决</h2><p>升级 catalina 后 brew 安装的 python3 执行异常，解决方案如下：<br><a href="https://forums.developer.apple.com/thread/119429" target="_blank" rel="noopener">My application crashed with invalid load of lib… |Apple Developer Forums</a></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;zsh</span><br><span class="line">brew update &amp; brew upgrade &amp; brew install openssl</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;openssl&#x2F;1.0.2t&#x2F;lib</span><br><span class="line">sudo cp libssl.1.0.0.dylib libcrypto.1.0.0.dylib &#x2F;usr&#x2F;local&#x2F;lib&#x2F;</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;lib</span><br><span class="line">mv libssl.dylib libssl_bak.dylib</span><br><span class="line">mv libcrypto.dylib libcrypto_bak.dylib</span><br><span class="line">sudo ln -s libssl.1.0.0.dylib libssl.dylib</span><br><span class="line">sudo ln -s libcrypto.1.0.0.dylib libcrypto.dylib</span><br></pre></td></tr></table></figure>]]></content>
+]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>开发工具</tag>
+        <tag>信息技术</tag>
       </tags>
   </entry>
   <entry>
@@ -1244,6 +1173,116 @@
       </tags>
   </entry>
   <entry>
+    <title>Vim 自动补全之 YCM</title>
+    <url>/shell-java/</url>
+    <content><![CDATA[<p>IDEA 打开得太慢了，我需要一款轻量级的 IDE，不想装其他乱七八糟的编译器咋办？搞事情！</p>
+<a id="more"></a>
+<h2 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h2><p>sublime 通过简单的配置后可以实现 java 代码的高亮提示和编译功能，并且大多编译错误也能基本上精确到行。<br>然而 sublime 内置的终端无法输入，虽然在日常的算法中输入操作很少涉及，, 但还是很不爽。</p>
+<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>这里需要一定的 Vim 基础，新手请执行 <code>vimtutor</code> 查看 Vim 官方教程，再继续往后看。<br>在终端通过 java 命令即可实现 java 代码的编译与运行。<br>vim 不过起到的是编辑器的作用。<br>对于编辑器我们不仅有高亮的基本要求，同样也需要基本的代码补全功能, Vim 的 YCM 插件能较好的实现代码补全功能。<br>下面介绍通过 vim 的 vim-plug 插件管理器 来安装 YCM 。</p>
+<h2 id="预备工作"><a href="#预备工作" class="headerlink" title="预备工作"></a>预备工作</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br><span class="line">brew install cmake vim</span><br></pre></td></tr></table></figure>
+
+<h2 id="vim-plug-安装"><a href="#vim-plug-安装" class="headerlink" title="vim-plug 安装"></a>vim-plug 安装</h2><p><a href="https://github.com/junegunn/vim-plug" target="_blank" rel="noopener">junegunn/vim-plug</a></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -fLo ~/.vim/autoload/plug.vim --create-dirs \</span><br><span class="line">    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</span><br></pre></td></tr></table></figure>
+<h2 id="安装-YCM"><a href="#安装-YCM" class="headerlink" title="安装 YCM"></a>安装 YCM</h2><p><a href="https://github.com/Valloric/YouCompleteMe" target="_blank" rel="noopener">YCM Github</a></p>
+<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>YCM 可通过 vim-plug 下载，而安装使用则需要进一步的编译。</p>
+<p>在 .vimrc 文件中添加 <code>Plug &#39;Valloric/YouCompleteMe&#39;</code> 再执行 :PluginInstall 即可。</p>
+<h3 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h3><p>YCM 基于 cmake 进行编译的，所以在安装之前如下命令先通过 brew 安装 cmake。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">python3 .&#x2F;install.py --java-completer</span><br></pre></td></tr></table></figure>
+<p>请使用 python3 。</p>
+<p>安装好之后，由于我的 python3 缺乏很多依赖性，通过以下命令检验 python 所缺乏的依赖。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd</span><br><span class="line">cp ycmd&#x2F;default_settings.json . &amp; python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
+<p>如果输出如下，是 python 环境的问题考虑重启然后重装：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[1]    8629 segmentation fault  python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
+<p>若有如下报错：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ModuleNotFoundError: No module named &#39;bottle&#39;</span><br><span class="line">ModuleNotFoundError: No module named &#39;waitress&#39;</span><br></pre></td></tr></table></figure>
+<p>逐句执行 <code>pip3 install bottle</code> <code>pip3 install waitress</code>即可解决。<br>如果显示是：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">No module named &#39;ycm_core&#39;</span><br></pre></td></tr></table></figure>
+<p>是没有问题的</p>
+<h2 id="YCM-安装-C-family-的自动补全"><a href="#YCM-安装-C-family-的自动补全" class="headerlink" title="YCM 安装 C-family 的自动补全"></a>YCM 安装 C-family 的自动补全</h2><h3 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">python3 .&#x2F;install.py --clang-completer</span><br></pre></td></tr></table></figure>
+<h3 id="安装-ycm-gennerator"><a href="#安装-ycm-gennerator" class="headerlink" title="安装 ycm-gennerator"></a>安装 ycm-gennerator</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Plugin &#39;rdnetto&#x2F;YCM-Generator&#39;</span><br></pre></td></tr></table></figure>
+<h3 id="生成-ycm-extra-conf-py-文件到-YCM-中"><a href="#生成-ycm-extra-conf-py-文件到-YCM-中" class="headerlink" title="生成 .ycm_extra_conf.py 文件到 YCM 中"></a>生成 .ycm_extra_conf.py 文件到 YCM 中</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python3 .ycm_extra_conf.py ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd</span><br></pre></td></tr></table></figure>
+<h3 id="在-vimrc-中添加"><a href="#在-vimrc-中添加" class="headerlink" title="在 ~/.vimrc 中添加"></a>在 ~/.vimrc 中添加</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let g:ycm_global_ycm_extra_conf &#x3D; &#39;～&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd&#x2F;.ycm_extra_conf.py&#39;</span><br></pre></td></tr></table></figure>
+
+<h2 id="go-语言"><a href="#go-语言" class="headerlink" title="go 语言"></a>go 语言</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --go-completer</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他语言参数"><a href="#其他语言参数" class="headerlink" title="其他语言参数"></a>其他语言参数</h2><ul>
+<li>C family support: <code>python3 ./install.py --clang-completer</code></li>
+<li>C# support: <code>python3 ./install.py --cs-completer</code>（install Mono with Homebrew or by downloading the <a href="http://www.mono-project.com/docs/getting-started/install/mac/" target="_blank" rel="noopener">Mono macOS package</a> ）</li>
+<li>Go support: <code>python3 ./install.py --go-completer</code> </li>
+<li>JavaScript and TypeScript support: <code>python3 ./install.py --ts-completer</code> </li>
+<li>Rust support: <code>python3 ./install.py --rust-completer</code></li>
+<li>Java support: <code>python3 ./install.py --java-completer</code></li>
+</ul>
+<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:PlugUpdate</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">git clean -f</span><br><span class="line">git pull</span><br><span class="line">git submodule update --recursive --init</span><br><span class="line">.&#x2F;install.py --go-completer</span><br></pre></td></tr></table></figure>
+
+<h2 id="错误解决"><a href="#错误解决" class="headerlink" title="错误解决"></a>错误解决</h2><p>升级 catalina 后 brew 安装的 python3 执行异常，解决方案如下：<br><a href="https://forums.developer.apple.com/thread/119429" target="_blank" rel="noopener">My application crashed with invalid load of lib… |Apple Developer Forums</a></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;zsh</span><br><span class="line">brew update &amp; brew upgrade &amp; brew install openssl</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;openssl&#x2F;1.0.2t&#x2F;lib</span><br><span class="line">sudo cp libssl.1.0.0.dylib libcrypto.1.0.0.dylib &#x2F;usr&#x2F;local&#x2F;lib&#x2F;</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;lib</span><br><span class="line">mv libssl.dylib libssl_bak.dylib</span><br><span class="line">mv libcrypto.dylib libcrypto_bak.dylib</span><br><span class="line">sudo ln -s libssl.1.0.0.dylib libssl.dylib</span><br><span class="line">sudo ln -s libcrypto.1.0.0.dylib libcrypto.dylib</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>开发工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac 小问题 —— iCloud 未响应</title>
+    <url>/macos-problems/</url>
+    <content><![CDATA[<p>使用 iCloud Drive 将文件上传到云端，防止数据丢失，同时可以实现多台设备的协同工作。但是在使用 iCloud Drive 的过程中我遇到了程序未响应，iCoud 文件上传阻塞的问题。</p>
+<a id="more"></a>
+
+<h2 id="Finder-无法打开或持续未响应"><a href="#Finder-无法打开或持续未响应" class="headerlink" title="Finder 无法打开或持续未响应"></a>Finder 无法打开或持续未响应</h2><p>解决办法：<br>磁盘工具 -&gt; Macintosh HD（系统盘）-&gt; 急救<br>磁盘工具在以下路径：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">/System/Applications/Utilities/Disk Utility.app</span><br></pre></td></tr></table></figure>
+
+<p>急救操作不会对你的电脑造成任何损害，甚至还有所优化。</p>
+<h2 id="打开-iCloud-云盘文件夹极其缓慢"><a href="#打开-iCloud-云盘文件夹极其缓慢" class="headerlink" title="打开 iCloud 云盘文件夹极其缓慢"></a>打开 iCloud 云盘文件夹极其缓慢</h2><p>遇到的问题是：在访达中点击iCloud云盘系统就会出现转圈圈的标志，使用快捷键<code>command+alt+esc</code>（强制退出应用程序）就会看到访达处于未响应状态，这个时间会持续很久。</p>
+<p>解决办法：<br>系统偏好 -&gt; Apple ID -&gt; 取消勾选iCloud云盘 -&gt; 保留副本 -&gt; 重新勾选iCloud云盘</p>
+<p>此操作造成的后果是mac需要很长的一段时间和云端同步，这取决于你icloud存储的文件大小，并不会影响其他。</p>
+<h2 id="文件无法上传排查"><a href="#文件无法上传排查" class="headerlink" title="文件无法上传排查"></a>文件无法上传排查</h2><p>iCloud 连续几天几夜也没同步完，经过诸多排查，例如，修改 DNS：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">114.114.114.114</span><br><span class="line">8.8.8.8</span><br></pre></td></tr></table></figure>
+<p>不仅没起作用，还影响了访问其他网页。最后删除 DNS 配置，刷新 DNS 缓存：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ dscacheutil -flushcache</span><br><span class="line">$ sudo killall -HUP mDNSResponder</span><br></pre></td></tr></table></figure>
+
+<p>最后排查出是因为，我开发代码的工作目录都设置在了 iCloud 云盘里，文件体积虽然不大，却有上万个细小的文件，不知道是不是 iCloud 设置了某种限制，导致上传阻塞，最后将代码都移出 iCloud 问题就解决了。</p>
+<p>后面又卡住了，收获到一个命令通过这个命令可以查看 iCloud 同步进度：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ brctl log -w</span><br></pre></td></tr></table></figure>
+<p>虽然没看懂运行的是什么，但是能够看到一直有东西在执行。<br>通过以下三个命令对 icloud 进行重置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 杀死icloud同步进程</span><br><span class="line">$ killall bird</span><br><span class="line"># 删除 icloud 的配置文件</span><br><span class="line">$ rm -rf ~&#x2F;Library&#x2F;Application\ Support&#x2F;CloudDocs</span><br><span class="line"># 立刻关机</span><br><span class="line">$ shutdown -r now</span><br></pre></td></tr></table></figure>
+<p>不必担心文件丢失，效果与关闭重新关闭icloud同步类似。重新开启电脑后可以通过前面说到的命令查看 iCloud 同步的进度。</p>
+<p>也可以直接使用下面的脚本：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;bash</span><br><span class="line"></span><br><span class="line">if [[ $EUID -eq 0 ]]; then</span><br><span class="line">    echo &quot;Killing bird.&quot;</span><br><span class="line">    killall bird</span><br><span class="line">    echo &quot;Removing CloudDocs&quot;</span><br><span class="line">    cd ~&#x2F;Library&#x2F;Application\ Support</span><br><span class="line">    rm -rf CloudDocs</span><br><span class="line">    echo &quot;Immediately rebooting!&quot;</span><br><span class="line">    shutdown -r now</span><br><span class="line">else</span><br><span class="line">    echo &quot;</span><br><span class="line">    This script needs run as sudo. </span><br><span class="line">    Use CAUTION when doing so.</span><br><span class="line">    You accept full responsibility using this script.</span><br><span class="line">    You should know what it&#39;s doing BEFORE you run it.</span><br><span class="line">    &quot;</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+
+<p>不必南辕北辙，越过中国的防火墙，iCloud 中国用户的文件存储在贵州云，而网上所谓的要获取验证文件，获取验证文件有香港的服务器。最后的任务就是等，我是让电脑喝着咖啡持续跑了接近一整天才同步完成的。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
+<li><a href="https://apple.stackexchange.com/questions/313716/icloud-drive-wont-sync-on-mac" target="_blank" rel="noopener">macos - iCloud Drive Won’t Sync on Mac - Ask Different</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>MacOS</tag>
+        <tag>Finder</tag>
+        <tag>iCloud</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SSM 问题集锦</title>
+    <url>/ssm-question/</url>
+    <content><![CDATA[<h1 id="SSM-问题集锦"><a href="#SSM-问题集锦" class="headerlink" title="SSM 问题集锦"></a>SSM 问题集锦</h1><h2 id="SSM-基础的搭建过程"><a href="#SSM-基础的搭建过程" class="headerlink" title="SSM 基础的搭建过程"></a>SSM 基础的搭建过程</h2><p><a href="https://blog.csdn.net/yangxinyujy/article/details/80656771" target="_blank" rel="noopener">IntelliJ IDEA 创建 Maven 管理下的 SSM 项目基础全过程</a><br><a href="https://github.com/yangxinyujy/ssmdemo" target="_blank" rel="noopener">yangxinyujy/ssmdemo: ssm 基础框架</a></p>
+<a id="more"></a>
+
+<h2 id="Tomcat-部署时-war-和-war-exploded-区别"><a href="#Tomcat-部署时-war-和-war-exploded-区别" class="headerlink" title="Tomcat 部署时 war 和 war exploded 区别"></a>Tomcat 部署时 war 和 war exploded 区别</h2><p>war 模式：将WEB工程以包的形式上传到服务器，可以称之为是发布模式，这是先打成 war 包，再发布；<br>war exploded模式：将 WEB 工程以当前文件夹的位置关系上传到服务器，通过直接把文件夹、jsp 页面 、classes 等,移到 Tomcat 部署文件夹里面的方式，进行加载部署。因此这种方式支持热部署，一般在开发的时候也是用这种方式。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux 剪贴板小技巧</title>
     <url>/ssh-clipboard-iterm2/</url>
     <content><![CDATA[<h2 id="初步识-vim-剪贴板"><a href="#初步识-vim-剪贴板" class="headerlink" title="初步识 vim 剪贴板"></a>初步识 vim 剪贴板</h2><p>对于文本的复制粘贴，系统会提供剪贴板，剪贴板在 vim 中被称为寄存器，并且 vim 有很多寄存器，寄存器使用的语法：<code>&quot;{register}</code>，当然了寄存器指令不会单独使用，后面都会跟代表复制的 <code>y</code> 或代表粘贴的 <code>p</code>，执行 <code>&quot;ay</code> 就将选中的内容复制到了 <code>a</code> 寄存器，<a id="more"></a>寄存器都是有自己的名字的，感兴趣的同学，欲知详细内容请参见帮助文档：<code>:help registers</code>。</p>
@@ -1301,24 +1340,70 @@ Selection-&gt;Application in terminal may access clipboard</code>（选择开启
       </tags>
   </entry>
   <entry>
-    <title>程序中的 “脚手架”</title>
-    <url>/scaffold/</url>
-    <content><![CDATA[<blockquote>
-<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
-</blockquote>
-<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
-<a id="more"></a>
-
-<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
-<li><a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener">facebook/create-react-app</a></li>
-<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
+    <title>SSM 错误集锦</title>
+    <url>/ssm-Error/</url>
+    <content><![CDATA[<ol>
+<li>class path resource [spring/] cannot be resolved to URL because it does not exist</li>
+</ol>
+<ul>
+<li>条件：这是非编译情况下利用mvn的插件war:war生成war包，运行后所报的错误。</li>
+<li>原因：未将resources下的配置文件引入war包中。</li>
+<li>解决方法：先执行代码，再生成war包。<a id="more"></a></li>
+</ul>
+<ol start="2">
+<li>check the manual that corresponds to your MySQL server version for the right syntax to use near … , The error may involve .insert-Inline</li>
+</ol>
+<ul>
+<li>原因：mysql 向数据库插入数据时错误， 可能触及到mysql的保留字，例如 key。</li>
+<li>解决办法： 插入语句不能起别名，该方式不可取。加键盘左上角的撇号，例<code>key</code>。</li>
+</ul>
+<ol start="3">
+<li><p>java.lang.Double cannot be cast to java.lang.String<br>list中查出来个别数据是 double，转换为 String。<br>String periodTime = String.valueOf(list.get(0));</p>
+</li>
+<li><p>Error running ‘tomcat’: Can’t find catalina.jar</p>
+</li>
+</ol>
+<ul>
+<li>原因：tomcat 升级导致路径改变</li>
+<li>解决办法：Idea 在 Edit Configuration 中修改 tomcat 路径至 libexec</li>
 </ul>
 ]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>信息技术</tag>
+        <tag>ssm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vim 多文件类型自动补全方案</title>
+    <url>/vim-multiple-filetype-deoplete/</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
+<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>其中的 filetype on 表示：</p>
+<blockquote>
+<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
+</blockquote>
+<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
+<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
+<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">'nvim'</span>)</span><br><span class="line">  Plug <span class="string">'Shougo/deoplete.nvim'</span>, &#123; <span class="string">'do'</span>: <span class="string">':UpdateRemotePlugins'</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">'Shougo/deoplete.nvim'</span></span><br><span class="line">  Plug <span class="string">'roxma/nvim-yarp'</span></span><br><span class="line">  Plug <span class="string">'roxma/vim-hug-neovim-rpc'</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">'Shougo/context_filetype.vim'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">'g:context_filetype#same_filetypes'</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">'filetype'</span> :<span class="string">'javascript'</span>, <span class="string">'start'</span>: <span class="string">'&lt;script&gt;'</span>, <span class="string">'end'</span>: <span class="string">'&lt;/script&gt;'</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">'filetype'</span> :<span class="string">'css'</span>, <span class="string">'start'</span>: <span class="string">'&lt;style&gt;'</span>, <span class="string">'end'</span>: <span class="string">'&lt;/style&gt;'</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">" deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">'omni'</span>, <span class="string">'functions'</span>, &#123;</span><br><span class="line">\ <span class="string">'css'</span>: [<span class="string">'csscomplete#CompleteCSS'</span>],</span><br><span class="line">\ <span class="string">'javascript'</span>: [<span class="string">'javascriptcomplete#CompleteJS'</span>],</span><br><span class="line">\ <span class="string">'html'</span>: [<span class="string">'htmlcomplete#CompleteTags'</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">'omni'</span>, <span class="string">'input_patterns'</span>, &#123;</span><br><span class="line">\ <span class="string">'javascript'</span>: <span class="string">'[^. *\t]\.\w*'</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">" 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">"\&lt;C-n&gt;"</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">"\&lt;TAB&gt;"</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> "&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">'.'</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">'.'</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">'\s'</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">"&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
+<p>执行 :PlugInstall</p>
+<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
+<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">'range'</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">'filetype'</span>: <span class="string">'css'</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
+<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
+<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py" target="_blank" rel="noopener">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>multiple filetype</tag>
       </tags>
   </entry>
   <entry>
@@ -1451,47 +1536,6 @@ Selection-&gt;Application in terminal may access clipboard</code>（选择开启
       </tags>
   </entry>
   <entry>
-    <title>vim-fugitive ——【一天一个 vim 插件】</title>
-    <url>/vim-plugin-everday-2/</url>
-    <content><![CDATA[<p>作为一个 10k+ star 的 vim 插件，<a href="https://github.com/tpope/vim-fugitive" target="_blank" rel="noopener">tpope/vim-fugitive</a> 自称为 Git 的第一 Vim 插件并不为过。Fugitive 让你在当前 buffer 缓冲区通过<code>:Git</code>或<code>:G</code>，可以直接使用 git 命令。可以看作是<code>!git XX</code> 命令的改进和优化，除了使用 silent，静默模式外，你不会看到 “Press ENTER or type command to continue”，还对一些命令进行了优化。</p>
-<h2 id="温故"><a href="#温故" class="headerlink" title="温故"></a>温故</h2><p>回顾一下上一个插件 vim-gitgutter 的使用方法：</p>
-<ul>
-<li><code>[c</code> 和 <code>]c</code> 在有所变动的区块间跳转。</li>
-<li><leader>hp，显示预览，hunk preview</li>
-<li><leader>hs，暂存代码块，hunk stage</li>
-<li><leader>hu，撤销更改，hunk undo</li>
-<li><leader>hd，禁用 gitgutter</li>
-<li><leader>he，启用 gitgutter</li>
-</ul>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ul>
-<li>所有命令都以<code>:G</code>或<code>:Git</code>打头，两种写法等价。</li>
-<li><code>:G -p {args}</code><ul>
-<li>运行任意 git 命令都可以加上，-p，这样将捕获输出到一个临时文件，并且对临时文件执行<code>:split</code>水平分割。如果使用<code>:0G -p {args}</code>，将用<code>:edit</code>代替。通常用于 diff 和 log 这个指令。</li>
-<li>例：<code>:G -p diff</code>,<code>:G --paginate diff</code></li>
-</ul>
-</li>
-<li><code>G</code><ul>
-<li>不带参数，会打开一个类似于 git-status 的简要窗口，在窗口中，使用 <code>g?</code> 将打开 fugitive-maps 快捷键映射帮助。</li>
-</ul>
-</li>
-<li><code>G push</code><ul>
-<li>执行 <code>git push</code></li>
-</ul>
-</li>
-<li><code>GBrowse</code></li>
-</ul>
-<hr>
-<p>待续：<br>由于我的很多 git 知识还不够完善，后面补充了再续写。<br>更多内容参见<code>:help fugitive</code></p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>一天一个 vim 插件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>vim-gitgutter ——【一天一个 vim 插件】</title>
     <url>/vim-plugin-everday-1/</url>
     <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F06%2F28%2Fscreenshot.png?x-oss-process=style/title_800" alt="screenshot.png"><br>在此截图你可以看见：</p>
@@ -1534,85 +1578,44 @@ Selection-&gt;Application in terminal may access clipboard</code>（选择开启
       </tags>
   </entry>
   <entry>
-    <title>SSM 错误集锦</title>
-    <url>/ssm-Error/</url>
-    <content><![CDATA[<ol>
-<li>class path resource [spring/] cannot be resolved to URL because it does not exist</li>
-</ol>
+    <title>vim-fugitive ——【一天一个 vim 插件】</title>
+    <url>/vim-plugin-everday-2/</url>
+    <content><![CDATA[<p>作为一个 10k+ star 的 vim 插件，<a href="https://github.com/tpope/vim-fugitive" target="_blank" rel="noopener">tpope/vim-fugitive</a> 自称为 Git 的第一 Vim 插件并不为过。Fugitive 让你在当前 buffer 缓冲区通过<code>:Git</code>或<code>:G</code>，可以直接使用 git 命令。可以看作是<code>!git XX</code> 命令的改进和优化，除了使用 silent，静默模式外，你不会看到 “Press ENTER or type command to continue”，还对一些命令进行了优化。</p>
+<h2 id="温故"><a href="#温故" class="headerlink" title="温故"></a>温故</h2><p>回顾一下上一个插件 vim-gitgutter 的使用方法：</p>
 <ul>
-<li>条件：这是非编译情况下利用mvn的插件war:war生成war包，运行后所报的错误。</li>
-<li>原因：未将resources下的配置文件引入war包中。</li>
-<li>解决方法：先执行代码，再生成war包。<a id="more"></a></li>
+<li><code>[c</code> 和 <code>]c</code> 在有所变动的区块间跳转。</li>
+<li><leader>hp，显示预览，hunk preview</li>
+<li><leader>hs，暂存代码块，hunk stage</li>
+<li><leader>hu，撤销更改，hunk undo</li>
+<li><leader>hd，禁用 gitgutter</li>
+<li><leader>he，启用 gitgutter</li>
 </ul>
-<ol start="2">
-<li>check the manual that corresponds to your MySQL server version for the right syntax to use near … , The error may involve .insert-Inline</li>
-</ol>
-<ul>
-<li>原因：mysql 向数据库插入数据时错误， 可能触及到mysql的保留字，例如 key。</li>
-<li>解决办法： 插入语句不能起别名，该方式不可取。加键盘左上角的撇号，例<code>key</code>。</li>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ul>
+<li>所有命令都以<code>:G</code>或<code>:Git</code>打头，两种写法等价。</li>
+<li><code>:G -p {args}</code><ul>
+<li>运行任意 git 命令都可以加上，-p，这样将捕获输出到一个临时文件，并且对临时文件执行<code>:split</code>水平分割。如果使用<code>:0G -p {args}</code>，将用<code>:edit</code>代替。通常用于 diff 和 log 这个指令。</li>
+<li>例：<code>:G -p diff</code>,<code>:G --paginate diff</code></li>
 </ul>
-<ol start="3">
-<li><p>java.lang.Double cannot be cast to java.lang.String<br>list中查出来个别数据是 double，转换为 String。<br>String periodTime = String.valueOf(list.get(0));</p>
 </li>
-<li><p>Error running ‘tomcat’: Can’t find catalina.jar</p>
-</li>
-</ol>
-<ul>
-<li>原因：tomcat 升级导致路径改变</li>
-<li>解决办法：Idea 在 Edit Configuration 中修改 tomcat 路径至 libexec</li>
+<li><code>G</code><ul>
+<li>不带参数，会打开一个类似于 git-status 的简要窗口，在窗口中，使用 <code>g?</code> 将打开 fugitive-maps 快捷键映射帮助。</li>
 </ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>ssm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SSM 问题集锦</title>
-    <url>/ssm-question/</url>
-    <content><![CDATA[<h1 id="SSM-问题集锦"><a href="#SSM-问题集锦" class="headerlink" title="SSM 问题集锦"></a>SSM 问题集锦</h1><h2 id="SSM-基础的搭建过程"><a href="#SSM-基础的搭建过程" class="headerlink" title="SSM 基础的搭建过程"></a>SSM 基础的搭建过程</h2><p><a href="https://blog.csdn.net/yangxinyujy/article/details/80656771" target="_blank" rel="noopener">IntelliJ IDEA 创建 Maven 管理下的 SSM 项目基础全过程</a><br><a href="https://github.com/yangxinyujy/ssmdemo" target="_blank" rel="noopener">yangxinyujy/ssmdemo: ssm 基础框架</a></p>
-<a id="more"></a>
-
-<h2 id="Tomcat-部署时-war-和-war-exploded-区别"><a href="#Tomcat-部署时-war-和-war-exploded-区别" class="headerlink" title="Tomcat 部署时 war 和 war exploded 区别"></a>Tomcat 部署时 war 和 war exploded 区别</h2><p>war 模式：将WEB工程以包的形式上传到服务器，可以称之为是发布模式，这是先打成 war 包，再发布；<br>war exploded模式：将 WEB 工程以当前文件夹的位置关系上传到服务器，通过直接把文件夹、jsp 页面 、classes 等,移到 Tomcat 部署文件夹里面的方式，进行加载部署。因此这种方式支持热部署，一般在开发的时候也是用这种方式。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>ssm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vim 多文件类型自动补全方案</title>
-    <url>/vim-multiple-filetype-deoplete/</url>
-    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
-<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>其中的 filetype on 表示：</p>
-<blockquote>
-<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
-</blockquote>
-<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
-<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
-<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">'nvim'</span>)</span><br><span class="line">  Plug <span class="string">'Shougo/deoplete.nvim'</span>, &#123; <span class="string">'do'</span>: <span class="string">':UpdateRemotePlugins'</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">'Shougo/deoplete.nvim'</span></span><br><span class="line">  Plug <span class="string">'roxma/nvim-yarp'</span></span><br><span class="line">  Plug <span class="string">'roxma/vim-hug-neovim-rpc'</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">'Shougo/context_filetype.vim'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">'g:context_filetype#same_filetypes'</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">'filetype'</span> :<span class="string">'javascript'</span>, <span class="string">'start'</span>: <span class="string">'&lt;script&gt;'</span>, <span class="string">'end'</span>: <span class="string">'&lt;/script&gt;'</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">'filetype'</span> :<span class="string">'css'</span>, <span class="string">'start'</span>: <span class="string">'&lt;style&gt;'</span>, <span class="string">'end'</span>: <span class="string">'&lt;/style&gt;'</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">" deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">'omni'</span>, <span class="string">'functions'</span>, &#123;</span><br><span class="line">\ <span class="string">'css'</span>: [<span class="string">'csscomplete#CompleteCSS'</span>],</span><br><span class="line">\ <span class="string">'javascript'</span>: [<span class="string">'javascriptcomplete#CompleteJS'</span>],</span><br><span class="line">\ <span class="string">'html'</span>: [<span class="string">'htmlcomplete#CompleteTags'</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">'omni'</span>, <span class="string">'input_patterns'</span>, &#123;</span><br><span class="line">\ <span class="string">'javascript'</span>: <span class="string">'[^. *\t]\.\w*'</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">" 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">"\&lt;C-n&gt;"</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">"\&lt;TAB&gt;"</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> "&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">'.'</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">'.'</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">'\s'</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">"&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
-<p>执行 :PlugInstall</p>
-<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
-<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">'range'</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">'filetype'</span>: <span class="string">'css'</span>&#125;</span><br></pre></td></tr></table></figure>
-<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
-<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
-<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py" target="_blank" rel="noopener">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
+</li>
+<li><code>G push</code><ul>
+<li>执行 <code>git push</code></li>
+</ul>
+</li>
+<li><code>GBrowse</code></li>
+</ul>
+<hr>
+<p>待续：<br>由于我的很多 git 知识还不够完善，后面补充了再续写。<br>更多内容参见<code>:help fugitive</code></p>
 ]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
         <tag>vim</tag>
-        <tag>multiple filetype</tag>
+        <tag>一天一个 vim 插件</tag>
       </tags>
   </entry>
   <entry>
