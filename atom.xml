@@ -89,17 +89,11 @@
     <link href="http://blog.xyang.xin/vim-plugin-everday-2/"/>
     <id>http://blog.xyang.xin/vim-plugin-everday-2/</id>
     <published>2020-06-29T12:01:14.000Z</published>
-    <updated>2020-07-09T13:18:34.381Z</updated>
+    <updated>2020-08-18T03:12:53.362Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;作为一个 10k+ star 的 vim 插件，&lt;a href=&quot;https://github.com/tpope/vim-fugitive&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;tpope/vim-fugitive&lt;/a&gt; 自称为 Git 的第一 Vim 插件并不为过。Fugitive 让你在当前 buffer 缓冲区通过&lt;code&gt;:Git&lt;/code&gt;或&lt;code&gt;:G&lt;/code&gt;，可以直接使用 git 命令。可以看作是&lt;code&gt;!git XX&lt;/code&gt; 命令的改进和优化，除了使用 silent，静默模式外，你不会看到 “Press ENTER or type command to continue”，还对一些命令进行了优化。&lt;/p&gt;
-&lt;h2 id=&quot;温故&quot;&gt;&lt;a href=&quot;#温故&quot; class=&quot;headerlink&quot; title=&quot;温故&quot;&gt;&lt;/a&gt;温故&lt;/h2&gt;&lt;p&gt;回顾一下上一个插件 vim-gitgutter 的使用方法：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;[c&lt;/code&gt; 和 &lt;code&gt;]c&lt;/code&gt; 在有所变动的区
-      
+      &lt;p&gt;作为一个 10k+ star 的 vim 插件，&lt;a href=&quot;https://github.com/tpope/vim-fugitive&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;tpope/vim-fugitive&lt;/a&gt; 自称为 Git 的第一 Vim 插件并不为过。Fugitive 让你在当前 buffer 缓冲区通过&lt;code&gt;:Git&lt;/code&gt;或&lt;code&gt;:G&lt;/code&gt;，可以直接使用 git 命令。可以看作是&lt;code&gt;!git XX&lt;/code&gt; 命令的改进和优化，除了使用 silent，静默模式外，你不会看到 “Press ENTER or type command to continue”，还对一些命令进行了优化。&lt;/p&gt;
     
     </summary>
     
@@ -183,9 +177,9 @@
     
       <category term="Linux" scheme="http://blog.xyang.xin/tags/Linux/"/>
     
-      <category term="Vim" scheme="http://blog.xyang.xin/tags/Vim/"/>
-    
       <category term="剪贴板" scheme="http://blog.xyang.xin/tags/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
+    
+      <category term="Vim" scheme="http://blog.xyang.xin/tags/Vim/"/>
     
   </entry>
   

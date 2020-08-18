@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.xyang.xin/vim-plugin-everday-2/</loc>
+    
+    <lastmod>2020-08-18T03:12:53.362Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.xyang.xin/dynamic&static-type-binding/</loc>
     
     <lastmod>2020-08-14T15:10:58.385Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>http://blog.xyang.xin/github-download-folder/</loc>
     
     <lastmod>2020-07-09T15:15:23.133Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/vim-plugin-everday-2/</loc>
-    
-    <lastmod>2020-07-09T13:18:34.381Z</lastmod>
     
   </url>
   
