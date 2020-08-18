@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.xyang.xin/"/>
-  <updated>2020-07-24T17:05:54.626Z</updated>
+  <updated>2020-08-14T15:10:58.385Z</updated>
   <id>http://blog.xyang.xin/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>类型的动态绑定和静态绑定</title>
+    <link href="http://blog.xyang.xin/dynamic&amp;static-type-binding/"/>
+    <id>http://blog.xyang.xin/dynamic&amp;static-type-binding/</id>
+    <published>2020-08-14T18:12:41.000Z</published>
+    <updated>2020-08-14T15:10:58.385Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;JavaScript 是动态绑定的语言，而 TypeScript 包装其成为静态绑定的语言。而什么是动态绑定，什么是静态绑定，它们的优劣又是什么呢？TypeScript 又为什么要“多此一举”？&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="TypeScript" scheme="http://blog.xyang.xin/tags/TypeScript/"/>
+    
+  </entry>
   
   <entry>
     <title>学习 CSS 时忽视的几个知识点</title>
@@ -162,9 +183,9 @@
     
       <category term="Linux" scheme="http://blog.xyang.xin/tags/Linux/"/>
     
-      <category term="剪贴板" scheme="http://blog.xyang.xin/tags/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
-    
       <category term="Vim" scheme="http://blog.xyang.xin/tags/Vim/"/>
+    
+      <category term="剪贴板" scheme="http://blog.xyang.xin/tags/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
     
   </entry>
   
@@ -199,7 +220,7 @@
     <link href="http://blog.xyang.xin/macos-problems/"/>
     <id>http://blog.xyang.xin/macos-problems/</id>
     <published>2020-04-18T16:15:08.000Z</published>
-    <updated>2020-06-18T09:37:26.606Z</updated>
+    <updated>2020-08-10T14:00:19.684Z</updated>
     
     <summary type="html">
     
@@ -480,31 +501,6 @@
     
     
       <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>journal-2019-02-15</title>
-    <link href="http://blog.xyang.xin/journal-2019-02-15/"/>
-    <id>http://blog.xyang.xin/journal-2019-02-15/</id>
-    <published>2019-02-15T14:49:59.000Z</published>
-    <updated>2020-04-18T07:49:16.246Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;小孩成长与人才发展&quot;&gt;&lt;a href=&quot;#小孩成长与人才发展&quot; class=&quot;headerlink&quot; title=&quot;小孩成长与人才发展&quot;&gt;&lt;/a&gt;小孩成长与人才发展&lt;/h2&gt;&lt;p&gt;小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。&lt;/p&gt;
-&lt;p&gt;孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。&lt;/p&gt;
-&lt;p&gt;国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。&lt;/p&gt;
-&lt;p&gt;参考：&lt;a href=&quot;http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《基层减负 不是简单做
-      
-    
-    </summary>
-    
-    
-      <category term="日志" scheme="http://blog.xyang.xin/categories/%E6%97%A5%E5%BF%97/"/>
     
     
   </entry>

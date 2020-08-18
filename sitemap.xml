@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.xyang.xin/dynamic&static-type-binding/</loc>
+    
+    <lastmod>2020-08-14T15:10:58.385Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.xyang.xin/macos-problems/</loc>
+    
+    <lastmod>2020-08-10T14:00:19.684Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.xyang.xin/es6-everday-1/</loc>
     
     <lastmod>2020-07-28T09:12:43.382Z</lastmod>
@@ -61,13 +75,6 @@
     <loc>http://blog.xyang.xin/mac-ssh-error/</loc>
     
     <lastmod>2020-06-20T12:58:31.471Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/macos-problems/</loc>
-    
-    <lastmod>2020-06-18T09:37:26.606Z</lastmod>
     
   </url>
   
