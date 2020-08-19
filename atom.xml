@@ -3,7 +3,7 @@
   <title>韶 光</title>
   <icon>http://blog.xyang.xin/icon.png</icon>
   <subtitle>Yang Xinyu&#39;s Personal Blog</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="http://blog.xyang.xin/atom.xml" rel="self"/>
   
   <link href="http://blog.xyang.xin/"/>
   <updated>2020-08-14T15:10:58.385Z</updated>
@@ -23,17 +23,15 @@
     <published>2020-08-14T18:12:41.000Z</published>
     <updated>2020-08-14T15:10:58.385Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;JavaScript 是动态绑定的语言，而 TypeScript 包装其成为静态绑定的语言。而什么是动态绑定，什么是静态绑定，它们的优劣又是什么呢？TypeScript 又为什么要“多此一举”？&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;JavaScript 是动态绑定的语言，而 TypeScript 包装其成为静态绑定的语言。而什么是动态绑定，什么是静态绑定，它们的优劣又是什么呢？TypeScript 又为什么要“多此一举”？&lt;/p&gt;</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="TypeScript" scheme="http://blog.xyang.xin/tags/TypeScript/"/>
+    <category term="TypeScript" scheme="http://blog.xyang.xin/tags/TypeScript/"/>
     
   </entry>
   
@@ -44,20 +42,18 @@
     <published>2020-07-24T11:09:19.000Z</published>
     <updated>2020-07-24T17:05:54.626Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;https://cssfordesigners.com/articles/things-i-wish-id-known-about-css&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Things I Wish I’d Known About CSS&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;文章的作者以老式的方式构建网站：查看网站源代码、复制然后修改，而没有经过阅读书籍等系统性的学习。作者在 1999 年就使用这种方式了，当时写的还是这种代码： &lt;code&gt;&amp;lt;font size=&amp;quot;4&amp;quot; color=&amp;quot;#000000&amp;quot;&amp;gt;&lt;/code&gt;。而当 CSS 面世的时候，作者没有改变自己的学习方法，而错过了太多基本知识。文章主要介绍的是作者希望早点学到的东西。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://cssfordesigners.com/articles/things-i-wish-id-known-about-css&quot;&gt;Things I Wish I’d Known About CSS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;文章的作者以老式的方式构建网站：查看网站源代码、复制然后修改，而没有经过阅读书籍等系统性的学习。作者在 1999 年就使用这种方式了，当时写的还是这种代码： &lt;code&gt;&amp;lt;font size=&amp;quot;4&amp;quot; color=&amp;quot;#000000&amp;quot;&amp;gt;&lt;/code&gt;。而当 CSS 面世的时候，作者没有改变自己的学习方法，而错过了太多基本知识。文章主要介绍的是作者希望早点学到的东西。&lt;/p&gt;</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="css" scheme="http://blog.xyang.xin/tags/css/"/>
+    <category term="css" scheme="http://blog.xyang.xin/tags/css/"/>
     
-      <category term="note" scheme="http://blog.xyang.xin/tags/note/"/>
+    <category term="note" scheme="http://blog.xyang.xin/tags/note/"/>
     
   </entry>
   
@@ -68,19 +64,17 @@
     <published>2020-07-09T21:19:34.000Z</published>
     <updated>2020-07-09T15:15:23.133Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;从 Github 下载目标仓库指定文件夹。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;从 Github 下载目标仓库指定文件夹。&lt;/p&gt;</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Github" scheme="http://blog.xyang.xin/tags/Github/"/>
+    <category term="Github" scheme="http://blog.xyang.xin/tags/Github/"/>
     
-      <category term="git-svn" scheme="http://blog.xyang.xin/tags/git-svn/"/>
+    <category term="git-svn" scheme="http://blog.xyang.xin/tags/git-svn/"/>
     
   </entry>
   
@@ -91,19 +85,17 @@
     <published>2020-06-29T12:01:14.000Z</published>
     <updated>2020-08-18T03:12:53.362Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;作为一个 10k+ star 的 vim 插件，&lt;a href=&quot;https://github.com/tpope/vim-fugitive&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;tpope/vim-fugitive&lt;/a&gt; 自称为 Git 的第一 Vim 插件并不为过。Fugitive 让你在当前 buffer 缓冲区通过&lt;code&gt;:Git&lt;/code&gt;或&lt;code&gt;:G&lt;/code&gt;，可以直接使用 git 命令。可以看作是&lt;code&gt;!git XX&lt;/code&gt; 命令的改进和优化，除了使用 silent，静默模式外，你不会看到 “Press ENTER or type command to continue”，还对一些命令进行了优化。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;作为一个 10k+ star 的 vim 插件，&lt;a href=&quot;https://github.com/tpope/vim-fugitive&quot;&gt;tpope/vim-fugitive&lt;/a&gt; 自称为 Git 的第一 Vim 插件并不为过。Fugitive 让你在当前 buffer 缓冲区通过&lt;code&gt;:Git&lt;/code&gt;或&lt;code&gt;:G&lt;/code&gt;，可以直接使用 git 命令。可以看作是&lt;code&gt;!git XX&lt;/code&gt; 命令的改进和优化，除了使用 silent，静默模式外，你不会看到 “Press ENTER or type command to continue”，还对一些命令进行了优化。&lt;/p&gt;</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="vim" scheme="http://blog.xyang.xin/tags/vim/"/>
+    <category term="vim" scheme="http://blog.xyang.xin/tags/vim/"/>
     
-      <category term="一天一个 vim 插件" scheme="http://blog.xyang.xin/tags/%E4%B8%80%E5%A4%A9%E4%B8%80%E4%B8%AA-vim-%E6%8F%92%E4%BB%B6/"/>
+    <category term="一天一个 vim 插件" scheme="http://blog.xyang.xin/tags/%E4%B8%80%E5%A4%A9%E4%B8%80%E4%B8%AA-vim-%E6%8F%92%E4%BB%B6/"/>
     
   </entry>
   
@@ -114,25 +106,23 @@
     <published>2020-06-28T12:03:02.000Z</published>
     <updated>2020-06-29T07:29:20.957Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2020%2F06%2F28%2Fscreenshot.png?x-oss-process=style/title_800&quot; alt=&quot;screenshot.png&quot;&gt;&lt;br&gt;在此截图你可以看见：&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2020%2F06%2F28%2Fscreenshot.png?x-oss-process=style/title_800&quot; alt=&quot;screenshot.png&quot;&gt;&lt;br&gt;在此截图你可以看见：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;183-184 行是新建的；&lt;/li&gt;
 &lt;li&gt;186-187 行有所变动；&lt;/li&gt;
-&lt;li&gt;在底部的预览区中显示改动情况（&lt;leader&gt;hp）。&lt;br&gt;(&lt;a href=&quot;https://github.com/airblade/vim-gitgutter&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;出处&lt;/a&gt;)&lt;br&gt;&lt;a href=&quot;https://github.com/airblade/vim-gitgutter&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;airblade/vim-gitgutter&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;在底部的预览区中显示改动情况（&lt;leader&gt;hp）。&lt;br&gt;(&lt;a href=&quot;https://github.com/airblade/vim-gitgutter&quot;&gt;出处&lt;/a&gt;)&lt;br&gt;&lt;a href=&quot;https://github.com/airblade/vim-gitgutter&quot;&gt;airblade/vim-gitgutter&lt;/a&gt; &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;在 vim 标志栏（sign column，行号左边的一列，通常为隐藏状态）中显示 git diff（git 差异）&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;在 vim 标志栏（sign column，行号左边的一列，通常为隐藏状态）中显示 git diff（git 差异）&lt;/p&gt;</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="vim" scheme="http://blog.xyang.xin/tags/vim/"/>
+    <category term="vim" scheme="http://blog.xyang.xin/tags/vim/"/>
     
-      <category term="一天一个 vim 插件" scheme="http://blog.xyang.xin/tags/%E4%B8%80%E5%A4%A9%E4%B8%80%E4%B8%AA-vim-%E6%8F%92%E4%BB%B6/"/>
+    <category term="一天一个 vim 插件" scheme="http://blog.xyang.xin/tags/%E4%B8%80%E5%A4%A9%E4%B8%80%E4%B8%AA-vim-%E6%8F%92%E4%BB%B6/"/>
     
   </entry>
   
@@ -143,18 +133,16 @@
     <published>2020-06-23T13:50:03.000Z</published>
     <updated>2020-07-06T12:09:02.366Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;Normal 模式是 Vim 默认打开状态。我们可以通过 Normal 模式，任何其它模式，我们可以在 Normal 模式下对文本进行浏览、排版、修改。Normal 模式在 Vim 中具有举足轻重的作用。&lt;/p&gt;
-&lt;p&gt;在 Normal 模式下，除了基本的移动指令 (j、k、h、l)、插入指令 (i、a)、撤销指令 (u、U) 等。Vim 通过 “操作符 + 运作命令 = 操作”（出自《Vim 实用技巧 第 2 版》） 扩展出了大量的操作指令。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;Normal 模式是 Vim 默认打开状态。我们可以通过 Normal 模式，任何其它模式，我们可以在 Normal 模式下对文本进行浏览、排版、修改。Normal 模式在 Vim 中具有举足轻重的作用。&lt;/p&gt;
+&lt;p&gt;在 Normal 模式下，除了基本的移动指令 (j、k、h、l)、插入指令 (i、a)、撤销指令 (u、U) 等。Vim 通过 “操作符 + 运作命令 = 操作”（出自《Vim 实用技巧 第 2 版》） 扩展出了大量的操作指令。&lt;/p&gt;</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Vim" scheme="http://blog.xyang.xin/tags/Vim/"/>
+    <category term="Vim" scheme="http://blog.xyang.xin/tags/Vim/"/>
     
   </entry>
   
@@ -165,21 +153,19 @@
     <published>2020-05-30T22:07:30.000Z</published>
     <updated>2020-06-03T09:04:00.445Z</updated>
     
-    <summary type="html">
     
-      &lt;h2 id=&quot;初步识-vim-剪贴板&quot;&gt;&lt;a href=&quot;#初步识-vim-剪贴板&quot; class=&quot;headerlink&quot; title=&quot;初步识 vim 剪贴板&quot;&gt;&lt;/a&gt;初步识 vim 剪贴板&lt;/h2&gt;&lt;p&gt;对于文本的复制粘贴，系统会提供剪贴板，剪贴板在 vim 中被称为寄存器，并且 vim 有很多寄存器，寄存器使用的语法：&lt;code&gt;&amp;quot;{register}&lt;/code&gt;，当然了寄存器指令不会单独使用，后面都会跟代表复制的 &lt;code&gt;y&lt;/code&gt; 或代表粘贴的 &lt;code&gt;p&lt;/code&gt;，执行 &lt;code&gt;&amp;quot;ay&lt;/code&gt; 就将选中的内容复制到了 &lt;code&gt;a&lt;/code&gt; 寄存器，
-    
-    </summary>
+    <summary type="html">&lt;h2 id=&quot;初步识-vim-剪贴板&quot;&gt;&lt;a href=&quot;#初步识-vim-剪贴板&quot; class=&quot;headerlink&quot; title=&quot;初步识 vim 剪贴板&quot;&gt;&lt;/a&gt;初步识 vim 剪贴板&lt;/h2&gt;&lt;p&gt;对于文本的复制粘贴，系统会提供剪贴板，剪贴板在 vim 中被称为寄存器，并且 vim 有很多寄存器，寄存器使用的语法：&lt;code&gt;&amp;quot;&amp;#123;register&amp;#125;&lt;/code&gt;，当然了寄存器指令不会单独使用，后面都会跟代表复制的 &lt;code&gt;y&lt;/code&gt; 或代表粘贴的 &lt;code&gt;p&lt;/code&gt;，执行 &lt;code&gt;&amp;quot;ay&lt;/code&gt; 就将选中的内容复制到了 &lt;code&gt;a&lt;/code&gt; 寄存器，</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Linux" scheme="http://blog.xyang.xin/tags/Linux/"/>
+    <category term="Linux" scheme="http://blog.xyang.xin/tags/Linux/"/>
     
-      <category term="剪贴板" scheme="http://blog.xyang.xin/tags/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
+    <category term="剪贴板" scheme="http://blog.xyang.xin/tags/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
     
-      <category term="Vim" scheme="http://blog.xyang.xin/tags/Vim/"/>
+    <category term="Vim" scheme="http://blog.xyang.xin/tags/Vim/"/>
     
   </entry>
   
@@ -190,22 +176,20 @@
     <published>2020-05-29T18:15:01.000Z</published>
     <updated>2020-06-03T12:32:32.653Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2020%2F05%2F29%2F1590724982.png?x-oss-process=style/title_800&quot; alt=&quot;1590724982.png&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;生活离不开搜索引擎了，我曾尝试在思考，是不是未来的开卷考试，会允许使用某个特定的搜索引擎。
-    
-    </summary>
+    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2020%2F05%2F29%2F1590724982.png?x-oss-process=style/title_800&quot; alt=&quot;1590724982.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;生活离不开搜索引擎了，我曾尝试在思考，是不是未来的开卷考试，会允许使用某个特定的搜索引擎。</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="SE" scheme="http://blog.xyang.xin/tags/SE/"/>
+    <category term="SE" scheme="http://blog.xyang.xin/tags/SE/"/>
     
-      <category term="搜索引擎" scheme="http://blog.xyang.xin/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/"/>
+    <category term="搜索引擎" scheme="http://blog.xyang.xin/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/"/>
     
-      <category term="Google" scheme="http://blog.xyang.xin/tags/Google/"/>
+    <category term="Google" scheme="http://blog.xyang.xin/tags/Google/"/>
     
   </entry>
   
@@ -216,21 +200,19 @@
     <published>2020-04-18T16:15:08.000Z</published>
     <updated>2020-08-10T14:00:19.684Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;使用 iCloud Drive 将文件上传到云端，防止数据丢失，同时可以实现多台设备的协同工作。但是在使用 iCloud Drive 的过程中我遇到了程序未响应，iCoud 文件上传阻塞的问题。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;使用 iCloud Drive 将文件上传到云端，防止数据丢失，同时可以实现多台设备的协同工作。但是在使用 iCloud Drive 的过程中我遇到了程序未响应，iCoud 文件上传阻塞的问题。&lt;/p&gt;</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="MacOS" scheme="http://blog.xyang.xin/tags/MacOS/"/>
+    <category term="MacOS" scheme="http://blog.xyang.xin/tags/MacOS/"/>
     
-      <category term="Finder" scheme="http://blog.xyang.xin/tags/Finder/"/>
+    <category term="Finder" scheme="http://blog.xyang.xin/tags/Finder/"/>
     
-      <category term="iCloud" scheme="http://blog.xyang.xin/tags/iCloud/"/>
+    <category term="iCloud" scheme="http://blog.xyang.xin/tags/iCloud/"/>
     
   </entry>
   
@@ -241,21 +223,19 @@
     <published>2020-04-13T14:07:22.000Z</published>
     <updated>2020-04-16T13:45:42.108Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。&lt;/p&gt;
 &lt;p&gt;通过以下命令可以查看当前路径下的所有文件及文件夹大小并从大到小排列，以 KB 为单位显示。&lt;/p&gt;
 &lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;du -sk *| sort -rn&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;以下命令就是以K，M，G为单位，提高信息的可读性，但是不能正确按文件大小排序。&lt;/p&gt;
-&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;du -sh *&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;du -sh *&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="MacOS" scheme="http://blog.xyang.xin/tags/MacOS/"/>
+    <category term="MacOS" scheme="http://blog.xyang.xin/tags/MacOS/"/>
     
   </entry>
   
@@ -266,19 +246,17 @@
     <published>2020-03-31T15:51:49.000Z</published>
     <updated>2020-04-14T14:17:53.869Z</updated>
     
-    <summary type="html">
     
-      &lt;h2 id=&quot;何为解构赋值&quot;&gt;&lt;a href=&quot;#何为解构赋值&quot; class=&quot;headerlink&quot; title=&quot;何为解构赋值&quot;&gt;&lt;/a&gt;何为解构赋值&lt;/h2&gt;&lt;p&gt;解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;h2 id=&quot;何为解构赋值&quot;&gt;&lt;a href=&quot;#何为解构赋值&quot; class=&quot;headerlink&quot; title=&quot;何为解构赋值&quot;&gt;&lt;/a&gt;何为解构赋值&lt;/h2&gt;&lt;p&gt;解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。&lt;/p&gt;</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="【一天一个 es6 语法】" scheme="http://blog.xyang.xin/tags/%E3%80%90%E4%B8%80%E5%A4%A9%E4%B8%80%E4%B8%AA-es6-%E8%AF%AD%E6%B3%95%E3%80%91/"/>
+    <category term="【一天一个 es6 语法】" scheme="http://blog.xyang.xin/tags/%E3%80%90%E4%B8%80%E5%A4%A9%E4%B8%80%E4%B8%AA-es6-%E8%AF%AD%E6%B3%95%E3%80%91/"/>
     
-      <category term="javascript" scheme="http://blog.xyang.xin/tags/javascript/"/>
+    <category term="javascript" scheme="http://blog.xyang.xin/tags/javascript/"/>
     
   </entry>
   
@@ -289,20 +267,18 @@
     <published>2020-03-29T19:13:56.000Z</published>
     <updated>2020-04-14T14:01:39.301Z</updated>
     
-    <summary type="html">
     
-      &lt;h2 id=&quot;Function&quot;&gt;&lt;a href=&quot;#Function&quot; class=&quot;headerlink&quot; title=&quot;Function&quot;&gt;&lt;/a&gt;Function&lt;/h2&gt;&lt;p&gt;每个函数都是 &lt;code&gt;Function&lt;/code&gt; 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用&lt;strong&gt;函数声明语法&lt;/strong&gt;定义的：&lt;/p&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;sum&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;num1, num2&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; num1 + num2;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
+    <summary type="html">&lt;h2 id=&quot;Function&quot;&gt;&lt;a href=&quot;#Function&quot; class=&quot;headerlink&quot; title=&quot;Function&quot;&gt;&lt;/a&gt;Function&lt;/h2&gt;&lt;p&gt;每个函数都是 &lt;code&gt;Function&lt;/code&gt; 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用&lt;strong&gt;函数声明语法&lt;/strong&gt;定义的：&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;sum&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;num1, num2&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; num1 + num2;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="【一天一个 es6 语法】" scheme="http://blog.xyang.xin/tags/%E3%80%90%E4%B8%80%E5%A4%A9%E4%B8%80%E4%B8%AA-es6-%E8%AF%AD%E6%B3%95%E3%80%91/"/>
+    <category term="【一天一个 es6 语法】" scheme="http://blog.xyang.xin/tags/%E3%80%90%E4%B8%80%E5%A4%A9%E4%B8%80%E4%B8%AA-es6-%E8%AF%AD%E6%B3%95%E3%80%91/"/>
     
-      <category term="javascript" scheme="http://blog.xyang.xin/tags/javascript/"/>
+    <category term="javascript" scheme="http://blog.xyang.xin/tags/javascript/"/>
     
   </entry>
   
@@ -313,9 +289,8 @@
     <published>2020-03-25T21:28:59.000Z</published>
     <updated>2020-07-28T09:12:43.382Z</updated>
     
-    <summary type="html">
     
-      &lt;h2 id=&quot;什么是-Symbol&quot;&gt;&lt;a href=&quot;#什么是-Symbol&quot; class=&quot;headerlink&quot; title=&quot;什么是 Symbol?&quot;&gt;&lt;/a&gt;什么是 Symbol?&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; 😻 = 😺 × 😍;  &lt;span class=&quot;comment&quot;&gt;// SyntaxError&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    <summary type="html">&lt;h2 id=&quot;什么是-Symbol&quot;&gt;&lt;a href=&quot;#什么是-Symbol&quot; class=&quot;headerlink&quot; title=&quot;什么是 Symbol?&quot;&gt;&lt;/a&gt;什么是 Symbol?&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; 😻 = 😺 × 😍;  &lt;span class=&quot;comment&quot;&gt;// SyntaxError&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;（爆笑）这当然不是 Symbol。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Undefined&lt;/li&gt;
@@ -326,17 +301,16 @@
 &lt;li&gt;Object&lt;/li&gt;
 &lt;li&gt;Symbol (ES2015 新增)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Symbol 不是字符串，不是对象，是第七种原始数据类型。每个从&lt;code&gt;Symbol()&lt;/code&gt;返回的 symbol 类型的值都是唯一的。&lt;strong&gt;一个 symbol 类型的值能作为对象属性的标识符；这是该数据类型仅有的目的&lt;/strong&gt;。&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;Symbol 不是字符串，不是对象，是第七种原始数据类型。每个从&lt;code&gt;Symbol()&lt;/code&gt;返回的 symbol 类型的值都是唯一的。&lt;strong&gt;一个 symbol 类型的值能作为对象属性的标识符；这是该数据类型仅有的目的&lt;/strong&gt;。&lt;/p&gt;</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="【一天一个 es6 语法】" scheme="http://blog.xyang.xin/tags/%E3%80%90%E4%B8%80%E5%A4%A9%E4%B8%80%E4%B8%AA-es6-%E8%AF%AD%E6%B3%95%E3%80%91/"/>
+    <category term="【一天一个 es6 语法】" scheme="http://blog.xyang.xin/tags/%E3%80%90%E4%B8%80%E5%A4%A9%E4%B8%80%E4%B8%AA-es6-%E8%AF%AD%E6%B3%95%E3%80%91/"/>
     
-      <category term="javascript" scheme="http://blog.xyang.xin/tags/javascript/"/>
+    <category term="javascript" scheme="http://blog.xyang.xin/tags/javascript/"/>
     
   </entry>
   
@@ -347,21 +321,19 @@
     <published>2020-03-17T15:27:51.000Z</published>
     <updated>2020-04-14T14:02:17.669Z</updated>
     
-    <summary type="html">
     
-      &lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。&lt;/p&gt;
 &lt;p&gt;根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。&lt;br&gt;几乎每个 vim user 的 vimrc 中都会有如下配置：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;filetype plugin indent on&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;filetype plugin indent on&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="vim" scheme="http://blog.xyang.xin/tags/vim/"/>
+    <category term="vim" scheme="http://blog.xyang.xin/tags/vim/"/>
     
-      <category term="multiple filetype" scheme="http://blog.xyang.xin/tags/multiple-filetype/"/>
+    <category term="multiple filetype" scheme="http://blog.xyang.xin/tags/multiple-filetype/"/>
     
   </entry>
   
@@ -372,14 +344,12 @@
     <published>2020-03-15T13:06:07.000Z</published>
     <updated>2020-04-14T14:02:17.780Z</updated>
     
-    <summary type="html">
     
-      &lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;本文通过实践经历基本的认识 HTTP 代理与 Socks5 代理的用法与理解其精髓。同时也解决 go get 库无法下载的问题。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;本文通过实践经历基本的认识 HTTP 代理与 Socks5 代理的用法与理解其精髓。同时也解决 go get 库无法下载的问题。&lt;/p&gt;</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
   </entry>
@@ -391,19 +361,17 @@
     <published>2019-09-01T19:36:24.000Z</published>
     <updated>2020-05-31T08:54:39.031Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-09%2Frhydybs.jpeg?x-oss-process=style/title_140&quot; alt=&quot;rhydybs.jpeg-w140&quot;&gt;&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-09%2Frhydybs.jpeg?x-oss-process=style/title_140&quot; alt=&quot;rhydybs.jpeg-w140&quot;&gt;&lt;/p&gt;</summary>
     
     
-      <category term="人文修养" scheme="http://blog.xyang.xin/categories/%E4%BA%BA%E6%96%87%E4%BF%AE%E5%85%BB/"/>
+    
+    <category term="人文修养" scheme="http://blog.xyang.xin/categories/%E4%BA%BA%E6%96%87%E4%BF%AE%E5%85%BB/"/>
     
     
-      <category term="读书笔记" scheme="http://blog.xyang.xin/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <category term="读书笔记" scheme="http://blog.xyang.xin/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="阅读" scheme="http://blog.xyang.xin/tags/%E9%98%85%E8%AF%BB/"/>
+    <category term="阅读" scheme="http://blog.xyang.xin/tags/%E9%98%85%E8%AF%BB/"/>
     
   </entry>
   
@@ -414,19 +382,17 @@
     <published>2019-07-11T16:47:31.000Z</published>
     <updated>2020-05-31T08:54:19.534Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-05%2F1558180143.png?x-oss-process=style/title_140&quot; alt=&quot;1558180143.png-w140&quot;&gt;&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-05%2F1558180143.png?x-oss-process=style/title_140&quot; alt=&quot;1558180143.png-w140&quot;&gt;&lt;/p&gt;</summary>
     
     
-      <category term="人文修养" scheme="http://blog.xyang.xin/categories/%E4%BA%BA%E6%96%87%E4%BF%AE%E5%85%BB/"/>
+    
+    <category term="人文修养" scheme="http://blog.xyang.xin/categories/%E4%BA%BA%E6%96%87%E4%BF%AE%E5%85%BB/"/>
     
     
-      <category term="读书笔记" scheme="http://blog.xyang.xin/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <category term="读书笔记" scheme="http://blog.xyang.xin/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="写作" scheme="http://blog.xyang.xin/tags/%E5%86%99%E4%BD%9C/"/>
+    <category term="写作" scheme="http://blog.xyang.xin/tags/%E5%86%99%E4%BD%9C/"/>
     
   </entry>
   
@@ -437,21 +403,19 @@
     <published>2019-05-14T15:13:08.000Z</published>
     <updated>2020-04-15T04:24:47.288Z</updated>
     
-    <summary type="html">
     
-      &lt;h2 id=&quot;文章简介&quot;&gt;&lt;a href=&quot;#文章简介&quot; class=&quot;headerlink&quot; title=&quot;文章简介&quot;&gt;&lt;/a&gt;文章简介&lt;/h2&gt;&lt;p&gt;本文介绍 Hexo 博客的一些进阶操作。&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;文章简介&quot;&gt;&lt;a href=&quot;#文章简介&quot; class=&quot;headerlink&quot; title=&quot;文章简介&quot;&gt;&lt;/a&gt;文章简介&lt;/h2&gt;&lt;p&gt;本文介绍 Hexo 博客的一些进阶操作。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;解决 Github Pages 不被百度抓取的问题；&lt;/li&gt;
 &lt;li&gt;使用 gulp 压缩资源，实现访问加速。&lt;/li&gt;
-&lt;li&gt;在博客中添加音频和视频；
-    
-    </summary>
+&lt;li&gt;在博客中添加音频和视频；</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="hexo" scheme="http://blog.xyang.xin/tags/hexo/"/>
+    <category term="hexo" scheme="http://blog.xyang.xin/tags/hexo/"/>
     
   </entry>
   
@@ -462,21 +426,19 @@
     <published>2019-02-26T19:52:38.000Z</published>
     <updated>2020-06-20T12:58:31.471Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png&quot; alt=&quot;2019-05-14 at 17.17.png&quot;&gt;&lt;br&gt;WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png&quot; alt=&quot;2019-05-14 at 17.17.png&quot;&gt;&lt;br&gt;WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!&lt;/p&gt;
 &lt;p&gt;known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。&lt;/p&gt;
 &lt;h2 id=&quot;通过如下两种方案解决该问题&quot;&gt;&lt;a href=&quot;#通过如下两种方案解决该问题&quot; class=&quot;headerlink&quot; title=&quot;通过如下两种方案解决该问题&quot;&gt;&lt;/a&gt;通过如下两种方案解决该问题&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;输入命令(推荐)：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh-keygen -R45.40.106.111&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh-keygen -R45.40.106.111&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Linux" scheme="http://blog.xyang.xin/tags/Linux/"/>
+    <category term="Linux" scheme="http://blog.xyang.xin/tags/Linux/"/>
     
   </entry>
   
@@ -487,14 +449,12 @@
     <published>2019-02-24T00:31:12.000Z</published>
     <updated>2020-06-21T13:54:26.069Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;主要包含：shadowsocks-libev、kuptun 的配置和优化。基于亚马逊云学生机。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;主要包含：shadowsocks-libev、kuptun 的配置和优化。基于亚马逊云学生机。&lt;/p&gt;</summary>
     
     
-      <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
     
     
   </entry>
