@@ -298,14 +298,14 @@
 
   
   <url>
-    <loc>http://blog.xyang.xin/tags/%E6%96%B9%E6%B3%95/</loc>
+    <loc>http://blog.xyang.xin/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1/</loc>
     <lastmod>2020-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.xyang.xin/tags/%E4%B8%AD%E5%9B%BD/</loc>
+    <loc>http://blog.xyang.xin/tags/%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2020-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -333,6 +333,13 @@
   </url>
   
   <url>
+    <loc>http://blog.xyang.xin/tags/%E4%B8%AD%E5%9B%BD/</loc>
+    <lastmod>2020-08-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.xyang.xin/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2020-08-28</lastmod>
     <changefreq>daily</changefreq>
@@ -341,13 +348,6 @@
   
   <url>
     <loc>http://blog.xyang.xin/tags/%E5%86%99%E4%BD%9C/</loc>
-    <lastmod>2020-08-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1/</loc>
     <lastmod>2020-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -376,6 +376,13 @@
   
   <url>
     <loc>http://blog.xyang.xin/tags/javascript/</loc>
+    <lastmod>2020-08-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.xyang.xin/tags/%E4%BA%BA%E7%94%9F/</loc>
     <lastmod>2020-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -516,13 +523,6 @@
   
   <url>
     <loc>http://blog.xyang.xin/tags/Vim/</loc>
-    <lastmod>2020-08-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/tags/%E4%BA%BA%E7%94%9F/</loc>
     <lastmod>2020-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

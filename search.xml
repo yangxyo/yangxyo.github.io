@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>阿里云 ECS 使用</title>
+    <url>/ECS/</url>
+    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><a href="https://www.alibabacloud.com/help/zh/doc-detail/25367.htm?spm=a2c63.p38356.b99.2.615e1bbcsZH9Ry">阿里云官方文档</a></p>
+<a id="more"></a>
+
+<h2 id="远程连接服务器常用的几种方式"><a href="#远程连接服务器常用的几种方式" class="headerlink" title="远程连接服务器常用的几种方式"></a>远程连接服务器常用的几种方式</h2><p>SSH —— 远程<br>SFTF —— 文件传输，22端口</p>
+<h2 id="安全组"><a href="#安全组" class="headerlink" title="安全组"></a>安全组</h2><h2 id="设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口"><a href="#设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口" class="headerlink" title="设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口"></a>设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口</h2><ol>
+<li>设置端口范围 22/22 协议类型自定义TCP 授权对象公网ip，22端口常用于ssh连接。</li>
+<li>设置端口范围 80/80 协议类型自定义TCP 授权对象0.0.0.0/0。<br>允许所有人通过 http 访问你的服务器。<br>80 端口常用于 http 协议访问 web 网站。相对应的 443 端口用于 https 协议访问 web 网站。3306 端口常用于数据库远程连接。出于安全考虑：如果向所有人打开 22 端口和 3306 端口，应当确保密码的复杂程度，以防强行爆破。对于新手建议将 22 端口和 3306 端口设置为仅允许指定IP访问。</li>
+</ol>
+<h2 id="设置公网出方向-——-服务器出口的限制"><a href="#设置公网出方向-——-服务器出口的限制" class="headerlink" title="设置公网出方向 —— 服务器出口的限制"></a>设置公网出方向 —— 服务器出口的限制</h2><p>没有特殊需求不需要设置。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>云服务</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>目标和关键成果法 (Objectives and Key Results)</title>
     <url>/OKRs/</url>
     <content><![CDATA[<blockquote>
@@ -21,6 +41,29 @@
       </categories>
       <tags>
         <tag>方法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
+    <url>/acme-sh/</url>
+    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
+<ul>
+<li>http 认证方式</li>
+<li>dns 方式<a id="more"></a>
+
+</li>
+</ul>
+<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
+<p><a href="https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E">github 安装说明</a></p>
+<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssl</tag>
+        <tag>acme.sh</tag>
+        <tag>letsencrypt</tag>
       </tags>
   </entry>
   <entry>
@@ -55,29 +98,6 @@
       </tags>
   </entry>
   <entry>
-    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
-    <url>/acme-sh/</url>
-    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
-<ul>
-<li>http 认证方式</li>
-<li>dns 方式<a id="more"></a>
-
-</li>
-</ul>
-<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
-<p><a href="https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E">github 安装说明</a></p>
-<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>ssl</tag>
-        <tag>acme.sh</tag>
-        <tag>letsencrypt</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《一本小小的红色写作书》读书笔记</title>
     <url>/book-hsxzs/</url>
     <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F1558180143.png?x-oss-process=style/title_140" alt="1558180143.png-w140"></p>
@@ -105,26 +125,6 @@
       <tags>
         <tag>读书笔记</tag>
         <tag>写作</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>阿里云 ECS 使用</title>
-    <url>/ECS/</url>
-    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><a href="https://www.alibabacloud.com/help/zh/doc-detail/25367.htm?spm=a2c63.p38356.b99.2.615e1bbcsZH9Ry">阿里云官方文档</a></p>
-<a id="more"></a>
-
-<h2 id="远程连接服务器常用的几种方式"><a href="#远程连接服务器常用的几种方式" class="headerlink" title="远程连接服务器常用的几种方式"></a>远程连接服务器常用的几种方式</h2><p>SSH —— 远程<br>SFTF —— 文件传输，22端口</p>
-<h2 id="安全组"><a href="#安全组" class="headerlink" title="安全组"></a>安全组</h2><h2 id="设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口"><a href="#设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口" class="headerlink" title="设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口"></a>设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口</h2><ol>
-<li>设置端口范围 22/22 协议类型自定义TCP 授权对象公网ip，22端口常用于ssh连接。</li>
-<li>设置端口范围 80/80 协议类型自定义TCP 授权对象0.0.0.0/0。<br>允许所有人通过 http 访问你的服务器。<br>80 端口常用于 http 协议访问 web 网站。相对应的 443 端口用于 https 协议访问 web 网站。3306 端口常用于数据库远程连接。出于安全考虑：如果向所有人打开 22 端口和 3306 端口，应当确保密码的复杂程度，以防强行爆破。对于新手建议将 22 端口和 3306 端口设置为仅允许指定IP访问。</li>
-</ol>
-<h2 id="设置公网出方向-——-服务器出口的限制"><a href="#设置公网出方向-——-服务器出口的限制" class="headerlink" title="设置公网出方向 —— 服务器出口的限制"></a>设置公网出方向 —— 服务器出口的限制</h2><p>没有特殊需求不需要设置。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>云服务</tag>
       </tags>
   </entry>
   <entry>
@@ -289,6 +289,35 @@
       </tags>
   </entry>
   <entry>
+    <title>人生</title>
+    <url>/flesh/</url>
+    <content><![CDATA[<h2 id="他的话可信吗"><a href="#他的话可信吗" class="headerlink" title="他的话可信吗"></a>他的话可信吗</h2><blockquote>
+<p>听人谈话的时候，我们需要了解这人是谁，他是处在何种角度，代表何种阶级谈话的。</p>
+</blockquote>
+<p>他的话是他的经验之谈，是他从权威的书籍中得知，论坛上看到，还是他仅仅只是为了让你相信而虚构或者是一个看似正确而往往值得商榷的。</p>
+<a id="more"></a>
+
+<h2 id="好话"><a href="#好话" class="headerlink" title="好话"></a>好话</h2><blockquote>
+<p>听见好话一定要多长心眼，好话会让你做出的决策违背初心，待后知后觉，晚矣。</p>
+</blockquote>
+<p>投票软件多少是有漏洞的，从开发人员的角度利用漏洞刷票是很容易被发现，且破坏比赛的公平度的。很多亲人朋友呢很支持我，感觉一个投票闹得挺辛苦的。就不得不在群里向主办方反馈，不一会儿开发投票软件公司的老总进来了，也不说是解决问题。</p>
+<p>主办方第一轮给出的结果，随便找个理由，说没有刷票行为。<br>网络投票看是否刷票，一般都是看着某一天投票数是否波动过大，尤其是最后一天，或者票数数量过多，咱们开始怀疑刷票。然而这都只是怀疑，技术部门要是不想解决也是没办法的。<br>然而当投票网站上有访问量和投票数那就不一样了，当投票数大于访问量？这是什么怪物？页面都没被访问，你又是怎么点击投票按钮的，这就是异常刷票了。</p>
+<p>这种情况主办方如果不证明是系统漏洞，抑或是抓出一个有刷票行为的队伍来，那这个主办方麻烦就大了，网络舆情还是很管用的。</p>
+<p>后面主办方不得不抓出了一个，五天投票，前面四天总共几十票，最后一天下午飙几万的队伍。据肉眼观察肯定是不止一个的。</p>
+<p>但是同时那个老总私聊到我，简单的说“本科进决赛很优秀了，有时间聊一下”。再加上我本身对这软件公司是没有敌意的，因为系统安全性技术比较难，本身抱着的态度就是能找出刷票的队伍，解决问题就行了。</p>
+<p>他这一句话导致的最终结果就是，简单的将刷票最厉害的队伍解决了，而放下了第一轮结果所公布的无赖行为和更多的不公平性的愤懑。</p>
+<p>一句好话让我对公平性诉求，从解决，到最简单的解决。</p>
+<h2 id="解决生活中的难题"><a href="#解决生活中的难题" class="headerlink" title="解决生活中的难题"></a>解决生活中的难题</h2><p>倘若有条件自己给自己安排一件难题，例如考研究生、公务员，不是生活强加给我们的，那便是为了多一种生活体验。抱着解决问题的心态去攻坚克难，坚持下去完整的度过有计划的每一天便是一种胜利。</p>
+<h2 id="为什么不同"><a href="#为什么不同" class="headerlink" title="为什么不同"></a>为什么不同</h2><p>假若我们抱怨，抱怨自己没有出生在名门旺族，抱怨自己没有一个好看的脸蛋。然而人之所以是自己，正是源于这些后天难以更改的不同之处。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>人生</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>从 Github 下载目标仓库指定文件夹</title>
     <url>/github-download-folder/</url>
     <content><![CDATA[<p>从 Github 下载目标仓库指定文件夹。</p>
@@ -324,6 +353,102 @@
       <tags>
         <tag>Github</tag>
         <tag>git-svn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于 GitHub Pages 的 Hexo+NexT 博客搭建</title>
+    <url>/githubpages-hexo-next/</url>
+    <content><![CDATA[<h1 id="基于-GitHub-Pages-的-Hexo-NexT-博客-——-引导篇"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客-——-引导篇" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客 —— 引导篇"></a>基于 GitHub Pages 的 Hexo + NexT 博客 —— 引导篇</h1><h2 id="基于-GitHub-Pages-的-Hexo-NexT-博客概述"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客概述" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客概述"></a>基于 GitHub Pages 的 Hexo + NexT 博客概述</h2><p>使用这一套博客系统架构您将获得稳定免费、美观、易定制的个人博客。通过 Markdown 语法编辑文章，git命令发布文章，优雅的博客发布体验。</p>
+<a id="more"></a>
+
+<h2 id="搭建本博客系统的技术条件"><a href="#搭建本博客系统的技术条件" class="headerlink" title="搭建本博客系统的技术条件"></a>搭建本博客系统的技术条件</h2><ol>
+<li>基本的终端命令与理解，比如：如何 cd 进入一个需要进入的文件夹。</li>
+<li>GitHub项目创建和项目下载。</li>
+</ol>
+<h1 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h1><h2 id="GitHub-Pages-简介"><a href="#GitHub-Pages-简介" class="headerlink" title="GitHub Pages 简介"></a>GitHub Pages 简介</h2><p>GitHub Pages 是GitHub免费为用户提供的，适用于 GitHub 用户发布自己的网页内容（静态网页）。<a href="https://pages.github.com/">官网🐱</a><br>GitHub Pages 的容量限制为1GB，流量限制为一个月100GB。GitHub用户名将作为github.com的二级域名，而每一个 github repository 都是可以部署在GitHub Pages上的，这样低成本的为前端开发人员免费的提供了一台稳定免费的测试服务器和域名。</p>
+<p>GitHub Pages 同样是个人博客的优良载体, 以下教程将基于 GitHub Pages 打造个人博客。</p>
+<h2 id="GitHub-Pages-博客项目建立"><a href="#GitHub-Pages-博客项目建立" class="headerlink" title="GitHub Pages 博客项目建立"></a>GitHub Pages 博客项目建立</h2><p>将项目创建于 GitHub Pages 的根目录下（”/“）。<br>保持创建普通GitHub项目的姿势，将项目名称命名为 GitHub用户名.github.io。<br>URL == “GitHub用户名.github.io/“</p>
+<p>每个GitHub项目都可以部署到 GitHub Pages，作为二级路径(“项目名/“)。<br>Settings -&gt; GitHub Pages -&gt; Source -&gt; master branch<br>URL == “GitHub用户名.github.io/项目名/“</p>
+<h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><h2 id="Hexo-简介"><a href="#Hexo-简介" class="headerlink" title="Hexo 简介"></a>Hexo 简介</h2><p>Hexo 基于Node.js开发是一 个纯静态的博客框架，使用Markdown渲染引擎文章。 </p>
+<h2 id="Hexo-安装及配置"><a href="#Hexo-安装及配置" class="headerlink" title="Hexo 安装及配置"></a>Hexo 安装及配置</h2><p>Hexo 详细安装及配置请参考<br><a href="https://hexo.io/zh-cn/docs/">Hexo 官方文档</a><br>建议：完成官方文档“建站”继续查看后面的内容。<br>配置文件 : 后面都要加空格。<br>对_config.yml站点配置文件简要配置。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># URL</span><br><span class="line">url: https:&#x2F;&#x2F;GitHub用户名.github.io&#x2F;</span><br></pre></td></tr></table></figure>
+<h2 id="Hexo-的使用"><a href="#Hexo-的使用" class="headerlink" title="Hexo 的使用"></a>Hexo 的使用</h2><p>相信您已经了解source文件夹是您以后存放文章的地方，并且已经看见官方文档中的这句话“Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件会被拷贝过去。”<br>而这个public文件夹的内容正是需要上传到GitHub Pages的内容，如何去生成呢？请继续往后看。</p>
+<p>写完文章发布到服务器之前，先看看效果呗！现在source/_posts文件夹里面正好有一篇hello-world。<br>在站点文件夹根目录下执行如下命令（插件都在该目录安装）：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br></pre></td></tr></table></figure>
+<p>安装完成后，输入以下命令以启动服务器，您的网站会在 <a href="http://localhost:4000/">http://localhost:4000</a> 下启动。在服务器启动期间，Hexo 会监视文件变动并自动更新，您无须重启服务器。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo s (即 hexo server)</span><br></pre></td></tr></table></figure>
+<p>现在介绍两种发布文章的方式, 建议Windows用户用第一种，Mac用户使用第二种：</p>
+<p>方案一：通过 hexo-deployer-git 插件<br>在站点文件夹根目录下执行如下命令（插件都在该目录安装）：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>文件解析生成 public 文件夹</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo g (即 hexo generate)</span><br></pre></td></tr></table></figure>
+<p>配置_config.yml站点配置文件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;deployment.html</span><br><span class="line">deploy:</span><br><span class="line">   type: git</span><br><span class="line">   repository: 您下载自己项目的URL (项目在 GitHub Pages 根目录：https:&#x2F;&#x2F;github.com&#x2F;GitHub用户名.github.io.git&#x2F;)</span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
+<p>项目部署</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo d (即 hexo deploy)</span><br></pre></td></tr></table></figure>
+<p>这里会提示输入您的github账号密码，通过前面提到的 URL 访问到您的博客， 项目部署成功。</p>
+<p>方案二： 通过 git 命令部署<br>进入站点文件夹根目录，克隆您的项目到本地（目的是获取 .git 文件夹，这是 git 的全部）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;GitHub用户名&#x2F;GitHub用户名.github.io.git .deploy&#x2F;GitHub用户名.github.io</span><br></pre></td></tr></table></figure>
+<p>解析及部署命令如下（可将以下命令直接 deploy.sh 脚本文件里 ）: </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo generate                      # 文件解析生成 public 文件夹</span><br><span class="line">$ cp -R public&#x2F;* .deploy&#x2F;GitHub用户名.github.io  # 复制 public 文件夹的全部内容到 .deploy 隐藏文件夹下</span><br><span class="line">$ cd .deploy&#x2F;GitHub用户名.github.io</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m “update”</span><br><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
+<p>将 deploy.sh 脚本文件放在站点文件夹根目录，cd 进入根目录，执行命令如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sh deploy.sh</span><br></pre></td></tr></table></figure>
+<p>这里会提示输入您的github账号密码，通过前面提到的 URL 访问到您的博客， 项目部署成功。</p>
+<p>这一小节记住两个命令： hexo s 和 hexo d 或 sh deploy.sh<br>事实上 hexo s -s 更常使用（详情查看<a href="https://hexo.io/zh-cn/docs/server">官方文档 -&gt; 服务器</a>）</p>
+<h2 id="使用个人域名"><a href="#使用个人域名" class="headerlink" title="使用个人域名"></a>使用个人域名</h2><p>如果想要使用自己的域名，在域名解析的时候使用CNAME记录类型。并实现个人博客向个人域名的映射，在source文件夹下创建CNAME文件（无后缀名），在文件中直接写入您的域名（http:// 后面的内容）</p>
+<h1 id="NexT"><a href="#NexT" class="headerlink" title="NexT"></a>NexT</h1><h2 id="NexT-简介"><a href="#NexT-简介" class="headerlink" title="NexT 简介"></a>NexT 简介</h2><p>NexT 是一款完全基于 Hexo 的主题，使用者众多，成熟度高，我们可以基于它创造出属于我们不一样的个人博客。 </p>
+<p>下面更多的是对该主题一些基本配置的讲述，请勿照搬，按自己的喜好描绘属于自己的博客吧。</p>
+<h2 id="NexT-安装及配置"><a href="#NexT-安装及配置" class="headerlink" title="NexT 安装及配置"></a>NexT 安装及配置</h2><p>建议下载最新版本<br><a href="https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/README.md">v6.0.x版本 GitHub 地址</a></p>
+<p>NexT 详细安装及配置请参考<br><a href="https://theme-next.iissnan.com/getting-started.html">NexT 官方文档</a><br><a href="https://github.com/iissnan/hexo-theme-next/wiki">NexT 使用文档 GitHub Wiki</a>  </p>
+<p>NexT 的配置围绕配置文件，对内置样式与第三方插件进行配置。（NexT 配置文件在 NexT 主题根目录，文件名和站点配置文件名相同）。</p>
+<h2 id="外观设置"><a href="#外观设置" class="headerlink" title="外观设置"></a>外观设置</h2><p>目前官方有四款外观供选择，在 NexT 的配置文件下搜索 Schemes 删除注释符号 # 即可使用。 </p>
+<h2 id="footer-页脚的配置"><a href="#footer-页脚的配置" class="headerlink" title="footer 页脚的配置"></a>footer 页脚的配置</h2><p>搜索 footer 将 powered theme 的 enable 调整为 false。</p>
+<h2 id="添加标签-tags-页"><a href="#添加标签-tags-页" class="headerlink" title="添加标签 tags 页"></a>添加标签 tags 页</h2><p>执行以下命令将在 source 文件夹下将生成 tags 文件夹，打开修改里面的 index 文件添加 type : “tags”。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure>
+<h2 id="添加分类-categories-页"><a href="#添加分类-categories-页" class="headerlink" title="添加分类 categories 页"></a>添加分类 categories 页</h2><p>执行以下命令将在 source 文件夹下将生成 categories 文件夹，打开修改里面的 index 文件添加 type : “categories”。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure>
+<h2 id="分类和标签的应用"><a href="#分类和标签的应用" class="headerlink" title="分类和标签的应用"></a>分类和标签的应用</h2><p>事实上，分类和标签都是 hexo 实现的， 可查看官方文档 Front-matter 部分。</p>
+<p>Front-matter 是通过 hexo new 生成的 md 文件 - - - 以上的区域。<br>categories 是有顺序性和层次性的而 tags 没有，例如:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">categories:</span><br><span class="line">- 人文</span><br><span class="line">- 散文</span><br><span class="line">tags:</span><br><span class="line">- 毕淑敏</span><br><span class="line">- 早年</span><br></pre></td></tr></table></figure>
+<h2 id="menu-菜单栏配置"><a href="#menu-菜单栏配置" class="headerlink" title="menu 菜单栏配置"></a>menu 菜单栏配置</h2><p>搜索 menu 你可以选择打开一些菜单按钮 || 后面对应的是 Font Awesome 图标名。<br><a href="https://fontawesome.com/?from=io">Font Awesome</a><br><a href="http://www.fontawesome.com.cn/faicons/">图标库 – Font Awesome 中文网</a></p>
+<h2 id="sidebar-侧边栏配置"><a href="#sidebar-侧边栏配置" class="headerlink" title="sidebar 侧边栏配置"></a>sidebar 侧边栏配置</h2><p>搜索 site_state， 文章、标签和分类默认在侧边栏中显示链接。</p>
+<h2 id="social-社交链接配置"><a href="#social-社交链接配置" class="headerlink" title="social 社交链接配置"></a>social 社交链接配置</h2><p>搜索 social, 打开或自行添加。</p>
+<h2 id="avatar-添加侧边栏头像"><a href="#avatar-添加侧边栏头像" class="headerlink" title="avatar 添加侧边栏头像"></a>avatar 添加侧边栏头像</h2><p>建议使用 对象存储OSS 存储图片或其他文件，易于管理。</p>
+<h2 id="creative-commons-知识共享协议"><a href="#creative-commons-知识共享协议" class="headerlink" title="creative_commons 知识共享协议"></a>creative_commons 知识共享协议</h2><ul>
+<li>署名（BY）</li>
+<li>署名（BY）-禁止演绎（ND）</li>
+<li>署名（BY）-非商业性使用（NC）</li>
+<li>署名（BY）-非商业性使用（NC）-禁止演绎（ND）</li>
+<li>署名（BY）-非商业性使用（NC）-相同方式共享（SA）</li>
+<li>署名（BY）-相同方式共享（SA）</li>
+</ul>
+<h2 id="onmobile"><a href="#onmobile" class="headerlink" title="onmobile"></a>onmobile</h2><p>对于 Muse 和 Mist 两种外观生效，在手机端打开侧边栏。</p>
+<h2 id="设置多说-DISQUS-评论"><a href="#设置多说-DISQUS-评论" class="headerlink" title="设置多说 DISQUS 评论"></a>设置多说 DISQUS 评论</h2><p>DISQUS 和 GitHub Pages 有一个相似之处,用户的站点 URL 会生成一个 Shortname, 二级域名与之对应, 所以注册完后点击头像左边的 Admin, 点击 Settings 选择注册的网站, Shortname 在 Website Name 的上面。其实不用查看也可猜出 Shortname, 将域名的 . 替换成 - 即可， 例如 <a href="https://blog.xyang.xin/">https://blog.xyang.xin</a> 对应的 Shortname 为 blog-xyang-xin。</p>
+<p>关闭 tags 和 pages 页面的评论窗口，分别在它们的 index 文件添加 comments: false。</p>
+<h1 id="基于-GitHub-Pages-的-Hexo-NexT-博客-——-样式优化篇"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客-——-样式优化篇" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客 —— 样式优化篇"></a>基于 GitHub Pages 的 Hexo + NexT 博客 —— 样式优化篇</h1><h2 id="为文章边框添加立体阴影效果"><a href="#为文章边框添加立体阴影效果" class="headerlink" title="为文章边框添加立体阴影效果"></a>为文章边框添加立体阴影效果</h2><p>定位：themes/next/source/css/_common/components/post/post.styl文件<br>修改：在use-motion .post 下，添加box-shadow的代码 box-shadow <a href="https://www.cssmatic.com/box-shadow">生成网站</a></p>
+<h2 id="修改菜单栏的文字颜色"><a href="#修改菜单栏的文字颜色" class="headerlink" title="修改菜单栏的文字颜色"></a>修改菜单栏的文字颜色</h2><p>定位：themes/next/source/css/_schemes/Mist/menu.styl文件<br>修改：在.menu-item a下添加color: 颜色</p>
+<h2 id="修改文章底部的那个带-号的标签"><a href="#修改文章底部的那个带-号的标签" class="headerlink" title="修改文章底部的那个带#号的标签"></a>修改文章底部的那个带#号的标签</h2><p>定位：themes/next/layout/_macro/post.swig<br>修改：搜索 rel=”tag”&gt;#，将 # 换成 <i class="fa fa-tag"></i></p>
+<h2 id="文章内链接"><a href="#文章内链接" class="headerlink" title="文章内链接"></a>文章内链接</h2><p>定位：themes/next/source/css/_custom/custom.styl 文件<br>添加：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.post-body p a &#123;</span><br><span class="line">  color: #0593d3;</span><br><span class="line">  border-bottom: none;</span><br><span class="line">  &amp;:hover &#123;</span><br><span class="line">    color: #0477ab;</span><br><span class="line">    text-decoration: underline;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="修改网站背景样式，自动切换背景图"><a href="#修改网站背景样式，自动切换背景图" class="headerlink" title="修改网站背景样式，自动切换背景图"></a>修改网站背景样式，自动切换背景图</h2><p>定位：themes/next/source/css/_custom/custom.styl 文件<br>添加：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 背景</span><br><span class="line">.main-inner &#123; </span><br><span class="line">    margin-top: 60px;</span><br><span class="line">    padding: 60px 60px 60px 60px;</span><br><span class="line">    background: #fff;</span><br><span class="line">      opacity: 0.9;</span><br><span class="line">    min-height: 500px;</span><br><span class="line">&#125;</span><br><span class="line">body &#123;</span><br><span class="line">    background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900);</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">    background-size:cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注意：.mian-inner 将覆盖前文提到的文章的阴影将 box-shadow 代码剪切到 .main-inner 里面即可。</p>
+<h2 id="对-header-的修改"><a href="#对-header-的修改" class="headerlink" title="对 header 的修改"></a>对 header 的修改</h2><h3 id="更改头部-site-title-的字体颜色"><a href="#更改头部-site-title-的字体颜色" class="headerlink" title="更改头部 site-title 的字体颜色"></a>更改头部 site-title 的字体颜色</h3><p>定位：theme/next/source/css/_common/components/header/site-meta.styl 文件，找到.brand{}。<br>添加：color: 颜色</p>
+<h3 id="头部背景颜色与透明度"><a href="#头部背景颜色与透明度" class="headerlink" title="头部背景颜色与透明度"></a>头部背景颜色与透明度</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.header &#123;</span><br><span class="line">          background:rgba(13,26,31,0.8) none repeat scroll !important;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="对-footer-的修改"><a href="#对-footer-的修改" class="headerlink" title="对 footer 的修改"></a>对 footer 的修改</h2><h3 id="修改-footer-的文字居中"><a href="#修改-footer-的文字居中" class="headerlink" title="修改 footer 的文字居中"></a>修改 footer 的文字居中</h3><p>定位：themes/next/source/css/_schemes/Mist/index.styl 文件中的 footer。<br>修改：将 .footer-inner 的 text-align: left 修改为 center。</p>
+<h3 id="底部文字颜色"><a href="#底部文字颜色" class="headerlink" title="底部文字颜色"></a>底部文字颜色</h3><p>定位：theme/next/source/css/_custom/custom.styl 文件<br>添加：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.footer-inner &#123;color: 颜色代码;&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="底部背景颜色与透明度"><a href="#底部背景颜色与透明度" class="headerlink" title="底部背景颜色与透明度"></a>底部背景颜色与透明度</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.footer &#123;</span><br><span class="line">          background:rgba(13,26,31,0.8) none repeat scroll !important;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><a href="http://theme-next.iissnan.com/getting-started.html">开始使用 - NexT 使用文档</a></p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -430,102 +555,6 @@
       </categories>
       <tags>
         <tag>开发工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于 GitHub Pages 的 Hexo+NexT 博客搭建</title>
-    <url>/githubpages-hexo-next/</url>
-    <content><![CDATA[<h1 id="基于-GitHub-Pages-的-Hexo-NexT-博客-——-引导篇"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客-——-引导篇" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客 —— 引导篇"></a>基于 GitHub Pages 的 Hexo + NexT 博客 —— 引导篇</h1><h2 id="基于-GitHub-Pages-的-Hexo-NexT-博客概述"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客概述" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客概述"></a>基于 GitHub Pages 的 Hexo + NexT 博客概述</h2><p>使用这一套博客系统架构您将获得稳定免费、美观、易定制的个人博客。通过 Markdown 语法编辑文章，git命令发布文章，优雅的博客发布体验。</p>
-<a id="more"></a>
-
-<h2 id="搭建本博客系统的技术条件"><a href="#搭建本博客系统的技术条件" class="headerlink" title="搭建本博客系统的技术条件"></a>搭建本博客系统的技术条件</h2><ol>
-<li>基本的终端命令与理解，比如：如何 cd 进入一个需要进入的文件夹。</li>
-<li>GitHub项目创建和项目下载。</li>
-</ol>
-<h1 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h1><h2 id="GitHub-Pages-简介"><a href="#GitHub-Pages-简介" class="headerlink" title="GitHub Pages 简介"></a>GitHub Pages 简介</h2><p>GitHub Pages 是GitHub免费为用户提供的，适用于 GitHub 用户发布自己的网页内容（静态网页）。<a href="https://pages.github.com/">官网🐱</a><br>GitHub Pages 的容量限制为1GB，流量限制为一个月100GB。GitHub用户名将作为github.com的二级域名，而每一个 github repository 都是可以部署在GitHub Pages上的，这样低成本的为前端开发人员免费的提供了一台稳定免费的测试服务器和域名。</p>
-<p>GitHub Pages 同样是个人博客的优良载体, 以下教程将基于 GitHub Pages 打造个人博客。</p>
-<h2 id="GitHub-Pages-博客项目建立"><a href="#GitHub-Pages-博客项目建立" class="headerlink" title="GitHub Pages 博客项目建立"></a>GitHub Pages 博客项目建立</h2><p>将项目创建于 GitHub Pages 的根目录下（”/“）。<br>保持创建普通GitHub项目的姿势，将项目名称命名为 GitHub用户名.github.io。<br>URL == “GitHub用户名.github.io/“</p>
-<p>每个GitHub项目都可以部署到 GitHub Pages，作为二级路径(“项目名/“)。<br>Settings -&gt; GitHub Pages -&gt; Source -&gt; master branch<br>URL == “GitHub用户名.github.io/项目名/“</p>
-<h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><h2 id="Hexo-简介"><a href="#Hexo-简介" class="headerlink" title="Hexo 简介"></a>Hexo 简介</h2><p>Hexo 基于Node.js开发是一 个纯静态的博客框架，使用Markdown渲染引擎文章。 </p>
-<h2 id="Hexo-安装及配置"><a href="#Hexo-安装及配置" class="headerlink" title="Hexo 安装及配置"></a>Hexo 安装及配置</h2><p>Hexo 详细安装及配置请参考<br><a href="https://hexo.io/zh-cn/docs/">Hexo 官方文档</a><br>建议：完成官方文档“建站”继续查看后面的内容。<br>配置文件 : 后面都要加空格。<br>对_config.yml站点配置文件简要配置。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># URL</span><br><span class="line">url: https:&#x2F;&#x2F;GitHub用户名.github.io&#x2F;</span><br></pre></td></tr></table></figure>
-<h2 id="Hexo-的使用"><a href="#Hexo-的使用" class="headerlink" title="Hexo 的使用"></a>Hexo 的使用</h2><p>相信您已经了解source文件夹是您以后存放文章的地方，并且已经看见官方文档中的这句话“Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件会被拷贝过去。”<br>而这个public文件夹的内容正是需要上传到GitHub Pages的内容，如何去生成呢？请继续往后看。</p>
-<p>写完文章发布到服务器之前，先看看效果呗！现在source/_posts文件夹里面正好有一篇hello-world。<br>在站点文件夹根目录下执行如下命令（插件都在该目录安装）：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br></pre></td></tr></table></figure>
-<p>安装完成后，输入以下命令以启动服务器，您的网站会在 <a href="http://localhost:4000/">http://localhost:4000</a> 下启动。在服务器启动期间，Hexo 会监视文件变动并自动更新，您无须重启服务器。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo s (即 hexo server)</span><br></pre></td></tr></table></figure>
-<p>现在介绍两种发布文章的方式, 建议Windows用户用第一种，Mac用户使用第二种：</p>
-<p>方案一：通过 hexo-deployer-git 插件<br>在站点文件夹根目录下执行如下命令（插件都在该目录安装）：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>文件解析生成 public 文件夹</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo g (即 hexo generate)</span><br></pre></td></tr></table></figure>
-<p>配置_config.yml站点配置文件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;deployment.html</span><br><span class="line">deploy:</span><br><span class="line">   type: git</span><br><span class="line">   repository: 您下载自己项目的URL (项目在 GitHub Pages 根目录：https:&#x2F;&#x2F;github.com&#x2F;GitHub用户名.github.io.git&#x2F;)</span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
-<p>项目部署</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo d (即 hexo deploy)</span><br></pre></td></tr></table></figure>
-<p>这里会提示输入您的github账号密码，通过前面提到的 URL 访问到您的博客， 项目部署成功。</p>
-<p>方案二： 通过 git 命令部署<br>进入站点文件夹根目录，克隆您的项目到本地（目的是获取 .git 文件夹，这是 git 的全部）</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;GitHub用户名&#x2F;GitHub用户名.github.io.git .deploy&#x2F;GitHub用户名.github.io</span><br></pre></td></tr></table></figure>
-<p>解析及部署命令如下（可将以下命令直接 deploy.sh 脚本文件里 ）: </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo generate                      # 文件解析生成 public 文件夹</span><br><span class="line">$ cp -R public&#x2F;* .deploy&#x2F;GitHub用户名.github.io  # 复制 public 文件夹的全部内容到 .deploy 隐藏文件夹下</span><br><span class="line">$ cd .deploy&#x2F;GitHub用户名.github.io</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m “update”</span><br><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
-<p>将 deploy.sh 脚本文件放在站点文件夹根目录，cd 进入根目录，执行命令如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sh deploy.sh</span><br></pre></td></tr></table></figure>
-<p>这里会提示输入您的github账号密码，通过前面提到的 URL 访问到您的博客， 项目部署成功。</p>
-<p>这一小节记住两个命令： hexo s 和 hexo d 或 sh deploy.sh<br>事实上 hexo s -s 更常使用（详情查看<a href="https://hexo.io/zh-cn/docs/server">官方文档 -&gt; 服务器</a>）</p>
-<h2 id="使用个人域名"><a href="#使用个人域名" class="headerlink" title="使用个人域名"></a>使用个人域名</h2><p>如果想要使用自己的域名，在域名解析的时候使用CNAME记录类型。并实现个人博客向个人域名的映射，在source文件夹下创建CNAME文件（无后缀名），在文件中直接写入您的域名（http:// 后面的内容）</p>
-<h1 id="NexT"><a href="#NexT" class="headerlink" title="NexT"></a>NexT</h1><h2 id="NexT-简介"><a href="#NexT-简介" class="headerlink" title="NexT 简介"></a>NexT 简介</h2><p>NexT 是一款完全基于 Hexo 的主题，使用者众多，成熟度高，我们可以基于它创造出属于我们不一样的个人博客。 </p>
-<p>下面更多的是对该主题一些基本配置的讲述，请勿照搬，按自己的喜好描绘属于自己的博客吧。</p>
-<h2 id="NexT-安装及配置"><a href="#NexT-安装及配置" class="headerlink" title="NexT 安装及配置"></a>NexT 安装及配置</h2><p>建议下载最新版本<br><a href="https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/README.md">v6.0.x版本 GitHub 地址</a></p>
-<p>NexT 详细安装及配置请参考<br><a href="https://theme-next.iissnan.com/getting-started.html">NexT 官方文档</a><br><a href="https://github.com/iissnan/hexo-theme-next/wiki">NexT 使用文档 GitHub Wiki</a>  </p>
-<p>NexT 的配置围绕配置文件，对内置样式与第三方插件进行配置。（NexT 配置文件在 NexT 主题根目录，文件名和站点配置文件名相同）。</p>
-<h2 id="外观设置"><a href="#外观设置" class="headerlink" title="外观设置"></a>外观设置</h2><p>目前官方有四款外观供选择，在 NexT 的配置文件下搜索 Schemes 删除注释符号 # 即可使用。 </p>
-<h2 id="footer-页脚的配置"><a href="#footer-页脚的配置" class="headerlink" title="footer 页脚的配置"></a>footer 页脚的配置</h2><p>搜索 footer 将 powered theme 的 enable 调整为 false。</p>
-<h2 id="添加标签-tags-页"><a href="#添加标签-tags-页" class="headerlink" title="添加标签 tags 页"></a>添加标签 tags 页</h2><p>执行以下命令将在 source 文件夹下将生成 tags 文件夹，打开修改里面的 index 文件添加 type : “tags”。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure>
-<h2 id="添加分类-categories-页"><a href="#添加分类-categories-页" class="headerlink" title="添加分类 categories 页"></a>添加分类 categories 页</h2><p>执行以下命令将在 source 文件夹下将生成 categories 文件夹，打开修改里面的 index 文件添加 type : “categories”。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure>
-<h2 id="分类和标签的应用"><a href="#分类和标签的应用" class="headerlink" title="分类和标签的应用"></a>分类和标签的应用</h2><p>事实上，分类和标签都是 hexo 实现的， 可查看官方文档 Front-matter 部分。</p>
-<p>Front-matter 是通过 hexo new 生成的 md 文件 - - - 以上的区域。<br>categories 是有顺序性和层次性的而 tags 没有，例如:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">categories:</span><br><span class="line">- 人文</span><br><span class="line">- 散文</span><br><span class="line">tags:</span><br><span class="line">- 毕淑敏</span><br><span class="line">- 早年</span><br></pre></td></tr></table></figure>
-<h2 id="menu-菜单栏配置"><a href="#menu-菜单栏配置" class="headerlink" title="menu 菜单栏配置"></a>menu 菜单栏配置</h2><p>搜索 menu 你可以选择打开一些菜单按钮 || 后面对应的是 Font Awesome 图标名。<br><a href="https://fontawesome.com/?from=io">Font Awesome</a><br><a href="http://www.fontawesome.com.cn/faicons/">图标库 – Font Awesome 中文网</a></p>
-<h2 id="sidebar-侧边栏配置"><a href="#sidebar-侧边栏配置" class="headerlink" title="sidebar 侧边栏配置"></a>sidebar 侧边栏配置</h2><p>搜索 site_state， 文章、标签和分类默认在侧边栏中显示链接。</p>
-<h2 id="social-社交链接配置"><a href="#social-社交链接配置" class="headerlink" title="social 社交链接配置"></a>social 社交链接配置</h2><p>搜索 social, 打开或自行添加。</p>
-<h2 id="avatar-添加侧边栏头像"><a href="#avatar-添加侧边栏头像" class="headerlink" title="avatar 添加侧边栏头像"></a>avatar 添加侧边栏头像</h2><p>建议使用 对象存储OSS 存储图片或其他文件，易于管理。</p>
-<h2 id="creative-commons-知识共享协议"><a href="#creative-commons-知识共享协议" class="headerlink" title="creative_commons 知识共享协议"></a>creative_commons 知识共享协议</h2><ul>
-<li>署名（BY）</li>
-<li>署名（BY）-禁止演绎（ND）</li>
-<li>署名（BY）-非商业性使用（NC）</li>
-<li>署名（BY）-非商业性使用（NC）-禁止演绎（ND）</li>
-<li>署名（BY）-非商业性使用（NC）-相同方式共享（SA）</li>
-<li>署名（BY）-相同方式共享（SA）</li>
-</ul>
-<h2 id="onmobile"><a href="#onmobile" class="headerlink" title="onmobile"></a>onmobile</h2><p>对于 Muse 和 Mist 两种外观生效，在手机端打开侧边栏。</p>
-<h2 id="设置多说-DISQUS-评论"><a href="#设置多说-DISQUS-评论" class="headerlink" title="设置多说 DISQUS 评论"></a>设置多说 DISQUS 评论</h2><p>DISQUS 和 GitHub Pages 有一个相似之处,用户的站点 URL 会生成一个 Shortname, 二级域名与之对应, 所以注册完后点击头像左边的 Admin, 点击 Settings 选择注册的网站, Shortname 在 Website Name 的上面。其实不用查看也可猜出 Shortname, 将域名的 . 替换成 - 即可， 例如 <a href="https://blog.xyang.xin/">https://blog.xyang.xin</a> 对应的 Shortname 为 blog-xyang-xin。</p>
-<p>关闭 tags 和 pages 页面的评论窗口，分别在它们的 index 文件添加 comments: false。</p>
-<h1 id="基于-GitHub-Pages-的-Hexo-NexT-博客-——-样式优化篇"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客-——-样式优化篇" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客 —— 样式优化篇"></a>基于 GitHub Pages 的 Hexo + NexT 博客 —— 样式优化篇</h1><h2 id="为文章边框添加立体阴影效果"><a href="#为文章边框添加立体阴影效果" class="headerlink" title="为文章边框添加立体阴影效果"></a>为文章边框添加立体阴影效果</h2><p>定位：themes/next/source/css/_common/components/post/post.styl文件<br>修改：在use-motion .post 下，添加box-shadow的代码 box-shadow <a href="https://www.cssmatic.com/box-shadow">生成网站</a></p>
-<h2 id="修改菜单栏的文字颜色"><a href="#修改菜单栏的文字颜色" class="headerlink" title="修改菜单栏的文字颜色"></a>修改菜单栏的文字颜色</h2><p>定位：themes/next/source/css/_schemes/Mist/menu.styl文件<br>修改：在.menu-item a下添加color: 颜色</p>
-<h2 id="修改文章底部的那个带-号的标签"><a href="#修改文章底部的那个带-号的标签" class="headerlink" title="修改文章底部的那个带#号的标签"></a>修改文章底部的那个带#号的标签</h2><p>定位：themes/next/layout/_macro/post.swig<br>修改：搜索 rel=”tag”&gt;#，将 # 换成 <i class="fa fa-tag"></i></p>
-<h2 id="文章内链接"><a href="#文章内链接" class="headerlink" title="文章内链接"></a>文章内链接</h2><p>定位：themes/next/source/css/_custom/custom.styl 文件<br>添加：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.post-body p a &#123;</span><br><span class="line">  color: #0593d3;</span><br><span class="line">  border-bottom: none;</span><br><span class="line">  &amp;:hover &#123;</span><br><span class="line">    color: #0477ab;</span><br><span class="line">    text-decoration: underline;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="修改网站背景样式，自动切换背景图"><a href="#修改网站背景样式，自动切换背景图" class="headerlink" title="修改网站背景样式，自动切换背景图"></a>修改网站背景样式，自动切换背景图</h2><p>定位：themes/next/source/css/_custom/custom.styl 文件<br>添加：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 背景</span><br><span class="line">.main-inner &#123; </span><br><span class="line">    margin-top: 60px;</span><br><span class="line">    padding: 60px 60px 60px 60px;</span><br><span class="line">    background: #fff;</span><br><span class="line">      opacity: 0.9;</span><br><span class="line">    min-height: 500px;</span><br><span class="line">&#125;</span><br><span class="line">body &#123;</span><br><span class="line">    background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900);</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">    background-size:cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>注意：.mian-inner 将覆盖前文提到的文章的阴影将 box-shadow 代码剪切到 .main-inner 里面即可。</p>
-<h2 id="对-header-的修改"><a href="#对-header-的修改" class="headerlink" title="对 header 的修改"></a>对 header 的修改</h2><h3 id="更改头部-site-title-的字体颜色"><a href="#更改头部-site-title-的字体颜色" class="headerlink" title="更改头部 site-title 的字体颜色"></a>更改头部 site-title 的字体颜色</h3><p>定位：theme/next/source/css/_common/components/header/site-meta.styl 文件，找到.brand{}。<br>添加：color: 颜色</p>
-<h3 id="头部背景颜色与透明度"><a href="#头部背景颜色与透明度" class="headerlink" title="头部背景颜色与透明度"></a>头部背景颜色与透明度</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.header &#123;</span><br><span class="line">          background:rgba(13,26,31,0.8) none repeat scroll !important;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="对-footer-的修改"><a href="#对-footer-的修改" class="headerlink" title="对 footer 的修改"></a>对 footer 的修改</h2><h3 id="修改-footer-的文字居中"><a href="#修改-footer-的文字居中" class="headerlink" title="修改 footer 的文字居中"></a>修改 footer 的文字居中</h3><p>定位：themes/next/source/css/_schemes/Mist/index.styl 文件中的 footer。<br>修改：将 .footer-inner 的 text-align: left 修改为 center。</p>
-<h3 id="底部文字颜色"><a href="#底部文字颜色" class="headerlink" title="底部文字颜色"></a>底部文字颜色</h3><p>定位：theme/next/source/css/_custom/custom.styl 文件<br>添加：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.footer-inner &#123;color: 颜色代码;&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="底部背景颜色与透明度"><a href="#底部背景颜色与透明度" class="headerlink" title="底部背景颜色与透明度"></a>底部背景颜色与透明度</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.footer &#123;</span><br><span class="line">          background:rgba(13,26,31,0.8) none repeat scroll !important;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><a href="http://theme-next.iissnan.com/getting-started.html">开始使用 - NexT 使用文档</a></p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -1005,6 +1034,109 @@
       </categories>
   </entry>
   <entry>
+    <title>代理服务器</title>
+    <url>/proxy-teach/</url>
+    <content><![CDATA[<p>主要包含：shadowsocks-libev、kuptun 的配置和优化。基于亚马逊云学生机。</p>
+<a id="more"></a>
+<p>Docker 部署以及 安装v2ray-plugin 插件，请跳到最后。</p>
+<h2 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h2><p><a href="https://www.emptyus.com/download.php">Shadowsocks X - A secure socks5 proxy</a><br><a href="https://github.com/shadowsocks">shadowsocks</a></p>
+<p><a href="https://github.com/shadowsocks/ShadowsocksX-NG">shadowsocks/ShadowsocksX-NG: Next Generation of ShadowsocksX</a></p>
+<h2 id="终端走代理"><a href="#终端走代理" class="headerlink" title="终端走代理"></a>终端走代理</h2><p>命令开启和关闭终端走代理：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">export</span> ALL_PROXY=socks5://127.0.0.1:20808</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">export</span> HTTP_PROXY=socks5://127.0.0.1:20808</span></span><br></pre></td></tr></table></figure>
+<p>检测代理结果（全局模式）：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ curl myip.ipip.net</span><br></pre></td></tr></table></figure>
+
+<h2 id="服务器端"><a href="#服务器端" class="headerlink" title="服务器端"></a>服务器端</h2><p><a href="https://github.com/teddysun/shadowsocks_install/tree/master">teddysun/shadowsocks_install at master</a></p>
+<h3 id="安装命令"><a href="#安装命令" class="headerlink" title="安装命令"></a>安装命令</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget --no-check-certificate -O shadowsocks-libev.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-libev.sh</span><br><span class="line">chmod +x shadowsocks-libev.sh</span><br><span class="line">./shadowsocks-libev.sh 2&gt;&amp;1 | tee shadowsocks-libev.log</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Tip：脚本目前不支持 Centos8，为什么选择 libev 版本，因为其它版本停止维护了。</p>
+</blockquote>
+<p>加密算法推荐使用 <code>aes-256-gcm</code>。安装好后就可以通过下面的命令使用了：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ./shadowsocks-libev.sh uninstall   <span class="comment"># 卸载 SS</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> /etc/init.d/shadowsocks start      <span class="comment"># 启动 SS</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> /etc/init.d/shadowsocks stop       <span class="comment"># 停止 SS</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> /etc/init.d/shadowsocks restart    <span class="comment"># 重启 SS</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> /etc/init.d/shadowsocks status     <span class="comment"># 状态 SS</span></span></span><br></pre></td></tr></table></figure>
+
+<p>要开机自启还是得自己动手：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> vim /usr/lib/systemd/system/shadowsocks_libev.service</span></span><br></pre></td></tr></table></figure>
+<p>加入如下配置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description&#x3D;shadowsocks_libev</span><br><span class="line">Wants&#x3D;network.target</span><br><span class="line">After&#x3D;syslog.target network-online.target</span><br><span class="line">[Service]</span><br><span class="line">Type&#x3D;simple</span><br><span class="line">ExecStart&#x3D;</span><br><span class="line">ExecStart&#x3D;&#x2F;usr&#x2F;local&#x2F;bin&#x2F;ss-server -c &#x2F;etc&#x2F;shadowsocks-libev&#x2F;config.json</span><br><span class="line">Restart&#x3D;on-failure</span><br><span class="line">RestartSec&#x3D;10</span><br><span class="line">KillMode&#x3D;process</span><br><span class="line">LimitNOFILE&#x3D;65536</span><br><span class="line">[Install]</span><br><span class="line">WantedBy&#x3D;multi-user.target</span><br></pre></td></tr></table></figure>
+<p>运行命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl daemon-reload</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl <span class="built_in">enable</span> shadowsocks_libev</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl start shadowsocks_libev</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl restart shadowsocks_libev</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl status shadowsocks_libev -l</span></span><br></pre></td></tr></table></figure>
+
+<p>配置文件在这里：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ vim &#x2F;etc&#x2F;shadowsocks-libev&#x2F;config.json</span><br></pre></td></tr></table></figure>
+<p>大多数来说脚本默认的配置就很好了，如果有异常的话就显式的运行程序来查看日志：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo /usr/<span class="built_in">local</span>/bin/ss-server</span></span><br></pre></td></tr></table></figure>
+<h2 id="优化加速"><a href="#优化加速" class="headerlink" title="优化加速"></a>优化加速</h2><h3 id="服务器端加速"><a href="#服务器端加速" class="headerlink" title="服务器端加速"></a>服务器端加速</h3><p>从 4.9 开始，Linux 内核已经用上了该算法。通过以下命令检测主机是否开启 BBR：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">lsmod | grep bbr</span><br></pre></td></tr></table></figure>
+<p>如果有返回值请跳过，如果没有，可通过以下步骤安装。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo su</span><br><span class="line">$ wget --no-check-certificate https:&#x2F;&#x2F;github.com&#x2F;teddysun&#x2F;across&#x2F;raw&#x2F;master&#x2F;bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; .&#x2F;bbr.sh</span><br></pre></td></tr></table></figure>
+<p>输入 <code>lsmod | grep bbr</code> ，出现 <code>tcp_bbr</code> 即说明 BBR 已经启动。</p>
+<h3 id="双端加速"><a href="#双端加速" class="headerlink" title="双端加速"></a>双端加速</h3><p>服务器端安装：<br><a href="https://github.com/xtaci/kcptun">xtaci/kcptun</a><br>Kcptun 是一个非常简单和快速的，基于 KCP 协议的 UDP 隧道，它可以将 TCP 流转换为 KCP+UDP 流。它以比 TCP 浪费 10%-20% 的带宽的代价，和极少的资源占用，以达到降低多倍延迟的效果。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo yum install golang -y</span><br><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;xtaci&#x2F;kcptun.git</span><br><span class="line">$ cd kcptun</span><br><span class="line">$ .&#x2F;build-release.sh</span><br><span class="line">$ cd build</span><br><span class="line">&#x2F;&#x2F; 选择合适的版本</span><br><span class="line">$ sudo mv server_linux_amd64 &#x2F;usr&#x2F;local&#x2F;bin&#x2F;kcptun_server</span><br><span class="line">$ </span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">Wants=network.target</span><br></pre></td></tr></table></figure>
+
+<p>建议在 <code>sysctl.conf</code> 中添加以下配置，优化 UDP 包的搬运速度：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo vim /etc/sysctl.conf</span></span><br></pre></td></tr></table></figure>
+<p>写入以下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># KCP: for better handling of UDP packets</span><br><span class="line">net.core.rmem_max&#x3D;26214400 &#x2F;&#x2F; BDP - bandwidth delay product</span><br><span class="line">net.core.rmem_default&#x3D;26214400</span><br><span class="line">net.core.wmem_max&#x3D;26214400</span><br><span class="line">net.core.wmem_default&#x3D;26214400</span><br><span class="line">net.core.netdev_max_backlog&#x3D;2048 &#x2F;&#x2F; proportional to -rcvwnd</span><br></pre></td></tr></table></figure>
+<p>运行以下命令生成配置：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo sysctl --system</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://wiki.archlinux.org/index.php/Sysctl#Enable_BBR">更多性能优化配置</a><br>在用户目录 <code>~</code> 创建 <code>kcptun.json</code> 配置文件如下：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;listen&quot;</span>: <span class="string">&quot;:4000&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;target&quot;</span>: <span class="string">&quot;127.0.0.1:14376&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;mode&quot;</span>: <span class="string">&quot;fast3&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;dscp&quot;</span>: <span class="number">46</span>,</span><br><span class="line">  <span class="attr">&quot;crypt&quot;</span>: <span class="string">&quot;salsa20&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;key&quot;</span>: <span class="string">&quot;1q2w3e4r.&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;sockbuf&quot;</span>:<span class="number">16777217</span>,</span><br><span class="line">  <span class="attr">&quot;nocomp&quot;</span>:<span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> vim /usr/lib/systemd/system/kcptun_server.service</span></span><br></pre></td></tr></table></figure>
+<p>添加配置如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description&#x3D;kcptun</span><br><span class="line">Wants&#x3D;network.target</span><br><span class="line">After&#x3D;syslog.target network-online.target</span><br><span class="line">[Service]</span><br><span class="line">Type&#x3D;simple</span><br><span class="line">Environment&#x3D;GOGC&#x3D;20</span><br><span class="line">ExecStart&#x3D;</span><br><span class="line">ExecStart&#x3D;&#x2F;usr&#x2F;local&#x2F;bin&#x2F;kcptun_server -c &#x2F;home&#x2F;ec2-user&#x2F;kcptun.json</span><br><span class="line">Restart&#x3D;on-failure</span><br><span class="line">RestartSec&#x3D;10</span><br><span class="line">KillMode&#x3D;process</span><br><span class="line">LimitNOFILE&#x3D;65536</span><br><span class="line">[Install]</span><br><span class="line">WantedBy&#x3D;multi-user.target</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 设置开机自启</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl <span class="built_in">enable</span> kcptun_server</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 启动服务</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl restart kcptun_server</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看服务运行状态，测试是否配置成功</span></span><br><span class="line">sudo systemctl status kcptun_server  -l</span><br></pre></td></tr></table></figure>
+<p>修改配置文件后，需要重新加载配置文件，然后重新启动相关服务</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo systemctl daemon-reload</span><br><span class="line">$ sudo systemctl restart kcptun_server</span><br></pre></td></tr></table></figure>
+
+<p>客户端 Kcptun 配置如图：<br><img data-src="http://images.xyang.xin/2020%2F06%2F03%2F1591188770.png" alt="1591188770.png"><br>Arguments:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-autoexpire 900 -sockbuf 16777217</span><br></pre></td></tr></table></figure>
+
+<h2 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h2><p>通过上面的配置，目前而言使用效果不差。但是会不间断的出现“断流”，ssh 可以正常连接服务器，这是必然的。同样的情况出现在，相关业务商家都会提供不同地区的 N 多节点，但是同一时间可以正常使用的也就一两个。</p>
+<p>我觉得最简单靠谱的就是，使用常用的端口如 443 或 80。</p>
+<p>要开启 ipv6 的话，首先要保证服务器有 ipv6 的公网 ip，然后改一下 kcptun 和 ss 的配置：</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line"># config.json</span><br><span class="line">&quot;server&quot;:&quot;::&quot;,</span><br><span class="line"></span><br><span class="line"># kcptun.json</span><br><span class="line">&quot;listen&quot;: &quot;[::]:4000&quot;,</span><br><span class="line">&quot;target&quot;: &quot;[::]:443&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ lsmod | grep bbr                   # 状态 BBR</span><br><span class="line">$ sudo systemctl daemon-reload       # 重新加载 systemctl 配置文件</span><br><span class="line"></span><br><span class="line">$ .&#x2F;shadowsocks-libev.sh uninstall   # 卸载 SS</span><br><span class="line">$ &#x2F;etc&#x2F;init.d&#x2F;shadowsocks start      # 启动 SS</span><br><span class="line">$ &#x2F;etc&#x2F;init.d&#x2F;shadowsocks stop       # 停止 SS</span><br><span class="line">$ &#x2F;etc&#x2F;init.d&#x2F;shadowsocks restart    # 重启 SS</span><br><span class="line">$ &#x2F;etc&#x2F;init.d&#x2F;shadowsocks status     # 状态 SS</span><br><span class="line"></span><br><span class="line">$ sudo systemctl restart shadowsocks_libev</span><br><span class="line">$ sudo systemctl status shadowsocks_libev -l</span><br><span class="line"></span><br><span class="line">$ sudo systemctl restart kcptun_server # 启动 kcptun</span><br><span class="line">$ sudo systemctl status kcptun_server  -l # 查看 systemctl 服务运行状态</span><br></pre></td></tr></table></figure>
+
+<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p>编辑 limits.conf 配置文件</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /etc/security/limits.conf</span><br></pre></td></tr></table></figure>
+<p>添加下列两行：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">* soft nofile 51200</span><br><span class="line">* hard nofile 51200</span><br></pre></td></tr></table></figure>
+
+<p>如果服务在root权限下运行，添加下列两行:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">root soft nofile 51200</span><br><span class="line">root hard nofile 51200</span><br></pre></td></tr></table></figure>
+
+<p>在 bash 或 zsh 配置文件（例如：.zshrc）加入：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ulimit -n 51200</span><br></pre></td></tr></table></figure>
+
+<h3 id="sysctl-conf"><a href="#sysctl-conf" class="headerlink" title="sysctl.conf"></a>sysctl.conf</h3><p>配置路径：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo vim /etc/sysctl.conf</span></span><br></pre></td></tr></table></figure>
+<p>添加配置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">fs.file-max &#x3D; 51200</span><br><span class="line"></span><br><span class="line">net.core.default_qdisc &#x3D; fq</span><br><span class="line">net.ipv4.tcp_congestion_control &#x3D; bbr</span><br><span class="line"></span><br><span class="line"># KCP: for better handling of UDP packets</span><br><span class="line">net.core.rmem_max&#x3D;26214400 &#x2F;&#x2F; BDP - bandwidth delay product</span><br><span class="line">net.core.rmem_default&#x3D;26214400</span><br><span class="line">net.core.wmem_max&#x3D;26214400</span><br><span class="line">net.core.wmem_default&#x3D;26214400</span><br><span class="line">net.core.netdev_max_backlog&#x3D;2048 &#x2F;&#x2F; proportional to -rcvwnd</span><br><span class="line">net.core.somaxconn &#x3D; 65535</span><br><span class="line"></span><br><span class="line">net.ipv4.tcp_keepalive_time &#x3D; 60</span><br><span class="line">net.ipv4.tcp_keepalive_intvl &#x3D; 10</span><br><span class="line">net.ipv4.tcp_keepalive_probes &#x3D; 6</span><br><span class="line">net.ipv4.tcp_mtu_probing &#x3D; 1</span><br><span class="line">net.ipv4.tcp_timestamps &#x3D; 0</span><br><span class="line">net.ipv4.tcp_fastopen &#x3D; 3</span><br><span class="line">net.ipv4.tcp_syncookies &#x3D; 1</span><br><span class="line">net.ipv4.tcp_fin_timeout &#x3D; 30</span><br><span class="line">net.ipv4.tcp_mem &#x3D; 25600 51200 102400</span><br><span class="line">net.ipv4.tcp_rmem &#x3D; 4096 87380 67108864</span><br><span class="line">net.ipv4.tcp_wmem &#x3D; 4096 65536 67108864</span><br><span class="line">net.ipv4.tcp_tw_reuse &#x3D; 0</span><br><span class="line">net.ipv4.tcp_tw_recycle &#x3D; 0</span><br><span class="line">net.ipv4.tcp_fin_timeout &#x3D; 30</span><br></pre></td></tr></table></figure>
+<p>加载配置：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo sysctl --system</span></span><br></pre></td></tr></table></figure>
+
+<p>使用 iperf 测试服务器的直接网速：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 服务端</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> iperf -s</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 客户端</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> iperf -c <span class="variable">$yourhost</span> -i 2 -t 30</span></span><br></pre></td></tr></table></figure>
+<p>测速来平均服务器的网速有：<br>17.1 Mbits/sec</p>
+<p>使用 fast.com 测试平均结果显示：<br>10 Mbits/sec</p>
+<p>以下配置方案可能会更好：<br><a href="https://teddysun.com/569.html">使用 Docker 快速部署 Shadowsocks-libev + v2ray-plugin</a></p>
+<p>技术无罪，谨守初心。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html">Systemd 入门教程：实战篇 - 阮一峰的网络日志</a></li>
+<li><a href="https://shadowsocks.org/en/config/advanced.html">Shadowsocks - Advanced</a></li>
+<li><a href="https://bitsflow.org/network/tuning-tcp-performance/">优化TCP服务端</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+  </entry>
+  <entry>
     <title>程序中的 “脚手架”</title>
     <url>/scaffold/</url>
     <content><![CDATA[<blockquote>
@@ -1227,138 +1359,6 @@
         <tag>剪贴板</tag>
         <tag>Vim</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>人生</title>
-    <url>/flesh/</url>
-    <content><![CDATA[<h2 id="他的话可信吗"><a href="#他的话可信吗" class="headerlink" title="他的话可信吗"></a>他的话可信吗</h2><blockquote>
-<p>听人谈话的时候，我们需要了解这人是谁，他是处在何种角度，代表何种阶级谈话的。</p>
-</blockquote>
-<p>他的话是他的经验之谈，是他从权威的书籍中得知，论坛上看到，还是他仅仅只是为了让你相信而虚构或者是一个看似正确而往往值得商榷的。</p>
-<a id="more"></a>
-
-<h2 id="好话"><a href="#好话" class="headerlink" title="好话"></a>好话</h2><blockquote>
-<p>听见好话一定要多长心眼，好话会让你做出的决策违背初心，待后知后觉，晚矣。</p>
-</blockquote>
-<p>投票软件多少是有漏洞的，从开发人员的角度利用漏洞刷票是很容易被发现，且破坏比赛的公平度的。很多亲人朋友呢很支持我，感觉一个投票闹得挺辛苦的。就不得不在群里向主办方反馈，不一会儿开发投票软件公司的老总进来了，也不说是解决问题。</p>
-<p>主办方第一轮给出的结果，随便找个理由，说没有刷票行为。<br>网络投票看是否刷票，一般都是看着某一天投票数是否波动过大，尤其是最后一天，或者票数数量过多，咱们开始怀疑刷票。然而这都只是怀疑，技术部门要是不想解决也是没办法的。<br>然而当投票网站上有访问量和投票数那就不一样了，当投票数大于访问量？这是什么怪物？页面都没被访问，你又是怎么点击投票按钮的，这就是异常刷票了。</p>
-<p>这种情况主办方如果不证明是系统漏洞，抑或是抓出一个有刷票行为的队伍来，那这个主办方麻烦就大了，网络舆情还是很管用的。</p>
-<p>后面主办方不得不抓出了一个，五天投票，前面四天总共几十票，最后一天下午飙几万的队伍。据肉眼观察肯定是不止一个的。</p>
-<p>但是同时那个老总私聊到我，简单的说“本科进决赛很优秀了，有时间聊一下”。再加上我本身对这软件公司是没有敌意的，因为系统安全性技术比较难，本身抱着的态度就是能找出刷票的队伍，解决问题就行了。</p>
-<p>他这一句话导致的最终结果就是，简单的将刷票最厉害的队伍解决了，而放下了第一轮结果所公布的无赖行为和更多的不公平性的愤懑。</p>
-<p>一句好话让我对公平性诉求，从解决，到最简单的解决。</p>
-<h2 id="解决生活中的难题"><a href="#解决生活中的难题" class="headerlink" title="解决生活中的难题"></a>解决生活中的难题</h2><p>倘若有条件自己给自己安排一件难题，例如考研究生、公务员，不是生活强加给我们的，那便是为了多一种生活体验。抱着解决问题的心态去攻坚克难，坚持下去完整的度过有计划的每一天便是一种胜利。</p>
-<h2 id="为什么不同"><a href="#为什么不同" class="headerlink" title="为什么不同"></a>为什么不同</h2><p>假若我们抱怨，抱怨自己没有出生在名门旺族，抱怨自己没有一个好看的脸蛋。然而人之所以是自己，正是源于这些后天难以更改的不同之处。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>人生</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>代理服务器</title>
-    <url>/proxy-teach/</url>
-    <content><![CDATA[<p>主要包含：shadowsocks-libev、kuptun 的配置和优化。基于亚马逊云学生机。</p>
-<a id="more"></a>
-<p>Docker 部署以及 安装v2ray-plugin 插件，请跳到最后。</p>
-<h2 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h2><p><a href="https://www.emptyus.com/download.php">Shadowsocks X - A secure socks5 proxy</a><br><a href="https://github.com/shadowsocks">shadowsocks</a></p>
-<p><a href="https://github.com/shadowsocks/ShadowsocksX-NG">shadowsocks/ShadowsocksX-NG: Next Generation of ShadowsocksX</a></p>
-<h2 id="终端走代理"><a href="#终端走代理" class="headerlink" title="终端走代理"></a>终端走代理</h2><p>命令开启和关闭终端走代理：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">export</span> ALL_PROXY=socks5://127.0.0.1:20808</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">export</span> HTTP_PROXY=socks5://127.0.0.1:20808</span></span><br></pre></td></tr></table></figure>
-<p>检测代理结果（全局模式）：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ curl myip.ipip.net</span><br></pre></td></tr></table></figure>
-
-<h2 id="服务器端"><a href="#服务器端" class="headerlink" title="服务器端"></a>服务器端</h2><p><a href="https://github.com/teddysun/shadowsocks_install/tree/master">teddysun/shadowsocks_install at master</a></p>
-<h3 id="安装命令"><a href="#安装命令" class="headerlink" title="安装命令"></a>安装命令</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget --no-check-certificate -O shadowsocks-libev.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-libev.sh</span><br><span class="line">chmod +x shadowsocks-libev.sh</span><br><span class="line">./shadowsocks-libev.sh 2&gt;&amp;1 | tee shadowsocks-libev.log</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>Tip：脚本目前不支持 Centos8，为什么选择 libev 版本，因为其它版本停止维护了。</p>
-</blockquote>
-<p>加密算法推荐使用 <code>aes-256-gcm</code>。安装好后就可以通过下面的命令使用了：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ./shadowsocks-libev.sh uninstall   <span class="comment"># 卸载 SS</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> /etc/init.d/shadowsocks start      <span class="comment"># 启动 SS</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> /etc/init.d/shadowsocks stop       <span class="comment"># 停止 SS</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> /etc/init.d/shadowsocks restart    <span class="comment"># 重启 SS</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> /etc/init.d/shadowsocks status     <span class="comment"># 状态 SS</span></span></span><br></pre></td></tr></table></figure>
-
-<p>要开机自启还是得自己动手：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> vim /usr/lib/systemd/system/shadowsocks_libev.service</span></span><br></pre></td></tr></table></figure>
-<p>加入如下配置：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description&#x3D;shadowsocks_libev</span><br><span class="line">Wants&#x3D;network.target</span><br><span class="line">After&#x3D;syslog.target network-online.target</span><br><span class="line">[Service]</span><br><span class="line">Type&#x3D;simple</span><br><span class="line">ExecStart&#x3D;</span><br><span class="line">ExecStart&#x3D;&#x2F;usr&#x2F;local&#x2F;bin&#x2F;ss-server -c &#x2F;etc&#x2F;shadowsocks-libev&#x2F;config.json</span><br><span class="line">Restart&#x3D;on-failure</span><br><span class="line">RestartSec&#x3D;10</span><br><span class="line">KillMode&#x3D;process</span><br><span class="line">LimitNOFILE&#x3D;65536</span><br><span class="line">[Install]</span><br><span class="line">WantedBy&#x3D;multi-user.target</span><br></pre></td></tr></table></figure>
-<p>运行命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl daemon-reload</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl <span class="built_in">enable</span> shadowsocks_libev</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl start shadowsocks_libev</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl restart shadowsocks_libev</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl status shadowsocks_libev -l</span></span><br></pre></td></tr></table></figure>
-
-<p>配置文件在这里：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ vim &#x2F;etc&#x2F;shadowsocks-libev&#x2F;config.json</span><br></pre></td></tr></table></figure>
-<p>大多数来说脚本默认的配置就很好了，如果有异常的话就显式的运行程序来查看日志：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo /usr/<span class="built_in">local</span>/bin/ss-server</span></span><br></pre></td></tr></table></figure>
-<h2 id="优化加速"><a href="#优化加速" class="headerlink" title="优化加速"></a>优化加速</h2><h3 id="服务器端加速"><a href="#服务器端加速" class="headerlink" title="服务器端加速"></a>服务器端加速</h3><p>从 4.9 开始，Linux 内核已经用上了该算法。通过以下命令检测主机是否开启 BBR：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">lsmod | grep bbr</span><br></pre></td></tr></table></figure>
-<p>如果有返回值请跳过，如果没有，可通过以下步骤安装。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo su</span><br><span class="line">$ wget --no-check-certificate https:&#x2F;&#x2F;github.com&#x2F;teddysun&#x2F;across&#x2F;raw&#x2F;master&#x2F;bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; .&#x2F;bbr.sh</span><br></pre></td></tr></table></figure>
-<p>输入 <code>lsmod | grep bbr</code> ，出现 <code>tcp_bbr</code> 即说明 BBR 已经启动。</p>
-<h3 id="双端加速"><a href="#双端加速" class="headerlink" title="双端加速"></a>双端加速</h3><p>服务器端安装：<br><a href="https://github.com/xtaci/kcptun">xtaci/kcptun</a><br>Kcptun 是一个非常简单和快速的，基于 KCP 协议的 UDP 隧道，它可以将 TCP 流转换为 KCP+UDP 流。它以比 TCP 浪费 10%-20% 的带宽的代价，和极少的资源占用，以达到降低多倍延迟的效果。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo yum install golang -y</span><br><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;xtaci&#x2F;kcptun.git</span><br><span class="line">$ cd kcptun</span><br><span class="line">$ .&#x2F;build-release.sh</span><br><span class="line">$ cd build</span><br><span class="line">&#x2F;&#x2F; 选择合适的版本</span><br><span class="line">$ sudo mv server_linux_amd64 &#x2F;usr&#x2F;local&#x2F;bin&#x2F;kcptun_server</span><br><span class="line">$ </span><br></pre></td></tr></table></figure>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">Wants=network.target</span><br></pre></td></tr></table></figure>
-
-<p>建议在 <code>sysctl.conf</code> 中添加以下配置，优化 UDP 包的搬运速度：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo vim /etc/sysctl.conf</span></span><br></pre></td></tr></table></figure>
-<p>写入以下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># KCP: for better handling of UDP packets</span><br><span class="line">net.core.rmem_max&#x3D;26214400 &#x2F;&#x2F; BDP - bandwidth delay product</span><br><span class="line">net.core.rmem_default&#x3D;26214400</span><br><span class="line">net.core.wmem_max&#x3D;26214400</span><br><span class="line">net.core.wmem_default&#x3D;26214400</span><br><span class="line">net.core.netdev_max_backlog&#x3D;2048 &#x2F;&#x2F; proportional to -rcvwnd</span><br></pre></td></tr></table></figure>
-<p>运行以下命令生成配置：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo sysctl --system</span></span><br></pre></td></tr></table></figure>
-
-<p><a href="https://wiki.archlinux.org/index.php/Sysctl#Enable_BBR">更多性能优化配置</a><br>在用户目录 <code>~</code> 创建 <code>kcptun.json</code> 配置文件如下：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;listen&quot;</span>: <span class="string">&quot;:4000&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;target&quot;</span>: <span class="string">&quot;127.0.0.1:14376&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;mode&quot;</span>: <span class="string">&quot;fast3&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;dscp&quot;</span>: <span class="number">46</span>,</span><br><span class="line">  <span class="attr">&quot;crypt&quot;</span>: <span class="string">&quot;salsa20&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;key&quot;</span>: <span class="string">&quot;1q2w3e4r.&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;sockbuf&quot;</span>:<span class="number">16777217</span>,</span><br><span class="line">  <span class="attr">&quot;nocomp&quot;</span>:<span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> vim /usr/lib/systemd/system/kcptun_server.service</span></span><br></pre></td></tr></table></figure>
-<p>添加配置如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description&#x3D;kcptun</span><br><span class="line">Wants&#x3D;network.target</span><br><span class="line">After&#x3D;syslog.target network-online.target</span><br><span class="line">[Service]</span><br><span class="line">Type&#x3D;simple</span><br><span class="line">Environment&#x3D;GOGC&#x3D;20</span><br><span class="line">ExecStart&#x3D;</span><br><span class="line">ExecStart&#x3D;&#x2F;usr&#x2F;local&#x2F;bin&#x2F;kcptun_server -c &#x2F;home&#x2F;ec2-user&#x2F;kcptun.json</span><br><span class="line">Restart&#x3D;on-failure</span><br><span class="line">RestartSec&#x3D;10</span><br><span class="line">KillMode&#x3D;process</span><br><span class="line">LimitNOFILE&#x3D;65536</span><br><span class="line">[Install]</span><br><span class="line">WantedBy&#x3D;multi-user.target</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 设置开机自启</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl <span class="built_in">enable</span> kcptun_server</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 启动服务</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl restart kcptun_server</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看服务运行状态，测试是否配置成功</span></span><br><span class="line">sudo systemctl status kcptun_server  -l</span><br></pre></td></tr></table></figure>
-<p>修改配置文件后，需要重新加载配置文件，然后重新启动相关服务</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo systemctl daemon-reload</span><br><span class="line">$ sudo systemctl restart kcptun_server</span><br></pre></td></tr></table></figure>
-
-<p>客户端 Kcptun 配置如图：<br><img data-src="http://images.xyang.xin/2020%2F06%2F03%2F1591188770.png" alt="1591188770.png"><br>Arguments:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-autoexpire 900 -sockbuf 16777217</span><br></pre></td></tr></table></figure>
-
-<h2 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h2><p>通过上面的配置，目前而言使用效果不差。但是会不间断的出现“断流”，ssh 可以正常连接服务器，这是必然的。同样的情况出现在，相关业务商家都会提供不同地区的 N 多节点，但是同一时间可以正常使用的也就一两个。</p>
-<p>我觉得最简单靠谱的就是，使用常用的端口如 443 或 80。</p>
-<p>要开启 ipv6 的话，首先要保证服务器有 ipv6 的公网 ip，然后改一下 kcptun 和 ss 的配置：</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line"># config.json</span><br><span class="line">&quot;server&quot;:&quot;::&quot;,</span><br><span class="line"></span><br><span class="line"># kcptun.json</span><br><span class="line">&quot;listen&quot;: &quot;[::]:4000&quot;,</span><br><span class="line">&quot;target&quot;: &quot;[::]:443&quot;</span><br></pre></td></tr></table></figure>
-<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ lsmod | grep bbr                   # 状态 BBR</span><br><span class="line">$ sudo systemctl daemon-reload       # 重新加载 systemctl 配置文件</span><br><span class="line"></span><br><span class="line">$ .&#x2F;shadowsocks-libev.sh uninstall   # 卸载 SS</span><br><span class="line">$ &#x2F;etc&#x2F;init.d&#x2F;shadowsocks start      # 启动 SS</span><br><span class="line">$ &#x2F;etc&#x2F;init.d&#x2F;shadowsocks stop       # 停止 SS</span><br><span class="line">$ &#x2F;etc&#x2F;init.d&#x2F;shadowsocks restart    # 重启 SS</span><br><span class="line">$ &#x2F;etc&#x2F;init.d&#x2F;shadowsocks status     # 状态 SS</span><br><span class="line"></span><br><span class="line">$ sudo systemctl restart shadowsocks_libev</span><br><span class="line">$ sudo systemctl status shadowsocks_libev -l</span><br><span class="line"></span><br><span class="line">$ sudo systemctl restart kcptun_server # 启动 kcptun</span><br><span class="line">$ sudo systemctl status kcptun_server  -l # 查看 systemctl 服务运行状态</span><br></pre></td></tr></table></figure>
-
-<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p>编辑 limits.conf 配置文件</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /etc/security/limits.conf</span><br></pre></td></tr></table></figure>
-<p>添加下列两行：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">* soft nofile 51200</span><br><span class="line">* hard nofile 51200</span><br></pre></td></tr></table></figure>
-
-<p>如果服务在root权限下运行，添加下列两行:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">root soft nofile 51200</span><br><span class="line">root hard nofile 51200</span><br></pre></td></tr></table></figure>
-
-<p>在 bash 或 zsh 配置文件（例如：.zshrc）加入：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ulimit -n 51200</span><br></pre></td></tr></table></figure>
-
-<h3 id="sysctl-conf"><a href="#sysctl-conf" class="headerlink" title="sysctl.conf"></a>sysctl.conf</h3><p>配置路径：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo vim /etc/sysctl.conf</span></span><br></pre></td></tr></table></figure>
-<p>添加配置：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">fs.file-max &#x3D; 51200</span><br><span class="line"></span><br><span class="line">net.core.default_qdisc &#x3D; fq</span><br><span class="line">net.ipv4.tcp_congestion_control &#x3D; bbr</span><br><span class="line"></span><br><span class="line"># KCP: for better handling of UDP packets</span><br><span class="line">net.core.rmem_max&#x3D;26214400 &#x2F;&#x2F; BDP - bandwidth delay product</span><br><span class="line">net.core.rmem_default&#x3D;26214400</span><br><span class="line">net.core.wmem_max&#x3D;26214400</span><br><span class="line">net.core.wmem_default&#x3D;26214400</span><br><span class="line">net.core.netdev_max_backlog&#x3D;2048 &#x2F;&#x2F; proportional to -rcvwnd</span><br><span class="line">net.core.somaxconn &#x3D; 65535</span><br><span class="line"></span><br><span class="line">net.ipv4.tcp_keepalive_time &#x3D; 60</span><br><span class="line">net.ipv4.tcp_keepalive_intvl &#x3D; 10</span><br><span class="line">net.ipv4.tcp_keepalive_probes &#x3D; 6</span><br><span class="line">net.ipv4.tcp_mtu_probing &#x3D; 1</span><br><span class="line">net.ipv4.tcp_timestamps &#x3D; 0</span><br><span class="line">net.ipv4.tcp_fastopen &#x3D; 3</span><br><span class="line">net.ipv4.tcp_syncookies &#x3D; 1</span><br><span class="line">net.ipv4.tcp_fin_timeout &#x3D; 30</span><br><span class="line">net.ipv4.tcp_mem &#x3D; 25600 51200 102400</span><br><span class="line">net.ipv4.tcp_rmem &#x3D; 4096 87380 67108864</span><br><span class="line">net.ipv4.tcp_wmem &#x3D; 4096 65536 67108864</span><br><span class="line">net.ipv4.tcp_tw_reuse &#x3D; 0</span><br><span class="line">net.ipv4.tcp_tw_recycle &#x3D; 0</span><br><span class="line">net.ipv4.tcp_fin_timeout &#x3D; 30</span><br></pre></td></tr></table></figure>
-<p>加载配置：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo sysctl --system</span></span><br></pre></td></tr></table></figure>
-
-<p>使用 iperf 测试服务器的直接网速：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 服务端</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> iperf -s</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 客户端</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> iperf -c <span class="variable">$yourhost</span> -i 2 -t 30</span></span><br></pre></td></tr></table></figure>
-<p>测速来平均服务器的网速有：<br>17.1 Mbits/sec</p>
-<p>使用 fast.com 测试平均结果显示：<br>10 Mbits/sec</p>
-<p>以下配置方案可能会更好：<br><a href="https://teddysun.com/569.html">使用 Docker 快速部署 Shadowsocks-libev + v2ray-plugin</a></p>
-<p>技术无罪，谨守初心。</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html">Systemd 入门教程：实战篇 - 阮一峰的网络日志</a></li>
-<li><a href="https://shadowsocks.org/en/config/advanced.html">Shadowsocks - Advanced</a></li>
-<li><a href="https://bitsflow.org/network/tuning-tcp-performance/">优化TCP服务端</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
   </entry>
   <entry>
     <title>SSM 错误集锦</title>
