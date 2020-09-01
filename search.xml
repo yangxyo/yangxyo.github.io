@@ -98,6 +98,56 @@
       </tags>
   </entry>
   <entry>
+    <title>《如何阅读一本书》读书笔记</title>
+    <url>/book-rhydybs/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-09%2Frhydybs.jpeg?x-oss-process=style/title_140" alt="rhydybs.jpeg-w140"></p>
+<a id="more"></a>
+<p><img data-src="http://images.xyang.xin/2019-09%2F%E3%80%8A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6%E3%80%8B.png" alt="《如何阅读一本书》.png"></p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《如何阅读一本书》的脉络要点进行总结，用于阅读时的参考。（图谱内容较多，建议保存后浏览）。</p>
+<p>书中提出了四种阅读层次，层次逐级递增，较高层次的阅读包含较低层次的阅读。基础阅读是对字词句意思的理解，是阅读的基础。使用检视阅读来理清书的脉络，来甄别一本书是否值得读，是否适合现在读。使用分析阅读来细细品味一本好书。主题阅读适用于学术研究或对自己感兴趣的问题的探究性学习。</p>
+<!-- more -->
+<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><p>读者是要“发现”书中隐藏着的骨架。而作者则是以制造骨架为开始，但却想办法把骨架“隐藏”起来。他的目的是，用艺术的手法将骨架隐藏起来，或是说，在骨架上添加血肉。</p>
+<p>所谓文章的清楚明白，就是跟纲要的区隔是否清楚有关，所谓文章的前后一贯，就是能把不同的重点条理有序地排列出来。</p>
+<p>这个捷径是要靠你的检视阅读技巧来建立的。你收集好书目之后，要做的第一件事是检视书单上所有的书。在做检视阅读之前，绝不要用分析阅读来阅读。检视阅读不会让你明白有关主题的所有错综复杂的内容，或是作者所有的洞察力，但却具有两种基本的功能。第一，它会让你对自己想要研究的主题有个清晰的概念，这样接下来你针对某几本书做分析阅读时，会大有助益。第二，它会简化你的书目到一个合理的程度。</p>
+<p>能够熟练检视阅读的读者，不但能在心中将书籍分类，而且能对内容有一个粗浅的了解。他也会用非常短的时间就发现，这本书谈的内容对他研究的主题到底重不重要————这可能要等到读下本书的时候才能发现。但是有两件事至少他已经知道其中之一。那就是他不是发现这本书必须回头再读一次，以获得启发，便是知道不论这本书多有趣又多丰富，却毫无启发性，因此不值得重新再读。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>position ——【每天一点 CSS】</title>
+    <url>/css-everday-1/</url>
+    <content><![CDATA[<p>今天来聊聊关于CSS的属性<code>position</code>，它的取值如下：</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">position: static;   // 初始值</span><br><span class="line">position: relative; // 相对定位</span><br><span class="line">position: absolute; // 绝对定位</span><br><span class="line">position: fixed;    // 固定定位</span><br></pre></td></tr></table></figure>
+<p>定位不是继承的。</p>
+<a id="more"></a>
+
+<h2 id="static"><a href="#static" class="headerlink" title="static"></a>static</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p><code>static</code>是元素定位的默认值，让元素出现在常规文档流中。</p>
+<h2 id="relative"><a href="#relative" class="headerlink" title="relative"></a>relative</h2><h3 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h3><p>每个元素在页面的文档流中都有一个自然位置，相对于这个原始位置进行移动就称为<em>相对定位</em>。而其周围的元素完全不受此影响。相对定位会在原先的位置留下空白。</p>
+<h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><ol>
+<li>作为绝对定位的参照。</li>
+<li></li>
+</ol>
+<h2 id="absolute"><a href="#absolute" class="headerlink" title="absolute"></a>absolute</h2><h3 id="概念-2"><a href="#概念-2" class="headerlink" title="概念"></a>概念</h3><p>元素会被移出正常文档流。没有额外设置的情况下，<em>绝对定位</em>是相对于 body 进行定位的。可以对希望称为<em>绝对定位</em>参照体的祖先元素添加 <code>position: relative;</code>。<em>绝对定位</em>不会在原先的位置留下空白。</p>
+<h2 id="fixed"><a href="#fixed" class="headerlink" title="fixed"></a>fixed</h2><h3 id="概念-3"><a href="#概念-3" class="headerlink" title="概念"></a>概念</h3><p><code>fixed</code></p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li>《HTML与CSS3基础教程（第8版）》</li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/position">position - CSS（层叠样式表） | MDN</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《一本小小的红色写作书》读书笔记</title>
     <url>/book-hsxzs/</url>
     <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F1558180143.png?x-oss-process=style/title_140" alt="1558180143.png-w140"></p>
@@ -125,28 +175,6 @@
       <tags>
         <tag>读书笔记</tag>
         <tag>写作</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《如何阅读一本书》读书笔记</title>
-    <url>/book-rhydybs/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-09%2Frhydybs.jpeg?x-oss-process=style/title_140" alt="rhydybs.jpeg-w140"></p>
-<a id="more"></a>
-<p><img data-src="http://images.xyang.xin/2019-09%2F%E3%80%8A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6%E3%80%8B.png" alt="《如何阅读一本书》.png"></p>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《如何阅读一本书》的脉络要点进行总结，用于阅读时的参考。（图谱内容较多，建议保存后浏览）。</p>
-<p>书中提出了四种阅读层次，层次逐级递增，较高层次的阅读包含较低层次的阅读。基础阅读是对字词句意思的理解，是阅读的基础。使用检视阅读来理清书的脉络，来甄别一本书是否值得读，是否适合现在读。使用分析阅读来细细品味一本好书。主题阅读适用于学术研究或对自己感兴趣的问题的探究性学习。</p>
-<!-- more -->
-<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><p>读者是要“发现”书中隐藏着的骨架。而作者则是以制造骨架为开始，但却想办法把骨架“隐藏”起来。他的目的是，用艺术的手法将骨架隐藏起来，或是说，在骨架上添加血肉。</p>
-<p>所谓文章的清楚明白，就是跟纲要的区隔是否清楚有关，所谓文章的前后一贯，就是能把不同的重点条理有序地排列出来。</p>
-<p>这个捷径是要靠你的检视阅读技巧来建立的。你收集好书目之后，要做的第一件事是检视书单上所有的书。在做检视阅读之前，绝不要用分析阅读来阅读。检视阅读不会让你明白有关主题的所有错综复杂的内容，或是作者所有的洞察力，但却具有两种基本的功能。第一，它会让你对自己想要研究的主题有个清晰的概念，这样接下来你针对某几本书做分析阅读时，会大有助益。第二，它会简化你的书目到一个合理的程度。</p>
-<p>能够熟练检视阅读的读者，不但能在心中将书籍分类，而且能对内容有一个粗浅的了解。他也会用非常短的时间就发现，这本书谈的内容对他研究的主题到底重不重要————这可能要等到读下本书的时候才能发现。但是有两件事至少他已经知道其中之一。那就是他不是发现这本书必须回头再读一次，以获得启发，便是知道不论这本书多有趣又多丰富，却毫无启发性，因此不值得重新再读。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>阅读</tag>
       </tags>
   </entry>
   <entry>
