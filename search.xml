@@ -21,29 +21,6 @@
       </tags>
   </entry>
   <entry>
-    <title>目标和关键成果法 (Objectives and Key Results)</title>
-    <url>/OKRs/</url>
-    <content><![CDATA[<blockquote>
-<p>The Objective is the direction.<br>The key results have to be measured.<br>Yes.No.Simple</p>
-</blockquote>
-<h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>Being took to the wrong objectives is unacceptable.<br>被带向错误的目标是让人无法接受的。</p>
-<a id="more"></a>
-
-<p>Truly transformational teams combine their ambitions to their passion and to their purpose，and they develop a clear and compelling sense of why.<br>真正变革型的团队都会将自己的雄心、热情和目标结合到一起，他们很清楚为何要做，且理由令人信服。</p>
-<h1 id="Objective"><a href="#Objective" class="headerlink" title="Objective"></a>Objective</h1><p>Significant (重要)<br>Concrete （具体）<br>Action-oriented （以行动为导向）<br>Inspirational （激励人心）</p>
-<p>If the heart doesn’t find a perfect rhyme with the head, then your passion means nothing.<br>如果内心找不到与大脑和谐的韵律，你的热情就毫无用处。</p>
-<h1 id="Good-key-results"><a href="#Good-key-results" class="headerlink" title="Good key results"></a>Good key results</h1><p>Specific &amp; Time-bound（明确、有时间限制）<br>Aggressive Yet Realistic（激进、现实）<br>Measurable &amp; Verifiable (可衡量、可评估)</p>
-<h1 id="Why-1"><a href="#Why-1" class="headerlink" title="Why"></a>Why</h1><p>OKRs as transparent vessels, that are made from the whats and hows of our ambitions. What really matters is the why that we pour into those vessels. Thats’s why we do our work.<br> OKRS 可以看做是一个透明的容器，它由野心勃勃的“做什么”和“怎么做”构成。 真正的关键在于放进容器中的“为什么” 那是我们工作的原因。</p>
-<h1 id="Write-down-your"><a href="#Write-down-your" class="headerlink" title="Write down your"></a>Write down your</h1><p>Values (the right metrics)<br>Objectives<br>Key results</p>
-]]></content>
-      <categories>
-        <category>方法</category>
-      </categories>
-      <tags>
-        <tag>方法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
     <url>/acme-sh/</url>
     <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
@@ -64,6 +41,29 @@
         <tag>ssl</tag>
         <tag>acme.sh</tag>
         <tag>letsencrypt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>目标和关键成果法 (Objectives and Key Results)</title>
+    <url>/OKRs/</url>
+    <content><![CDATA[<blockquote>
+<p>The Objective is the direction.<br>The key results have to be measured.<br>Yes.No.Simple</p>
+</blockquote>
+<h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>Being took to the wrong objectives is unacceptable.<br>被带向错误的目标是让人无法接受的。</p>
+<a id="more"></a>
+
+<p>Truly transformational teams combine their ambitions to their passion and to their purpose，and they develop a clear and compelling sense of why.<br>真正变革型的团队都会将自己的雄心、热情和目标结合到一起，他们很清楚为何要做，且理由令人信服。</p>
+<h1 id="Objective"><a href="#Objective" class="headerlink" title="Objective"></a>Objective</h1><p>Significant (重要)<br>Concrete （具体）<br>Action-oriented （以行动为导向）<br>Inspirational （激励人心）</p>
+<p>If the heart doesn’t find a perfect rhyme with the head, then your passion means nothing.<br>如果内心找不到与大脑和谐的韵律，你的热情就毫无用处。</p>
+<h1 id="Good-key-results"><a href="#Good-key-results" class="headerlink" title="Good key results"></a>Good key results</h1><p>Specific &amp; Time-bound（明确、有时间限制）<br>Aggressive Yet Realistic（激进、现实）<br>Measurable &amp; Verifiable (可衡量、可评估)</p>
+<h1 id="Why-1"><a href="#Why-1" class="headerlink" title="Why"></a>Why</h1><p>OKRs as transparent vessels, that are made from the whats and hows of our ambitions. What really matters is the why that we pour into those vessels. Thats’s why we do our work.<br> OKRS 可以看做是一个透明的容器，它由野心勃勃的“做什么”和“怎么做”构成。 真正的关键在于放进容器中的“为什么” 那是我们工作的原因。</p>
+<h1 id="Write-down-your"><a href="#Write-down-your" class="headerlink" title="Write down your"></a>Write down your</h1><p>Values (the right metrics)<br>Objectives<br>Key results</p>
+]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>方法</tag>
       </tags>
   </entry>
   <entry>
@@ -95,6 +95,36 @@
       </categories>
       <tags>
         <tag>中国</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《一本小小的红色写作书》读书笔记</title>
+    <url>/book-hsxzs/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F1558180143.png?x-oss-process=style/title_140" alt="1558180143.png-w140"></p>
+<a id="more"></a>
+<p><img data-src="http://images.xyang.xin/2019-07%2F%E4%B8%80%E6%9C%AC%E5%B0%8F%E5%B0%8F%E7%9A%84%E7%BA%A2%E8%89%B2%E5%86%99%E4%BD%9C%E4%B9%A6.png" alt="一本小小的红色写作书.png"></p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《一本小小的红色写作书》的脉络要点进行总结，用于写作中的参考。（图谱内容较多，建议保存后浏览）</p>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ol>
+<li><p>引导句<br> 在一篇个人随笔中，这句话可以作为引导语，放在文章的最开头：<br>我将通过详述个人和职业生涯的三个特殊的转折点，来呈现我是个什么样的人：凭借曲棍球奖学金上大学时期、与维和部队共同度过的一年、入职伦敦一家商贸企业期间。</p>
+<p> 在商务报告中，以下句子可以作为引导语，放在报告的最开头：<br>基于最近调查所得信息，本报告概述了我们公司面临的三大问题：员工流失、店铺盗窃和低水平客户服务。</p>
+</li>
+<li><p>类比<br> 生产部门与销售部门、营销部门之间的关系，使用“枪和子弹”类比：“生产部门生产子弹，营销部门瞄枪，销售部门扣动扳机。”</p>
+</li>
+<li><p>暗喻<br> 他有钢铁般的勇气。</p>
+</li>
+<li><p>正式<br> 无缩略形式和人称代词。</p>
+</li>
+</ol>
+<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><p>当你说一件事情的时候，确保你说清楚了。如此，你言说的机会才合理。</p>
+<h3 id="风格"><a href="#风格" class="headerlink" title="风格"></a>风格</h3><p>简短地展现以便他们阅读，清楚地展现以便他们欣赏，如画般地展现以便他们记忆，最重要的是，准确地展现以便他们被它的光明所指引。</p>
+<h3 id="可读性"><a href="#可读性" class="headerlink" title="可读性"></a>可读性</h3><p>第一稿的愉悦源于欺骗自己它离真正的作品已经相当接近了；其后稿的愉悦部分源于意识到自己没有被第一稿蒙骗。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>写作</tag>
       </tags>
   </entry>
   <entry>
@@ -145,36 +175,6 @@
       </categories>
       <tags>
         <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《一本小小的红色写作书》读书笔记</title>
-    <url>/book-hsxzs/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F1558180143.png?x-oss-process=style/title_140" alt="1558180143.png-w140"></p>
-<a id="more"></a>
-<p><img data-src="http://images.xyang.xin/2019-07%2F%E4%B8%80%E6%9C%AC%E5%B0%8F%E5%B0%8F%E7%9A%84%E7%BA%A2%E8%89%B2%E5%86%99%E4%BD%9C%E4%B9%A6.png" alt="一本小小的红色写作书.png"></p>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《一本小小的红色写作书》的脉络要点进行总结，用于写作中的参考。（图谱内容较多，建议保存后浏览）</p>
-<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ol>
-<li><p>引导句<br> 在一篇个人随笔中，这句话可以作为引导语，放在文章的最开头：<br>我将通过详述个人和职业生涯的三个特殊的转折点，来呈现我是个什么样的人：凭借曲棍球奖学金上大学时期、与维和部队共同度过的一年、入职伦敦一家商贸企业期间。</p>
-<p> 在商务报告中，以下句子可以作为引导语，放在报告的最开头：<br>基于最近调查所得信息，本报告概述了我们公司面临的三大问题：员工流失、店铺盗窃和低水平客户服务。</p>
-</li>
-<li><p>类比<br> 生产部门与销售部门、营销部门之间的关系，使用“枪和子弹”类比：“生产部门生产子弹，营销部门瞄枪，销售部门扣动扳机。”</p>
-</li>
-<li><p>暗喻<br> 他有钢铁般的勇气。</p>
-</li>
-<li><p>正式<br> 无缩略形式和人称代词。</p>
-</li>
-</ol>
-<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><p>当你说一件事情的时候，确保你说清楚了。如此，你言说的机会才合理。</p>
-<h3 id="风格"><a href="#风格" class="headerlink" title="风格"></a>风格</h3><p>简短地展现以便他们阅读，清楚地展现以便他们欣赏，如画般地展现以便他们记忆，最重要的是，准确地展现以便他们被它的光明所指引。</p>
-<h3 id="可读性"><a href="#可读性" class="headerlink" title="可读性"></a>可读性</h3><p>第一稿的愉悦源于欺骗自己它离真正的作品已经相当接近了；其后稿的愉悦部分源于意识到自己没有被第一稿蒙骗。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>写作</tag>
       </tags>
   </entry>
   <entry>
@@ -291,32 +291,6 @@
       </tags>
   </entry>
   <entry>
-    <title>解构赋值 ———【一天一个 es6 语法】</title>
-    <url>/es6-everyday-3/</url>
-    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
-<a id="more"></a>
-
-<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">&quot;Bill&quot;</span>,</span><br><span class="line">    lastnNme: <span class="string">&quot;Wilson&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
-<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
-<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">a <span class="comment">// &quot;h&quot;</span></span><br><span class="line">b <span class="comment">// &quot;e&quot;</span></span><br><span class="line">c <span class="comment">// &quot;l&quot;</span></span><br><span class="line">d <span class="comment">// &quot;l&quot;</span></span><br><span class="line">e <span class="comment">// &quot;o&quot;</span></span><br></pre></td></tr></table></figure>
-<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">解构赋值 - JavaScript | MDN</a></li>
-<li><a href="https://es6.ruanyifeng.com/#docs/destructuring">变量的解构赋值 - ECMAScript 6入门</a></li>
-<li>《React 学习手册》</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>【一天一个 es6 语法】</tag>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>人生</title>
     <url>/flesh/</url>
     <content><![CDATA[<h2 id="他的话可信吗"><a href="#他的话可信吗" class="headerlink" title="他的话可信吗"></a>他的话可信吗</h2><blockquote>
@@ -343,6 +317,32 @@
       </categories>
       <tags>
         <tag>人生</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解构赋值 ———【一天一个 es6 语法】</title>
+    <url>/es6-everyday-3/</url>
+    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
+<a id="more"></a>
+
+<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">&quot;Bill&quot;</span>,</span><br><span class="line">    lastnNme: <span class="string">&quot;Wilson&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
+<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">a <span class="comment">// &quot;h&quot;</span></span><br><span class="line">b <span class="comment">// &quot;e&quot;</span></span><br><span class="line">c <span class="comment">// &quot;l&quot;</span></span><br><span class="line">d <span class="comment">// &quot;l&quot;</span></span><br><span class="line">e <span class="comment">// &quot;o&quot;</span></span><br></pre></td></tr></table></figure>
+<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">解构赋值 - JavaScript | MDN</a></li>
+<li><a href="https://es6.ruanyifeng.com/#docs/destructuring">变量的解构赋值 - ECMAScript 6入门</a></li>
+<li>《React 学习手册》</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>【一天一个 es6 语法】</tag>
+        <tag>javascript</tag>
       </tags>
   </entry>
   <entry>
