@@ -6,7 +6,7 @@
   <link href="http://blog.xyang.xin/atom.xml" rel="self"/>
   
   <link href="http://blog.xyang.xin/"/>
-  <updated>2020-08-31T07:38:40.653Z</updated>
+  <updated>2020-09-03T08:04:30.335Z</updated>
   <id>http://blog.xyang.xin/</id>
   
   <author>
@@ -18,10 +18,27 @@
   
   <entry>
     <title>position ——【每天一点 CSS】</title>
+    <link href="http://blog.xyang.xin/learn-http-basics/"/>
+    <id>http://blog.xyang.xin/learn-http-basics/</id>
+    <published>2020-09-03T16:04:17.000Z</published>
+    <updated>2020-09-03T08:04:30.335Z</updated>
+    
+    
+    
+    
+    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="http" scheme="http://blog.xyang.xin/tags/http/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>position ——【每天一点 CSS】</title>
     <link href="http://blog.xyang.xin/css-everday-1/"/>
     <id>http://blog.xyang.xin/css-everday-1/</id>
     <published>2020-08-31T15:15:31.000Z</published>
-    <updated>2020-08-31T07:38:40.653Z</updated>
+    <updated>2020-09-03T08:02:50.177Z</updated>
     
     
     <summary type="html">&lt;p&gt;今天来聊聊关于CSS的属性&lt;code&gt;position&lt;/code&gt;，它的取值如下：&lt;/p&gt;
@@ -437,29 +454,6 @@
     
     
     <category term="hexo" scheme="http://blog.xyang.xin/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决远程服务器重装系统导致的 mac 终端无法连接的问题</title>
-    <link href="http://blog.xyang.xin/mac-ssh-error/"/>
-    <id>http://blog.xyang.xin/mac-ssh-error/</id>
-    <published>2019-02-26T19:52:38.000Z</published>
-    <updated>2020-06-20T12:58:31.471Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png&quot; alt=&quot;2019-05-14 at 17.17.png&quot;&gt;&lt;br&gt;WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!&lt;/p&gt;
-&lt;p&gt;known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。&lt;/p&gt;
-&lt;h2 id=&quot;通过如下两种方案解决该问题&quot;&gt;&lt;a href=&quot;#通过如下两种方案解决该问题&quot; class=&quot;headerlink&quot; title=&quot;通过如下两种方案解决该问题&quot;&gt;&lt;/a&gt;通过如下两种方案解决该问题&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;输入命令(推荐)：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh-keygen -R45.40.106.111&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="信息技术" scheme="http://blog.xyang.xin/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="Linux" scheme="http://blog.xyang.xin/tags/Linux/"/>
     
   </entry>
   

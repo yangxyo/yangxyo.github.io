@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://blog.xyang.xin/learn-http-basics/</loc>
+    <lastmod>2020-09-03</lastmod>
+  </url>
+  <url>
     <loc>http://blog.xyang.xin/css-everday-1/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-03</lastmod>
   </url>
   <url>
     <loc>http://blog.xyang.xin/vim-plugin-everday-2/</loc>

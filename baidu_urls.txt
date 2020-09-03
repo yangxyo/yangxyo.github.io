@@ -1,3 +1,4 @@
+http://blog.xyang.xin/learn-http-basics/
 http://blog.xyang.xin/css-everday-1/
 http://blog.xyang.xin/dynamic&static-type-binding/
 http://blog.xyang.xin/note-hings-i-wish-id-known-about-css/

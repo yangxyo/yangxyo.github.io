@@ -161,13 +161,16 @@
 <h2 id="relative"><a href="#relative" class="headerlink" title="relative"></a>relative</h2><h3 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h3><p>每个元素在页面的文档流中都有一个自然位置，相对于这个原始位置进行移动就称为<em>相对定位</em>。而其周围的元素完全不受此影响。相对定位会在原先的位置留下空白。</p>
 <h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><ol>
 <li>作为绝对定位的参照。</li>
-<li></li>
+<li>使用<code>top</code>、<code>right</code>、<code>bottom</code>和<code>left</code>调整元素的位置，元素在视觉上看起来就像被推到一个不同的位置。</li>
 </ol>
-<h2 id="absolute"><a href="#absolute" class="headerlink" title="absolute"></a>absolute</h2><h3 id="概念-2"><a href="#概念-2" class="headerlink" title="概念"></a>概念</h3><p>元素会被移出正常文档流。没有额外设置的情况下，<em>绝对定位</em>是相对于 body 进行定位的。可以对希望称为<em>绝对定位</em>参照体的祖先元素添加 <code>position: relative;</code>。<em>绝对定位</em>不会在原先的位置留下空白。</p>
-<h2 id="fixed"><a href="#fixed" class="headerlink" title="fixed"></a>fixed</h2><h3 id="概念-3"><a href="#概念-3" class="headerlink" title="概念"></a>概念</h3><p><code>fixed</code></p>
+<h2 id="absolute"><a href="#absolute" class="headerlink" title="absolute"></a>absolute</h2><h3 id="概念-2"><a href="#概念-2" class="headerlink" title="概念"></a>概念</h3><p>元素会被移出文档流。就不像<code>static</code>或者<code>relative</code>这样占用空间。</p>
+<p>没有额外设置的情况下，<em>绝对定位</em>是相对于 body 进行定位的。可以对希望称为<em>绝对定位</em>参照体的祖先元素添加 <code>position: relative;</code>。</p>
+<p><em>绝对定位</em>不会在原先的位置留下空白。</p>
+<h2 id="fixed"><a href="#fixed" class="headerlink" title="fixed"></a>fixed</h2><h3 id="概念-3"><a href="#概念-3" class="headerlink" title="概念"></a>概念</h3><p><code>fixed</code> 有点类似于<code>absolute</code>，会被移出文档流。不一样的是<code>fixed</code>始终相对浏览器窗口定位。</p>
 <h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
 <li>《HTML与CSS3基础教程（第8版）》</li>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/position">position - CSS（层叠样式表） | MDN</a></li>
+<li><a href="https://zellwk.com/blog/css-positions/">Understanding and Using CSS Positions | Zell Liew</a></li>
 </ul>
 ]]></content>
       <categories>
@@ -317,35 +320,6 @@
       </tags>
   </entry>
   <entry>
-    <title>人生</title>
-    <url>/flesh/</url>
-    <content><![CDATA[<h2 id="他的话可信吗"><a href="#他的话可信吗" class="headerlink" title="他的话可信吗"></a>他的话可信吗</h2><blockquote>
-<p>听人谈话的时候，我们需要了解这人是谁，他是处在何种角度，代表何种阶级谈话的。</p>
-</blockquote>
-<p>他的话是他的经验之谈，是他从权威的书籍中得知，论坛上看到，还是他仅仅只是为了让你相信而虚构或者是一个看似正确而往往值得商榷的。</p>
-<a id="more"></a>
-
-<h2 id="好话"><a href="#好话" class="headerlink" title="好话"></a>好话</h2><blockquote>
-<p>听见好话一定要多长心眼，好话会让你做出的决策违背初心，待后知后觉，晚矣。</p>
-</blockquote>
-<p>投票软件多少是有漏洞的，从开发人员的角度利用漏洞刷票是很容易被发现，且破坏比赛的公平度的。很多亲人朋友呢很支持我，感觉一个投票闹得挺辛苦的。就不得不在群里向主办方反馈，不一会儿开发投票软件公司的老总进来了，也不说是解决问题。</p>
-<p>主办方第一轮给出的结果，随便找个理由，说没有刷票行为。<br>网络投票看是否刷票，一般都是看着某一天投票数是否波动过大，尤其是最后一天，或者票数数量过多，咱们开始怀疑刷票。然而这都只是怀疑，技术部门要是不想解决也是没办法的。<br>然而当投票网站上有访问量和投票数那就不一样了，当投票数大于访问量？这是什么怪物？页面都没被访问，你又是怎么点击投票按钮的，这就是异常刷票了。</p>
-<p>这种情况主办方如果不证明是系统漏洞，抑或是抓出一个有刷票行为的队伍来，那这个主办方麻烦就大了，网络舆情还是很管用的。</p>
-<p>后面主办方不得不抓出了一个，五天投票，前面四天总共几十票，最后一天下午飙几万的队伍。据肉眼观察肯定是不止一个的。</p>
-<p>但是同时那个老总私聊到我，简单的说“本科进决赛很优秀了，有时间聊一下”。再加上我本身对这软件公司是没有敌意的，因为系统安全性技术比较难，本身抱着的态度就是能找出刷票的队伍，解决问题就行了。</p>
-<p>他这一句话导致的最终结果就是，简单的将刷票最厉害的队伍解决了，而放下了第一轮结果所公布的无赖行为和更多的不公平性的愤懑。</p>
-<p>一句好话让我对公平性诉求，从解决，到最简单的解决。</p>
-<h2 id="解决生活中的难题"><a href="#解决生活中的难题" class="headerlink" title="解决生活中的难题"></a>解决生活中的难题</h2><p>倘若有条件自己给自己安排一件难题，例如考研究生、公务员，不是生活强加给我们的，那便是为了多一种生活体验。抱着解决问题的心态去攻坚克难，坚持下去完整的度过有计划的每一天便是一种胜利。</p>
-<h2 id="为什么不同"><a href="#为什么不同" class="headerlink" title="为什么不同"></a>为什么不同</h2><p>假若我们抱怨，抱怨自己没有出生在名门旺族，抱怨自己没有一个好看的脸蛋。然而人之所以是自己，正是源于这些后天难以更改的不同之处。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>人生</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>从 Github 下载目标仓库指定文件夹</title>
     <url>/github-download-folder/</url>
     <content><![CDATA[<p>从 Github 下载目标仓库指定文件夹。</p>
@@ -381,6 +355,35 @@
       <tags>
         <tag>Github</tag>
         <tag>git-svn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>人生</title>
+    <url>/flesh/</url>
+    <content><![CDATA[<h2 id="他的话可信吗"><a href="#他的话可信吗" class="headerlink" title="他的话可信吗"></a>他的话可信吗</h2><blockquote>
+<p>听人谈话的时候，我们需要了解这人是谁，他是处在何种角度，代表何种阶级谈话的。</p>
+</blockquote>
+<p>他的话是他的经验之谈，是他从权威的书籍中得知，论坛上看到，还是他仅仅只是为了让你相信而虚构或者是一个看似正确而往往值得商榷的。</p>
+<a id="more"></a>
+
+<h2 id="好话"><a href="#好话" class="headerlink" title="好话"></a>好话</h2><blockquote>
+<p>听见好话一定要多长心眼，好话会让你做出的决策违背初心，待后知后觉，晚矣。</p>
+</blockquote>
+<p>投票软件多少是有漏洞的，从开发人员的角度利用漏洞刷票是很容易被发现，且破坏比赛的公平度的。很多亲人朋友呢很支持我，感觉一个投票闹得挺辛苦的。就不得不在群里向主办方反馈，不一会儿开发投票软件公司的老总进来了，也不说是解决问题。</p>
+<p>主办方第一轮给出的结果，随便找个理由，说没有刷票行为。<br>网络投票看是否刷票，一般都是看着某一天投票数是否波动过大，尤其是最后一天，或者票数数量过多，咱们开始怀疑刷票。然而这都只是怀疑，技术部门要是不想解决也是没办法的。<br>然而当投票网站上有访问量和投票数那就不一样了，当投票数大于访问量？这是什么怪物？页面都没被访问，你又是怎么点击投票按钮的，这就是异常刷票了。</p>
+<p>这种情况主办方如果不证明是系统漏洞，抑或是抓出一个有刷票行为的队伍来，那这个主办方麻烦就大了，网络舆情还是很管用的。</p>
+<p>后面主办方不得不抓出了一个，五天投票，前面四天总共几十票，最后一天下午飙几万的队伍。据肉眼观察肯定是不止一个的。</p>
+<p>但是同时那个老总私聊到我，简单的说“本科进决赛很优秀了，有时间聊一下”。再加上我本身对这软件公司是没有敌意的，因为系统安全性技术比较难，本身抱着的态度就是能找出刷票的队伍，解决问题就行了。</p>
+<p>他这一句话导致的最终结果就是，简单的将刷票最厉害的队伍解决了，而放下了第一轮结果所公布的无赖行为和更多的不公平性的愤懑。</p>
+<p>一句好话让我对公平性诉求，从解决，到最简单的解决。</p>
+<h2 id="解决生活中的难题"><a href="#解决生活中的难题" class="headerlink" title="解决生活中的难题"></a>解决生活中的难题</h2><p>倘若有条件自己给自己安排一件难题，例如考研究生、公务员，不是生活强加给我们的，那便是为了多一种生活体验。抱着解决问题的心态去攻坚克难，坚持下去完整的度过有计划的每一天便是一种胜利。</p>
+<h2 id="为什么不同"><a href="#为什么不同" class="headerlink" title="为什么不同"></a>为什么不同</h2><p>假若我们抱怨，抱怨自己没有出生在名门旺族，抱怨自己没有一个好看的脸蛋。然而人之所以是自己，正是源于这些后天难以更改的不同之处。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>人生</tag>
       </tags>
   </entry>
   <entry>
@@ -619,6 +622,17 @@
       <categories>
         <category>日志</category>
       </categories>
+  </entry>
+  <entry>
+    <title>position ——【每天一点 CSS】</title>
+    <url>/learn-http-basics/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>http</tag>
+      </tags>
   </entry>
   <entry>
     <title>切换 Shell 需谨慎</title>
@@ -1165,27 +1179,6 @@
       </categories>
   </entry>
   <entry>
-    <title>程序中的 “脚手架”</title>
-    <url>/scaffold/</url>
-    <content><![CDATA[<blockquote>
-<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
-</blockquote>
-<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
-<a id="more"></a>
-
-<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
-<li><a href="https://github.com/facebook/create-react-app">facebook/create-react-app</a></li>
-<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>信息技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>搜索引擎使用技巧</title>
     <url>/se-operators/</url>
     <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F05%2F29%2F1590724982.png?x-oss-process=style/title_800" alt="1590724982.png"></p>
@@ -1279,59 +1272,24 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux 剪贴板小技巧</title>
-    <url>/ssh-clipboard-iterm2/</url>
-    <content><![CDATA[<h2 id="初步识-vim-剪贴板"><a href="#初步识-vim-剪贴板" class="headerlink" title="初步识 vim 剪贴板"></a>初步识 vim 剪贴板</h2><p>对于文本的复制粘贴，系统会提供剪贴板，剪贴板在 vim 中被称为寄存器，并且 vim 有很多寄存器，寄存器使用的语法：<code>&quot;&#123;register&#125;</code>，当然了寄存器指令不会单独使用，后面都会跟代表复制的 <code>y</code> 或代表粘贴的 <code>p</code>，执行 <code>&quot;ay</code> 就将选中的内容复制到了 <code>a</code> 寄存器，<a id="more"></a>寄存器都是有自己的名字的，感兴趣的同学，欲知详细内容请参见帮助文档：<code>:help registers</code>。</p>
-<p>那咱们平时执行 <code>yy</code> 或者选中 <code>y</code> 使用的寄存器叫什么名字呢？它叫匿名寄存器 (<code>&quot;&quot;</code>)。<code>y</code> 就等于 <code>&quot;&quot;y</code>。</p>
-<p>比较重要的是，系统剪贴板寄存器 <code>&quot;*</code>。通过 <code>&quot;*p</code> 就可以把系统剪贴板上的内容粘贴到 vim 文件内了。</p>
-<p><code>*p</code> 从系统剪贴板粘贴容易，而要从 vim 复制到系统剪贴板，首先选中文本，然后执行 <code>&quot;*y</code>，这多麻烦，所以我选择：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="comment">&quot; .vimrc</span></span><br><span class="line"><span class="keyword">set</span> clipboard=unnamed</span><br></pre></td></tr></table></figure>
-<p>这样就让系统剪贴板 (<code>&quot;*</code>) 和匿名剪贴板 (<code>&quot;&quot;</code>) 内容保持同步了。<code>y</code> 就同时等效于 <code>&quot;&quot;y</code> 、 <code>&quot;*y</code> ，而 <code>p</code> 等价于 <code>&quot;&quot;p</code>、<code>&quot;*p</code> 以及 <code>command+v</code> 或者 Windows 的 <code>ctrl+v</code>。</p>
-<h2 id="远程剪贴板操作"><a href="#远程剪贴板操作" class="headerlink" title="远程剪贴板操作"></a>远程剪贴板操作</h2><p>通过 SSH 连接到了一台远程 Linux 服务器，这时候该任何复制粘贴呢？</p>
-<p>Someone said at once: “Stupid! Mac 上当然是鼠标选中然后 <code>command+c</code>、<code>command+v</code> 了，Windows 上是 <code>ctrl+c</code>、<code>ctrl+v</code>，虽然 <code>ctrl+v</code> 会和 vim 切换成可视模式冲突，但是我用 <code>ctrl+shift+v</code> 就解决了。”</p>
-<p>这方法很便捷，并且我也经常使用，但是在使用过程中主要遇到以下两个问题：</p>
-<ol>
-<li>如果你的 vim 开启了行号，鼠标选中多行的时候，会选中行号，复制下来的内容也会也行号。我的 vim 是默认开启行号的。</li>
-<li>只能复制一个窗口大小的内容。</li>
-</ol>
-<p>其实还有一个问题，就是不能完全脱离鼠标，我是三分之二键盘党，所以我认为这不是主要问题。</p>
-<p>这些问题不是都已经解决了吗？如果设置了 <code>set clipboard=unnamed</code>，直接选中（注意不是鼠标选中，而是 vim 中的选中 <code>shift+v</code> 上下键）然后 <code>y</code>，然后 <code>p</code>。那你试试 <code>command+v</code> 或 <code>ctrl+v</code> 呢？保证不是你刚刚复制的内容。</p>
-<p>短路了吧？重新认识一下，你现在同时使用了两个系统，一个是本地，一个是远程服务器，<code>y</code> 复制的内容在远程服务器上呢，还在你公司，在杭州，在北京，还是在海外呢？</p>
-<p>那我不用 <code>command+v</code> 可好，有 <code>p</code>，还少按一个键。</p>
-<p>漂亮！你已经找到答案了。</p>
-<h3 id="剪贴板远程传送"><a href="#剪贴板远程传送" class="headerlink" title="剪贴板远程传送"></a>剪贴板远程传送</h3><p>那如果我想将远程服务器的一段字符传送到本地呢？有人说 <strong>scp</strong>，但在实际操作中，通过 <strong>scp</strong> 或者 <strong>ftp</strong>，传送文件还 ok，传送一段文本的即时性就太差了。</p>
-<p>找到两种比较好的办法，但是针对的客户端是 Mac 或者 Linux，据了解 Windows 自带有 Linux 子系统，可以开启试试。</p>
-<p>方法一：</p>
-<blockquote>
-<p>该方法使用了一个叫 <strong>clipper</strong> 的 <strong>go</strong> 语言程序，以及 <strong>vim-clipper</strong> 插件，两个项目的链接都在下面。但是我没有用过这种方式，一方面配置较多，而且要在本地跑额外的程序，可能功能比较强大但是我用不了这么多，另一方面就是有第二种比较适合我的方式。</p>
+    <title>程序中的 “脚手架”</title>
+    <url>/scaffold/</url>
+    <content><![CDATA[<blockquote>
+<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
 </blockquote>
-<ul>
-<li><a href="https://github.com/wincent/clipper">wincent/clipper: ✂️ Clipboard access for local and remote tmux sessions</a></li>
-<li><a href="https://github.com/wincent/vim-clipper">wincent/vim-clipper: Clipper integration for Vim</a></li>
+<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
+<a id="more"></a>
+
+<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
+<li><a href="https://github.com/facebook/create-react-app">facebook/create-react-app</a></li>
+<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
 </ul>
-<p>For Mac User:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> brew install clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> brew services start clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh -R localhost:8377:localhost:8377 user@host.example.org</span></span><br></pre></td></tr></table></figure>
-
-<p>For Linux User:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yum install golang</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> git://git.wincent.com/clipper.git</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> go build</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo cp clipper /usr/<span class="built_in">local</span>/bin</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> cp contrib/linux/systemd-service/clipper.service ~/.config/systemd/user</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user daemon-reload</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user <span class="built_in">enable</span> clipper.service</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user start clipper.service</span></span><br></pre></td></tr></table></figure>
-
-<p>方法二：<br>该方式，仅适合使用 <strong>Mac</strong> 及 <strong>iTerm.app</strong> 的用户。</p>
-<p><code>iTerm-&gt;Perferences-&gt; Selection-&gt;Application in terminal may access clipboard</code>（选择开启），可能版本更新这个功能的位置会有所变动。</p>
-<p>在远程服务器执行如下命令(如果使用的是<strong>bash</strong>将<strong>zsh</strong>改为<strong>bash</strong>即可)：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd</span><br><span class="line">$ curl -L https:&#x2F;&#x2F;iterm2.com&#x2F;shell_integration&#x2F;install_shell_integration_and_utilities.sh | zsh</span><br></pre></td></tr></table></figure>
-<p>命令下载<code>.iterm2_shell_integration.zsh</code>脚本到用户根目录，还有一些小程序到<code>~/.iterm2</code>目录下，<br>并在<code>.zshrc</code>末尾生成<code>test -e &quot;$&#123;HOME&#125;/.iterm2_shell_integration.zsh&quot; &amp;&amp; source &quot;$&#123;HOME&#125;/.iterm2_shell_integration.zsh&quot; </code><br>卸载的时候也只需要将这三个部分删除掉即可。</p>
-<p>在vim配置文件<code>.vimrc</code>下添加如下代码：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if !empty(&#39;~&#x2F;.iterm2&#x2F;it2copy&#39;)</span><br><span class="line">  vmap &lt;silent&gt; &lt;Leader&gt;y :&#39;&lt;,&#39;&gt;:w !~&#x2F;.iterm2&#x2F;it2copy&lt;CR&gt;&lt;CR&gt;</span><br><span class="line">endif</span><br></pre></td></tr></table></figure>
-
-<p>此时<code>shift+v</code>选中文本，执行 <code>&lt;leader&gt;y</code>，文本就到你本地的剪贴板啦。不信你就<code>command+v</code>。</p>
 ]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
-        <tag>剪贴板</tag>
-        <tag>Vim</tag>
+        <tag>信息技术</tag>
       </tags>
   </entry>
   <entry>
@@ -1386,6 +1344,62 @@
       </categories>
       <tags>
         <tag>开发工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 剪贴板小技巧</title>
+    <url>/ssh-clipboard-iterm2/</url>
+    <content><![CDATA[<h2 id="初步识-vim-剪贴板"><a href="#初步识-vim-剪贴板" class="headerlink" title="初步识 vim 剪贴板"></a>初步识 vim 剪贴板</h2><p>对于文本的复制粘贴，系统会提供剪贴板，剪贴板在 vim 中被称为寄存器，并且 vim 有很多寄存器，寄存器使用的语法：<code>&quot;&#123;register&#125;</code>，当然了寄存器指令不会单独使用，后面都会跟代表复制的 <code>y</code> 或代表粘贴的 <code>p</code>，执行 <code>&quot;ay</code> 就将选中的内容复制到了 <code>a</code> 寄存器，<a id="more"></a>寄存器都是有自己的名字的，感兴趣的同学，欲知详细内容请参见帮助文档：<code>:help registers</code>。</p>
+<p>那咱们平时执行 <code>yy</code> 或者选中 <code>y</code> 使用的寄存器叫什么名字呢？它叫匿名寄存器 (<code>&quot;&quot;</code>)。<code>y</code> 就等于 <code>&quot;&quot;y</code>。</p>
+<p>比较重要的是，系统剪贴板寄存器 <code>&quot;*</code>。通过 <code>&quot;*p</code> 就可以把系统剪贴板上的内容粘贴到 vim 文件内了。</p>
+<p><code>*p</code> 从系统剪贴板粘贴容易，而要从 vim 复制到系统剪贴板，首先选中文本，然后执行 <code>&quot;*y</code>，这多麻烦，所以我选择：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="comment">&quot; .vimrc</span></span><br><span class="line"><span class="keyword">set</span> clipboard=unnamed</span><br></pre></td></tr></table></figure>
+<p>这样就让系统剪贴板 (<code>&quot;*</code>) 和匿名剪贴板 (<code>&quot;&quot;</code>) 内容保持同步了。<code>y</code> 就同时等效于 <code>&quot;&quot;y</code> 、 <code>&quot;*y</code> ，而 <code>p</code> 等价于 <code>&quot;&quot;p</code>、<code>&quot;*p</code> 以及 <code>command+v</code> 或者 Windows 的 <code>ctrl+v</code>。</p>
+<h2 id="远程剪贴板操作"><a href="#远程剪贴板操作" class="headerlink" title="远程剪贴板操作"></a>远程剪贴板操作</h2><p>通过 SSH 连接到了一台远程 Linux 服务器，这时候该任何复制粘贴呢？</p>
+<p>Someone said at once: “Stupid! Mac 上当然是鼠标选中然后 <code>command+c</code>、<code>command+v</code> 了，Windows 上是 <code>ctrl+c</code>、<code>ctrl+v</code>，虽然 <code>ctrl+v</code> 会和 vim 切换成可视模式冲突，但是我用 <code>ctrl+shift+v</code> 就解决了。”</p>
+<p>这方法很便捷，并且我也经常使用，但是在使用过程中主要遇到以下两个问题：</p>
+<ol>
+<li>如果你的 vim 开启了行号，鼠标选中多行的时候，会选中行号，复制下来的内容也会也行号。我的 vim 是默认开启行号的。</li>
+<li>只能复制一个窗口大小的内容。</li>
+</ol>
+<p>其实还有一个问题，就是不能完全脱离鼠标，我是三分之二键盘党，所以我认为这不是主要问题。</p>
+<p>这些问题不是都已经解决了吗？如果设置了 <code>set clipboard=unnamed</code>，直接选中（注意不是鼠标选中，而是 vim 中的选中 <code>shift+v</code> 上下键）然后 <code>y</code>，然后 <code>p</code>。那你试试 <code>command+v</code> 或 <code>ctrl+v</code> 呢？保证不是你刚刚复制的内容。</p>
+<p>短路了吧？重新认识一下，你现在同时使用了两个系统，一个是本地，一个是远程服务器，<code>y</code> 复制的内容在远程服务器上呢，还在你公司，在杭州，在北京，还是在海外呢？</p>
+<p>那我不用 <code>command+v</code> 可好，有 <code>p</code>，还少按一个键。</p>
+<p>漂亮！你已经找到答案了。</p>
+<h3 id="剪贴板远程传送"><a href="#剪贴板远程传送" class="headerlink" title="剪贴板远程传送"></a>剪贴板远程传送</h3><p>那如果我想将远程服务器的一段字符传送到本地呢？有人说 <strong>scp</strong>，但在实际操作中，通过 <strong>scp</strong> 或者 <strong>ftp</strong>，传送文件还 ok，传送一段文本的即时性就太差了。</p>
+<p>找到两种比较好的办法，但是针对的客户端是 Mac 或者 Linux，据了解 Windows 自带有 Linux 子系统，可以开启试试。</p>
+<p>方法一：</p>
+<blockquote>
+<p>该方法使用了一个叫 <strong>clipper</strong> 的 <strong>go</strong> 语言程序，以及 <strong>vim-clipper</strong> 插件，两个项目的链接都在下面。但是我没有用过这种方式，一方面配置较多，而且要在本地跑额外的程序，可能功能比较强大但是我用不了这么多，另一方面就是有第二种比较适合我的方式。</p>
+</blockquote>
+<ul>
+<li><a href="https://github.com/wincent/clipper">wincent/clipper: ✂️ Clipboard access for local and remote tmux sessions</a></li>
+<li><a href="https://github.com/wincent/vim-clipper">wincent/vim-clipper: Clipper integration for Vim</a></li>
+</ul>
+<p>For Mac User:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> brew install clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> brew services start clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh -R localhost:8377:localhost:8377 user@host.example.org</span></span><br></pre></td></tr></table></figure>
+
+<p>For Linux User:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yum install golang</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> git://git.wincent.com/clipper.git</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> clipper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> go build</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo cp clipper /usr/<span class="built_in">local</span>/bin</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> cp contrib/linux/systemd-service/clipper.service ~/.config/systemd/user</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user daemon-reload</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user <span class="built_in">enable</span> clipper.service</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> systemctl --user start clipper.service</span></span><br></pre></td></tr></table></figure>
+
+<p>方法二：<br>该方式，仅适合使用 <strong>Mac</strong> 及 <strong>iTerm.app</strong> 的用户。</p>
+<p><code>iTerm-&gt;Perferences-&gt; Selection-&gt;Application in terminal may access clipboard</code>（选择开启），可能版本更新这个功能的位置会有所变动。</p>
+<p>在远程服务器执行如下命令(如果使用的是<strong>bash</strong>将<strong>zsh</strong>改为<strong>bash</strong>即可)：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd</span><br><span class="line">$ curl -L https:&#x2F;&#x2F;iterm2.com&#x2F;shell_integration&#x2F;install_shell_integration_and_utilities.sh | zsh</span><br></pre></td></tr></table></figure>
+<p>命令下载<code>.iterm2_shell_integration.zsh</code>脚本到用户根目录，还有一些小程序到<code>~/.iterm2</code>目录下，<br>并在<code>.zshrc</code>末尾生成<code>test -e &quot;$&#123;HOME&#125;/.iterm2_shell_integration.zsh&quot; &amp;&amp; source &quot;$&#123;HOME&#125;/.iterm2_shell_integration.zsh&quot; </code><br>卸载的时候也只需要将这三个部分删除掉即可。</p>
+<p>在vim配置文件<code>.vimrc</code>下添加如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if !empty(&#39;~&#x2F;.iterm2&#x2F;it2copy&#39;)</span><br><span class="line">  vmap &lt;silent&gt; &lt;Leader&gt;y :&#39;&lt;,&#39;&gt;:w !~&#x2F;.iterm2&#x2F;it2copy&lt;CR&gt;&lt;CR&gt;</span><br><span class="line">endif</span><br></pre></td></tr></table></figure>
+
+<p>此时<code>shift+v</code>选中文本，执行 <code>&lt;leader&gt;y</code>，文本就到你本地的剪贴板啦。不信你就<code>command+v</code>。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>剪贴板</tag>
+        <tag>Vim</tag>
       </tags>
   </entry>
   <entry>
