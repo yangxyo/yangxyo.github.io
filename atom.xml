@@ -6,7 +6,7 @@
   <link href="http://blog.xyang.xin/atom.xml" rel="self"/>
   
   <link href="http://blog.xyang.xin/"/>
-  <updated>2020-09-03T08:10:10.848Z</updated>
+  <updated>2020-09-04T08:59:03.805Z</updated>
   <id>http://blog.xyang.xin/</id>
   
   <author>
@@ -17,12 +17,14 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>学习 HTTP 协议</title>
+    <title>学习 HTTP 协议笔记</title>
     <link href="http://blog.xyang.xin/learn-http-basics/"/>
     <id>http://blog.xyang.xin/learn-http-basics/</id>
     <published>2020-09-03T16:04:17.000Z</published>
-    <updated>2020-09-03T08:10:10.848Z</updated>
+    <updated>2020-09-04T08:59:03.805Z</updated>
     
+    
+    <summary type="html">&lt;h2 id=&quot;网络模型&quot;&gt;&lt;a href=&quot;#网络模型&quot; class=&quot;headerlink&quot; title=&quot;网络模型&quot;&gt;&lt;/a&gt;网络模型&lt;/h2&gt;&lt;p&gt;五层网络模型：&lt;br&gt;&lt;img data-src=&quot;http://images.xyang.xin/2020%2F09%2F03%2Fclassic-five-layer-model.jpg?x-oss-process=style/title_800&quot; alt=&quot;classic-five-layer-model.jpg&quot;&gt;&lt;/p&gt;</summary>
     
     
     
