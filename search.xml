@@ -750,6 +750,44 @@
       </tags>
   </entry>
   <entry>
+    <title>环形链表</title>
+    <url>/leetcode-142/</url>
+    <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><a href="https://leetcode-cn.com/problems/linked-list-cycle-ii/">142. 环形链表 II - 力扣（LeetCode）</a><br>给定一个链表，返回链表入环的第一个节点。无环返回null。<br><img data-src="http://images.xyang.xin/2020%2F09%2F13%2FlinkList.jpg?x-oss-process=style/title_800" alt="linkList.jpg"></p>
+<a id="more"></a>
+
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>环形链表问题，通用的解法，是通过设置双指针，</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> runSlow = head</span><br><span class="line"><span class="keyword">let</span> runFast = head</span><br></pre></td></tr></table></figure>
+<p>将 runFast 的速度，设置为2，runSlow 的速度设置为 1，当 runFast 所在节点等于 runSlow 所在节点代表追上了。</p>
+<p>我们可以思考若有环 runFast 追上 runSlow 跑了几圈？如果头节点到环入口 R 的距离很远，而环很小，runFast 以双倍的速度很早就到环了，所以可能跑 N 圈，如果距离较近，而环很大，第一圈就会追上了。</p>
+<p><em>然而无论如何 runSlow 跑的第一圈就会被追上</em>。<br>为何如此呢？第一种情况，头节点到环入口 R 的距离很远，runFast肯定早到了，并且可能跑了不止一圈了，已知，runSlow 跑一圈，runFast 可以跑两圈，如果是正常跑，runFast 在 runSlow 到达环入口 R 的第一圈便可追上，而runFast是穿越空间式的跳过两个节点跑，即使这样，runFast再多跑一圈即可追上。runFast 跑两圈以内，runSlow肯定就跑了一圈以内。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(runFast &amp;&amp; runFast.next)&#123;</span><br><span class="line">    runFast = runFast.next.next</span><br><span class="line">    runSlow = runSlow.next</span><br><span class="line">    <span class="keyword">if</span> (runFast === runSlow)&#123;</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果有环，到这里我们已经能够得到，runFast 和 runSlow 的相遇点了。<br><img data-src="http://images.xyang.xin/2020%2F09%2F13%2FlinkListRYS.jpg?x-oss-process=style/title_800" alt="linkListRYS.jpg"></p>
+<p>题解：<br>相遇时：</p>
+<ul>
+<li>runSlow 走距离为：R + Y；</li>
+<li>runFast 走的距离为：R + n(Y+S) + Y</li>
+<li>R + n(Y+S) + Y = 2(R + Y)</li>
+<li>(n-1)Y + nS = R</li>
+</ul>
+<p>只要以上等式成立即可，可以任意取n，这里取n为1：R = S，<br>也就是入口点的距离等于相遇点到这一圈终点的距离。</p>
+<p>这是我知道了 R=S 这个结论后，再推倒的，如果不知道结论，本弱还在设圈的周长的未知数呢。并且最后一步的思想很关键。<em>任意取</em>。</p>
+<p>所以根据这个结论，我们从起始点再放一个速度为1的节点，并且让runSlow继续跑，和这个新节点相遇的点就是入口点，这里为了节省那一点点内存，可以让runFast受累一下，让他从新从head开始以1的速度跑。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">runFast = head</span><br><span class="line"><span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(runFast == runSlow)&#123;</span><br><span class="line">        <span class="keyword">return</span> runFast</span><br><span class="line">    &#125;</span><br><span class="line">    runFast = runFast.next</span><br><span class="line">    runSlow = runSlow.next</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="知识积累"><a href="#知识积累" class="headerlink" title="知识积累"></a>知识积累</h2><ul>
+<li>R = S</li>
+<li>不相关的参数可以任意设</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>leecode</tag>
+        <tag>链表</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>切换 Shell 需谨慎</title>
     <url>/linux-user/</url>
     <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
