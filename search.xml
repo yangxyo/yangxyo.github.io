@@ -1,29 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>目标和关键成果法 (Objectives and Key Results)</title>
-    <url>/OKRs/</url>
-    <content><![CDATA[<blockquote>
-<p>The Objective is the direction.<br>The key results have to be measured.<br>Yes.No.Simple</p>
-</blockquote>
-<h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>Being took to the wrong objectives is unacceptable.<br>被带向错误的目标是让人无法接受的。</p>
-<span id="more"></span>
-
-<p>Truly transformational teams combine their ambitions to their passion and to their purpose，and they develop a clear and compelling sense of why.<br>真正变革型的团队都会将自己的雄心、热情和目标结合到一起，他们很清楚为何要做，且理由令人信服。</p>
-<h1 id="Objective"><a href="#Objective" class="headerlink" title="Objective"></a>Objective</h1><p>Significant (重要)<br>Concrete （具体）<br>Action-oriented （以行动为导向）<br>Inspirational （激励人心）</p>
-<p>If the heart doesn’t find a perfect rhyme with the head, then your passion means nothing.<br>如果内心找不到与大脑和谐的韵律，你的热情就毫无用处。</p>
-<h1 id="Good-key-results"><a href="#Good-key-results" class="headerlink" title="Good key results"></a>Good key results</h1><p>Specific &amp; Time-bound（明确、有时间限制）<br>Aggressive Yet Realistic（激进、现实）<br>Measurable &amp; Verifiable (可衡量、可评估)</p>
-<h1 id="Why-1"><a href="#Why-1" class="headerlink" title="Why"></a>Why</h1><p>OKRs as transparent vessels, that are made from the whats and hows of our ambitions. What really matters is the why that we pour into those vessels. Thats’s why we do our work.<br> OKRS 可以看做是一个透明的容器，它由野心勃勃的“做什么”和“怎么做”构成。 真正的关键在于放进容器中的“为什么” 那是我们工作的原因。</p>
-<h1 id="Write-down-your"><a href="#Write-down-your" class="headerlink" title="Write down your"></a>Write down your</h1><p>Values (the right metrics)<br>Objectives<br>Key results</p>
-]]></content>
-      <categories>
-        <category>方法</category>
-      </categories>
-      <tags>
-        <tag>方法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>阿里云 ECS 使用</title>
     <url>/ECS/</url>
     <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><a href="https://www.alibabacloud.com/help/zh/doc-detail/25367.htm?spm=a2c63.p38356.b99.2.615e1bbcsZH9Ry">阿里云官方文档</a></p>
@@ -44,26 +21,26 @@
       </tags>
   </entry>
   <entry>
-    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
-    <url>/acme-sh/</url>
-    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
-<ul>
-<li>http 认证方式</li>
-<li>dns 方式<span id="more"></span>
+    <title>目标和关键成果法 (Objectives and Key Results)</title>
+    <url>/OKRs/</url>
+    <content><![CDATA[<blockquote>
+<p>The Objective is the direction.<br>The key results have to be measured.<br>Yes.No.Simple</p>
+</blockquote>
+<h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>Being took to the wrong objectives is unacceptable.<br>被带向错误的目标是让人无法接受的。</p>
+<span id="more"></span>
 
-</li>
-</ul>
-<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
-<p><a href="https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E">github 安装说明</a></p>
-<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
+<p>Truly transformational teams combine their ambitions to their passion and to their purpose，and they develop a clear and compelling sense of why.<br>真正变革型的团队都会将自己的雄心、热情和目标结合到一起，他们很清楚为何要做，且理由令人信服。</p>
+<h1 id="Objective"><a href="#Objective" class="headerlink" title="Objective"></a>Objective</h1><p>Significant (重要)<br>Concrete （具体）<br>Action-oriented （以行动为导向）<br>Inspirational （激励人心）</p>
+<p>If the heart doesn’t find a perfect rhyme with the head, then your passion means nothing.<br>如果内心找不到与大脑和谐的韵律，你的热情就毫无用处。</p>
+<h1 id="Good-key-results"><a href="#Good-key-results" class="headerlink" title="Good key results"></a>Good key results</h1><p>Specific &amp; Time-bound（明确、有时间限制）<br>Aggressive Yet Realistic（激进、现实）<br>Measurable &amp; Verifiable (可衡量、可评估)</p>
+<h1 id="Why-1"><a href="#Why-1" class="headerlink" title="Why"></a>Why</h1><p>OKRs as transparent vessels, that are made from the whats and hows of our ambitions. What really matters is the why that we pour into those vessels. Thats’s why we do our work.<br> OKRS 可以看做是一个透明的容器，它由野心勃勃的“做什么”和“怎么做”构成。 真正的关键在于放进容器中的“为什么” 那是我们工作的原因。</p>
+<h1 id="Write-down-your"><a href="#Write-down-your" class="headerlink" title="Write down your"></a>Write down your</h1><p>Values (the right metrics)<br>Objectives<br>Key results</p>
+]]></content>
       <categories>
-        <category>信息技术</category>
+        <category>方法</category>
       </categories>
       <tags>
-        <tag>ssl</tag>
-        <tag>acme.sh</tag>
-        <tag>letsencrypt</tag>
+        <tag>方法</tag>
       </tags>
   </entry>
   <entry>
@@ -268,6 +245,47 @@
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">解构赋值 - JavaScript | MDN</a></li>
 <li><a href="https://es6.ruanyifeng.com/#docs/destructuring">变量的解构赋值 - ECMAScript 6入门</a></li>
 <li>《React 学习手册》</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>【一天一个 es6 语法】</tag>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
+    <url>/es6-everday-2/</url>
+    <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p>每个函数都是 <code>Function</code> 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用<strong>函数声明语法</strong>定义的：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span> (<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<p>这与下面使用<strong>函数表达式</strong>定义函数的方式几乎相差无几：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>最后一种定义函数的方式是使用<code>Function</code>构造函数，最后一个参数始终都被看成是函数体，而前面的参数则枚举出了新函数的参数：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Function</span>(<span class="string">&quot;num1&quot;</span>, <span class="string">&quot;num2&quot;</span>, <span class="string">&quot;return num1 + num2&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>其中<strong>函数声明语法</strong>具有函数声明提升（function declaration hoisting）,解析器会率先读取函数声明，并使其在执行任何代码之前可用。其余的时候<strong>函数声明</strong>与<strong>函数表达式</strong>的语法其实是等价的。</p>
+<p>箭头函数针对的是<strong>函数表达式</strong>定义的函数。</p>
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;xxx&quot;</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="params">para</span> =&gt;</span> para + <span class="string">&quot;xxx&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para1, para2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(para1 + <span class="string">&quot; and &quot;</span> + para2);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function">(<span class="params">para1, para2</span>) =&gt;</span> <span class="built_in">console</span>.log(para1 + <span class="string">&quot; and &quot;</span> + para2);</span><br></pre></td></tr></table></figure>
+
+<p>从形式上来看也就是把<strong>函数表达式</strong>定义的函数，function 去掉，在参数括号外面加 =&gt; 。没有参数用()占位，只有一个参数时可以省略括号，后面的代码块部分多于一条语句就要用大括号括起来，而只有一条语句可以省略大括号，如果是 return 语句，还可以省略 return。</p>
+<p>当然仅仅为了好看，箭头函数存在的意义并不大。</p>
+<h2 id="使用注意点"><a href="#使用注意点" class="headerlink" title="使用注意点"></a>使用注意点</h2><p>（1）函数体内的 this 对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">// Cannot read property &#x27;join&#x27; of undefined</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//chicken, hamburger, French Fries</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function">(<span class="params">delay=<span class="number">1000</span></span>)=&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//Cannot read property &#x27;join&#x27; of undefined</span></span><br></pre></td></tr></table></figure>
+<p>第三段代码将 <code>print</code> 函数声明改为一个箭头函数的形式意味着其中关键字 <code>this</code> 指代的对象就是 <code>object</code>（浏览器中是 <code>window</code>）。<br><code>setTimeout()</code>方法设置一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码，上面的代码都是 1s 后执行 <code>console.log</code> 所在的函数。</p>
+<p>（2）不可使用<code>arguments</code>对象，如果要用，可以用扩展运算符(<code>...</code>)将函数参数搜集到一个数组中。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">...theArgs</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> theArgs;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>（3）箭头函数没有自己的 <code>this</code>。<br>不能用 <code>call()</code>、<code>apply()</code>、<code>bind()</code> 这些方法去改变 <code>this</code> 的指向。</p>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li>《Javascript 高级程序设计（第3版）》</li>
+<li><a href="https://es6.ruanyifeng.com/#docs/function">函数的扩展 - ECMAScript 6入门</a></li>
 </ul>
 ]]></content>
       <categories>
@@ -571,6 +589,18 @@
       </tags>
   </entry>
   <entry>
+    <title>journal-2019-02-15</title>
+    <url>/journal-2019-02-15/</url>
+    <content><![CDATA[<h2 id="小孩成长与人才发展"><a href="#小孩成长与人才发展" class="headerlink" title="小孩成长与人才发展"></a>小孩成长与人才发展</h2><p>小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。</p>
+<p>孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。</p>
+<p>国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。</p>
+<p>参考：<a href="http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm">《基层减负 不是简单做减法》《求是》2019/03 </a></p>
+]]></content>
+      <categories>
+        <category>日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>学习 HTTP 协议笔记</title>
     <url>/learn-http-basics/</url>
     <content><![CDATA[<h2 id="网络模型"><a href="#网络模型" class="headerlink" title="网络模型"></a>网络模型</h2><p>五层网络模型：<br><img data-src="http://images.xyang.xin/2020%2F09%2F03%2Fclassic-five-layer-model.jpg?x-oss-process=style/title_800" alt="classic-five-layer-model.jpg"></p>
@@ -734,59 +764,6 @@
       </tags>
   </entry>
   <entry>
-    <title>journal-2019-02-15</title>
-    <url>/journal-2019-02-15/</url>
-    <content><![CDATA[<h2 id="小孩成长与人才发展"><a href="#小孩成长与人才发展" class="headerlink" title="小孩成长与人才发展"></a>小孩成长与人才发展</h2><p>小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。</p>
-<p>孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。</p>
-<p>国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。</p>
-<p>参考：<a href="http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm">《基层减负 不是简单做减法》《求是》2019/03 </a></p>
-]]></content>
-      <categories>
-        <category>日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
-    <url>/es6-everday-2/</url>
-    <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p>每个函数都是 <code>Function</code> 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用<strong>函数声明语法</strong>定义的：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span> (<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<p>这与下面使用<strong>函数表达式</strong>定义函数的方式几乎相差无几：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>最后一种定义函数的方式是使用<code>Function</code>构造函数，最后一个参数始终都被看成是函数体，而前面的参数则枚举出了新函数的参数：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Function</span>(<span class="string">&quot;num1&quot;</span>, <span class="string">&quot;num2&quot;</span>, <span class="string">&quot;return num1 + num2&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<p>其中<strong>函数声明语法</strong>具有函数声明提升（function declaration hoisting）,解析器会率先读取函数声明，并使其在执行任何代码之前可用。其余的时候<strong>函数声明</strong>与<strong>函数表达式</strong>的语法其实是等价的。</p>
-<p>箭头函数针对的是<strong>函数表达式</strong>定义的函数。</p>
-<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;xxx&quot;</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="params">para</span> =&gt;</span> para + <span class="string">&quot;xxx&quot;</span>;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para1, para2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(para1 + <span class="string">&quot; and &quot;</span> + para2);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function">(<span class="params">para1, para2</span>) =&gt;</span> <span class="built_in">console</span>.log(para1 + <span class="string">&quot; and &quot;</span> + para2);</span><br></pre></td></tr></table></figure>
-
-<p>从形式上来看也就是把<strong>函数表达式</strong>定义的函数，function 去掉，在参数括号外面加 =&gt; 。没有参数用()占位，只有一个参数时可以省略括号，后面的代码块部分多于一条语句就要用大括号括起来，而只有一条语句可以省略大括号，如果是 return 语句，还可以省略 return。</p>
-<p>当然仅仅为了好看，箭头函数存在的意义并不大。</p>
-<h2 id="使用注意点"><a href="#使用注意点" class="headerlink" title="使用注意点"></a>使用注意点</h2><p>（1）函数体内的 this 对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">// Cannot read property &#x27;join&#x27; of undefined</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//chicken, hamburger, French Fries</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function">(<span class="params">delay=<span class="number">1000</span></span>)=&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//Cannot read property &#x27;join&#x27; of undefined</span></span><br></pre></td></tr></table></figure>
-<p>第三段代码将 <code>print</code> 函数声明改为一个箭头函数的形式意味着其中关键字 <code>this</code> 指代的对象就是 <code>object</code>（浏览器中是 <code>window</code>）。<br><code>setTimeout()</code>方法设置一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码，上面的代码都是 1s 后执行 <code>console.log</code> 所在的函数。</p>
-<p>（2）不可使用<code>arguments</code>对象，如果要用，可以用扩展运算符(<code>...</code>)将函数参数搜集到一个数组中。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">...theArgs</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> theArgs;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>（3）箭头函数没有自己的 <code>this</code>。<br>不能用 <code>call()</code>、<code>apply()</code>、<code>bind()</code> 这些方法去改变 <code>this</code> 的指向。</p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li>《Javascript 高级程序设计（第3版）》</li>
-<li><a href="https://es6.ruanyifeng.com/#docs/function">函数的扩展 - ECMAScript 6入门</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>【一天一个 es6 语法】</tag>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>切换 Shell 需谨慎</title>
     <url>/linux-user/</url>
     <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
@@ -802,6 +779,19 @@
       </categories>
       <tags>
         <tag>Shell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鲁迅</title>
+    <url>/luxun/</url>
+    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
+<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>鲁迅</tag>
       </tags>
   </entry>
   <entry>
@@ -890,19 +880,6 @@
       </categories>
       <tags>
         <tag>开发工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>鲁迅</title>
-    <url>/luxun/</url>
-    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
-<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>鲁迅</tag>
       </tags>
   </entry>
   <entry>
@@ -1614,6 +1591,135 @@
       </tags>
   </entry>
   <entry>
+    <title>Vim8 操作简记</title>
+    <url>/vim-manipulate/</url>
+    <content><![CDATA[<p>Normal 模式是 Vim 默认打开状态。我们可以通过 Normal 模式，任何其它模式，我们可以在 Normal 模式下对文本进行浏览、排版、修改。Normal 模式在 Vim 中具有举足轻重的作用。</p>
+<p>在 Normal 模式下，除了基本的移动指令 (j、k、h、l)、插入指令 (i、a)、撤销指令 (u、U) 等。Vim 通过 “操作符 + 运作命令 = 操作”（出自《Vim 实用技巧 第 2 版》） 扩展出了大量的操作指令。</p>
+<span id="more"></span>
+<p>指令、操作、操作指令都是，由人向计算机输入指令，计算机就会返回程序预设的结果。不过操作给我的感觉更像动词，所以后面我用指令来代替他。如上述等式所言指令由两部分组成，即 operator 和 motion，用前者指定行为，后者指定作用范围。还有一些只能在 Visual 模式或 operator 后面使用的叫：text object selection，文本对象选择器。</p>
+<p>有一条额外的规则，即当一个操作符命令被连续调用两次时候，它会作用于当前行。如：<code>dd</code> 删除当前行；<code>yy</code> 复制当前行；<code>&gt;&gt;</code> 缩进当前行；<code>gUgU</code> 将当前行转换为大写，可以简写为 <code>gUU</code>。</p>
+<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><h3 id="Characterwise-motions"><a href="#Characterwise-motions" class="headerlink" title="Characterwise motions"></a>Characterwise motions</h3><ul>
+<li>dl 向右删除一个字符<ul>
+<li>d (delete)</li>
+<li>l ( 右移一个字符，和 left 没有关系，键位好按）</li>
+<li>一般用 x 代替</li>
+</ul>
+</li>
+<li>dh 向左删除一个字符<ul>
+<li>h ( 左移一个字符）</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>dw 向右删除至下一个单词的开头<ul>
+<li>w (words forward)</li>
+<li>W 大写表示只使用空格作为分隔</li>
+</ul>
+</li>
+<li>de 向左删除至单词的末尾，如果本身处于单词末尾，那么删除至下一个单词末尾<ul>
+<li>e (Forward to the end of word)</li>
+<li>E 大写表示只使用空格作为分隔</li>
+</ul>
+</li>
+<li>dge 向左删除至上一个单词的末尾<ul>
+<li>ge (Backward to the end of word)</li>
+<li>gE 大写表示只使用空格作为分隔</li>
+</ul>
+</li>
+<li>db 向右删除至单词的开头，如果本身处于单词开头，那么删除至上一个单词的开头<ul>
+<li>b (words backward)</li>
+<li>B 大写表示只使用空格作为分隔</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>dd 删除当前行</li>
+<li>d^ 删除光标之前的内容至空白字符处 (non-blank character)</li>
+<li>d0 删除光标之前的内容</li>
+<li><del>dg_ 删除光标之后的内容至空白字符处</del></li>
+<li>d$ 删除光标及光标之后的内容</li>
+</ul>
+<h3 id="Linewise-motions"><a href="#Linewise-motions" class="headerlink" title="Linewise motions"></a>Linewise motions</h3><ul>
+<li>dj 删除本行及下一行</li>
+<li>dk 删除本行及上一行 </li>
+<li>dG 删除至文章末尾<ul>
+<li>G (Goto line，默认最后一行）</li>
+</ul>
+</li>
+<li>dgg 删除至文章开头<ul>
+<li>gg（Goto line，默认最后一行）</li>
+</ul>
+</li>
+<li>ggdG (删除整篇文章内容)<br>使用 <code>gg*G</code> 对整篇文章进行操作比较麻烦，安装插件可以更加便捷：<br><a href="https://github.com/kana/vim-textobj-entire">kana/vim-textobj-entire</a><br>执行 <code>dae</code> 就可以达到和执行 <code>ggdG</code> 一样的效果。</li>
+</ul>
+<h3 id="Text-object-selection"><a href="#Text-object-selection" class="headerlink" title="Text object selection"></a>Text object selection</h3><ul>
+<li>daw 删除一个单词<ul>
+<li>aw (a word)</li>
+<li>2daw 或 d2aw 将忽略空格，删除两个单词</li>
+<li>aW</li>
+</ul>
+</li>
+<li>diw 删除一个单词<ul>
+<li>iw (inner word)</li>
+<li>2diw 或 d2iw 包含空格，即删除一个单词和空格</li>
+<li>iW</li>
+</ul>
+</li>
+<li>das 删除一个句子及后面的空白（没对中文句子进行支持）</li>
+<li><del>dis 删除一个句子</del></li>
+<li>dap 删除一个段落<ul>
+<li>ap（a paragraph）</li>
+</ul>
+</li>
+<li><del>dip 删除一个段落</del></li>
+<li>da]、da[ 删除 [] 块内容，包含 []</li>
+<li>di]、di[ 删除 [] 块内容，不含 []</li>
+<li>da)、da(、dab</li>
+<li>di)、di(、dib</li>
+<li>da&gt;、da&lt;</li>
+<li>di&gt;、di&lt;</li>
+<li>dat 删除标签块，例如<aa></aa>，包含<aa></aa></li>
+<li>dit</li>
+<li>da}、da{、daB</li>
+<li>di}、di{、diB</li>
+<li>da”</li>
+<li>di”</li>
+<li>da’</li>
+<li>di’</li>
+<li>da`</li>
+<li>di`</li>
+</ul>
+<h3 id="Operators"><a href="#Operators" class="headerlink" title="Operators"></a>Operators</h3><ul>
+<li>c change</li>
+<li>d delete</li>
+<li>y 复制到寄存器</li>
+<li>g~ 反转文本大小写）</li>
+<li>gU 转换为大写</li>
+<li>gu 转换为小写</li>
+</ul>
+<blockquote>
+<p>Tips:<br>我们可以发现 Operator 操作符是不能单独使用的。</p>
+<p>在 motions 或者组合指令前面加 n，可以达到执行 n 次的效果，例如：<code>2daw</code>，将删除两个单词，然后使用 <code>u</code> 可以一次性撤销。也可以在执行 <code>daw</code> 后使用 <code>.</code> 操作符，达到一样的效果，这需要执行 <code>u</code> 两次才能完全撤销。 </p>
+<p>word 和 WORD 的区别在于，word 可以由：<code>spaces</code>,<code>tabs</code>,<code>&lt;EOL&gt;</code> 分隔，而 WORD 仅使用 spaces 作为分隔。相同之处在于：它们都是由字母、数字和下划线或其他非空字符序列组成。而在中文中的表现却有所不同：将连续的纯汉字视为一个“单词”。</p>
+<p>文本对象选择器中的 i 和 a 的区别在于：i 选择没有 space 的文本对象，而 a 包含 space。</p>
+<p>对中文句子不那么友好的情况，因此 <code>. </code> 英文句号加空格来判断一个句子的结尾，</p>
+<p>我在感觉没啥用的部分加了删除线。</p>
+</blockquote>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://vimhelp.org/">Vim: help.txt</a></li>
+<li>《Vim 实用技巧 (第 2 版)》</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>vim 多文件类型自动补全方案</title>
     <url>/vim-multiple-filetype-deoplete/</url>
     <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
@@ -1765,132 +1871,26 @@
       </tags>
   </entry>
   <entry>
-    <title>Vim8 操作简记</title>
-    <url>/vim-manipulate/</url>
-    <content><![CDATA[<p>Normal 模式是 Vim 默认打开状态。我们可以通过 Normal 模式，任何其它模式，我们可以在 Normal 模式下对文本进行浏览、排版、修改。Normal 模式在 Vim 中具有举足轻重的作用。</p>
-<p>在 Normal 模式下，除了基本的移动指令 (j、k、h、l)、插入指令 (i、a)、撤销指令 (u、U) 等。Vim 通过 “操作符 + 运作命令 = 操作”（出自《Vim 实用技巧 第 2 版》） 扩展出了大量的操作指令。</p>
-<span id="more"></span>
-<p>指令、操作、操作指令都是，由人向计算机输入指令，计算机就会返回程序预设的结果。不过操作给我的感觉更像动词，所以后面我用指令来代替他。如上述等式所言指令由两部分组成，即 operator 和 motion，用前者指定行为，后者指定作用范围。还有一些只能在 Visual 模式或 operator 后面使用的叫：text object selection，文本对象选择器。</p>
-<p>有一条额外的规则，即当一个操作符命令被连续调用两次时候，它会作用于当前行。如：<code>dd</code> 删除当前行；<code>yy</code> 复制当前行；<code>&gt;&gt;</code> 缩进当前行；<code>gUgU</code> 将当前行转换为大写，可以简写为 <code>gUU</code>。</p>
-<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><h3 id="Characterwise-motions"><a href="#Characterwise-motions" class="headerlink" title="Characterwise motions"></a>Characterwise motions</h3><ul>
-<li>dl 向右删除一个字符<ul>
-<li>d (delete)</li>
-<li>l ( 右移一个字符，和 left 没有关系，键位好按）</li>
-<li>一般用 x 代替</li>
-</ul>
-</li>
-<li>dh 向左删除一个字符<ul>
-<li>h ( 左移一个字符）</li>
-</ul>
-</li>
-</ul>
-<hr>
+    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
+    <url>/acme-sh/</url>
+    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
 <ul>
-<li>dw 向右删除至下一个单词的开头<ul>
-<li>w (words forward)</li>
-<li>W 大写表示只使用空格作为分隔</li>
-</ul>
-</li>
-<li>de 向左删除至单词的末尾，如果本身处于单词末尾，那么删除至下一个单词末尾<ul>
-<li>e (Forward to the end of word)</li>
-<li>E 大写表示只使用空格作为分隔</li>
-</ul>
-</li>
-<li>dge 向左删除至上一个单词的末尾<ul>
-<li>ge (Backward to the end of word)</li>
-<li>gE 大写表示只使用空格作为分隔</li>
-</ul>
-</li>
-<li>db 向右删除至单词的开头，如果本身处于单词开头，那么删除至上一个单词的开头<ul>
-<li>b (words backward)</li>
-<li>B 大写表示只使用空格作为分隔</li>
-</ul>
+<li>http 认证方式</li>
+<li>dns 方式<span id="more"></span>
+
 </li>
 </ul>
-<hr>
-<ul>
-<li>dd 删除当前行</li>
-<li>d^ 删除光标之前的内容至空白字符处 (non-blank character)</li>
-<li>d0 删除光标之前的内容</li>
-<li><del>dg_ 删除光标之后的内容至空白字符处</del></li>
-<li>d$ 删除光标及光标之后的内容</li>
-</ul>
-<h3 id="Linewise-motions"><a href="#Linewise-motions" class="headerlink" title="Linewise motions"></a>Linewise motions</h3><ul>
-<li>dj 删除本行及下一行</li>
-<li>dk 删除本行及上一行 </li>
-<li>dG 删除至文章末尾<ul>
-<li>G (Goto line，默认最后一行）</li>
-</ul>
-</li>
-<li>dgg 删除至文章开头<ul>
-<li>gg（Goto line，默认最后一行）</li>
-</ul>
-</li>
-<li>ggdG (删除整篇文章内容)<br>使用 <code>gg*G</code> 对整篇文章进行操作比较麻烦，安装插件可以更加便捷：<br><a href="https://github.com/kana/vim-textobj-entire">kana/vim-textobj-entire</a><br>执行 <code>dae</code> 就可以达到和执行 <code>ggdG</code> 一样的效果。</li>
-</ul>
-<h3 id="Text-object-selection"><a href="#Text-object-selection" class="headerlink" title="Text object selection"></a>Text object selection</h3><ul>
-<li>daw 删除一个单词<ul>
-<li>aw (a word)</li>
-<li>2daw 或 d2aw 将忽略空格，删除两个单词</li>
-<li>aW</li>
-</ul>
-</li>
-<li>diw 删除一个单词<ul>
-<li>iw (inner word)</li>
-<li>2diw 或 d2iw 包含空格，即删除一个单词和空格</li>
-<li>iW</li>
-</ul>
-</li>
-<li>das 删除一个句子及后面的空白（没对中文句子进行支持）</li>
-<li><del>dis 删除一个句子</del></li>
-<li>dap 删除一个段落<ul>
-<li>ap（a paragraph）</li>
-</ul>
-</li>
-<li><del>dip 删除一个段落</del></li>
-<li>da]、da[ 删除 [] 块内容，包含 []</li>
-<li>di]、di[ 删除 [] 块内容，不含 []</li>
-<li>da)、da(、dab</li>
-<li>di)、di(、dib</li>
-<li>da&gt;、da&lt;</li>
-<li>di&gt;、di&lt;</li>
-<li>dat 删除标签块，例如<aa></aa>，包含<aa></aa></li>
-<li>dit</li>
-<li>da}、da{、daB</li>
-<li>di}、di{、diB</li>
-<li>da”</li>
-<li>di”</li>
-<li>da’</li>
-<li>di’</li>
-<li>da`</li>
-<li>di`</li>
-</ul>
-<h3 id="Operators"><a href="#Operators" class="headerlink" title="Operators"></a>Operators</h3><ul>
-<li>c change</li>
-<li>d delete</li>
-<li>y 复制到寄存器</li>
-<li>g~ 反转文本大小写）</li>
-<li>gU 转换为大写</li>
-<li>gu 转换为小写</li>
-</ul>
-<blockquote>
-<p>Tips:<br>我们可以发现 Operator 操作符是不能单独使用的。</p>
-<p>在 motions 或者组合指令前面加 n，可以达到执行 n 次的效果，例如：<code>2daw</code>，将删除两个单词，然后使用 <code>u</code> 可以一次性撤销。也可以在执行 <code>daw</code> 后使用 <code>.</code> 操作符，达到一样的效果，这需要执行 <code>u</code> 两次才能完全撤销。 </p>
-<p>word 和 WORD 的区别在于，word 可以由：<code>spaces</code>,<code>tabs</code>,<code>&lt;EOL&gt;</code> 分隔，而 WORD 仅使用 spaces 作为分隔。相同之处在于：它们都是由字母、数字和下划线或其他非空字符序列组成。而在中文中的表现却有所不同：将连续的纯汉字视为一个“单词”。</p>
-<p>文本对象选择器中的 i 和 a 的区别在于：i 选择没有 space 的文本对象，而 a 包含 space。</p>
-<p>对中文句子不那么友好的情况，因此 <code>. </code> 英文句号加空格来判断一个句子的结尾，</p>
-<p>我在感觉没啥用的部分加了删除线。</p>
-</blockquote>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://vimhelp.org/">Vim: help.txt</a></li>
-<li>《Vim 实用技巧 (第 2 版)》</li>
-</ul>
-]]></content>
+<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
+<p><a href="https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E">github 安装说明</a></p>
+<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>Vim</tag>
+        <tag>ssl</tag>
+        <tag>acme.sh</tag>
+        <tag>letsencrypt</tag>
       </tags>
   </entry>
 </search>

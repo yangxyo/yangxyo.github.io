@@ -319,13 +319,6 @@
 
   
   <url>
-    <loc>http://blog.xyang.xin/tags/%E6%96%B9%E6%B3%95/</loc>
-    <lastmod>2021-08-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.xyang.xin/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1/</loc>
     <lastmod>2021-08-22</lastmod>
     <changefreq>daily</changefreq>
@@ -333,21 +326,7 @@
   </url>
   
   <url>
-    <loc>http://blog.xyang.xin/tags/ssl/</loc>
-    <lastmod>2021-08-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/tags/acme-sh/</loc>
-    <lastmod>2021-08-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/tags/letsencrypt/</loc>
+    <loc>http://blog.xyang.xin/tags/%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2021-08-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -480,14 +459,14 @@
   </url>
   
   <url>
-    <loc>http://blog.xyang.xin/tags/Linux/</loc>
+    <loc>http://blog.xyang.xin/tags/%E9%B2%81%E8%BF%85/</loc>
     <lastmod>2021-08-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.xyang.xin/tags/%E9%B2%81%E8%BF%85/</loc>
+    <loc>http://blog.xyang.xin/tags/Linux/</loc>
     <lastmod>2021-08-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -614,6 +593,27 @@
   
   <url>
     <loc>http://blog.xyang.xin/tags/react/</loc>
+    <lastmod>2021-08-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.xyang.xin/tags/ssl/</loc>
+    <lastmod>2021-08-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.xyang.xin/tags/acme-sh/</loc>
+    <lastmod>2021-08-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.xyang.xin/tags/letsencrypt/</loc>
     <lastmod>2021-08-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
