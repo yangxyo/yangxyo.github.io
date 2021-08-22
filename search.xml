@@ -44,6 +44,29 @@
       </tags>
   </entry>
   <entry>
+    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
+    <url>/acme-sh/</url>
+    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
+<ul>
+<li>http 认证方式</li>
+<li>dns 方式<span id="more"></span>
+
+</li>
+</ul>
+<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
+<p><a href="https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E">github 安装说明</a></p>
+<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssl</tag>
+        <tag>acme.sh</tag>
+        <tag>letsencrypt</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《厉害了我的国》(2018)讲述纲要</title>
     <url>/amazing-china/</url>
     <content><![CDATA[<h1 id="《厉害了我的国》-2018-讲述纲要"><a href="#《厉害了我的国》-2018-讲述纲要" class="headerlink" title="《厉害了我的国》(2018)讲述纲要"></a>《厉害了我的国》(2018)讲述纲要</h1><blockquote>
@@ -72,6 +95,28 @@
       </categories>
       <tags>
         <tag>中国</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《如何阅读一本书》读书笔记</title>
+    <url>/book-rhydybs/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-09%2Frhydybs.jpeg?x-oss-process=style/title_140" alt="rhydybs.jpeg-w140"></p>
+<span id="more"></span>
+<p><img data-src="http://images.xyang.xin/2019-09%2F%E3%80%8A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6%E3%80%8B.png" alt="《如何阅读一本书》.png"></p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《如何阅读一本书》的脉络要点进行总结，用于阅读时的参考。（图谱内容较多，建议保存后浏览）。</p>
+<p>书中提出了四种阅读层次，层次逐级递增，较高层次的阅读包含较低层次的阅读。基础阅读是对字词句意思的理解，是阅读的基础。使用检视阅读来理清书的脉络，来甄别一本书是否值得读，是否适合现在读。使用分析阅读来细细品味一本好书。主题阅读适用于学术研究或对自己感兴趣的问题的探究性学习。</p>
+<!-- more -->
+<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><p>读者是要“发现”书中隐藏着的骨架。而作者则是以制造骨架为开始，但却想办法把骨架“隐藏”起来。他的目的是，用艺术的手法将骨架隐藏起来，或是说，在骨架上添加血肉。</p>
+<p>所谓文章的清楚明白，就是跟纲要的区隔是否清楚有关，所谓文章的前后一贯，就是能把不同的重点条理有序地排列出来。</p>
+<p>这个捷径是要靠你的检视阅读技巧来建立的。你收集好书目之后，要做的第一件事是检视书单上所有的书。在做检视阅读之前，绝不要用分析阅读来阅读。检视阅读不会让你明白有关主题的所有错综复杂的内容，或是作者所有的洞察力，但却具有两种基本的功能。第一，它会让你对自己想要研究的主题有个清晰的概念，这样接下来你针对某几本书做分析阅读时，会大有助益。第二，它会简化你的书目到一个合理的程度。</p>
+<p>能够熟练检视阅读的读者，不但能在心中将书籍分类，而且能对内容有一个粗浅的了解。他也会用非常短的时间就发现，这本书谈的内容对他研究的主题到底重不重要————这可能要等到读下本书的时候才能发现。但是有两件事至少他已经知道其中之一。那就是他不是发现这本书必须回头再读一次，以获得启发，便是知道不论这本书多有趣又多丰富，却毫无启发性，因此不值得重新再读。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>阅读</tag>
       </tags>
   </entry>
   <entry>
@@ -105,29 +150,6 @@
       </tags>
   </entry>
   <entry>
-    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
-    <url>/acme-sh/</url>
-    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
-<ul>
-<li>http 认证方式</li>
-<li>dns 方式<span id="more"></span>
-
-</li>
-</ul>
-<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
-<p><a href="https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E">github 安装说明</a></p>
-<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>ssl</tag>
-        <tag>acme.sh</tag>
-        <tag>letsencrypt</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>position ——【每天一点 CSS】</title>
     <url>/css-everday-1/</url>
     <content><![CDATA[<p>今天来聊聊关于CSS的属性<code>position</code>，它的取值如下：</p>
@@ -156,28 +178,6 @@
       </categories>
       <tags>
         <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《如何阅读一本书》读书笔记</title>
-    <url>/book-rhydybs/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-09%2Frhydybs.jpeg?x-oss-process=style/title_140" alt="rhydybs.jpeg-w140"></p>
-<span id="more"></span>
-<p><img data-src="http://images.xyang.xin/2019-09%2F%E3%80%8A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6%E3%80%8B.png" alt="《如何阅读一本书》.png"></p>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《如何阅读一本书》的脉络要点进行总结，用于阅读时的参考。（图谱内容较多，建议保存后浏览）。</p>
-<p>书中提出了四种阅读层次，层次逐级递增，较高层次的阅读包含较低层次的阅读。基础阅读是对字词句意思的理解，是阅读的基础。使用检视阅读来理清书的脉络，来甄别一本书是否值得读，是否适合现在读。使用分析阅读来细细品味一本好书。主题阅读适用于学术研究或对自己感兴趣的问题的探究性学习。</p>
-<!-- more -->
-<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><p>读者是要“发现”书中隐藏着的骨架。而作者则是以制造骨架为开始，但却想办法把骨架“隐藏”起来。他的目的是，用艺术的手法将骨架隐藏起来，或是说，在骨架上添加血肉。</p>
-<p>所谓文章的清楚明白，就是跟纲要的区隔是否清楚有关，所谓文章的前后一贯，就是能把不同的重点条理有序地排列出来。</p>
-<p>这个捷径是要靠你的检视阅读技巧来建立的。你收集好书目之后，要做的第一件事是检视书单上所有的书。在做检视阅读之前，绝不要用分析阅读来阅读。检视阅读不会让你明白有关主题的所有错综复杂的内容，或是作者所有的洞察力，但却具有两种基本的功能。第一，它会让你对自己想要研究的主题有个清晰的概念，这样接下来你针对某几本书做分析阅读时，会大有助益。第二，它会简化你的书目到一个合理的程度。</p>
-<p>能够熟练检视阅读的读者，不但能在心中将书籍分类，而且能对内容有一个粗浅的了解。他也会用非常短的时间就发现，这本书谈的内容对他研究的主题到底重不重要————这可能要等到读下本书的时候才能发现。但是有两件事至少他已经知道其中之一。那就是他不是发现这本书必须回头再读一次，以获得启发，便是知道不论这本书多有趣又多丰富，却毫无启发性，因此不值得重新再读。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>阅读</tag>
       </tags>
   </entry>
   <entry>
@@ -253,32 +253,6 @@
       </tags>
   </entry>
   <entry>
-    <title>解构赋值 ———【一天一个 es6 语法】</title>
-    <url>/es6-everyday-3/</url>
-    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
-<span id="more"></span>
-
-<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">&quot;Bill&quot;</span>,</span><br><span class="line">    lastnNme: <span class="string">&quot;Wilson&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
-<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
-<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">a <span class="comment">// &quot;h&quot;</span></span><br><span class="line">b <span class="comment">// &quot;e&quot;</span></span><br><span class="line">c <span class="comment">// &quot;l&quot;</span></span><br><span class="line">d <span class="comment">// &quot;l&quot;</span></span><br><span class="line">e <span class="comment">// &quot;o&quot;</span></span><br></pre></td></tr></table></figure>
-<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">解构赋值 - JavaScript | MDN</a></li>
-<li><a href="https://es6.ruanyifeng.com/#docs/destructuring">变量的解构赋值 - ECMAScript 6入门</a></li>
-<li>《React 学习手册》</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>【一天一个 es6 语法】</tag>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
     <url>/es6-everday-2/</url>
     <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p>每个函数都是 <code>Function</code> 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用<strong>函数声明语法</strong>定义的：</p>
@@ -309,6 +283,32 @@
 <h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
 <li>《Javascript 高级程序设计（第3版）》</li>
 <li><a href="https://es6.ruanyifeng.com/#docs/function">函数的扩展 - ECMAScript 6入门</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>【一天一个 es6 语法】</tag>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解构赋值 ———【一天一个 es6 语法】</title>
+    <url>/es6-everyday-3/</url>
+    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
+<span id="more"></span>
+
+<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">&quot;Bill&quot;</span>,</span><br><span class="line">    lastnNme: <span class="string">&quot;Wilson&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
+<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">a <span class="comment">// &quot;h&quot;</span></span><br><span class="line">b <span class="comment">// &quot;e&quot;</span></span><br><span class="line">c <span class="comment">// &quot;l&quot;</span></span><br><span class="line">d <span class="comment">// &quot;l&quot;</span></span><br><span class="line">e <span class="comment">// &quot;o&quot;</span></span><br></pre></td></tr></table></figure>
+<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">解构赋值 - JavaScript | MDN</a></li>
+<li><a href="https://es6.ruanyifeng.com/#docs/destructuring">变量的解构赋值 - ECMAScript 6入门</a></li>
+<li>《React 学习手册》</li>
 </ul>
 ]]></content>
       <categories>
@@ -480,6 +480,64 @@
       </tags>
   </entry>
   <entry>
+    <title>由简入深配置 iTem2 终端</title>
+    <url>/iterm2/</url>
+    <content><![CDATA[<h1 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h1><p>brew 安装 zsh<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install zsh</span><br><span class="line">sudo chsh -s &#x2F;usr&#x2F;local&#x2F;bin&#x2F;zsh</span><br></pre></td></tr></table></figure><br>从 zsh 切换回 bash<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chsh -s &#x2F;bin&#x2F;bash</span><br></pre></td></tr></table></figure></p>
+<span id="more"></span>
+<p>PS：如果从 bash 切换到 zsh，但想保留 bash 所设置的环境变量，可在 .zshrc文件末尾添加 </p>
+<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source ~&#x2F;.bash_profile</span><br></pre></td></tr></table></figure></code></pre>
+<p>安装 oh my zsh  </p>
+<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl -L https:&#x2F;&#x2F;github.com&#x2F;robbyrussell&#x2F;oh-my-zsh&#x2F;raw&#x2F;master&#x2F;tools&#x2F;install.sh | sh</span><br></pre></td></tr></table></figure></code></pre>
+<h2 id="自动提示命令"><a href="#自动提示命令" class="headerlink" title="自动提示命令"></a>自动提示命令</h2><p>我们输入命令时，终端会自动提示你接下来可能要输入的命令，这时按 → 便可输出这些命令，非常方便。<br>设置如下：</p>
+<ul>
+<li><p>克隆仓库到本地 ~/.oh-my-zsh/custom/plugins 路径下</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone git:&#x2F;&#x2F;github.com&#x2F;zsh-users&#x2F;zsh-autosuggestions $ZSH_CUSTOM&#x2F;plugins&#x2F;zsh-autosuggestions</span><br></pre></td></tr></table></figure></li>
+<li><p>用 vim  ~/.zshrc 打开文件，下滑找到插件设置命令，默认是 <code>plugins=(git)</code> ，我们把它修改为</p>
+<p>  <code>plugins=(zsh-autosuggestions git)</code></p>
+</li>
+<li><p>要修改提示命令的颜色才看得到效果<br><img data-src="https://images.xyang.xin/2018-11/1541985092.png" alt="-c666"><br>然后这样 vim 的颜色也会随之改变</p>
+</li>
+<li><p>修改提示颜色在 .zshrc 文件中添加如下命令</p>
+<p>  <code>ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=&#39;fg=value&#39;</code></p>
+</li>
+</ul>
+<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>安装成功后，用vim ~/.zshrc打开隐藏文件，修改主题为agnoster</p>
+<p>PS：<a href="https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf">zsh主题</a>，参考主题连接选择自己喜欢的主题。</p>
+<pre><code>`ZSH_THEME=&quot;agnoster&quot;`</code></pre>
+<p>应用这个主题需要特殊的字体支持，否则会出现乱码情况，这时我们来配置字体：</p>
+<ul>
+<li><p>使用<a href="https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf"> Meslo</a> 字体，点开连接点击 view raw 下载字体。</p>
+</li>
+<li><p>安装字体到系统字体册。</p>
+<h2 id="语法高亮"><a href="#语法高亮" class="headerlink" title="语法高亮"></a>语法高亮</h2><p>  <code>brew install zsh-syntax-highlighting</code><br>在.zshrc中追加以下内容:  </p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source &#x2F;usr&#x2F;local&#x2F;share&#x2F;zsh-syntax-highlighting&#x2F;zsh-syntax-highlighting.zsh</span><br><span class="line">plugins&#x3D;(</span><br><span class="line">    git</span><br><span class="line">    zsh-autosuggestions</span><br><span class="line">    zsh-syntax-highlighting # 务必在最后</span><br><span class="line">    ）</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="给-iTerm-中Vim配色"><a href="#给-iTerm-中Vim配色" class="headerlink" title="给 iTerm 中Vim配色"></a>给 iTerm 中Vim配色</h2><p>首先<a href="https://github.com/altercation/solarized">下载solarized</a>  </p>
+<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd solarized  </span><br><span class="line">$ cd vim-colors-solarized&#x2F;colors  </span><br><span class="line">$ mkdir -p ~&#x2F;.vim&#x2F;colors   </span><br><span class="line">$ cp solarized.vim ~&#x2F;.vim&#x2F;colors&#x2F;</span><br><span class="line">$ vi ~&#x2F;.vimrc  </span><br></pre></td></tr></table></figure></code></pre>
+<p>加入下面三行设置即可：  </p>
+<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">syntax enable  </span><br><span class="line">set background&#x3D;dark  </span><br><span class="line">colorscheme solarized</span><br></pre></td></tr></table></figure></code></pre>
+<h2 id="给ls配色"><a href="#给ls配色" class="headerlink" title="给ls配色"></a>给ls配色</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim .zshrc</span><br><span class="line">export LSCOLORS&#x3D;&quot;exfxcxdxbxexexabagacad&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装-thefuck-纠错插件"><a href="#安装-thefuck-纠错插件" class="headerlink" title="安装 thefuck 纠错插件"></a>安装 thefuck 纠错插件</h2><p><code>brew install thefuck</code><br>修正上一条错误的输入</p>
+<h2 id="安装-autojump"><a href="#安装-autojump" class="headerlink" title="安装 autojump"></a>安装 autojump</h2><p><code>brew install autojump</code><br> // zshrc新增<br> [[ -s $(brew –prefix)/etc/profile.d/autojump.sh ]] &amp;&amp; . $(brew –prefix)/etc/profile.d/autojump.sh<br> // 生效配置<br><code> source ~/.zshrc</code></p>
+<h2 id="让终端走代理"><a href="#让终端走代理" class="headerlink" title="让终端走代理"></a>让终端走代理</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export http_proxy&#x3D;http:&#x2F;&#x2F;127.0.0.1:1080;export https_proxy&#x3D;http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">curl pub.dartlang.org  # 无输出则设置成功</span><br><span class="line"># 需要代理服务器支持 http</span><br></pre></td></tr></table></figure>
+<h2 id="iterm2-vim-开启滚轮"><a href="#iterm2-vim-开启滚轮" class="headerlink" title="iterm2 vim 开启滚轮"></a>iterm2 vim 开启滚轮</h2><p>在 iterm2中配置如下<br><img data-src="https://images.xyang.xin/2018-11/1541989133.png" alt="-c666"></p>
+<h2 id="配置-download-with-scp"><a href="#配置-download-with-scp" class="headerlink" title="配置 download with scp"></a>配置 download with scp</h2><p>本地和服务器都需要安装 iterm2 的 shell integration。</p>
+<p>在服务器端配置文件 <code>.zshrc</code> 下面这段<strong>之后</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">test -e &quot;$&#123;HOME&#125;&#x2F;.iterm2_shell_integration.zsh&quot; &amp;&amp; source &quot;$&#123;HOME&#125;&#x2F;.iterm2_shell_integration.zsh&quot; || true</span><br></pre></td></tr></table></figure>
+<p>添加：<br><code>export iterm2_hostname=远程服务器公网Ip</code></p>
+<p>在服务器端，ls 然后点击鼠标右键，可以下载文件。<br>在客户端，拖拽，然后按住 option 键，拖拽至服务器终端，可以进行上传。<br>使用的是 scp 协议。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>开发工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo 博客进阶</title>
     <url>/hexo-advance/</url>
     <content><![CDATA[<h2 id="文章简介"><a href="#文章简介" class="headerlink" title="文章简介"></a>文章简介</h2><p>本文介绍 Hexo 博客的一些进阶操作。</p>
@@ -528,6 +586,18 @@
       </tags>
   </entry>
   <entry>
+    <title>journal-2019-02-15</title>
+    <url>/journal-2019-02-15/</url>
+    <content><![CDATA[<h2 id="小孩成长与人才发展"><a href="#小孩成长与人才发展" class="headerlink" title="小孩成长与人才发展"></a>小孩成长与人才发展</h2><p>小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。</p>
+<p>孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。</p>
+<p>国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。</p>
+<p>参考：<a href="http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm">《基层减负 不是简单做减法》《求是》2019/03 </a></p>
+]]></content>
+      <categories>
+        <category>日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>编程语言之 Java</title>
     <url>/java-language/</url>
     <content><![CDATA[<h1 id="Integer-parseInt-与-Integer-valueOf-的比较"><a href="#Integer-parseInt-与-Integer-valueOf-的比较" class="headerlink" title="Integer.parseInt() 与 Integer.valueOf() 的比较"></a>Integer.parseInt() 与 Integer.valueOf() 的比较</h1><p>Integer.parseInt() 和 Integer.valueOf() 都是用来 将String转换为Int的。</p>
@@ -549,18 +619,6 @@
       <tags>
         <tag>java</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>journal-2019-02-15</title>
-    <url>/journal-2019-02-15/</url>
-    <content><![CDATA[<h2 id="小孩成长与人才发展"><a href="#小孩成长与人才发展" class="headerlink" title="小孩成长与人才发展"></a>小孩成长与人才发展</h2><p>小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。</p>
-<p>孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。</p>
-<p>国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。</p>
-<p>参考：<a href="http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm">《基层减负 不是简单做减法》《求是》2019/03 </a></p>
-]]></content>
-      <categories>
-        <category>日志</category>
-      </categories>
   </entry>
   <entry>
     <title>学习 HTTP 协议笔记</title>
@@ -726,6 +784,19 @@
       </tags>
   </entry>
   <entry>
+    <title>鲁迅</title>
+    <url>/luxun/</url>
+    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
+<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>鲁迅</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>切换 Shell 需谨慎</title>
     <url>/linux-user/</url>
     <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
@@ -741,19 +812,6 @@
       </categories>
       <tags>
         <tag>Shell</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>鲁迅</title>
-    <url>/luxun/</url>
-    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
-<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>鲁迅</tag>
       </tags>
   </entry>
   <entry>
@@ -888,6 +946,60 @@
       </tags>
   </entry>
   <entry>
+    <title>Mac 大扫除🧹</title>
+    <url>/macos-clean/</url>
+    <content><![CDATA[<p>基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。</p>
+<p>通过以下命令可以查看当前路径下的所有文件及文件夹大小并从大到小排列，以 KB 为单位显示。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sk *| sort -rn</span><br></pre></td></tr></table></figure>
+<p>以下命令就是以K，M，G为单位，提高信息的可读性，但是不能正确按文件大小排序。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sh *</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+<h2 id="用户文件清理"><a href="#用户文件清理" class="headerlink" title="用户文件清理"></a>用户文件清理</h2><p>我们称<code>～/</code>目录下的文件为用户文件。</p>
+<ol>
+<li>卸载不必要的应用，使用 柠檬清理 或者 AppCleaner 都是免费的。</li>
+<li>通过 柠檬清理，CleanMyMac 等软件清理垃圾，删除无用的大文件，这类软件都只有管理用户文件的能力。</li>
+<li>软件的配置、下载的插件等不能直接删除，应选择性删除：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;Library&#x2F;Application Support&#x2F;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>应用的缓存文件可以直接删除，不放心的话使用 trash 将其放入垃圾篓，如有异常还原便可，不用担心开不了机，用户文件也就是 ~/ 目录下的文件，是不会影响系统运行的：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/Library/Caches/*</span><br><span class="line">// or</span><br><span class="line">brew install trash</span><br><span class="line">trash ~/Library/Caches/*</span><br></pre></td></tr></table></figure>
+<h2 id="“系统文件”清理"><a href="#“系统文件”清理" class="headerlink" title="“系统文件”清理"></a>“系统文件”清理</h2><h3 id="清理文件定位"><a href="#清理文件定位" class="headerlink" title="清理文件定位"></a>清理文件定位</h3><p>Catalina中，系统文件从原本的文件系统中分离了，组成独立的文件系统，并且把这个文件系统从设计上设定为只能读取，不能写入。<br><img data-src="http://images.xyang.xin/2020-04%2F1586700714.png" alt="1586700714.png"> </p>
+<p>而其他文件和数据存储在Macintosh HD - Data卷中，挂载在<code>/System/Volumes/Data</code>目录下，在Finder中和系统卷一样显示为Macintosh HD。<br><img data-src="http://images.xyang.xin/2020-04%2F1586754964.png" alt="1586754964.png"></p>
+<p>如何区分数据卷和系统卷呢？<br>可以说除<code>/System/Volumes/Data</code>目录下的文件，其他都是数据卷文件。</p>
+<p>我们还可以发现一个怪异的现象，最明显的是<code>/Users</code>和<code>/Applications</code>同样出现在<code>/System/Volumes/Data/Applications</code>和<code>/System/Volumes/Data/Users</code>，而且内容相同、检测出来大小都相同，并且没有占用额外的空间。</p>
+<p>这里用到的是 “Bi-directional wormhole in path traversal” （路径遍历中的双向虫洞）—— Firmlinks，一种新的文件类型对象，类似于符号链接。通过以下命令可以查看哪些文件创建了Firmlinks：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /usr/share/firmlinks</span><br></pre></td></tr></table></figure>
+<p><img data-src="http://images.xyang.xin/2020-04%2F1586753548.png" alt="1586753548.png"></p>
+<h3 id="开始清理"><a href="#开始清理" class="headerlink" title="开始清理"></a>开始清理</h3><p>系统卷不能修改和写入，所以不会产生额外的垃圾，删除一些不用的系统应用是可以的，比如国际象棋，但是它们都不怎么占空间，所以没大必要。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo rm -rf /System/Applications/Chess.app/</span><br></pre></td></tr></table></figure>
+
+<p>我们实际上就是对 数据卷 进行清理。暂且把除去<code>/Users</code>用户文件外的文件都称为系统文件吧，因为它们很多都是与系统功能相关的，</p>
+<p>通过<code>du -sk *| sort -rn</code>命令，以下六个文件夹占的空间比较大：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">30210188	Users</span><br><span class="line">18391484	Applications</span><br><span class="line">6144100	private</span><br><span class="line">4822752	usr</span><br><span class="line">4179388	System</span><br><span class="line">3856812	Library</span><br></pre></td></tr></table></figure>
+<p><code>Users</code>是用户文件我们已经清理过了<code>Applications</code>是用户下载的应用，也清理过了，重点研究后面四个文件夹。</p>
+<p><code>/System/Volumes/Data/private/var/vm</code> 这里面删了又有，我删过，并没有产生什么意外。其中 sleepimage 是用于休眠期间存储主存的内容；swapfile 用于虚拟内存存储，当物理内存满了，系统会自动“调出”未被积极使用的数据，并将其存储于 swapfile。这两个都可以关闭，但是都不建议。</p>
+<p><code>/System/Volumes/Data/System/Library/Speech</code> 占了两个多G空间是语音相关的文件<code>say 你好</code>系统就会说<code>你好</code>。</p>
+<p><code>/System/Volumes/Data/usr</code>，usr是Unix System Resource的缩写，也就是Unix操作系统软件资源，很多通过命令行安装的软件都存放在这里，比如mac包管理器brew安装的软件都存放在里面，<code>brew uninstall</code>只会卸载软件本身而不会卸载相关依赖，通过以下命令可以安全的卸载brew安装的软件及其依赖：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew tap beeftornado&#x2F;rmtree</span><br><span class="line">brew rmtree XX</span><br></pre></td></tr></table></figure>
+
+<p>其实基于不同的使用习惯和用途，会产生不同的垃圾，用 <code>du</code> 命令一层层的分析查看，了解其内容含义，再清除是比较好的方法。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://support.apple.com/en-us/HT210650">About the read-only system volume in macOS Catalina - Apple Support</a></li>
+<li><a href="https://sspai.com/post/57052">当 Mac 升级到 Catalina 时，苹果在硬盘里施了点魔法 - 少数派</a></li>
+<li><a href="https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf">https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>MacOS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>学习 CSS 时忽视的几个知识点</title>
     <url>/note-hings-i-wish-id-known-about-css/</url>
     <content><![CDATA[<p><a href="https://cssfordesigners.com/articles/things-i-wish-id-known-about-css">Things I Wish I’d Known About CSS</a></p>
@@ -964,60 +1076,6 @@
       <tags>
         <tag>css</tag>
         <tag>note</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mac 大扫除🧹</title>
-    <url>/macos-clean/</url>
-    <content><![CDATA[<p>基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。</p>
-<p>通过以下命令可以查看当前路径下的所有文件及文件夹大小并从大到小排列，以 KB 为单位显示。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sk *| sort -rn</span><br></pre></td></tr></table></figure>
-<p>以下命令就是以K，M，G为单位，提高信息的可读性，但是不能正确按文件大小排序。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sh *</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-
-<h2 id="用户文件清理"><a href="#用户文件清理" class="headerlink" title="用户文件清理"></a>用户文件清理</h2><p>我们称<code>～/</code>目录下的文件为用户文件。</p>
-<ol>
-<li>卸载不必要的应用，使用 柠檬清理 或者 AppCleaner 都是免费的。</li>
-<li>通过 柠檬清理，CleanMyMac 等软件清理垃圾，删除无用的大文件，这类软件都只有管理用户文件的能力。</li>
-<li>软件的配置、下载的插件等不能直接删除，应选择性删除：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;Library&#x2F;Application Support&#x2F;</span><br></pre></td></tr></table></figure>
-<ol>
-<li>应用的缓存文件可以直接删除，不放心的话使用 trash 将其放入垃圾篓，如有异常还原便可，不用担心开不了机，用户文件也就是 ~/ 目录下的文件，是不会影响系统运行的：</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/Library/Caches/*</span><br><span class="line">// or</span><br><span class="line">brew install trash</span><br><span class="line">trash ~/Library/Caches/*</span><br></pre></td></tr></table></figure>
-<h2 id="“系统文件”清理"><a href="#“系统文件”清理" class="headerlink" title="“系统文件”清理"></a>“系统文件”清理</h2><h3 id="清理文件定位"><a href="#清理文件定位" class="headerlink" title="清理文件定位"></a>清理文件定位</h3><p>Catalina中，系统文件从原本的文件系统中分离了，组成独立的文件系统，并且把这个文件系统从设计上设定为只能读取，不能写入。<br><img data-src="http://images.xyang.xin/2020-04%2F1586700714.png" alt="1586700714.png"> </p>
-<p>而其他文件和数据存储在Macintosh HD - Data卷中，挂载在<code>/System/Volumes/Data</code>目录下，在Finder中和系统卷一样显示为Macintosh HD。<br><img data-src="http://images.xyang.xin/2020-04%2F1586754964.png" alt="1586754964.png"></p>
-<p>如何区分数据卷和系统卷呢？<br>可以说除<code>/System/Volumes/Data</code>目录下的文件，其他都是数据卷文件。</p>
-<p>我们还可以发现一个怪异的现象，最明显的是<code>/Users</code>和<code>/Applications</code>同样出现在<code>/System/Volumes/Data/Applications</code>和<code>/System/Volumes/Data/Users</code>，而且内容相同、检测出来大小都相同，并且没有占用额外的空间。</p>
-<p>这里用到的是 “Bi-directional wormhole in path traversal” （路径遍历中的双向虫洞）—— Firmlinks，一种新的文件类型对象，类似于符号链接。通过以下命令可以查看哪些文件创建了Firmlinks：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /usr/share/firmlinks</span><br></pre></td></tr></table></figure>
-<p><img data-src="http://images.xyang.xin/2020-04%2F1586753548.png" alt="1586753548.png"></p>
-<h3 id="开始清理"><a href="#开始清理" class="headerlink" title="开始清理"></a>开始清理</h3><p>系统卷不能修改和写入，所以不会产生额外的垃圾，删除一些不用的系统应用是可以的，比如国际象棋，但是它们都不怎么占空间，所以没大必要。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo rm -rf /System/Applications/Chess.app/</span><br></pre></td></tr></table></figure>
-
-<p>我们实际上就是对 数据卷 进行清理。暂且把除去<code>/Users</code>用户文件外的文件都称为系统文件吧，因为它们很多都是与系统功能相关的，</p>
-<p>通过<code>du -sk *| sort -rn</code>命令，以下六个文件夹占的空间比较大：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">30210188	Users</span><br><span class="line">18391484	Applications</span><br><span class="line">6144100	private</span><br><span class="line">4822752	usr</span><br><span class="line">4179388	System</span><br><span class="line">3856812	Library</span><br></pre></td></tr></table></figure>
-<p><code>Users</code>是用户文件我们已经清理过了<code>Applications</code>是用户下载的应用，也清理过了，重点研究后面四个文件夹。</p>
-<p><code>/System/Volumes/Data/private/var/vm</code> 这里面删了又有，我删过，并没有产生什么意外。其中 sleepimage 是用于休眠期间存储主存的内容；swapfile 用于虚拟内存存储，当物理内存满了，系统会自动“调出”未被积极使用的数据，并将其存储于 swapfile。这两个都可以关闭，但是都不建议。</p>
-<p><code>/System/Volumes/Data/System/Library/Speech</code> 占了两个多G空间是语音相关的文件<code>say 你好</code>系统就会说<code>你好</code>。</p>
-<p><code>/System/Volumes/Data/usr</code>，usr是Unix System Resource的缩写，也就是Unix操作系统软件资源，很多通过命令行安装的软件都存放在这里，比如mac包管理器brew安装的软件都存放在里面，<code>brew uninstall</code>只会卸载软件本身而不会卸载相关依赖，通过以下命令可以安全的卸载brew安装的软件及其依赖：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew tap beeftornado&#x2F;rmtree</span><br><span class="line">brew rmtree XX</span><br></pre></td></tr></table></figure>
-
-<p>其实基于不同的使用习惯和用途，会产生不同的垃圾，用 <code>du</code> 命令一层层的分析查看，了解其内容含义，再清除是比较好的方法。</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://support.apple.com/en-us/HT210650">About the read-only system volume in macOS Catalina - Apple Support</a></li>
-<li><a href="https://sspai.com/post/57052">当 Mac 升级到 Catalina 时，苹果在硬盘里施了点魔法 - 少数派</a></li>
-<li><a href="https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf">https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>MacOS</tag>
       </tags>
   </entry>
   <entry>
@@ -1172,6 +1230,27 @@
       </tags>
   </entry>
   <entry>
+    <title>程序中的 “脚手架”</title>
+    <url>/scaffold/</url>
+    <content><![CDATA[<blockquote>
+<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
+</blockquote>
+<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
+<span id="more"></span>
+
+<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
+<li><a href="https://github.com/facebook/create-react-app">facebook/create-react-app</a></li>
+<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>信息技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>代理服务器</title>
     <url>/proxy-teach/</url>
     <content><![CDATA[<p>主要包含：shadowsocks-libev、kuptun 的配置和优化。基于亚马逊云学生机。</p>
@@ -1275,120 +1354,6 @@
       </categories>
       <tags>
         <tag>代理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>程序中的 “脚手架”</title>
-    <url>/scaffold/</url>
-    <content><![CDATA[<blockquote>
-<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
-</blockquote>
-<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
-<span id="more"></span>
-
-<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
-<li><a href="https://github.com/facebook/create-react-app">facebook/create-react-app</a></li>
-<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>信息技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搜索引擎使用技巧</title>
-    <url>/se-operators/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F05%2F29%2F1590724982.png?x-oss-process=style/title_800" alt="1590724982.png"></p>
-<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>生活离不开搜索引擎了，我曾尝试在思考，是不是未来的开卷考试，会允许使用某个特定的搜索引擎。<span id="more"></span></p>
-<p>什么是搜索引擎呢？搜索引擎就像一本不断更新的通讯录，它日夜不停的到处网罗手机号码及个人资料，也有一些”推销员“主动的向其提供自己的联系方式。人们通过这本通讯录可以快速的找到自己感兴趣的内容。</p>
-<h2 id="常用的搜索方式"><a href="#常用的搜索方式" class="headerlink" title="常用的搜索方式"></a>常用的搜索方式</h2><p>如何使用搜索引擎？那和使用手机上的通讯录相差无几，通过姓名可以找到这个人的名片，包含手机号、地址、其他手机号；通过手机号，也可以找到这个人得名片，如果通讯录中有的话。</p>
-<p>想要了解鱼香肉丝的做法，就输入 <code>鱼香肉丝</code>，我想要麻辣口味的鱼香肉丝呢，就输入 <code>鱼香肉丝 麻辣</code>。</p>
-<p>通过以上方式——简单的关键字查询，对于大部分情况足矣。</p>
-<p>在 Google 搜索引擎输入框输入：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">the world will be better 鱼香肉丝</span><br></pre></td></tr></table></figure>
-<p>Then 回车：<br><img data-src="http://images.xyang.xin/2020%2F05%2F31%2F1590917944.png?x-oss-process=style/title_800" alt="1590917944.png"></p>
-<p>点击红色框框里面的 <code>world</code>，输入框里的 <code>world</code> 机会被加上引号，代表搜索结果中必须包含 <code>world</code>（must include）。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">the &quot;world&quot; will be better 鱼香肉丝</span><br></pre></td></tr></table></figure>
-
-<p>对，我也是一个“推销员”，所以我把我的联系方式提交给了通讯录，那我怎么知道通讯录里面有没有我呢？<code>site:blog.xyang.xin</code>。</p>
-<p>这些就是我日常所使用到的搜索方法了。</p>
-<h2 id="搜索优化"><a href="#搜索优化" class="headerlink" title="搜索优化"></a>搜索优化</h2><p>今天在 <a href="http://www.ruanyifeng.com/blog/2020/05/weekly-issue-109.html">新一期的科技爱好者周刊</a> 中看到：“<a href="https://quickref.dev/">Quickref</a> 一个针对程序员的搜索引擎，只搜索编程相关的网站。”出于好奇去看了一下：<br><img data-src="http://images.xyang.xin/2020%2F05%2F31%2F15909154253728.jpg?x-oss-process=style/title_800" alt="15909154253728.jpg"></p>
-<p>首页有点不一样，多了一些内容：</p>
-<ul>
-<li>默认逐字搜索（搜索结果必须同时包含输入的所有关键字）；</li>
-<li><code>~</code> 用于将关键字设置为可选（也就是搜索结果不必一定包含该关键字）；</li>
-<li><code>-</code> 减号，排除该关键字（搜索结果不包含该关键字）；</li>
-<li><code>site:</code> 仅针对某个特定网址进行搜索；</li>
-<li><code>intitle:</code> 搜索结果仅显示网站标题包含关键字的内容；</li>
-<li><code>*</code> 通配符；</li>
-<li><code>!gh</code> 重定向到 Github 搜索；</li>
-<li><code>!mdn</code> 重定向到 Mozilla MDN 搜索。</li>
-</ul>
-<p>为什么 Google、百度等搜索引擎都没有在首页给出类似的操作符 (Operators) 提示列表，或者显示一个链接到帮助文档？</p>
-<p>我认为有如下原因：</p>
-<ol>
-<li>大多数情况下最基本的搜索方式就足够用了，不需要花费很多时间去进行额外的学习，我至今就仅仅使用了前文所阐述的几种搜索方法；</li>
-<li>百度、Google 等搜索引擎作为通用软件，将 KISS(Keep it simple, stupid) 原则运用到极致，软件就是要用起来越简单越好。</li>
-</ol>
-<p>搜索引擎的核心价值无疑是拼尽全力把你最感兴趣的内容送到你的眼前，但是要懂一个人的心，在能读取你想法的机器研发出来之前，简直太难。所以为了让搜索引擎更懂我们，我认为进一步学习一些搜索引擎操作符是有必要的。Google 是我最常用的搜索引擎，百度有时也用，但下面介绍的操作符仅在 Google 上测试有效。</p>
-<ul>
-<li><code>@</code> 搜索社交媒体：<code>@twitter</code>；</li>
-<li><code>-</code> 搜索结果不包含该关键字；</li>
-<li><code>&quot;&quot;</code> 引号中的内容在搜索结果中必须完全匹配；</li>
-<li><code>..</code> 在一定范围内搜索：<code>$50..$100</code>；</li>
-<li><code>OR</code> 合并搜索，将两个搜索语句搜索到的内容合并起来显示：<code>site:nytimes.com OR @twitter</code>，搜索结果将同时显示 <code>site:nytimes.com</code> 搜索到的内容和 <code>@twitter</code> 搜索到的内容。需要 <code>AND</code> 吗？空格其实相当于 <code>AND</code>，需要 <code>NOT</code> 吗？<code>-</code> 相当于 <code>NOT</code>；</li>
-<li><code>site:</code>,<code>site:youtube.com</code> 或者 <code>site:.gov</code>、<code>site:.edu</code>；</li>
-<li><code>related:</code>，<code>related:google.com</code> 搜索结果就有 Yahoo、Bing、DuckDuckGo 等搜索引擎，可能因为其独特算法的原因，目前百度、Yandex 都没有，这个不好用，可能对美国本土网站支持比较好；</li>
-<li><code>intext:</code> 搜索主体部分包含关键字的网页，<code>intext:&quot;仰望星空 埋头工作&quot;</code></li>
-<li><code>allintext:</code> 搜索主体部分包含所有关键词的网页。<code>allintext: 鱼香肉丝 鳗鱼饭 威士忌 </code>；<br><img data-src="http://images.xyang.xin/2020%2F06%2F01%2F1591012218.png?x-oss-process=style/title_800?x-oss-process=style/title_800" alt="1591012218.png"></li>
-<li><code>intitle</code> 搜索标题包含关键词的网页，<code>intitle:&quot;world peace&quot;</code>；</li>
-<li><code>allintitle</code> 搜索标题包含所有关键词的网页；</li>
-<li><code>inurl</code> 搜索 URL 包含关键词的网页，<code>inurl:plant</code>；</li>
-<li><code>allinurl</code> 搜索 URL 中包含所有关键词的网页，<code>allinurl:plant growing</code>；</li>
-<li><code>intext:</code> 搜索主体部分包含关键词的网页，<code>intext:grow</code>；</li>
-<li><code>allintext:</code> 搜索主体部分包含所有关键词的网页，<code>allintext:pant growing</code>；</li>
-<li><code>filetype:</code> 针对文件类型进行搜索，<code>filetype:doc</code><a href="https://support.google.com/webmasters/answer/35287?hl=en">Google 可索引的文件类型</a></li>
-<li><code>imagesize:</code> 搜索指定尺寸的图片，<code>imagesize:500x400</code>，<a href="https://www.google.com/advanced_image_search">Google 高级图片搜索</a>；</li>
-<li><code>inanchor:</code> 搜索 anchor 包含关键词的网页，什么是 anchor？<code>&lt;a src=&quot;https://blog.xyang.xin&quot;&gt;world peace&lt;/a&gt;</code>，这里的 <code>world peace</code> 就是 <code>anchor</code>，一个链接除开其既定的功能，例如可以点击进行跳转，还有就是其内容 <code>src</code> 里的 URL，以及 <code>&lt;a&gt;&lt;/a&gt;</code> 标签所包含 <code>anchor</code>；<br><img data-src="http://images.xyang.xin/2020%2F06%2F03%2F1591161153.png?x-oss-process=style/title_800" alt="1591161153.png"></li>
-<li><code>allinanchor:</code> 搜索 anchor 包含所有关键词的网页，<code>allinanchor:world peace</code>；</li>
-<li><code>cache:</code> 查看 Google 对相应网站的缓存情况，<code>cache:www.wikipedia.org</code>；</li>
-<li><code>define:</code> 该操作符将展示一个关键词简明定义的信息卡，在信息卡下面是字典和其它在线参考的链接。<code>define:&quot;world peace&quot;</code> 和 <code>define: world peace</code> 搜索结果几乎一样；<br><img data-src="http://images.xyang.xin/2020%2F06%2F03%2F1591173332.png?x-oss-process=style/title_800" alt="1591173332.png"></li>
-<li><code>stocks:</code>stocks（股市），搜索结果将显示与金融相关的内容，<code>stocks:dell</code> 与 <code>dell</code> 将得到不同的搜索结果；</li>
-<li><code>wheather:</code> 查看特定地点的天气，<code>weather:beijing</code>；</li>
-<li><code>map:</code> 查看特定地点的地图，<code>map: 北京 </code>；</li>
-<li><code>in</code> 单位转换，常用的单位都有 <code>$329 in CNY</code>，<code>100cm in m</code>；</li>
-<li><code>()</code> 对搜索语句进行分组。</li>
-</ul>
-<blockquote>
-<p>Tip：</p>
-<ol>
-<li><p>Google 搜索通常会忽略不属于操作符的标点符号，英文大小写不影响搜索结果。不管加不加 <code>&quot;&quot;</code> 引号，标点符号和英文大小写都不影响搜索结果。</p>
-</li>
-<li><p>不要在操作符与搜索关键字之间留空格。<code>site:nytimes.com</code>，而不是 <code>site：nytimes.com</code>。</p>
-</li>
-<li><p>上述的关键词都包含关键词和关键句，简单理解不管词还是句都是字符串。<code>&quot;&quot;</code> 引号包含的内容为什么是完全匹配，因为搜索引擎将其整体视为一个字符串，并且它的另一层含义是必须包含。所以说 <code>intitle</code>、<code>intext</code> 如果搜索的内容是一个语句里面有空格的话，就必须用 <code>&quot;&quot;</code> 扩起来。</p>
-</li>
-<li><p>有些操作符可能因为更新而不可用，并且很难找到官方的更新说明，但是那些基本的应该不会被改变。</p>
-</li>
-</ol>
-</blockquote>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://support.google.com/websearch/answer/2466433?hl=en">Refine web searches - Google Search Help</a></li>
-<li><a href="https://builtmighty.com/blog/search-sites-google-site-search/">How to Search Any Website Using a Google Site Search | Built Mighty</a></li>
-<li><a href="https://ahrefs.com/blog/google-advanced-search-operators/">Google Search Operators: The Complete List (42 Advanced Operators)</a></li>
-<li>Stephan Spencer.《Google Power Search: The Essential Guide to Finding Anything Online With Google》.Second Edition.2017</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>SE</tag>
-        <tag>搜索引擎</tag>
-        <tag>Google</tag>
       </tags>
   </entry>
   <entry>
@@ -1502,6 +1467,21 @@
       </tags>
   </entry>
   <entry>
+    <title>SSM 问题集锦</title>
+    <url>/ssm-question/</url>
+    <content><![CDATA[<h1 id="SSM-问题集锦"><a href="#SSM-问题集锦" class="headerlink" title="SSM 问题集锦"></a>SSM 问题集锦</h1><h2 id="SSM-基础的搭建过程"><a href="#SSM-基础的搭建过程" class="headerlink" title="SSM 基础的搭建过程"></a>SSM 基础的搭建过程</h2><p><a href="https://blog.csdn.net/yangxinyujy/article/details/80656771">IntelliJ IDEA 创建 Maven 管理下的 SSM 项目基础全过程</a><br><a href="https://github.com/yangxinyujy/ssmdemo">yangxinyujy/ssmdemo: ssm 基础框架</a></p>
+<span id="more"></span>
+
+<h2 id="Tomcat-部署时-war-和-war-exploded-区别"><a href="#Tomcat-部署时-war-和-war-exploded-区别" class="headerlink" title="Tomcat 部署时 war 和 war exploded 区别"></a>Tomcat 部署时 war 和 war exploded 区别</h2><p>war 模式：将WEB工程以包的形式上传到服务器，可以称之为是发布模式，这是先打成 war 包，再发布；<br>war exploded模式：将 WEB 工程以当前文件夹的位置关系上传到服务器，通过直接把文件夹、jsp 页面 、classes 等,移到 Tomcat 部署文件夹里面的方式，进行加载部署。因此这种方式支持热部署，一般在开发的时候也是用这种方式。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SSM 错误集锦</title>
     <url>/ssm-Error/</url>
     <content><![CDATA[<ol>
@@ -1529,21 +1509,6 @@
 <li>原因：tomcat 升级导致路径改变</li>
 <li>解决办法：Idea 在 Edit Configuration 中修改 tomcat 路径至 libexec</li>
 </ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>ssm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SSM 问题集锦</title>
-    <url>/ssm-question/</url>
-    <content><![CDATA[<h1 id="SSM-问题集锦"><a href="#SSM-问题集锦" class="headerlink" title="SSM 问题集锦"></a>SSM 问题集锦</h1><h2 id="SSM-基础的搭建过程"><a href="#SSM-基础的搭建过程" class="headerlink" title="SSM 基础的搭建过程"></a>SSM 基础的搭建过程</h2><p><a href="https://blog.csdn.net/yangxinyujy/article/details/80656771">IntelliJ IDEA 创建 Maven 管理下的 SSM 项目基础全过程</a><br><a href="https://github.com/yangxinyujy/ssmdemo">yangxinyujy/ssmdemo: ssm 基础框架</a></p>
-<span id="more"></span>
-
-<h2 id="Tomcat-部署时-war-和-war-exploded-区别"><a href="#Tomcat-部署时-war-和-war-exploded-区别" class="headerlink" title="Tomcat 部署时 war 和 war exploded 区别"></a>Tomcat 部署时 war 和 war exploded 区别</h2><p>war 模式：将WEB工程以包的形式上传到服务器，可以称之为是发布模式，这是先打成 war 包，再发布；<br>war exploded模式：将 WEB 工程以当前文件夹的位置关系上传到服务器，通过直接把文件夹、jsp 页面 、classes 等,移到 Tomcat 部署文件夹里面的方式，进行加载部署。因此这种方式支持热部署，一般在开发的时候也是用这种方式。</p>
 ]]></content>
       <categories>
         <category>信息技术</category>
@@ -1833,61 +1798,96 @@
       </tags>
   </entry>
   <entry>
-    <title>由简入深配置 iTem2 终端</title>
-    <url>/iterm2/</url>
-    <content><![CDATA[<h1 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h1><p>brew 安装 zsh<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install zsh</span><br><span class="line">sudo chsh -s &#x2F;usr&#x2F;local&#x2F;bin&#x2F;zsh</span><br></pre></td></tr></table></figure><br>从 zsh 切换回 bash<br>    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chsh -s &#x2F;bin&#x2F;bash</span><br></pre></td></tr></table></figure></p>
-<span id="more"></span>
-<p>PS：如果从 bash 切换到 zsh，但想保留 bash 所设置的环境变量，可在 .zshrc文件末尾添加 </p>
-<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source ~&#x2F;.bash_profile</span><br></pre></td></tr></table></figure></code></pre>
-<p>安装 oh my zsh  </p>
-<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl -L https:&#x2F;&#x2F;github.com&#x2F;robbyrussell&#x2F;oh-my-zsh&#x2F;raw&#x2F;master&#x2F;tools&#x2F;install.sh | sh</span><br></pre></td></tr></table></figure></code></pre>
-<h2 id="自动提示命令"><a href="#自动提示命令" class="headerlink" title="自动提示命令"></a>自动提示命令</h2><p>我们输入命令时，终端会自动提示你接下来可能要输入的命令，这时按 → 便可输出这些命令，非常方便。<br>设置如下：</p>
-<ul>
-<li><p>克隆仓库到本地 ~/.oh-my-zsh/custom/plugins 路径下</p>
-  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone git:&#x2F;&#x2F;github.com&#x2F;zsh-users&#x2F;zsh-autosuggestions $ZSH_CUSTOM&#x2F;plugins&#x2F;zsh-autosuggestions</span><br></pre></td></tr></table></figure></li>
-<li><p>用 vim  ~/.zshrc 打开文件，下滑找到插件设置命令，默认是 <code>plugins=(git)</code> ，我们把它修改为</p>
-<p>  <code>plugins=(zsh-autosuggestions git)</code></p>
-</li>
-<li><p>要修改提示命令的颜色才看得到效果<br><img data-src="https://images.xyang.xin/2018-11/1541985092.png" alt="-c666"><br>然后这样 vim 的颜色也会随之改变</p>
-</li>
-<li><p>修改提示颜色在 .zshrc 文件中添加如下命令</p>
-<p>  <code>ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=&#39;fg=value&#39;</code></p>
-</li>
-</ul>
-<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>安装成功后，用vim ~/.zshrc打开隐藏文件，修改主题为agnoster</p>
-<p>PS：<a href="https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf">zsh主题</a>，参考主题连接选择自己喜欢的主题。</p>
-<pre><code>`ZSH_THEME=&quot;agnoster&quot;`</code></pre>
-<p>应用这个主题需要特殊的字体支持，否则会出现乱码情况，这时我们来配置字体：</p>
-<ul>
-<li><p>使用<a href="https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf"> Meslo</a> 字体，点开连接点击 view raw 下载字体。</p>
-</li>
-<li><p>安装字体到系统字体册。</p>
-<h2 id="语法高亮"><a href="#语法高亮" class="headerlink" title="语法高亮"></a>语法高亮</h2><p>  <code>brew install zsh-syntax-highlighting</code><br>在.zshrc中追加以下内容:  </p>
-  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source &#x2F;usr&#x2F;local&#x2F;share&#x2F;zsh-syntax-highlighting&#x2F;zsh-syntax-highlighting.zsh</span><br><span class="line">plugins&#x3D;(</span><br><span class="line">    git</span><br><span class="line">    zsh-autosuggestions</span><br><span class="line">    zsh-syntax-highlighting # 务必在最后</span><br><span class="line">    ）</span><br></pre></td></tr></table></figure>
+    <title>搜索引擎使用技巧</title>
+    <url>/se-operators/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F05%2F29%2F1590724982.png?x-oss-process=style/title_800" alt="1590724982.png"></p>
+<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>生活离不开搜索引擎了，我曾尝试在思考，是不是未来的开卷考试，会允许使用某个特定的搜索引擎。<span id="more"></span></p>
+<p>什么是搜索引擎呢？搜索引擎就像一本不断更新的通讯录，它日夜不停的到处网罗手机号码及个人资料，也有一些”推销员“主动的向其提供自己的联系方式。人们通过这本通讯录可以快速的找到自己感兴趣的内容。</p>
+<h2 id="常用的搜索方式"><a href="#常用的搜索方式" class="headerlink" title="常用的搜索方式"></a>常用的搜索方式</h2><p>如何使用搜索引擎？那和使用手机上的通讯录相差无几，通过姓名可以找到这个人的名片，包含手机号、地址、其他手机号；通过手机号，也可以找到这个人得名片，如果通讯录中有的话。</p>
+<p>想要了解鱼香肉丝的做法，就输入 <code>鱼香肉丝</code>，我想要麻辣口味的鱼香肉丝呢，就输入 <code>鱼香肉丝 麻辣</code>。</p>
+<p>通过以上方式——简单的关键字查询，对于大部分情况足矣。</p>
+<p>在 Google 搜索引擎输入框输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">the world will be better 鱼香肉丝</span><br></pre></td></tr></table></figure>
+<p>Then 回车：<br><img data-src="http://images.xyang.xin/2020%2F05%2F31%2F1590917944.png?x-oss-process=style/title_800" alt="1590917944.png"></p>
+<p>点击红色框框里面的 <code>world</code>，输入框里的 <code>world</code> 机会被加上引号，代表搜索结果中必须包含 <code>world</code>（must include）。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">the &quot;world&quot; will be better 鱼香肉丝</span><br></pre></td></tr></table></figure>
 
-</li>
+<p>对，我也是一个“推销员”，所以我把我的联系方式提交给了通讯录，那我怎么知道通讯录里面有没有我呢？<code>site:blog.xyang.xin</code>。</p>
+<p>这些就是我日常所使用到的搜索方法了。</p>
+<h2 id="搜索优化"><a href="#搜索优化" class="headerlink" title="搜索优化"></a>搜索优化</h2><p>今天在 <a href="http://www.ruanyifeng.com/blog/2020/05/weekly-issue-109.html">新一期的科技爱好者周刊</a> 中看到：“<a href="https://quickref.dev/">Quickref</a> 一个针对程序员的搜索引擎，只搜索编程相关的网站。”出于好奇去看了一下：<br><img data-src="http://images.xyang.xin/2020%2F05%2F31%2F15909154253728.jpg?x-oss-process=style/title_800" alt="15909154253728.jpg"></p>
+<p>首页有点不一样，多了一些内容：</p>
+<ul>
+<li>默认逐字搜索（搜索结果必须同时包含输入的所有关键字）；</li>
+<li><code>~</code> 用于将关键字设置为可选（也就是搜索结果不必一定包含该关键字）；</li>
+<li><code>-</code> 减号，排除该关键字（搜索结果不包含该关键字）；</li>
+<li><code>site:</code> 仅针对某个特定网址进行搜索；</li>
+<li><code>intitle:</code> 搜索结果仅显示网站标题包含关键字的内容；</li>
+<li><code>*</code> 通配符；</li>
+<li><code>!gh</code> 重定向到 Github 搜索；</li>
+<li><code>!mdn</code> 重定向到 Mozilla MDN 搜索。</li>
 </ul>
-<h2 id="给-iTerm-中Vim配色"><a href="#给-iTerm-中Vim配色" class="headerlink" title="给 iTerm 中Vim配色"></a>给 iTerm 中Vim配色</h2><p>首先<a href="https://github.com/altercation/solarized">下载solarized</a>  </p>
-<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd solarized  </span><br><span class="line">$ cd vim-colors-solarized&#x2F;colors  </span><br><span class="line">$ mkdir -p ~&#x2F;.vim&#x2F;colors   </span><br><span class="line">$ cp solarized.vim ~&#x2F;.vim&#x2F;colors&#x2F;</span><br><span class="line">$ vi ~&#x2F;.vimrc  </span><br></pre></td></tr></table></figure></code></pre>
-<p>加入下面三行设置即可：  </p>
-<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">syntax enable  </span><br><span class="line">set background&#x3D;dark  </span><br><span class="line">colorscheme solarized</span><br></pre></td></tr></table></figure></code></pre>
-<h2 id="给ls配色"><a href="#给ls配色" class="headerlink" title="给ls配色"></a>给ls配色</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim .zshrc</span><br><span class="line">export LSCOLORS&#x3D;&quot;exfxcxdxbxexexabagacad&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="安装-thefuck-纠错插件"><a href="#安装-thefuck-纠错插件" class="headerlink" title="安装 thefuck 纠错插件"></a>安装 thefuck 纠错插件</h2><p><code>brew install thefuck</code><br>修正上一条错误的输入</p>
-<h2 id="安装-autojump"><a href="#安装-autojump" class="headerlink" title="安装 autojump"></a>安装 autojump</h2><p><code>brew install autojump</code><br> // zshrc新增<br> [[ -s $(brew –prefix)/etc/profile.d/autojump.sh ]] &amp;&amp; . $(brew –prefix)/etc/profile.d/autojump.sh<br> // 生效配置<br><code> source ~/.zshrc</code></p>
-<h2 id="让终端走代理"><a href="#让终端走代理" class="headerlink" title="让终端走代理"></a>让终端走代理</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export http_proxy&#x3D;http:&#x2F;&#x2F;127.0.0.1:1080;export https_proxy&#x3D;http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">curl pub.dartlang.org  # 无输出则设置成功</span><br><span class="line"># 需要代理服务器支持 http</span><br></pre></td></tr></table></figure>
-<h2 id="iterm2-vim-开启滚轮"><a href="#iterm2-vim-开启滚轮" class="headerlink" title="iterm2 vim 开启滚轮"></a>iterm2 vim 开启滚轮</h2><p>在 iterm2中配置如下<br><img data-src="https://images.xyang.xin/2018-11/1541989133.png" alt="-c666"></p>
-<h2 id="配置-download-with-scp"><a href="#配置-download-with-scp" class="headerlink" title="配置 download with scp"></a>配置 download with scp</h2><p>本地和服务器都需要安装 iterm2 的 shell integration。</p>
-<p>在服务器端配置文件 <code>.zshrc</code> 下面这段<strong>之后</strong>：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">test -e &quot;$&#123;HOME&#125;&#x2F;.iterm2_shell_integration.zsh&quot; &amp;&amp; source &quot;$&#123;HOME&#125;&#x2F;.iterm2_shell_integration.zsh&quot; || true</span><br></pre></td></tr></table></figure>
-<p>添加：<br><code>export iterm2_hostname=远程服务器公网Ip</code></p>
-<p>在服务器端，ls 然后点击鼠标右键，可以下载文件。<br>在客户端，拖拽，然后按住 option 键，拖拽至服务器终端，可以进行上传。<br>使用的是 scp 协议。</p>
+<p>为什么 Google、百度等搜索引擎都没有在首页给出类似的操作符 (Operators) 提示列表，或者显示一个链接到帮助文档？</p>
+<p>我认为有如下原因：</p>
+<ol>
+<li>大多数情况下最基本的搜索方式就足够用了，不需要花费很多时间去进行额外的学习，我至今就仅仅使用了前文所阐述的几种搜索方法；</li>
+<li>百度、Google 等搜索引擎作为通用软件，将 KISS(Keep it simple, stupid) 原则运用到极致，软件就是要用起来越简单越好。</li>
+</ol>
+<p>搜索引擎的核心价值无疑是拼尽全力把你最感兴趣的内容送到你的眼前，但是要懂一个人的心，在能读取你想法的机器研发出来之前，简直太难。所以为了让搜索引擎更懂我们，我认为进一步学习一些搜索引擎操作符是有必要的。Google 是我最常用的搜索引擎，百度有时也用，但下面介绍的操作符仅在 Google 上测试有效。</p>
+<ul>
+<li><code>@</code> 搜索社交媒体：<code>@twitter</code>；</li>
+<li><code>-</code> 搜索结果不包含该关键字；</li>
+<li><code>&quot;&quot;</code> 引号中的内容在搜索结果中必须完全匹配；</li>
+<li><code>..</code> 在一定范围内搜索：<code>$50..$100</code>；</li>
+<li><code>OR</code> 合并搜索，将两个搜索语句搜索到的内容合并起来显示：<code>site:nytimes.com OR @twitter</code>，搜索结果将同时显示 <code>site:nytimes.com</code> 搜索到的内容和 <code>@twitter</code> 搜索到的内容。需要 <code>AND</code> 吗？空格其实相当于 <code>AND</code>，需要 <code>NOT</code> 吗？<code>-</code> 相当于 <code>NOT</code>；</li>
+<li><code>site:</code>,<code>site:youtube.com</code> 或者 <code>site:.gov</code>、<code>site:.edu</code>；</li>
+<li><code>related:</code>，<code>related:google.com</code> 搜索结果就有 Yahoo、Bing、DuckDuckGo 等搜索引擎，可能因为其独特算法的原因，目前百度、Yandex 都没有，这个不好用，可能对美国本土网站支持比较好；</li>
+<li><code>intext:</code> 搜索主体部分包含关键字的网页，<code>intext:&quot;仰望星空 埋头工作&quot;</code></li>
+<li><code>allintext:</code> 搜索主体部分包含所有关键词的网页。<code>allintext: 鱼香肉丝 鳗鱼饭 威士忌 </code>；<br><img data-src="http://images.xyang.xin/2020%2F06%2F01%2F1591012218.png?x-oss-process=style/title_800?x-oss-process=style/title_800" alt="1591012218.png"></li>
+<li><code>intitle</code> 搜索标题包含关键词的网页，<code>intitle:&quot;world peace&quot;</code>；</li>
+<li><code>allintitle</code> 搜索标题包含所有关键词的网页；</li>
+<li><code>inurl</code> 搜索 URL 包含关键词的网页，<code>inurl:plant</code>；</li>
+<li><code>allinurl</code> 搜索 URL 中包含所有关键词的网页，<code>allinurl:plant growing</code>；</li>
+<li><code>intext:</code> 搜索主体部分包含关键词的网页，<code>intext:grow</code>；</li>
+<li><code>allintext:</code> 搜索主体部分包含所有关键词的网页，<code>allintext:pant growing</code>；</li>
+<li><code>filetype:</code> 针对文件类型进行搜索，<code>filetype:doc</code><a href="https://support.google.com/webmasters/answer/35287?hl=en">Google 可索引的文件类型</a></li>
+<li><code>imagesize:</code> 搜索指定尺寸的图片，<code>imagesize:500x400</code>，<a href="https://www.google.com/advanced_image_search">Google 高级图片搜索</a>；</li>
+<li><code>inanchor:</code> 搜索 anchor 包含关键词的网页，什么是 anchor？<code>&lt;a src=&quot;https://blog.xyang.xin&quot;&gt;world peace&lt;/a&gt;</code>，这里的 <code>world peace</code> 就是 <code>anchor</code>，一个链接除开其既定的功能，例如可以点击进行跳转，还有就是其内容 <code>src</code> 里的 URL，以及 <code>&lt;a&gt;&lt;/a&gt;</code> 标签所包含 <code>anchor</code>；<br><img data-src="http://images.xyang.xin/2020%2F06%2F03%2F1591161153.png?x-oss-process=style/title_800" alt="1591161153.png"></li>
+<li><code>allinanchor:</code> 搜索 anchor 包含所有关键词的网页，<code>allinanchor:world peace</code>；</li>
+<li><code>cache:</code> 查看 Google 对相应网站的缓存情况，<code>cache:www.wikipedia.org</code>；</li>
+<li><code>define:</code> 该操作符将展示一个关键词简明定义的信息卡，在信息卡下面是字典和其它在线参考的链接。<code>define:&quot;world peace&quot;</code> 和 <code>define: world peace</code> 搜索结果几乎一样；<br><img data-src="http://images.xyang.xin/2020%2F06%2F03%2F1591173332.png?x-oss-process=style/title_800" alt="1591173332.png"></li>
+<li><code>stocks:</code>stocks（股市），搜索结果将显示与金融相关的内容，<code>stocks:dell</code> 与 <code>dell</code> 将得到不同的搜索结果；</li>
+<li><code>wheather:</code> 查看特定地点的天气，<code>weather:beijing</code>；</li>
+<li><code>map:</code> 查看特定地点的地图，<code>map: 北京 </code>；</li>
+<li><code>in</code> 单位转换，常用的单位都有 <code>$329 in CNY</code>，<code>100cm in m</code>；</li>
+<li><code>()</code> 对搜索语句进行分组。</li>
+</ul>
+<blockquote>
+<p>Tip：</p>
+<ol>
+<li><p>Google 搜索通常会忽略不属于操作符的标点符号，英文大小写不影响搜索结果。不管加不加 <code>&quot;&quot;</code> 引号，标点符号和英文大小写都不影响搜索结果。</p>
+</li>
+<li><p>不要在操作符与搜索关键字之间留空格。<code>site:nytimes.com</code>，而不是 <code>site：nytimes.com</code>。</p>
+</li>
+<li><p>上述的关键词都包含关键词和关键句，简单理解不管词还是句都是字符串。<code>&quot;&quot;</code> 引号包含的内容为什么是完全匹配，因为搜索引擎将其整体视为一个字符串，并且它的另一层含义是必须包含。所以说 <code>intitle</code>、<code>intext</code> 如果搜索的内容是一个语句里面有空格的话，就必须用 <code>&quot;&quot;</code> 扩起来。</p>
+</li>
+<li><p>有些操作符可能因为更新而不可用，并且很难找到官方的更新说明，但是那些基本的应该不会被改变。</p>
+</li>
+</ol>
+</blockquote>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://support.google.com/websearch/answer/2466433?hl=en">Refine web searches - Google Search Help</a></li>
+<li><a href="https://builtmighty.com/blog/search-sites-google-site-search/">How to Search Any Website Using a Google Site Search | Built Mighty</a></li>
+<li><a href="https://ahrefs.com/blog/google-advanced-search-operators/">Google Search Operators: The Complete List (42 Advanced Operators)</a></li>
+<li>Stephan Spencer.《Google Power Search: The Essential Guide to Finding Anything Online With Google》.Second Edition.2017</li>
+</ul>
 ]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>开发工具</tag>
+        <tag>SE</tag>
+        <tag>搜索引擎</tag>
+        <tag>Google</tag>
       </tags>
   </entry>
 </search>
