@@ -44,29 +44,6 @@
       </tags>
   </entry>
   <entry>
-    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
-    <url>/acme-sh/</url>
-    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
-<ul>
-<li>http 认证方式</li>
-<li>dns 方式<span id="more"></span>
-
-</li>
-</ul>
-<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
-<p><a href="https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E">github 安装说明</a></p>
-<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>ssl</tag>
-        <tag>acme.sh</tag>
-        <tag>letsencrypt</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《厉害了我的国》(2018)讲述纲要</title>
     <url>/amazing-china/</url>
     <content><![CDATA[<h1 id="《厉害了我的国》-2018-讲述纲要"><a href="#《厉害了我的国》-2018-讲述纲要" class="headerlink" title="《厉害了我的国》(2018)讲述纲要"></a>《厉害了我的国》(2018)讲述纲要</h1><blockquote>
@@ -98,6 +75,51 @@
       </tags>
   </entry>
   <entry>
+    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
+    <url>/acme-sh/</url>
+    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
+<ul>
+<li>http 认证方式</li>
+<li>dns 方式<span id="more"></span>
+
+</li>
+</ul>
+<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
+<p><a href="https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E">github 安装说明</a></p>
+<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssl</tag>
+        <tag>acme.sh</tag>
+        <tag>letsencrypt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《如何阅读一本书》读书笔记</title>
+    <url>/book-rhydybs/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-09%2Frhydybs.jpeg?x-oss-process=style/title_140" alt="rhydybs.jpeg-w140"></p>
+<span id="more"></span>
+<p><img data-src="http://images.xyang.xin/2019-09%2F%E3%80%8A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6%E3%80%8B.png" alt="《如何阅读一本书》.png"></p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《如何阅读一本书》的脉络要点进行总结，用于阅读时的参考。（图谱内容较多，建议保存后浏览）。</p>
+<p>书中提出了四种阅读层次，层次逐级递增，较高层次的阅读包含较低层次的阅读。基础阅读是对字词句意思的理解，是阅读的基础。使用检视阅读来理清书的脉络，来甄别一本书是否值得读，是否适合现在读。使用分析阅读来细细品味一本好书。主题阅读适用于学术研究或对自己感兴趣的问题的探究性学习。</p>
+<!-- more -->
+<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><p>读者是要“发现”书中隐藏着的骨架。而作者则是以制造骨架为开始，但却想办法把骨架“隐藏”起来。他的目的是，用艺术的手法将骨架隐藏起来，或是说，在骨架上添加血肉。</p>
+<p>所谓文章的清楚明白，就是跟纲要的区隔是否清楚有关，所谓文章的前后一贯，就是能把不同的重点条理有序地排列出来。</p>
+<p>这个捷径是要靠你的检视阅读技巧来建立的。你收集好书目之后，要做的第一件事是检视书单上所有的书。在做检视阅读之前，绝不要用分析阅读来阅读。检视阅读不会让你明白有关主题的所有错综复杂的内容，或是作者所有的洞察力，但却具有两种基本的功能。第一，它会让你对自己想要研究的主题有个清晰的概念，这样接下来你针对某几本书做分析阅读时，会大有助益。第二，它会简化你的书目到一个合理的程度。</p>
+<p>能够熟练检视阅读的读者，不但能在心中将书籍分类，而且能对内容有一个粗浅的了解。他也会用非常短的时间就发现，这本书谈的内容对他研究的主题到底重不重要————这可能要等到读下本书的时候才能发现。但是有两件事至少他已经知道其中之一。那就是他不是发现这本书必须回头再读一次，以获得启发，便是知道不论这本书多有趣又多丰富，却毫无启发性，因此不值得重新再读。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《一本小小的红色写作书》读书笔记</title>
     <url>/book-hsxzs/</url>
     <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F1558180143.png?x-oss-process=style/title_140" alt="1558180143.png-w140"></p>
@@ -125,28 +147,6 @@
       <tags>
         <tag>读书笔记</tag>
         <tag>写作</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《如何阅读一本书》读书笔记</title>
-    <url>/book-rhydybs/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-09%2Frhydybs.jpeg?x-oss-process=style/title_140" alt="rhydybs.jpeg-w140"></p>
-<span id="more"></span>
-<p><img data-src="http://images.xyang.xin/2019-09%2F%E3%80%8A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6%E3%80%8B.png" alt="《如何阅读一本书》.png"></p>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《如何阅读一本书》的脉络要点进行总结，用于阅读时的参考。（图谱内容较多，建议保存后浏览）。</p>
-<p>书中提出了四种阅读层次，层次逐级递增，较高层次的阅读包含较低层次的阅读。基础阅读是对字词句意思的理解，是阅读的基础。使用检视阅读来理清书的脉络，来甄别一本书是否值得读，是否适合现在读。使用分析阅读来细细品味一本好书。主题阅读适用于学术研究或对自己感兴趣的问题的探究性学习。</p>
-<!-- more -->
-<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><p>读者是要“发现”书中隐藏着的骨架。而作者则是以制造骨架为开始，但却想办法把骨架“隐藏”起来。他的目的是，用艺术的手法将骨架隐藏起来，或是说，在骨架上添加血肉。</p>
-<p>所谓文章的清楚明白，就是跟纲要的区隔是否清楚有关，所谓文章的前后一贯，就是能把不同的重点条理有序地排列出来。</p>
-<p>这个捷径是要靠你的检视阅读技巧来建立的。你收集好书目之后，要做的第一件事是检视书单上所有的书。在做检视阅读之前，绝不要用分析阅读来阅读。检视阅读不会让你明白有关主题的所有错综复杂的内容，或是作者所有的洞察力，但却具有两种基本的功能。第一，它会让你对自己想要研究的主题有个清晰的概念，这样接下来你针对某几本书做分析阅读时，会大有助益。第二，它会简化你的书目到一个合理的程度。</p>
-<p>能够熟练检视阅读的读者，不但能在心中将书籍分类，而且能对内容有一个粗浅的了解。他也会用非常短的时间就发现，这本书谈的内容对他研究的主题到底重不重要————这可能要等到读下本书的时候才能发现。但是有两件事至少他已经知道其中之一。那就是他不是发现这本书必须回头再读一次，以获得启发，便是知道不论这本书多有趣又多丰富，却毫无启发性，因此不值得重新再读。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>阅读</tag>
       </tags>
   </entry>
   <entry>
@@ -818,28 +818,6 @@
       </tags>
   </entry>
   <entry>
-    <title>解决远程服务器重装系统导致的 mac 终端无法连接的问题</title>
-    <url>/mac-ssh-error/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png" alt="2019-05-14 at 17.17.png"><br>WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!</p>
-<p>known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。</p>
-<h2 id="通过如下两种方案解决该问题"><a href="#通过如下两种方案解决该问题" class="headerlink" title="通过如下两种方案解决该问题"></a>通过如下两种方案解决该问题</h2><ol>
-<li><p>输入命令(推荐)：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -R45.40.106.111</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-</li>
-<li><p>删除下面文件中相关 ip 的信息（公匙）<br>~/.ssh/known_hosts</p>
-</li>
-</ol>
-<p>.ssh文件为隐藏文件夹可通过 command + shift + . 查看。或者直接：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/.ssh/known_hosts</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mac 配置上云神器 Mackup</title>
     <url>/mackup/</url>
     <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="https://github.com/lra/mackup">mackup</a> 是一款受关注度很高的开源软件，可运行于 osx 和 linux 系统。用于保持应用程序设置同步，可快捷的备份许多流行的应用程序。</p>
@@ -906,6 +884,71 @@
       </tags>
   </entry>
   <entry>
+    <title>解决远程服务器重装系统导致的 mac 终端无法连接的问题</title>
+    <url>/mac-ssh-error/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png" alt="2019-05-14 at 17.17.png"><br>WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!</p>
+<p>known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。</p>
+<h2 id="通过如下两种方案解决该问题"><a href="#通过如下两种方案解决该问题" class="headerlink" title="通过如下两种方案解决该问题"></a>通过如下两种方案解决该问题</h2><ol>
+<li><p>输入命令(推荐)：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -R45.40.106.111</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+</li>
+<li><p>删除下面文件中相关 ip 的信息（公匙）<br>~/.ssh/known_hosts</p>
+</li>
+</ol>
+<p>.ssh文件为隐藏文件夹可通过 command + shift + . 查看。或者直接：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/.ssh/known_hosts</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac 小问题 —— iCloud 未响应</title>
+    <url>/macos-problems/</url>
+    <content><![CDATA[<p>使用 iCloud Drive 将文件上传到云端，防止数据丢失，同时可以实现多台设备的协同工作。但是在使用 iCloud Drive 的过程中我遇到了程序未响应，iCoud 文件上传阻塞的问题。</p>
+<span id="more"></span>
+
+<h2 id="Finder-无法打开或持续未响应"><a href="#Finder-无法打开或持续未响应" class="headerlink" title="Finder 无法打开或持续未响应"></a>Finder 无法打开或持续未响应</h2><p>解决办法：<br>磁盘工具 -&gt; Macintosh HD（系统盘）-&gt; 急救<br>磁盘工具在以下路径：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">/System/Applications/Utilities/Disk Utility.app</span><br></pre></td></tr></table></figure>
+
+<p>急救操作不会对你的电脑造成任何损害，甚至还有所优化。</p>
+<h2 id="打开-iCloud-云盘文件夹极其缓慢"><a href="#打开-iCloud-云盘文件夹极其缓慢" class="headerlink" title="打开 iCloud 云盘文件夹极其缓慢"></a>打开 iCloud 云盘文件夹极其缓慢</h2><p>遇到的问题是：在访达中点击iCloud云盘系统就会出现转圈圈的标志，使用快捷键<code>command+alt+esc</code>（强制退出应用程序）就会看到访达处于未响应状态，这个时间会持续很久。</p>
+<p>解决办法：<br>系统偏好 -&gt; Apple ID -&gt; 取消勾选iCloud云盘 -&gt; 保留副本 -&gt; 重新勾选iCloud云盘</p>
+<p>此操作造成的后果是mac需要很长的一段时间和云端同步，这取决于你icloud存储的文件大小，并不会影响其他。</p>
+<h2 id="文件无法上传排查"><a href="#文件无法上传排查" class="headerlink" title="文件无法上传排查"></a>文件无法上传排查</h2><p>iCloud 连续几天几夜也没同步完，经过诸多排查，例如，修改 DNS：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">114.114.114.114</span><br><span class="line">8.8.8.8</span><br></pre></td></tr></table></figure>
+<p>不仅没起作用，还影响了访问其他网页。最后删除 DNS 配置，刷新 DNS 缓存：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ 2$ sudo killall -HUP mDNSResponder</span><br></pre></td></tr></table></figure>
+
+<p>最后排查出是因为，我开发代码的工作目录都设置在了 iCloud 云盘里，文件体积虽然不大，却有上万个细小的文件，不知道是不是 iCloud 设置了某种限制，导致上传阻塞，最后将代码都移出 iCloud 问题就解决了。</p>
+<p>后面又卡住了，收获到一个命令通过这个命令可以查看 iCloud 同步进度：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ brctl log -w</span><br></pre></td></tr></table></figure>
+<p>虽然没看懂运行的是什么，但是能够看到一直有东西在执行。<br>通过以下三个命令对 icloud 进行重置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 杀死icloud同步进程</span><br><span class="line">$ sudo killall bird</span><br><span class="line"># 删除 icloud 的配置文件</span><br><span class="line">$ sudo rm -rf ~&#x2F;Library&#x2F;Application\ Support&#x2F;CloudDocs</span><br><span class="line"># 立刻关机</span><br><span class="line">$ sudo shutdown -r now</span><br></pre></td></tr></table></figure>
+<p>不必担心文件丢失，效果与关闭重新关闭icloud同步类似。重新开启电脑后可以通过前面说到的命令查看 iCloud 同步的进度。</p>
+<p>也可以直接使用下面的脚本：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;bash</span><br><span class="line"></span><br><span class="line">if [[ $EUID -eq 0 ]]; then</span><br><span class="line">    echo &quot;Killing bird.&quot;</span><br><span class="line">    killall bird</span><br><span class="line">    echo &quot;Removing CloudDocs&quot;</span><br><span class="line">    cd ~&#x2F;Library&#x2F;Application\ Support</span><br><span class="line">    rm -rf CloudDocs</span><br><span class="line">    echo &quot;Immediately rebooting!&quot;</span><br><span class="line">    shutdown -r now</span><br><span class="line">else</span><br><span class="line">    echo &quot;</span><br><span class="line">    This script needs run as sudo. </span><br><span class="line">    Use CAUTION when doing so.</span><br><span class="line">    You accept full responsibility using this script.</span><br><span class="line">    You should know what it&#39;s doing BEFORE you run it.</span><br><span class="line">    &quot;</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+
+<p>不必南辕北辙，越过中国的防火墙，iCloud 中国用户的文件存储在贵州云，而网上所谓的要获取验证文件，获取验证文件有香港的服务器。最后的任务就是等，我是让电脑喝着咖啡持续跑了接近一整天才同步完成的。</p>
+<h2 id="Mac-无法同步-iPhone-剪贴板数据"><a href="#Mac-无法同步-iPhone-剪贴板数据" class="headerlink" title="Mac 无法同步 iPhone 剪贴板数据"></a>Mac 无法同步 iPhone 剪贴板数据</h2><p>iPhone 可以将 Mac 复制的内容，同步下来，而 Mac 不行。<br>解决办法：退出 iPhone 账号，并重新登陆。</p>
+<h2 id="AirDrop-隔空投送文件传送"><a href="#AirDrop-隔空投送文件传送" class="headerlink" title="AirDrop 隔空投送文件传送"></a>AirDrop 隔空投送文件传送</h2><p>从 Mac 通过 AirDrop 传送文件至 iPhone，iPhone 必须有 App 可以打开传输文件格式的文件，否则文件将被遗弃。而我们需要传输一些特殊格式的文件的时候，我们可以将其压缩为 zip，这个时候 iPhone 就会接受了。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
+<li><a href="https://apple.stackexchange.com/questions/313716/icloud-drive-wont-sync-on-mac">macos - iCloud Drive Won’t Sync on Mac - Ask Different</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>MacOS</tag>
+        <tag>Finder</tag>
+        <tag>iCloud</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Mac 大扫除🧹</title>
     <url>/macos-clean/</url>
     <content><![CDATA[<p>基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。</p>
@@ -957,49 +1000,6 @@
       </categories>
       <tags>
         <tag>MacOS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mac 小问题 —— iCloud 未响应</title>
-    <url>/macos-problems/</url>
-    <content><![CDATA[<p>使用 iCloud Drive 将文件上传到云端，防止数据丢失，同时可以实现多台设备的协同工作。但是在使用 iCloud Drive 的过程中我遇到了程序未响应，iCoud 文件上传阻塞的问题。</p>
-<span id="more"></span>
-
-<h2 id="Finder-无法打开或持续未响应"><a href="#Finder-无法打开或持续未响应" class="headerlink" title="Finder 无法打开或持续未响应"></a>Finder 无法打开或持续未响应</h2><p>解决办法：<br>磁盘工具 -&gt; Macintosh HD（系统盘）-&gt; 急救<br>磁盘工具在以下路径：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">/System/Applications/Utilities/Disk Utility.app</span><br></pre></td></tr></table></figure>
-
-<p>急救操作不会对你的电脑造成任何损害，甚至还有所优化。</p>
-<h2 id="打开-iCloud-云盘文件夹极其缓慢"><a href="#打开-iCloud-云盘文件夹极其缓慢" class="headerlink" title="打开 iCloud 云盘文件夹极其缓慢"></a>打开 iCloud 云盘文件夹极其缓慢</h2><p>遇到的问题是：在访达中点击iCloud云盘系统就会出现转圈圈的标志，使用快捷键<code>command+alt+esc</code>（强制退出应用程序）就会看到访达处于未响应状态，这个时间会持续很久。</p>
-<p>解决办法：<br>系统偏好 -&gt; Apple ID -&gt; 取消勾选iCloud云盘 -&gt; 保留副本 -&gt; 重新勾选iCloud云盘</p>
-<p>此操作造成的后果是mac需要很长的一段时间和云端同步，这取决于你icloud存储的文件大小，并不会影响其他。</p>
-<h2 id="文件无法上传排查"><a href="#文件无法上传排查" class="headerlink" title="文件无法上传排查"></a>文件无法上传排查</h2><p>iCloud 连续几天几夜也没同步完，经过诸多排查，例如，修改 DNS：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">114.114.114.114</span><br><span class="line">8.8.8.8</span><br></pre></td></tr></table></figure>
-<p>不仅没起作用，还影响了访问其他网页。最后删除 DNS 配置，刷新 DNS 缓存：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ 2$ sudo killall -HUP mDNSResponder</span><br></pre></td></tr></table></figure>
-
-<p>最后排查出是因为，我开发代码的工作目录都设置在了 iCloud 云盘里，文件体积虽然不大，却有上万个细小的文件，不知道是不是 iCloud 设置了某种限制，导致上传阻塞，最后将代码都移出 iCloud 问题就解决了。</p>
-<p>后面又卡住了，收获到一个命令通过这个命令可以查看 iCloud 同步进度：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ brctl log -w</span><br></pre></td></tr></table></figure>
-<p>虽然没看懂运行的是什么，但是能够看到一直有东西在执行。<br>通过以下三个命令对 icloud 进行重置：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 杀死icloud同步进程</span><br><span class="line">$ sudo killall bird</span><br><span class="line"># 删除 icloud 的配置文件</span><br><span class="line">$ sudo rm -rf ~&#x2F;Library&#x2F;Application\ Support&#x2F;CloudDocs</span><br><span class="line"># 立刻关机</span><br><span class="line">$ sudo shutdown -r now</span><br></pre></td></tr></table></figure>
-<p>不必担心文件丢失，效果与关闭重新关闭icloud同步类似。重新开启电脑后可以通过前面说到的命令查看 iCloud 同步的进度。</p>
-<p>也可以直接使用下面的脚本：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;bash</span><br><span class="line"></span><br><span class="line">if [[ $EUID -eq 0 ]]; then</span><br><span class="line">    echo &quot;Killing bird.&quot;</span><br><span class="line">    killall bird</span><br><span class="line">    echo &quot;Removing CloudDocs&quot;</span><br><span class="line">    cd ~&#x2F;Library&#x2F;Application\ Support</span><br><span class="line">    rm -rf CloudDocs</span><br><span class="line">    echo &quot;Immediately rebooting!&quot;</span><br><span class="line">    shutdown -r now</span><br><span class="line">else</span><br><span class="line">    echo &quot;</span><br><span class="line">    This script needs run as sudo. </span><br><span class="line">    Use CAUTION when doing so.</span><br><span class="line">    You accept full responsibility using this script.</span><br><span class="line">    You should know what it&#39;s doing BEFORE you run it.</span><br><span class="line">    &quot;</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
-
-<p>不必南辕北辙，越过中国的防火墙，iCloud 中国用户的文件存储在贵州云，而网上所谓的要获取验证文件，获取验证文件有香港的服务器。最后的任务就是等，我是让电脑喝着咖啡持续跑了接近一整天才同步完成的。</p>
-<h2 id="Mac-无法同步-iPhone-剪贴板数据"><a href="#Mac-无法同步-iPhone-剪贴板数据" class="headerlink" title="Mac 无法同步 iPhone 剪贴板数据"></a>Mac 无法同步 iPhone 剪贴板数据</h2><p>iPhone 可以将 Mac 复制的内容，同步下来，而 Mac 不行。<br>解决办法：退出 iPhone 账号，并重新登陆。</p>
-<h2 id="AirDrop-隔空投送文件传送"><a href="#AirDrop-隔空投送文件传送" class="headerlink" title="AirDrop 隔空投送文件传送"></a>AirDrop 隔空投送文件传送</h2><p>从 Mac 通过 AirDrop 传送文件至 iPhone，iPhone 必须有 App 可以打开传输文件格式的文件，否则文件将被遗弃。而我们需要传输一些特殊格式的文件的时候，我们可以将其压缩为 zip，这个时候 iPhone 就会接受了。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
-<li><a href="https://apple.stackexchange.com/questions/313716/icloud-drive-wont-sync-on-mac">macos - iCloud Drive Won’t Sync on Mac - Ask Different</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>MacOS</tag>
-        <tag>Finder</tag>
-        <tag>iCloud</tag>
       </tags>
   </entry>
   <entry>
