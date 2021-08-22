@@ -253,6 +253,32 @@
       </tags>
   </entry>
   <entry>
+    <title>解构赋值 ———【一天一个 es6 语法】</title>
+    <url>/es6-everyday-3/</url>
+    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
+<span id="more"></span>
+
+<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">&quot;Bill&quot;</span>,</span><br><span class="line">    lastnNme: <span class="string">&quot;Wilson&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
+<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">a <span class="comment">// &quot;h&quot;</span></span><br><span class="line">b <span class="comment">// &quot;e&quot;</span></span><br><span class="line">c <span class="comment">// &quot;l&quot;</span></span><br><span class="line">d <span class="comment">// &quot;l&quot;</span></span><br><span class="line">e <span class="comment">// &quot;o&quot;</span></span><br></pre></td></tr></table></figure>
+<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">解构赋值 - JavaScript | MDN</a></li>
+<li><a href="https://es6.ruanyifeng.com/#docs/destructuring">变量的解构赋值 - ECMAScript 6入门</a></li>
+<li>《React 学习手册》</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>【一天一个 es6 语法】</tag>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
     <url>/es6-everday-2/</url>
     <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p>每个函数都是 <code>Function</code> 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用<strong>函数声明语法</strong>定义的：</p>
@@ -283,32 +309,6 @@
 <h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
 <li>《Javascript 高级程序设计（第3版）》</li>
 <li><a href="https://es6.ruanyifeng.com/#docs/function">函数的扩展 - ECMAScript 6入门</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>【一天一个 es6 语法】</tag>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解构赋值 ———【一天一个 es6 语法】</title>
-    <url>/es6-everyday-3/</url>
-    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
-<span id="more"></span>
-
-<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">&quot;Bill&quot;</span>,</span><br><span class="line">    lastnNme: <span class="string">&quot;Wilson&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
-<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
-<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">a <span class="comment">// &quot;h&quot;</span></span><br><span class="line">b <span class="comment">// &quot;e&quot;</span></span><br><span class="line">c <span class="comment">// &quot;l&quot;</span></span><br><span class="line">d <span class="comment">// &quot;l&quot;</span></span><br><span class="line">e <span class="comment">// &quot;o&quot;</span></span><br></pre></td></tr></table></figure>
-<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">解构赋值 - JavaScript | MDN</a></li>
-<li><a href="https://es6.ruanyifeng.com/#docs/destructuring">变量的解构赋值 - ECMAScript 6入门</a></li>
-<li>《React 学习手册》</li>
 </ul>
 ]]></content>
       <categories>
@@ -805,6 +805,28 @@
       </tags>
   </entry>
   <entry>
+    <title>解决远程服务器重装系统导致的 mac 终端无法连接的问题</title>
+    <url>/mac-ssh-error/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png" alt="2019-05-14 at 17.17.png"><br>WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!</p>
+<p>known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。</p>
+<h2 id="通过如下两种方案解决该问题"><a href="#通过如下两种方案解决该问题" class="headerlink" title="通过如下两种方案解决该问题"></a>通过如下两种方案解决该问题</h2><ol>
+<li><p>输入命令(推荐)：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -R45.40.106.111</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+</li>
+<li><p>删除下面文件中相关 ip 的信息（公匙）<br>~/.ssh/known_hosts</p>
+</li>
+</ol>
+<p>.ssh文件为隐藏文件夹可通过 command + shift + . 查看。或者直接：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/.ssh/known_hosts</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>鲁迅</title>
     <url>/luxun/</url>
     <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
@@ -881,28 +903,6 @@
       </categories>
       <tags>
         <tag>开发工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决远程服务器重装系统导致的 mac 终端无法连接的问题</title>
-    <url>/mac-ssh-error/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png" alt="2019-05-14 at 17.17.png"><br>WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!</p>
-<p>known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。</p>
-<h2 id="通过如下两种方案解决该问题"><a href="#通过如下两种方案解决该问题" class="headerlink" title="通过如下两种方案解决该问题"></a>通过如下两种方案解决该问题</h2><ol>
-<li><p>输入命令(推荐)：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -R45.40.106.111</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-</li>
-<li><p>删除下面文件中相关 ip 的信息（公匙）<br>~/.ssh/known_hosts</p>
-</li>
-</ol>
-<p>.ssh文件为隐藏文件夹可通过 command + shift + . 查看。或者直接：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/.ssh/known_hosts</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1563,6 +1563,21 @@
       </tags>
   </entry>
   <entry>
+    <title>SSM 问题集锦</title>
+    <url>/ssm-question/</url>
+    <content><![CDATA[<h1 id="SSM-问题集锦"><a href="#SSM-问题集锦" class="headerlink" title="SSM 问题集锦"></a>SSM 问题集锦</h1><h2 id="SSM-基础的搭建过程"><a href="#SSM-基础的搭建过程" class="headerlink" title="SSM 基础的搭建过程"></a>SSM 基础的搭建过程</h2><p><a href="https://blog.csdn.net/yangxinyujy/article/details/80656771">IntelliJ IDEA 创建 Maven 管理下的 SSM 项目基础全过程</a><br><a href="https://github.com/yangxinyujy/ssmdemo">yangxinyujy/ssmdemo: ssm 基础框架</a></p>
+<span id="more"></span>
+
+<h2 id="Tomcat-部署时-war-和-war-exploded-区别"><a href="#Tomcat-部署时-war-和-war-exploded-区别" class="headerlink" title="Tomcat 部署时 war 和 war exploded 区别"></a>Tomcat 部署时 war 和 war exploded 区别</h2><p>war 模式：将WEB工程以包的形式上传到服务器，可以称之为是发布模式，这是先打成 war 包，再发布；<br>war exploded模式：将 WEB 工程以当前文件夹的位置关系上传到服务器，通过直接把文件夹、jsp 页面 、classes 等,移到 Tomcat 部署文件夹里面的方式，进行加载部署。因此这种方式支持热部署，一般在开发的时候也是用这种方式。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SSM 错误集锦</title>
     <url>/ssm-Error/</url>
     <content><![CDATA[<ol>
@@ -1599,18 +1614,34 @@
       </tags>
   </entry>
   <entry>
-    <title>SSM 问题集锦</title>
-    <url>/ssm-question/</url>
-    <content><![CDATA[<h1 id="SSM-问题集锦"><a href="#SSM-问题集锦" class="headerlink" title="SSM 问题集锦"></a>SSM 问题集锦</h1><h2 id="SSM-基础的搭建过程"><a href="#SSM-基础的搭建过程" class="headerlink" title="SSM 基础的搭建过程"></a>SSM 基础的搭建过程</h2><p><a href="https://blog.csdn.net/yangxinyujy/article/details/80656771">IntelliJ IDEA 创建 Maven 管理下的 SSM 项目基础全过程</a><br><a href="https://github.com/yangxinyujy/ssmdemo">yangxinyujy/ssmdemo: ssm 基础框架</a></p>
+    <title>vim 多文件类型自动补全方案</title>
+    <url>/vim-multiple-filetype-deoplete/</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
+<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
 <span id="more"></span>
-
-<h2 id="Tomcat-部署时-war-和-war-exploded-区别"><a href="#Tomcat-部署时-war-和-war-exploded-区别" class="headerlink" title="Tomcat 部署时 war 和 war exploded 区别"></a>Tomcat 部署时 war 和 war exploded 区别</h2><p>war 模式：将WEB工程以包的形式上传到服务器，可以称之为是发布模式，这是先打成 war 包，再发布；<br>war exploded模式：将 WEB 工程以当前文件夹的位置关系上传到服务器，通过直接把文件夹、jsp 页面 、classes 等,移到 Tomcat 部署文件夹里面的方式，进行加载部署。因此这种方式支持热部署，一般在开发的时候也是用这种方式。</p>
+<p>其中的 filetype on 表示：</p>
+<blockquote>
+<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
+</blockquote>
+<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
+<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
+<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">&#x27;nvim&#x27;</span>)</span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span>, &#123; <span class="string">&#x27;do&#x27;</span>: <span class="string">&#x27;:UpdateRemotePlugins&#x27;</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/nvim-yarp&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/vim-hug-neovim-rpc&#x27;</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">&#x27;Shougo/context_filetype.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">&#x27;g:context_filetype#same_filetypes&#x27;</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;javascript&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;script&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/script&gt;&#x27;</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;css&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;style&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/style&gt;&#x27;</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;functions&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;css&#x27;</span>: [<span class="string">&#x27;csscomplete#CompleteCSS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: [<span class="string">&#x27;javascriptcomplete#CompleteJS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;html&#x27;</span>: [<span class="string">&#x27;htmlcomplete#CompleteTags&#x27;</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;input_patterns&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: <span class="string">&#x27;[^. *\t]\.\w*&#x27;</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">&quot; 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">&quot;\&lt;C-n&gt;&quot;</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">&quot;\&lt;TAB&gt;&quot;</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> &quot;&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">&#x27;.&#x27;</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">&#x27;\s&#x27;</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">&quot;&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
+<p>执行 :PlugInstall</p>
+<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
+<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">&#x27;range&#x27;</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">&#x27;filetype&#x27;</span>: <span class="string">&#x27;css&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
+<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
+<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
 ]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>ssm</tag>
+        <tag>vim</tag>
+        <tag>multiple filetype</tag>
       </tags>
   </entry>
   <entry>
@@ -1743,34 +1774,46 @@
       </tags>
   </entry>
   <entry>
-    <title>vim 多文件类型自动补全方案</title>
-    <url>/vim-multiple-filetype-deoplete/</url>
-    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
-<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
+    <title>vim-fugitive ——【一天一个 vim 插件】</title>
+    <url>/vim-plugin-everday-2/</url>
+    <content><![CDATA[<p>作为一个 10k+ star 的 vim 插件，<a href="https://github.com/tpope/vim-fugitive">tpope/vim-fugitive</a> 自称为 Git 的第一 Vim 插件并不为过。Fugitive 让你在当前 buffer 缓冲区通过<code>:Git</code>或<code>:G</code>，可以直接使用 git 命令。可以看作是<code>!git XX</code> 命令的改进和优化，除了使用 silent，静默模式外，你不会看到 “Press ENTER or type command to continue”，还对一些命令进行了优化。</p>
 <span id="more"></span>
-<p>其中的 filetype on 表示：</p>
-<blockquote>
-<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
-</blockquote>
-<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
-<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
-<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">&#x27;nvim&#x27;</span>)</span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span>, &#123; <span class="string">&#x27;do&#x27;</span>: <span class="string">&#x27;:UpdateRemotePlugins&#x27;</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/nvim-yarp&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/vim-hug-neovim-rpc&#x27;</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">&#x27;Shougo/context_filetype.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">&#x27;g:context_filetype#same_filetypes&#x27;</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;javascript&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;script&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/script&gt;&#x27;</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;css&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;style&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/style&gt;&#x27;</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;functions&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;css&#x27;</span>: [<span class="string">&#x27;csscomplete#CompleteCSS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: [<span class="string">&#x27;javascriptcomplete#CompleteJS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;html&#x27;</span>: [<span class="string">&#x27;htmlcomplete#CompleteTags&#x27;</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;input_patterns&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: <span class="string">&#x27;[^. *\t]\.\w*&#x27;</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">&quot; 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">&quot;\&lt;C-n&gt;&quot;</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">&quot;\&lt;TAB&gt;&quot;</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> &quot;&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">&#x27;.&#x27;</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">&#x27;\s&#x27;</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">&quot;&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
-<p>执行 :PlugInstall</p>
-<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
-<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">&#x27;range&#x27;</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">&#x27;filetype&#x27;</span>: <span class="string">&#x27;css&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
-<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
-<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
-<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
+
+<h2 id="温故"><a href="#温故" class="headerlink" title="温故"></a>温故</h2><p>回顾一下上一个插件 vim-gitgutter 的使用方法：</p>
+<ul>
+<li><code>[c</code> 和 <code>]c</code> 在有所变动的区块间跳转。</li>
+<li><leader>hp，显示预览，hunk preview</li>
+<li><leader>hs，暂存代码块，hunk stage</li>
+<li><leader>hu，撤销更改，hunk undo</li>
+<li><leader>hd，禁用 gitgutter</li>
+<li><leader>he，启用 gitgutter</li>
+</ul>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ul>
+<li>所有命令都以<code>:G</code>或<code>:Git</code>打头，两种写法等价。</li>
+<li><code>:G -p &#123;args&#125;</code><ul>
+<li>运行任意 git 命令都可以加上，-p，这样将捕获输出到一个临时文件，并且对临时文件执行<code>:split</code>水平分割。如果使用<code>:0G -p &#123;args&#125;</code>，将用<code>:edit</code>代替。通常用于 diff 和 log 这个指令。</li>
+<li>例：<code>:G -p diff</code>,<code>:G --paginate diff</code></li>
+</ul>
+</li>
+<li><code>G</code><ul>
+<li>不带参数，会打开一个类似于 git-status 的简要窗口，在窗口中，使用 <code>g?</code> 将打开 fugitive-maps 快捷键映射帮助。</li>
+</ul>
+</li>
+<li><code>G push</code><ul>
+<li>执行 <code>git push</code></li>
+</ul>
+</li>
+<li><code>GBrowse</code></li>
+</ul>
+<hr>
+<p>待续：<br>由于我的很多 git 知识还不够完善，后面补充了再续写。<br>更多内容参见<code>:help fugitive</code></p>
 ]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
         <tag>vim</tag>
-        <tag>multiple filetype</tag>
+        <tag>一天一个 vim 插件</tag>
       </tags>
   </entry>
   <entry>
@@ -1807,49 +1850,6 @@
 <figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">:GitGutterDisable</span><br><span class="line">:GitGutterEnable</span><br><span class="line"></span><br><span class="line">:GitGutterBufferDisable</span><br><span class="line">:GitGutterBufferEnable</span><br></pre></td></tr></table></figure>
 <p>绑定快捷键，例如：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nmap &lt;leader&gt;hd :GitGutterDisable&lt;CR&gt;</span><br><span class="line">nmap &lt;leader&gt;he :GitGutterEnable&lt;CR&gt;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>一天一个 vim 插件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vim-fugitive ——【一天一个 vim 插件】</title>
-    <url>/vim-plugin-everday-2/</url>
-    <content><![CDATA[<p>作为一个 10k+ star 的 vim 插件，<a href="https://github.com/tpope/vim-fugitive">tpope/vim-fugitive</a> 自称为 Git 的第一 Vim 插件并不为过。Fugitive 让你在当前 buffer 缓冲区通过<code>:Git</code>或<code>:G</code>，可以直接使用 git 命令。可以看作是<code>!git XX</code> 命令的改进和优化，除了使用 silent，静默模式外，你不会看到 “Press ENTER or type command to continue”，还对一些命令进行了优化。</p>
-<span id="more"></span>
-
-<h2 id="温故"><a href="#温故" class="headerlink" title="温故"></a>温故</h2><p>回顾一下上一个插件 vim-gitgutter 的使用方法：</p>
-<ul>
-<li><code>[c</code> 和 <code>]c</code> 在有所变动的区块间跳转。</li>
-<li><leader>hp，显示预览，hunk preview</li>
-<li><leader>hs，暂存代码块，hunk stage</li>
-<li><leader>hu，撤销更改，hunk undo</li>
-<li><leader>hd，禁用 gitgutter</li>
-<li><leader>he，启用 gitgutter</li>
-</ul>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ul>
-<li>所有命令都以<code>:G</code>或<code>:Git</code>打头，两种写法等价。</li>
-<li><code>:G -p &#123;args&#125;</code><ul>
-<li>运行任意 git 命令都可以加上，-p，这样将捕获输出到一个临时文件，并且对临时文件执行<code>:split</code>水平分割。如果使用<code>:0G -p &#123;args&#125;</code>，将用<code>:edit</code>代替。通常用于 diff 和 log 这个指令。</li>
-<li>例：<code>:G -p diff</code>,<code>:G --paginate diff</code></li>
-</ul>
-</li>
-<li><code>G</code><ul>
-<li>不带参数，会打开一个类似于 git-status 的简要窗口，在窗口中，使用 <code>g?</code> 将打开 fugitive-maps 快捷键映射帮助。</li>
-</ul>
-</li>
-<li><code>G push</code><ul>
-<li>执行 <code>git push</code></li>
-</ul>
-</li>
-<li><code>GBrowse</code></li>
-</ul>
-<hr>
-<p>待续：<br>由于我的很多 git 知识还不够完善，后面补充了再续写。<br>更多内容参见<code>:help fugitive</code></p>
-]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
