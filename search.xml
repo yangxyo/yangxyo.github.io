@@ -294,32 +294,6 @@
       </tags>
   </entry>
   <entry>
-    <title>解构赋值 ———【一天一个 es6 语法】</title>
-    <url>/es6-everyday-3/</url>
-    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
-<span id="more"></span>
-
-<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">&quot;Bill&quot;</span>,</span><br><span class="line">    lastnNme: <span class="string">&quot;Wilson&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
-<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
-<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">a <span class="comment">// &quot;h&quot;</span></span><br><span class="line">b <span class="comment">// &quot;e&quot;</span></span><br><span class="line">c <span class="comment">// &quot;l&quot;</span></span><br><span class="line">d <span class="comment">// &quot;l&quot;</span></span><br><span class="line">e <span class="comment">// &quot;o&quot;</span></span><br></pre></td></tr></table></figure>
-<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">解构赋值 - JavaScript | MDN</a></li>
-<li><a href="https://es6.ruanyifeng.com/#docs/destructuring">变量的解构赋值 - ECMAScript 6入门</a></li>
-<li>《React 学习手册》</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>【一天一个 es6 语法】</tag>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>人生</title>
     <url>/flesh/</url>
     <content><![CDATA[<h2 id="他的话可信吗"><a href="#他的话可信吗" class="headerlink" title="他的话可信吗"></a>他的话可信吗</h2><blockquote>
@@ -384,6 +358,32 @@
       <tags>
         <tag>Github</tag>
         <tag>git-svn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解构赋值 ———【一天一个 es6 语法】</title>
+    <url>/es6-everyday-3/</url>
+    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
+<span id="more"></span>
+
+<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">&quot;Bill&quot;</span>,</span><br><span class="line">    lastnNme: <span class="string">&quot;Wilson&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
+<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">a <span class="comment">// &quot;h&quot;</span></span><br><span class="line">b <span class="comment">// &quot;e&quot;</span></span><br><span class="line">c <span class="comment">// &quot;l&quot;</span></span><br><span class="line">d <span class="comment">// &quot;l&quot;</span></span><br><span class="line">e <span class="comment">// &quot;o&quot;</span></span><br></pre></td></tr></table></figure>
+<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">解构赋值 - JavaScript | MDN</a></li>
+<li><a href="https://es6.ruanyifeng.com/#docs/destructuring">变量的解构赋值 - ECMAScript 6入门</a></li>
+<li>《React 学习手册》</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>【一天一个 es6 语法】</tag>
+        <tag>javascript</tag>
       </tags>
   </entry>
   <entry>
@@ -624,6 +624,162 @@
       </categories>
   </entry>
   <entry>
+    <title>环形链表</title>
+    <url>/leetcode-142/</url>
+    <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><a href="https://leetcode-cn.com/problems/linked-list-cycle-ii/">142. 环形链表 II - 力扣（LeetCode）</a><br>给定一个链表，返回链表入环的第一个节点。无环返回null。<br><img data-src="https://images.xyang.xin/2020%2F09%2F13%2FlinkList.jpg?x-oss-process=style/title_800" alt="linkList.jpg"></p>
+<span id="more"></span>
+
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>环形链表问题，通用的解法，是通过设置双指针，</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> runSlow = head</span><br><span class="line"><span class="keyword">let</span> runFast = head</span><br></pre></td></tr></table></figure>
+<p>将 runFast 的速度，设置为2，runSlow 的速度设置为 1，当 runFast 所在节点等于 runSlow 所在节点代表追上了。</p>
+<p>因为 runFast 和 runSlow 同时出发，且 runFast 的速度为 runSlow 速度的两倍。<br><strong>无论如何 runSlow 跑的第一圈就会被追上</strong>。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(runFast &amp;&amp; runFast.next)&#123;</span><br><span class="line">    runFast = runFast.next.next</span><br><span class="line">    runSlow = runSlow.next</span><br><span class="line">    <span class="keyword">if</span> (runFast === runSlow)&#123;</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果有环，到这里我们已经能够得到，runFast 和 runSlow 的相遇点了。<br><img data-src="https://images.xyang.xin/2020%2F09%2F13%2FlinkListRYS.jpg?x-oss-process=style/title_800" alt="linkListRYS.jpg"></p>
+<p>题解：<br>相遇时：</p>
+<ul>
+<li>runSlow 走距离为：R + Y；</li>
+<li>runFast 走的距离为：R + n(Y+S) + Y</li>
+<li>R + n(Y+S) + Y = 2(R + Y)</li>
+<li>(n-1)Y + nS = R</li>
+</ul>
+<p>只要以上等式成立即可，可以任意取n，这里取n为1：R = S，<br><strong>也就是入口点的距离等于相遇点到这一圈终点的距离</strong>。</p>
+<p>这是我知道了 R=S 这个结论后，再推倒的，如果不知道结论，本弱还在设圈的周长的未知数呢。并且最后一步的思想很关键。<em>任意取</em>。</p>
+<p>所以根据这个结论，我们从起始点再放一个速度为 1 的节点，并且让runSlow继续跑，和这个新节点相遇的点就是入口点，这里为了节省那一点点内存，可以让runFast受累一下，让他从新从head开始以1的速度跑。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">runFast = head</span><br><span class="line"><span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(runFast == runSlow)&#123;</span><br><span class="line">        <span class="keyword">return</span> runFast</span><br><span class="line">    &#125;</span><br><span class="line">    runFast = runFast.next</span><br><span class="line">    runSlow = runSlow.next</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="知识积累"><a href="#知识积累" class="headerlink" title="知识积累"></a>知识积累</h2><ul>
+<li>入口点的距离等于相遇点到这一圈终点的距离</li>
+<li>不相关的参数可以任意设</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>leecode</tag>
+        <tag>链表</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鲁迅</title>
+    <url>/luxun/</url>
+    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
+<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>鲁迅</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>切换 Shell 需谨慎</title>
+    <url>/linux-user/</url>
+    <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
+<span id="more"></span>
+
+<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><p>执行<code>chsh -s /bin/zsh</code>命令切换成功。<br>自此导致 root 用户无法验证登陆。</p>
+<p>庆幸这台服务器不止一个用户。<br>通过普通用户登陆服务器，执行 su 命令显示如下：<br><img data-src="https://images.xyang.xin/2018-10/1539333225.png" alt="执行 su 命令"></p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>解决办法如下：<br>sudo vim /etc/passwd 将 root 用户所对应的 Shell 改回 Bash。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>一台服务器应该有至少两个以上的用户。<br>下次再遇到一次这样的服务器😢再去具体研究一下。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>Shell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决远程服务器重装系统导致的 mac 终端无法连接的问题</title>
+    <url>/mac-ssh-error/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png" alt="2019-05-14 at 17.17.png"><br>WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!</p>
+<p>known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。</p>
+<h2 id="通过如下两种方案解决该问题"><a href="#通过如下两种方案解决该问题" class="headerlink" title="通过如下两种方案解决该问题"></a>通过如下两种方案解决该问题</h2><ol>
+<li><p>输入命令(推荐)：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -R45.40.106.111</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+</li>
+<li><p>删除下面文件中相关 ip 的信息（公匙）<br>~/.ssh/known_hosts</p>
+</li>
+</ol>
+<p>.ssh文件为隐藏文件夹可通过 command + shift + . 查看。或者直接：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/.ssh/known_hosts</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac 配置上云神器 Mackup</title>
+    <url>/mackup/</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="https://github.com/lra/mackup">mackup</a> 是一款受关注度很高的开源软件，可运行于 osx 和 linux 系统。用于保持应用程序设置同步，可快捷的备份许多流行的应用程序。</p>
+<span id="more"></span>
+
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>有 brew 和 pip 两种推荐安装方式。</p>
+<ul>
+<li>Install Mackup<br><code>brew install mackup</code></li>
+<li>Install Mackup with PIP<br><code>pip install --upgrade mackup</code></li>
+</ul>
+<p>还需要简单的<a href="https://github.com/lra/mackup/tree/master/doc">配置</a>才可使用。</p>
+<p>创建 ～/.mackup.cfg 文件，根据需要添加配置。</p>
+<p>可添加的配置如下：</p>
+<ol>
+<li><p>支持存储引擎：Dropbox、Google Drive、iCloud、Copy。<br> 例如选择存储到 icloud 添加如下配置即可：</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; icloud</span><br></pre></td></tr></table></figure></li>
+<li><p>备份到指定文件夹。</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; file_system</span><br><span class="line">path &#x3D; some&#x2F;folder&#x2F;in&#x2F;your&#x2F;home（空格不需要转义）</span><br></pre></td></tr></table></figure>
+<p> 指向存储引擎的路径怎么样？是不是就支持所有的存储引擎了呢。</p>
+</li>
+<li><p>支持修改备份文件夹的名字，改为隐藏文件夹。（备份隐藏起来了）</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; icloud</span><br><span class="line">directory &#x3D; .config&#x2F;mackup</span><br></pre></td></tr></table></figure></li>
+<li><p>选择你所要备份的应用。</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[applications_to_sync]</span><br><span class="line">ssh</span><br><span class="line">adium</span><br></pre></td></tr></table></figure></li>
+<li><p>选择你不想备份的应用。</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[applications_to_ignore]</span><br><span class="line">ssh</span><br><span class="line">adium</span><br></pre></td></tr></table></figure></li>
+<li><p>向官方提交支持应用的申请。</p>
+</li>
+<li><p>自定义很方便！</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir ~&#x2F;.mackup</span><br><span class="line">touch ~&#x2F;.mackup&#x2F;my-files.cfg</span><br></pre></td></tr></table></figure>
+<p> 在 my-files.cfg 中配置如下</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[application]</span><br><span class="line">name &#x3D; XXX </span><br><span class="line"></span><br><span class="line">[configuration_files]</span><br><span class="line">Library&#x2F;XXX         (从 Library 开始末尾无 &#x2F;)</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>备份应用的设置：</p>
+<pre><code>`mackup backup`</code></pre>
+<p>强制同意备份请求：</p>
+<pre><code>`mackup backup -f`</code></pre>
+<p>使用备份的设置：</p>
+<pre><code>`mackup restore`</code></pre>
+<p>应用不进行备份处理：</p>
+<pre><code>`mackup uninstall`</code></pre>
+<p>使用帮助：</p>
+<pre><code>`mackup -h`</code></pre>
+<h2 id="注意⚠️"><a href="#注意⚠️" class="headerlink" title="注意⚠️"></a>注意⚠️</h2><p>我最初使用 Mackup 只是为了备份配置，日后更换电脑方便，而没有去理解它的精髓，所以造成了不必要的时间损失，重新手动配置了诸多环境。认识到是自己操作不当所造成后，也只能为它写下这篇博客。</p>
+<p>mackup 的备份命令说执行的并不是 copy。“保持应用程序设置同步”才是它的核心要义。<br>mackup backup 相当于如下三个命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cp ~/.gitconfig ~/Dropbox/Mackup/.gitconfig</span><br><span class="line">rm ~/.gitconfig</span><br><span class="line">ln -s ~/Dropbox/Mackup/.gitconfig ~/.gitconfig</span><br></pre></td></tr></table></figure>
+<ol>
+<li>将配置拷贝到你所配置的 mackup 备份路径之下。</li>
+<li>删除原本的配置。</li>
+<li>将备份后的路径软链接到原来的路径下。</li>
+</ol>
+<p>每台电脑都使用云上的配置，从而达到了应用程序设置同步的目的。<br>同时使用软链接的方式节省了一定的存储空间。</p>
+<p>那如果把云上的配置删了怎么办呢？那么备份过的应用都只有一个软链接。。。<br>清空了垃圾篓，这个时候该咋办呢😢，做数据恢复？还是通过云近期删除找回，icloud 我是没找回过。</p>
+<p>所以理解了之后，记得执行 <code>mackup uninstall</code> 再删。😣<br>修改 mac 账户名名称前也记得 <code>mackup uninstall</code>.</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>开发工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>学习 HTTP 协议笔记</title>
     <url>/learn-http-basics/</url>
     <content><![CDATA[<h2 id="网络模型"><a href="#网络模型" class="headerlink" title="网络模型"></a>网络模型</h2><p>五层网络模型：<br><img data-src="https://images.xyang.xin/2020%2F09%2F03%2Fclassic-five-layer-model.jpg?x-oss-process=style/title_800" alt="classic-five-layer-model.jpg"></p>
@@ -747,162 +903,6 @@
       </categories>
       <tags>
         <tag>http</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>环形链表</title>
-    <url>/leetcode-142/</url>
-    <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><a href="https://leetcode-cn.com/problems/linked-list-cycle-ii/">142. 环形链表 II - 力扣（LeetCode）</a><br>给定一个链表，返回链表入环的第一个节点。无环返回null。<br><img data-src="https://images.xyang.xin/2020%2F09%2F13%2FlinkList.jpg?x-oss-process=style/title_800" alt="linkList.jpg"></p>
-<span id="more"></span>
-
-<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>环形链表问题，通用的解法，是通过设置双指针，</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> runSlow = head</span><br><span class="line"><span class="keyword">let</span> runFast = head</span><br></pre></td></tr></table></figure>
-<p>将 runFast 的速度，设置为2，runSlow 的速度设置为 1，当 runFast 所在节点等于 runSlow 所在节点代表追上了。</p>
-<p>因为 runFast 和 runSlow 同时出发，且 runFast 的速度为 runSlow 速度的两倍。<br><strong>无论如何 runSlow 跑的第一圈就会被追上</strong>。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(runFast &amp;&amp; runFast.next)&#123;</span><br><span class="line">    runFast = runFast.next.next</span><br><span class="line">    runSlow = runSlow.next</span><br><span class="line">    <span class="keyword">if</span> (runFast === runSlow)&#123;</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>如果有环，到这里我们已经能够得到，runFast 和 runSlow 的相遇点了。<br><img data-src="https://images.xyang.xin/2020%2F09%2F13%2FlinkListRYS.jpg?x-oss-process=style/title_800" alt="linkListRYS.jpg"></p>
-<p>题解：<br>相遇时：</p>
-<ul>
-<li>runSlow 走距离为：R + Y；</li>
-<li>runFast 走的距离为：R + n(Y+S) + Y</li>
-<li>R + n(Y+S) + Y = 2(R + Y)</li>
-<li>(n-1)Y + nS = R</li>
-</ul>
-<p>只要以上等式成立即可，可以任意取n，这里取n为1：R = S，<br><strong>也就是入口点的距离等于相遇点到这一圈终点的距离</strong>。</p>
-<p>这是我知道了 R=S 这个结论后，再推倒的，如果不知道结论，本弱还在设圈的周长的未知数呢。并且最后一步的思想很关键。<em>任意取</em>。</p>
-<p>所以根据这个结论，我们从起始点再放一个速度为 1 的节点，并且让runSlow继续跑，和这个新节点相遇的点就是入口点，这里为了节省那一点点内存，可以让runFast受累一下，让他从新从head开始以1的速度跑。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">runFast = head</span><br><span class="line"><span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(runFast == runSlow)&#123;</span><br><span class="line">        <span class="keyword">return</span> runFast</span><br><span class="line">    &#125;</span><br><span class="line">    runFast = runFast.next</span><br><span class="line">    runSlow = runSlow.next</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="知识积累"><a href="#知识积累" class="headerlink" title="知识积累"></a>知识积累</h2><ul>
-<li>入口点的距离等于相遇点到这一圈终点的距离</li>
-<li>不相关的参数可以任意设</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>leecode</tag>
-        <tag>链表</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>切换 Shell 需谨慎</title>
-    <url>/linux-user/</url>
-    <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
-<span id="more"></span>
-
-<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><p>执行<code>chsh -s /bin/zsh</code>命令切换成功。<br>自此导致 root 用户无法验证登陆。</p>
-<p>庆幸这台服务器不止一个用户。<br>通过普通用户登陆服务器，执行 su 命令显示如下：<br><img data-src="https://images.xyang.xin/2018-10/1539333225.png" alt="执行 su 命令"></p>
-<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>解决办法如下：<br>sudo vim /etc/passwd 将 root 用户所对应的 Shell 改回 Bash。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>一台服务器应该有至少两个以上的用户。<br>下次再遇到一次这样的服务器😢再去具体研究一下。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>Shell</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>鲁迅</title>
-    <url>/luxun/</url>
-    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
-<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>鲁迅</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决远程服务器重装系统导致的 mac 终端无法连接的问题</title>
-    <url>/mac-ssh-error/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png" alt="2019-05-14 at 17.17.png"><br>WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!</p>
-<p>known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。</p>
-<h2 id="通过如下两种方案解决该问题"><a href="#通过如下两种方案解决该问题" class="headerlink" title="通过如下两种方案解决该问题"></a>通过如下两种方案解决该问题</h2><ol>
-<li><p>输入命令(推荐)：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -R45.40.106.111</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-</li>
-<li><p>删除下面文件中相关 ip 的信息（公匙）<br>~/.ssh/known_hosts</p>
-</li>
-</ol>
-<p>.ssh文件为隐藏文件夹可通过 command + shift + . 查看。或者直接：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/.ssh/known_hosts</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mac 配置上云神器 Mackup</title>
-    <url>/mackup/</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="https://github.com/lra/mackup">mackup</a> 是一款受关注度很高的开源软件，可运行于 osx 和 linux 系统。用于保持应用程序设置同步，可快捷的备份许多流行的应用程序。</p>
-<span id="more"></span>
-
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>有 brew 和 pip 两种推荐安装方式。</p>
-<ul>
-<li>Install Mackup<br><code>brew install mackup</code></li>
-<li>Install Mackup with PIP<br><code>pip install --upgrade mackup</code></li>
-</ul>
-<p>还需要简单的<a href="https://github.com/lra/mackup/tree/master/doc">配置</a>才可使用。</p>
-<p>创建 ～/.mackup.cfg 文件，根据需要添加配置。</p>
-<p>可添加的配置如下：</p>
-<ol>
-<li><p>支持存储引擎：Dropbox、Google Drive、iCloud、Copy。<br> 例如选择存储到 icloud 添加如下配置即可：</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; icloud</span><br></pre></td></tr></table></figure></li>
-<li><p>备份到指定文件夹。</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; file_system</span><br><span class="line">path &#x3D; some&#x2F;folder&#x2F;in&#x2F;your&#x2F;home（空格不需要转义）</span><br></pre></td></tr></table></figure>
-<p> 指向存储引擎的路径怎么样？是不是就支持所有的存储引擎了呢。</p>
-</li>
-<li><p>支持修改备份文件夹的名字，改为隐藏文件夹。（备份隐藏起来了）</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; icloud</span><br><span class="line">directory &#x3D; .config&#x2F;mackup</span><br></pre></td></tr></table></figure></li>
-<li><p>选择你所要备份的应用。</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[applications_to_sync]</span><br><span class="line">ssh</span><br><span class="line">adium</span><br></pre></td></tr></table></figure></li>
-<li><p>选择你不想备份的应用。</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[applications_to_ignore]</span><br><span class="line">ssh</span><br><span class="line">adium</span><br></pre></td></tr></table></figure></li>
-<li><p>向官方提交支持应用的申请。</p>
-</li>
-<li><p>自定义很方便！</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir ~&#x2F;.mackup</span><br><span class="line">touch ~&#x2F;.mackup&#x2F;my-files.cfg</span><br></pre></td></tr></table></figure>
-<p> 在 my-files.cfg 中配置如下</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[application]</span><br><span class="line">name &#x3D; XXX </span><br><span class="line"></span><br><span class="line">[configuration_files]</span><br><span class="line">Library&#x2F;XXX         (从 Library 开始末尾无 &#x2F;)</span><br></pre></td></tr></table></figure>
-
-
-</li>
-</ol>
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>备份应用的设置：</p>
-<pre><code>`mackup backup`</code></pre>
-<p>强制同意备份请求：</p>
-<pre><code>`mackup backup -f`</code></pre>
-<p>使用备份的设置：</p>
-<pre><code>`mackup restore`</code></pre>
-<p>应用不进行备份处理：</p>
-<pre><code>`mackup uninstall`</code></pre>
-<p>使用帮助：</p>
-<pre><code>`mackup -h`</code></pre>
-<h2 id="注意⚠️"><a href="#注意⚠️" class="headerlink" title="注意⚠️"></a>注意⚠️</h2><p>我最初使用 Mackup 只是为了备份配置，日后更换电脑方便，而没有去理解它的精髓，所以造成了不必要的时间损失，重新手动配置了诸多环境。认识到是自己操作不当所造成后，也只能为它写下这篇博客。</p>
-<p>mackup 的备份命令说执行的并不是 copy。“保持应用程序设置同步”才是它的核心要义。<br>mackup backup 相当于如下三个命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cp ~/.gitconfig ~/Dropbox/Mackup/.gitconfig</span><br><span class="line">rm ~/.gitconfig</span><br><span class="line">ln -s ~/Dropbox/Mackup/.gitconfig ~/.gitconfig</span><br></pre></td></tr></table></figure>
-<ol>
-<li>将配置拷贝到你所配置的 mackup 备份路径之下。</li>
-<li>删除原本的配置。</li>
-<li>将备份后的路径软链接到原来的路径下。</li>
-</ol>
-<p>每台电脑都使用云上的配置，从而达到了应用程序设置同步的目的。<br>同时使用软链接的方式节省了一定的存储空间。</p>
-<p>那如果把云上的配置删了怎么办呢？那么备份过的应用都只有一个软链接。。。<br>清空了垃圾篓，这个时候该咋办呢😢，做数据恢复？还是通过云近期删除找回，icloud 我是没找回过。</p>
-<p>所以理解了之后，记得执行 <code>mackup uninstall</code> 再删。😣<br>修改 mac 账户名名称前也记得 <code>mackup uninstall</code>.</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>开发工具</tag>
       </tags>
   </entry>
   <entry>
@@ -1339,27 +1339,6 @@
       </tags>
   </entry>
   <entry>
-    <title>程序中的 “脚手架”</title>
-    <url>/scaffold/</url>
-    <content><![CDATA[<blockquote>
-<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
-</blockquote>
-<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
-<span id="more"></span>
-
-<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
-<li><a href="https://github.com/facebook/create-react-app">facebook/create-react-app</a></li>
-<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>信息技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>搜索引擎使用技巧</title>
     <url>/se-operators/</url>
     <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F05%2F29%2F1590724982.png?x-oss-process=style/title_800" alt="1590724982.png"></p>
@@ -1563,6 +1542,42 @@
       </tags>
   </entry>
   <entry>
+    <title>程序中的 “脚手架”</title>
+    <url>/scaffold/</url>
+    <content><![CDATA[<blockquote>
+<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
+</blockquote>
+<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
+<span id="more"></span>
+
+<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
+<li><a href="https://github.com/facebook/create-react-app">facebook/create-react-app</a></li>
+<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>信息技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SSM 问题集锦</title>
+    <url>/ssm-question/</url>
+    <content><![CDATA[<h1 id="SSM-问题集锦"><a href="#SSM-问题集锦" class="headerlink" title="SSM 问题集锦"></a>SSM 问题集锦</h1><h2 id="SSM-基础的搭建过程"><a href="#SSM-基础的搭建过程" class="headerlink" title="SSM 基础的搭建过程"></a>SSM 基础的搭建过程</h2><p><a href="https://blog.csdn.net/yangxinyujy/article/details/80656771">IntelliJ IDEA 创建 Maven 管理下的 SSM 项目基础全过程</a><br><a href="https://github.com/yangxinyujy/ssmdemo">yangxinyujy/ssmdemo: ssm 基础框架</a></p>
+<span id="more"></span>
+
+<h2 id="Tomcat-部署时-war-和-war-exploded-区别"><a href="#Tomcat-部署时-war-和-war-exploded-区别" class="headerlink" title="Tomcat 部署时 war 和 war exploded 区别"></a>Tomcat 部署时 war 和 war exploded 区别</h2><p>war 模式：将WEB工程以包的形式上传到服务器，可以称之为是发布模式，这是先打成 war 包，再发布；<br>war exploded模式：将 WEB 工程以当前文件夹的位置关系上传到服务器，通过直接把文件夹、jsp 页面 、classes 等,移到 Tomcat 部署文件夹里面的方式，进行加载部署。因此这种方式支持热部署，一般在开发的时候也是用这种方式。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SSM 错误集锦</title>
     <url>/ssm-Error/</url>
     <content><![CDATA[<ol>
@@ -1590,21 +1605,6 @@
 <li>原因：tomcat 升级导致路径改变</li>
 <li>解决办法：Idea 在 Edit Configuration 中修改 tomcat 路径至 libexec</li>
 </ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>ssm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SSM 问题集锦</title>
-    <url>/ssm-question/</url>
-    <content><![CDATA[<h1 id="SSM-问题集锦"><a href="#SSM-问题集锦" class="headerlink" title="SSM 问题集锦"></a>SSM 问题集锦</h1><h2 id="SSM-基础的搭建过程"><a href="#SSM-基础的搭建过程" class="headerlink" title="SSM 基础的搭建过程"></a>SSM 基础的搭建过程</h2><p><a href="https://blog.csdn.net/yangxinyujy/article/details/80656771">IntelliJ IDEA 创建 Maven 管理下的 SSM 项目基础全过程</a><br><a href="https://github.com/yangxinyujy/ssmdemo">yangxinyujy/ssmdemo: ssm 基础框架</a></p>
-<span id="more"></span>
-
-<h2 id="Tomcat-部署时-war-和-war-exploded-区别"><a href="#Tomcat-部署时-war-和-war-exploded-区别" class="headerlink" title="Tomcat 部署时 war 和 war exploded 区别"></a>Tomcat 部署时 war 和 war exploded 区别</h2><p>war 模式：将WEB工程以包的形式上传到服务器，可以称之为是发布模式，这是先打成 war 包，再发布；<br>war exploded模式：将 WEB 工程以当前文件夹的位置关系上传到服务器，通过直接把文件夹、jsp 页面 、classes 等,移到 Tomcat 部署文件夹里面的方式，进行加载部署。因此这种方式支持热部署，一般在开发的时候也是用这种方式。</p>
 ]]></content>
       <categories>
         <category>信息技术</category>
