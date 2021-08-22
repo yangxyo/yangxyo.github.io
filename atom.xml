@@ -6,7 +6,7 @@
   <link href="http://blog.xyang.xin/atom.xml" rel="self"/>
   
   <link href="http://blog.xyang.xin/"/>
-  <updated>2021-08-22T09:12:39.317Z</updated>
+  <updated>2021-08-22T09:47:12.258Z</updated>
   <id>http://blog.xyang.xin/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://blog.xyang.xin/leetcode-142/"/>
     <id>http://blog.xyang.xin/leetcode-142/</id>
     <published>2020-09-13T11:50:24.000Z</published>
-    <updated>2021-08-22T09:12:39.317Z</updated>
+    <updated>2021-08-22T09:47:12.258Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/linked-list-cycle-ii/&quot;&gt;142. 环形链表 II - 力扣（LeetCode）&lt;/a&gt;&lt;br&gt;给定一个链表，返回链表入环的第一个节点。无环返回null。&lt;br&gt;&lt;img data-src=&quot;https://images.xyang.xin/2020%2F09%2F13%2FlinkList.jpg?x-oss-process=style/title_800&quot; alt=&quot;linkList.jpg&quot;&gt;&lt;/p&gt;</summary>
@@ -422,14 +422,14 @@
     <link href="http://blog.xyang.xin/book-rhydybs/"/>
     <id>http://blog.xyang.xin/book-rhydybs/</id>
     <published>2019-09-01T19:36:24.000Z</published>
-    <updated>2021-08-22T09:13:50.826Z</updated>
+    <updated>2021-08-22T09:46:59.573Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-09%2Frhydybs.jpeg?x-oss-process=style/title_140&quot; alt=&quot;rhydybs.jpeg-w140&quot;&gt;&lt;/p&gt;</summary>
     
     
     
-    <category term="人文修养" scheme="http://blog.xyang.xin/categories/%E4%BA%BA%E6%96%87%E4%BF%AE%E5%85%BB/"/>
+    <category term="思想文化" scheme="http://blog.xyang.xin/categories/%E6%80%9D%E6%83%B3%E6%96%87%E5%8C%96/"/>
     
     
     <category term="读书笔记" scheme="http://blog.xyang.xin/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
@@ -443,14 +443,14 @@
     <link href="http://blog.xyang.xin/book-hsxzs/"/>
     <id>http://blog.xyang.xin/book-hsxzs/</id>
     <published>2019-07-11T16:47:31.000Z</published>
-    <updated>2021-08-22T09:13:54.221Z</updated>
+    <updated>2021-08-22T09:46:55.918Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-05%2F1558180143.png?x-oss-process=style/title_140&quot; alt=&quot;1558180143.png-w140&quot;&gt;&lt;/p&gt;</summary>
     
     
     
-    <category term="人文修养" scheme="http://blog.xyang.xin/categories/%E4%BA%BA%E6%96%87%E4%BF%AE%E5%85%BB/"/>
+    <category term="思想文化" scheme="http://blog.xyang.xin/categories/%E6%80%9D%E6%83%B3%E6%96%87%E5%8C%96/"/>
     
     
     <category term="读书笔记" scheme="http://blog.xyang.xin/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>

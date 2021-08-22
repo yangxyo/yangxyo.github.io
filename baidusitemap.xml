@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://blog.xyang.xin/leetcode-142/</loc>
+    <lastmod>2021-08-22</lastmod>
+  </url>
+  <url>
+    <loc>http://blog.xyang.xin/book-rhydybs/</loc>
+    <lastmod>2021-08-22</lastmod>
+  </url>
+  <url>
+    <loc>http://blog.xyang.xin/book-hsxzs/</loc>
+    <lastmod>2021-08-22</lastmod>
+  </url>
+  <url>
+    <loc>http://blog.xyang.xin/journal-2019-02-15/</loc>
+    <lastmod>2021-08-22</lastmod>
+  </url>
+  <url>
+    <loc>http://blog.xyang.xin/OKRs/</loc>
+    <lastmod>2021-08-22</lastmod>
+  </url>
+  <url>
+    <loc>http://blog.xyang.xin/luxun/</loc>
+    <lastmod>2021-08-22</lastmod>
+  </url>
+  <url>
+    <loc>http://blog.xyang.xin/amazing-china/</loc>
+    <lastmod>2021-08-22</lastmod>
+  </url>
+  <url>
+    <loc>http://blog.xyang.xin/flesh/</loc>
+    <lastmod>2021-08-22</lastmod>
+  </url>
+  <url>
     <loc>http://blog.xyang.xin/vim-plugin-everday-1/</loc>
     <lastmod>2021-08-22</lastmod>
   </url>
@@ -29,14 +61,6 @@
     <lastmod>2021-08-22</lastmod>
   </url>
   <url>
-    <loc>http://blog.xyang.xin/flesh/</loc>
-    <lastmod>2021-08-22</lastmod>
-  </url>
-  <url>
-    <loc>http://blog.xyang.xin/amazing-china/</loc>
-    <lastmod>2021-08-22</lastmod>
-  </url>
-  <url>
     <loc>http://blog.xyang.xin/package-management/</loc>
     <lastmod>2021-08-22</lastmod>
   </url>
@@ -46,14 +70,6 @@
   </url>
   <url>
     <loc>http://blog.xyang.xin/ssm-Error/</loc>
-    <lastmod>2021-08-22</lastmod>
-  </url>
-  <url>
-    <loc>http://blog.xyang.xin/luxun/</loc>
-    <lastmod>2021-08-22</lastmod>
-  </url>
-  <url>
-    <loc>http://blog.xyang.xin/OKRs/</loc>
     <lastmod>2021-08-22</lastmod>
   </url>
   <url>
@@ -73,10 +89,6 @@
     <lastmod>2021-08-22</lastmod>
   </url>
   <url>
-    <loc>http://blog.xyang.xin/journal-2019-02-15/</loc>
-    <lastmod>2021-08-22</lastmod>
-  </url>
-  <url>
     <loc>http://blog.xyang.xin/proxy-teach/</loc>
     <lastmod>2021-08-22</lastmod>
   </url>
@@ -86,14 +98,6 @@
   </url>
   <url>
     <loc>http://blog.xyang.xin/hexo-advance/</loc>
-    <lastmod>2021-08-22</lastmod>
-  </url>
-  <url>
-    <loc>http://blog.xyang.xin/book-hsxzs/</loc>
-    <lastmod>2021-08-22</lastmod>
-  </url>
-  <url>
-    <loc>http://blog.xyang.xin/book-rhydybs/</loc>
     <lastmod>2021-08-22</lastmod>
   </url>
   <url>
@@ -158,10 +162,6 @@
   </url>
   <url>
     <loc>http://blog.xyang.xin/learn-http-basics/</loc>
-    <lastmod>2021-08-22</lastmod>
-  </url>
-  <url>
-    <loc>http://blog.xyang.xin/leetcode-142/</loc>
     <lastmod>2021-08-22</lastmod>
   </url>
 </urlset> 
