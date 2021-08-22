@@ -44,6 +44,29 @@
       </tags>
   </entry>
   <entry>
+    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
+    <url>/acme-sh/</url>
+    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
+<ul>
+<li>http 认证方式</li>
+<li>dns 方式<span id="more"></span>
+
+</li>
+</ul>
+<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
+<p><a href="https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E">github 安装说明</a></p>
+<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssl</tag>
+        <tag>acme.sh</tag>
+        <tag>letsencrypt</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《厉害了我的国》(2018)讲述纲要</title>
     <url>/amazing-china/</url>
     <content><![CDATA[<h1 id="《厉害了我的国》-2018-讲述纲要"><a href="#《厉害了我的国》-2018-讲述纲要" class="headerlink" title="《厉害了我的国》(2018)讲述纲要"></a>《厉害了我的国》(2018)讲述纲要</h1><blockquote>
@@ -75,51 +98,6 @@
       </tags>
   </entry>
   <entry>
-    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
-    <url>/acme-sh/</url>
-    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
-<ul>
-<li>http 认证方式</li>
-<li>dns 方式<span id="more"></span>
-
-</li>
-</ul>
-<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
-<p><a href="https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E">github 安装说明</a></p>
-<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>ssl</tag>
-        <tag>acme.sh</tag>
-        <tag>letsencrypt</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《如何阅读一本书》读书笔记</title>
-    <url>/book-rhydybs/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-09%2Frhydybs.jpeg?x-oss-process=style/title_140" alt="rhydybs.jpeg-w140"></p>
-<span id="more"></span>
-<p><img data-src="http://images.xyang.xin/2019-09%2F%E3%80%8A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6%E3%80%8B.png" alt="《如何阅读一本书》.png"></p>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《如何阅读一本书》的脉络要点进行总结，用于阅读时的参考。（图谱内容较多，建议保存后浏览）。</p>
-<p>书中提出了四种阅读层次，层次逐级递增，较高层次的阅读包含较低层次的阅读。基础阅读是对字词句意思的理解，是阅读的基础。使用检视阅读来理清书的脉络，来甄别一本书是否值得读，是否适合现在读。使用分析阅读来细细品味一本好书。主题阅读适用于学术研究或对自己感兴趣的问题的探究性学习。</p>
-<!-- more -->
-<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><p>读者是要“发现”书中隐藏着的骨架。而作者则是以制造骨架为开始，但却想办法把骨架“隐藏”起来。他的目的是，用艺术的手法将骨架隐藏起来，或是说，在骨架上添加血肉。</p>
-<p>所谓文章的清楚明白，就是跟纲要的区隔是否清楚有关，所谓文章的前后一贯，就是能把不同的重点条理有序地排列出来。</p>
-<p>这个捷径是要靠你的检视阅读技巧来建立的。你收集好书目之后，要做的第一件事是检视书单上所有的书。在做检视阅读之前，绝不要用分析阅读来阅读。检视阅读不会让你明白有关主题的所有错综复杂的内容，或是作者所有的洞察力，但却具有两种基本的功能。第一，它会让你对自己想要研究的主题有个清晰的概念，这样接下来你针对某几本书做分析阅读时，会大有助益。第二，它会简化你的书目到一个合理的程度。</p>
-<p>能够熟练检视阅读的读者，不但能在心中将书籍分类，而且能对内容有一个粗浅的了解。他也会用非常短的时间就发现，这本书谈的内容对他研究的主题到底重不重要————这可能要等到读下本书的时候才能发现。但是有两件事至少他已经知道其中之一。那就是他不是发现这本书必须回头再读一次，以获得启发，便是知道不论这本书多有趣又多丰富，却毫无启发性，因此不值得重新再读。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>阅读</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《一本小小的红色写作书》读书笔记</title>
     <url>/book-hsxzs/</url>
     <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F1558180143.png?x-oss-process=style/title_140" alt="1558180143.png-w140"></p>
@@ -147,6 +125,28 @@
       <tags>
         <tag>读书笔记</tag>
         <tag>写作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《如何阅读一本书》读书笔记</title>
+    <url>/book-rhydybs/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-09%2Frhydybs.jpeg?x-oss-process=style/title_140" alt="rhydybs.jpeg-w140"></p>
+<span id="more"></span>
+<p><img data-src="http://images.xyang.xin/2019-09%2F%E3%80%8A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6%E3%80%8B.png" alt="《如何阅读一本书》.png"></p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>图中对《如何阅读一本书》的脉络要点进行总结，用于阅读时的参考。（图谱内容较多，建议保存后浏览）。</p>
+<p>书中提出了四种阅读层次，层次逐级递增，较高层次的阅读包含较低层次的阅读。基础阅读是对字词句意思的理解，是阅读的基础。使用检视阅读来理清书的脉络，来甄别一本书是否值得读，是否适合现在读。使用分析阅读来细细品味一本好书。主题阅读适用于学术研究或对自己感兴趣的问题的探究性学习。</p>
+<!-- more -->
+<h2 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h2><p>读者是要“发现”书中隐藏着的骨架。而作者则是以制造骨架为开始，但却想办法把骨架“隐藏”起来。他的目的是，用艺术的手法将骨架隐藏起来，或是说，在骨架上添加血肉。</p>
+<p>所谓文章的清楚明白，就是跟纲要的区隔是否清楚有关，所谓文章的前后一贯，就是能把不同的重点条理有序地排列出来。</p>
+<p>这个捷径是要靠你的检视阅读技巧来建立的。你收集好书目之后，要做的第一件事是检视书单上所有的书。在做检视阅读之前，绝不要用分析阅读来阅读。检视阅读不会让你明白有关主题的所有错综复杂的内容，或是作者所有的洞察力，但却具有两种基本的功能。第一，它会让你对自己想要研究的主题有个清晰的概念，这样接下来你针对某几本书做分析阅读时，会大有助益。第二，它会简化你的书目到一个合理的程度。</p>
+<p>能够熟练检视阅读的读者，不但能在心中将书籍分类，而且能对内容有一个粗浅的了解。他也会用非常短的时间就发现，这本书谈的内容对他研究的主题到底重不重要————这可能要等到读下本书的时候才能发现。但是有两件事至少他已经知道其中之一。那就是他不是发现这本书必须回头再读一次，以获得启发，便是知道不论这本书多有趣又多丰富，却毫无启发性，因此不值得重新再读。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>阅读</tag>
       </tags>
   </entry>
   <entry>
@@ -818,6 +818,28 @@
       </tags>
   </entry>
   <entry>
+    <title>解决远程服务器重装系统导致的 mac 终端无法连接的问题</title>
+    <url>/mac-ssh-error/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png" alt="2019-05-14 at 17.17.png"><br>WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!</p>
+<p>known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。</p>
+<h2 id="通过如下两种方案解决该问题"><a href="#通过如下两种方案解决该问题" class="headerlink" title="通过如下两种方案解决该问题"></a>通过如下两种方案解决该问题</h2><ol>
+<li><p>输入命令(推荐)：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -R45.40.106.111</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+</li>
+<li><p>删除下面文件中相关 ip 的信息（公匙）<br>~/.ssh/known_hosts</p>
+</li>
+</ol>
+<p>.ssh文件为隐藏文件夹可通过 command + shift + . 查看。或者直接：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/.ssh/known_hosts</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Mac 配置上云神器 Mackup</title>
     <url>/mackup/</url>
     <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="https://github.com/lra/mackup">mackup</a> 是一款受关注度很高的开源软件，可运行于 osx 和 linux 系统。用于保持应用程序设置同步，可快捷的备份许多流行的应用程序。</p>
@@ -884,71 +906,6 @@
       </tags>
   </entry>
   <entry>
-    <title>解决远程服务器重装系统导致的 mac 终端无法连接的问题</title>
-    <url>/mac-ssh-error/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2019-05%2F2019-05-14%20at%2017.17.png" alt="2019-05-14 at 17.17.png"><br>WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!</p>
-<p>known_hosts是记录远程主机的公钥的文件，重装服务器系统后，保存的公钥还是服务器重装之前的公钥，在ssh链接的时候首先会验证公钥，如果公钥不对，那么就会报错。</p>
-<h2 id="通过如下两种方案解决该问题"><a href="#通过如下两种方案解决该问题" class="headerlink" title="通过如下两种方案解决该问题"></a>通过如下两种方案解决该问题</h2><ol>
-<li><p>输入命令(推荐)：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -R45.40.106.111</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-</li>
-<li><p>删除下面文件中相关 ip 的信息（公匙）<br>~/.ssh/known_hosts</p>
-</li>
-</ol>
-<p>.ssh文件为隐藏文件夹可通过 command + shift + . 查看。或者直接：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/.ssh/known_hosts</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mac 小问题 —— iCloud 未响应</title>
-    <url>/macos-problems/</url>
-    <content><![CDATA[<p>使用 iCloud Drive 将文件上传到云端，防止数据丢失，同时可以实现多台设备的协同工作。但是在使用 iCloud Drive 的过程中我遇到了程序未响应，iCoud 文件上传阻塞的问题。</p>
-<span id="more"></span>
-
-<h2 id="Finder-无法打开或持续未响应"><a href="#Finder-无法打开或持续未响应" class="headerlink" title="Finder 无法打开或持续未响应"></a>Finder 无法打开或持续未响应</h2><p>解决办法：<br>磁盘工具 -&gt; Macintosh HD（系统盘）-&gt; 急救<br>磁盘工具在以下路径：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">/System/Applications/Utilities/Disk Utility.app</span><br></pre></td></tr></table></figure>
-
-<p>急救操作不会对你的电脑造成任何损害，甚至还有所优化。</p>
-<h2 id="打开-iCloud-云盘文件夹极其缓慢"><a href="#打开-iCloud-云盘文件夹极其缓慢" class="headerlink" title="打开 iCloud 云盘文件夹极其缓慢"></a>打开 iCloud 云盘文件夹极其缓慢</h2><p>遇到的问题是：在访达中点击iCloud云盘系统就会出现转圈圈的标志，使用快捷键<code>command+alt+esc</code>（强制退出应用程序）就会看到访达处于未响应状态，这个时间会持续很久。</p>
-<p>解决办法：<br>系统偏好 -&gt; Apple ID -&gt; 取消勾选iCloud云盘 -&gt; 保留副本 -&gt; 重新勾选iCloud云盘</p>
-<p>此操作造成的后果是mac需要很长的一段时间和云端同步，这取决于你icloud存储的文件大小，并不会影响其他。</p>
-<h2 id="文件无法上传排查"><a href="#文件无法上传排查" class="headerlink" title="文件无法上传排查"></a>文件无法上传排查</h2><p>iCloud 连续几天几夜也没同步完，经过诸多排查，例如，修改 DNS：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">114.114.114.114</span><br><span class="line">8.8.8.8</span><br></pre></td></tr></table></figure>
-<p>不仅没起作用，还影响了访问其他网页。最后删除 DNS 配置，刷新 DNS 缓存：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ 2$ sudo killall -HUP mDNSResponder</span><br></pre></td></tr></table></figure>
-
-<p>最后排查出是因为，我开发代码的工作目录都设置在了 iCloud 云盘里，文件体积虽然不大，却有上万个细小的文件，不知道是不是 iCloud 设置了某种限制，导致上传阻塞，最后将代码都移出 iCloud 问题就解决了。</p>
-<p>后面又卡住了，收获到一个命令通过这个命令可以查看 iCloud 同步进度：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ brctl log -w</span><br></pre></td></tr></table></figure>
-<p>虽然没看懂运行的是什么，但是能够看到一直有东西在执行。<br>通过以下三个命令对 icloud 进行重置：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 杀死icloud同步进程</span><br><span class="line">$ sudo killall bird</span><br><span class="line"># 删除 icloud 的配置文件</span><br><span class="line">$ sudo rm -rf ~&#x2F;Library&#x2F;Application\ Support&#x2F;CloudDocs</span><br><span class="line"># 立刻关机</span><br><span class="line">$ sudo shutdown -r now</span><br></pre></td></tr></table></figure>
-<p>不必担心文件丢失，效果与关闭重新关闭icloud同步类似。重新开启电脑后可以通过前面说到的命令查看 iCloud 同步的进度。</p>
-<p>也可以直接使用下面的脚本：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;bash</span><br><span class="line"></span><br><span class="line">if [[ $EUID -eq 0 ]]; then</span><br><span class="line">    echo &quot;Killing bird.&quot;</span><br><span class="line">    killall bird</span><br><span class="line">    echo &quot;Removing CloudDocs&quot;</span><br><span class="line">    cd ~&#x2F;Library&#x2F;Application\ Support</span><br><span class="line">    rm -rf CloudDocs</span><br><span class="line">    echo &quot;Immediately rebooting!&quot;</span><br><span class="line">    shutdown -r now</span><br><span class="line">else</span><br><span class="line">    echo &quot;</span><br><span class="line">    This script needs run as sudo. </span><br><span class="line">    Use CAUTION when doing so.</span><br><span class="line">    You accept full responsibility using this script.</span><br><span class="line">    You should know what it&#39;s doing BEFORE you run it.</span><br><span class="line">    &quot;</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
-
-<p>不必南辕北辙，越过中国的防火墙，iCloud 中国用户的文件存储在贵州云，而网上所谓的要获取验证文件，获取验证文件有香港的服务器。最后的任务就是等，我是让电脑喝着咖啡持续跑了接近一整天才同步完成的。</p>
-<h2 id="Mac-无法同步-iPhone-剪贴板数据"><a href="#Mac-无法同步-iPhone-剪贴板数据" class="headerlink" title="Mac 无法同步 iPhone 剪贴板数据"></a>Mac 无法同步 iPhone 剪贴板数据</h2><p>iPhone 可以将 Mac 复制的内容，同步下来，而 Mac 不行。<br>解决办法：退出 iPhone 账号，并重新登陆。</p>
-<h2 id="AirDrop-隔空投送文件传送"><a href="#AirDrop-隔空投送文件传送" class="headerlink" title="AirDrop 隔空投送文件传送"></a>AirDrop 隔空投送文件传送</h2><p>从 Mac 通过 AirDrop 传送文件至 iPhone，iPhone 必须有 App 可以打开传输文件格式的文件，否则文件将被遗弃。而我们需要传输一些特殊格式的文件的时候，我们可以将其压缩为 zip，这个时候 iPhone 就会接受了。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
-<li><a href="https://apple.stackexchange.com/questions/313716/icloud-drive-wont-sync-on-mac">macos - iCloud Drive Won’t Sync on Mac - Ask Different</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>MacOS</tag>
-        <tag>Finder</tag>
-        <tag>iCloud</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mac 大扫除🧹</title>
     <url>/macos-clean/</url>
     <content><![CDATA[<p>基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。</p>
@@ -1000,6 +957,49 @@
       </categories>
       <tags>
         <tag>MacOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac 小问题 —— iCloud 未响应</title>
+    <url>/macos-problems/</url>
+    <content><![CDATA[<p>使用 iCloud Drive 将文件上传到云端，防止数据丢失，同时可以实现多台设备的协同工作。但是在使用 iCloud Drive 的过程中我遇到了程序未响应，iCoud 文件上传阻塞的问题。</p>
+<span id="more"></span>
+
+<h2 id="Finder-无法打开或持续未响应"><a href="#Finder-无法打开或持续未响应" class="headerlink" title="Finder 无法打开或持续未响应"></a>Finder 无法打开或持续未响应</h2><p>解决办法：<br>磁盘工具 -&gt; Macintosh HD（系统盘）-&gt; 急救<br>磁盘工具在以下路径：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">/System/Applications/Utilities/Disk Utility.app</span><br></pre></td></tr></table></figure>
+
+<p>急救操作不会对你的电脑造成任何损害，甚至还有所优化。</p>
+<h2 id="打开-iCloud-云盘文件夹极其缓慢"><a href="#打开-iCloud-云盘文件夹极其缓慢" class="headerlink" title="打开 iCloud 云盘文件夹极其缓慢"></a>打开 iCloud 云盘文件夹极其缓慢</h2><p>遇到的问题是：在访达中点击iCloud云盘系统就会出现转圈圈的标志，使用快捷键<code>command+alt+esc</code>（强制退出应用程序）就会看到访达处于未响应状态，这个时间会持续很久。</p>
+<p>解决办法：<br>系统偏好 -&gt; Apple ID -&gt; 取消勾选iCloud云盘 -&gt; 保留副本 -&gt; 重新勾选iCloud云盘</p>
+<p>此操作造成的后果是mac需要很长的一段时间和云端同步，这取决于你icloud存储的文件大小，并不会影响其他。</p>
+<h2 id="文件无法上传排查"><a href="#文件无法上传排查" class="headerlink" title="文件无法上传排查"></a>文件无法上传排查</h2><p>iCloud 连续几天几夜也没同步完，经过诸多排查，例如，修改 DNS：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">114.114.114.114</span><br><span class="line">8.8.8.8</span><br></pre></td></tr></table></figure>
+<p>不仅没起作用，还影响了访问其他网页。最后删除 DNS 配置，刷新 DNS 缓存：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ 2$ sudo killall -HUP mDNSResponder</span><br></pre></td></tr></table></figure>
+
+<p>最后排查出是因为，我开发代码的工作目录都设置在了 iCloud 云盘里，文件体积虽然不大，却有上万个细小的文件，不知道是不是 iCloud 设置了某种限制，导致上传阻塞，最后将代码都移出 iCloud 问题就解决了。</p>
+<p>后面又卡住了，收获到一个命令通过这个命令可以查看 iCloud 同步进度：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ brctl log -w</span><br></pre></td></tr></table></figure>
+<p>虽然没看懂运行的是什么，但是能够看到一直有东西在执行。<br>通过以下三个命令对 icloud 进行重置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 杀死icloud同步进程</span><br><span class="line">$ sudo killall bird</span><br><span class="line"># 删除 icloud 的配置文件</span><br><span class="line">$ sudo rm -rf ~&#x2F;Library&#x2F;Application\ Support&#x2F;CloudDocs</span><br><span class="line"># 立刻关机</span><br><span class="line">$ sudo shutdown -r now</span><br></pre></td></tr></table></figure>
+<p>不必担心文件丢失，效果与关闭重新关闭icloud同步类似。重新开启电脑后可以通过前面说到的命令查看 iCloud 同步的进度。</p>
+<p>也可以直接使用下面的脚本：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;bash</span><br><span class="line"></span><br><span class="line">if [[ $EUID -eq 0 ]]; then</span><br><span class="line">    echo &quot;Killing bird.&quot;</span><br><span class="line">    killall bird</span><br><span class="line">    echo &quot;Removing CloudDocs&quot;</span><br><span class="line">    cd ~&#x2F;Library&#x2F;Application\ Support</span><br><span class="line">    rm -rf CloudDocs</span><br><span class="line">    echo &quot;Immediately rebooting!&quot;</span><br><span class="line">    shutdown -r now</span><br><span class="line">else</span><br><span class="line">    echo &quot;</span><br><span class="line">    This script needs run as sudo. </span><br><span class="line">    Use CAUTION when doing so.</span><br><span class="line">    You accept full responsibility using this script.</span><br><span class="line">    You should know what it&#39;s doing BEFORE you run it.</span><br><span class="line">    &quot;</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+
+<p>不必南辕北辙，越过中国的防火墙，iCloud 中国用户的文件存储在贵州云，而网上所谓的要获取验证文件，获取验证文件有香港的服务器。最后的任务就是等，我是让电脑喝着咖啡持续跑了接近一整天才同步完成的。</p>
+<h2 id="Mac-无法同步-iPhone-剪贴板数据"><a href="#Mac-无法同步-iPhone-剪贴板数据" class="headerlink" title="Mac 无法同步 iPhone 剪贴板数据"></a>Mac 无法同步 iPhone 剪贴板数据</h2><p>iPhone 可以将 Mac 复制的内容，同步下来，而 Mac 不行。<br>解决办法：退出 iPhone 账号，并重新登陆。</p>
+<h2 id="AirDrop-隔空投送文件传送"><a href="#AirDrop-隔空投送文件传送" class="headerlink" title="AirDrop 隔空投送文件传送"></a>AirDrop 隔空投送文件传送</h2><p>从 Mac 通过 AirDrop 传送文件至 iPhone，iPhone 必须有 App 可以打开传输文件格式的文件，否则文件将被遗弃。而我们需要传输一些特殊格式的文件的时候，我们可以将其压缩为 zip，这个时候 iPhone 就会接受了。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
+<li><a href="https://apple.stackexchange.com/questions/313716/icloud-drive-wont-sync-on-mac">macos - iCloud Drive Won’t Sync on Mac - Ask Different</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>MacOS</tag>
+        <tag>Finder</tag>
+        <tag>iCloud</tag>
       </tags>
   </entry>
   <entry>
@@ -1360,6 +1360,60 @@
       </tags>
   </entry>
   <entry>
+    <title>Vim 自动补全之 YCM</title>
+    <url>/shell-java/</url>
+    <content><![CDATA[<p>IDEA 打开得太慢了，我需要一款轻量级的 IDE，不想装其他乱七八糟的编译器咋办？搞事情！</p>
+<span id="more"></span>
+<h2 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h2><p>sublime 通过简单的配置后可以实现 java 代码的高亮提示和编译功能，并且大多编译错误也能基本上精确到行。<br>然而 sublime 内置的终端无法输入，虽然在日常的算法中输入操作很少涉及，, 但还是很不爽。</p>
+<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>这里需要一定的 Vim 基础，新手请执行 <code>vimtutor</code> 查看 Vim 官方教程，再继续往后看。<br>在终端通过 java 命令即可实现 java 代码的编译与运行。<br>vim 不过起到的是编辑器的作用。<br>对于编辑器我们不仅有高亮的基本要求，同样也需要基本的代码补全功能, Vim 的 YCM 插件能较好的实现代码补全功能。<br>下面介绍通过 vim 的 vim-plug 插件管理器 来安装 YCM 。</p>
+<h2 id="预备工作"><a href="#预备工作" class="headerlink" title="预备工作"></a>预备工作</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br><span class="line">brew install cmake vim</span><br></pre></td></tr></table></figure>
+
+<h2 id="vim-plug-安装"><a href="#vim-plug-安装" class="headerlink" title="vim-plug 安装"></a>vim-plug 安装</h2><p><a href="https://github.com/junegunn/vim-plug">junegunn/vim-plug</a></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -fLo ~/.vim/autoload/plug.vim --create-dirs \</span><br><span class="line">    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</span><br></pre></td></tr></table></figure>
+<h2 id="安装-YCM"><a href="#安装-YCM" class="headerlink" title="安装 YCM"></a>安装 YCM</h2><p><a href="https://github.com/Valloric/YouCompleteMe">YCM Github</a></p>
+<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>YCM 可通过 vim-plug 下载，而安装使用则需要进一步的编译。</p>
+<p>在 .vimrc 文件中添加 <code>Plug &#39;Valloric/YouCompleteMe&#39; </code> 再执行 :PluginInstall 即可。</p>
+<h3 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h3><p>YCM 基于 cmake 进行编译的，所以在安装之前如下命令先通过 brew 安装 cmake。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">python3 .&#x2F;install.py --java-completer</span><br></pre></td></tr></table></figure>
+<p>请使用 python3 。</p>
+<p>安装好之后，由于我的 python3 缺乏很多依赖性，通过以下命令检验 python 所缺乏的依赖。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd</span><br><span class="line">cp ycmd&#x2F;default_settings.json . &amp; python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
+<p>如果输出如下，是 python 环境的问题考虑重启然后重装：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[1]    8629 segmentation fault  python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
+<p>若有如下报错：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ModuleNotFoundError: No module named &#39;bottle&#39;</span><br><span class="line">ModuleNotFoundError: No module named &#39;waitress&#39;</span><br></pre></td></tr></table></figure>
+<p>逐句执行 <code>pip3 install bottle</code> <code>pip3 install waitress</code>即可解决。<br>如果显示是：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">No module named &#39;ycm_core&#39;</span><br></pre></td></tr></table></figure>
+<p>是没有问题的</p>
+<h2 id="YCM-安装-C-family-的自动补全"><a href="#YCM-安装-C-family-的自动补全" class="headerlink" title="YCM 安装 C-family 的自动补全"></a>YCM 安装 C-family 的自动补全</h2><h3 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">python3 .&#x2F;install.py --clang-completer</span><br></pre></td></tr></table></figure>
+<h3 id="安装-ycm-gennerator"><a href="#安装-ycm-gennerator" class="headerlink" title="安装 ycm-gennerator"></a>安装 ycm-gennerator</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Plugin &#39;rdnetto&#x2F;YCM-Generator&#39;</span><br></pre></td></tr></table></figure>
+<h3 id="生成-ycm-extra-conf-py-文件到-YCM-中"><a href="#生成-ycm-extra-conf-py-文件到-YCM-中" class="headerlink" title="生成 .ycm_extra_conf.py 文件到 YCM 中"></a>生成 .ycm_extra_conf.py 文件到 YCM 中</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python3 .ycm_extra_conf.py ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd</span><br></pre></td></tr></table></figure>
+<h3 id="在-vimrc-中添加"><a href="#在-vimrc-中添加" class="headerlink" title="在 ~/.vimrc 中添加"></a>在 ~/.vimrc 中添加</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let g:ycm_global_ycm_extra_conf &#x3D; &#39;～&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd&#x2F;.ycm_extra_conf.py&#39;</span><br></pre></td></tr></table></figure>
+
+<h2 id="go-语言"><a href="#go-语言" class="headerlink" title="go 语言"></a>go 语言</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --go-completer</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他语言参数"><a href="#其他语言参数" class="headerlink" title="其他语言参数"></a>其他语言参数</h2><ul>
+<li>C family support: <code>python3 ./install.py --clang-completer</code></li>
+<li>C# support: <code>python3 ./install.py --cs-completer </code>（install Mono with Homebrew or by downloading the <a href="http://www.mono-project.com/docs/getting-started/install/mac/">Mono macOS package</a> ）</li>
+<li>Go support: <code>python3 ./install.py --go-completer</code> </li>
+<li>JavaScript and TypeScript support: <code>python3 ./install.py --ts-completer</code> </li>
+<li>Rust support: <code>python3 ./install.py --rust-completer</code></li>
+<li>Java support: <code>python3 ./install.py --java-completer</code></li>
+</ul>
+<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:PlugUpdate</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">git clean -f</span><br><span class="line">git pull</span><br><span class="line">git submodule update --recursive --init</span><br><span class="line">.&#x2F;install.py --go-completer</span><br></pre></td></tr></table></figure>
+
+<h2 id="错误解决"><a href="#错误解决" class="headerlink" title="错误解决"></a>错误解决</h2><p>升级 catalina 后 brew 安装的 python3 执行异常，解决方案如下：<br><a href="https://forums.developer.apple.com/thread/119429">My application crashed with invalid load of lib… |Apple Developer Forums</a></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;zsh</span><br><span class="line">brew update &amp; brew upgrade &amp; brew install openssl</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;openssl&#x2F;1.0.2t&#x2F;lib</span><br><span class="line">sudo cp libssl.1.0.0.dylib libcrypto.1.0.0.dylib &#x2F;usr&#x2F;local&#x2F;lib&#x2F;</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;lib</span><br><span class="line">mv libssl.dylib libssl_bak.dylib</span><br><span class="line">mv libcrypto.dylib libcrypto_bak.dylib</span><br><span class="line">sudo ln -s libssl.1.0.0.dylib libssl.dylib</span><br><span class="line">sudo ln -s libcrypto.1.0.0.dylib libcrypto.dylib</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>开发工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搜索引擎使用技巧</title>
     <url>/se-operators/</url>
     <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F05%2F29%2F1590724982.png?x-oss-process=style/title_800" alt="1590724982.png"></p>
@@ -1450,60 +1504,6 @@
         <tag>SE</tag>
         <tag>搜索引擎</tag>
         <tag>Google</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vim 自动补全之 YCM</title>
-    <url>/shell-java/</url>
-    <content><![CDATA[<p>IDEA 打开得太慢了，我需要一款轻量级的 IDE，不想装其他乱七八糟的编译器咋办？搞事情！</p>
-<span id="more"></span>
-<h2 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h2><p>sublime 通过简单的配置后可以实现 java 代码的高亮提示和编译功能，并且大多编译错误也能基本上精确到行。<br>然而 sublime 内置的终端无法输入，虽然在日常的算法中输入操作很少涉及，, 但还是很不爽。</p>
-<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>这里需要一定的 Vim 基础，新手请执行 <code>vimtutor</code> 查看 Vim 官方教程，再继续往后看。<br>在终端通过 java 命令即可实现 java 代码的编译与运行。<br>vim 不过起到的是编辑器的作用。<br>对于编辑器我们不仅有高亮的基本要求，同样也需要基本的代码补全功能, Vim 的 YCM 插件能较好的实现代码补全功能。<br>下面介绍通过 vim 的 vim-plug 插件管理器 来安装 YCM 。</p>
-<h2 id="预备工作"><a href="#预备工作" class="headerlink" title="预备工作"></a>预备工作</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br><span class="line">brew install cmake vim</span><br></pre></td></tr></table></figure>
-
-<h2 id="vim-plug-安装"><a href="#vim-plug-安装" class="headerlink" title="vim-plug 安装"></a>vim-plug 安装</h2><p><a href="https://github.com/junegunn/vim-plug">junegunn/vim-plug</a></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -fLo ~/.vim/autoload/plug.vim --create-dirs \</span><br><span class="line">    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</span><br></pre></td></tr></table></figure>
-<h2 id="安装-YCM"><a href="#安装-YCM" class="headerlink" title="安装 YCM"></a>安装 YCM</h2><p><a href="https://github.com/Valloric/YouCompleteMe">YCM Github</a></p>
-<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>YCM 可通过 vim-plug 下载，而安装使用则需要进一步的编译。</p>
-<p>在 .vimrc 文件中添加 <code>Plug &#39;Valloric/YouCompleteMe&#39; </code> 再执行 :PluginInstall 即可。</p>
-<h3 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h3><p>YCM 基于 cmake 进行编译的，所以在安装之前如下命令先通过 brew 安装 cmake。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">python3 .&#x2F;install.py --java-completer</span><br></pre></td></tr></table></figure>
-<p>请使用 python3 。</p>
-<p>安装好之后，由于我的 python3 缺乏很多依赖性，通过以下命令检验 python 所缺乏的依赖。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd</span><br><span class="line">cp ycmd&#x2F;default_settings.json . &amp; python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
-<p>如果输出如下，是 python 环境的问题考虑重启然后重装：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[1]    8629 segmentation fault  python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
-<p>若有如下报错：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ModuleNotFoundError: No module named &#39;bottle&#39;</span><br><span class="line">ModuleNotFoundError: No module named &#39;waitress&#39;</span><br></pre></td></tr></table></figure>
-<p>逐句执行 <code>pip3 install bottle</code> <code>pip3 install waitress</code>即可解决。<br>如果显示是：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">No module named &#39;ycm_core&#39;</span><br></pre></td></tr></table></figure>
-<p>是没有问题的</p>
-<h2 id="YCM-安装-C-family-的自动补全"><a href="#YCM-安装-C-family-的自动补全" class="headerlink" title="YCM 安装 C-family 的自动补全"></a>YCM 安装 C-family 的自动补全</h2><h3 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">python3 .&#x2F;install.py --clang-completer</span><br></pre></td></tr></table></figure>
-<h3 id="安装-ycm-gennerator"><a href="#安装-ycm-gennerator" class="headerlink" title="安装 ycm-gennerator"></a>安装 ycm-gennerator</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Plugin &#39;rdnetto&#x2F;YCM-Generator&#39;</span><br></pre></td></tr></table></figure>
-<h3 id="生成-ycm-extra-conf-py-文件到-YCM-中"><a href="#生成-ycm-extra-conf-py-文件到-YCM-中" class="headerlink" title="生成 .ycm_extra_conf.py 文件到 YCM 中"></a>生成 .ycm_extra_conf.py 文件到 YCM 中</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python3 .ycm_extra_conf.py ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd</span><br></pre></td></tr></table></figure>
-<h3 id="在-vimrc-中添加"><a href="#在-vimrc-中添加" class="headerlink" title="在 ~/.vimrc 中添加"></a>在 ~/.vimrc 中添加</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let g:ycm_global_ycm_extra_conf &#x3D; &#39;～&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe&#x2F;third_party&#x2F;ycmd&#x2F;.ycm_extra_conf.py&#39;</span><br></pre></td></tr></table></figure>
-
-<h2 id="go-语言"><a href="#go-语言" class="headerlink" title="go 语言"></a>go 语言</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --go-completer</span><br></pre></td></tr></table></figure>
-
-<h2 id="其他语言参数"><a href="#其他语言参数" class="headerlink" title="其他语言参数"></a>其他语言参数</h2><ul>
-<li>C family support: <code>python3 ./install.py --clang-completer</code></li>
-<li>C# support: <code>python3 ./install.py --cs-completer </code>（install Mono with Homebrew or by downloading the <a href="http://www.mono-project.com/docs/getting-started/install/mac/">Mono macOS package</a> ）</li>
-<li>Go support: <code>python3 ./install.py --go-completer</code> </li>
-<li>JavaScript and TypeScript support: <code>python3 ./install.py --ts-completer</code> </li>
-<li>Rust support: <code>python3 ./install.py --rust-completer</code></li>
-<li>Java support: <code>python3 ./install.py --java-completer</code></li>
-</ul>
-<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:PlugUpdate</span><br></pre></td></tr></table></figure>
-<p>或</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;.vim&#x2F;plugged&#x2F;YouCompleteMe</span><br><span class="line">git clean -f</span><br><span class="line">git pull</span><br><span class="line">git submodule update --recursive --init</span><br><span class="line">.&#x2F;install.py --go-completer</span><br></pre></td></tr></table></figure>
-
-<h2 id="错误解决"><a href="#错误解决" class="headerlink" title="错误解决"></a>错误解决</h2><p>升级 catalina 后 brew 安装的 python3 执行异常，解决方案如下：<br><a href="https://forums.developer.apple.com/thread/119429">My application crashed with invalid load of lib… |Apple Developer Forums</a></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;zsh</span><br><span class="line">brew update &amp; brew upgrade &amp; brew install openssl</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;openssl&#x2F;1.0.2t&#x2F;lib</span><br><span class="line">sudo cp libssl.1.0.0.dylib libcrypto.1.0.0.dylib &#x2F;usr&#x2F;local&#x2F;lib&#x2F;</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;lib</span><br><span class="line">mv libssl.dylib libssl_bak.dylib</span><br><span class="line">mv libcrypto.dylib libcrypto_bak.dylib</span><br><span class="line">sudo ln -s libssl.1.0.0.dylib libssl.dylib</span><br><span class="line">sudo ln -s libcrypto.1.0.0.dylib libcrypto.dylib</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>开发工具</tag>
       </tags>
   </entry>
   <entry>
@@ -1611,6 +1611,79 @@
       </categories>
       <tags>
         <tag>ssm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vim 多文件类型自动补全方案</title>
+    <url>/vim-multiple-filetype-deoplete/</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
+<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<p>其中的 filetype on 表示：</p>
+<blockquote>
+<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
+</blockquote>
+<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
+<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
+<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">&#x27;nvim&#x27;</span>)</span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span>, &#123; <span class="string">&#x27;do&#x27;</span>: <span class="string">&#x27;:UpdateRemotePlugins&#x27;</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/nvim-yarp&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/vim-hug-neovim-rpc&#x27;</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">&#x27;Shougo/context_filetype.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">&#x27;g:context_filetype#same_filetypes&#x27;</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;javascript&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;script&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/script&gt;&#x27;</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;css&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;style&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/style&gt;&#x27;</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;functions&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;css&#x27;</span>: [<span class="string">&#x27;csscomplete#CompleteCSS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: [<span class="string">&#x27;javascriptcomplete#CompleteJS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;html&#x27;</span>: [<span class="string">&#x27;htmlcomplete#CompleteTags&#x27;</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;input_patterns&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: <span class="string">&#x27;[^. *\t]\.\w*&#x27;</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">&quot; 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">&quot;\&lt;C-n&gt;&quot;</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">&quot;\&lt;TAB&gt;&quot;</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> &quot;&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">&#x27;.&#x27;</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">&#x27;\s&#x27;</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">&quot;&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
+<p>执行 :PlugInstall</p>
+<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
+<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">&#x27;range&#x27;</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">&#x27;filetype&#x27;</span>: <span class="string">&#x27;css&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
+<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
+<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>multiple filetype</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vim-gitgutter ——【一天一个 vim 插件】</title>
+    <url>/vim-plugin-everday-1/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F06%2F28%2Fscreenshot.png?x-oss-process=style/title_800" alt="screenshot.png"><br>在此截图你可以看见：</p>
+<ul>
+<li>183-184 行是新建的；</li>
+<li>186-187 行有所变动；</li>
+<li>在底部的预览区中显示改动情况（<leader>hp）。<br>(<a href="https://github.com/airblade/vim-gitgutter">出处</a>)<br><a href="https://github.com/airblade/vim-gitgutter">airblade/vim-gitgutter</a> </li>
+</ul>
+<p>在 vim 标志栏（sign column，行号左边的一列，通常为隐藏状态）中显示 git diff（git 差异）</p>
+<span id="more"></span>
+
+<p>这个系列主要以记住各类有用的 vim 插件的功能与使用方法为目的。</p>
+<h2 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h2><p>安装插件的方法，一般分为常规安装与插件管理器安装。常规安装将插件整个放入目录：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;.vim&#x2F;pack&#x2F;vendor&#x2F;start</span><br></pre></td></tr></table></figure>
+<p>而插件管理器安装有相似的语法，却各不相同。插件管理器安装有一定的性能亏损，但是如果有大量插件存在的情况下，没有插件管理器，将难以管理。</p>
+<p>系列目前选择 <a href="https://github.com/junegunn/vim-plug">junegunn/vim-plug</a> 插件管理器作为插件的安装方式。全程使用<code>xterm-256color</code>，没有使用<code>gui</code>。</p>
+<p>在 <code>.vimrc</code> 中写入并保存：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">empty</span>(<span class="built_in">glob</span>(<span class="string">&#x27;~/.vim/autoload/plug.vim&#x27;</span>))</span><br><span class="line">    <span class="keyword">silent</span> !curl -fLo ~/.<span class="keyword">vim</span>/autoload/plug.<span class="keyword">vim</span> --create-dirs</span><br><span class="line">                \ http<span class="variable">s:</span>//raw.githubusercontent.<span class="keyword">com</span>/junegunn/<span class="keyword">vim</span>-plug/master/plug.<span class="keyword">vim</span></span><br><span class="line">    <span class="keyword">au</span> VimEnter * PlugInstall --<span class="keyword">sync</span> | <span class="keyword">source</span> $MYVIMRC</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> plug#begin(<span class="string">&#x27;~/.vim/plugged&#x27;</span>)</span><br><span class="line">Plug <span class="string">&#x27;airblade/vim-gitgutter&#x27;</span></span><br><span class="line"><span class="keyword">call</span> plug#end()</span><br></pre></td></tr></table></figure>
+<p>重新用 Vim 打开一个文件，执行命令：<code>:PlugInstall</code>，好了 <code>vim-plug</code> 插件管理器 和 <code>vim-gitgutter</code> 插件都安装好了。</p>
+<p>标志栏背景颜色显示很丑的话，我的默认显示灰色，添加如下设置以改善：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">highlight SignColumn ctermbg&#x3D;NONE</span><br></pre></td></tr></table></figure>
+
+<p>当修改文件后，标志栏会自动刷新，而刷新的延迟决定于vim的updatetime，默认的是4000ms，建议修改如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">updatetime&#x3D;100</span><br></pre></td></tr></table></figure>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>通过 <code>[c</code> 和 <code>]c</code> 在有所变动的区块间跳转。<br><leader>hp，显示预览，hunk preview<br><leader>hs，暂存代码块，hunk stage<br><leader>hu，撤销更改，hunk undo</p>
+<p>以上是默认的映射，可以自行修改如下：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">nmap</span> ]h <span class="symbol">&lt;Plug&gt;</span>(GitGutterNextHunk)</span><br><span class="line"><span class="keyword">nmap</span> [h <span class="symbol">&lt;Plug&gt;</span>(GitGutterPrevHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hp <span class="symbol">&lt;Plug&gt;</span>(GitGutterPreviewHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hs <span class="symbol">&lt;Plug&gt;</span>(GitGutterStageHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hu <span class="symbol">&lt;Plug&gt;</span>(GitGutterUndoHunk)</span><br></pre></td></tr></table></figure>
+
+<p>You can explicitly turn vim-gitgutter off and on (defaults to on):</p>
+<p>如果在某个git项目下，不想看见这个标志栏的提示，可以使用下面的命令：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">:GitGutterDisable</span><br><span class="line">:GitGutterEnable</span><br><span class="line"></span><br><span class="line">:GitGutterBufferDisable</span><br><span class="line">:GitGutterBufferEnable</span><br></pre></td></tr></table></figure>
+<p>绑定快捷键，例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nmap &lt;leader&gt;hd :GitGutterDisable&lt;CR&gt;</span><br><span class="line">nmap &lt;leader&gt;he :GitGutterEnable&lt;CR&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>一天一个 vim 插件</tag>
       </tags>
   </entry>
   <entry>
@@ -1740,79 +1813,6 @@
       </categories>
       <tags>
         <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vim 多文件类型自动补全方案</title>
-    <url>/vim-multiple-filetype-deoplete/</url>
-    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
-<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<p>其中的 filetype on 表示：</p>
-<blockquote>
-<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
-</blockquote>
-<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
-<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
-<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">&#x27;nvim&#x27;</span>)</span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span>, &#123; <span class="string">&#x27;do&#x27;</span>: <span class="string">&#x27;:UpdateRemotePlugins&#x27;</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/nvim-yarp&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/vim-hug-neovim-rpc&#x27;</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">&#x27;Shougo/context_filetype.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">&#x27;g:context_filetype#same_filetypes&#x27;</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;javascript&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;script&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/script&gt;&#x27;</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;css&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;style&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/style&gt;&#x27;</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;functions&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;css&#x27;</span>: [<span class="string">&#x27;csscomplete#CompleteCSS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: [<span class="string">&#x27;javascriptcomplete#CompleteJS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;html&#x27;</span>: [<span class="string">&#x27;htmlcomplete#CompleteTags&#x27;</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;input_patterns&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: <span class="string">&#x27;[^. *\t]\.\w*&#x27;</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">&quot; 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">&quot;\&lt;C-n&gt;&quot;</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">&quot;\&lt;TAB&gt;&quot;</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> &quot;&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">&#x27;.&#x27;</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">&#x27;\s&#x27;</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">&quot;&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
-<p>执行 :PlugInstall</p>
-<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
-<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">&#x27;range&#x27;</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">&#x27;filetype&#x27;</span>: <span class="string">&#x27;css&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
-<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
-<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
-<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>multiple filetype</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vim-gitgutter ——【一天一个 vim 插件】</title>
-    <url>/vim-plugin-everday-1/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F06%2F28%2Fscreenshot.png?x-oss-process=style/title_800" alt="screenshot.png"><br>在此截图你可以看见：</p>
-<ul>
-<li>183-184 行是新建的；</li>
-<li>186-187 行有所变动；</li>
-<li>在底部的预览区中显示改动情况（<leader>hp）。<br>(<a href="https://github.com/airblade/vim-gitgutter">出处</a>)<br><a href="https://github.com/airblade/vim-gitgutter">airblade/vim-gitgutter</a> </li>
-</ul>
-<p>在 vim 标志栏（sign column，行号左边的一列，通常为隐藏状态）中显示 git diff（git 差异）</p>
-<span id="more"></span>
-
-<p>这个系列主要以记住各类有用的 vim 插件的功能与使用方法为目的。</p>
-<h2 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h2><p>安装插件的方法，一般分为常规安装与插件管理器安装。常规安装将插件整个放入目录：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;.vim&#x2F;pack&#x2F;vendor&#x2F;start</span><br></pre></td></tr></table></figure>
-<p>而插件管理器安装有相似的语法，却各不相同。插件管理器安装有一定的性能亏损，但是如果有大量插件存在的情况下，没有插件管理器，将难以管理。</p>
-<p>系列目前选择 <a href="https://github.com/junegunn/vim-plug">junegunn/vim-plug</a> 插件管理器作为插件的安装方式。全程使用<code>xterm-256color</code>，没有使用<code>gui</code>。</p>
-<p>在 <code>.vimrc</code> 中写入并保存：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">empty</span>(<span class="built_in">glob</span>(<span class="string">&#x27;~/.vim/autoload/plug.vim&#x27;</span>))</span><br><span class="line">    <span class="keyword">silent</span> !curl -fLo ~/.<span class="keyword">vim</span>/autoload/plug.<span class="keyword">vim</span> --create-dirs</span><br><span class="line">                \ http<span class="variable">s:</span>//raw.githubusercontent.<span class="keyword">com</span>/junegunn/<span class="keyword">vim</span>-plug/master/plug.<span class="keyword">vim</span></span><br><span class="line">    <span class="keyword">au</span> VimEnter * PlugInstall --<span class="keyword">sync</span> | <span class="keyword">source</span> $MYVIMRC</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> plug#begin(<span class="string">&#x27;~/.vim/plugged&#x27;</span>)</span><br><span class="line">Plug <span class="string">&#x27;airblade/vim-gitgutter&#x27;</span></span><br><span class="line"><span class="keyword">call</span> plug#end()</span><br></pre></td></tr></table></figure>
-<p>重新用 Vim 打开一个文件，执行命令：<code>:PlugInstall</code>，好了 <code>vim-plug</code> 插件管理器 和 <code>vim-gitgutter</code> 插件都安装好了。</p>
-<p>标志栏背景颜色显示很丑的话，我的默认显示灰色，添加如下设置以改善：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">highlight SignColumn ctermbg&#x3D;NONE</span><br></pre></td></tr></table></figure>
-
-<p>当修改文件后，标志栏会自动刷新，而刷新的延迟决定于vim的updatetime，默认的是4000ms，建议修改如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">updatetime&#x3D;100</span><br></pre></td></tr></table></figure>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>通过 <code>[c</code> 和 <code>]c</code> 在有所变动的区块间跳转。<br><leader>hp，显示预览，hunk preview<br><leader>hs，暂存代码块，hunk stage<br><leader>hu，撤销更改，hunk undo</p>
-<p>以上是默认的映射，可以自行修改如下：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">nmap</span> ]h <span class="symbol">&lt;Plug&gt;</span>(GitGutterNextHunk)</span><br><span class="line"><span class="keyword">nmap</span> [h <span class="symbol">&lt;Plug&gt;</span>(GitGutterPrevHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hp <span class="symbol">&lt;Plug&gt;</span>(GitGutterPreviewHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hs <span class="symbol">&lt;Plug&gt;</span>(GitGutterStageHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hu <span class="symbol">&lt;Plug&gt;</span>(GitGutterUndoHunk)</span><br></pre></td></tr></table></figure>
-
-<p>You can explicitly turn vim-gitgutter off and on (defaults to on):</p>
-<p>如果在某个git项目下，不想看见这个标志栏的提示，可以使用下面的命令：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">:GitGutterDisable</span><br><span class="line">:GitGutterEnable</span><br><span class="line"></span><br><span class="line">:GitGutterBufferDisable</span><br><span class="line">:GitGutterBufferEnable</span><br></pre></td></tr></table></figure>
-<p>绑定快捷键，例如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nmap &lt;leader&gt;hd :GitGutterDisable&lt;CR&gt;</span><br><span class="line">nmap &lt;leader&gt;he :GitGutterEnable&lt;CR&gt;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>一天一个 vim 插件</tag>
       </tags>
   </entry>
   <entry>
