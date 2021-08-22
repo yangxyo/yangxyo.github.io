@@ -21,29 +21,6 @@
       </tags>
   </entry>
   <entry>
-    <title>目标和关键成果法 (Objectives and Key Results)</title>
-    <url>/OKRs/</url>
-    <content><![CDATA[<blockquote>
-<p>The Objective is the direction.<br>The key results have to be measured.<br>Yes.No.Simple</p>
-</blockquote>
-<h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>Being took to the wrong objectives is unacceptable.<br>被带向错误的目标是让人无法接受的。</p>
-<span id="more"></span>
-
-<p>Truly transformational teams combine their ambitions to their passion and to their purpose，and they develop a clear and compelling sense of why.<br>真正变革型的团队都会将自己的雄心、热情和目标结合到一起，他们很清楚为何要做，且理由令人信服。</p>
-<h1 id="Objective"><a href="#Objective" class="headerlink" title="Objective"></a>Objective</h1><p>Significant (重要)<br>Concrete （具体）<br>Action-oriented （以行动为导向）<br>Inspirational （激励人心）</p>
-<p>If the heart doesn’t find a perfect rhyme with the head, then your passion means nothing.<br>如果内心找不到与大脑和谐的韵律，你的热情就毫无用处。</p>
-<h1 id="Good-key-results"><a href="#Good-key-results" class="headerlink" title="Good key results"></a>Good key results</h1><p>Specific &amp; Time-bound（明确、有时间限制）<br>Aggressive Yet Realistic（激进、现实）<br>Measurable &amp; Verifiable (可衡量、可评估)</p>
-<h1 id="Why-1"><a href="#Why-1" class="headerlink" title="Why"></a>Why</h1><p>OKRs as transparent vessels, that are made from the whats and hows of our ambitions. What really matters is the why that we pour into those vessels. Thats’s why we do our work.<br> OKRS 可以看做是一个透明的容器，它由野心勃勃的“做什么”和“怎么做”构成。 真正的关键在于放进容器中的“为什么” 那是我们工作的原因。</p>
-<h1 id="Write-down-your"><a href="#Write-down-your" class="headerlink" title="Write down your"></a>Write down your</h1><p>Values (the right metrics)<br>Objectives<br>Key results</p>
-]]></content>
-      <categories>
-        <category>方法</category>
-      </categories>
-      <tags>
-        <tag>方法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
     <url>/acme-sh/</url>
     <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
@@ -64,6 +41,29 @@
         <tag>ssl</tag>
         <tag>acme.sh</tag>
         <tag>letsencrypt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>目标和关键成果法 (Objectives and Key Results)</title>
+    <url>/OKRs/</url>
+    <content><![CDATA[<blockquote>
+<p>The Objective is the direction.<br>The key results have to be measured.<br>Yes.No.Simple</p>
+</blockquote>
+<h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>Being took to the wrong objectives is unacceptable.<br>被带向错误的目标是让人无法接受的。</p>
+<span id="more"></span>
+
+<p>Truly transformational teams combine their ambitions to their passion and to their purpose，and they develop a clear and compelling sense of why.<br>真正变革型的团队都会将自己的雄心、热情和目标结合到一起，他们很清楚为何要做，且理由令人信服。</p>
+<h1 id="Objective"><a href="#Objective" class="headerlink" title="Objective"></a>Objective</h1><p>Significant (重要)<br>Concrete （具体）<br>Action-oriented （以行动为导向）<br>Inspirational （激励人心）</p>
+<p>If the heart doesn’t find a perfect rhyme with the head, then your passion means nothing.<br>如果内心找不到与大脑和谐的韵律，你的热情就毫无用处。</p>
+<h1 id="Good-key-results"><a href="#Good-key-results" class="headerlink" title="Good key results"></a>Good key results</h1><p>Specific &amp; Time-bound（明确、有时间限制）<br>Aggressive Yet Realistic（激进、现实）<br>Measurable &amp; Verifiable (可衡量、可评估)</p>
+<h1 id="Why-1"><a href="#Why-1" class="headerlink" title="Why"></a>Why</h1><p>OKRs as transparent vessels, that are made from the whats and hows of our ambitions. What really matters is the why that we pour into those vessels. Thats’s why we do our work.<br> OKRS 可以看做是一个透明的容器，它由野心勃勃的“做什么”和“怎么做”构成。 真正的关键在于放进容器中的“为什么” 那是我们工作的原因。</p>
+<h1 id="Write-down-your"><a href="#Write-down-your" class="headerlink" title="Write down your"></a>Write down your</h1><p>Values (the right metrics)<br>Objectives<br>Key results</p>
+]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>方法</tag>
       </tags>
   </entry>
   <entry>
@@ -294,32 +294,6 @@
       </tags>
   </entry>
   <entry>
-    <title>解构赋值 ———【一天一个 es6 语法】</title>
-    <url>/es6-everyday-3/</url>
-    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
-<span id="more"></span>
-
-<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">&quot;Bill&quot;</span>,</span><br><span class="line">    lastnNme: <span class="string">&quot;Wilson&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
-<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
-<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">a <span class="comment">// &quot;h&quot;</span></span><br><span class="line">b <span class="comment">// &quot;e&quot;</span></span><br><span class="line">c <span class="comment">// &quot;l&quot;</span></span><br><span class="line">d <span class="comment">// &quot;l&quot;</span></span><br><span class="line">e <span class="comment">// &quot;o&quot;</span></span><br></pre></td></tr></table></figure>
-<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">解构赋值 - JavaScript | MDN</a></li>
-<li><a href="https://es6.ruanyifeng.com/#docs/destructuring">变量的解构赋值 - ECMAScript 6入门</a></li>
-<li>《React 学习手册》</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>【一天一个 es6 语法】</tag>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>人生</title>
     <url>/flesh/</url>
     <content><![CDATA[<h2 id="他的话可信吗"><a href="#他的话可信吗" class="headerlink" title="他的话可信吗"></a>他的话可信吗</h2><blockquote>
@@ -346,6 +320,70 @@
       </categories>
       <tags>
         <tag>人生</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解构赋值 ———【一天一个 es6 语法】</title>
+    <url>/es6-everyday-3/</url>
+    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
+<span id="more"></span>
+
+<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">&quot;Bill&quot;</span>,</span><br><span class="line">    lastnNme: <span class="string">&quot;Wilson&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
+<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">a <span class="comment">// &quot;h&quot;</span></span><br><span class="line">b <span class="comment">// &quot;e&quot;</span></span><br><span class="line">c <span class="comment">// &quot;l&quot;</span></span><br><span class="line">d <span class="comment">// &quot;l&quot;</span></span><br><span class="line">e <span class="comment">// &quot;o&quot;</span></span><br></pre></td></tr></table></figure>
+<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">解构赋值 - JavaScript | MDN</a></li>
+<li><a href="https://es6.ruanyifeng.com/#docs/destructuring">变量的解构赋值 - ECMAScript 6入门</a></li>
+<li>《React 学习手册》</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>【一天一个 es6 语法】</tag>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>从 Github 下载目标仓库指定文件夹</title>
+    <url>/github-download-folder/</url>
+    <content><![CDATA[<p>从 Github 下载目标仓库指定文件夹。</p>
+<span id="more"></span>
+
+<p><a href="https://github.com/HR/github-clone">HR/github-clone: ⬇️ git clone repo subdirectories</a></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install git+git:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;github-clone#egg&#x3D;ghclone</span><br><span class="line">ghclone https:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;Crypter&#x2F;tree&#x2F;master&#x2F;app</span><br><span class="line">ghclone https:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;Picturesque&#x2F;tree&#x2F;master&#x2F;app&#x2F;src -t li50d67757gm20556d53f08126215725a698560b</span><br></pre></td></tr></table></figure>
+<p>下载私有库文件的时候需要 -t 参数，需要提供账户的 OAuth token：<br><a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">Creating a personal access token - GitHub Docs</a></p>
+<hr>
+<h2 id="git-svn-踩坑日记"><a href="#git-svn-踩坑日记" class="headerlink" title="git-svn 踩坑日记"></a>git-svn 踩坑日记</h2><p>太晚了，踩了半天坑，没踩出来，不过记录一下吧，没准以后还会用到 git-svn，再继续解决。<br>目标是通过 git svn 下载资源的目录，想法是从 stackoverflow 来的，我对 svn 一点都不了解：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git svn clone https:&#x2F;&#x2F;github.com&#x2F;user&#x2F;repo&#x2F;folder&#x2F;folder</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure>
+<p>执行前面的命令检查 CommandLineTools 是否安装，如有弹窗选择：是。一般重装系统或者系统大版本升级都要重新安装一次。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ brew reinstall git</span><br><span class="line">$ brew install apr-util</span><br><span class="line">$ brew install perl</span><br><span class="line">$ PERL_MM_OPT&#x3D;&quot;INSTALL_BASE&#x3D;$HOME&#x2F;perl5&quot; cpan local::lib</span><br><span class="line">$ echo &#39;eval &quot;$(perl -I$HOME&#x2F;perl5&#x2F;lib&#x2F;perl5 -Mlocal::lib&#x3D;$HOME&#x2F;perl5)&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ echo &#39;export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;apr&#x2F;bin:$PATH&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ echo &#39;export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;apr-util&#x2F;bin:$PATH&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ cpan SVN::Core  # 这命令耗时很久</span><br></pre></td></tr></table></figure>
+
+<h3 id="报错信息："><a href="#报错信息：" class="headerlink" title="报错信息："></a>报错信息：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Can&#39;t locate SVN&#x2F;Core.pm in @INC (you may need to install the SVN::Core module) (@INC contains: &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;git&#x2F;2.27.0&#x2F;share&#x2F;perl5</span><br></pre></td></tr></table></figure>
+
+<p>修改文件<code>/usr/local/opt/git/libexec/git-core/git-svn</code>的第一行， <code>#!/usr/bin/perl</code> 为 <code>#!/usr/local/bin/perl</code>。</p>
+<h3 id="最终报错："><a href="#最终报错：" class="headerlink" title="最终报错："></a>最终报错：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Bad URL passed to RA layer: Unrecognized URL scheme for &#39;https:&#x2F;&#x2F;github.com&#x2F;PacktPub</span><br><span class="line">lishing&#x2F;Hands-On-Full-Stack-Development-with-Go&#39; at &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;git&#x2F;2.27.0&#x2F;sha</span><br><span class="line">re&#x2F;perl5&#x2F;Git&#x2F;SVN.pm line 148.</span><br></pre></td></tr></table></figure>
+<p>git 关联的 svn 是它自带的 svn：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git svn --version</span><br><span class="line"># &#x2F;&#x2F; git-svn version 2.27.0 (svn 1.8.11)</span><br><span class="line">$ svn --version</span><br><span class="line"># &#x2F;&#x2F;svn, version 1.14.0 (r1876290)</span><br></pre></td></tr></table></figure>
+<p>和上一个报错有共同之处。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://github.com/HR/github-clone">HR/github-clone: ⬇️ git clone repo subdirectories</a></li>
+<li><a href="https://teratail.com/questions/268932">Perl - git-svnを使用しようとした際に出るCan’t locate SVN/Core.pmというエラーの解決方法｜teratail</a></li>
+<li><a href="https://stackoverflow.com/questions/61637163/git-svn-cant-locate-svn-core-pm-after-fresh-installation-of-macos-catalina-10-1">perl - git-svn Can’t locate SVN/Core.pm after fresh installation of macOS Catalina 10.15.4 - Stack Overflow</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>git-svn</tag>
       </tags>
   </entry>
   <entry>
@@ -551,44 +589,6 @@
       </tags>
   </entry>
   <entry>
-    <title>从 Github 下载目标仓库指定文件夹</title>
-    <url>/github-download-folder/</url>
-    <content><![CDATA[<p>从 Github 下载目标仓库指定文件夹。</p>
-<span id="more"></span>
-
-<p><a href="https://github.com/HR/github-clone">HR/github-clone: ⬇️ git clone repo subdirectories</a></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install git+git:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;github-clone#egg&#x3D;ghclone</span><br><span class="line">ghclone https:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;Crypter&#x2F;tree&#x2F;master&#x2F;app</span><br><span class="line">ghclone https:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;Picturesque&#x2F;tree&#x2F;master&#x2F;app&#x2F;src -t li50d67757gm20556d53f08126215725a698560b</span><br></pre></td></tr></table></figure>
-<p>下载私有库文件的时候需要 -t 参数，需要提供账户的 OAuth token：<br><a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">Creating a personal access token - GitHub Docs</a></p>
-<hr>
-<h2 id="git-svn-踩坑日记"><a href="#git-svn-踩坑日记" class="headerlink" title="git-svn 踩坑日记"></a>git-svn 踩坑日记</h2><p>太晚了，踩了半天坑，没踩出来，不过记录一下吧，没准以后还会用到 git-svn，再继续解决。<br>目标是通过 git svn 下载资源的目录，想法是从 stackoverflow 来的，我对 svn 一点都不了解：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git svn clone https:&#x2F;&#x2F;github.com&#x2F;user&#x2F;repo&#x2F;folder&#x2F;folder</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure>
-<p>执行前面的命令检查 CommandLineTools 是否安装，如有弹窗选择：是。一般重装系统或者系统大版本升级都要重新安装一次。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ brew reinstall git</span><br><span class="line">$ brew install apr-util</span><br><span class="line">$ brew install perl</span><br><span class="line">$ PERL_MM_OPT&#x3D;&quot;INSTALL_BASE&#x3D;$HOME&#x2F;perl5&quot; cpan local::lib</span><br><span class="line">$ echo &#39;eval &quot;$(perl -I$HOME&#x2F;perl5&#x2F;lib&#x2F;perl5 -Mlocal::lib&#x3D;$HOME&#x2F;perl5)&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ echo &#39;export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;apr&#x2F;bin:$PATH&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ echo &#39;export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;apr-util&#x2F;bin:$PATH&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ cpan SVN::Core  # 这命令耗时很久</span><br></pre></td></tr></table></figure>
-
-<h3 id="报错信息："><a href="#报错信息：" class="headerlink" title="报错信息："></a>报错信息：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Can&#39;t locate SVN&#x2F;Core.pm in @INC (you may need to install the SVN::Core module) (@INC contains: &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;git&#x2F;2.27.0&#x2F;share&#x2F;perl5</span><br></pre></td></tr></table></figure>
-
-<p>修改文件<code>/usr/local/opt/git/libexec/git-core/git-svn</code>的第一行， <code>#!/usr/bin/perl</code> 为 <code>#!/usr/local/bin/perl</code>。</p>
-<h3 id="最终报错："><a href="#最终报错：" class="headerlink" title="最终报错："></a>最终报错：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Bad URL passed to RA layer: Unrecognized URL scheme for &#39;https:&#x2F;&#x2F;github.com&#x2F;PacktPub</span><br><span class="line">lishing&#x2F;Hands-On-Full-Stack-Development-with-Go&#39; at &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;git&#x2F;2.27.0&#x2F;sha</span><br><span class="line">re&#x2F;perl5&#x2F;Git&#x2F;SVN.pm line 148.</span><br></pre></td></tr></table></figure>
-<p>git 关联的 svn 是它自带的 svn：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git svn --version</span><br><span class="line"># &#x2F;&#x2F; git-svn version 2.27.0 (svn 1.8.11)</span><br><span class="line">$ svn --version</span><br><span class="line"># &#x2F;&#x2F;svn, version 1.14.0 (r1876290)</span><br></pre></td></tr></table></figure>
-<p>和上一个报错有共同之处。</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://github.com/HR/github-clone">HR/github-clone: ⬇️ git clone repo subdirectories</a></li>
-<li><a href="https://teratail.com/questions/268932">Perl - git-svnを使用しようとした際に出るCan’t locate SVN/Core.pmというエラーの解決方法｜teratail</a></li>
-<li><a href="https://stackoverflow.com/questions/61637163/git-svn-cant-locate-svn-core-pm-after-fresh-installation-of-macos-catalina-10-1">perl - git-svn Can’t locate SVN/Core.pm after fresh installation of macOS Catalina 10.15.4 - Stack Overflow</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>git-svn</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>编程语言之 Java</title>
     <url>/java-language/</url>
     <content><![CDATA[<h1 id="Integer-parseInt-与-Integer-valueOf-的比较"><a href="#Integer-parseInt-与-Integer-valueOf-的比较" class="headerlink" title="Integer.parseInt() 与 Integer.valueOf() 的比较"></a>Integer.parseInt() 与 Integer.valueOf() 的比较</h1><p>Integer.parseInt() 和 Integer.valueOf() 都是用来 将String转换为Int的。</p>
@@ -775,6 +775,18 @@
       </tags>
   </entry>
   <entry>
+    <title>journal-2019-02-15</title>
+    <url>/journal-2019-02-15/</url>
+    <content><![CDATA[<h2 id="小孩成长与人才发展"><a href="#小孩成长与人才发展" class="headerlink" title="小孩成长与人才发展"></a>小孩成长与人才发展</h2><p>小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。</p>
+<p>孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。</p>
+<p>国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。</p>
+<p>参考：<a href="http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm">《基层减负 不是简单做减法》《求是》2019/03 </a></p>
+]]></content>
+      <categories>
+        <category>日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>切换 Shell 需谨慎</title>
     <url>/linux-user/</url>
     <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
@@ -825,6 +837,60 @@
       </categories>
       <tags>
         <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac 大扫除🧹</title>
+    <url>/macos-clean/</url>
+    <content><![CDATA[<p>基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。</p>
+<p>通过以下命令可以查看当前路径下的所有文件及文件夹大小并从大到小排列，以 KB 为单位显示。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sk *| sort -rn</span><br></pre></td></tr></table></figure>
+<p>以下命令就是以K，M，G为单位，提高信息的可读性，但是不能正确按文件大小排序。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sh *</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+<h2 id="用户文件清理"><a href="#用户文件清理" class="headerlink" title="用户文件清理"></a>用户文件清理</h2><p>我们称<code>～/</code>目录下的文件为用户文件。</p>
+<ol>
+<li>卸载不必要的应用，使用 柠檬清理 或者 AppCleaner 都是免费的。</li>
+<li>通过 柠檬清理，CleanMyMac 等软件清理垃圾，删除无用的大文件，这类软件都只有管理用户文件的能力。</li>
+<li>软件的配置、下载的插件等不能直接删除，应选择性删除：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;Library&#x2F;Application Support&#x2F;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>应用的缓存文件可以直接删除，不放心的话使用 trash 将其放入垃圾篓，如有异常还原便可，不用担心开不了机，用户文件也就是 ~/ 目录下的文件，是不会影响系统运行的：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/Library/Caches/*</span><br><span class="line">// or</span><br><span class="line">brew install trash</span><br><span class="line">trash ~/Library/Caches/*</span><br></pre></td></tr></table></figure>
+<h2 id="“系统文件”清理"><a href="#“系统文件”清理" class="headerlink" title="“系统文件”清理"></a>“系统文件”清理</h2><h3 id="清理文件定位"><a href="#清理文件定位" class="headerlink" title="清理文件定位"></a>清理文件定位</h3><p>Catalina中，系统文件从原本的文件系统中分离了，组成独立的文件系统，并且把这个文件系统从设计上设定为只能读取，不能写入。<br><img data-src="http://images.xyang.xin/2020-04%2F1586700714.png" alt="1586700714.png"> </p>
+<p>而其他文件和数据存储在Macintosh HD - Data卷中，挂载在<code>/System/Volumes/Data</code>目录下，在Finder中和系统卷一样显示为Macintosh HD。<br><img data-src="http://images.xyang.xin/2020-04%2F1586754964.png" alt="1586754964.png"></p>
+<p>如何区分数据卷和系统卷呢？<br>可以说除<code>/System/Volumes/Data</code>目录下的文件，其他都是数据卷文件。</p>
+<p>我们还可以发现一个怪异的现象，最明显的是<code>/Users</code>和<code>/Applications</code>同样出现在<code>/System/Volumes/Data/Applications</code>和<code>/System/Volumes/Data/Users</code>，而且内容相同、检测出来大小都相同，并且没有占用额外的空间。</p>
+<p>这里用到的是 “Bi-directional wormhole in path traversal” （路径遍历中的双向虫洞）—— Firmlinks，一种新的文件类型对象，类似于符号链接。通过以下命令可以查看哪些文件创建了Firmlinks：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /usr/share/firmlinks</span><br></pre></td></tr></table></figure>
+<p><img data-src="http://images.xyang.xin/2020-04%2F1586753548.png" alt="1586753548.png"></p>
+<h3 id="开始清理"><a href="#开始清理" class="headerlink" title="开始清理"></a>开始清理</h3><p>系统卷不能修改和写入，所以不会产生额外的垃圾，删除一些不用的系统应用是可以的，比如国际象棋，但是它们都不怎么占空间，所以没大必要。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo rm -rf /System/Applications/Chess.app/</span><br></pre></td></tr></table></figure>
+
+<p>我们实际上就是对 数据卷 进行清理。暂且把除去<code>/Users</code>用户文件外的文件都称为系统文件吧，因为它们很多都是与系统功能相关的，</p>
+<p>通过<code>du -sk *| sort -rn</code>命令，以下六个文件夹占的空间比较大：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">30210188	Users</span><br><span class="line">18391484	Applications</span><br><span class="line">6144100	private</span><br><span class="line">4822752	usr</span><br><span class="line">4179388	System</span><br><span class="line">3856812	Library</span><br></pre></td></tr></table></figure>
+<p><code>Users</code>是用户文件我们已经清理过了<code>Applications</code>是用户下载的应用，也清理过了，重点研究后面四个文件夹。</p>
+<p><code>/System/Volumes/Data/private/var/vm</code> 这里面删了又有，我删过，并没有产生什么意外。其中 sleepimage 是用于休眠期间存储主存的内容；swapfile 用于虚拟内存存储，当物理内存满了，系统会自动“调出”未被积极使用的数据，并将其存储于 swapfile。这两个都可以关闭，但是都不建议。</p>
+<p><code>/System/Volumes/Data/System/Library/Speech</code> 占了两个多G空间是语音相关的文件<code>say 你好</code>系统就会说<code>你好</code>。</p>
+<p><code>/System/Volumes/Data/usr</code>，usr是Unix System Resource的缩写，也就是Unix操作系统软件资源，很多通过命令行安装的软件都存放在这里，比如mac包管理器brew安装的软件都存放在里面，<code>brew uninstall</code>只会卸载软件本身而不会卸载相关依赖，通过以下命令可以安全的卸载brew安装的软件及其依赖：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew tap beeftornado&#x2F;rmtree</span><br><span class="line">brew rmtree XX</span><br></pre></td></tr></table></figure>
+
+<p>其实基于不同的使用习惯和用途，会产生不同的垃圾，用 <code>du</code> 命令一层层的分析查看，了解其内容含义，再清除是比较好的方法。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://support.apple.com/en-us/HT210650">About the read-only system volume in macOS Catalina - Apple Support</a></li>
+<li><a href="https://sspai.com/post/57052">当 Mac 升级到 Catalina 时，苹果在硬盘里施了点魔法 - 少数派</a></li>
+<li><a href="https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf">https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>MacOS</tag>
       </tags>
   </entry>
   <entry>
@@ -894,60 +960,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Mac 大扫除🧹</title>
-    <url>/macos-clean/</url>
-    <content><![CDATA[<p>基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。</p>
-<p>通过以下命令可以查看当前路径下的所有文件及文件夹大小并从大到小排列，以 KB 为单位显示。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sk *| sort -rn</span><br></pre></td></tr></table></figure>
-<p>以下命令就是以K，M，G为单位，提高信息的可读性，但是不能正确按文件大小排序。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sh *</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-
-<h2 id="用户文件清理"><a href="#用户文件清理" class="headerlink" title="用户文件清理"></a>用户文件清理</h2><p>我们称<code>～/</code>目录下的文件为用户文件。</p>
-<ol>
-<li>卸载不必要的应用，使用 柠檬清理 或者 AppCleaner 都是免费的。</li>
-<li>通过 柠檬清理，CleanMyMac 等软件清理垃圾，删除无用的大文件，这类软件都只有管理用户文件的能力。</li>
-<li>软件的配置、下载的插件等不能直接删除，应选择性删除：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;Library&#x2F;Application Support&#x2F;</span><br></pre></td></tr></table></figure>
-<ol>
-<li>应用的缓存文件可以直接删除，不放心的话使用 trash 将其放入垃圾篓，如有异常还原便可，不用担心开不了机，用户文件也就是 ~/ 目录下的文件，是不会影响系统运行的：</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/Library/Caches/*</span><br><span class="line">// or</span><br><span class="line">brew install trash</span><br><span class="line">trash ~/Library/Caches/*</span><br></pre></td></tr></table></figure>
-<h2 id="“系统文件”清理"><a href="#“系统文件”清理" class="headerlink" title="“系统文件”清理"></a>“系统文件”清理</h2><h3 id="清理文件定位"><a href="#清理文件定位" class="headerlink" title="清理文件定位"></a>清理文件定位</h3><p>Catalina中，系统文件从原本的文件系统中分离了，组成独立的文件系统，并且把这个文件系统从设计上设定为只能读取，不能写入。<br><img data-src="http://images.xyang.xin/2020-04%2F1586700714.png" alt="1586700714.png"> </p>
-<p>而其他文件和数据存储在Macintosh HD - Data卷中，挂载在<code>/System/Volumes/Data</code>目录下，在Finder中和系统卷一样显示为Macintosh HD。<br><img data-src="http://images.xyang.xin/2020-04%2F1586754964.png" alt="1586754964.png"></p>
-<p>如何区分数据卷和系统卷呢？<br>可以说除<code>/System/Volumes/Data</code>目录下的文件，其他都是数据卷文件。</p>
-<p>我们还可以发现一个怪异的现象，最明显的是<code>/Users</code>和<code>/Applications</code>同样出现在<code>/System/Volumes/Data/Applications</code>和<code>/System/Volumes/Data/Users</code>，而且内容相同、检测出来大小都相同，并且没有占用额外的空间。</p>
-<p>这里用到的是 “Bi-directional wormhole in path traversal” （路径遍历中的双向虫洞）—— Firmlinks，一种新的文件类型对象，类似于符号链接。通过以下命令可以查看哪些文件创建了Firmlinks：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /usr/share/firmlinks</span><br></pre></td></tr></table></figure>
-<p><img data-src="http://images.xyang.xin/2020-04%2F1586753548.png" alt="1586753548.png"></p>
-<h3 id="开始清理"><a href="#开始清理" class="headerlink" title="开始清理"></a>开始清理</h3><p>系统卷不能修改和写入，所以不会产生额外的垃圾，删除一些不用的系统应用是可以的，比如国际象棋，但是它们都不怎么占空间，所以没大必要。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo rm -rf /System/Applications/Chess.app/</span><br></pre></td></tr></table></figure>
-
-<p>我们实际上就是对 数据卷 进行清理。暂且把除去<code>/Users</code>用户文件外的文件都称为系统文件吧，因为它们很多都是与系统功能相关的，</p>
-<p>通过<code>du -sk *| sort -rn</code>命令，以下六个文件夹占的空间比较大：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">30210188	Users</span><br><span class="line">18391484	Applications</span><br><span class="line">6144100	private</span><br><span class="line">4822752	usr</span><br><span class="line">4179388	System</span><br><span class="line">3856812	Library</span><br></pre></td></tr></table></figure>
-<p><code>Users</code>是用户文件我们已经清理过了<code>Applications</code>是用户下载的应用，也清理过了，重点研究后面四个文件夹。</p>
-<p><code>/System/Volumes/Data/private/var/vm</code> 这里面删了又有，我删过，并没有产生什么意外。其中 sleepimage 是用于休眠期间存储主存的内容；swapfile 用于虚拟内存存储，当物理内存满了，系统会自动“调出”未被积极使用的数据，并将其存储于 swapfile。这两个都可以关闭，但是都不建议。</p>
-<p><code>/System/Volumes/Data/System/Library/Speech</code> 占了两个多G空间是语音相关的文件<code>say 你好</code>系统就会说<code>你好</code>。</p>
-<p><code>/System/Volumes/Data/usr</code>，usr是Unix System Resource的缩写，也就是Unix操作系统软件资源，很多通过命令行安装的软件都存放在这里，比如mac包管理器brew安装的软件都存放在里面，<code>brew uninstall</code>只会卸载软件本身而不会卸载相关依赖，通过以下命令可以安全的卸载brew安装的软件及其依赖：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew tap beeftornado&#x2F;rmtree</span><br><span class="line">brew rmtree XX</span><br></pre></td></tr></table></figure>
-
-<p>其实基于不同的使用习惯和用途，会产生不同的垃圾，用 <code>du</code> 命令一层层的分析查看，了解其内容含义，再清除是比较好的方法。</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://support.apple.com/en-us/HT210650">About the read-only system volume in macOS Catalina - Apple Support</a></li>
-<li><a href="https://sspai.com/post/57052">当 Mac 升级到 Catalina 时，苹果在硬盘里施了点魔法 - 少数派</a></li>
-<li><a href="https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf">https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>MacOS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mac 小问题 —— iCloud 未响应</title>
     <url>/macos-problems/</url>
     <content><![CDATA[<p>使用 iCloud Drive 将文件上传到云端，防止数据丢失，同时可以实现多台设备的协同工作。但是在使用 iCloud Drive 的过程中我遇到了程序未响应，iCoud 文件上传阻塞的问题。</p>
@@ -989,18 +1001,6 @@
         <tag>Finder</tag>
         <tag>iCloud</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>journal-2019-02-15</title>
-    <url>/journal-2019-02-15/</url>
-    <content><![CDATA[<h2 id="小孩成长与人才发展"><a href="#小孩成长与人才发展" class="headerlink" title="小孩成长与人才发展"></a>小孩成长与人才发展</h2><p>小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。</p>
-<p>孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。</p>
-<p>国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。</p>
-<p>参考：<a href="http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm">《基层减负 不是简单做减法》《求是》2019/03 </a></p>
-]]></content>
-      <categories>
-        <category>日志</category>
-      </categories>
   </entry>
   <entry>
     <title>学习 CSS 时忽视的几个知识点</title>
@@ -1339,24 +1339,96 @@
       </tags>
   </entry>
   <entry>
-    <title>程序中的 “脚手架”</title>
-    <url>/scaffold/</url>
-    <content><![CDATA[<blockquote>
-<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
-</blockquote>
-<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
-<span id="more"></span>
+    <title>搜索引擎使用技巧</title>
+    <url>/se-operators/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F05%2F29%2F1590724982.png?x-oss-process=style/title_800" alt="1590724982.png"></p>
+<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>生活离不开搜索引擎了，我曾尝试在思考，是不是未来的开卷考试，会允许使用某个特定的搜索引擎。<span id="more"></span></p>
+<p>什么是搜索引擎呢？搜索引擎就像一本不断更新的通讯录，它日夜不停的到处网罗手机号码及个人资料，也有一些”推销员“主动的向其提供自己的联系方式。人们通过这本通讯录可以快速的找到自己感兴趣的内容。</p>
+<h2 id="常用的搜索方式"><a href="#常用的搜索方式" class="headerlink" title="常用的搜索方式"></a>常用的搜索方式</h2><p>如何使用搜索引擎？那和使用手机上的通讯录相差无几，通过姓名可以找到这个人的名片，包含手机号、地址、其他手机号；通过手机号，也可以找到这个人得名片，如果通讯录中有的话。</p>
+<p>想要了解鱼香肉丝的做法，就输入 <code>鱼香肉丝</code>，我想要麻辣口味的鱼香肉丝呢，就输入 <code>鱼香肉丝 麻辣</code>。</p>
+<p>通过以上方式——简单的关键字查询，对于大部分情况足矣。</p>
+<p>在 Google 搜索引擎输入框输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">the world will be better 鱼香肉丝</span><br></pre></td></tr></table></figure>
+<p>Then 回车：<br><img data-src="http://images.xyang.xin/2020%2F05%2F31%2F1590917944.png?x-oss-process=style/title_800" alt="1590917944.png"></p>
+<p>点击红色框框里面的 <code>world</code>，输入框里的 <code>world</code> 机会被加上引号，代表搜索结果中必须包含 <code>world</code>（must include）。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">the &quot;world&quot; will be better 鱼香肉丝</span><br></pre></td></tr></table></figure>
 
-<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
-<li><a href="https://github.com/facebook/create-react-app">facebook/create-react-app</a></li>
-<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
+<p>对，我也是一个“推销员”，所以我把我的联系方式提交给了通讯录，那我怎么知道通讯录里面有没有我呢？<code>site:blog.xyang.xin</code>。</p>
+<p>这些就是我日常所使用到的搜索方法了。</p>
+<h2 id="搜索优化"><a href="#搜索优化" class="headerlink" title="搜索优化"></a>搜索优化</h2><p>今天在 <a href="http://www.ruanyifeng.com/blog/2020/05/weekly-issue-109.html">新一期的科技爱好者周刊</a> 中看到：“<a href="https://quickref.dev/">Quickref</a> 一个针对程序员的搜索引擎，只搜索编程相关的网站。”出于好奇去看了一下：<br><img data-src="http://images.xyang.xin/2020%2F05%2F31%2F15909154253728.jpg?x-oss-process=style/title_800" alt="15909154253728.jpg"></p>
+<p>首页有点不一样，多了一些内容：</p>
+<ul>
+<li>默认逐字搜索（搜索结果必须同时包含输入的所有关键字）；</li>
+<li><code>~</code> 用于将关键字设置为可选（也就是搜索结果不必一定包含该关键字）；</li>
+<li><code>-</code> 减号，排除该关键字（搜索结果不包含该关键字）；</li>
+<li><code>site:</code> 仅针对某个特定网址进行搜索；</li>
+<li><code>intitle:</code> 搜索结果仅显示网站标题包含关键字的内容；</li>
+<li><code>*</code> 通配符；</li>
+<li><code>!gh</code> 重定向到 Github 搜索；</li>
+<li><code>!mdn</code> 重定向到 Mozilla MDN 搜索。</li>
+</ul>
+<p>为什么 Google、百度等搜索引擎都没有在首页给出类似的操作符 (Operators) 提示列表，或者显示一个链接到帮助文档？</p>
+<p>我认为有如下原因：</p>
+<ol>
+<li>大多数情况下最基本的搜索方式就足够用了，不需要花费很多时间去进行额外的学习，我至今就仅仅使用了前文所阐述的几种搜索方法；</li>
+<li>百度、Google 等搜索引擎作为通用软件，将 KISS(Keep it simple, stupid) 原则运用到极致，软件就是要用起来越简单越好。</li>
+</ol>
+<p>搜索引擎的核心价值无疑是拼尽全力把你最感兴趣的内容送到你的眼前，但是要懂一个人的心，在能读取你想法的机器研发出来之前，简直太难。所以为了让搜索引擎更懂我们，我认为进一步学习一些搜索引擎操作符是有必要的。Google 是我最常用的搜索引擎，百度有时也用，但下面介绍的操作符仅在 Google 上测试有效。</p>
+<ul>
+<li><code>@</code> 搜索社交媒体：<code>@twitter</code>；</li>
+<li><code>-</code> 搜索结果不包含该关键字；</li>
+<li><code>&quot;&quot;</code> 引号中的内容在搜索结果中必须完全匹配；</li>
+<li><code>..</code> 在一定范围内搜索：<code>$50..$100</code>；</li>
+<li><code>OR</code> 合并搜索，将两个搜索语句搜索到的内容合并起来显示：<code>site:nytimes.com OR @twitter</code>，搜索结果将同时显示 <code>site:nytimes.com</code> 搜索到的内容和 <code>@twitter</code> 搜索到的内容。需要 <code>AND</code> 吗？空格其实相当于 <code>AND</code>，需要 <code>NOT</code> 吗？<code>-</code> 相当于 <code>NOT</code>；</li>
+<li><code>site:</code>,<code>site:youtube.com</code> 或者 <code>site:.gov</code>、<code>site:.edu</code>；</li>
+<li><code>related:</code>，<code>related:google.com</code> 搜索结果就有 Yahoo、Bing、DuckDuckGo 等搜索引擎，可能因为其独特算法的原因，目前百度、Yandex 都没有，这个不好用，可能对美国本土网站支持比较好；</li>
+<li><code>intext:</code> 搜索主体部分包含关键字的网页，<code>intext:&quot;仰望星空 埋头工作&quot;</code></li>
+<li><code>allintext:</code> 搜索主体部分包含所有关键词的网页。<code>allintext: 鱼香肉丝 鳗鱼饭 威士忌 </code>；<br><img data-src="http://images.xyang.xin/2020%2F06%2F01%2F1591012218.png?x-oss-process=style/title_800?x-oss-process=style/title_800" alt="1591012218.png"></li>
+<li><code>intitle</code> 搜索标题包含关键词的网页，<code>intitle:&quot;world peace&quot;</code>；</li>
+<li><code>allintitle</code> 搜索标题包含所有关键词的网页；</li>
+<li><code>inurl</code> 搜索 URL 包含关键词的网页，<code>inurl:plant</code>；</li>
+<li><code>allinurl</code> 搜索 URL 中包含所有关键词的网页，<code>allinurl:plant growing</code>；</li>
+<li><code>intext:</code> 搜索主体部分包含关键词的网页，<code>intext:grow</code>；</li>
+<li><code>allintext:</code> 搜索主体部分包含所有关键词的网页，<code>allintext:pant growing</code>；</li>
+<li><code>filetype:</code> 针对文件类型进行搜索，<code>filetype:doc</code><a href="https://support.google.com/webmasters/answer/35287?hl=en">Google 可索引的文件类型</a></li>
+<li><code>imagesize:</code> 搜索指定尺寸的图片，<code>imagesize:500x400</code>，<a href="https://www.google.com/advanced_image_search">Google 高级图片搜索</a>；</li>
+<li><code>inanchor:</code> 搜索 anchor 包含关键词的网页，什么是 anchor？<code>&lt;a src=&quot;https://blog.xyang.xin&quot;&gt;world peace&lt;/a&gt;</code>，这里的 <code>world peace</code> 就是 <code>anchor</code>，一个链接除开其既定的功能，例如可以点击进行跳转，还有就是其内容 <code>src</code> 里的 URL，以及 <code>&lt;a&gt;&lt;/a&gt;</code> 标签所包含 <code>anchor</code>；<br><img data-src="http://images.xyang.xin/2020%2F06%2F03%2F1591161153.png?x-oss-process=style/title_800" alt="1591161153.png"></li>
+<li><code>allinanchor:</code> 搜索 anchor 包含所有关键词的网页，<code>allinanchor:world peace</code>；</li>
+<li><code>cache:</code> 查看 Google 对相应网站的缓存情况，<code>cache:www.wikipedia.org</code>；</li>
+<li><code>define:</code> 该操作符将展示一个关键词简明定义的信息卡，在信息卡下面是字典和其它在线参考的链接。<code>define:&quot;world peace&quot;</code> 和 <code>define: world peace</code> 搜索结果几乎一样；<br><img data-src="http://images.xyang.xin/2020%2F06%2F03%2F1591173332.png?x-oss-process=style/title_800" alt="1591173332.png"></li>
+<li><code>stocks:</code>stocks（股市），搜索结果将显示与金融相关的内容，<code>stocks:dell</code> 与 <code>dell</code> 将得到不同的搜索结果；</li>
+<li><code>wheather:</code> 查看特定地点的天气，<code>weather:beijing</code>；</li>
+<li><code>map:</code> 查看特定地点的地图，<code>map: 北京 </code>；</li>
+<li><code>in</code> 单位转换，常用的单位都有 <code>$329 in CNY</code>，<code>100cm in m</code>；</li>
+<li><code>()</code> 对搜索语句进行分组。</li>
+</ul>
+<blockquote>
+<p>Tip：</p>
+<ol>
+<li><p>Google 搜索通常会忽略不属于操作符的标点符号，英文大小写不影响搜索结果。不管加不加 <code>&quot;&quot;</code> 引号，标点符号和英文大小写都不影响搜索结果。</p>
+</li>
+<li><p>不要在操作符与搜索关键字之间留空格。<code>site:nytimes.com</code>，而不是 <code>site：nytimes.com</code>。</p>
+</li>
+<li><p>上述的关键词都包含关键词和关键句，简单理解不管词还是句都是字符串。<code>&quot;&quot;</code> 引号包含的内容为什么是完全匹配，因为搜索引擎将其整体视为一个字符串，并且它的另一层含义是必须包含。所以说 <code>intitle</code>、<code>intext</code> 如果搜索的内容是一个语句里面有空格的话，就必须用 <code>&quot;&quot;</code> 扩起来。</p>
+</li>
+<li><p>有些操作符可能因为更新而不可用，并且很难找到官方的更新说明，但是那些基本的应该不会被改变。</p>
+</li>
+</ol>
+</blockquote>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://support.google.com/websearch/answer/2466433?hl=en">Refine web searches - Google Search Help</a></li>
+<li><a href="https://builtmighty.com/blog/search-sites-google-site-search/">How to Search Any Website Using a Google Site Search | Built Mighty</a></li>
+<li><a href="https://ahrefs.com/blog/google-advanced-search-operators/">Google Search Operators: The Complete List (42 Advanced Operators)</a></li>
+<li>Stephan Spencer.《Google Power Search: The Essential Guide to Finding Anything Online With Google》.Second Edition.2017</li>
 </ul>
 ]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>信息技术</tag>
+        <tag>SE</tag>
+        <tag>搜索引擎</tag>
+        <tag>Google</tag>
       </tags>
   </entry>
   <entry>
@@ -1411,6 +1483,27 @@
       </categories>
       <tags>
         <tag>开发工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>程序中的 “脚手架”</title>
+    <url>/scaffold/</url>
+    <content><![CDATA[<blockquote>
+<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
+</blockquote>
+<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
+<span id="more"></span>
+
+<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
+<li><a href="https://github.com/facebook/create-react-app">facebook/create-react-app</a></li>
+<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>信息技术</tag>
       </tags>
   </entry>
   <entry>
@@ -1650,79 +1743,6 @@
       </tags>
   </entry>
   <entry>
-    <title>vim 多文件类型自动补全方案</title>
-    <url>/vim-multiple-filetype-deoplete/</url>
-    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
-<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<p>其中的 filetype on 表示：</p>
-<blockquote>
-<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
-</blockquote>
-<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
-<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
-<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">&#x27;nvim&#x27;</span>)</span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span>, &#123; <span class="string">&#x27;do&#x27;</span>: <span class="string">&#x27;:UpdateRemotePlugins&#x27;</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/nvim-yarp&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/vim-hug-neovim-rpc&#x27;</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">&#x27;Shougo/context_filetype.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">&#x27;g:context_filetype#same_filetypes&#x27;</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;javascript&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;script&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/script&gt;&#x27;</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;css&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;style&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/style&gt;&#x27;</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;functions&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;css&#x27;</span>: [<span class="string">&#x27;csscomplete#CompleteCSS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: [<span class="string">&#x27;javascriptcomplete#CompleteJS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;html&#x27;</span>: [<span class="string">&#x27;htmlcomplete#CompleteTags&#x27;</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;input_patterns&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: <span class="string">&#x27;[^. *\t]\.\w*&#x27;</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">&quot; 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">&quot;\&lt;C-n&gt;&quot;</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">&quot;\&lt;TAB&gt;&quot;</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> &quot;&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">&#x27;.&#x27;</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">&#x27;\s&#x27;</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">&quot;&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
-<p>执行 :PlugInstall</p>
-<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
-<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">&#x27;range&#x27;</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">&#x27;filetype&#x27;</span>: <span class="string">&#x27;css&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
-<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
-<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
-<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>multiple filetype</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vim-gitgutter ——【一天一个 vim 插件】</title>
-    <url>/vim-plugin-everday-1/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F06%2F28%2Fscreenshot.png?x-oss-process=style/title_800" alt="screenshot.png"><br>在此截图你可以看见：</p>
-<ul>
-<li>183-184 行是新建的；</li>
-<li>186-187 行有所变动；</li>
-<li>在底部的预览区中显示改动情况（<leader>hp）。<br>(<a href="https://github.com/airblade/vim-gitgutter">出处</a>)<br><a href="https://github.com/airblade/vim-gitgutter">airblade/vim-gitgutter</a> </li>
-</ul>
-<p>在 vim 标志栏（sign column，行号左边的一列，通常为隐藏状态）中显示 git diff（git 差异）</p>
-<span id="more"></span>
-
-<p>这个系列主要以记住各类有用的 vim 插件的功能与使用方法为目的。</p>
-<h2 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h2><p>安装插件的方法，一般分为常规安装与插件管理器安装。常规安装将插件整个放入目录：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;.vim&#x2F;pack&#x2F;vendor&#x2F;start</span><br></pre></td></tr></table></figure>
-<p>而插件管理器安装有相似的语法，却各不相同。插件管理器安装有一定的性能亏损，但是如果有大量插件存在的情况下，没有插件管理器，将难以管理。</p>
-<p>系列目前选择 <a href="https://github.com/junegunn/vim-plug">junegunn/vim-plug</a> 插件管理器作为插件的安装方式。全程使用<code>xterm-256color</code>，没有使用<code>gui</code>。</p>
-<p>在 <code>.vimrc</code> 中写入并保存：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">empty</span>(<span class="built_in">glob</span>(<span class="string">&#x27;~/.vim/autoload/plug.vim&#x27;</span>))</span><br><span class="line">    <span class="keyword">silent</span> !curl -fLo ~/.<span class="keyword">vim</span>/autoload/plug.<span class="keyword">vim</span> --create-dirs</span><br><span class="line">                \ http<span class="variable">s:</span>//raw.githubusercontent.<span class="keyword">com</span>/junegunn/<span class="keyword">vim</span>-plug/master/plug.<span class="keyword">vim</span></span><br><span class="line">    <span class="keyword">au</span> VimEnter * PlugInstall --<span class="keyword">sync</span> | <span class="keyword">source</span> $MYVIMRC</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> plug#begin(<span class="string">&#x27;~/.vim/plugged&#x27;</span>)</span><br><span class="line">Plug <span class="string">&#x27;airblade/vim-gitgutter&#x27;</span></span><br><span class="line"><span class="keyword">call</span> plug#end()</span><br></pre></td></tr></table></figure>
-<p>重新用 Vim 打开一个文件，执行命令：<code>:PlugInstall</code>，好了 <code>vim-plug</code> 插件管理器 和 <code>vim-gitgutter</code> 插件都安装好了。</p>
-<p>标志栏背景颜色显示很丑的话，我的默认显示灰色，添加如下设置以改善：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">highlight SignColumn ctermbg&#x3D;NONE</span><br></pre></td></tr></table></figure>
-
-<p>当修改文件后，标志栏会自动刷新，而刷新的延迟决定于vim的updatetime，默认的是4000ms，建议修改如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">updatetime&#x3D;100</span><br></pre></td></tr></table></figure>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>通过 <code>[c</code> 和 <code>]c</code> 在有所变动的区块间跳转。<br><leader>hp，显示预览，hunk preview<br><leader>hs，暂存代码块，hunk stage<br><leader>hu，撤销更改，hunk undo</p>
-<p>以上是默认的映射，可以自行修改如下：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">nmap</span> ]h <span class="symbol">&lt;Plug&gt;</span>(GitGutterNextHunk)</span><br><span class="line"><span class="keyword">nmap</span> [h <span class="symbol">&lt;Plug&gt;</span>(GitGutterPrevHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hp <span class="symbol">&lt;Plug&gt;</span>(GitGutterPreviewHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hs <span class="symbol">&lt;Plug&gt;</span>(GitGutterStageHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hu <span class="symbol">&lt;Plug&gt;</span>(GitGutterUndoHunk)</span><br></pre></td></tr></table></figure>
-
-<p>You can explicitly turn vim-gitgutter off and on (defaults to on):</p>
-<p>如果在某个git项目下，不想看见这个标志栏的提示，可以使用下面的命令：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">:GitGutterDisable</span><br><span class="line">:GitGutterEnable</span><br><span class="line"></span><br><span class="line">:GitGutterBufferDisable</span><br><span class="line">:GitGutterBufferEnable</span><br></pre></td></tr></table></figure>
-<p>绑定快捷键，例如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nmap &lt;leader&gt;hd :GitGutterDisable&lt;CR&gt;</span><br><span class="line">nmap &lt;leader&gt;he :GitGutterEnable&lt;CR&gt;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>一天一个 vim 插件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>vim-fugitive ——【一天一个 vim 插件】</title>
     <url>/vim-plugin-everday-2/</url>
     <content><![CDATA[<p>作为一个 10k+ star 的 vim 插件，<a href="https://github.com/tpope/vim-fugitive">tpope/vim-fugitive</a> 自称为 Git 的第一 Vim 插件并不为过。Fugitive 让你在当前 buffer 缓冲区通过<code>:Git</code>或<code>:G</code>，可以直接使用 git 命令。可以看作是<code>!git XX</code> 命令的改进和优化，除了使用 silent，静默模式外，你不会看到 “Press ENTER or type command to continue”，还对一些命令进行了优化。</p>
@@ -1801,96 +1821,76 @@
       </tags>
   </entry>
   <entry>
-    <title>搜索引擎使用技巧</title>
-    <url>/se-operators/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F05%2F29%2F1590724982.png?x-oss-process=style/title_800" alt="1590724982.png"></p>
-<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>生活离不开搜索引擎了，我曾尝试在思考，是不是未来的开卷考试，会允许使用某个特定的搜索引擎。<span id="more"></span></p>
-<p>什么是搜索引擎呢？搜索引擎就像一本不断更新的通讯录，它日夜不停的到处网罗手机号码及个人资料，也有一些”推销员“主动的向其提供自己的联系方式。人们通过这本通讯录可以快速的找到自己感兴趣的内容。</p>
-<h2 id="常用的搜索方式"><a href="#常用的搜索方式" class="headerlink" title="常用的搜索方式"></a>常用的搜索方式</h2><p>如何使用搜索引擎？那和使用手机上的通讯录相差无几，通过姓名可以找到这个人的名片，包含手机号、地址、其他手机号；通过手机号，也可以找到这个人得名片，如果通讯录中有的话。</p>
-<p>想要了解鱼香肉丝的做法，就输入 <code>鱼香肉丝</code>，我想要麻辣口味的鱼香肉丝呢，就输入 <code>鱼香肉丝 麻辣</code>。</p>
-<p>通过以上方式——简单的关键字查询，对于大部分情况足矣。</p>
-<p>在 Google 搜索引擎输入框输入：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">the world will be better 鱼香肉丝</span><br></pre></td></tr></table></figure>
-<p>Then 回车：<br><img data-src="http://images.xyang.xin/2020%2F05%2F31%2F1590917944.png?x-oss-process=style/title_800" alt="1590917944.png"></p>
-<p>点击红色框框里面的 <code>world</code>，输入框里的 <code>world</code> 机会被加上引号，代表搜索结果中必须包含 <code>world</code>（must include）。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">the &quot;world&quot; will be better 鱼香肉丝</span><br></pre></td></tr></table></figure>
-
-<p>对，我也是一个“推销员”，所以我把我的联系方式提交给了通讯录，那我怎么知道通讯录里面有没有我呢？<code>site:blog.xyang.xin</code>。</p>
-<p>这些就是我日常所使用到的搜索方法了。</p>
-<h2 id="搜索优化"><a href="#搜索优化" class="headerlink" title="搜索优化"></a>搜索优化</h2><p>今天在 <a href="http://www.ruanyifeng.com/blog/2020/05/weekly-issue-109.html">新一期的科技爱好者周刊</a> 中看到：“<a href="https://quickref.dev/">Quickref</a> 一个针对程序员的搜索引擎，只搜索编程相关的网站。”出于好奇去看了一下：<br><img data-src="http://images.xyang.xin/2020%2F05%2F31%2F15909154253728.jpg?x-oss-process=style/title_800" alt="15909154253728.jpg"></p>
-<p>首页有点不一样，多了一些内容：</p>
-<ul>
-<li>默认逐字搜索（搜索结果必须同时包含输入的所有关键字）；</li>
-<li><code>~</code> 用于将关键字设置为可选（也就是搜索结果不必一定包含该关键字）；</li>
-<li><code>-</code> 减号，排除该关键字（搜索结果不包含该关键字）；</li>
-<li><code>site:</code> 仅针对某个特定网址进行搜索；</li>
-<li><code>intitle:</code> 搜索结果仅显示网站标题包含关键字的内容；</li>
-<li><code>*</code> 通配符；</li>
-<li><code>!gh</code> 重定向到 Github 搜索；</li>
-<li><code>!mdn</code> 重定向到 Mozilla MDN 搜索。</li>
-</ul>
-<p>为什么 Google、百度等搜索引擎都没有在首页给出类似的操作符 (Operators) 提示列表，或者显示一个链接到帮助文档？</p>
-<p>我认为有如下原因：</p>
-<ol>
-<li>大多数情况下最基本的搜索方式就足够用了，不需要花费很多时间去进行额外的学习，我至今就仅仅使用了前文所阐述的几种搜索方法；</li>
-<li>百度、Google 等搜索引擎作为通用软件，将 KISS(Keep it simple, stupid) 原则运用到极致，软件就是要用起来越简单越好。</li>
-</ol>
-<p>搜索引擎的核心价值无疑是拼尽全力把你最感兴趣的内容送到你的眼前，但是要懂一个人的心，在能读取你想法的机器研发出来之前，简直太难。所以为了让搜索引擎更懂我们，我认为进一步学习一些搜索引擎操作符是有必要的。Google 是我最常用的搜索引擎，百度有时也用，但下面介绍的操作符仅在 Google 上测试有效。</p>
-<ul>
-<li><code>@</code> 搜索社交媒体：<code>@twitter</code>；</li>
-<li><code>-</code> 搜索结果不包含该关键字；</li>
-<li><code>&quot;&quot;</code> 引号中的内容在搜索结果中必须完全匹配；</li>
-<li><code>..</code> 在一定范围内搜索：<code>$50..$100</code>；</li>
-<li><code>OR</code> 合并搜索，将两个搜索语句搜索到的内容合并起来显示：<code>site:nytimes.com OR @twitter</code>，搜索结果将同时显示 <code>site:nytimes.com</code> 搜索到的内容和 <code>@twitter</code> 搜索到的内容。需要 <code>AND</code> 吗？空格其实相当于 <code>AND</code>，需要 <code>NOT</code> 吗？<code>-</code> 相当于 <code>NOT</code>；</li>
-<li><code>site:</code>,<code>site:youtube.com</code> 或者 <code>site:.gov</code>、<code>site:.edu</code>；</li>
-<li><code>related:</code>，<code>related:google.com</code> 搜索结果就有 Yahoo、Bing、DuckDuckGo 等搜索引擎，可能因为其独特算法的原因，目前百度、Yandex 都没有，这个不好用，可能对美国本土网站支持比较好；</li>
-<li><code>intext:</code> 搜索主体部分包含关键字的网页，<code>intext:&quot;仰望星空 埋头工作&quot;</code></li>
-<li><code>allintext:</code> 搜索主体部分包含所有关键词的网页。<code>allintext: 鱼香肉丝 鳗鱼饭 威士忌 </code>；<br><img data-src="http://images.xyang.xin/2020%2F06%2F01%2F1591012218.png?x-oss-process=style/title_800?x-oss-process=style/title_800" alt="1591012218.png"></li>
-<li><code>intitle</code> 搜索标题包含关键词的网页，<code>intitle:&quot;world peace&quot;</code>；</li>
-<li><code>allintitle</code> 搜索标题包含所有关键词的网页；</li>
-<li><code>inurl</code> 搜索 URL 包含关键词的网页，<code>inurl:plant</code>；</li>
-<li><code>allinurl</code> 搜索 URL 中包含所有关键词的网页，<code>allinurl:plant growing</code>；</li>
-<li><code>intext:</code> 搜索主体部分包含关键词的网页，<code>intext:grow</code>；</li>
-<li><code>allintext:</code> 搜索主体部分包含所有关键词的网页，<code>allintext:pant growing</code>；</li>
-<li><code>filetype:</code> 针对文件类型进行搜索，<code>filetype:doc</code><a href="https://support.google.com/webmasters/answer/35287?hl=en">Google 可索引的文件类型</a></li>
-<li><code>imagesize:</code> 搜索指定尺寸的图片，<code>imagesize:500x400</code>，<a href="https://www.google.com/advanced_image_search">Google 高级图片搜索</a>；</li>
-<li><code>inanchor:</code> 搜索 anchor 包含关键词的网页，什么是 anchor？<code>&lt;a src=&quot;https://blog.xyang.xin&quot;&gt;world peace&lt;/a&gt;</code>，这里的 <code>world peace</code> 就是 <code>anchor</code>，一个链接除开其既定的功能，例如可以点击进行跳转，还有就是其内容 <code>src</code> 里的 URL，以及 <code>&lt;a&gt;&lt;/a&gt;</code> 标签所包含 <code>anchor</code>；<br><img data-src="http://images.xyang.xin/2020%2F06%2F03%2F1591161153.png?x-oss-process=style/title_800" alt="1591161153.png"></li>
-<li><code>allinanchor:</code> 搜索 anchor 包含所有关键词的网页，<code>allinanchor:world peace</code>；</li>
-<li><code>cache:</code> 查看 Google 对相应网站的缓存情况，<code>cache:www.wikipedia.org</code>；</li>
-<li><code>define:</code> 该操作符将展示一个关键词简明定义的信息卡，在信息卡下面是字典和其它在线参考的链接。<code>define:&quot;world peace&quot;</code> 和 <code>define: world peace</code> 搜索结果几乎一样；<br><img data-src="http://images.xyang.xin/2020%2F06%2F03%2F1591173332.png?x-oss-process=style/title_800" alt="1591173332.png"></li>
-<li><code>stocks:</code>stocks（股市），搜索结果将显示与金融相关的内容，<code>stocks:dell</code> 与 <code>dell</code> 将得到不同的搜索结果；</li>
-<li><code>wheather:</code> 查看特定地点的天气，<code>weather:beijing</code>；</li>
-<li><code>map:</code> 查看特定地点的地图，<code>map: 北京 </code>；</li>
-<li><code>in</code> 单位转换，常用的单位都有 <code>$329 in CNY</code>，<code>100cm in m</code>；</li>
-<li><code>()</code> 对搜索语句进行分组。</li>
-</ul>
+    <title>vim 多文件类型自动补全方案</title>
+    <url>/vim-multiple-filetype-deoplete/</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
+<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<p>其中的 filetype on 表示：</p>
 <blockquote>
-<p>Tip：</p>
-<ol>
-<li><p>Google 搜索通常会忽略不属于操作符的标点符号，英文大小写不影响搜索结果。不管加不加 <code>&quot;&quot;</code> 引号，标点符号和英文大小写都不影响搜索结果。</p>
-</li>
-<li><p>不要在操作符与搜索关键字之间留空格。<code>site:nytimes.com</code>，而不是 <code>site：nytimes.com</code>。</p>
-</li>
-<li><p>上述的关键词都包含关键词和关键句，简单理解不管词还是句都是字符串。<code>&quot;&quot;</code> 引号包含的内容为什么是完全匹配，因为搜索引擎将其整体视为一个字符串，并且它的另一层含义是必须包含。所以说 <code>intitle</code>、<code>intext</code> 如果搜索的内容是一个语句里面有空格的话，就必须用 <code>&quot;&quot;</code> 扩起来。</p>
-</li>
-<li><p>有些操作符可能因为更新而不可用，并且很难找到官方的更新说明，但是那些基本的应该不会被改变。</p>
-</li>
-</ol>
+<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
 </blockquote>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://support.google.com/websearch/answer/2466433?hl=en">Refine web searches - Google Search Help</a></li>
-<li><a href="https://builtmighty.com/blog/search-sites-google-site-search/">How to Search Any Website Using a Google Site Search | Built Mighty</a></li>
-<li><a href="https://ahrefs.com/blog/google-advanced-search-operators/">Google Search Operators: The Complete List (42 Advanced Operators)</a></li>
-<li>Stephan Spencer.《Google Power Search: The Essential Guide to Finding Anything Online With Google》.Second Edition.2017</li>
-</ul>
+<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
+<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
+<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">&#x27;nvim&#x27;</span>)</span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span>, &#123; <span class="string">&#x27;do&#x27;</span>: <span class="string">&#x27;:UpdateRemotePlugins&#x27;</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/nvim-yarp&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/vim-hug-neovim-rpc&#x27;</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">&#x27;Shougo/context_filetype.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">&#x27;g:context_filetype#same_filetypes&#x27;</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;javascript&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;script&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/script&gt;&#x27;</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;css&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;style&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/style&gt;&#x27;</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;functions&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;css&#x27;</span>: [<span class="string">&#x27;csscomplete#CompleteCSS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: [<span class="string">&#x27;javascriptcomplete#CompleteJS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;html&#x27;</span>: [<span class="string">&#x27;htmlcomplete#CompleteTags&#x27;</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;input_patterns&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: <span class="string">&#x27;[^. *\t]\.\w*&#x27;</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">&quot; 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">&quot;\&lt;C-n&gt;&quot;</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">&quot;\&lt;TAB&gt;&quot;</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> &quot;&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">&#x27;.&#x27;</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">&#x27;\s&#x27;</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">&quot;&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
+<p>执行 :PlugInstall</p>
+<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
+<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">&#x27;range&#x27;</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">&#x27;filetype&#x27;</span>: <span class="string">&#x27;css&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
+<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
+<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
 ]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>SE</tag>
-        <tag>搜索引擎</tag>
-        <tag>Google</tag>
+        <tag>vim</tag>
+        <tag>multiple filetype</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vim-gitgutter ——【一天一个 vim 插件】</title>
+    <url>/vim-plugin-everday-1/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F06%2F28%2Fscreenshot.png?x-oss-process=style/title_800" alt="screenshot.png"><br>在此截图你可以看见：</p>
+<ul>
+<li>183-184 行是新建的；</li>
+<li>186-187 行有所变动；</li>
+<li>在底部的预览区中显示改动情况（<leader>hp）。<br>(<a href="https://github.com/airblade/vim-gitgutter">出处</a>)<br><a href="https://github.com/airblade/vim-gitgutter">airblade/vim-gitgutter</a> </li>
+</ul>
+<p>在 vim 标志栏（sign column，行号左边的一列，通常为隐藏状态）中显示 git diff（git 差异）</p>
+<span id="more"></span>
+
+<p>这个系列主要以记住各类有用的 vim 插件的功能与使用方法为目的。</p>
+<h2 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h2><p>安装插件的方法，一般分为常规安装与插件管理器安装。常规安装将插件整个放入目录：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;.vim&#x2F;pack&#x2F;vendor&#x2F;start</span><br></pre></td></tr></table></figure>
+<p>而插件管理器安装有相似的语法，却各不相同。插件管理器安装有一定的性能亏损，但是如果有大量插件存在的情况下，没有插件管理器，将难以管理。</p>
+<p>系列目前选择 <a href="https://github.com/junegunn/vim-plug">junegunn/vim-plug</a> 插件管理器作为插件的安装方式。全程使用<code>xterm-256color</code>，没有使用<code>gui</code>。</p>
+<p>在 <code>.vimrc</code> 中写入并保存：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">empty</span>(<span class="built_in">glob</span>(<span class="string">&#x27;~/.vim/autoload/plug.vim&#x27;</span>))</span><br><span class="line">    <span class="keyword">silent</span> !curl -fLo ~/.<span class="keyword">vim</span>/autoload/plug.<span class="keyword">vim</span> --create-dirs</span><br><span class="line">                \ http<span class="variable">s:</span>//raw.githubusercontent.<span class="keyword">com</span>/junegunn/<span class="keyword">vim</span>-plug/master/plug.<span class="keyword">vim</span></span><br><span class="line">    <span class="keyword">au</span> VimEnter * PlugInstall --<span class="keyword">sync</span> | <span class="keyword">source</span> $MYVIMRC</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> plug#begin(<span class="string">&#x27;~/.vim/plugged&#x27;</span>)</span><br><span class="line">Plug <span class="string">&#x27;airblade/vim-gitgutter&#x27;</span></span><br><span class="line"><span class="keyword">call</span> plug#end()</span><br></pre></td></tr></table></figure>
+<p>重新用 Vim 打开一个文件，执行命令：<code>:PlugInstall</code>，好了 <code>vim-plug</code> 插件管理器 和 <code>vim-gitgutter</code> 插件都安装好了。</p>
+<p>标志栏背景颜色显示很丑的话，我的默认显示灰色，添加如下设置以改善：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">highlight SignColumn ctermbg&#x3D;NONE</span><br></pre></td></tr></table></figure>
+
+<p>当修改文件后，标志栏会自动刷新，而刷新的延迟决定于vim的updatetime，默认的是4000ms，建议修改如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">updatetime&#x3D;100</span><br></pre></td></tr></table></figure>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>通过 <code>[c</code> 和 <code>]c</code> 在有所变动的区块间跳转。<br><leader>hp，显示预览，hunk preview<br><leader>hs，暂存代码块，hunk stage<br><leader>hu，撤销更改，hunk undo</p>
+<p>以上是默认的映射，可以自行修改如下：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">nmap</span> ]h <span class="symbol">&lt;Plug&gt;</span>(GitGutterNextHunk)</span><br><span class="line"><span class="keyword">nmap</span> [h <span class="symbol">&lt;Plug&gt;</span>(GitGutterPrevHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hp <span class="symbol">&lt;Plug&gt;</span>(GitGutterPreviewHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hs <span class="symbol">&lt;Plug&gt;</span>(GitGutterStageHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hu <span class="symbol">&lt;Plug&gt;</span>(GitGutterUndoHunk)</span><br></pre></td></tr></table></figure>
+
+<p>You can explicitly turn vim-gitgutter off and on (defaults to on):</p>
+<p>如果在某个git项目下，不想看见这个标志栏的提示，可以使用下面的命令：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">:GitGutterDisable</span><br><span class="line">:GitGutterEnable</span><br><span class="line"></span><br><span class="line">:GitGutterBufferDisable</span><br><span class="line">:GitGutterBufferEnable</span><br></pre></td></tr></table></figure>
+<p>绑定快捷键，例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nmap &lt;leader&gt;hd :GitGutterDisable&lt;CR&gt;</span><br><span class="line">nmap &lt;leader&gt;he :GitGutterEnable&lt;CR&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>一天一个 vim 插件</tag>
       </tags>
   </entry>
 </search>
