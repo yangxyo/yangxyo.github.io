@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>目标和关键成果法 (Objectives and Key Results)</title>
+    <url>/OKRs/</url>
+    <content><![CDATA[<blockquote>
+<p>The Objective is the direction.<br>The key results have to be measured.<br>Yes.No.Simple</p>
+</blockquote>
+<h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>Being took to the wrong objectives is unacceptable.<br>被带向错误的目标是让人无法接受的。</p>
+<span id="more"></span>
+
+<p>Truly transformational teams combine their ambitions to their passion and to their purpose，and they develop a clear and compelling sense of why.<br>真正变革型的团队都会将自己的雄心、热情和目标结合到一起，他们很清楚为何要做，且理由令人信服。</p>
+<h1 id="Objective"><a href="#Objective" class="headerlink" title="Objective"></a>Objective</h1><p>Significant (重要)<br>Concrete （具体）<br>Action-oriented （以行动为导向）<br>Inspirational （激励人心）</p>
+<p>If the heart doesn’t find a perfect rhyme with the head, then your passion means nothing.<br>如果内心找不到与大脑和谐的韵律，你的热情就毫无用处。</p>
+<h1 id="Good-key-results"><a href="#Good-key-results" class="headerlink" title="Good key results"></a>Good key results</h1><p>Specific &amp; Time-bound（明确、有时间限制）<br>Aggressive Yet Realistic（激进、现实）<br>Measurable &amp; Verifiable (可衡量、可评估)</p>
+<h1 id="Why-1"><a href="#Why-1" class="headerlink" title="Why"></a>Why</h1><p>OKRs as transparent vessels, that are made from the whats and hows of our ambitions. What really matters is the why that we pour into those vessels. Thats’s why we do our work.<br> OKRS 可以看做是一个透明的容器，它由野心勃勃的“做什么”和“怎么做”构成。 真正的关键在于放进容器中的“为什么” 那是我们工作的原因。</p>
+<h1 id="Write-down-your"><a href="#Write-down-your" class="headerlink" title="Write down your"></a>Write down your</h1><p>Values (the right metrics)<br>Objectives<br>Key results</p>
+]]></content>
+      <categories>
+        <category>方法</category>
+      </categories>
+      <tags>
+        <tag>方法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>阿里云 ECS 使用</title>
     <url>/ECS/</url>
     <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><a href="https://www.alibabacloud.com/help/zh/doc-detail/25367.htm?spm=a2c63.p38356.b99.2.615e1bbcsZH9Ry">阿里云官方文档</a></p>
@@ -41,29 +64,6 @@
         <tag>ssl</tag>
         <tag>acme.sh</tag>
         <tag>letsencrypt</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>目标和关键成果法 (Objectives and Key Results)</title>
-    <url>/OKRs/</url>
-    <content><![CDATA[<blockquote>
-<p>The Objective is the direction.<br>The key results have to be measured.<br>Yes.No.Simple</p>
-</blockquote>
-<h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>Being took to the wrong objectives is unacceptable.<br>被带向错误的目标是让人无法接受的。</p>
-<span id="more"></span>
-
-<p>Truly transformational teams combine their ambitions to their passion and to their purpose，and they develop a clear and compelling sense of why.<br>真正变革型的团队都会将自己的雄心、热情和目标结合到一起，他们很清楚为何要做，且理由令人信服。</p>
-<h1 id="Objective"><a href="#Objective" class="headerlink" title="Objective"></a>Objective</h1><p>Significant (重要)<br>Concrete （具体）<br>Action-oriented （以行动为导向）<br>Inspirational （激励人心）</p>
-<p>If the heart doesn’t find a perfect rhyme with the head, then your passion means nothing.<br>如果内心找不到与大脑和谐的韵律，你的热情就毫无用处。</p>
-<h1 id="Good-key-results"><a href="#Good-key-results" class="headerlink" title="Good key results"></a>Good key results</h1><p>Specific &amp; Time-bound（明确、有时间限制）<br>Aggressive Yet Realistic（激进、现实）<br>Measurable &amp; Verifiable (可衡量、可评估)</p>
-<h1 id="Why-1"><a href="#Why-1" class="headerlink" title="Why"></a>Why</h1><p>OKRs as transparent vessels, that are made from the whats and hows of our ambitions. What really matters is the why that we pour into those vessels. Thats’s why we do our work.<br> OKRS 可以看做是一个透明的容器，它由野心勃勃的“做什么”和“怎么做”构成。 真正的关键在于放进容器中的“为什么” 那是我们工作的原因。</p>
-<h1 id="Write-down-your"><a href="#Write-down-your" class="headerlink" title="Write down your"></a>Write down your</h1><p>Values (the right metrics)<br>Objectives<br>Key results</p>
-]]></content>
-      <categories>
-        <category>方法</category>
-      </categories>
-      <tags>
-        <tag>方法</tag>
       </tags>
   </entry>
   <entry>
@@ -253,36 +253,21 @@
       </tags>
   </entry>
   <entry>
-    <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
-    <url>/es6-everday-2/</url>
-    <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p>每个函数都是 <code>Function</code> 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用<strong>函数声明语法</strong>定义的：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span> (<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>解构赋值 ———【一天一个 es6 语法】</title>
+    <url>/es6-everyday-3/</url>
+    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
 <span id="more"></span>
-<p>这与下面使用<strong>函数表达式</strong>定义函数的方式几乎相差无几：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>最后一种定义函数的方式是使用<code>Function</code>构造函数，最后一个参数始终都被看成是函数体，而前面的参数则枚举出了新函数的参数：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Function</span>(<span class="string">&quot;num1&quot;</span>, <span class="string">&quot;num2&quot;</span>, <span class="string">&quot;return num1 + num2&quot;</span>)</span><br></pre></td></tr></table></figure>
 
-<p>其中<strong>函数声明语法</strong>具有函数声明提升（function declaration hoisting）,解析器会率先读取函数声明，并使其在执行任何代码之前可用。其余的时候<strong>函数声明</strong>与<strong>函数表达式</strong>的语法其实是等价的。</p>
-<p>箭头函数针对的是<strong>函数表达式</strong>定义的函数。</p>
-<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;xxx&quot;</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="params">para</span> =&gt;</span> para + <span class="string">&quot;xxx&quot;</span>;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para1, para2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(para1 + <span class="string">&quot; and &quot;</span> + para2);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function">(<span class="params">para1, para2</span>) =&gt;</span> <span class="built_in">console</span>.log(para1 + <span class="string">&quot; and &quot;</span> + para2);</span><br></pre></td></tr></table></figure>
-
-<p>从形式上来看也就是把<strong>函数表达式</strong>定义的函数，function 去掉，在参数括号外面加 =&gt; 。没有参数用()占位，只有一个参数时可以省略括号，后面的代码块部分多于一条语句就要用大括号括起来，而只有一条语句可以省略大括号，如果是 return 语句，还可以省略 return。</p>
-<p>当然仅仅为了好看，箭头函数存在的意义并不大。</p>
-<h2 id="使用注意点"><a href="#使用注意点" class="headerlink" title="使用注意点"></a>使用注意点</h2><p>（1）函数体内的 this 对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">// Cannot read property &#x27;join&#x27; of undefined</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//chicken, hamburger, French Fries</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function">(<span class="params">delay=<span class="number">1000</span></span>)=&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//Cannot read property &#x27;join&#x27; of undefined</span></span><br></pre></td></tr></table></figure>
-<p>第三段代码将 <code>print</code> 函数声明改为一个箭头函数的形式意味着其中关键字 <code>this</code> 指代的对象就是 <code>object</code>（浏览器中是 <code>window</code>）。<br><code>setTimeout()</code>方法设置一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码，上面的代码都是 1s 后执行 <code>console.log</code> 所在的函数。</p>
-<p>（2）不可使用<code>arguments</code>对象，如果要用，可以用扩展运算符(<code>...</code>)将函数参数搜集到一个数组中。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">...theArgs</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> theArgs;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>（3）箭头函数没有自己的 <code>this</code>。<br>不能用 <code>call()</code>、<code>apply()</code>、<code>bind()</code> 这些方法去改变 <code>this</code> 的指向。</p>
+<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">&quot;Bill&quot;</span>,</span><br><span class="line">    lastnNme: <span class="string">&quot;Wilson&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
+<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">a <span class="comment">// &quot;h&quot;</span></span><br><span class="line">b <span class="comment">// &quot;e&quot;</span></span><br><span class="line">c <span class="comment">// &quot;l&quot;</span></span><br><span class="line">d <span class="comment">// &quot;l&quot;</span></span><br><span class="line">e <span class="comment">// &quot;o&quot;</span></span><br></pre></td></tr></table></figure>
+<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
 <hr>
 <h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li>《Javascript 高级程序设计（第3版）》</li>
-<li><a href="https://es6.ruanyifeng.com/#docs/function">函数的扩展 - ECMAScript 6入门</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">解构赋值 - JavaScript | MDN</a></li>
+<li><a href="https://es6.ruanyifeng.com/#docs/destructuring">变量的解构赋值 - ECMAScript 6入门</a></li>
+<li>《React 学习手册》</li>
 </ul>
 ]]></content>
       <categories>
@@ -320,32 +305,6 @@
       </categories>
       <tags>
         <tag>人生</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解构赋值 ———【一天一个 es6 语法】</title>
-    <url>/es6-everyday-3/</url>
-    <content><![CDATA[<h2 id="何为解构赋值"><a href="#何为解构赋值" class="headerlink" title="何为解构赋值"></a>何为解构赋值</h2><p>解构赋值语法是一种 javascript 表达式。通过解构赋值，可以将属性/值从对象/数组中取出，复制给其他变量。</p>
-<span id="more"></span>
-
-<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="对象解构赋值"><a href="#对象解构赋值" class="headerlink" title="对象解构赋值"></a>对象解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> regularPerson = &#123;</span><br><span class="line">    firstName: <span class="string">&quot;Bill&quot;</span>,</span><br><span class="line">    lastnNme: <span class="string">&quot;Wilson&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lordify = <span class="function">(<span class="params">&#123;firstName&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;firstName&#125;</span> of Canterbury`</span>;</span><br><span class="line">&#125;</span><br><span class="line">lordify(regularPerson);     <span class="comment">// Bill of Canterbury</span></span><br></pre></td></tr></table></figure>
-<h3 id="数组解构赋值"><a href="#数组解构赋值" class="headerlink" title="数组解构赋值"></a>数组解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [firstResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(firstResort); <span class="comment">// kirkwood</span></span><br><span class="line"><span class="keyword">var</span> [,,thirdResort] = [<span class="string">&quot;Kirkwood&quot;</span>, <span class="string">&quot;Squaw&quot;</span>, <span class="string">&quot;Alpine&quot;</span>];</span><br><span class="line"><span class="built_in">console</span>.log(thirdResort]; <span class="comment">// Alpine</span></span><br></pre></td></tr></table></figure>
-<h3 id="字符串解构赋值"><a href="#字符串解构赋值" class="headerlink" title="字符串解构赋值"></a>字符串解构赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> [a, b, c, d, e = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">a <span class="comment">// &quot;h&quot;</span></span><br><span class="line">b <span class="comment">// &quot;e&quot;</span></span><br><span class="line">c <span class="comment">// &quot;l&quot;</span></span><br><span class="line">d <span class="comment">// &quot;l&quot;</span></span><br><span class="line">e <span class="comment">// &quot;o&quot;</span></span><br></pre></td></tr></table></figure>
-<p>类似数组的对象都有一个<code>length</code>属性，因此还可以对这个属性解构赋值。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> &#123;<span class="attr">length</span>: len&#125; = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">len <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">解构赋值 - JavaScript | MDN</a></li>
-<li><a href="https://es6.ruanyifeng.com/#docs/destructuring">变量的解构赋值 - ECMAScript 6入门</a></li>
-<li>《React 学习手册》</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>【一天一个 es6 语法】</tag>
-        <tag>javascript</tag>
       </tags>
   </entry>
   <entry>
@@ -787,6 +746,47 @@
       </categories>
   </entry>
   <entry>
+    <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
+    <url>/es6-everday-2/</url>
+    <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p>每个函数都是 <code>Function</code> 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用<strong>函数声明语法</strong>定义的：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span> (<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<p>这与下面使用<strong>函数表达式</strong>定义函数的方式几乎相差无几：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>最后一种定义函数的方式是使用<code>Function</code>构造函数，最后一个参数始终都被看成是函数体，而前面的参数则枚举出了新函数的参数：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Function</span>(<span class="string">&quot;num1&quot;</span>, <span class="string">&quot;num2&quot;</span>, <span class="string">&quot;return num1 + num2&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>其中<strong>函数声明语法</strong>具有函数声明提升（function declaration hoisting）,解析器会率先读取函数声明，并使其在执行任何代码之前可用。其余的时候<strong>函数声明</strong>与<strong>函数表达式</strong>的语法其实是等价的。</p>
+<p>箭头函数针对的是<strong>函数表达式</strong>定义的函数。</p>
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;xxx&quot;</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="params">para</span> =&gt;</span> para + <span class="string">&quot;xxx&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para1, para2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(para1 + <span class="string">&quot; and &quot;</span> + para2);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function">(<span class="params">para1, para2</span>) =&gt;</span> <span class="built_in">console</span>.log(para1 + <span class="string">&quot; and &quot;</span> + para2);</span><br></pre></td></tr></table></figure>
+
+<p>从形式上来看也就是把<strong>函数表达式</strong>定义的函数，function 去掉，在参数括号外面加 =&gt; 。没有参数用()占位，只有一个参数时可以省略括号，后面的代码块部分多于一条语句就要用大括号括起来，而只有一条语句可以省略大括号，如果是 return 语句，还可以省略 return。</p>
+<p>当然仅仅为了好看，箭头函数存在的意义并不大。</p>
+<h2 id="使用注意点"><a href="#使用注意点" class="headerlink" title="使用注意点"></a>使用注意点</h2><p>（1）函数体内的 this 对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">// Cannot read property &#x27;join&#x27; of undefined</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//chicken, hamburger, French Fries</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function">(<span class="params">delay=<span class="number">1000</span></span>)=&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//Cannot read property &#x27;join&#x27; of undefined</span></span><br></pre></td></tr></table></figure>
+<p>第三段代码将 <code>print</code> 函数声明改为一个箭头函数的形式意味着其中关键字 <code>this</code> 指代的对象就是 <code>object</code>（浏览器中是 <code>window</code>）。<br><code>setTimeout()</code>方法设置一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码，上面的代码都是 1s 后执行 <code>console.log</code> 所在的函数。</p>
+<p>（2）不可使用<code>arguments</code>对象，如果要用，可以用扩展运算符(<code>...</code>)将函数参数搜集到一个数组中。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">...theArgs</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> theArgs;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>（3）箭头函数没有自己的 <code>this</code>。<br>不能用 <code>call()</code>、<code>apply()</code>、<code>bind()</code> 这些方法去改变 <code>this</code> 的指向。</p>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li>《Javascript 高级程序设计（第3版）》</li>
+<li><a href="https://es6.ruanyifeng.com/#docs/function">函数的扩展 - ECMAScript 6入门</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>【一天一个 es6 语法】</tag>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>切换 Shell 需谨慎</title>
     <url>/linux-user/</url>
     <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
@@ -802,19 +802,6 @@
       </categories>
       <tags>
         <tag>Shell</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>鲁迅</title>
-    <url>/luxun/</url>
-    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
-<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>鲁迅</tag>
       </tags>
   </entry>
   <entry>
@@ -837,60 +824,6 @@
       </categories>
       <tags>
         <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mac 大扫除🧹</title>
-    <url>/macos-clean/</url>
-    <content><![CDATA[<p>基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。</p>
-<p>通过以下命令可以查看当前路径下的所有文件及文件夹大小并从大到小排列，以 KB 为单位显示。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sk *| sort -rn</span><br></pre></td></tr></table></figure>
-<p>以下命令就是以K，M，G为单位，提高信息的可读性，但是不能正确按文件大小排序。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sh *</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-
-<h2 id="用户文件清理"><a href="#用户文件清理" class="headerlink" title="用户文件清理"></a>用户文件清理</h2><p>我们称<code>～/</code>目录下的文件为用户文件。</p>
-<ol>
-<li>卸载不必要的应用，使用 柠檬清理 或者 AppCleaner 都是免费的。</li>
-<li>通过 柠檬清理，CleanMyMac 等软件清理垃圾，删除无用的大文件，这类软件都只有管理用户文件的能力。</li>
-<li>软件的配置、下载的插件等不能直接删除，应选择性删除：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;Library&#x2F;Application Support&#x2F;</span><br></pre></td></tr></table></figure>
-<ol>
-<li>应用的缓存文件可以直接删除，不放心的话使用 trash 将其放入垃圾篓，如有异常还原便可，不用担心开不了机，用户文件也就是 ~/ 目录下的文件，是不会影响系统运行的：</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/Library/Caches/*</span><br><span class="line">// or</span><br><span class="line">brew install trash</span><br><span class="line">trash ~/Library/Caches/*</span><br></pre></td></tr></table></figure>
-<h2 id="“系统文件”清理"><a href="#“系统文件”清理" class="headerlink" title="“系统文件”清理"></a>“系统文件”清理</h2><h3 id="清理文件定位"><a href="#清理文件定位" class="headerlink" title="清理文件定位"></a>清理文件定位</h3><p>Catalina中，系统文件从原本的文件系统中分离了，组成独立的文件系统，并且把这个文件系统从设计上设定为只能读取，不能写入。<br><img data-src="http://images.xyang.xin/2020-04%2F1586700714.png" alt="1586700714.png"> </p>
-<p>而其他文件和数据存储在Macintosh HD - Data卷中，挂载在<code>/System/Volumes/Data</code>目录下，在Finder中和系统卷一样显示为Macintosh HD。<br><img data-src="http://images.xyang.xin/2020-04%2F1586754964.png" alt="1586754964.png"></p>
-<p>如何区分数据卷和系统卷呢？<br>可以说除<code>/System/Volumes/Data</code>目录下的文件，其他都是数据卷文件。</p>
-<p>我们还可以发现一个怪异的现象，最明显的是<code>/Users</code>和<code>/Applications</code>同样出现在<code>/System/Volumes/Data/Applications</code>和<code>/System/Volumes/Data/Users</code>，而且内容相同、检测出来大小都相同，并且没有占用额外的空间。</p>
-<p>这里用到的是 “Bi-directional wormhole in path traversal” （路径遍历中的双向虫洞）—— Firmlinks，一种新的文件类型对象，类似于符号链接。通过以下命令可以查看哪些文件创建了Firmlinks：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /usr/share/firmlinks</span><br></pre></td></tr></table></figure>
-<p><img data-src="http://images.xyang.xin/2020-04%2F1586753548.png" alt="1586753548.png"></p>
-<h3 id="开始清理"><a href="#开始清理" class="headerlink" title="开始清理"></a>开始清理</h3><p>系统卷不能修改和写入，所以不会产生额外的垃圾，删除一些不用的系统应用是可以的，比如国际象棋，但是它们都不怎么占空间，所以没大必要。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo rm -rf /System/Applications/Chess.app/</span><br></pre></td></tr></table></figure>
-
-<p>我们实际上就是对 数据卷 进行清理。暂且把除去<code>/Users</code>用户文件外的文件都称为系统文件吧，因为它们很多都是与系统功能相关的，</p>
-<p>通过<code>du -sk *| sort -rn</code>命令，以下六个文件夹占的空间比较大：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">30210188	Users</span><br><span class="line">18391484	Applications</span><br><span class="line">6144100	private</span><br><span class="line">4822752	usr</span><br><span class="line">4179388	System</span><br><span class="line">3856812	Library</span><br></pre></td></tr></table></figure>
-<p><code>Users</code>是用户文件我们已经清理过了<code>Applications</code>是用户下载的应用，也清理过了，重点研究后面四个文件夹。</p>
-<p><code>/System/Volumes/Data/private/var/vm</code> 这里面删了又有，我删过，并没有产生什么意外。其中 sleepimage 是用于休眠期间存储主存的内容；swapfile 用于虚拟内存存储，当物理内存满了，系统会自动“调出”未被积极使用的数据，并将其存储于 swapfile。这两个都可以关闭，但是都不建议。</p>
-<p><code>/System/Volumes/Data/System/Library/Speech</code> 占了两个多G空间是语音相关的文件<code>say 你好</code>系统就会说<code>你好</code>。</p>
-<p><code>/System/Volumes/Data/usr</code>，usr是Unix System Resource的缩写，也就是Unix操作系统软件资源，很多通过命令行安装的软件都存放在这里，比如mac包管理器brew安装的软件都存放在里面，<code>brew uninstall</code>只会卸载软件本身而不会卸载相关依赖，通过以下命令可以安全的卸载brew安装的软件及其依赖：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew tap beeftornado&#x2F;rmtree</span><br><span class="line">brew rmtree XX</span><br></pre></td></tr></table></figure>
-
-<p>其实基于不同的使用习惯和用途，会产生不同的垃圾，用 <code>du</code> 命令一层层的分析查看，了解其内容含义，再清除是比较好的方法。</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://support.apple.com/en-us/HT210650">About the read-only system volume in macOS Catalina - Apple Support</a></li>
-<li><a href="https://sspai.com/post/57052">当 Mac 升级到 Catalina 时，苹果在硬盘里施了点魔法 - 少数派</a></li>
-<li><a href="https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf">https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>MacOS</tag>
       </tags>
   </entry>
   <entry>
@@ -957,6 +890,73 @@
       </categories>
       <tags>
         <tag>开发工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鲁迅</title>
+    <url>/luxun/</url>
+    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
+<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
+]]></content>
+      <categories>
+        <category>人文修养</category>
+      </categories>
+      <tags>
+        <tag>鲁迅</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac 大扫除🧹</title>
+    <url>/macos-clean/</url>
+    <content><![CDATA[<p>基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。</p>
+<p>通过以下命令可以查看当前路径下的所有文件及文件夹大小并从大到小排列，以 KB 为单位显示。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sk *| sort -rn</span><br></pre></td></tr></table></figure>
+<p>以下命令就是以K，M，G为单位，提高信息的可读性，但是不能正确按文件大小排序。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">du -sh *</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+<h2 id="用户文件清理"><a href="#用户文件清理" class="headerlink" title="用户文件清理"></a>用户文件清理</h2><p>我们称<code>～/</code>目录下的文件为用户文件。</p>
+<ol>
+<li>卸载不必要的应用，使用 柠檬清理 或者 AppCleaner 都是免费的。</li>
+<li>通过 柠檬清理，CleanMyMac 等软件清理垃圾，删除无用的大文件，这类软件都只有管理用户文件的能力。</li>
+<li>软件的配置、下载的插件等不能直接删除，应选择性删除：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;Library&#x2F;Application Support&#x2F;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>应用的缓存文件可以直接删除，不放心的话使用 trash 将其放入垃圾篓，如有异常还原便可，不用担心开不了机，用户文件也就是 ~/ 目录下的文件，是不会影响系统运行的：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf ~/Library/Caches/*</span><br><span class="line">// or</span><br><span class="line">brew install trash</span><br><span class="line">trash ~/Library/Caches/*</span><br></pre></td></tr></table></figure>
+<h2 id="“系统文件”清理"><a href="#“系统文件”清理" class="headerlink" title="“系统文件”清理"></a>“系统文件”清理</h2><h3 id="清理文件定位"><a href="#清理文件定位" class="headerlink" title="清理文件定位"></a>清理文件定位</h3><p>Catalina中，系统文件从原本的文件系统中分离了，组成独立的文件系统，并且把这个文件系统从设计上设定为只能读取，不能写入。<br><img data-src="http://images.xyang.xin/2020-04%2F1586700714.png" alt="1586700714.png"> </p>
+<p>而其他文件和数据存储在Macintosh HD - Data卷中，挂载在<code>/System/Volumes/Data</code>目录下，在Finder中和系统卷一样显示为Macintosh HD。<br><img data-src="http://images.xyang.xin/2020-04%2F1586754964.png" alt="1586754964.png"></p>
+<p>如何区分数据卷和系统卷呢？<br>可以说除<code>/System/Volumes/Data</code>目录下的文件，其他都是数据卷文件。</p>
+<p>我们还可以发现一个怪异的现象，最明显的是<code>/Users</code>和<code>/Applications</code>同样出现在<code>/System/Volumes/Data/Applications</code>和<code>/System/Volumes/Data/Users</code>，而且内容相同、检测出来大小都相同，并且没有占用额外的空间。</p>
+<p>这里用到的是 “Bi-directional wormhole in path traversal” （路径遍历中的双向虫洞）—— Firmlinks，一种新的文件类型对象，类似于符号链接。通过以下命令可以查看哪些文件创建了Firmlinks：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /usr/share/firmlinks</span><br></pre></td></tr></table></figure>
+<p><img data-src="http://images.xyang.xin/2020-04%2F1586753548.png" alt="1586753548.png"></p>
+<h3 id="开始清理"><a href="#开始清理" class="headerlink" title="开始清理"></a>开始清理</h3><p>系统卷不能修改和写入，所以不会产生额外的垃圾，删除一些不用的系统应用是可以的，比如国际象棋，但是它们都不怎么占空间，所以没大必要。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo rm -rf /System/Applications/Chess.app/</span><br></pre></td></tr></table></figure>
+
+<p>我们实际上就是对 数据卷 进行清理。暂且把除去<code>/Users</code>用户文件外的文件都称为系统文件吧，因为它们很多都是与系统功能相关的，</p>
+<p>通过<code>du -sk *| sort -rn</code>命令，以下六个文件夹占的空间比较大：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">30210188	Users</span><br><span class="line">18391484	Applications</span><br><span class="line">6144100	private</span><br><span class="line">4822752	usr</span><br><span class="line">4179388	System</span><br><span class="line">3856812	Library</span><br></pre></td></tr></table></figure>
+<p><code>Users</code>是用户文件我们已经清理过了<code>Applications</code>是用户下载的应用，也清理过了，重点研究后面四个文件夹。</p>
+<p><code>/System/Volumes/Data/private/var/vm</code> 这里面删了又有，我删过，并没有产生什么意外。其中 sleepimage 是用于休眠期间存储主存的内容；swapfile 用于虚拟内存存储，当物理内存满了，系统会自动“调出”未被积极使用的数据，并将其存储于 swapfile。这两个都可以关闭，但是都不建议。</p>
+<p><code>/System/Volumes/Data/System/Library/Speech</code> 占了两个多G空间是语音相关的文件<code>say 你好</code>系统就会说<code>你好</code>。</p>
+<p><code>/System/Volumes/Data/usr</code>，usr是Unix System Resource的缩写，也就是Unix操作系统软件资源，很多通过命令行安装的软件都存放在这里，比如mac包管理器brew安装的软件都存放在里面，<code>brew uninstall</code>只会卸载软件本身而不会卸载相关依赖，通过以下命令可以安全的卸载brew安装的软件及其依赖：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew tap beeftornado&#x2F;rmtree</span><br><span class="line">brew rmtree XX</span><br></pre></td></tr></table></figure>
+
+<p>其实基于不同的使用习惯和用途，会产生不同的垃圾，用 <code>du</code> 命令一层层的分析查看，了解其内容含义，再清除是比较好的方法。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://support.apple.com/en-us/HT210650">About the read-only system volume in macOS Catalina - Apple Support</a></li>
+<li><a href="https://sspai.com/post/57052">当 Mac 升级到 Catalina 时，苹果在硬盘里施了点魔法 - 少数派</a></li>
+<li><a href="https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf">https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_whats_new_in_apple_file_systems.pdf</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>MacOS</tag>
       </tags>
   </entry>
   <entry>
@@ -1339,6 +1339,27 @@
       </tags>
   </entry>
   <entry>
+    <title>程序中的 “脚手架”</title>
+    <url>/scaffold/</url>
+    <content><![CDATA[<blockquote>
+<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
+</blockquote>
+<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
+<span id="more"></span>
+
+<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
+<li><a href="https://github.com/facebook/create-react-app">facebook/create-react-app</a></li>
+<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>信息技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搜索引擎使用技巧</title>
     <url>/se-operators/</url>
     <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F05%2F29%2F1590724982.png?x-oss-process=style/title_800" alt="1590724982.png"></p>
@@ -1486,27 +1507,6 @@
       </tags>
   </entry>
   <entry>
-    <title>程序中的 “脚手架”</title>
-    <url>/scaffold/</url>
-    <content><![CDATA[<blockquote>
-<p>百度百科: 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。</p>
-</blockquote>
-<h2 id="脚手架概念"><a href="#脚手架概念" class="headerlink" title="脚手架概念"></a>脚手架概念</h2><p>编程领域中的“脚手架（Scaffolding）”指的是能够快速搭建项目“骨架”的一类工具。在新建项目时，你不得不手动创建固定的文件目录，繁琐而累赘。脚手架的作用就是帮助你完成这些重复性的工作，包括一键生成主要的目录结构、安装依赖等等。</p>
-<span id="more"></span>
-
-<h2 id="React-脚手架"><a href="#React-脚手架" class="headerlink" title="React 脚手架"></a>React 脚手架</h2><ul>
-<li><a href="https://github.com/facebook/create-react-app">facebook/create-react-app</a></li>
-<li>go 语言框架 beego 的脚手架 bee（go get github.com/beego/bee）</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>信息技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux 剪贴板小技巧</title>
     <url>/ssh-clipboard-iterm2/</url>
     <content><![CDATA[<h2 id="初步识-vim-剪贴板"><a href="#初步识-vim-剪贴板" class="headerlink" title="初步识 vim 剪贴板"></a>初步识 vim 剪贴板</h2><p>对于文本的复制粘贴，系统会提供剪贴板，剪贴板在 vim 中被称为寄存器，并且 vim 有很多寄存器，寄存器使用的语法：<code>&quot;&#123;register&#125;</code>，当然了寄存器指令不会单独使用，后面都会跟代表复制的 <code>y</code> 或代表粘贴的 <code>p</code>，执行 <code>&quot;ay</code> 就将选中的内容复制到了 <code>a</code> 寄存器，<span id="more"></span>寄存器都是有自己的名字的，感兴趣的同学，欲知详细内容请参见帮助文档：<code>:help registers</code>。</p>
@@ -1611,6 +1611,157 @@
       </categories>
       <tags>
         <tag>ssm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vim 多文件类型自动补全方案</title>
+    <url>/vim-multiple-filetype-deoplete/</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
+<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<p>其中的 filetype on 表示：</p>
+<blockquote>
+<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
+</blockquote>
+<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
+<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
+<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">&#x27;nvim&#x27;</span>)</span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span>, &#123; <span class="string">&#x27;do&#x27;</span>: <span class="string">&#x27;:UpdateRemotePlugins&#x27;</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/nvim-yarp&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/vim-hug-neovim-rpc&#x27;</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">&#x27;Shougo/context_filetype.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">&#x27;g:context_filetype#same_filetypes&#x27;</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;javascript&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;script&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/script&gt;&#x27;</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;css&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;style&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/style&gt;&#x27;</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;functions&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;css&#x27;</span>: [<span class="string">&#x27;csscomplete#CompleteCSS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: [<span class="string">&#x27;javascriptcomplete#CompleteJS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;html&#x27;</span>: [<span class="string">&#x27;htmlcomplete#CompleteTags&#x27;</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;input_patterns&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: <span class="string">&#x27;[^. *\t]\.\w*&#x27;</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">&quot; 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">&quot;\&lt;C-n&gt;&quot;</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">&quot;\&lt;TAB&gt;&quot;</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> &quot;&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">&#x27;.&#x27;</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">&#x27;\s&#x27;</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">&quot;&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
+<p>执行 :PlugInstall</p>
+<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
+<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">&#x27;range&#x27;</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">&#x27;filetype&#x27;</span>: <span class="string">&#x27;css&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
+<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
+<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>multiple filetype</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vim-gitgutter ——【一天一个 vim 插件】</title>
+    <url>/vim-plugin-everday-1/</url>
+    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F06%2F28%2Fscreenshot.png?x-oss-process=style/title_800" alt="screenshot.png"><br>在此截图你可以看见：</p>
+<ul>
+<li>183-184 行是新建的；</li>
+<li>186-187 行有所变动；</li>
+<li>在底部的预览区中显示改动情况（<leader>hp）。<br>(<a href="https://github.com/airblade/vim-gitgutter">出处</a>)<br><a href="https://github.com/airblade/vim-gitgutter">airblade/vim-gitgutter</a> </li>
+</ul>
+<p>在 vim 标志栏（sign column，行号左边的一列，通常为隐藏状态）中显示 git diff（git 差异）</p>
+<span id="more"></span>
+
+<p>这个系列主要以记住各类有用的 vim 插件的功能与使用方法为目的。</p>
+<h2 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h2><p>安装插件的方法，一般分为常规安装与插件管理器安装。常规安装将插件整个放入目录：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;.vim&#x2F;pack&#x2F;vendor&#x2F;start</span><br></pre></td></tr></table></figure>
+<p>而插件管理器安装有相似的语法，却各不相同。插件管理器安装有一定的性能亏损，但是如果有大量插件存在的情况下，没有插件管理器，将难以管理。</p>
+<p>系列目前选择 <a href="https://github.com/junegunn/vim-plug">junegunn/vim-plug</a> 插件管理器作为插件的安装方式。全程使用<code>xterm-256color</code>，没有使用<code>gui</code>。</p>
+<p>在 <code>.vimrc</code> 中写入并保存：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">empty</span>(<span class="built_in">glob</span>(<span class="string">&#x27;~/.vim/autoload/plug.vim&#x27;</span>))</span><br><span class="line">    <span class="keyword">silent</span> !curl -fLo ~/.<span class="keyword">vim</span>/autoload/plug.<span class="keyword">vim</span> --create-dirs</span><br><span class="line">                \ http<span class="variable">s:</span>//raw.githubusercontent.<span class="keyword">com</span>/junegunn/<span class="keyword">vim</span>-plug/master/plug.<span class="keyword">vim</span></span><br><span class="line">    <span class="keyword">au</span> VimEnter * PlugInstall --<span class="keyword">sync</span> | <span class="keyword">source</span> $MYVIMRC</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> plug#begin(<span class="string">&#x27;~/.vim/plugged&#x27;</span>)</span><br><span class="line">Plug <span class="string">&#x27;airblade/vim-gitgutter&#x27;</span></span><br><span class="line"><span class="keyword">call</span> plug#end()</span><br></pre></td></tr></table></figure>
+<p>重新用 Vim 打开一个文件，执行命令：<code>:PlugInstall</code>，好了 <code>vim-plug</code> 插件管理器 和 <code>vim-gitgutter</code> 插件都安装好了。</p>
+<p>标志栏背景颜色显示很丑的话，我的默认显示灰色，添加如下设置以改善：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">highlight SignColumn ctermbg&#x3D;NONE</span><br></pre></td></tr></table></figure>
+
+<p>当修改文件后，标志栏会自动刷新，而刷新的延迟决定于vim的updatetime，默认的是4000ms，建议修改如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">updatetime&#x3D;100</span><br></pre></td></tr></table></figure>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>通过 <code>[c</code> 和 <code>]c</code> 在有所变动的区块间跳转。<br><leader>hp，显示预览，hunk preview<br><leader>hs，暂存代码块，hunk stage<br><leader>hu，撤销更改，hunk undo</p>
+<p>以上是默认的映射，可以自行修改如下：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">nmap</span> ]h <span class="symbol">&lt;Plug&gt;</span>(GitGutterNextHunk)</span><br><span class="line"><span class="keyword">nmap</span> [h <span class="symbol">&lt;Plug&gt;</span>(GitGutterPrevHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hp <span class="symbol">&lt;Plug&gt;</span>(GitGutterPreviewHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hs <span class="symbol">&lt;Plug&gt;</span>(GitGutterStageHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hu <span class="symbol">&lt;Plug&gt;</span>(GitGutterUndoHunk)</span><br></pre></td></tr></table></figure>
+
+<p>You can explicitly turn vim-gitgutter off and on (defaults to on):</p>
+<p>如果在某个git项目下，不想看见这个标志栏的提示，可以使用下面的命令：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">:GitGutterDisable</span><br><span class="line">:GitGutterEnable</span><br><span class="line"></span><br><span class="line">:GitGutterBufferDisable</span><br><span class="line">:GitGutterBufferEnable</span><br></pre></td></tr></table></figure>
+<p>绑定快捷键，例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nmap &lt;leader&gt;hd :GitGutterDisable&lt;CR&gt;</span><br><span class="line">nmap &lt;leader&gt;he :GitGutterEnable&lt;CR&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>一天一个 vim 插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vim-fugitive ——【一天一个 vim 插件】</title>
+    <url>/vim-plugin-everday-2/</url>
+    <content><![CDATA[<p>作为一个 10k+ star 的 vim 插件，<a href="https://github.com/tpope/vim-fugitive">tpope/vim-fugitive</a> 自称为 Git 的第一 Vim 插件并不为过。Fugitive 让你在当前 buffer 缓冲区通过<code>:Git</code>或<code>:G</code>，可以直接使用 git 命令。可以看作是<code>!git XX</code> 命令的改进和优化，除了使用 silent，静默模式外，你不会看到 “Press ENTER or type command to continue”，还对一些命令进行了优化。</p>
+<span id="more"></span>
+
+<h2 id="温故"><a href="#温故" class="headerlink" title="温故"></a>温故</h2><p>回顾一下上一个插件 vim-gitgutter 的使用方法：</p>
+<ul>
+<li><code>[c</code> 和 <code>]c</code> 在有所变动的区块间跳转。</li>
+<li><leader>hp，显示预览，hunk preview</li>
+<li><leader>hs，暂存代码块，hunk stage</li>
+<li><leader>hu，撤销更改，hunk undo</li>
+<li><leader>hd，禁用 gitgutter</li>
+<li><leader>he，启用 gitgutter</li>
+</ul>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ul>
+<li>所有命令都以<code>:G</code>或<code>:Git</code>打头，两种写法等价。</li>
+<li><code>:G -p &#123;args&#125;</code><ul>
+<li>运行任意 git 命令都可以加上，-p，这样将捕获输出到一个临时文件，并且对临时文件执行<code>:split</code>水平分割。如果使用<code>:0G -p &#123;args&#125;</code>，将用<code>:edit</code>代替。通常用于 diff 和 log 这个指令。</li>
+<li>例：<code>:G -p diff</code>,<code>:G --paginate diff</code></li>
+</ul>
+</li>
+<li><code>G</code><ul>
+<li>不带参数，会打开一个类似于 git-status 的简要窗口，在窗口中，使用 <code>g?</code> 将打开 fugitive-maps 快捷键映射帮助。</li>
+</ul>
+</li>
+<li><code>G push</code><ul>
+<li>执行 <code>git push</code></li>
+</ul>
+</li>
+<li><code>GBrowse</code></li>
+</ul>
+<hr>
+<p>待续：<br>由于我的很多 git 知识还不够完善，后面补充了再续写。<br>更多内容参见<code>:help fugitive</code></p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>一天一个 vim 插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>React-Vim 开发环境</title>
+    <url>/vim-react/</url>
+    <content><![CDATA[<h2 id="实现功能"><a href="#实现功能" class="headerlink" title="实现功能"></a>实现功能</h2><ol>
+<li>react 代码高亮、自动补全。</li>
+<li>执行<code>./node_modules/.bin/eslint --fix src/App.js</code> 即可对App.js 进行代码错误检测和格式化。</li>
+<li>变更代码自动对代码进行格式化。<span id="more"></span>
+
+</li>
+</ol>
+<h2 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm config set registry=http://registry.npmjs.org</span><br><span class="line">npm config set disturl https://npm.taobao.org/dist</span><br></pre></td></tr></table></figure>
+
+<h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><p>建议使用 vim-plug 包管理器（<a href="https://blog.xyang.xin/shell-java/#sublime">安装方式</a>）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim ~.&#x2F;vimrc</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">set</span> nu!               <span class="comment">&quot; 显示行号</span></span><br><span class="line"><span class="keyword">set</span> hls               <span class="comment">&quot; 寻找时匹配高亮显示</span></span><br><span class="line"><span class="keyword">syntax</span> <span class="keyword">on</span>             <span class="comment">&quot; 语法高亮</span></span><br><span class="line"><span class="keyword">set</span> background=dark</span><br><span class="line"><span class="keyword">colorscheme</span> solarized</span><br><span class="line"><span class="keyword">set</span> <span class="built_in">shiftwidth</span>=<span class="number">2</span>      <span class="comment">&quot; 设置格式化时代码缩进为2个空格</span></span><br><span class="line"><span class="keyword">set</span> tabstop=<span class="number">2</span>         <span class="comment">&quot; tab键缩进为4格子</span></span><br><span class="line"><span class="keyword">set</span> expandtab         <span class="comment">&quot; tab键转换为空格</span></span><br><span class="line"><span class="keyword">set</span> incsearch         <span class="comment">&quot; 很聪明的查找,输入一个字符马上自动匹配,而不是输入完再查找</span></span><br><span class="line"><span class="keyword">set</span> ignorecase        <span class="comment">&quot; 搜索时大小写不敏感</span></span><br><span class="line"><span class="keyword">set</span> wildmenu          <span class="comment">&quot; vim 自身命令行模式智能补全</span></span><br><span class="line"><span class="keyword">set</span> <span class="keyword">ts</span>=<span class="number">4</span>              <span class="comment">&quot; 设置 tab 键为四个空格</span></span><br><span class="line"><span class="keyword">set</span> <span class="built_in">cindent</span>           <span class="comment">&quot; 设置自动缩近</span></span><br><span class="line"><span class="keyword">set</span> <span class="built_in">shiftwidth</span>=<span class="number">4</span>      <span class="comment">&quot; 设置每一级缩进长度为4</span></span><br><span class="line"><span class="keyword">set</span> nocompatible      <span class="comment">&quot; 自动补全</span></span><br><span class="line"><span class="keyword">set</span> backspace=<span class="number">2</span>       <span class="comment">&quot; 解决不能删除的问题</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> plug#begin(<span class="string">&#x27;~/.vim/plugged&#x27;</span>)</span><br><span class="line"><span class="comment">&quot; react 插件</span></span><br><span class="line">Plug <span class="string">&#x27;pangloss/vim-javascript&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;mxw/vim-jsx&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;mattn/emmet-vim&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;w0rp/ale&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;skywind3000/asyncrun.vim&#x27;</span></span><br><span class="line"><span class="keyword">call</span> plug#end()</span><br><span class="line"></span><br><span class="line"> <span class="comment">&quot; emmet-vim</span></span><br><span class="line"> <span class="keyword">let</span> <span class="variable">g:user_emmet_leader_key</span>=<span class="string">&#x27;&lt;C-e&gt;&#x27;</span></span><br><span class="line"> <span class="keyword">let</span> <span class="variable">g:user_emmet_jsx</span> = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; react 自动格式化</span></span><br><span class="line"><span class="keyword">autocmd</span> BufWritePost *.js AsyncRun -post=<span class="keyword">checktime</span> ./node_modules/.bin/eslint --<span class="keyword">fix</span> %</span><br></pre></td></tr></table></figure>
+
+<h2 id="依赖安装"><a href="#依赖安装" class="headerlink" title="依赖安装"></a>依赖安装</h2><p>以 create-react-app 为例</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npx create-react-app create-react-app</span><br><span class="line">cd create-react-app</span><br><span class="line">./node_modules/.bin/eslint --init</span><br><span class="line"><span class="meta">#</span><span class="bash"> Use a popular style guide ——&gt; Airbnb ——&gt; y ——&gt; JavaScript ——&gt; n</span></span><br><span class="line">npm install --save--dev eslint-config-airbnb</span><br><span class="line">或：</span><br><span class="line">yarn add --dev eslint-config-airbnb</span><br></pre></td></tr></table></figure>
+
+<h2 id="修改-eslintrc-js-配置"><a href="#修改-eslintrc-js-配置" class="headerlink" title="修改 .eslintrc.js 配置"></a>修改 .eslintrc.js 配置</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim .eslintrc.js</span><br></pre></td></tr></table></figure>
+
+<p>覆盖原文本如下：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    <span class="string">&quot;root&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">&quot;parserOptions&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;parser&quot;</span>: <span class="string">&#x27;babel-eslint&#x27;</span>,</span><br><span class="line">         <span class="string">&quot;sourceType&quot;</span>: <span class="string">&#x27;module&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&quot;extends&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;eslint:recommended&quot;</span>,</span><br><span class="line">        <span class="string">&quot;plugin:react/recommended&quot;</span>,</span><br><span class="line">        <span class="string">&quot;eslint-config-airbnb&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;plugins&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;react&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;rules&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;react/jsx-filename-extension&quot;</span>: [<span class="number">1</span>, &#123; <span class="string">&quot;extensions&quot;</span>: [<span class="string">&quot;.js&quot;</span>, <span class="string">&quot;.jsx&quot;</span>] &#125;],</span><br><span class="line">        <span class="string">&quot;react/prefer-stateless-function&quot;</span>: <span class="string">&quot;off&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><a href="https://drivy.engineering/setting-up-vim-for-react/">Setting up Vim for React development | Drivy Engineering</a><br><a href="https://blog.xcatliu.com/2017/08/25/eslint-config-alloy/">我花了两个月时间，定制出了心目中「完美」的 ESLint 规则，我用四个空格缩进 - 流浪小猫的博客</a></p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>react</tag>
       </tags>
   </entry>
   <entry>
@@ -1740,157 +1891,6 @@
       </categories>
       <tags>
         <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vim-fugitive ——【一天一个 vim 插件】</title>
-    <url>/vim-plugin-everday-2/</url>
-    <content><![CDATA[<p>作为一个 10k+ star 的 vim 插件，<a href="https://github.com/tpope/vim-fugitive">tpope/vim-fugitive</a> 自称为 Git 的第一 Vim 插件并不为过。Fugitive 让你在当前 buffer 缓冲区通过<code>:Git</code>或<code>:G</code>，可以直接使用 git 命令。可以看作是<code>!git XX</code> 命令的改进和优化，除了使用 silent，静默模式外，你不会看到 “Press ENTER or type command to continue”，还对一些命令进行了优化。</p>
-<span id="more"></span>
-
-<h2 id="温故"><a href="#温故" class="headerlink" title="温故"></a>温故</h2><p>回顾一下上一个插件 vim-gitgutter 的使用方法：</p>
-<ul>
-<li><code>[c</code> 和 <code>]c</code> 在有所变动的区块间跳转。</li>
-<li><leader>hp，显示预览，hunk preview</li>
-<li><leader>hs，暂存代码块，hunk stage</li>
-<li><leader>hu，撤销更改，hunk undo</li>
-<li><leader>hd，禁用 gitgutter</li>
-<li><leader>he，启用 gitgutter</li>
-</ul>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ul>
-<li>所有命令都以<code>:G</code>或<code>:Git</code>打头，两种写法等价。</li>
-<li><code>:G -p &#123;args&#125;</code><ul>
-<li>运行任意 git 命令都可以加上，-p，这样将捕获输出到一个临时文件，并且对临时文件执行<code>:split</code>水平分割。如果使用<code>:0G -p &#123;args&#125;</code>，将用<code>:edit</code>代替。通常用于 diff 和 log 这个指令。</li>
-<li>例：<code>:G -p diff</code>,<code>:G --paginate diff</code></li>
-</ul>
-</li>
-<li><code>G</code><ul>
-<li>不带参数，会打开一个类似于 git-status 的简要窗口，在窗口中，使用 <code>g?</code> 将打开 fugitive-maps 快捷键映射帮助。</li>
-</ul>
-</li>
-<li><code>G push</code><ul>
-<li>执行 <code>git push</code></li>
-</ul>
-</li>
-<li><code>GBrowse</code></li>
-</ul>
-<hr>
-<p>待续：<br>由于我的很多 git 知识还不够完善，后面补充了再续写。<br>更多内容参见<code>:help fugitive</code></p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>一天一个 vim 插件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>React-Vim 开发环境</title>
-    <url>/vim-react/</url>
-    <content><![CDATA[<h2 id="实现功能"><a href="#实现功能" class="headerlink" title="实现功能"></a>实现功能</h2><ol>
-<li>react 代码高亮、自动补全。</li>
-<li>执行<code>./node_modules/.bin/eslint --fix src/App.js</code> 即可对App.js 进行代码错误检测和格式化。</li>
-<li>变更代码自动对代码进行格式化。<span id="more"></span>
-
-</li>
-</ol>
-<h2 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm config set registry=http://registry.npmjs.org</span><br><span class="line">npm config set disturl https://npm.taobao.org/dist</span><br></pre></td></tr></table></figure>
-
-<h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><p>建议使用 vim-plug 包管理器（<a href="https://blog.xyang.xin/shell-java/#sublime">安装方式</a>）</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim ~.&#x2F;vimrc</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">set</span> nu!               <span class="comment">&quot; 显示行号</span></span><br><span class="line"><span class="keyword">set</span> hls               <span class="comment">&quot; 寻找时匹配高亮显示</span></span><br><span class="line"><span class="keyword">syntax</span> <span class="keyword">on</span>             <span class="comment">&quot; 语法高亮</span></span><br><span class="line"><span class="keyword">set</span> background=dark</span><br><span class="line"><span class="keyword">colorscheme</span> solarized</span><br><span class="line"><span class="keyword">set</span> <span class="built_in">shiftwidth</span>=<span class="number">2</span>      <span class="comment">&quot; 设置格式化时代码缩进为2个空格</span></span><br><span class="line"><span class="keyword">set</span> tabstop=<span class="number">2</span>         <span class="comment">&quot; tab键缩进为4格子</span></span><br><span class="line"><span class="keyword">set</span> expandtab         <span class="comment">&quot; tab键转换为空格</span></span><br><span class="line"><span class="keyword">set</span> incsearch         <span class="comment">&quot; 很聪明的查找,输入一个字符马上自动匹配,而不是输入完再查找</span></span><br><span class="line"><span class="keyword">set</span> ignorecase        <span class="comment">&quot; 搜索时大小写不敏感</span></span><br><span class="line"><span class="keyword">set</span> wildmenu          <span class="comment">&quot; vim 自身命令行模式智能补全</span></span><br><span class="line"><span class="keyword">set</span> <span class="keyword">ts</span>=<span class="number">4</span>              <span class="comment">&quot; 设置 tab 键为四个空格</span></span><br><span class="line"><span class="keyword">set</span> <span class="built_in">cindent</span>           <span class="comment">&quot; 设置自动缩近</span></span><br><span class="line"><span class="keyword">set</span> <span class="built_in">shiftwidth</span>=<span class="number">4</span>      <span class="comment">&quot; 设置每一级缩进长度为4</span></span><br><span class="line"><span class="keyword">set</span> nocompatible      <span class="comment">&quot; 自动补全</span></span><br><span class="line"><span class="keyword">set</span> backspace=<span class="number">2</span>       <span class="comment">&quot; 解决不能删除的问题</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> plug#begin(<span class="string">&#x27;~/.vim/plugged&#x27;</span>)</span><br><span class="line"><span class="comment">&quot; react 插件</span></span><br><span class="line">Plug <span class="string">&#x27;pangloss/vim-javascript&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;mxw/vim-jsx&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;mattn/emmet-vim&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;w0rp/ale&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;skywind3000/asyncrun.vim&#x27;</span></span><br><span class="line"><span class="keyword">call</span> plug#end()</span><br><span class="line"></span><br><span class="line"> <span class="comment">&quot; emmet-vim</span></span><br><span class="line"> <span class="keyword">let</span> <span class="variable">g:user_emmet_leader_key</span>=<span class="string">&#x27;&lt;C-e&gt;&#x27;</span></span><br><span class="line"> <span class="keyword">let</span> <span class="variable">g:user_emmet_jsx</span> = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; react 自动格式化</span></span><br><span class="line"><span class="keyword">autocmd</span> BufWritePost *.js AsyncRun -post=<span class="keyword">checktime</span> ./node_modules/.bin/eslint --<span class="keyword">fix</span> %</span><br></pre></td></tr></table></figure>
-
-<h2 id="依赖安装"><a href="#依赖安装" class="headerlink" title="依赖安装"></a>依赖安装</h2><p>以 create-react-app 为例</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npx create-react-app create-react-app</span><br><span class="line">cd create-react-app</span><br><span class="line">./node_modules/.bin/eslint --init</span><br><span class="line"><span class="meta">#</span><span class="bash"> Use a popular style guide ——&gt; Airbnb ——&gt; y ——&gt; JavaScript ——&gt; n</span></span><br><span class="line">npm install --save--dev eslint-config-airbnb</span><br><span class="line">或：</span><br><span class="line">yarn add --dev eslint-config-airbnb</span><br></pre></td></tr></table></figure>
-
-<h2 id="修改-eslintrc-js-配置"><a href="#修改-eslintrc-js-配置" class="headerlink" title="修改 .eslintrc.js 配置"></a>修改 .eslintrc.js 配置</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim .eslintrc.js</span><br></pre></td></tr></table></figure>
-
-<p>覆盖原文本如下：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    <span class="string">&quot;root&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">&quot;parserOptions&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;parser&quot;</span>: <span class="string">&#x27;babel-eslint&#x27;</span>,</span><br><span class="line">         <span class="string">&quot;sourceType&quot;</span>: <span class="string">&#x27;module&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&quot;extends&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;eslint:recommended&quot;</span>,</span><br><span class="line">        <span class="string">&quot;plugin:react/recommended&quot;</span>,</span><br><span class="line">        <span class="string">&quot;eslint-config-airbnb&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;plugins&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;react&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;rules&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;react/jsx-filename-extension&quot;</span>: [<span class="number">1</span>, &#123; <span class="string">&quot;extensions&quot;</span>: [<span class="string">&quot;.js&quot;</span>, <span class="string">&quot;.jsx&quot;</span>] &#125;],</span><br><span class="line">        <span class="string">&quot;react/prefer-stateless-function&quot;</span>: <span class="string">&quot;off&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><a href="https://drivy.engineering/setting-up-vim-for-react/">Setting up Vim for React development | Drivy Engineering</a><br><a href="https://blog.xcatliu.com/2017/08/25/eslint-config-alloy/">我花了两个月时间，定制出了心目中「完美」的 ESLint 规则，我用四个空格缩进 - 流浪小猫的博客</a></p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>react</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vim 多文件类型自动补全方案</title>
-    <url>/vim-multiple-filetype-deoplete/</url>
-    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
-<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<p>其中的 filetype on 表示：</p>
-<blockquote>
-<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
-</blockquote>
-<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
-<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
-<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">&#x27;nvim&#x27;</span>)</span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span>, &#123; <span class="string">&#x27;do&#x27;</span>: <span class="string">&#x27;:UpdateRemotePlugins&#x27;</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/nvim-yarp&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/vim-hug-neovim-rpc&#x27;</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">&#x27;Shougo/context_filetype.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">&#x27;g:context_filetype#same_filetypes&#x27;</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;javascript&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;script&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/script&gt;&#x27;</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;css&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;style&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/style&gt;&#x27;</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;functions&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;css&#x27;</span>: [<span class="string">&#x27;csscomplete#CompleteCSS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: [<span class="string">&#x27;javascriptcomplete#CompleteJS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;html&#x27;</span>: [<span class="string">&#x27;htmlcomplete#CompleteTags&#x27;</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;input_patterns&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: <span class="string">&#x27;[^. *\t]\.\w*&#x27;</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">&quot; 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">&quot;\&lt;C-n&gt;&quot;</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">&quot;\&lt;TAB&gt;&quot;</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> &quot;&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">&#x27;.&#x27;</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">&#x27;\s&#x27;</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">&quot;&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
-<p>执行 :PlugInstall</p>
-<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
-<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">&#x27;range&#x27;</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">&#x27;filetype&#x27;</span>: <span class="string">&#x27;css&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
-<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
-<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
-<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>multiple filetype</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vim-gitgutter ——【一天一个 vim 插件】</title>
-    <url>/vim-plugin-everday-1/</url>
-    <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F06%2F28%2Fscreenshot.png?x-oss-process=style/title_800" alt="screenshot.png"><br>在此截图你可以看见：</p>
-<ul>
-<li>183-184 行是新建的；</li>
-<li>186-187 行有所变动；</li>
-<li>在底部的预览区中显示改动情况（<leader>hp）。<br>(<a href="https://github.com/airblade/vim-gitgutter">出处</a>)<br><a href="https://github.com/airblade/vim-gitgutter">airblade/vim-gitgutter</a> </li>
-</ul>
-<p>在 vim 标志栏（sign column，行号左边的一列，通常为隐藏状态）中显示 git diff（git 差异）</p>
-<span id="more"></span>
-
-<p>这个系列主要以记住各类有用的 vim 插件的功能与使用方法为目的。</p>
-<h2 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h2><p>安装插件的方法，一般分为常规安装与插件管理器安装。常规安装将插件整个放入目录：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;.vim&#x2F;pack&#x2F;vendor&#x2F;start</span><br></pre></td></tr></table></figure>
-<p>而插件管理器安装有相似的语法，却各不相同。插件管理器安装有一定的性能亏损，但是如果有大量插件存在的情况下，没有插件管理器，将难以管理。</p>
-<p>系列目前选择 <a href="https://github.com/junegunn/vim-plug">junegunn/vim-plug</a> 插件管理器作为插件的安装方式。全程使用<code>xterm-256color</code>，没有使用<code>gui</code>。</p>
-<p>在 <code>.vimrc</code> 中写入并保存：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">empty</span>(<span class="built_in">glob</span>(<span class="string">&#x27;~/.vim/autoload/plug.vim&#x27;</span>))</span><br><span class="line">    <span class="keyword">silent</span> !curl -fLo ~/.<span class="keyword">vim</span>/autoload/plug.<span class="keyword">vim</span> --create-dirs</span><br><span class="line">                \ http<span class="variable">s:</span>//raw.githubusercontent.<span class="keyword">com</span>/junegunn/<span class="keyword">vim</span>-plug/master/plug.<span class="keyword">vim</span></span><br><span class="line">    <span class="keyword">au</span> VimEnter * PlugInstall --<span class="keyword">sync</span> | <span class="keyword">source</span> $MYVIMRC</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> plug#begin(<span class="string">&#x27;~/.vim/plugged&#x27;</span>)</span><br><span class="line">Plug <span class="string">&#x27;airblade/vim-gitgutter&#x27;</span></span><br><span class="line"><span class="keyword">call</span> plug#end()</span><br></pre></td></tr></table></figure>
-<p>重新用 Vim 打开一个文件，执行命令：<code>:PlugInstall</code>，好了 <code>vim-plug</code> 插件管理器 和 <code>vim-gitgutter</code> 插件都安装好了。</p>
-<p>标志栏背景颜色显示很丑的话，我的默认显示灰色，添加如下设置以改善：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">highlight SignColumn ctermbg&#x3D;NONE</span><br></pre></td></tr></table></figure>
-
-<p>当修改文件后，标志栏会自动刷新，而刷新的延迟决定于vim的updatetime，默认的是4000ms，建议修改如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">updatetime&#x3D;100</span><br></pre></td></tr></table></figure>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>通过 <code>[c</code> 和 <code>]c</code> 在有所变动的区块间跳转。<br><leader>hp，显示预览，hunk preview<br><leader>hs，暂存代码块，hunk stage<br><leader>hu，撤销更改，hunk undo</p>
-<p>以上是默认的映射，可以自行修改如下：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">nmap</span> ]h <span class="symbol">&lt;Plug&gt;</span>(GitGutterNextHunk)</span><br><span class="line"><span class="keyword">nmap</span> [h <span class="symbol">&lt;Plug&gt;</span>(GitGutterPrevHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hp <span class="symbol">&lt;Plug&gt;</span>(GitGutterPreviewHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hs <span class="symbol">&lt;Plug&gt;</span>(GitGutterStageHunk)</span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span>hu <span class="symbol">&lt;Plug&gt;</span>(GitGutterUndoHunk)</span><br></pre></td></tr></table></figure>
-
-<p>You can explicitly turn vim-gitgutter off and on (defaults to on):</p>
-<p>如果在某个git项目下，不想看见这个标志栏的提示，可以使用下面的命令：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">:GitGutterDisable</span><br><span class="line">:GitGutterEnable</span><br><span class="line"></span><br><span class="line">:GitGutterBufferDisable</span><br><span class="line">:GitGutterBufferEnable</span><br></pre></td></tr></table></figure>
-<p>绑定快捷键，例如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nmap &lt;leader&gt;hd :GitGutterDisable&lt;CR&gt;</span><br><span class="line">nmap &lt;leader&gt;he :GitGutterEnable&lt;CR&gt;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>一天一个 vim 插件</tag>
       </tags>
   </entry>
 </search>
