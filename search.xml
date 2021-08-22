@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>阿里云 ECS 使用</title>
-    <url>/ECS/</url>
-    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><a href="https://www.alibabacloud.com/help/zh/doc-detail/25367.htm?spm=a2c63.p38356.b99.2.615e1bbcsZH9Ry">阿里云官方文档</a></p>
-<span id="more"></span>
-
-<h2 id="远程连接服务器常用的几种方式"><a href="#远程连接服务器常用的几种方式" class="headerlink" title="远程连接服务器常用的几种方式"></a>远程连接服务器常用的几种方式</h2><p>SSH —— 远程<br>SFTF —— 文件传输，22端口</p>
-<h2 id="安全组"><a href="#安全组" class="headerlink" title="安全组"></a>安全组</h2><h2 id="设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口"><a href="#设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口" class="headerlink" title="设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口"></a>设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口</h2><ol>
-<li>设置端口范围 22/22 协议类型自定义TCP 授权对象公网ip，22端口常用于ssh连接。</li>
-<li>设置端口范围 80/80 协议类型自定义TCP 授权对象0.0.0.0/0。<br>允许所有人通过 http 访问你的服务器。<br>80 端口常用于 http 协议访问 web 网站。相对应的 443 端口用于 https 协议访问 web 网站。3306 端口常用于数据库远程连接。出于安全考虑：如果向所有人打开 22 端口和 3306 端口，应当确保密码的复杂程度，以防强行爆破。对于新手建议将 22 端口和 3306 端口设置为仅允许指定IP访问。</li>
-</ol>
-<h2 id="设置公网出方向-——-服务器出口的限制"><a href="#设置公网出方向-——-服务器出口的限制" class="headerlink" title="设置公网出方向 —— 服务器出口的限制"></a>设置公网出方向 —— 服务器出口的限制</h2><p>没有特殊需求不需要设置。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>云服务</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>目标和关键成果法 (Objectives and Key Results)</title>
     <url>/OKRs/</url>
     <content><![CDATA[<blockquote>
@@ -41,6 +21,26 @@
       </categories>
       <tags>
         <tag>方法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阿里云 ECS 使用</title>
+    <url>/ECS/</url>
+    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><a href="https://www.alibabacloud.com/help/zh/doc-detail/25367.htm?spm=a2c63.p38356.b99.2.615e1bbcsZH9Ry">阿里云官方文档</a></p>
+<span id="more"></span>
+
+<h2 id="远程连接服务器常用的几种方式"><a href="#远程连接服务器常用的几种方式" class="headerlink" title="远程连接服务器常用的几种方式"></a>远程连接服务器常用的几种方式</h2><p>SSH —— 远程<br>SFTF —— 文件传输，22端口</p>
+<h2 id="安全组"><a href="#安全组" class="headerlink" title="安全组"></a>安全组</h2><h2 id="设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口"><a href="#设置公网入方向-——-即允许具有指定-IP-的主机访问服务器的哪个端口" class="headerlink" title="设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口"></a>设置公网入方向 —— 即允许具有指定 IP 的主机访问服务器的哪个端口</h2><ol>
+<li>设置端口范围 22/22 协议类型自定义TCP 授权对象公网ip，22端口常用于ssh连接。</li>
+<li>设置端口范围 80/80 协议类型自定义TCP 授权对象0.0.0.0/0。<br>允许所有人通过 http 访问你的服务器。<br>80 端口常用于 http 协议访问 web 网站。相对应的 443 端口用于 https 协议访问 web 网站。3306 端口常用于数据库远程连接。出于安全考虑：如果向所有人打开 22 端口和 3306 端口，应当确保密码的复杂程度，以防强行爆破。对于新手建议将 22 端口和 3306 端口设置为仅允许指定IP访问。</li>
+</ol>
+<h2 id="设置公网出方向-——-服务器出口的限制"><a href="#设置公网出方向-——-服务器出口的限制" class="headerlink" title="设置公网出方向 —— 服务器出口的限制"></a>设置公网出方向 —— 服务器出口的限制</h2><p>没有特殊需求不需要设置。</p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>云服务</tag>
       </tags>
   </entry>
   <entry>
@@ -72,6 +72,29 @@
       </categories>
       <tags>
         <tag>中国</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
+    <url>/acme-sh/</url>
+    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
+<ul>
+<li>http 认证方式</li>
+<li>dns 方式<span id="more"></span>
+
+</li>
+</ul>
+<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
+<p><a href="https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E">github 安装说明</a></p>
+<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssl</tag>
+        <tag>acme.sh</tag>
+        <tag>letsencrypt</tag>
       </tags>
   </entry>
   <entry>
@@ -185,6 +208,47 @@
       </tags>
   </entry>
   <entry>
+    <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
+    <url>/es6-everday-2/</url>
+    <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p>每个函数都是 <code>Function</code> 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用<strong>函数声明语法</strong>定义的：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span> (<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<p>这与下面使用<strong>函数表达式</strong>定义函数的方式几乎相差无几：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>最后一种定义函数的方式是使用<code>Function</code>构造函数，最后一个参数始终都被看成是函数体，而前面的参数则枚举出了新函数的参数：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Function</span>(<span class="string">&quot;num1&quot;</span>, <span class="string">&quot;num2&quot;</span>, <span class="string">&quot;return num1 + num2&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>其中<strong>函数声明语法</strong>具有函数声明提升（function declaration hoisting）,解析器会率先读取函数声明，并使其在执行任何代码之前可用。其余的时候<strong>函数声明</strong>与<strong>函数表达式</strong>的语法其实是等价的。</p>
+<p>箭头函数针对的是<strong>函数表达式</strong>定义的函数。</p>
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;xxx&quot;</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="params">para</span> =&gt;</span> para + <span class="string">&quot;xxx&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para1, para2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(para1 + <span class="string">&quot; and &quot;</span> + para2);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function">(<span class="params">para1, para2</span>) =&gt;</span> <span class="built_in">console</span>.log(para1 + <span class="string">&quot; and &quot;</span> + para2);</span><br></pre></td></tr></table></figure>
+
+<p>从形式上来看也就是把<strong>函数表达式</strong>定义的函数，function 去掉，在参数括号外面加 =&gt; 。没有参数用()占位，只有一个参数时可以省略括号，后面的代码块部分多于一条语句就要用大括号括起来，而只有一条语句可以省略大括号，如果是 return 语句，还可以省略 return。</p>
+<p>当然仅仅为了好看，箭头函数存在的意义并不大。</p>
+<h2 id="使用注意点"><a href="#使用注意点" class="headerlink" title="使用注意点"></a>使用注意点</h2><p>（1）函数体内的 this 对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">// Cannot read property &#x27;join&#x27; of undefined</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//chicken, hamburger, French Fries</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function">(<span class="params">delay=<span class="number">1000</span></span>)=&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//Cannot read property &#x27;join&#x27; of undefined</span></span><br></pre></td></tr></table></figure>
+<p>第三段代码将 <code>print</code> 函数声明改为一个箭头函数的形式意味着其中关键字 <code>this</code> 指代的对象就是 <code>object</code>（浏览器中是 <code>window</code>）。<br><code>setTimeout()</code>方法设置一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码，上面的代码都是 1s 后执行 <code>console.log</code> 所在的函数。</p>
+<p>（2）不可使用<code>arguments</code>对象，如果要用，可以用扩展运算符(<code>...</code>)将函数参数搜集到一个数组中。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">...theArgs</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> theArgs;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>（3）箭头函数没有自己的 <code>this</code>。<br>不能用 <code>call()</code>、<code>apply()</code>、<code>bind()</code> 这些方法去改变 <code>this</code> 的指向。</p>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li>《Javascript 高级程序设计（第3版）》</li>
+<li><a href="https://es6.ruanyifeng.com/#docs/function">函数的扩展 - ECMAScript 6入门</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>【一天一个 es6 语法】</tag>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Symbol ———【一天一个 es6 语法】</title>
     <url>/es6-everday-1/</url>
     <content><![CDATA[<h2 id="什么是-Symbol"><a href="#什么是-Symbol" class="headerlink" title="什么是 Symbol?"></a>什么是 Symbol?</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> 😻 = 😺 × 😍;  <span class="comment">// SyntaxError</span></span><br></pre></td></tr></table></figure>
@@ -256,47 +320,6 @@
       </tags>
   </entry>
   <entry>
-    <title>箭头函数( =&gt; ） ———【一天一个 es6 语法】</title>
-    <url>/es6-everday-2/</url>
-    <content><![CDATA[<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p>每个函数都是 <code>Function</code> 类型的实例，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，函数通常是使用<strong>函数声明语法</strong>定义的：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span> (<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<p>这与下面使用<strong>函数表达式</strong>定义函数的方式几乎相差无几：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>最后一种定义函数的方式是使用<code>Function</code>构造函数，最后一个参数始终都被看成是函数体，而前面的参数则枚举出了新函数的参数：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Function</span>(<span class="string">&quot;num1&quot;</span>, <span class="string">&quot;num2&quot;</span>, <span class="string">&quot;return num1 + num2&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<p>其中<strong>函数声明语法</strong>具有函数声明提升（function declaration hoisting）,解析器会率先读取函数声明，并使其在执行任何代码之前可用。其余的时候<strong>函数声明</strong>与<strong>函数表达式</strong>的语法其实是等价的。</p>
-<p>箭头函数针对的是<strong>函数表达式</strong>定义的函数。</p>
-<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;xxx&quot;</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="params">para</span> =&gt;</span> para + <span class="string">&quot;xxx&quot;</span>;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> funcName = <span class="function"><span class="keyword">function</span>(<span class="params">para1, para2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(para1 + <span class="string">&quot; and &quot;</span> + para2);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//等同于</span></span><br><span class="line"><span class="keyword">var</span> funcName = <span class="function">(<span class="params">para1, para2</span>) =&gt;</span> <span class="built_in">console</span>.log(para1 + <span class="string">&quot; and &quot;</span> + para2);</span><br></pre></td></tr></table></figure>
-
-<p>从形式上来看也就是把<strong>函数表达式</strong>定义的函数，function 去掉，在参数括号外面加 =&gt; 。没有参数用()占位，只有一个参数时可以省略括号，后面的代码块部分多于一条语句就要用大括号括起来，而只有一条语句可以省略大括号，如果是 return 语句，还可以省略 return。</p>
-<p>当然仅仅为了好看，箭头函数存在的意义并不大。</p>
-<h2 id="使用注意点"><a href="#使用注意点" class="headerlink" title="使用注意点"></a>使用注意点</h2><p>（1）函数体内的 this 对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">// Cannot read property &#x27;join&#x27; of undefined</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function"><span class="keyword">function</span>(<span class="params">delay=<span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//chicken, hamburger, French Fries</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> objName = &#123;</span><br><span class="line">    food: [<span class="string">&quot;chicken&quot;</span>, <span class="string">&quot;hamburger&quot;</span>, <span class="string">&quot;French Fries&quot;</span>],</span><br><span class="line">    print: <span class="function">(<span class="params">delay=<span class="number">1000</span></span>)=&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.resorts.join(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">objName.print() <span class="comment">//Cannot read property &#x27;join&#x27; of undefined</span></span><br></pre></td></tr></table></figure>
-<p>第三段代码将 <code>print</code> 函数声明改为一个箭头函数的形式意味着其中关键字 <code>this</code> 指代的对象就是 <code>object</code>（浏览器中是 <code>window</code>）。<br><code>setTimeout()</code>方法设置一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码，上面的代码都是 1s 后执行 <code>console.log</code> 所在的函数。</p>
-<p>（2）不可使用<code>arguments</code>对象，如果要用，可以用扩展运算符(<code>...</code>)将函数参数搜集到一个数组中。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">...theArgs</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> theArgs;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>（3）箭头函数没有自己的 <code>this</code>。<br>不能用 <code>call()</code>、<code>apply()</code>、<code>bind()</code> 这些方法去改变 <code>this</code> 的指向。</p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li>《Javascript 高级程序设计（第3版）》</li>
-<li><a href="https://es6.ruanyifeng.com/#docs/function">函数的扩展 - ECMAScript 6入门</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>【一天一个 es6 语法】</tag>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>人生</title>
     <url>/flesh/</url>
     <content><![CDATA[<h2 id="他的话可信吗"><a href="#他的话可信吗" class="headerlink" title="他的话可信吗"></a>他的话可信吗</h2><blockquote>
@@ -323,44 +346,6 @@
       </categories>
       <tags>
         <tag>人生</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>从 Github 下载目标仓库指定文件夹</title>
-    <url>/github-download-folder/</url>
-    <content><![CDATA[<p>从 Github 下载目标仓库指定文件夹。</p>
-<span id="more"></span>
-
-<p><a href="https://github.com/HR/github-clone">HR/github-clone: ⬇️ git clone repo subdirectories</a></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install git+git:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;github-clone#egg&#x3D;ghclone</span><br><span class="line">ghclone https:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;Crypter&#x2F;tree&#x2F;master&#x2F;app</span><br><span class="line">ghclone https:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;Picturesque&#x2F;tree&#x2F;master&#x2F;app&#x2F;src -t li50d67757gm20556d53f08126215725a698560b</span><br></pre></td></tr></table></figure>
-<p>下载私有库文件的时候需要 -t 参数，需要提供账户的 OAuth token：<br><a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">Creating a personal access token - GitHub Docs</a></p>
-<hr>
-<h2 id="git-svn-踩坑日记"><a href="#git-svn-踩坑日记" class="headerlink" title="git-svn 踩坑日记"></a>git-svn 踩坑日记</h2><p>太晚了，踩了半天坑，没踩出来，不过记录一下吧，没准以后还会用到 git-svn，再继续解决。<br>目标是通过 git svn 下载资源的目录，想法是从 stackoverflow 来的，我对 svn 一点都不了解：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git svn clone https:&#x2F;&#x2F;github.com&#x2F;user&#x2F;repo&#x2F;folder&#x2F;folder</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure>
-<p>执行前面的命令检查 CommandLineTools 是否安装，如有弹窗选择：是。一般重装系统或者系统大版本升级都要重新安装一次。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ brew reinstall git</span><br><span class="line">$ brew install apr-util</span><br><span class="line">$ brew install perl</span><br><span class="line">$ PERL_MM_OPT&#x3D;&quot;INSTALL_BASE&#x3D;$HOME&#x2F;perl5&quot; cpan local::lib</span><br><span class="line">$ echo &#39;eval &quot;$(perl -I$HOME&#x2F;perl5&#x2F;lib&#x2F;perl5 -Mlocal::lib&#x3D;$HOME&#x2F;perl5)&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ echo &#39;export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;apr&#x2F;bin:$PATH&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ echo &#39;export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;apr-util&#x2F;bin:$PATH&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ cpan SVN::Core  # 这命令耗时很久</span><br></pre></td></tr></table></figure>
-
-<h3 id="报错信息："><a href="#报错信息：" class="headerlink" title="报错信息："></a>报错信息：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Can&#39;t locate SVN&#x2F;Core.pm in @INC (you may need to install the SVN::Core module) (@INC contains: &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;git&#x2F;2.27.0&#x2F;share&#x2F;perl5</span><br></pre></td></tr></table></figure>
-
-<p>修改文件<code>/usr/local/opt/git/libexec/git-core/git-svn</code>的第一行， <code>#!/usr/bin/perl</code> 为 <code>#!/usr/local/bin/perl</code>。</p>
-<h3 id="最终报错："><a href="#最终报错：" class="headerlink" title="最终报错："></a>最终报错：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Bad URL passed to RA layer: Unrecognized URL scheme for &#39;https:&#x2F;&#x2F;github.com&#x2F;PacktPub</span><br><span class="line">lishing&#x2F;Hands-On-Full-Stack-Development-with-Go&#39; at &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;git&#x2F;2.27.0&#x2F;sha</span><br><span class="line">re&#x2F;perl5&#x2F;Git&#x2F;SVN.pm line 148.</span><br></pre></td></tr></table></figure>
-<p>git 关联的 svn 是它自带的 svn：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git svn --version</span><br><span class="line"># &#x2F;&#x2F; git-svn version 2.27.0 (svn 1.8.11)</span><br><span class="line">$ svn --version</span><br><span class="line"># &#x2F;&#x2F;svn, version 1.14.0 (r1876290)</span><br></pre></td></tr></table></figure>
-<p>和上一个报错有共同之处。</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://github.com/HR/github-clone">HR/github-clone: ⬇️ git clone repo subdirectories</a></li>
-<li><a href="https://teratail.com/questions/268932">Perl - git-svnを使用しようとした際に出るCan’t locate SVN/Core.pmというエラーの解決方法｜teratail</a></li>
-<li><a href="https://stackoverflow.com/questions/61637163/git-svn-cant-locate-svn-core-pm-after-fresh-installation-of-macos-catalina-10-1">perl - git-svn Can’t locate SVN/Core.pm after fresh installation of macOS Catalina 10.15.4 - Stack Overflow</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>git-svn</tag>
       </tags>
   </entry>
   <entry>
@@ -457,6 +442,44 @@
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>从 Github 下载目标仓库指定文件夹</title>
+    <url>/github-download-folder/</url>
+    <content><![CDATA[<p>从 Github 下载目标仓库指定文件夹。</p>
+<span id="more"></span>
+
+<p><a href="https://github.com/HR/github-clone">HR/github-clone: ⬇️ git clone repo subdirectories</a></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install git+git:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;github-clone#egg&#x3D;ghclone</span><br><span class="line">ghclone https:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;Crypter&#x2F;tree&#x2F;master&#x2F;app</span><br><span class="line">ghclone https:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;Picturesque&#x2F;tree&#x2F;master&#x2F;app&#x2F;src -t li50d67757gm20556d53f08126215725a698560b</span><br></pre></td></tr></table></figure>
+<p>下载私有库文件的时候需要 -t 参数，需要提供账户的 OAuth token：<br><a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">Creating a personal access token - GitHub Docs</a></p>
+<hr>
+<h2 id="git-svn-踩坑日记"><a href="#git-svn-踩坑日记" class="headerlink" title="git-svn 踩坑日记"></a>git-svn 踩坑日记</h2><p>太晚了，踩了半天坑，没踩出来，不过记录一下吧，没准以后还会用到 git-svn，再继续解决。<br>目标是通过 git svn 下载资源的目录，想法是从 stackoverflow 来的，我对 svn 一点都不了解：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git svn clone https:&#x2F;&#x2F;github.com&#x2F;user&#x2F;repo&#x2F;folder&#x2F;folder</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure>
+<p>执行前面的命令检查 CommandLineTools 是否安装，如有弹窗选择：是。一般重装系统或者系统大版本升级都要重新安装一次。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ brew reinstall git</span><br><span class="line">$ brew install apr-util</span><br><span class="line">$ brew install perl</span><br><span class="line">$ PERL_MM_OPT&#x3D;&quot;INSTALL_BASE&#x3D;$HOME&#x2F;perl5&quot; cpan local::lib</span><br><span class="line">$ echo &#39;eval &quot;$(perl -I$HOME&#x2F;perl5&#x2F;lib&#x2F;perl5 -Mlocal::lib&#x3D;$HOME&#x2F;perl5)&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ echo &#39;export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;apr&#x2F;bin:$PATH&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ echo &#39;export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;apr-util&#x2F;bin:$PATH&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ cpan SVN::Core  # 这命令耗时很久</span><br></pre></td></tr></table></figure>
+
+<h3 id="报错信息："><a href="#报错信息：" class="headerlink" title="报错信息："></a>报错信息：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Can&#39;t locate SVN&#x2F;Core.pm in @INC (you may need to install the SVN::Core module) (@INC contains: &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;git&#x2F;2.27.0&#x2F;share&#x2F;perl5</span><br></pre></td></tr></table></figure>
+
+<p>修改文件<code>/usr/local/opt/git/libexec/git-core/git-svn</code>的第一行， <code>#!/usr/bin/perl</code> 为 <code>#!/usr/local/bin/perl</code>。</p>
+<h3 id="最终报错："><a href="#最终报错：" class="headerlink" title="最终报错："></a>最终报错：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Bad URL passed to RA layer: Unrecognized URL scheme for &#39;https:&#x2F;&#x2F;github.com&#x2F;PacktPub</span><br><span class="line">lishing&#x2F;Hands-On-Full-Stack-Development-with-Go&#39; at &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;git&#x2F;2.27.0&#x2F;sha</span><br><span class="line">re&#x2F;perl5&#x2F;Git&#x2F;SVN.pm line 148.</span><br></pre></td></tr></table></figure>
+<p>git 关联的 svn 是它自带的 svn：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git svn --version</span><br><span class="line"># &#x2F;&#x2F; git-svn version 2.27.0 (svn 1.8.11)</span><br><span class="line">$ svn --version</span><br><span class="line"># &#x2F;&#x2F;svn, version 1.14.0 (r1876290)</span><br></pre></td></tr></table></figure>
+<p>和上一个报错有共同之处。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://github.com/HR/github-clone">HR/github-clone: ⬇️ git clone repo subdirectories</a></li>
+<li><a href="https://teratail.com/questions/268932">Perl - git-svnを使用しようとした際に出るCan’t locate SVN/Core.pmというエラーの解決方法｜teratail</a></li>
+<li><a href="https://stackoverflow.com/questions/61637163/git-svn-cant-locate-svn-core-pm-after-fresh-installation-of-macos-catalina-10-1">perl - git-svn Can’t locate SVN/Core.pm after fresh installation of macOS Catalina 10.15.4 - Stack Overflow</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>git-svn</tag>
       </tags>
   </entry>
   <entry>
@@ -601,6 +624,43 @@
       </categories>
   </entry>
   <entry>
+    <title>环形链表</title>
+    <url>/leetcode-142/</url>
+    <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><a href="https://leetcode-cn.com/problems/linked-list-cycle-ii/">142. 环形链表 II - 力扣（LeetCode）</a><br>给定一个链表，返回链表入环的第一个节点。无环返回null。<br><img data-src="http://images.xyang.xin/2020%2F09%2F13%2FlinkList.jpg?x-oss-process=style/title_800" alt="linkList.jpg"></p>
+<span id="more"></span>
+
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>环形链表问题，通用的解法，是通过设置双指针，</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> runSlow = head</span><br><span class="line"><span class="keyword">let</span> runFast = head</span><br></pre></td></tr></table></figure>
+<p>将 runFast 的速度，设置为2，runSlow 的速度设置为 1，当 runFast 所在节点等于 runSlow 所在节点代表追上了。</p>
+<p>因为 runFast 和 runSlow 同时出发，且 runFast 的速度为 runSlow 速度的两倍。<br><strong>无论如何 runSlow 跑的第一圈就会被追上</strong>。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(runFast &amp;&amp; runFast.next)&#123;</span><br><span class="line">    runFast = runFast.next.next</span><br><span class="line">    runSlow = runSlow.next</span><br><span class="line">    <span class="keyword">if</span> (runFast === runSlow)&#123;</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果有环，到这里我们已经能够得到，runFast 和 runSlow 的相遇点了。<br><img data-src="http://images.xyang.xin/2020%2F09%2F13%2FlinkListRYS.jpg?x-oss-process=style/title_800" alt="linkListRYS.jpg"></p>
+<p>题解：<br>相遇时：</p>
+<ul>
+<li>runSlow 走距离为：R + Y；</li>
+<li>runFast 走的距离为：R + n(Y+S) + Y</li>
+<li>R + n(Y+S) + Y = 2(R + Y)</li>
+<li>(n-1)Y + nS = R</li>
+</ul>
+<p>只要以上等式成立即可，可以任意取n，这里取n为1：R = S，<br><strong>也就是入口点的距离等于相遇点到这一圈终点的距离</strong>。</p>
+<p>这是我知道了 R=S 这个结论后，再推倒的，如果不知道结论，本弱还在设圈的周长的未知数呢。并且最后一步的思想很关键。<em>任意取</em>。</p>
+<p>所以根据这个结论，我们从起始点再放一个速度为 1 的节点，并且让runSlow继续跑，和这个新节点相遇的点就是入口点，这里为了节省那一点点内存，可以让runFast受累一下，让他从新从head开始以1的速度跑。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">runFast = head</span><br><span class="line"><span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(runFast == runSlow)&#123;</span><br><span class="line">        <span class="keyword">return</span> runFast</span><br><span class="line">    &#125;</span><br><span class="line">    runFast = runFast.next</span><br><span class="line">    runSlow = runSlow.next</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="知识积累"><a href="#知识积累" class="headerlink" title="知识积累"></a>知识积累</h2><ul>
+<li>入口点的距离等于相遇点到这一圈终点的距离</li>
+<li>不相关的参数可以任意设</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>leecode</tag>
+        <tag>链表</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>学习 HTTP 协议笔记</title>
     <url>/learn-http-basics/</url>
     <content><![CDATA[<h2 id="网络模型"><a href="#网络模型" class="headerlink" title="网络模型"></a>网络模型</h2><p>五层网络模型：<br><img data-src="http://images.xyang.xin/2020%2F09%2F03%2Fclassic-five-layer-model.jpg?x-oss-process=style/title_800" alt="classic-five-layer-model.jpg"></p>
@@ -727,40 +787,16 @@
       </tags>
   </entry>
   <entry>
-    <title>环形链表</title>
-    <url>/leetcode-142/</url>
-    <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><a href="https://leetcode-cn.com/problems/linked-list-cycle-ii/">142. 环形链表 II - 力扣（LeetCode）</a><br>给定一个链表，返回链表入环的第一个节点。无环返回null。<br><img data-src="http://images.xyang.xin/2020%2F09%2F13%2FlinkList.jpg?x-oss-process=style/title_800" alt="linkList.jpg"></p>
-<span id="more"></span>
-
-<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>环形链表问题，通用的解法，是通过设置双指针，</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> runSlow = head</span><br><span class="line"><span class="keyword">let</span> runFast = head</span><br></pre></td></tr></table></figure>
-<p>将 runFast 的速度，设置为2，runSlow 的速度设置为 1，当 runFast 所在节点等于 runSlow 所在节点代表追上了。</p>
-<p>因为 runFast 和 runSlow 同时出发，且 runFast 的速度为 runSlow 速度的两倍。<br><strong>无论如何 runSlow 跑的第一圈就会被追上</strong>。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(runFast &amp;&amp; runFast.next)&#123;</span><br><span class="line">    runFast = runFast.next.next</span><br><span class="line">    runSlow = runSlow.next</span><br><span class="line">    <span class="keyword">if</span> (runFast === runSlow)&#123;</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>如果有环，到这里我们已经能够得到，runFast 和 runSlow 的相遇点了。<br><img data-src="http://images.xyang.xin/2020%2F09%2F13%2FlinkListRYS.jpg?x-oss-process=style/title_800" alt="linkListRYS.jpg"></p>
-<p>题解：<br>相遇时：</p>
-<ul>
-<li>runSlow 走距离为：R + Y；</li>
-<li>runFast 走的距离为：R + n(Y+S) + Y</li>
-<li>R + n(Y+S) + Y = 2(R + Y)</li>
-<li>(n-1)Y + nS = R</li>
-</ul>
-<p>只要以上等式成立即可，可以任意取n，这里取n为1：R = S，<br><strong>也就是入口点的距离等于相遇点到这一圈终点的距离</strong>。</p>
-<p>这是我知道了 R=S 这个结论后，再推倒的，如果不知道结论，本弱还在设圈的周长的未知数呢。并且最后一步的思想很关键。<em>任意取</em>。</p>
-<p>所以根据这个结论，我们从起始点再放一个速度为 1 的节点，并且让runSlow继续跑，和这个新节点相遇的点就是入口点，这里为了节省那一点点内存，可以让runFast受累一下，让他从新从head开始以1的速度跑。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">runFast = head</span><br><span class="line"><span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(runFast == runSlow)&#123;</span><br><span class="line">        <span class="keyword">return</span> runFast</span><br><span class="line">    &#125;</span><br><span class="line">    runFast = runFast.next</span><br><span class="line">    runSlow = runSlow.next</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="知识积累"><a href="#知识积累" class="headerlink" title="知识积累"></a>知识积累</h2><ul>
-<li>入口点的距离等于相遇点到这一圈终点的距离</li>
-<li>不相关的参数可以任意设</li>
-</ul>
+    <title>鲁迅</title>
+    <url>/luxun/</url>
+    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
+<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
 ]]></content>
       <categories>
-        <category>信息技术</category>
+        <category>人文修养</category>
       </categories>
       <tags>
-        <tag>leecode</tag>
-        <tag>链表</tag>
+        <tag>鲁迅</tag>
       </tags>
   </entry>
   <entry>
@@ -779,19 +815,6 @@
       </categories>
       <tags>
         <tag>Shell</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>鲁迅</title>
-    <url>/luxun/</url>
-    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
-<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
-]]></content>
-      <categories>
-        <category>人文修养</category>
-      </categories>
-      <tags>
-        <tag>鲁迅</tag>
       </tags>
   </entry>
   <entry>
@@ -814,72 +837,6 @@
       </categories>
       <tags>
         <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mac 配置上云神器 Mackup</title>
-    <url>/mackup/</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="https://github.com/lra/mackup">mackup</a> 是一款受关注度很高的开源软件，可运行于 osx 和 linux 系统。用于保持应用程序设置同步，可快捷的备份许多流行的应用程序。</p>
-<span id="more"></span>
-
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>有 brew 和 pip 两种推荐安装方式。</p>
-<ul>
-<li>Install Mackup<br><code>brew install mackup</code></li>
-<li>Install Mackup with PIP<br><code>pip install --upgrade mackup</code></li>
-</ul>
-<p>还需要简单的<a href="https://github.com/lra/mackup/tree/master/doc">配置</a>才可使用。</p>
-<p>创建 ～/.mackup.cfg 文件，根据需要添加配置。</p>
-<p>可添加的配置如下：</p>
-<ol>
-<li><p>支持存储引擎：Dropbox、Google Drive、iCloud、Copy。<br> 例如选择存储到 icloud 添加如下配置即可：</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; icloud</span><br></pre></td></tr></table></figure></li>
-<li><p>备份到指定文件夹。</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; file_system</span><br><span class="line">path &#x3D; some&#x2F;folder&#x2F;in&#x2F;your&#x2F;home（空格不需要转义）</span><br></pre></td></tr></table></figure>
-<p> 指向存储引擎的路径怎么样？是不是就支持所有的存储引擎了呢。</p>
-</li>
-<li><p>支持修改备份文件夹的名字，改为隐藏文件夹。（备份隐藏起来了）</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; icloud</span><br><span class="line">directory &#x3D; .config&#x2F;mackup</span><br></pre></td></tr></table></figure></li>
-<li><p>选择你所要备份的应用。</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[applications_to_sync]</span><br><span class="line">ssh</span><br><span class="line">adium</span><br></pre></td></tr></table></figure></li>
-<li><p>选择你不想备份的应用。</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[applications_to_ignore]</span><br><span class="line">ssh</span><br><span class="line">adium</span><br></pre></td></tr></table></figure></li>
-<li><p>向官方提交支持应用的申请。</p>
-</li>
-<li><p>自定义很方便！</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir ~&#x2F;.mackup</span><br><span class="line">touch ~&#x2F;.mackup&#x2F;my-files.cfg</span><br></pre></td></tr></table></figure>
-<p> 在 my-files.cfg 中配置如下</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[application]</span><br><span class="line">name &#x3D; XXX </span><br><span class="line"></span><br><span class="line">[configuration_files]</span><br><span class="line">Library&#x2F;XXX         (从 Library 开始末尾无 &#x2F;)</span><br></pre></td></tr></table></figure>
-
-
-</li>
-</ol>
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>备份应用的设置：</p>
-<pre><code>`mackup backup`</code></pre>
-<p>强制同意备份请求：</p>
-<pre><code>`mackup backup -f`</code></pre>
-<p>使用备份的设置：</p>
-<pre><code>`mackup restore`</code></pre>
-<p>应用不进行备份处理：</p>
-<pre><code>`mackup uninstall`</code></pre>
-<p>使用帮助：</p>
-<pre><code>`mackup -h`</code></pre>
-<h2 id="注意⚠️"><a href="#注意⚠️" class="headerlink" title="注意⚠️"></a>注意⚠️</h2><p>我最初使用 Mackup 只是为了备份配置，日后更换电脑方便，而没有去理解它的精髓，所以造成了不必要的时间损失，重新手动配置了诸多环境。认识到是自己操作不当所造成后，也只能为它写下这篇博客。</p>
-<p>mackup 的备份命令说执行的并不是 copy。“保持应用程序设置同步”才是它的核心要义。<br>mackup backup 相当于如下三个命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cp ~/.gitconfig ~/Dropbox/Mackup/.gitconfig</span><br><span class="line">rm ~/.gitconfig</span><br><span class="line">ln -s ~/Dropbox/Mackup/.gitconfig ~/.gitconfig</span><br></pre></td></tr></table></figure>
-<ol>
-<li>将配置拷贝到你所配置的 mackup 备份路径之下。</li>
-<li>删除原本的配置。</li>
-<li>将备份后的路径软链接到原来的路径下。</li>
-</ol>
-<p>每台电脑都使用云上的配置，从而达到了应用程序设置同步的目的。<br>同时使用软链接的方式节省了一定的存储空间。</p>
-<p>那如果把云上的配置删了怎么办呢？那么备份过的应用都只有一个软链接。。。<br>清空了垃圾篓，这个时候该咋办呢😢，做数据恢复？还是通过云近期删除找回，icloud 我是没找回过。</p>
-<p>所以理解了之后，记得执行 <code>mackup uninstall</code> 再删。😣<br>修改 mac 账户名名称前也记得 <code>mackup uninstall</code>.</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>开发工具</tag>
       </tags>
   </entry>
   <entry>
@@ -1793,6 +1750,41 @@
       </tags>
   </entry>
   <entry>
+    <title>React-Vim 开发环境</title>
+    <url>/vim-react/</url>
+    <content><![CDATA[<h2 id="实现功能"><a href="#实现功能" class="headerlink" title="实现功能"></a>实现功能</h2><ol>
+<li>react 代码高亮、自动补全。</li>
+<li>执行<code>./node_modules/.bin/eslint --fix src/App.js</code> 即可对App.js 进行代码错误检测和格式化。</li>
+<li>变更代码自动对代码进行格式化。<span id="more"></span>
+
+</li>
+</ol>
+<h2 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm config set registry=http://registry.npmjs.org</span><br><span class="line">npm config set disturl https://npm.taobao.org/dist</span><br></pre></td></tr></table></figure>
+
+<h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><p>建议使用 vim-plug 包管理器（<a href="https://blog.xyang.xin/shell-java/#sublime">安装方式</a>）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim ~.&#x2F;vimrc</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">set</span> nu!               <span class="comment">&quot; 显示行号</span></span><br><span class="line"><span class="keyword">set</span> hls               <span class="comment">&quot; 寻找时匹配高亮显示</span></span><br><span class="line"><span class="keyword">syntax</span> <span class="keyword">on</span>             <span class="comment">&quot; 语法高亮</span></span><br><span class="line"><span class="keyword">set</span> background=dark</span><br><span class="line"><span class="keyword">colorscheme</span> solarized</span><br><span class="line"><span class="keyword">set</span> <span class="built_in">shiftwidth</span>=<span class="number">2</span>      <span class="comment">&quot; 设置格式化时代码缩进为2个空格</span></span><br><span class="line"><span class="keyword">set</span> tabstop=<span class="number">2</span>         <span class="comment">&quot; tab键缩进为4格子</span></span><br><span class="line"><span class="keyword">set</span> expandtab         <span class="comment">&quot; tab键转换为空格</span></span><br><span class="line"><span class="keyword">set</span> incsearch         <span class="comment">&quot; 很聪明的查找,输入一个字符马上自动匹配,而不是输入完再查找</span></span><br><span class="line"><span class="keyword">set</span> ignorecase        <span class="comment">&quot; 搜索时大小写不敏感</span></span><br><span class="line"><span class="keyword">set</span> wildmenu          <span class="comment">&quot; vim 自身命令行模式智能补全</span></span><br><span class="line"><span class="keyword">set</span> <span class="keyword">ts</span>=<span class="number">4</span>              <span class="comment">&quot; 设置 tab 键为四个空格</span></span><br><span class="line"><span class="keyword">set</span> <span class="built_in">cindent</span>           <span class="comment">&quot; 设置自动缩近</span></span><br><span class="line"><span class="keyword">set</span> <span class="built_in">shiftwidth</span>=<span class="number">4</span>      <span class="comment">&quot; 设置每一级缩进长度为4</span></span><br><span class="line"><span class="keyword">set</span> nocompatible      <span class="comment">&quot; 自动补全</span></span><br><span class="line"><span class="keyword">set</span> backspace=<span class="number">2</span>       <span class="comment">&quot; 解决不能删除的问题</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> plug#begin(<span class="string">&#x27;~/.vim/plugged&#x27;</span>)</span><br><span class="line"><span class="comment">&quot; react 插件</span></span><br><span class="line">Plug <span class="string">&#x27;pangloss/vim-javascript&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;mxw/vim-jsx&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;mattn/emmet-vim&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;w0rp/ale&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;skywind3000/asyncrun.vim&#x27;</span></span><br><span class="line"><span class="keyword">call</span> plug#end()</span><br><span class="line"></span><br><span class="line"> <span class="comment">&quot; emmet-vim</span></span><br><span class="line"> <span class="keyword">let</span> <span class="variable">g:user_emmet_leader_key</span>=<span class="string">&#x27;&lt;C-e&gt;&#x27;</span></span><br><span class="line"> <span class="keyword">let</span> <span class="variable">g:user_emmet_jsx</span> = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; react 自动格式化</span></span><br><span class="line"><span class="keyword">autocmd</span> BufWritePost *.js AsyncRun -post=<span class="keyword">checktime</span> ./node_modules/.bin/eslint --<span class="keyword">fix</span> %</span><br></pre></td></tr></table></figure>
+
+<h2 id="依赖安装"><a href="#依赖安装" class="headerlink" title="依赖安装"></a>依赖安装</h2><p>以 create-react-app 为例</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npx create-react-app create-react-app</span><br><span class="line">cd create-react-app</span><br><span class="line">./node_modules/.bin/eslint --init</span><br><span class="line"><span class="meta">#</span><span class="bash"> Use a popular style guide ——&gt; Airbnb ——&gt; y ——&gt; JavaScript ——&gt; n</span></span><br><span class="line">npm install --save--dev eslint-config-airbnb</span><br><span class="line">或：</span><br><span class="line">yarn add --dev eslint-config-airbnb</span><br></pre></td></tr></table></figure>
+
+<h2 id="修改-eslintrc-js-配置"><a href="#修改-eslintrc-js-配置" class="headerlink" title="修改 .eslintrc.js 配置"></a>修改 .eslintrc.js 配置</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim .eslintrc.js</span><br></pre></td></tr></table></figure>
+
+<p>覆盖原文本如下：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    <span class="string">&quot;root&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">&quot;parserOptions&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;parser&quot;</span>: <span class="string">&#x27;babel-eslint&#x27;</span>,</span><br><span class="line">         <span class="string">&quot;sourceType&quot;</span>: <span class="string">&#x27;module&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&quot;extends&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;eslint:recommended&quot;</span>,</span><br><span class="line">        <span class="string">&quot;plugin:react/recommended&quot;</span>,</span><br><span class="line">        <span class="string">&quot;eslint-config-airbnb&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;plugins&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;react&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;rules&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;react/jsx-filename-extension&quot;</span>: [<span class="number">1</span>, &#123; <span class="string">&quot;extensions&quot;</span>: [<span class="string">&quot;.js&quot;</span>, <span class="string">&quot;.jsx&quot;</span>] &#125;],</span><br><span class="line">        <span class="string">&quot;react/prefer-stateless-function&quot;</span>: <span class="string">&quot;off&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><a href="https://drivy.engineering/setting-up-vim-for-react/">Setting up Vim for React development | Drivy Engineering</a><br><a href="https://blog.xcatliu.com/2017/08/25/eslint-config-alloy/">我花了两个月时间，定制出了心目中「完美」的 ESLint 规则，我用四个空格缩进 - 流浪小猫的博客</a></p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>react</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>vim-fugitive ——【一天一个 vim 插件】</title>
     <url>/vim-plugin-everday-2/</url>
     <content><![CDATA[<p>作为一个 10k+ star 的 vim 插件，<a href="https://github.com/tpope/vim-fugitive">tpope/vim-fugitive</a> 自称为 Git 的第一 Vim 插件并不为过。Fugitive 让你在当前 buffer 缓冲区通过<code>:Git</code>或<code>:G</code>，可以直接使用 git 命令。可以看作是<code>!git XX</code> 命令的改进和优化，除了使用 silent，静默模式外，你不会看到 “Press ENTER or type command to continue”，还对一些命令进行了优化。</p>
@@ -1836,61 +1828,69 @@
       </tags>
   </entry>
   <entry>
-    <title>React-Vim 开发环境</title>
-    <url>/vim-react/</url>
-    <content><![CDATA[<h2 id="实现功能"><a href="#实现功能" class="headerlink" title="实现功能"></a>实现功能</h2><ol>
-<li>react 代码高亮、自动补全。</li>
-<li>执行<code>./node_modules/.bin/eslint --fix src/App.js</code> 即可对App.js 进行代码错误检测和格式化。</li>
-<li>变更代码自动对代码进行格式化。<span id="more"></span>
+    <title>Mac 配置上云神器 Mackup</title>
+    <url>/mackup/</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="https://github.com/lra/mackup">mackup</a> 是一款受关注度很高的开源软件，可运行于 osx 和 linux 系统。用于保持应用程序设置同步，可快捷的备份许多流行的应用程序。</p>
+<span id="more"></span>
+
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>有 brew 和 pip 两种推荐安装方式。</p>
+<ul>
+<li>Install Mackup<br><code>brew install mackup</code></li>
+<li>Install Mackup with PIP<br><code>pip install --upgrade mackup</code></li>
+</ul>
+<p>还需要简单的<a href="https://github.com/lra/mackup/tree/master/doc">配置</a>才可使用。</p>
+<p>创建 ～/.mackup.cfg 文件，根据需要添加配置。</p>
+<p>可添加的配置如下：</p>
+<ol>
+<li><p>支持存储引擎：Dropbox、Google Drive、iCloud、Copy。<br> 例如选择存储到 icloud 添加如下配置即可：</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; icloud</span><br></pre></td></tr></table></figure></li>
+<li><p>备份到指定文件夹。</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; file_system</span><br><span class="line">path &#x3D; some&#x2F;folder&#x2F;in&#x2F;your&#x2F;home（空格不需要转义）</span><br></pre></td></tr></table></figure>
+<p> 指向存储引擎的路径怎么样？是不是就支持所有的存储引擎了呢。</p>
+</li>
+<li><p>支持修改备份文件夹的名字，改为隐藏文件夹。（备份隐藏起来了）</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[storage]</span><br><span class="line">engine &#x3D; icloud</span><br><span class="line">directory &#x3D; .config&#x2F;mackup</span><br></pre></td></tr></table></figure></li>
+<li><p>选择你所要备份的应用。</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[applications_to_sync]</span><br><span class="line">ssh</span><br><span class="line">adium</span><br></pre></td></tr></table></figure></li>
+<li><p>选择你不想备份的应用。</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[applications_to_ignore]</span><br><span class="line">ssh</span><br><span class="line">adium</span><br></pre></td></tr></table></figure></li>
+<li><p>向官方提交支持应用的申请。</p>
+</li>
+<li><p>自定义很方便！</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir ~&#x2F;.mackup</span><br><span class="line">touch ~&#x2F;.mackup&#x2F;my-files.cfg</span><br></pre></td></tr></table></figure>
+<p> 在 my-files.cfg 中配置如下</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[application]</span><br><span class="line">name &#x3D; XXX </span><br><span class="line"></span><br><span class="line">[configuration_files]</span><br><span class="line">Library&#x2F;XXX         (从 Library 开始末尾无 &#x2F;)</span><br></pre></td></tr></table></figure>
+
 
 </li>
 </ol>
-<h2 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm config set registry=http://registry.npmjs.org</span><br><span class="line">npm config set disturl https://npm.taobao.org/dist</span><br></pre></td></tr></table></figure>
-
-<h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><p>建议使用 vim-plug 包管理器（<a href="https://blog.xyang.xin/shell-java/#sublime">安装方式</a>）</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim ~.&#x2F;vimrc</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">set</span> nu!               <span class="comment">&quot; 显示行号</span></span><br><span class="line"><span class="keyword">set</span> hls               <span class="comment">&quot; 寻找时匹配高亮显示</span></span><br><span class="line"><span class="keyword">syntax</span> <span class="keyword">on</span>             <span class="comment">&quot; 语法高亮</span></span><br><span class="line"><span class="keyword">set</span> background=dark</span><br><span class="line"><span class="keyword">colorscheme</span> solarized</span><br><span class="line"><span class="keyword">set</span> <span class="built_in">shiftwidth</span>=<span class="number">2</span>      <span class="comment">&quot; 设置格式化时代码缩进为2个空格</span></span><br><span class="line"><span class="keyword">set</span> tabstop=<span class="number">2</span>         <span class="comment">&quot; tab键缩进为4格子</span></span><br><span class="line"><span class="keyword">set</span> expandtab         <span class="comment">&quot; tab键转换为空格</span></span><br><span class="line"><span class="keyword">set</span> incsearch         <span class="comment">&quot; 很聪明的查找,输入一个字符马上自动匹配,而不是输入完再查找</span></span><br><span class="line"><span class="keyword">set</span> ignorecase        <span class="comment">&quot; 搜索时大小写不敏感</span></span><br><span class="line"><span class="keyword">set</span> wildmenu          <span class="comment">&quot; vim 自身命令行模式智能补全</span></span><br><span class="line"><span class="keyword">set</span> <span class="keyword">ts</span>=<span class="number">4</span>              <span class="comment">&quot; 设置 tab 键为四个空格</span></span><br><span class="line"><span class="keyword">set</span> <span class="built_in">cindent</span>           <span class="comment">&quot; 设置自动缩近</span></span><br><span class="line"><span class="keyword">set</span> <span class="built_in">shiftwidth</span>=<span class="number">4</span>      <span class="comment">&quot; 设置每一级缩进长度为4</span></span><br><span class="line"><span class="keyword">set</span> nocompatible      <span class="comment">&quot; 自动补全</span></span><br><span class="line"><span class="keyword">set</span> backspace=<span class="number">2</span>       <span class="comment">&quot; 解决不能删除的问题</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> plug#begin(<span class="string">&#x27;~/.vim/plugged&#x27;</span>)</span><br><span class="line"><span class="comment">&quot; react 插件</span></span><br><span class="line">Plug <span class="string">&#x27;pangloss/vim-javascript&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;mxw/vim-jsx&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;mattn/emmet-vim&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;w0rp/ale&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;skywind3000/asyncrun.vim&#x27;</span></span><br><span class="line"><span class="keyword">call</span> plug#end()</span><br><span class="line"></span><br><span class="line"> <span class="comment">&quot; emmet-vim</span></span><br><span class="line"> <span class="keyword">let</span> <span class="variable">g:user_emmet_leader_key</span>=<span class="string">&#x27;&lt;C-e&gt;&#x27;</span></span><br><span class="line"> <span class="keyword">let</span> <span class="variable">g:user_emmet_jsx</span> = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; react 自动格式化</span></span><br><span class="line"><span class="keyword">autocmd</span> BufWritePost *.js AsyncRun -post=<span class="keyword">checktime</span> ./node_modules/.bin/eslint --<span class="keyword">fix</span> %</span><br></pre></td></tr></table></figure>
-
-<h2 id="依赖安装"><a href="#依赖安装" class="headerlink" title="依赖安装"></a>依赖安装</h2><p>以 create-react-app 为例</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npx create-react-app create-react-app</span><br><span class="line">cd create-react-app</span><br><span class="line">./node_modules/.bin/eslint --init</span><br><span class="line"><span class="meta">#</span><span class="bash"> Use a popular style guide ——&gt; Airbnb ——&gt; y ——&gt; JavaScript ——&gt; n</span></span><br><span class="line">npm install --save--dev eslint-config-airbnb</span><br><span class="line">或：</span><br><span class="line">yarn add --dev eslint-config-airbnb</span><br></pre></td></tr></table></figure>
-
-<h2 id="修改-eslintrc-js-配置"><a href="#修改-eslintrc-js-配置" class="headerlink" title="修改 .eslintrc.js 配置"></a>修改 .eslintrc.js 配置</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim .eslintrc.js</span><br></pre></td></tr></table></figure>
-
-<p>覆盖原文本如下：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    <span class="string">&quot;root&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">&quot;parserOptions&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;parser&quot;</span>: <span class="string">&#x27;babel-eslint&#x27;</span>,</span><br><span class="line">         <span class="string">&quot;sourceType&quot;</span>: <span class="string">&#x27;module&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&quot;extends&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;eslint:recommended&quot;</span>,</span><br><span class="line">        <span class="string">&quot;plugin:react/recommended&quot;</span>,</span><br><span class="line">        <span class="string">&quot;eslint-config-airbnb&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;plugins&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;react&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;rules&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;react/jsx-filename-extension&quot;</span>: [<span class="number">1</span>, &#123; <span class="string">&quot;extensions&quot;</span>: [<span class="string">&quot;.js&quot;</span>, <span class="string">&quot;.jsx&quot;</span>] &#125;],</span><br><span class="line">        <span class="string">&quot;react/prefer-stateless-function&quot;</span>: <span class="string">&quot;off&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><a href="https://drivy.engineering/setting-up-vim-for-react/">Setting up Vim for React development | Drivy Engineering</a><br><a href="https://blog.xcatliu.com/2017/08/25/eslint-config-alloy/">我花了两个月时间，定制出了心目中「完美」的 ESLint 规则，我用四个空格缩进 - 流浪小猫的博客</a></p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>备份应用的设置：</p>
+<pre><code>`mackup backup`</code></pre>
+<p>强制同意备份请求：</p>
+<pre><code>`mackup backup -f`</code></pre>
+<p>使用备份的设置：</p>
+<pre><code>`mackup restore`</code></pre>
+<p>应用不进行备份处理：</p>
+<pre><code>`mackup uninstall`</code></pre>
+<p>使用帮助：</p>
+<pre><code>`mackup -h`</code></pre>
+<h2 id="注意⚠️"><a href="#注意⚠️" class="headerlink" title="注意⚠️"></a>注意⚠️</h2><p>我最初使用 Mackup 只是为了备份配置，日后更换电脑方便，而没有去理解它的精髓，所以造成了不必要的时间损失，重新手动配置了诸多环境。认识到是自己操作不当所造成后，也只能为它写下这篇博客。</p>
+<p>mackup 的备份命令说执行的并不是 copy。“保持应用程序设置同步”才是它的核心要义。<br>mackup backup 相当于如下三个命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cp ~/.gitconfig ~/Dropbox/Mackup/.gitconfig</span><br><span class="line">rm ~/.gitconfig</span><br><span class="line">ln -s ~/Dropbox/Mackup/.gitconfig ~/.gitconfig</span><br></pre></td></tr></table></figure>
+<ol>
+<li>将配置拷贝到你所配置的 mackup 备份路径之下。</li>
+<li>删除原本的配置。</li>
+<li>将备份后的路径软链接到原来的路径下。</li>
+</ol>
+<p>每台电脑都使用云上的配置，从而达到了应用程序设置同步的目的。<br>同时使用软链接的方式节省了一定的存储空间。</p>
+<p>那如果把云上的配置删了怎么办呢？那么备份过的应用都只有一个软链接。。。<br>清空了垃圾篓，这个时候该咋办呢😢，做数据恢复？还是通过云近期删除找回，icloud 我是没找回过。</p>
+<p>所以理解了之后，记得执行 <code>mackup uninstall</code> 再删。😣<br>修改 mac 账户名名称前也记得 <code>mackup uninstall</code>.</p>
 ]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>vim</tag>
-        <tag>react</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
-    <url>/acme-sh/</url>
-    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
-<ul>
-<li>http 认证方式</li>
-<li>dns 方式<span id="more"></span>
-
-</li>
-</ul>
-<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
-<p><a href="https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E">github 安装说明</a></p>
-<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;&#x2F;usr&#x2F;local&#x2F;haproxy&#x2F;start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>ssl</tag>
-        <tag>acme.sh</tag>
-        <tag>letsencrypt</tag>
+        <tag>开发工具</tag>
       </tags>
   </entry>
 </search>
