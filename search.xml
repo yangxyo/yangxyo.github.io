@@ -349,6 +349,44 @@
       </tags>
   </entry>
   <entry>
+    <title>从 Github 下载目标仓库指定文件夹</title>
+    <url>/github-download-folder/</url>
+    <content><![CDATA[<p>从 Github 下载目标仓库指定文件夹。</p>
+<span id="more"></span>
+
+<p><a href="https://github.com/HR/github-clone">HR/github-clone: ⬇️ git clone repo subdirectories</a></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install git+git:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;github-clone#egg&#x3D;ghclone</span><br><span class="line">ghclone https:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;Crypter&#x2F;tree&#x2F;master&#x2F;app</span><br><span class="line">ghclone https:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;Picturesque&#x2F;tree&#x2F;master&#x2F;app&#x2F;src -t li50d67757gm20556d53f08126215725a698560b</span><br></pre></td></tr></table></figure>
+<p>下载私有库文件的时候需要 -t 参数，需要提供账户的 OAuth token：<br><a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">Creating a personal access token - GitHub Docs</a></p>
+<hr>
+<h2 id="git-svn-踩坑日记"><a href="#git-svn-踩坑日记" class="headerlink" title="git-svn 踩坑日记"></a>git-svn 踩坑日记</h2><p>太晚了，踩了半天坑，没踩出来，不过记录一下吧，没准以后还会用到 git-svn，再继续解决。<br>目标是通过 git svn 下载资源的目录，想法是从 stackoverflow 来的，我对 svn 一点都不了解：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git svn clone https:&#x2F;&#x2F;github.com&#x2F;user&#x2F;repo&#x2F;folder&#x2F;folder</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure>
+<p>执行前面的命令检查 CommandLineTools 是否安装，如有弹窗选择：是。一般重装系统或者系统大版本升级都要重新安装一次。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ brew reinstall git</span><br><span class="line">$ brew install apr-util</span><br><span class="line">$ brew install perl</span><br><span class="line">$ PERL_MM_OPT&#x3D;&quot;INSTALL_BASE&#x3D;$HOME&#x2F;perl5&quot; cpan local::lib</span><br><span class="line">$ echo &#39;eval &quot;$(perl -I$HOME&#x2F;perl5&#x2F;lib&#x2F;perl5 -Mlocal::lib&#x3D;$HOME&#x2F;perl5)&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ echo &#39;export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;apr&#x2F;bin:$PATH&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ echo &#39;export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;apr-util&#x2F;bin:$PATH&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ cpan SVN::Core  # 这命令耗时很久</span><br></pre></td></tr></table></figure>
+
+<h3 id="报错信息："><a href="#报错信息：" class="headerlink" title="报错信息："></a>报错信息：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Can&#39;t locate SVN&#x2F;Core.pm in @INC (you may need to install the SVN::Core module) (@INC contains: &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;git&#x2F;2.27.0&#x2F;share&#x2F;perl5</span><br></pre></td></tr></table></figure>
+
+<p>修改文件<code>/usr/local/opt/git/libexec/git-core/git-svn</code>的第一行， <code>#!/usr/bin/perl</code> 为 <code>#!/usr/local/bin/perl</code>。</p>
+<h3 id="最终报错："><a href="#最终报错：" class="headerlink" title="最终报错："></a>最终报错：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Bad URL passed to RA layer: Unrecognized URL scheme for &#39;https:&#x2F;&#x2F;github.com&#x2F;PacktPub</span><br><span class="line">lishing&#x2F;Hands-On-Full-Stack-Development-with-Go&#39; at &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;git&#x2F;2.27.0&#x2F;sha</span><br><span class="line">re&#x2F;perl5&#x2F;Git&#x2F;SVN.pm line 148.</span><br></pre></td></tr></table></figure>
+<p>git 关联的 svn 是它自带的 svn：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git svn --version</span><br><span class="line"># &#x2F;&#x2F; git-svn version 2.27.0 (svn 1.8.11)</span><br><span class="line">$ svn --version</span><br><span class="line"># &#x2F;&#x2F;svn, version 1.14.0 (r1876290)</span><br></pre></td></tr></table></figure>
+<p>和上一个报错有共同之处。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://github.com/HR/github-clone">HR/github-clone: ⬇️ git clone repo subdirectories</a></li>
+<li><a href="https://teratail.com/questions/268932">Perl - git-svnを使用しようとした際に出るCan’t locate SVN/Core.pmというエラーの解決方法｜teratail</a></li>
+<li><a href="https://stackoverflow.com/questions/61637163/git-svn-cant-locate-svn-core-pm-after-fresh-installation-of-macos-catalina-10-1">perl - git-svn Can’t locate SVN/Core.pm after fresh installation of macOS Catalina 10.15.4 - Stack Overflow</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>git-svn</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于 GitHub Pages 的 Hexo+NexT 博客搭建</title>
     <url>/githubpages-hexo-next/</url>
     <content><![CDATA[<h1 id="基于-GitHub-Pages-的-Hexo-NexT-博客-——-引导篇"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客-——-引导篇" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客 —— 引导篇"></a>基于 GitHub Pages 的 Hexo + NexT 博客 —— 引导篇</h1><h2 id="基于-GitHub-Pages-的-Hexo-NexT-博客概述"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客概述" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客概述"></a>基于 GitHub Pages 的 Hexo + NexT 博客概述</h2><p>使用这一套博客系统架构您将获得稳定免费、美观、易定制的个人博客。通过 Markdown 语法编辑文章，git命令发布文章，优雅的博客发布体验。</p>
@@ -440,44 +478,6 @@
       <categories>
         <category>信息技术</category>
       </categories>
-  </entry>
-  <entry>
-    <title>从 Github 下载目标仓库指定文件夹</title>
-    <url>/github-download-folder/</url>
-    <content><![CDATA[<p>从 Github 下载目标仓库指定文件夹。</p>
-<span id="more"></span>
-
-<p><a href="https://github.com/HR/github-clone">HR/github-clone: ⬇️ git clone repo subdirectories</a></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install git+git:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;github-clone#egg&#x3D;ghclone</span><br><span class="line">ghclone https:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;Crypter&#x2F;tree&#x2F;master&#x2F;app</span><br><span class="line">ghclone https:&#x2F;&#x2F;github.com&#x2F;HR&#x2F;Picturesque&#x2F;tree&#x2F;master&#x2F;app&#x2F;src -t li50d67757gm20556d53f08126215725a698560b</span><br></pre></td></tr></table></figure>
-<p>下载私有库文件的时候需要 -t 参数，需要提供账户的 OAuth token：<br><a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">Creating a personal access token - GitHub Docs</a></p>
-<hr>
-<h2 id="git-svn-踩坑日记"><a href="#git-svn-踩坑日记" class="headerlink" title="git-svn 踩坑日记"></a>git-svn 踩坑日记</h2><p>太晚了，踩了半天坑，没踩出来，不过记录一下吧，没准以后还会用到 git-svn，再继续解决。<br>目标是通过 git svn 下载资源的目录，想法是从 stackoverflow 来的，我对 svn 一点都不了解：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git svn clone https:&#x2F;&#x2F;github.com&#x2F;user&#x2F;repo&#x2F;folder&#x2F;folder</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure>
-<p>执行前面的命令检查 CommandLineTools 是否安装，如有弹窗选择：是。一般重装系统或者系统大版本升级都要重新安装一次。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ brew reinstall git</span><br><span class="line">$ brew install apr-util</span><br><span class="line">$ brew install perl</span><br><span class="line">$ PERL_MM_OPT&#x3D;&quot;INSTALL_BASE&#x3D;$HOME&#x2F;perl5&quot; cpan local::lib</span><br><span class="line">$ echo &#39;eval &quot;$(perl -I$HOME&#x2F;perl5&#x2F;lib&#x2F;perl5 -Mlocal::lib&#x3D;$HOME&#x2F;perl5)&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ echo &#39;export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;apr&#x2F;bin:$PATH&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ echo &#39;export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;apr-util&#x2F;bin:$PATH&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">$ cpan SVN::Core  # 这命令耗时很久</span><br></pre></td></tr></table></figure>
-
-<h3 id="报错信息："><a href="#报错信息：" class="headerlink" title="报错信息："></a>报错信息：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Can&#39;t locate SVN&#x2F;Core.pm in @INC (you may need to install the SVN::Core module) (@INC contains: &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;git&#x2F;2.27.0&#x2F;share&#x2F;perl5</span><br></pre></td></tr></table></figure>
-
-<p>修改文件<code>/usr/local/opt/git/libexec/git-core/git-svn</code>的第一行， <code>#!/usr/bin/perl</code> 为 <code>#!/usr/local/bin/perl</code>。</p>
-<h3 id="最终报错："><a href="#最终报错：" class="headerlink" title="最终报错："></a>最终报错：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Bad URL passed to RA layer: Unrecognized URL scheme for &#39;https:&#x2F;&#x2F;github.com&#x2F;PacktPub</span><br><span class="line">lishing&#x2F;Hands-On-Full-Stack-Development-with-Go&#39; at &#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;git&#x2F;2.27.0&#x2F;sha</span><br><span class="line">re&#x2F;perl5&#x2F;Git&#x2F;SVN.pm line 148.</span><br></pre></td></tr></table></figure>
-<p>git 关联的 svn 是它自带的 svn：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git svn --version</span><br><span class="line"># &#x2F;&#x2F; git-svn version 2.27.0 (svn 1.8.11)</span><br><span class="line">$ svn --version</span><br><span class="line"># &#x2F;&#x2F;svn, version 1.14.0 (r1876290)</span><br></pre></td></tr></table></figure>
-<p>和上一个报错有共同之处。</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://github.com/HR/github-clone">HR/github-clone: ⬇️ git clone repo subdirectories</a></li>
-<li><a href="https://teratail.com/questions/268932">Perl - git-svnを使用しようとした際に出るCan’t locate SVN/Core.pmというエラーの解決方法｜teratail</a></li>
-<li><a href="https://stackoverflow.com/questions/61637163/git-svn-cant-locate-svn-core-pm-after-fresh-installation-of-macos-catalina-10-1">perl - git-svn Can’t locate SVN/Core.pm after fresh installation of macOS Catalina 10.15.4 - Stack Overflow</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>git-svn</tag>
-      </tags>
   </entry>
   <entry>
     <title>Hexo 博客进阶</title>
@@ -1904,13 +1904,12 @@
     <title>Hubot 官方文档</title>
     <url>/hubot-document/</url>
     <content><![CDATA[<h1 id="Hubot-官方文档"><a href="#Hubot-官方文档" class="headerlink" title="Hubot 官方文档"></a>Hubot 官方文档</h1><p><a href="https://hubot.github.com/docs/">原文链接🔗</a><br><img data-src="https://images.xyang.xin/2021%2F09%2F01%2Fhubot-avatar.png" alt="hubot-avatar.png"></p>
-<span id="more"></span>
 <h2 id="概览"><a href="#概览" class="headerlink" title="概览"></a>概览</h2><h3 id="Hubot-起步"><a href="#Hubot-起步" class="headerlink" title="Hubot 起步"></a>Hubot 起步</h3><p>你需要<a href="https://docs.npmjs.com/getting-started/installing-node">node.js和npm</a>。安装它们后，我们就可以安装 hubot 生成器：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install -g yo generator-hubot</span></span><br></pre></td></tr></table></figure>
 
 <p>这条命令将给我们带来hubot <a href="http://yeoman.io/">yeoman</a>生成器。现在我们就可以先创建一个的文件夹，然后在里面生成一个新的hubot实例。例如，如果我们想制造一个叫 myhubot的🤖️：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> mkdir myhubot</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> myhubot</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> yo hubot</span></span><br></pre></td></tr></table></figure>
-
+<span id="more"></span>
 <p>执行命令后，您将被问到一些关于谁在创建机器人和您将使用哪个适配器的问题。适配器是hubot与不同聊天提供商集成的方式。</p>
 <p>如果您希望在没有交互提示配置的情况下自动化您的 hubot 构建，您可以将以下选项添加到 <code>yo hubot</code> 命令中：</p>
 <table>
@@ -1921,7 +1920,7 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>--owner=”Bot Wrangler <a href="mailto:&#x62;&#x77;&#64;&#101;&#x78;&#97;&#109;&#112;&#108;&#101;&#x2e;&#99;&#111;&#109;">&#x62;&#x77;&#64;&#101;&#x78;&#97;&#109;&#112;&#108;&#101;&#x2e;&#99;&#111;&#109;</a>“</td>
+<td>--owner=”Bot Wrangler <a href="mailto:&#98;&#119;&#x40;&#x65;&#x78;&#x61;&#109;&#x70;&#108;&#x65;&#x2e;&#99;&#111;&#x6d;">&#98;&#119;&#x40;&#x65;&#x78;&#x61;&#109;&#x70;&#108;&#x65;&#x2e;&#99;&#111;&#x6d;</a>“</td>
 <td>Bot owner, e.g. “Bot Wrangler <a href="mailto:bw@example.com">bw@example.com</a>”</td>
 </tr>
 <tr>

@@ -6,7 +6,7 @@
   <link href="http://blog.xyang.xin/atom.xml" rel="self"/>
   
   <link href="http://blog.xyang.xin/"/>
-  <updated>2021-09-02T12:28:13.322Z</updated>
+  <updated>2021-09-02T12:29:08.490Z</updated>
   <id>http://blog.xyang.xin/</id>
   
   <author>
@@ -21,10 +21,15 @@
     <link href="http://blog.xyang.xin/hubot-document/"/>
     <id>http://blog.xyang.xin/hubot-document/</id>
     <published>2021-09-02T20:27:46.000Z</published>
-    <updated>2021-09-02T12:28:13.322Z</updated>
+    <updated>2021-09-02T12:29:08.490Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;Hubot-官方文档&quot;&gt;&lt;a href=&quot;#Hubot-官方文档&quot; class=&quot;headerlink&quot; title=&quot;Hubot 官方文档&quot;&gt;&lt;/a&gt;Hubot 官方文档&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://hubot.github.com/docs/&quot;&gt;原文链接🔗&lt;/a&gt;&lt;br&gt;&lt;img data-src=&quot;https://images.xyang.xin/2021%2F09%2F01%2Fhubot-avatar.png&quot; alt=&quot;hubot-avatar.png&quot;&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;Hubot-官方文档&quot;&gt;&lt;a href=&quot;#Hubot-官方文档&quot; class=&quot;headerlink&quot; title=&quot;Hubot 官方文档&quot;&gt;&lt;/a&gt;Hubot 官方文档&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://hubot.github.com/docs/&quot;&gt;原文链接🔗&lt;/a&gt;&lt;br&gt;&lt;img data-src=&quot;https://images.xyang.xin/2021%2F09%2F01%2Fhubot-avatar.png&quot; alt=&quot;hubot-avatar.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;概览&quot;&gt;&lt;a href=&quot;#概览&quot; class=&quot;headerlink&quot; title=&quot;概览&quot;&gt;&lt;/a&gt;概览&lt;/h2&gt;&lt;h3 id=&quot;Hubot-起步&quot;&gt;&lt;a href=&quot;#Hubot-起步&quot; class=&quot;headerlink&quot; title=&quot;Hubot 起步&quot;&gt;&lt;/a&gt;Hubot 起步&lt;/h3&gt;&lt;p&gt;你需要&lt;a href=&quot;https://docs.npmjs.com/getting-started/installing-node&quot;&gt;node.js和npm&lt;/a&gt;。安装它们后，我们就可以安装 hubot 生成器：&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; npm install -g yo generator-hubot&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;这条命令将给我们带来hubot &lt;a href=&quot;http://yeoman.io/&quot;&gt;yeoman&lt;/a&gt;生成器。现在我们就可以先创建一个的文件夹，然后在里面生成一个新的hubot实例。例如，如果我们想制造一个叫 myhubot的🤖️：&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; mkdir myhubot&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; &lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; myhubot&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; yo hubot&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
