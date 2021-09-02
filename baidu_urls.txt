@@ -1,3 +1,4 @@
+http://blog.xyang.xin/hubot-document/
 http://blog.xyang.xin/leetcode-142/
 http://blog.xyang.xin/learn-http-basics/
 http://blog.xyang.xin/css-everday-1/

@@ -6,7 +6,7 @@
   <link href="http://blog.xyang.xin/atom.xml" rel="self"/>
   
   <link href="http://blog.xyang.xin/"/>
-  <updated>2021-08-22T09:47:12.258Z</updated>
+  <updated>2021-09-02T12:25:54.780Z</updated>
   <id>http://blog.xyang.xin/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://blog.xyang.xin/hubot-document/"/>
+    <id>http://blog.xyang.xin/hubot-document/</id>
+    <published>2021-09-01T11:00:01.153Z</published>
+    <updated>2021-09-02T12:25:54.780Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Hubot-官方文档&quot;&gt;&lt;a href=&quot;#Hubot-官方文档&quot; class=&quot;headerlink&quot; title=&quot;Hubot 官方文档&quot;&gt;&lt;/a&gt;Hubot 官方文档&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://hubot.github.com/docs/&quot;&gt;原文链接🔗&lt;/a&gt;&lt;br&gt;&lt;img data-src=&quot;https://images.xyang.xin/2021%2F09%2F01%2Fhubot-avatar.png&quot; alt=&quot;hubot-avatar.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>环形链表</title>
@@ -435,27 +450,6 @@
     <category term="读书笔记" scheme="http://blog.xyang.xin/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
     <category term="阅读" scheme="http://blog.xyang.xin/tags/%E9%98%85%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《一本小小的红色写作书》读书笔记</title>
-    <link href="http://blog.xyang.xin/book-hsxzs/"/>
-    <id>http://blog.xyang.xin/book-hsxzs/</id>
-    <published>2019-07-11T16:47:31.000Z</published>
-    <updated>2021-08-22T09:46:55.918Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;http://images.xyang.xin/2019-05%2F1558180143.png?x-oss-process=style/title_140&quot; alt=&quot;1558180143.png-w140&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="思想文化" scheme="http://blog.xyang.xin/categories/%E6%80%9D%E6%83%B3%E6%96%87%E5%8C%96/"/>
-    
-    
-    <category term="读书笔记" scheme="http://blog.xyang.xin/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="写作" scheme="http://blog.xyang.xin/tags/%E5%86%99%E4%BD%9C/"/>
     
   </entry>
   
