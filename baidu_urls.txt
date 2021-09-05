@@ -2,8 +2,8 @@ http://blog.xyang.xin/hubot-document/
 http://blog.xyang.xin/leetcode-142/
 http://blog.xyang.xin/learn-http-basics/
 http://blog.xyang.xin/css-everday-1/
-http://blog.xyang.xin/dynamic&static-type-binding/
-http://blog.xyang.xin/note-hings-i-wish-id-known-about-css/
+http://blog.xyang.xin/dynamic-and-static-type-binding/
+http://blog.xyang.xin/note-things-i-wish-id-known-about-css/
 http://blog.xyang.xin/github-download-folder/
 http://blog.xyang.xin/vim-plugin-everday-2/
 http://blog.xyang.xin/vim-plugin-everday-1/
