@@ -1,9 +1,9 @@
+User-agent: *
+Allow: /
+
 User-agent: Googlebot
 Allow: /css/
 Allow: /js/
-
-User-agent: *
-Allow: /
 
 Sitemap: https://blog.xyang.xin/sitemap.xml
 Sitemap: https://blog.xyang.xin/baidusitemap.xml
