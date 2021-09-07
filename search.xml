@@ -913,128 +913,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Mac 小问题 —— iCloud 未响应</title>
-    <url>/macos-problems/</url>
-    <content><![CDATA[<p>使用 iCloud Drive 将文件上传到云端，防止数据丢失，同时可以实现多台设备的协同工作。但是在使用 iCloud Drive 的过程中我遇到了程序未响应，iCoud 文件上传阻塞的问题。</p>
-<span id="more"></span>
-
-<h2 id="Finder-无法打开或持续未响应"><a href="#Finder-无法打开或持续未响应" class="headerlink" title="Finder 无法打开或持续未响应"></a>Finder 无法打开或持续未响应</h2><p>解决办法：<br>磁盘工具 -&gt; Macintosh HD（系统盘）-&gt; 急救<br>磁盘工具在以下路径：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">/System/Applications/Utilities/Disk Utility.app</span><br></pre></td></tr></table></figure>
-
-<p>急救操作不会对你的电脑造成任何损害，甚至还有所优化。</p>
-<h2 id="打开-iCloud-云盘文件夹极其缓慢"><a href="#打开-iCloud-云盘文件夹极其缓慢" class="headerlink" title="打开 iCloud 云盘文件夹极其缓慢"></a>打开 iCloud 云盘文件夹极其缓慢</h2><p>遇到的问题是：在访达中点击iCloud云盘系统就会出现转圈圈的标志，使用快捷键<code>command+alt+esc</code>（强制退出应用程序）就会看到访达处于未响应状态，这个时间会持续很久。</p>
-<p>解决办法：<br>系统偏好 -&gt; Apple ID -&gt; 取消勾选iCloud云盘 -&gt; 保留副本 -&gt; 重新勾选iCloud云盘</p>
-<p>此操作造成的后果是mac需要很长的一段时间和云端同步，这取决于你icloud存储的文件大小，并不会影响其他。</p>
-<h2 id="文件无法上传排查"><a href="#文件无法上传排查" class="headerlink" title="文件无法上传排查"></a>文件无法上传排查</h2><p>iCloud 连续几天几夜也没同步完，经过诸多排查，例如，修改 DNS：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">114.114.114.114</span><br><span class="line">8.8.8.8</span><br></pre></td></tr></table></figure>
-<p>不仅没起作用，还影响了访问其他网页。最后删除 DNS 配置，刷新 DNS 缓存：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ 2$ sudo killall -HUP mDNSResponder</span><br></pre></td></tr></table></figure>
-
-<p>最后排查出是因为，我开发代码的工作目录都设置在了 iCloud 云盘里，文件体积虽然不大，却有上万个细小的文件，不知道是不是 iCloud 设置了某种限制，导致上传阻塞，最后将代码都移出 iCloud 问题就解决了。</p>
-<p>后面又卡住了，收获到一个命令通过这个命令可以查看 iCloud 同步进度：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ brctl log -w</span><br></pre></td></tr></table></figure>
-<p>虽然没看懂运行的是什么，但是能够看到一直有东西在执行。<br>通过以下三个命令对 icloud 进行重置：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 杀死icloud同步进程</span><br><span class="line">$ sudo killall bird</span><br><span class="line"># 删除 icloud 的配置文件</span><br><span class="line">$ sudo rm -rf ~/Library/Application\ Support/CloudDocs</span><br><span class="line"># 立刻关机</span><br><span class="line">$ sudo shutdown -r now</span><br></pre></td></tr></table></figure>
-<p>不必担心文件丢失，效果与关闭重新关闭icloud同步类似。重新开启电脑后可以通过前面说到的命令查看 iCloud 同步的进度。</p>
-<p>也可以直接使用下面的脚本：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line"></span><br><span class="line">if [[ $EUID -eq 0 ]]; then</span><br><span class="line">    echo &quot;Killing bird.&quot;</span><br><span class="line">    killall bird</span><br><span class="line">    echo &quot;Removing CloudDocs&quot;</span><br><span class="line">    cd ~/Library/Application\ Support</span><br><span class="line">    rm -rf CloudDocs</span><br><span class="line">    echo &quot;Immediately rebooting!&quot;</span><br><span class="line">    shutdown -r now</span><br><span class="line">else</span><br><span class="line">    echo &quot;</span><br><span class="line">    This script needs run as sudo. </span><br><span class="line">    Use CAUTION when doing so.</span><br><span class="line">    You accept full responsibility using this script.</span><br><span class="line">    You should know what it&#x27;s doing BEFORE you run it.</span><br><span class="line">    &quot;</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
-
-<p>不必南辕北辙，越过中国的防火墙，iCloud 中国用户的文件存储在贵州云，而网上所谓的要获取验证文件，获取验证文件有香港的服务器。最后的任务就是等，我是让电脑喝着咖啡持续跑了接近一整天才同步完成的。</p>
-<h2 id="Mac-无法同步-iPhone-剪贴板数据"><a href="#Mac-无法同步-iPhone-剪贴板数据" class="headerlink" title="Mac 无法同步 iPhone 剪贴板数据"></a>Mac 无法同步 iPhone 剪贴板数据</h2><p>iPhone 可以将 Mac 复制的内容，同步下来，而 Mac 不行。<br>解决办法：退出 iPhone 账号，并重新登陆。</p>
-<h2 id="AirDrop-隔空投送文件传送"><a href="#AirDrop-隔空投送文件传送" class="headerlink" title="AirDrop 隔空投送文件传送"></a>AirDrop 隔空投送文件传送</h2><p>从 Mac 通过 AirDrop 传送文件至 iPhone，iPhone 必须有 App 可以打开传输文件格式的文件，否则文件将被遗弃。而我们需要传输一些特殊格式的文件的时候，我们可以将其压缩为 zip，这个时候 iPhone 就会接受了。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
-<li><a href="https://apple.stackexchange.com/questions/313716/icloud-drive-wont-sync-on-mac">macos - iCloud Drive Won’t Sync on Mac - Ask Different</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>MacOS</tag>
-        <tag>Finder</tag>
-        <tag>iCloud</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学习 CSS 时忽视的几个知识点</title>
-    <url>/note-things-i-wish-id-known-about-css/</url>
-    <content><![CDATA[<p><a href="https://cssfordesigners.com/articles/things-i-wish-id-known-about-css">Things I Wish I’d Known About CSS</a></p>
-<p>文章的作者以老式的方式构建网站：查看网站源代码、复制然后修改，而没有经过阅读书籍等系统性的学习。作者在 1999 年就使用这种方式了，当时写的还是这种代码： <code>&lt;font size=&quot;4&quot; color=&quot;#000000&quot;&gt;</code>。而当 CSS 面世的时候，作者没有改变自己的学习方法，而错过了太多基本知识。文章主要介绍的是作者希望早点学到的东西。</p>
-<span id="more"></span>
-
-<h2 id="Block-inline-and-inline-block"><a href="#Block-inline-and-inline-block" class="headerlink" title="Block, inline and inline-block"></a>Block, inline and inline-block</h2><ul>
-<li><code>block</code> 元素水平扩展以占据一整行（就像标题）。我们可以对它们运用垂直 margin；</li>
-<li><code>inline</code> 元素仅水平扩展到足以容纳其内容（就像 <code>strong</code> 或者 <code>em</code> 元素）；</li>
-<li><code>inline-block</code> 元素像 <code>inline</code> 元素，但是你可以对它们运用垂直的 margin（对 <code>button</code> 之类的元素有用）；</li>
-</ul>
-<h2 id="图片是内联的"><a href="#图片是内联的" class="headerlink" title="图片是内联的"></a>图片是内联的</h2><p><code>img</code> 元素默认是内联的，一般来说没什么问题，但是在尝试定位图像或添加垂直边距时会引起混乱。建议添加如下规则：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123;<span class="attribute">display</span>: block;&#125;</span><br></pre></td></tr></table></figure>
-<p>也可以添加 <code>max-width: 100%;</code> 以阻止块级元素突破容器。<br><a href="https://github.com/necolas/normalize.css/blob/master/normalize.css">normalize.css</a> 里面没有，我觉得是否添加智者见智。</p>
-<h2 id="计算宽度"><a href="#计算宽度" class="headerlink" title="计算宽度"></a>计算宽度</h2><p>默认情况下，盒子的宽度 / 高度是通过将以下各项相加得出的：</p>
-<ul>
-<li>Content area（内容）</li>
-<li>Padding area（内边距）</li>
-<li>Border area（边框）</li>
-</ul>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.box-class</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">2em</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">0.1rem</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>包含 <code>.box-class</code> 类的属性的盒子的宽度就是 <code>50% + 4em + 0.2rem</code><br>默认情况下，我们用 css 设置的 <code>width</code> 属性指的仅仅只是 Content area（内容）部分的宽度。</p>
-<p>下列代码将应用于所有元素，使得 <code>width</code> 属性设置的为上述三者相加的值。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">* &#123;<span class="attribute">box-sizing</span>: border-box;&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Padding-amp-margin-不一样"><a href="#Padding-amp-margin-不一样" class="headerlink" title="Padding &amp; margin 不一样"></a>Padding &amp; margin 不一样</h2><p>CSS 盒模型还有一个重要的组成部分 <code>margin</code>。</p>
-<ul>
-<li><code>margin</code> 是元素之间的间隔</li>
-<li><code>padding</code> 是内容和边框之间的间隔</li>
-</ul>
-<h2 id="Margins-崩塌"><a href="#Margins-崩塌" class="headerlink" title="Margins 崩塌"></a>Margins 崩塌</h2><p>当边距崩塌时，它们将合并在一起，从而使两个元素之间的间隔变为两个边距中较大的一个。较小的边距基本上结束在较大的边距之内。</p>
-<p>当两个边距相遇时，较大的边距会吸收较小的边距。如果边距值相同，则它们会相互吸收。</p>
-<p>假设我们有两个相邻的 block 元素，上面一个设置 <code>margin-bottom: 1em</code> 下面一个设置 <code>margin-top: 1.5em</code>，这两个元素间的间距将合并为 <code>1.5em</code> 而不是 <code>1em + 1.5em</code>。</p>
-<blockquote>
-<p>Note: 当父元素设置为 <code>display: grid</code> 或 <code>display: flex</code> 时，边距不会崩塌。</p>
-</blockquote>
-<h2 id="浏览器具有默认样式表"><a href="#浏览器具有默认样式表" class="headerlink" title="浏览器具有默认样式表"></a>浏览器具有默认样式表</h2><p>CSS(Cascading Style Sheets) 是层叠样式表。我们必须记住，始终存在默认的浏览器样式表。它会在任何自定义样式表之前加载，而我们可以很轻易的覆盖它们。</p>
-<p>声明的样式因浏览器而异。抹平差异的方法主要有两种，任选其一：</p>
-<ol>
-<li>CSS 重置，将所有默认样式都设置为“零”，例如 <a href="https://meyerweb.com/eric/tools/css/reset/">https://meyerweb.com/eric/tools/css/reset/</a></li>
-<li>normalize.css, 对默认样式进行微调，使它们在不同的浏览器中具有相似的外观：<a href="http://necolas.github.io/normalize.css/">http://necolas.github.io/normalize.css/</a></li>
-</ol>
-<h2 id="任何地方都使用相对单位"><a href="#任何地方都使用相对单位" class="headerlink" title="任何地方都使用相对单位"></a>任何地方都使用相对单位</h2><p>我们可以将 <code>em</code> 用于 <code>@media</code> 查询和垂直边距，而将 <code>rem</code> 用于一致的边框宽度。</p>
-<h2 id="before-和-after-需要-content"><a href="#before-和-after-需要-content" class="headerlink" title="::before 和 ::after 需要 content"></a>::before 和 ::after 需要 content</h2><p>当我们使用 <code>::before</code> 或者 <code>::after</code> 伪元素时，需要添加 <code>content</code> 属性，即使它的值为空白：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.some-class::before &#123;content: &#x27;&#x27;;&#125;</span><br></pre></td></tr></table></figure>
-<p>如果不包含此属性，伪元素将不会显示。</p>
-<h2 id="ch-单位"><a href="#ch-单位" class="headerlink" title="ch 单位"></a>ch 单位</h2><p>ch(character)，大致基于一行的字符数来设置宽度的时候 <code>ch</code> 很有用。</p>
-<p>1ch 就是数字 0 的宽度。</p>
-<p>1ch 通常比平均字符宽度宽 20％到 30％。</p>
-<h2 id="Normal-flow（正常布局流）"><a href="#Normal-flow（正常布局流）" class="headerlink" title="Normal flow（正常布局流）"></a>Normal flow（正常布局流）</h2><p>“normal flow” 的意思是出现在页面上的元素和在源代码中实现的方式相同。<br>例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h2&gt;Heading&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;Paragraph text.&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<p>我们期望的是 <code>&lt;h2&gt;Heading&lt;/h2&gt;</code> 出现在 <code>&lt;p&gt;Paragraph text.&lt;/p&gt;</code> 的之前 / 顶部。这就是 <em>normal flow</em>。</p>
-<p>而绝对定位和浮动就脱离了 <em>normal flow</em>。</p>
-<h2 id="风格化-focus-状态"><a href="#风格化-focus-状态" class="headerlink" title="风格化 :focus 状态"></a>风格化 :focus 状态</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: black;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>,</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:focus</span>,</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>我们最好为 <code>:focus</code> 状态添加不同的样式。因为例如鼠标悬停或者已经激活，用户再按[tab]键，<code>:focus</code>就不起作用了。</p>
-<p>为防止晚出现的规则覆盖前面出现的规则，按照如下顺序定义规则：<br>link、visited、focus、hover、active（缩写为 LVPHA）<br>或者 LVHFA 的顺序也是可以的。</p>
-<h2 id="nth-child"><a href="#nth-child" class="headerlink" title=":nth-child()"></a>:nth-child()</h2><p><code>p:nth-child()</code>计算所有同级元素<br><code>p:nth-of-type()</code>仅计算同级的p元素</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>:nth-child()<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph one.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph two.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph three.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph four.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph five.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph six.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">:nth-child</span>(even) &#123;</span><br><span class="line">	<span class="attribute">background</span>: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img data-src="http://images.xyang.xin/2020%2F07%2F25%2F1595610186.png" alt="1595610186.png"></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">:nth-of-type</span>(even) &#123;</span><br><span class="line">	<span class="attribute">background</span>: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img data-src="http://images.xyang.xin/2020%2F07%2F25%2F1595610292.png" alt="1595610292.png"></p>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>掌握CSS的基础知识很容易，但是了解事情的方式和原因对编写更好的CSS至关重要。</p>
-<p>花时间学习这些东西不仅帮助我更快地编写CSS，而且还使我的代码更高效，更灵活。</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://cssfordesigners.com/articles/things-i-wish-id-known-about-css">Things I Wish I’d Known About CSS</a></li>
-<li>《HTML5 与 CSS3 基础教程 (第 8 版)》</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>css</tag>
-        <tag>note</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mac 大扫除🧹</title>
     <url>/macos-clean/</url>
     <content><![CDATA[<p>基于 macOS Catalina 版本 10.15.4, 128G固态，8GB内存。</p>
@@ -1086,6 +964,49 @@
       </categories>
       <tags>
         <tag>MacOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac 小问题 —— iCloud 未响应</title>
+    <url>/macos-problems/</url>
+    <content><![CDATA[<p>使用 iCloud Drive 将文件上传到云端，防止数据丢失，同时可以实现多台设备的协同工作。但是在使用 iCloud Drive 的过程中我遇到了程序未响应，iCoud 文件上传阻塞的问题。</p>
+<span id="more"></span>
+
+<h2 id="Finder-无法打开或持续未响应"><a href="#Finder-无法打开或持续未响应" class="headerlink" title="Finder 无法打开或持续未响应"></a>Finder 无法打开或持续未响应</h2><p>解决办法：<br>磁盘工具 -&gt; Macintosh HD（系统盘）-&gt; 急救<br>磁盘工具在以下路径：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">/System/Applications/Utilities/Disk Utility.app</span><br></pre></td></tr></table></figure>
+
+<p>急救操作不会对你的电脑造成任何损害，甚至还有所优化。</p>
+<h2 id="打开-iCloud-云盘文件夹极其缓慢"><a href="#打开-iCloud-云盘文件夹极其缓慢" class="headerlink" title="打开 iCloud 云盘文件夹极其缓慢"></a>打开 iCloud 云盘文件夹极其缓慢</h2><p>遇到的问题是：在访达中点击iCloud云盘系统就会出现转圈圈的标志，使用快捷键<code>command+alt+esc</code>（强制退出应用程序）就会看到访达处于未响应状态，这个时间会持续很久。</p>
+<p>解决办法：<br>系统偏好 -&gt; Apple ID -&gt; 取消勾选iCloud云盘 -&gt; 保留副本 -&gt; 重新勾选iCloud云盘</p>
+<p>此操作造成的后果是mac需要很长的一段时间和云端同步，这取决于你icloud存储的文件大小，并不会影响其他。</p>
+<h2 id="文件无法上传排查"><a href="#文件无法上传排查" class="headerlink" title="文件无法上传排查"></a>文件无法上传排查</h2><p>iCloud 连续几天几夜也没同步完，经过诸多排查，例如，修改 DNS：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">114.114.114.114</span><br><span class="line">8.8.8.8</span><br></pre></td></tr></table></figure>
+<p>不仅没起作用，还影响了访问其他网页。最后删除 DNS 配置，刷新 DNS 缓存：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ 2$ sudo killall -HUP mDNSResponder</span><br></pre></td></tr></table></figure>
+
+<p>最后排查出是因为，我开发代码的工作目录都设置在了 iCloud 云盘里，文件体积虽然不大，却有上万个细小的文件，不知道是不是 iCloud 设置了某种限制，导致上传阻塞，最后将代码都移出 iCloud 问题就解决了。</p>
+<p>后面又卡住了，收获到一个命令通过这个命令可以查看 iCloud 同步进度：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ brctl log -w</span><br></pre></td></tr></table></figure>
+<p>虽然没看懂运行的是什么，但是能够看到一直有东西在执行。<br>通过以下三个命令对 icloud 进行重置：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 杀死icloud同步进程</span><br><span class="line">$ sudo killall bird</span><br><span class="line"># 删除 icloud 的配置文件</span><br><span class="line">$ sudo rm -rf ~/Library/Application\ Support/CloudDocs</span><br><span class="line"># 立刻关机</span><br><span class="line">$ sudo shutdown -r now</span><br></pre></td></tr></table></figure>
+<p>不必担心文件丢失，效果与关闭重新关闭icloud同步类似。重新开启电脑后可以通过前面说到的命令查看 iCloud 同步的进度。</p>
+<p>也可以直接使用下面的脚本：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line"></span><br><span class="line">if [[ $EUID -eq 0 ]]; then</span><br><span class="line">    echo &quot;Killing bird.&quot;</span><br><span class="line">    killall bird</span><br><span class="line">    echo &quot;Removing CloudDocs&quot;</span><br><span class="line">    cd ~/Library/Application\ Support</span><br><span class="line">    rm -rf CloudDocs</span><br><span class="line">    echo &quot;Immediately rebooting!&quot;</span><br><span class="line">    shutdown -r now</span><br><span class="line">else</span><br><span class="line">    echo &quot;</span><br><span class="line">    This script needs run as sudo. </span><br><span class="line">    Use CAUTION when doing so.</span><br><span class="line">    You accept full responsibility using this script.</span><br><span class="line">    You should know what it&#x27;s doing BEFORE you run it.</span><br><span class="line">    &quot;</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+
+<p>不必南辕北辙，越过中国的防火墙，iCloud 中国用户的文件存储在贵州云，而网上所谓的要获取验证文件，获取验证文件有香港的服务器。最后的任务就是等，我是让电脑喝着咖啡持续跑了接近一整天才同步完成的。</p>
+<h2 id="Mac-无法同步-iPhone-剪贴板数据"><a href="#Mac-无法同步-iPhone-剪贴板数据" class="headerlink" title="Mac 无法同步 iPhone 剪贴板数据"></a>Mac 无法同步 iPhone 剪贴板数据</h2><p>iPhone 可以将 Mac 复制的内容，同步下来，而 Mac 不行。<br>解决办法：退出 iPhone 账号，并重新登陆。</p>
+<h2 id="AirDrop-隔空投送文件传送"><a href="#AirDrop-隔空投送文件传送" class="headerlink" title="AirDrop 隔空投送文件传送"></a>AirDrop 隔空投送文件传送</h2><p>从 Mac 通过 AirDrop 传送文件至 iPhone，iPhone 必须有 App 可以打开传输文件格式的文件，否则文件将被遗弃。而我们需要传输一些特殊格式的文件的时候，我们可以将其压缩为 zip，这个时候 iPhone 就会接受了。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
+<li><a href="https://apple.stackexchange.com/questions/313716/icloud-drive-wont-sync-on-mac">macos - iCloud Drive Won’t Sync on Mac - Ask Different</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>MacOS</tag>
+        <tag>Finder</tag>
+        <tag>iCloud</tag>
       </tags>
   </entry>
   <entry>
@@ -1166,6 +1087,85 @@
       </categories>
       <tags>
         <tag>包管理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习 CSS 时忽视的几个知识点</title>
+    <url>/note-things-i-wish-id-known-about-css/</url>
+    <content><![CDATA[<p><a href="https://cssfordesigners.com/articles/things-i-wish-id-known-about-css">Things I Wish I’d Known About CSS</a></p>
+<p>文章的作者以老式的方式构建网站：查看网站源代码、复制然后修改，而没有经过阅读书籍等系统性的学习。作者在 1999 年就使用这种方式了，当时写的还是这种代码： <code>&lt;font size=&quot;4&quot; color=&quot;#000000&quot;&gt;</code>。而当 CSS 面世的时候，作者没有改变自己的学习方法，而错过了太多基本知识。文章主要介绍的是作者希望早点学到的东西。</p>
+<span id="more"></span>
+
+<h2 id="Block-inline-and-inline-block"><a href="#Block-inline-and-inline-block" class="headerlink" title="Block, inline and inline-block"></a>Block, inline and inline-block</h2><ul>
+<li><code>block</code> 元素水平扩展以占据一整行（就像标题）。我们可以对它们运用垂直 margin；</li>
+<li><code>inline</code> 元素仅水平扩展到足以容纳其内容（就像 <code>strong</code> 或者 <code>em</code> 元素）；</li>
+<li><code>inline-block</code> 元素像 <code>inline</code> 元素，但是你可以对它们运用垂直的 margin（对 <code>button</code> 之类的元素有用）；</li>
+</ul>
+<h2 id="图片是内联的"><a href="#图片是内联的" class="headerlink" title="图片是内联的"></a>图片是内联的</h2><p><code>img</code> 元素默认是内联的，一般来说没什么问题，但是在尝试定位图像或添加垂直边距时会引起混乱。建议添加如下规则：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123;<span class="attribute">display</span>: block;&#125;</span><br></pre></td></tr></table></figure>
+<p>也可以添加 <code>max-width: 100%;</code> 以阻止块级元素突破容器。<br><a href="https://github.com/necolas/normalize.css/blob/master/normalize.css">normalize.css</a> 里面没有，我觉得是否添加智者见智。</p>
+<h2 id="计算宽度"><a href="#计算宽度" class="headerlink" title="计算宽度"></a>计算宽度</h2><p>默认情况下，盒子的宽度 / 高度是通过将以下各项相加得出的：</p>
+<ul>
+<li>Content area（内容）</li>
+<li>Padding area（内边距）</li>
+<li>Border area（边框）</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.box-class</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">2em</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">0.1rem</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>包含 <code>.box-class</code> 类的属性的盒子的宽度就是 <code>50% + 4em + 0.2rem</code><br>默认情况下，我们用 css 设置的 <code>width</code> 属性指的仅仅只是 Content area（内容）部分的宽度。</p>
+<p>下列代码将应用于所有元素，使得 <code>width</code> 属性设置的为上述三者相加的值。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">* &#123;<span class="attribute">box-sizing</span>: border-box;&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Padding-amp-margin-不一样"><a href="#Padding-amp-margin-不一样" class="headerlink" title="Padding &amp; margin 不一样"></a>Padding &amp; margin 不一样</h2><p>CSS 盒模型还有一个重要的组成部分 <code>margin</code>。</p>
+<ul>
+<li><code>margin</code> 是元素之间的间隔</li>
+<li><code>padding</code> 是内容和边框之间的间隔</li>
+</ul>
+<h2 id="Margins-崩塌"><a href="#Margins-崩塌" class="headerlink" title="Margins 崩塌"></a>Margins 崩塌</h2><p>当边距崩塌时，它们将合并在一起，从而使两个元素之间的间隔变为两个边距中较大的一个。较小的边距基本上结束在较大的边距之内。</p>
+<p>当两个边距相遇时，较大的边距会吸收较小的边距。如果边距值相同，则它们会相互吸收。</p>
+<p>假设我们有两个相邻的 block 元素，上面一个设置 <code>margin-bottom: 1em</code> 下面一个设置 <code>margin-top: 1.5em</code>，这两个元素间的间距将合并为 <code>1.5em</code> 而不是 <code>1em + 1.5em</code>。</p>
+<blockquote>
+<p>Note: 当父元素设置为 <code>display: grid</code> 或 <code>display: flex</code> 时，边距不会崩塌。</p>
+</blockquote>
+<h2 id="浏览器具有默认样式表"><a href="#浏览器具有默认样式表" class="headerlink" title="浏览器具有默认样式表"></a>浏览器具有默认样式表</h2><p>CSS(Cascading Style Sheets) 是层叠样式表。我们必须记住，始终存在默认的浏览器样式表。它会在任何自定义样式表之前加载，而我们可以很轻易的覆盖它们。</p>
+<p>声明的样式因浏览器而异。抹平差异的方法主要有两种，任选其一：</p>
+<ol>
+<li>CSS 重置，将所有默认样式都设置为“零”，例如 <a href="https://meyerweb.com/eric/tools/css/reset/">https://meyerweb.com/eric/tools/css/reset/</a></li>
+<li>normalize.css, 对默认样式进行微调，使它们在不同的浏览器中具有相似的外观：<a href="http://necolas.github.io/normalize.css/">http://necolas.github.io/normalize.css/</a></li>
+</ol>
+<h2 id="任何地方都使用相对单位"><a href="#任何地方都使用相对单位" class="headerlink" title="任何地方都使用相对单位"></a>任何地方都使用相对单位</h2><p>我们可以将 <code>em</code> 用于 <code>@media</code> 查询和垂直边距，而将 <code>rem</code> 用于一致的边框宽度。</p>
+<h2 id="before-和-after-需要-content"><a href="#before-和-after-需要-content" class="headerlink" title="::before 和 ::after 需要 content"></a>::before 和 ::after 需要 content</h2><p>当我们使用 <code>::before</code> 或者 <code>::after</code> 伪元素时，需要添加 <code>content</code> 属性，即使它的值为空白：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.some-class::before &#123;content: &#x27;&#x27;;&#125;</span><br></pre></td></tr></table></figure>
+<p>如果不包含此属性，伪元素将不会显示。</p>
+<h2 id="ch-单位"><a href="#ch-单位" class="headerlink" title="ch 单位"></a>ch 单位</h2><p>ch(character)，大致基于一行的字符数来设置宽度的时候 <code>ch</code> 很有用。</p>
+<p>1ch 就是数字 0 的宽度。</p>
+<p>1ch 通常比平均字符宽度宽 20％到 30％。</p>
+<h2 id="Normal-flow（正常布局流）"><a href="#Normal-flow（正常布局流）" class="headerlink" title="Normal flow（正常布局流）"></a>Normal flow（正常布局流）</h2><p>“normal flow” 的意思是出现在页面上的元素和在源代码中实现的方式相同。<br>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h2&gt;Heading&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;Paragraph text.&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p>我们期望的是 <code>&lt;h2&gt;Heading&lt;/h2&gt;</code> 出现在 <code>&lt;p&gt;Paragraph text.&lt;/p&gt;</code> 的之前 / 顶部。这就是 <em>normal flow</em>。</p>
+<p>而绝对定位和浮动就脱离了 <em>normal flow</em>。</p>
+<h2 id="风格化-focus-状态"><a href="#风格化-focus-状态" class="headerlink" title="风格化 :focus 状态"></a>风格化 :focus 状态</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: black;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>,</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:focus</span>,</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我们最好为 <code>:focus</code> 状态添加不同的样式。因为例如鼠标悬停或者已经激活，用户再按[tab]键，<code>:focus</code>就不起作用了。</p>
+<p>为防止晚出现的规则覆盖前面出现的规则，按照如下顺序定义规则：<br>link、visited、focus、hover、active（缩写为 LVPHA）<br>或者 LVHFA 的顺序也是可以的。</p>
+<h2 id="nth-child"><a href="#nth-child" class="headerlink" title=":nth-child()"></a>:nth-child()</h2><p><code>p:nth-child()</code>计算所有同级元素<br><code>p:nth-of-type()</code>仅计算同级的p元素</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>:nth-child()<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph one.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph two.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph three.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph four.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph five.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph six.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">:nth-child</span>(even) &#123;</span><br><span class="line">	<span class="attribute">background</span>: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img data-src="http://images.xyang.xin/2020%2F07%2F25%2F1595610186.png" alt="1595610186.png"></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">:nth-of-type</span>(even) &#123;</span><br><span class="line">	<span class="attribute">background</span>: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img data-src="http://images.xyang.xin/2020%2F07%2F25%2F1595610292.png" alt="1595610292.png"></p>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>掌握CSS的基础知识很容易，但是了解事情的方式和原因对编写更好的CSS至关重要。</p>
+<p>花时间学习这些东西不仅帮助我更快地编写CSS，而且还使我的代码更高效，更灵活。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://cssfordesigners.com/articles/things-i-wish-id-known-about-css">Things I Wish I’d Known About CSS</a></li>
+<li>《HTML5 与 CSS3 基础教程 (第 8 版)》</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>note</tag>
       </tags>
   </entry>
   <entry>
@@ -1920,7 +1920,7 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>--owner=”Bot Wrangler <a href="mailto:&#98;&#119;&#64;&#101;&#x78;&#97;&#109;&#112;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#109;">&#98;&#119;&#64;&#101;&#x78;&#97;&#109;&#112;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#109;</a>“</td>
+<td>--owner=”Bot Wrangler <a href="mailto:&#x62;&#119;&#x40;&#101;&#x78;&#x61;&#109;&#x70;&#x6c;&#101;&#x2e;&#99;&#x6f;&#109;">&#x62;&#119;&#x40;&#101;&#x78;&#x61;&#109;&#x70;&#x6c;&#101;&#x2e;&#99;&#x6f;&#109;</a>“</td>
 <td>Bot owner, e.g. “Bot Wrangler <a href="mailto:bw@example.com">bw@example.com</a>”</td>
 </tr>
 <tr>
