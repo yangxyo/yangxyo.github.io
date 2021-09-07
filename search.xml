@@ -44,6 +44,29 @@
       </tags>
   </entry>
   <entry>
+    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
+    <url>/acme-sh/</url>
+    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
+<ul>
+<li>http 认证方式</li>
+<li>dns 方式<span id="more"></span>
+
+</li>
+</ul>
+<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
+<p><a href="https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E">github 安装说明</a></p>
+<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;/usr/local/haproxy/start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssl</tag>
+        <tag>acme.sh</tag>
+        <tag>letsencrypt</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《厉害了我的国》(2018)讲述纲要</title>
     <url>/amazing-china/</url>
     <content><![CDATA[<h1 id="《厉害了我的国》-2018-讲述纲要"><a href="#《厉害了我的国》-2018-讲述纲要" class="headerlink" title="《厉害了我的国》(2018)讲述纲要"></a>《厉害了我的国》(2018)讲述纲要</h1><blockquote>
@@ -326,67 +349,6 @@
       </tags>
   </entry>
   <entry>
-    <title>从 Github 下载目标仓库指定文件夹</title>
-    <url>/github-download-folder/</url>
-    <content><![CDATA[<p>从 Github 下载目标仓库指定文件夹。</p>
-<span id="more"></span>
-
-<p><a href="https://github.com/HR/github-clone">HR/github-clone: ⬇️ git clone repo subdirectories</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install git+git://github.com/HR/github-clone#egg=ghclone</span><br><span class="line">ghclone https://github.com/HR/Crypter/tree/master/app</span><br><span class="line">ghclone https://github.com/HR/Picturesque/tree/master/app/src -t li50d67757gm20556d53f08126215725a698560b</span><br></pre></td></tr></table></figure>
-<p>下载私有库文件的时候需要 -t 参数，需要提供账户的 OAuth token：<br><a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">Creating a personal access token - GitHub Docs</a></p>
-<hr>
-<h2 id="git-svn-踩坑日记"><a href="#git-svn-踩坑日记" class="headerlink" title="git-svn 踩坑日记"></a>git-svn 踩坑日记</h2><p>太晚了，踩了半天坑，没踩出来，不过记录一下吧，没准以后还会用到 git-svn，再继续解决。<br>目标是通过 git svn 下载资源的目录，想法是从 stackoverflow 来的，我对 svn 一点都不了解：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git svn clone https://github.com/user/repo/folder/folder</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure>
-<p>执行前面的命令检查 CommandLineTools 是否安装，如有弹窗选择：是。一般重装系统或者系统大版本升级都要重新安装一次。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ brew reinstall git</span><br><span class="line">$ brew install apr-util</span><br><span class="line">$ brew install perl</span><br><span class="line">$ PERL_MM_OPT=&quot;INSTALL_BASE=$HOME/perl5&quot; cpan local::lib</span><br><span class="line">$ echo &#x27;eval &quot;$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)&quot;&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">$ echo &#x27;export PATH=&quot;/usr/local/opt/apr/bin:$PATH&quot;&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">$ echo &#x27;export PATH=&quot;/usr/local/opt/apr-util/bin:$PATH&quot;&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">$ cpan SVN::Core  # 这命令耗时很久</span><br></pre></td></tr></table></figure>
-
-<h3 id="报错信息："><a href="#报错信息：" class="headerlink" title="报错信息："></a>报错信息：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Can&#x27;t locate SVN/Core.pm in @INC (you may need to install the SVN::Core module) (@INC contains: /usr/local/Cellar/git/2.27.0/share/perl5</span><br></pre></td></tr></table></figure>
-
-<p>修改文件<code>/usr/local/opt/git/libexec/git-core/git-svn</code>的第一行， <code>#!/usr/bin/perl</code> 为 <code>#!/usr/local/bin/perl</code>。</p>
-<h3 id="最终报错："><a href="#最终报错：" class="headerlink" title="最终报错："></a>最终报错：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Bad URL passed to RA layer: Unrecognized URL scheme for &#x27;https://github.com/PacktPub</span><br><span class="line">lishing/Hands-On-Full-Stack-Development-with-Go&#x27; at /usr/local/Cellar/git/2.27.0/sha</span><br><span class="line">re/perl5/Git/SVN.pm line 148.</span><br></pre></td></tr></table></figure>
-<p>git 关联的 svn 是它自带的 svn：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git svn --version</span><br><span class="line"># // git-svn version 2.27.0 (svn 1.8.11)</span><br><span class="line">$ svn --version</span><br><span class="line"># //svn, version 1.14.0 (r1876290)</span><br></pre></td></tr></table></figure>
-<p>和上一个报错有共同之处。</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://github.com/HR/github-clone">HR/github-clone: ⬇️ git clone repo subdirectories</a></li>
-<li><a href="https://teratail.com/questions/268932">Perl - git-svnを使用しようとした際に出るCan’t locate SVN/Core.pmというエラーの解決方法｜teratail</a></li>
-<li><a href="https://stackoverflow.com/questions/61637163/git-svn-cant-locate-svn-core-pm-after-fresh-installation-of-macos-catalina-10-1">perl - git-svn Can’t locate SVN/Core.pm after fresh installation of macOS Catalina 10.15.4 - Stack Overflow</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>git-svn</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>用 acme.sh 从 Let&#39;s Encrypt 免费获取持续的 SSL 证书支持</title>
-    <url>/acme-sh/</url>
-    <content><![CDATA[<h2 id="acme-sh-简介"><a href="#acme-sh-简介" class="headerlink" title="acme.sh 简介"></a>acme.sh 简介</h2><p>acme.sh 简化了 Let’s Encrypt 官方的证书签发过程。<br>目前主要有如下两类 Let’s Encrypt 证书的签发方式：</p>
-<ul>
-<li>http 认证方式</li>
-<li>dns 方式<span id="more"></span>
-
-</li>
-</ul>
-<p>http 需要 80 端口的贯通。<br>dns 方式不适用于所有的解析商，对域名的管理需要较高的权限。</p>
-<p><a href="https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E">github 安装说明</a></p>
-<h2 id="acme-sh-实际问题解决"><a href="#acme-sh-实际问题解决" class="headerlink" title="acme.sh 实际问题解决"></a>acme.sh 实际问题解决</h2><p>案例介绍：<br>一台 gentoo 服务器中仅对外网开放 80 和 443 端口，而当前的 80 端口使用 haproxy 代理。<br>最终解决方案：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">acme.sh --issue -d XXXX --standalone --pre-hook &quot;killall haproxy&quot; --post-hook &quot;/usr/local/haproxy/start.sh&quot; --force</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>ssl</tag>
-        <tag>acme.sh</tag>
-        <tag>letsencrypt</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于 GitHub Pages 的 Hexo+NexT 博客搭建</title>
     <url>/githubpages-hexo-next/</url>
     <content><![CDATA[<h1 id="基于-GitHub-Pages-的-Hexo-NexT-博客-——-引导篇"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客-——-引导篇" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客 —— 引导篇"></a>基于 GitHub Pages 的 Hexo + NexT 博客 —— 引导篇</h1><h2 id="基于-GitHub-Pages-的-Hexo-NexT-博客概述"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客概述" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客概述"></a>基于 GitHub Pages 的 Hexo + NexT 博客概述</h2><p>使用这一套博客系统架构您将获得稳定免费、美观、易定制的个人博客。通过 Markdown 语法编辑文章，git命令发布文章，优雅的博客发布体验。</p>
@@ -528,6 +490,44 @@
       </tags>
   </entry>
   <entry>
+    <title>从 Github 下载目标仓库指定文件夹</title>
+    <url>/github-download-folder/</url>
+    <content><![CDATA[<p>从 Github 下载目标仓库指定文件夹。</p>
+<span id="more"></span>
+
+<p><a href="https://github.com/HR/github-clone">HR/github-clone: ⬇️ git clone repo subdirectories</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install git+git://github.com/HR/github-clone#egg=ghclone</span><br><span class="line">ghclone https://github.com/HR/Crypter/tree/master/app</span><br><span class="line">ghclone https://github.com/HR/Picturesque/tree/master/app/src -t li50d67757gm20556d53f08126215725a698560b</span><br></pre></td></tr></table></figure>
+<p>下载私有库文件的时候需要 -t 参数，需要提供账户的 OAuth token：<br><a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">Creating a personal access token - GitHub Docs</a></p>
+<hr>
+<h2 id="git-svn-踩坑日记"><a href="#git-svn-踩坑日记" class="headerlink" title="git-svn 踩坑日记"></a>git-svn 踩坑日记</h2><p>太晚了，踩了半天坑，没踩出来，不过记录一下吧，没准以后还会用到 git-svn，再继续解决。<br>目标是通过 git svn 下载资源的目录，想法是从 stackoverflow 来的，我对 svn 一点都不了解：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git svn clone https://github.com/user/repo/folder/folder</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure>
+<p>执行前面的命令检查 CommandLineTools 是否安装，如有弹窗选择：是。一般重装系统或者系统大版本升级都要重新安装一次。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ brew reinstall git</span><br><span class="line">$ brew install apr-util</span><br><span class="line">$ brew install perl</span><br><span class="line">$ PERL_MM_OPT=&quot;INSTALL_BASE=$HOME/perl5&quot; cpan local::lib</span><br><span class="line">$ echo &#x27;eval &quot;$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)&quot;&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">$ echo &#x27;export PATH=&quot;/usr/local/opt/apr/bin:$PATH&quot;&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">$ echo &#x27;export PATH=&quot;/usr/local/opt/apr-util/bin:$PATH&quot;&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">$ cpan SVN::Core  # 这命令耗时很久</span><br></pre></td></tr></table></figure>
+
+<h3 id="报错信息："><a href="#报错信息：" class="headerlink" title="报错信息："></a>报错信息：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Can&#x27;t locate SVN/Core.pm in @INC (you may need to install the SVN::Core module) (@INC contains: /usr/local/Cellar/git/2.27.0/share/perl5</span><br></pre></td></tr></table></figure>
+
+<p>修改文件<code>/usr/local/opt/git/libexec/git-core/git-svn</code>的第一行， <code>#!/usr/bin/perl</code> 为 <code>#!/usr/local/bin/perl</code>。</p>
+<h3 id="最终报错："><a href="#最终报错：" class="headerlink" title="最终报错："></a>最终报错：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Bad URL passed to RA layer: Unrecognized URL scheme for &#x27;https://github.com/PacktPub</span><br><span class="line">lishing/Hands-On-Full-Stack-Development-with-Go&#x27; at /usr/local/Cellar/git/2.27.0/sha</span><br><span class="line">re/perl5/Git/SVN.pm line 148.</span><br></pre></td></tr></table></figure>
+<p>git 关联的 svn 是它自带的 svn：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git svn --version</span><br><span class="line"># // git-svn version 2.27.0 (svn 1.8.11)</span><br><span class="line">$ svn --version</span><br><span class="line"># //svn, version 1.14.0 (r1876290)</span><br></pre></td></tr></table></figure>
+<p>和上一个报错有共同之处。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://github.com/HR/github-clone">HR/github-clone: ⬇️ git clone repo subdirectories</a></li>
+<li><a href="https://teratail.com/questions/268932">Perl - git-svnを使用しようとした際に出るCan’t locate SVN/Core.pmというエラーの解決方法｜teratail</a></li>
+<li><a href="https://stackoverflow.com/questions/61637163/git-svn-cant-locate-svn-core-pm-after-fresh-installation-of-macos-catalina-10-1">perl - git-svn Can’t locate SVN/Core.pm after fresh installation of macOS Catalina 10.15.4 - Stack Overflow</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>git-svn</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>由简入深配置 iTem2 终端</title>
     <url>/iterm2/</url>
     <content><![CDATA[<h1 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h1><p>brew 安装 zsh<br>    <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">brew install zsh</span><br><span class="line">sudo chsh -s /usr/local/bin/zsh</span><br></pre></td></tr></table></figure><br>从 zsh 切换回 bash<br>    <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">chsh -s /bin/bash</span><br></pre></td></tr></table></figure></p>
@@ -624,43 +624,6 @@
       <categories>
         <category>思想文化</category>
       </categories>
-  </entry>
-  <entry>
-    <title>环形链表</title>
-    <url>/leetcode-142/</url>
-    <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><a href="https://leetcode-cn.com/problems/linked-list-cycle-ii/">142. 环形链表 II - 力扣（LeetCode）</a><br>给定一个链表，返回链表入环的第一个节点。无环返回null。<br><img data-src="https://images.xyang.xin/2020%2F09%2F13%2FlinkList.jpg?x-oss-process=style/title_800" alt="linkList.jpg"></p>
-<span id="more"></span>
-
-<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>环形链表问题，通用的解法，是通过设置双指针，</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> runSlow = head</span><br><span class="line"><span class="keyword">let</span> runFast = head</span><br></pre></td></tr></table></figure>
-<p>将 runFast 的速度，设置为2，runSlow 的速度设置为 1，当 runFast 所在节点等于 runSlow 所在节点代表追上了。</p>
-<p>因为 runFast 和 runSlow 同时出发，且 runFast 的速度为 runSlow 速度的两倍。<br><strong>无论如何 runSlow 跑的第一圈就会被追上</strong>。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(runFast &amp;&amp; runFast.next)&#123;</span><br><span class="line">    runFast = runFast.next.next</span><br><span class="line">    runSlow = runSlow.next</span><br><span class="line">    <span class="keyword">if</span> (runFast === runSlow)&#123;</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>如果有环，到这里我们已经能够得到，runFast 和 runSlow 的相遇点了。<br><img data-src="https://images.xyang.xin/2020%2F09%2F13%2FlinkListRYS.jpg?x-oss-process=style/title_800" alt="linkListRYS.jpg"></p>
-<p>题解：<br>相遇时：</p>
-<ul>
-<li>runSlow 走距离为：R + Y；</li>
-<li>runFast 走的距离为：R + n(Y+S) + Y</li>
-<li>R + n(Y+S) + Y = 2(R + Y)</li>
-<li>(n-1)Y + nS = R</li>
-</ul>
-<p>只要以上等式成立即可，可以任意取n，这里取n为1：R = S，<br><strong>也就是入口点的距离等于相遇点到这一圈终点的距离</strong>。</p>
-<p>这是我知道了 R=S 这个结论后，再推倒的，如果不知道结论，本弱还在设圈的周长的未知数呢。并且最后一步的思想很关键。<em>任意取</em>。</p>
-<p>所以根据这个结论，我们从起始点再放一个速度为 1 的节点，并且让runSlow继续跑，和这个新节点相遇的点就是入口点，这里为了节省那一点点内存，可以让runFast受累一下，让他从新从head开始以1的速度跑。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">runFast = head</span><br><span class="line"><span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(runFast == runSlow)&#123;</span><br><span class="line">        <span class="keyword">return</span> runFast</span><br><span class="line">    &#125;</span><br><span class="line">    runFast = runFast.next</span><br><span class="line">    runSlow = runSlow.next</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="知识积累"><a href="#知识积累" class="headerlink" title="知识积累"></a>知识积累</h2><ul>
-<li>入口点的距离等于相遇点到这一圈终点的距离</li>
-<li>不相关的参数可以任意设</li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>leecode</tag>
-        <tag>链表</tag>
-      </tags>
   </entry>
   <entry>
     <title>学习 HTTP 协议笔记</title>
@@ -786,6 +749,43 @@
       </categories>
       <tags>
         <tag>http</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>环形链表</title>
+    <url>/leetcode-142/</url>
+    <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><a href="https://leetcode-cn.com/problems/linked-list-cycle-ii/">142. 环形链表 II - 力扣（LeetCode）</a><br>给定一个链表，返回链表入环的第一个节点。无环返回null。<br><img data-src="https://images.xyang.xin/2020%2F09%2F13%2FlinkList.jpg?x-oss-process=style/title_800" alt="linkList.jpg"></p>
+<span id="more"></span>
+
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>环形链表问题，通用的解法，是通过设置双指针，</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> runSlow = head</span><br><span class="line"><span class="keyword">let</span> runFast = head</span><br></pre></td></tr></table></figure>
+<p>将 runFast 的速度，设置为2，runSlow 的速度设置为 1，当 runFast 所在节点等于 runSlow 所在节点代表追上了。</p>
+<p>因为 runFast 和 runSlow 同时出发，且 runFast 的速度为 runSlow 速度的两倍。<br><strong>无论如何 runSlow 跑的第一圈就会被追上</strong>。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(runFast &amp;&amp; runFast.next)&#123;</span><br><span class="line">    runFast = runFast.next.next</span><br><span class="line">    runSlow = runSlow.next</span><br><span class="line">    <span class="keyword">if</span> (runFast === runSlow)&#123;</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果有环，到这里我们已经能够得到，runFast 和 runSlow 的相遇点了。<br><img data-src="https://images.xyang.xin/2020%2F09%2F13%2FlinkListRYS.jpg?x-oss-process=style/title_800" alt="linkListRYS.jpg"></p>
+<p>题解：<br>相遇时：</p>
+<ul>
+<li>runSlow 走距离为：R + Y；</li>
+<li>runFast 走的距离为：R + n(Y+S) + Y</li>
+<li>R + n(Y+S) + Y = 2(R + Y)</li>
+<li>(n-1)Y + nS = R</li>
+</ul>
+<p>只要以上等式成立即可，可以任意取n，这里取n为1：R = S，<br><strong>也就是入口点的距离等于相遇点到这一圈终点的距离</strong>。</p>
+<p>这是我知道了 R=S 这个结论后，再推倒的，如果不知道结论，本弱还在设圈的周长的未知数呢。并且最后一步的思想很关键。<em>任意取</em>。</p>
+<p>所以根据这个结论，我们从起始点再放一个速度为 1 的节点，并且让runSlow继续跑，和这个新节点相遇的点就是入口点，这里为了节省那一点点内存，可以让runFast受累一下，让他从新从head开始以1的速度跑。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">runFast = head</span><br><span class="line"><span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(runFast == runSlow)&#123;</span><br><span class="line">        <span class="keyword">return</span> runFast</span><br><span class="line">    &#125;</span><br><span class="line">    runFast = runFast.next</span><br><span class="line">    runSlow = runSlow.next</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="知识积累"><a href="#知识积累" class="headerlink" title="知识积累"></a>知识积累</h2><ul>
+<li>入口点的距离等于相遇点到这一圈终点的距离</li>
+<li>不相关的参数可以任意设</li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>leecode</tag>
+        <tag>链表</tag>
       </tags>
   </entry>
   <entry>
@@ -1169,6 +1169,77 @@
       </tags>
   </entry>
   <entry>
+    <title>HTTP 代理与 Socks5 代理</title>
+    <url>/proxy-http-socks5/</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>本文通过实践经历基本的认识 HTTP 代理与 Socks5 代理的用法与理解其精髓。同时也解决 go get 库无法下载的问题。</p>
+<span id="more"></span>
+<h2 id="渐渐"><a href="#渐渐" class="headerlink" title="渐渐"></a>渐渐</h2><p>终端走代理我最初接触到的是 HTTP 代理，这篇文章可以见证(<a href="https://blog.xyang.xin/proxy-teach/index.html">代理服务器 | 韶 光</a>)。当然我的这些实践都是基于 shadowsocks 这款产品。随后我又接触了 Socks5 代理，因为简单其更快，又隐隐觉得其更底层，通过以下代码配置：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> .zshrc</span></span><br><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br></pre></td></tr></table></figure>
+<p>仍然要开 <em>全局模式</em> 终端才能走代理。</p>
+<p>虽然没有使用 HTTP 代理，但是很长一段时间我都没有关闭 <em>启用 HTTP 代理</em> 这个按钮，直到一天我连接手机热点 shadowsocks 闪退，我才关闭将其关闭了。这更显 Socks5 代理的优秀。</p>
+<h2 id="今天"><a href="#今天" class="headerlink" title="今天"></a>今天</h2><p>当我重新安装 <a href="https://github.com/fatih/vim-go">vim-go</a>,并执行 <code>:GoUpdateBinaries</code> 故事又开始了。<br>显示类似于如下的一系列报错：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vim-go: Updating guru. Reinstalling golang.org/x/tools/cmd/guru@master to folder /Users/sweeney/Documents/code/go/bin</span><br><span class="line">vim-go: Error installing golang.org/x/tools/cmd/guru@master: go get golang.org/x/tools/cmd/guru@master: golang.org/x/tools/cmd/guru@master: invalid version: Get &quot;https://proxy.golang.org/golang.org/x/tools/cmd/guru/@v/master.info&quot;: dial tcp 172.217.24.17:443: i/o</span><br><span class="line">timeout</span><br></pre></td></tr></table></figure>
+<p>首先我对 socks5 是很相信的，天生的认为其是较为底层的代理，应该不存在 HTTP 能代理而 Socks5 不能代理的情况。</p>
+<p>“应该” 呵呵，所以我就耗了近一个半小时在这里。</p>
+<p>以上问题其实和直接执行 <code>go get golang.org/x/tools/cmd/guru</code>，然后输出如下错误是一个道理。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">unrecognized import path &quot;golang.org/x/tools/cmd/guru&quot;: https fetch: Get &quot;https://golang.org/x/tools/cmd/guru?go-get=1&quot;: dial tcp 216.239.37.1:443: i/o timeout</span><br></pre></td></tr></table></figure>
+<p>都是 go get 无法从 golang.org 下载包。</p>
+<p>虽然 <code>curl golang.org</code> 能够访问这个网站，但是还是无法下载包。</p>
+<h2 id="Socks5-vs-HTTP"><a href="#Socks5-vs-HTTP" class="headerlink" title="Socks5 vs HTTP"></a>Socks5 vs HTTP</h2><table>
+<thead>
+<tr>
+<th></th>
+<th align="center">HTTP Proxy</th>
+<th align="center">Socks5 Proxy</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>功能</td>
+<td align="center">http 代理对于使用浏览器上网的用户很重要。</td>
+<td align="center">并不使用 http 协议，是更通用，更低级别的代理。</td>
+</tr>
+<tr>
+<td>安全</td>
+<td align="center">被传输的数据极可能被查看。</td>
+<td align="center">由于SOCKS无法读取数据，因此查看数据的几率很小。</td>
+</tr>
+<tr>
+<td>速度</td>
+<td align="center">速度较慢。</td>
+<td align="center">通用服务器速度快。</td>
+</tr>
+<tr>
+<td>连接工具</td>
+<td align="center">任何工具。</td>
+<td align="center">有限制工具。</td>
+</tr>
+<tr>
+<td>建议</td>
+<td align="center">传输少量数据。</td>
+<td align="center">传输大体积的速度。</td>
+</tr>
+</tbody></table>
+<p>SOCKS 作用在 OSI 模型的第四层 —— 会话层上。SOCKS4 只能代理TCP协议，而 SOCKS5 什么协议都可以代理。HTTP工作在应用层上，Socks代理只是简单地传递数据包，而不必关心是何种应用协议(比如 FTP、HTTP 和 NNTP 请求)，所以Socks代理服务器比应用层代理服务器要快得多。<br><img data-src="http://images.xyang.xin/2020-03%2Fnetwork.png" alt="network.png"></p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br><span class="line">export http_proxy=socks5://127.0.0.1:20808</span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">alias</span> go=<span class="string">&#x27;http_proxy=socks5://127.0.0.1:20808 go&#x27;</span></span></span><br></pre></td></tr></table></figure>
+
+<h2 id="遗留问题"><a href="#遗留问题" class="headerlink" title="遗留问题"></a>遗留问题</h2><p>我还是不知道为什么 ALL_PROXY 没对 go get 生效，而 http_proxy 生效了。并且经过测试，不是大小写的问题。</p>
+<hr>
+<p>参考文献：</p>
+<ul>
+<li><a href="https://dzone.com/articles/breaking-down-complex-differences-of-socks-vs-http">Breaking Down Differences Between SOCKS vs HTTP Proxy - DZone Security</a></li>
+<li><a href="https://colobu.com/2017/01/26/how-to-go-get-behind-GFW/">如何在长城后面go get一些库 | 鸟窝</a></li>
+<li><a href="http://www.yunlianip.com/News-getinfo-id-61.html">SOCKS5代理和HTTP代理有什么区别？-云连代理</a></li>
+<li><a href="https://stackoverflow.com/questions/10383299/how-do-i-configure-go-command-to-use-a-proxy">How do I configure go command to use a proxy? - Stack Overflow</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>代理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>代理服务器</title>
     <url>/proxy-teach/</url>
     <content><![CDATA[<p>主要包含：shadowsocks-libev、kuptun 的配置和优化。基于亚马逊云学生机。</p>
@@ -1389,74 +1460,57 @@
       </tags>
   </entry>
   <entry>
-    <title>HTTP 代理与 Socks5 代理</title>
-    <url>/proxy-http-socks5/</url>
-    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>本文通过实践经历基本的认识 HTTP 代理与 Socks5 代理的用法与理解其精髓。同时也解决 go get 库无法下载的问题。</p>
+    <title>Vim 自动补全之 YCM</title>
+    <url>/shell-java/</url>
+    <content><![CDATA[<p>IDEA 打开得太慢了，我需要一款轻量级的 IDE，不想装其他乱七八糟的编译器咋办？搞事情！</p>
 <span id="more"></span>
-<h2 id="渐渐"><a href="#渐渐" class="headerlink" title="渐渐"></a>渐渐</h2><p>终端走代理我最初接触到的是 HTTP 代理，这篇文章可以见证(<a href="https://blog.xyang.xin/proxy-teach/index.html">代理服务器 | 韶 光</a>)。当然我的这些实践都是基于 shadowsocks 这款产品。随后我又接触了 Socks5 代理，因为简单其更快，又隐隐觉得其更底层，通过以下代码配置：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> .zshrc</span></span><br><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br></pre></td></tr></table></figure>
-<p>仍然要开 <em>全局模式</em> 终端才能走代理。</p>
-<p>虽然没有使用 HTTP 代理，但是很长一段时间我都没有关闭 <em>启用 HTTP 代理</em> 这个按钮，直到一天我连接手机热点 shadowsocks 闪退，我才关闭将其关闭了。这更显 Socks5 代理的优秀。</p>
-<h2 id="今天"><a href="#今天" class="headerlink" title="今天"></a>今天</h2><p>当我重新安装 <a href="https://github.com/fatih/vim-go">vim-go</a>,并执行 <code>:GoUpdateBinaries</code> 故事又开始了。<br>显示类似于如下的一系列报错：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vim-go: Updating guru. Reinstalling golang.org/x/tools/cmd/guru@master to folder /Users/sweeney/Documents/code/go/bin</span><br><span class="line">vim-go: Error installing golang.org/x/tools/cmd/guru@master: go get golang.org/x/tools/cmd/guru@master: golang.org/x/tools/cmd/guru@master: invalid version: Get &quot;https://proxy.golang.org/golang.org/x/tools/cmd/guru/@v/master.info&quot;: dial tcp 172.217.24.17:443: i/o</span><br><span class="line">timeout</span><br></pre></td></tr></table></figure>
-<p>首先我对 socks5 是很相信的，天生的认为其是较为底层的代理，应该不存在 HTTP 能代理而 Socks5 不能代理的情况。</p>
-<p>“应该” 呵呵，所以我就耗了近一个半小时在这里。</p>
-<p>以上问题其实和直接执行 <code>go get golang.org/x/tools/cmd/guru</code>，然后输出如下错误是一个道理。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">unrecognized import path &quot;golang.org/x/tools/cmd/guru&quot;: https fetch: Get &quot;https://golang.org/x/tools/cmd/guru?go-get=1&quot;: dial tcp 216.239.37.1:443: i/o timeout</span><br></pre></td></tr></table></figure>
-<p>都是 go get 无法从 golang.org 下载包。</p>
-<p>虽然 <code>curl golang.org</code> 能够访问这个网站，但是还是无法下载包。</p>
-<h2 id="Socks5-vs-HTTP"><a href="#Socks5-vs-HTTP" class="headerlink" title="Socks5 vs HTTP"></a>Socks5 vs HTTP</h2><table>
-<thead>
-<tr>
-<th></th>
-<th align="center">HTTP Proxy</th>
-<th align="center">Socks5 Proxy</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>功能</td>
-<td align="center">http 代理对于使用浏览器上网的用户很重要。</td>
-<td align="center">并不使用 http 协议，是更通用，更低级别的代理。</td>
-</tr>
-<tr>
-<td>安全</td>
-<td align="center">被传输的数据极可能被查看。</td>
-<td align="center">由于SOCKS无法读取数据，因此查看数据的几率很小。</td>
-</tr>
-<tr>
-<td>速度</td>
-<td align="center">速度较慢。</td>
-<td align="center">通用服务器速度快。</td>
-</tr>
-<tr>
-<td>连接工具</td>
-<td align="center">任何工具。</td>
-<td align="center">有限制工具。</td>
-</tr>
-<tr>
-<td>建议</td>
-<td align="center">传输少量数据。</td>
-<td align="center">传输大体积的速度。</td>
-</tr>
-</tbody></table>
-<p>SOCKS 作用在 OSI 模型的第四层 —— 会话层上。SOCKS4 只能代理TCP协议，而 SOCKS5 什么协议都可以代理。HTTP工作在应用层上，Socks代理只是简单地传递数据包，而不必关心是何种应用协议(比如 FTP、HTTP 和 NNTP 请求)，所以Socks代理服务器比应用层代理服务器要快得多。<br><img data-src="http://images.xyang.xin/2020-03%2Fnetwork.png" alt="network.png"></p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export ALL_PROXY=socks5://127.0.0.1:20808</span><br><span class="line">export http_proxy=socks5://127.0.0.1:20808</span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">alias</span> go=<span class="string">&#x27;http_proxy=socks5://127.0.0.1:20808 go&#x27;</span></span></span><br></pre></td></tr></table></figure>
+<h2 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h2><p>sublime 通过简单的配置后可以实现 java 代码的高亮提示和编译功能，并且大多编译错误也能基本上精确到行。<br>然而 sublime 内置的终端无法输入，虽然在日常的算法中输入操作很少涉及，, 但还是很不爽。</p>
+<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>这里需要一定的 Vim 基础，新手请执行 <code>vimtutor</code> 查看 Vim 官方教程，再继续往后看。<br>在终端通过 java 命令即可实现 java 代码的编译与运行。<br>vim 不过起到的是编辑器的作用。<br>对于编辑器我们不仅有高亮的基本要求，同样也需要基本的代码补全功能, Vim 的 YCM 插件能较好的实现代码补全功能。<br>下面介绍通过 vim 的 vim-plug 插件管理器 来安装 YCM 。</p>
+<h2 id="预备工作"><a href="#预备工作" class="headerlink" title="预备工作"></a>预备工作</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br><span class="line">brew install cmake vim</span><br></pre></td></tr></table></figure>
 
-<h2 id="遗留问题"><a href="#遗留问题" class="headerlink" title="遗留问题"></a>遗留问题</h2><p>我还是不知道为什么 ALL_PROXY 没对 go get 生效，而 http_proxy 生效了。并且经过测试，不是大小写的问题。</p>
-<hr>
-<p>参考文献：</p>
-<ul>
-<li><a href="https://dzone.com/articles/breaking-down-complex-differences-of-socks-vs-http">Breaking Down Differences Between SOCKS vs HTTP Proxy - DZone Security</a></li>
-<li><a href="https://colobu.com/2017/01/26/how-to-go-get-behind-GFW/">如何在长城后面go get一些库 | 鸟窝</a></li>
-<li><a href="http://www.yunlianip.com/News-getinfo-id-61.html">SOCKS5代理和HTTP代理有什么区别？-云连代理</a></li>
-<li><a href="https://stackoverflow.com/questions/10383299/how-do-i-configure-go-command-to-use-a-proxy">How do I configure go command to use a proxy? - Stack Overflow</a></li>
+<h2 id="vim-plug-安装"><a href="#vim-plug-安装" class="headerlink" title="vim-plug 安装"></a>vim-plug 安装</h2><p><a href="https://github.com/junegunn/vim-plug">junegunn/vim-plug</a></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -fLo ~/.vim/autoload/plug.vim --create-dirs \</span><br><span class="line">    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</span><br></pre></td></tr></table></figure>
+<h2 id="安装-YCM"><a href="#安装-YCM" class="headerlink" title="安装 YCM"></a>安装 YCM</h2><p><a href="https://github.com/Valloric/YouCompleteMe">YCM Github</a></p>
+<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>YCM 可通过 vim-plug 下载，而安装使用则需要进一步的编译。</p>
+<p>在 .vimrc 文件中添加 <code>Plug &#39;Valloric/YouCompleteMe&#39; </code> 再执行 :PluginInstall 即可。</p>
+<h3 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h3><p>YCM 基于 cmake 进行编译的，所以在安装之前如下命令先通过 brew 安装 cmake。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --java-completer</span><br></pre></td></tr></table></figure>
+<p>请使用 python3 。</p>
+<p>安装好之后，由于我的 python3 缺乏很多依赖性，通过以下命令检验 python 所缺乏的依赖。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe/third_party/ycmd</span><br><span class="line">cp ycmd/default_settings.json . &amp; python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
+<p>如果输出如下，是 python 环境的问题考虑重启然后重装：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[1]    8629 segmentation fault  python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
+<p>若有如下报错：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ModuleNotFoundError: No module named &#x27;bottle&#x27;</span><br><span class="line">ModuleNotFoundError: No module named &#x27;waitress&#x27;</span><br></pre></td></tr></table></figure>
+<p>逐句执行 <code>pip3 install bottle</code> <code>pip3 install waitress</code>即可解决。<br>如果显示是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">No module named &#x27;ycm_core&#x27;</span><br></pre></td></tr></table></figure>
+<p>是没有问题的</p>
+<h2 id="YCM-安装-C-family-的自动补全"><a href="#YCM-安装-C-family-的自动补全" class="headerlink" title="YCM 安装 C-family 的自动补全"></a>YCM 安装 C-family 的自动补全</h2><h3 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --clang-completer</span><br></pre></td></tr></table></figure>
+<h3 id="安装-ycm-gennerator"><a href="#安装-ycm-gennerator" class="headerlink" title="安装 ycm-gennerator"></a>安装 ycm-gennerator</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Plugin &#x27;rdnetto/YCM-Generator&#x27;</span><br></pre></td></tr></table></figure>
+<h3 id="生成-ycm-extra-conf-py-文件到-YCM-中"><a href="#生成-ycm-extra-conf-py-文件到-YCM-中" class="headerlink" title="生成 .ycm_extra_conf.py 文件到 YCM 中"></a>生成 .ycm_extra_conf.py 文件到 YCM 中</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python3 .ycm_extra_conf.py ~/.vim/plugged/YouCompleteMe/third_party/ycmd</span><br></pre></td></tr></table></figure>
+<h3 id="在-vimrc-中添加"><a href="#在-vimrc-中添加" class="headerlink" title="在 ~/.vimrc 中添加"></a>在 ~/.vimrc 中添加</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">let g:ycm_global_ycm_extra_conf = &#x27;～/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py&#x27;</span><br></pre></td></tr></table></figure>
+
+<h2 id="go-语言"><a href="#go-语言" class="headerlink" title="go 语言"></a>go 语言</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --go-completer</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他语言参数"><a href="#其他语言参数" class="headerlink" title="其他语言参数"></a>其他语言参数</h2><ul>
+<li>C family support: <code>python3 ./install.py --clang-completer</code></li>
+<li>C# support: <code>python3 ./install.py --cs-completer </code>（install Mono with Homebrew or by downloading the <a href="http://www.mono-project.com/docs/getting-started/install/mac/">Mono macOS package</a> ）</li>
+<li>Go support: <code>python3 ./install.py --go-completer</code> </li>
+<li>JavaScript and TypeScript support: <code>python3 ./install.py --ts-completer</code> </li>
+<li>Rust support: <code>python3 ./install.py --rust-completer</code></li>
+<li>Java support: <code>python3 ./install.py --java-completer</code></li>
 </ul>
-]]></content>
+<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:PlugUpdate</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">git clean -f</span><br><span class="line">git pull</span><br><span class="line">git submodule update --recursive --init</span><br><span class="line">./install.py --go-completer</span><br></pre></td></tr></table></figure>
+
+<h2 id="错误解决"><a href="#错误解决" class="headerlink" title="错误解决"></a>错误解决</h2><p>升级 catalina 后 brew 安装的 python3 执行异常，解决方案如下：<br><a href="https://forums.developer.apple.com/thread/119429">My application crashed with invalid load of lib… |Apple Developer Forums</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#!/bin/zsh</span><br><span class="line">brew update &amp; brew upgrade &amp; brew install openssl</span><br><span class="line">cd /usr/local/Cellar/openssl/1.0.2t/lib</span><br><span class="line">sudo cp libssl.1.0.0.dylib libcrypto.1.0.0.dylib /usr/local/lib/</span><br><span class="line">cd /usr/local/lib</span><br><span class="line">mv libssl.dylib libssl_bak.dylib</span><br><span class="line">mv libcrypto.dylib libcrypto_bak.dylib</span><br><span class="line">sudo ln -s libssl.1.0.0.dylib libssl.dylib</span><br><span class="line">sudo ln -s libcrypto.1.0.0.dylib libcrypto.dylib</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>代理</tag>
+        <tag>开发工具</tag>
       </tags>
   </entry>
   <entry>
@@ -1696,57 +1750,34 @@
       </tags>
   </entry>
   <entry>
-    <title>Vim 自动补全之 YCM</title>
-    <url>/shell-java/</url>
-    <content><![CDATA[<p>IDEA 打开得太慢了，我需要一款轻量级的 IDE，不想装其他乱七八糟的编译器咋办？搞事情！</p>
+    <title>vim 多文件类型自动补全方案</title>
+    <url>/vim-multiple-filetype-deoplete/</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
+<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
 <span id="more"></span>
-<h2 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h2><p>sublime 通过简单的配置后可以实现 java 代码的高亮提示和编译功能，并且大多编译错误也能基本上精确到行。<br>然而 sublime 内置的终端无法输入，虽然在日常的算法中输入操作很少涉及，, 但还是很不爽。</p>
-<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>这里需要一定的 Vim 基础，新手请执行 <code>vimtutor</code> 查看 Vim 官方教程，再继续往后看。<br>在终端通过 java 命令即可实现 java 代码的编译与运行。<br>vim 不过起到的是编辑器的作用。<br>对于编辑器我们不仅有高亮的基本要求，同样也需要基本的代码补全功能, Vim 的 YCM 插件能较好的实现代码补全功能。<br>下面介绍通过 vim 的 vim-plug 插件管理器 来安装 YCM 。</p>
-<h2 id="预备工作"><a href="#预备工作" class="headerlink" title="预备工作"></a>预备工作</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br><span class="line">brew install cmake vim</span><br></pre></td></tr></table></figure>
-
-<h2 id="vim-plug-安装"><a href="#vim-plug-安装" class="headerlink" title="vim-plug 安装"></a>vim-plug 安装</h2><p><a href="https://github.com/junegunn/vim-plug">junegunn/vim-plug</a></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -fLo ~/.vim/autoload/plug.vim --create-dirs \</span><br><span class="line">    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</span><br></pre></td></tr></table></figure>
-<h2 id="安装-YCM"><a href="#安装-YCM" class="headerlink" title="安装 YCM"></a>安装 YCM</h2><p><a href="https://github.com/Valloric/YouCompleteMe">YCM Github</a></p>
-<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>YCM 可通过 vim-plug 下载，而安装使用则需要进一步的编译。</p>
-<p>在 .vimrc 文件中添加 <code>Plug &#39;Valloric/YouCompleteMe&#39; </code> 再执行 :PluginInstall 即可。</p>
-<h3 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h3><p>YCM 基于 cmake 进行编译的，所以在安装之前如下命令先通过 brew 安装 cmake。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --java-completer</span><br></pre></td></tr></table></figure>
-<p>请使用 python3 。</p>
-<p>安装好之后，由于我的 python3 缺乏很多依赖性，通过以下命令检验 python 所缺乏的依赖。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe/third_party/ycmd</span><br><span class="line">cp ycmd/default_settings.json . &amp; python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
-<p>如果输出如下，是 python 环境的问题考虑重启然后重装：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[1]    8629 segmentation fault  python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
-<p>若有如下报错：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ModuleNotFoundError: No module named &#x27;bottle&#x27;</span><br><span class="line">ModuleNotFoundError: No module named &#x27;waitress&#x27;</span><br></pre></td></tr></table></figure>
-<p>逐句执行 <code>pip3 install bottle</code> <code>pip3 install waitress</code>即可解决。<br>如果显示是：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">No module named &#x27;ycm_core&#x27;</span><br></pre></td></tr></table></figure>
-<p>是没有问题的</p>
-<h2 id="YCM-安装-C-family-的自动补全"><a href="#YCM-安装-C-family-的自动补全" class="headerlink" title="YCM 安装 C-family 的自动补全"></a>YCM 安装 C-family 的自动补全</h2><h3 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --clang-completer</span><br></pre></td></tr></table></figure>
-<h3 id="安装-ycm-gennerator"><a href="#安装-ycm-gennerator" class="headerlink" title="安装 ycm-gennerator"></a>安装 ycm-gennerator</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Plugin &#x27;rdnetto/YCM-Generator&#x27;</span><br></pre></td></tr></table></figure>
-<h3 id="生成-ycm-extra-conf-py-文件到-YCM-中"><a href="#生成-ycm-extra-conf-py-文件到-YCM-中" class="headerlink" title="生成 .ycm_extra_conf.py 文件到 YCM 中"></a>生成 .ycm_extra_conf.py 文件到 YCM 中</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python3 .ycm_extra_conf.py ~/.vim/plugged/YouCompleteMe/third_party/ycmd</span><br></pre></td></tr></table></figure>
-<h3 id="在-vimrc-中添加"><a href="#在-vimrc-中添加" class="headerlink" title="在 ~/.vimrc 中添加"></a>在 ~/.vimrc 中添加</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">let g:ycm_global_ycm_extra_conf = &#x27;～/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py&#x27;</span><br></pre></td></tr></table></figure>
-
-<h2 id="go-语言"><a href="#go-语言" class="headerlink" title="go 语言"></a>go 语言</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --go-completer</span><br></pre></td></tr></table></figure>
-
-<h2 id="其他语言参数"><a href="#其他语言参数" class="headerlink" title="其他语言参数"></a>其他语言参数</h2><ul>
-<li>C family support: <code>python3 ./install.py --clang-completer</code></li>
-<li>C# support: <code>python3 ./install.py --cs-completer </code>（install Mono with Homebrew or by downloading the <a href="http://www.mono-project.com/docs/getting-started/install/mac/">Mono macOS package</a> ）</li>
-<li>Go support: <code>python3 ./install.py --go-completer</code> </li>
-<li>JavaScript and TypeScript support: <code>python3 ./install.py --ts-completer</code> </li>
-<li>Rust support: <code>python3 ./install.py --rust-completer</code></li>
-<li>Java support: <code>python3 ./install.py --java-completer</code></li>
-</ul>
-<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:PlugUpdate</span><br></pre></td></tr></table></figure>
-<p>或</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">git clean -f</span><br><span class="line">git pull</span><br><span class="line">git submodule update --recursive --init</span><br><span class="line">./install.py --go-completer</span><br></pre></td></tr></table></figure>
-
-<h2 id="错误解决"><a href="#错误解决" class="headerlink" title="错误解决"></a>错误解决</h2><p>升级 catalina 后 brew 安装的 python3 执行异常，解决方案如下：<br><a href="https://forums.developer.apple.com/thread/119429">My application crashed with invalid load of lib… |Apple Developer Forums</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#!/bin/zsh</span><br><span class="line">brew update &amp; brew upgrade &amp; brew install openssl</span><br><span class="line">cd /usr/local/Cellar/openssl/1.0.2t/lib</span><br><span class="line">sudo cp libssl.1.0.0.dylib libcrypto.1.0.0.dylib /usr/local/lib/</span><br><span class="line">cd /usr/local/lib</span><br><span class="line">mv libssl.dylib libssl_bak.dylib</span><br><span class="line">mv libcrypto.dylib libcrypto_bak.dylib</span><br><span class="line">sudo ln -s libssl.1.0.0.dylib libssl.dylib</span><br><span class="line">sudo ln -s libcrypto.1.0.0.dylib libcrypto.dylib</span><br></pre></td></tr></table></figure>]]></content>
+<p>其中的 filetype on 表示：</p>
+<blockquote>
+<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
+</blockquote>
+<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
+<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
+<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">&#x27;nvim&#x27;</span>)</span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span>, &#123; <span class="string">&#x27;do&#x27;</span>: <span class="string">&#x27;:UpdateRemotePlugins&#x27;</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/nvim-yarp&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/vim-hug-neovim-rpc&#x27;</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">&#x27;Shougo/context_filetype.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">&#x27;g:context_filetype#same_filetypes&#x27;</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;javascript&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;script&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/script&gt;&#x27;</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;css&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;style&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/style&gt;&#x27;</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;functions&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;css&#x27;</span>: [<span class="string">&#x27;csscomplete#CompleteCSS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: [<span class="string">&#x27;javascriptcomplete#CompleteJS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;html&#x27;</span>: [<span class="string">&#x27;htmlcomplete#CompleteTags&#x27;</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;input_patterns&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: <span class="string">&#x27;[^. *\t]\.\w*&#x27;</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">&quot; 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">&quot;\&lt;C-n&gt;&quot;</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">&quot;\&lt;TAB&gt;&quot;</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> &quot;&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">&#x27;.&#x27;</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">&#x27;\s&#x27;</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">&quot;&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
+<p>执行 :PlugInstall</p>
+<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
+<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">&#x27;range&#x27;</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">&#x27;filetype&#x27;</span>: <span class="string">&#x27;css&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
+<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
+<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
+]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>开发工具</tag>
+        <tag>vim</tag>
+        <tag>multiple filetype</tag>
       </tags>
   </entry>
   <entry>
@@ -1793,72 +1824,6 @@
       </tags>
   </entry>
   <entry>
-    <title>vim 多文件类型自动补全方案</title>
-    <url>/vim-multiple-filetype-deoplete/</url>
-    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
-<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<p>其中的 filetype on 表示：</p>
-<blockquote>
-<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
-</blockquote>
-<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
-<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
-<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">&#x27;nvim&#x27;</span>)</span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span>, &#123; <span class="string">&#x27;do&#x27;</span>: <span class="string">&#x27;:UpdateRemotePlugins&#x27;</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/nvim-yarp&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/vim-hug-neovim-rpc&#x27;</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">&#x27;Shougo/context_filetype.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">&#x27;g:context_filetype#same_filetypes&#x27;</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;javascript&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;script&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/script&gt;&#x27;</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;css&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;style&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/style&gt;&#x27;</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;functions&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;css&#x27;</span>: [<span class="string">&#x27;csscomplete#CompleteCSS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: [<span class="string">&#x27;javascriptcomplete#CompleteJS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;html&#x27;</span>: [<span class="string">&#x27;htmlcomplete#CompleteTags&#x27;</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;input_patterns&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: <span class="string">&#x27;[^. *\t]\.\w*&#x27;</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">&quot; 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">&quot;\&lt;C-n&gt;&quot;</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">&quot;\&lt;TAB&gt;&quot;</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> &quot;&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">&#x27;.&#x27;</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">&#x27;\s&#x27;</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">&quot;&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
-<p>执行 :PlugInstall</p>
-<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
-<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">&#x27;range&#x27;</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">&#x27;filetype&#x27;</span>: <span class="string">&#x27;css&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
-<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
-<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
-<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>multiple filetype</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>React-Vim 开发环境</title>
-    <url>/vim-react/</url>
-    <content><![CDATA[<h2 id="实现功能"><a href="#实现功能" class="headerlink" title="实现功能"></a>实现功能</h2><ol>
-<li>react 代码高亮、自动补全。</li>
-<li>执行<code>./node_modules/.bin/eslint --fix src/App.js</code> 即可对App.js 进行代码错误检测和格式化。</li>
-<li>变更代码自动对代码进行格式化。<span id="more"></span>
-
-</li>
-</ol>
-<h2 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm config set registry=http://registry.npmjs.org</span><br><span class="line">npm config set disturl https://npm.taobao.org/dist</span><br></pre></td></tr></table></figure>
-
-<h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><p>建议使用 vim-plug 包管理器（<a href="https://blog.xyang.xin/shell-java/#sublime">安装方式</a>）</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vim ~./vimrc</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">set</span> nu!               <span class="comment">&quot; 显示行号</span></span><br><span class="line"><span class="keyword">set</span> hls               <span class="comment">&quot; 寻找时匹配高亮显示</span></span><br><span class="line"><span class="keyword">syntax</span> <span class="keyword">on</span>             <span class="comment">&quot; 语法高亮</span></span><br><span class="line"><span class="keyword">set</span> background=dark</span><br><span class="line"><span class="keyword">colorscheme</span> solarized</span><br><span class="line"><span class="keyword">set</span> <span class="built_in">shiftwidth</span>=<span class="number">2</span>      <span class="comment">&quot; 设置格式化时代码缩进为2个空格</span></span><br><span class="line"><span class="keyword">set</span> tabstop=<span class="number">2</span>         <span class="comment">&quot; tab键缩进为4格子</span></span><br><span class="line"><span class="keyword">set</span> expandtab         <span class="comment">&quot; tab键转换为空格</span></span><br><span class="line"><span class="keyword">set</span> incsearch         <span class="comment">&quot; 很聪明的查找,输入一个字符马上自动匹配,而不是输入完再查找</span></span><br><span class="line"><span class="keyword">set</span> ignorecase        <span class="comment">&quot; 搜索时大小写不敏感</span></span><br><span class="line"><span class="keyword">set</span> wildmenu          <span class="comment">&quot; vim 自身命令行模式智能补全</span></span><br><span class="line"><span class="keyword">set</span> <span class="keyword">ts</span>=<span class="number">4</span>              <span class="comment">&quot; 设置 tab 键为四个空格</span></span><br><span class="line"><span class="keyword">set</span> <span class="built_in">cindent</span>           <span class="comment">&quot; 设置自动缩近</span></span><br><span class="line"><span class="keyword">set</span> <span class="built_in">shiftwidth</span>=<span class="number">4</span>      <span class="comment">&quot; 设置每一级缩进长度为4</span></span><br><span class="line"><span class="keyword">set</span> nocompatible      <span class="comment">&quot; 自动补全</span></span><br><span class="line"><span class="keyword">set</span> backspace=<span class="number">2</span>       <span class="comment">&quot; 解决不能删除的问题</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> plug#begin(<span class="string">&#x27;~/.vim/plugged&#x27;</span>)</span><br><span class="line"><span class="comment">&quot; react 插件</span></span><br><span class="line">Plug <span class="string">&#x27;pangloss/vim-javascript&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;mxw/vim-jsx&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;mattn/emmet-vim&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;w0rp/ale&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;skywind3000/asyncrun.vim&#x27;</span></span><br><span class="line"><span class="keyword">call</span> plug#end()</span><br><span class="line"></span><br><span class="line"> <span class="comment">&quot; emmet-vim</span></span><br><span class="line"> <span class="keyword">let</span> <span class="variable">g:user_emmet_leader_key</span>=<span class="string">&#x27;&lt;C-e&gt;&#x27;</span></span><br><span class="line"> <span class="keyword">let</span> <span class="variable">g:user_emmet_jsx</span> = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; react 自动格式化</span></span><br><span class="line"><span class="keyword">autocmd</span> BufWritePost *.js AsyncRun -post=<span class="keyword">checktime</span> ./node_modules/.bin/eslint --<span class="keyword">fix</span> %</span><br></pre></td></tr></table></figure>
-
-<h2 id="依赖安装"><a href="#依赖安装" class="headerlink" title="依赖安装"></a>依赖安装</h2><p>以 create-react-app 为例</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npx create-react-app create-react-app</span><br><span class="line">cd create-react-app</span><br><span class="line">./node_modules/.bin/eslint --init</span><br><span class="line"><span class="meta">#</span><span class="bash"> Use a popular style guide ——&gt; Airbnb ——&gt; y ——&gt; JavaScript ——&gt; n</span></span><br><span class="line">npm install --save--dev eslint-config-airbnb</span><br><span class="line">或：</span><br><span class="line">yarn add --dev eslint-config-airbnb</span><br></pre></td></tr></table></figure>
-
-<h2 id="修改-eslintrc-js-配置"><a href="#修改-eslintrc-js-配置" class="headerlink" title="修改 .eslintrc.js 配置"></a>修改 .eslintrc.js 配置</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim .eslintrc.js</span><br></pre></td></tr></table></figure>
-
-<p>覆盖原文本如下：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    <span class="string">&quot;root&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">&quot;parserOptions&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;parser&quot;</span>: <span class="string">&#x27;babel-eslint&#x27;</span>,</span><br><span class="line">         <span class="string">&quot;sourceType&quot;</span>: <span class="string">&#x27;module&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&quot;extends&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;eslint:recommended&quot;</span>,</span><br><span class="line">        <span class="string">&quot;plugin:react/recommended&quot;</span>,</span><br><span class="line">        <span class="string">&quot;eslint-config-airbnb&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;plugins&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;react&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;rules&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;react/jsx-filename-extension&quot;</span>: [<span class="number">1</span>, &#123; <span class="string">&quot;extensions&quot;</span>: [<span class="string">&quot;.js&quot;</span>, <span class="string">&quot;.jsx&quot;</span>] &#125;],</span><br><span class="line">        <span class="string">&quot;react/prefer-stateless-function&quot;</span>: <span class="string">&quot;off&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><a href="https://drivy.engineering/setting-up-vim-for-react/">Setting up Vim for React development | Drivy Engineering</a><br><a href="https://blog.xcatliu.com/2017/08/25/eslint-config-alloy/">我花了两个月时间，定制出了心目中「完美」的 ESLint 规则，我用四个空格缩进 - 流浪小猫的博客</a></p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>react</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>vim-fugitive ——【一天一个 vim 插件】</title>
     <url>/vim-plugin-everday-2/</url>
     <content><![CDATA[<p>作为一个 10k+ star 的 vim 插件，<a href="https://github.com/tpope/vim-fugitive">tpope/vim-fugitive</a> 自称为 Git 的第一 Vim 插件并不为过。Fugitive 让你在当前 buffer 缓冲区通过<code>:Git</code>或<code>:G</code>，可以直接使用 git 命令。可以看作是<code>!git XX</code> 命令的改进和优化，除了使用 silent，静默模式外，你不会看到 “Press ENTER or type command to continue”，还对一些命令进行了优化。</p>
@@ -1902,6 +1867,41 @@
       </tags>
   </entry>
   <entry>
+    <title>React-Vim 开发环境</title>
+    <url>/vim-react/</url>
+    <content><![CDATA[<h2 id="实现功能"><a href="#实现功能" class="headerlink" title="实现功能"></a>实现功能</h2><ol>
+<li>react 代码高亮、自动补全。</li>
+<li>执行<code>./node_modules/.bin/eslint --fix src/App.js</code> 即可对App.js 进行代码错误检测和格式化。</li>
+<li>变更代码自动对代码进行格式化。<span id="more"></span>
+
+</li>
+</ol>
+<h2 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm config set registry=http://registry.npmjs.org</span><br><span class="line">npm config set disturl https://npm.taobao.org/dist</span><br></pre></td></tr></table></figure>
+
+<h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><p>建议使用 vim-plug 包管理器（<a href="https://blog.xyang.xin/shell-java/#sublime">安装方式</a>）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vim ~./vimrc</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">set</span> nu!               <span class="comment">&quot; 显示行号</span></span><br><span class="line"><span class="keyword">set</span> hls               <span class="comment">&quot; 寻找时匹配高亮显示</span></span><br><span class="line"><span class="keyword">syntax</span> <span class="keyword">on</span>             <span class="comment">&quot; 语法高亮</span></span><br><span class="line"><span class="keyword">set</span> background=dark</span><br><span class="line"><span class="keyword">colorscheme</span> solarized</span><br><span class="line"><span class="keyword">set</span> <span class="built_in">shiftwidth</span>=<span class="number">2</span>      <span class="comment">&quot; 设置格式化时代码缩进为2个空格</span></span><br><span class="line"><span class="keyword">set</span> tabstop=<span class="number">2</span>         <span class="comment">&quot; tab键缩进为4格子</span></span><br><span class="line"><span class="keyword">set</span> expandtab         <span class="comment">&quot; tab键转换为空格</span></span><br><span class="line"><span class="keyword">set</span> incsearch         <span class="comment">&quot; 很聪明的查找,输入一个字符马上自动匹配,而不是输入完再查找</span></span><br><span class="line"><span class="keyword">set</span> ignorecase        <span class="comment">&quot; 搜索时大小写不敏感</span></span><br><span class="line"><span class="keyword">set</span> wildmenu          <span class="comment">&quot; vim 自身命令行模式智能补全</span></span><br><span class="line"><span class="keyword">set</span> <span class="keyword">ts</span>=<span class="number">4</span>              <span class="comment">&quot; 设置 tab 键为四个空格</span></span><br><span class="line"><span class="keyword">set</span> <span class="built_in">cindent</span>           <span class="comment">&quot; 设置自动缩近</span></span><br><span class="line"><span class="keyword">set</span> <span class="built_in">shiftwidth</span>=<span class="number">4</span>      <span class="comment">&quot; 设置每一级缩进长度为4</span></span><br><span class="line"><span class="keyword">set</span> nocompatible      <span class="comment">&quot; 自动补全</span></span><br><span class="line"><span class="keyword">set</span> backspace=<span class="number">2</span>       <span class="comment">&quot; 解决不能删除的问题</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> plug#begin(<span class="string">&#x27;~/.vim/plugged&#x27;</span>)</span><br><span class="line"><span class="comment">&quot; react 插件</span></span><br><span class="line">Plug <span class="string">&#x27;pangloss/vim-javascript&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;mxw/vim-jsx&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;mattn/emmet-vim&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;w0rp/ale&#x27;</span></span><br><span class="line">Plug <span class="string">&#x27;skywind3000/asyncrun.vim&#x27;</span></span><br><span class="line"><span class="keyword">call</span> plug#end()</span><br><span class="line"></span><br><span class="line"> <span class="comment">&quot; emmet-vim</span></span><br><span class="line"> <span class="keyword">let</span> <span class="variable">g:user_emmet_leader_key</span>=<span class="string">&#x27;&lt;C-e&gt;&#x27;</span></span><br><span class="line"> <span class="keyword">let</span> <span class="variable">g:user_emmet_jsx</span> = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; react 自动格式化</span></span><br><span class="line"><span class="keyword">autocmd</span> BufWritePost *.js AsyncRun -post=<span class="keyword">checktime</span> ./node_modules/.bin/eslint --<span class="keyword">fix</span> %</span><br></pre></td></tr></table></figure>
+
+<h2 id="依赖安装"><a href="#依赖安装" class="headerlink" title="依赖安装"></a>依赖安装</h2><p>以 create-react-app 为例</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npx create-react-app create-react-app</span><br><span class="line">cd create-react-app</span><br><span class="line">./node_modules/.bin/eslint --init</span><br><span class="line"><span class="meta">#</span><span class="bash"> Use a popular style guide ——&gt; Airbnb ——&gt; y ——&gt; JavaScript ——&gt; n</span></span><br><span class="line">npm install --save--dev eslint-config-airbnb</span><br><span class="line">或：</span><br><span class="line">yarn add --dev eslint-config-airbnb</span><br></pre></td></tr></table></figure>
+
+<h2 id="修改-eslintrc-js-配置"><a href="#修改-eslintrc-js-配置" class="headerlink" title="修改 .eslintrc.js 配置"></a>修改 .eslintrc.js 配置</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim .eslintrc.js</span><br></pre></td></tr></table></figure>
+
+<p>覆盖原文本如下：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    <span class="string">&quot;root&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">&quot;parserOptions&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;parser&quot;</span>: <span class="string">&#x27;babel-eslint&#x27;</span>,</span><br><span class="line">         <span class="string">&quot;sourceType&quot;</span>: <span class="string">&#x27;module&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&quot;extends&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;eslint:recommended&quot;</span>,</span><br><span class="line">        <span class="string">&quot;plugin:react/recommended&quot;</span>,</span><br><span class="line">        <span class="string">&quot;eslint-config-airbnb&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;plugins&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;react&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;rules&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;react/jsx-filename-extension&quot;</span>: [<span class="number">1</span>, &#123; <span class="string">&quot;extensions&quot;</span>: [<span class="string">&quot;.js&quot;</span>, <span class="string">&quot;.jsx&quot;</span>] &#125;],</span><br><span class="line">        <span class="string">&quot;react/prefer-stateless-function&quot;</span>: <span class="string">&quot;off&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><a href="https://drivy.engineering/setting-up-vim-for-react/">Setting up Vim for React development | Drivy Engineering</a><br><a href="https://blog.xcatliu.com/2017/08/25/eslint-config-alloy/">我花了两个月时间，定制出了心目中「完美」的 ESLint 规则，我用四个空格缩进 - 流浪小猫的博客</a></p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+        <tag>react</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hubot 官方文档（译）</title>
     <url>/hubot-document/</url>
     <content><![CDATA[<h1 id="Hubot-官方文档"><a href="#Hubot-官方文档" class="headerlink" title="Hubot 官方文档"></a>Hubot 官方文档</h1><p><a href="https://hubot.github.com/docs/">原文链接🔗</a><br><img data-src="https://images.xyang.xin/2021%2F09%2F01%2Fhubot-avatar.png" alt="hubot-avatar.png"></p>
@@ -1921,7 +1921,7 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>--owner=”Bot Wrangler <a href="mailto:&#x62;&#x77;&#64;&#101;&#120;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#x6d;">&#x62;&#x77;&#64;&#101;&#120;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#x6d;</a>“</td>
+<td>--owner=”Bot Wrangler <a href="mailto:&#98;&#x77;&#64;&#101;&#120;&#x61;&#109;&#112;&#x6c;&#x65;&#46;&#x63;&#111;&#x6d;">&#98;&#x77;&#64;&#101;&#120;&#x61;&#109;&#112;&#x6c;&#x65;&#46;&#x63;&#111;&#x6d;</a>“</td>
 <td>Bot owner, e.g. “Bot Wrangler <a href="mailto:bw@example.com">bw@example.com</a>”</td>
 </tr>
 <tr>
