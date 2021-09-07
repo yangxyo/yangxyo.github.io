@@ -5,5 +5,7 @@ Allow: /categories/
 Allow: /about/
 Allow: /tags/
 
+Sitemap: https://blog.xyang.xin/sitemap.xml
+Sitemap: https://blog.xyang.xin/baidusitemap.xml
 Sitemap: http://blog.xyang.xin/sitemap.xml
 Sitemap: http://blog.xyang.xin/baidusitemap.xml
