@@ -358,35 +358,6 @@
       </tags>
   </entry>
   <entry>
-    <title>人生</title>
-    <url>/flesh/</url>
-    <content><![CDATA[<h2 id="他的话可信吗"><a href="#他的话可信吗" class="headerlink" title="他的话可信吗"></a>他的话可信吗</h2><blockquote>
-<p>听人谈话的时候，我们需要了解这人是谁，他是处在何种角度，代表何种阶级谈话的。</p>
-</blockquote>
-<p>他的话是他的经验之谈，是他从权威的书籍中得知，论坛上看到，还是他仅仅只是为了让你相信而虚构或者是一个看似正确而往往值得商榷的。</p>
-<span id="more"></span>
-
-<h2 id="好话"><a href="#好话" class="headerlink" title="好话"></a>好话</h2><blockquote>
-<p>听见好话一定要多长心眼，好话会让你做出的决策违背初心，待后知后觉，晚矣。</p>
-</blockquote>
-<p>投票软件多少是有漏洞的，从开发人员的角度利用漏洞刷票是很容易被发现，且破坏比赛的公平度的。很多亲人朋友呢很支持我，感觉一个投票闹得挺辛苦的。就不得不在群里向主办方反馈，不一会儿开发投票软件公司的老总进来了，也不说是解决问题。</p>
-<p>主办方第一轮给出的结果，随便找个理由，说没有刷票行为。<br>网络投票看是否刷票，一般都是看着某一天投票数是否波动过大，尤其是最后一天，或者票数数量过多，咱们开始怀疑刷票。然而这都只是怀疑，技术部门要是不想解决也是没办法的。<br>然而当投票网站上有访问量和投票数那就不一样了，当投票数大于访问量？这是什么怪物？页面都没被访问，你又是怎么点击投票按钮的，这就是异常刷票了。</p>
-<p>这种情况主办方如果不证明是系统漏洞，抑或是抓出一个有刷票行为的队伍来，那这个主办方麻烦就大了，网络舆情还是很管用的。</p>
-<p>后面主办方不得不抓出了一个，五天投票，前面四天总共几十票，最后一天下午飙几万的队伍。据肉眼观察肯定是不止一个的。</p>
-<p>但是同时那个老总私聊到我，简单的说“本科进决赛很优秀了，有时间聊一下”。再加上我本身对这软件公司是没有敌意的，因为系统安全性技术比较难，本身抱着的态度就是能找出刷票的队伍，解决问题就行了。</p>
-<p>他这一句话导致的最终结果就是，简单的将刷票最厉害的队伍解决了，而放下了第一轮结果所公布的无赖行为和更多的不公平性的愤懑。</p>
-<p>一句好话让我对公平性诉求，从解决，到最简单的解决。</p>
-<h2 id="解决生活中的难题"><a href="#解决生活中的难题" class="headerlink" title="解决生活中的难题"></a>解决生活中的难题</h2><p>倘若有条件自己给自己安排一件难题，例如考研究生、公务员，不是生活强加给我们的，那便是为了多一种生活体验。抱着解决问题的心态去攻坚克难，坚持下去完整的度过有计划的每一天便是一种胜利。</p>
-<h2 id="为什么不同"><a href="#为什么不同" class="headerlink" title="为什么不同"></a>为什么不同</h2><p>假若我们抱怨，抱怨自己没有出生在名门旺族，抱怨自己没有一个好看的脸蛋。然而人之所以是自己，正是源于这些后天难以更改的不同之处。</p>
-]]></content>
-      <categories>
-        <category>思想文化</category>
-      </categories>
-      <tags>
-        <tag>人生</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于 GitHub Pages 的 Hexo+NexT 博客搭建</title>
     <url>/githubpages-hexo-next/</url>
     <content><![CDATA[<h1 id="基于-GitHub-Pages-的-Hexo-NexT-博客-——-引导篇"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客-——-引导篇" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客 —— 引导篇"></a>基于 GitHub Pages 的 Hexo + NexT 博客 —— 引导篇</h1><h2 id="基于-GitHub-Pages-的-Hexo-NexT-博客概述"><a href="#基于-GitHub-Pages-的-Hexo-NexT-博客概述" class="headerlink" title="基于 GitHub Pages 的 Hexo + NexT 博客概述"></a>基于 GitHub Pages 的 Hexo + NexT 博客概述</h2><p>使用这一套博客系统架构您将获得稳定免费、美观、易定制的个人博客。通过 Markdown 语法编辑文章，git命令发布文章，优雅的博客发布体验。</p>
@@ -480,51 +451,32 @@
       </categories>
   </entry>
   <entry>
-    <title>Hexo 博客进阶</title>
-    <url>/hexo-advance/</url>
-    <content><![CDATA[<h2 id="文章简介"><a href="#文章简介" class="headerlink" title="文章简介"></a>文章简介</h2><p>本文介绍 Hexo 博客的一些进阶操作。</p>
-<ul>
-<li>解决 Github Pages 不被百度抓取的问题；</li>
-<li>使用 gulp 压缩资源，实现访问加速。</li>
-<li>在博客中添加音频和视频；<span id="more"></span>
-<h2 id="Github-Pages-不被百度抓取的方法"><a href="#Github-Pages-不被百度抓取的方法" class="headerlink" title="Github Pages 不被百度抓取的方法"></a>Github Pages 不被百度抓取的方法</h2>并通过域名 CNAME 实现国内外分流，<h3 id="Coding-Pages"><a href="#Coding-Pages" class="headerlink" title="Coding Pages"></a>Coding Pages</h3><a href="https://help.coding.net/docs/devops/cd/static-website.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE">CODING 静态网站服务 - CODING 帮助中心</a></li>
-</ul>
-<h3 id="私有的-OSS"><a href="#私有的-OSS" class="headerlink" title="私有的 OSS"></a>私有的 OSS</h3><p>以阿里云oss为例<br><img data-src="https://images.xyang.xin/2020-04/1586841854.png" alt="开通子目录首页"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-oss</span><br></pre></td></tr></table></figure>
-<p><code>_config.yml</code> 配置</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">oss</span></span><br><span class="line">  <span class="attr">accessKeyId:</span> <span class="string">&lt;your</span> <span class="string">accessKeyId&gt;</span></span><br><span class="line">  <span class="attr">accessKeySecret:</span> <span class="string">&lt;your</span> <span class="string">accessKeySecret&gt;</span></span><br><span class="line">  <span class="attr">bucket:</span> <span class="string">&lt;your</span> <span class="string">bucket&gt;</span></span><br><span class="line">  <span class="attr">region:</span> <span class="string">&lt;your</span> <span class="string">region&gt;</span></span><br></pre></td></tr></table></figure>
-<p>  其中 region 以北京地区的 oss 为例填 <code>oss-cn-beijing</code></p>
-<h2 id="使用-gulp-压缩资源"><a href="#使用-gulp-压缩资源" class="headerlink" title="使用 gulp 压缩资源"></a>使用 gulp 压缩资源</h2><p>使用 gulp 压缩资源，提高访问速度。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install gulp-cli -g</span><br><span class="line">npm install gulp gulp-htmlclean gulp-htmlmin gulp-imagemin gulp-clean-css gulp-uglify --save-dev</span><br></pre></td></tr></table></figure>
+    <title>人生</title>
+    <url>/flesh/</url>
+    <content><![CDATA[<h2 id="他的话可信吗"><a href="#他的话可信吗" class="headerlink" title="他的话可信吗"></a>他的话可信吗</h2><blockquote>
+<p>听人谈话的时候，我们需要了解这人是谁，他是处在何种角度，代表何种阶级谈话的。</p>
+</blockquote>
+<p>他的话是他的经验之谈，是他从权威的书籍中得知，论坛上看到，还是他仅仅只是为了让你相信而虚构或者是一个看似正确而往往值得商榷的。</p>
+<span id="more"></span>
 
-<p>项目根目录新建<code>gulpfile.babel.js</code>，添加如下内容：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> gulp <span class="keyword">from</span> <span class="string">&#x27;gulp&#x27;</span></span><br><span class="line"><span class="keyword">import</span> cleancss <span class="keyword">from</span> <span class="string">&#x27;gulp-clean-css&#x27;</span></span><br><span class="line"><span class="keyword">import</span> uglify <span class="keyword">from</span> <span class="string">&#x27;gulp-uglify-es&#x27;</span></span><br><span class="line"><span class="keyword">import</span> htmlmin <span class="keyword">from</span> <span class="string">&#x27;gulp-htmlmin&#x27;</span></span><br><span class="line"><span class="keyword">import</span> htmlclean <span class="keyword">from</span> <span class="string">&#x27;gulp-htmlclean&#x27;</span></span><br><span class="line"><span class="keyword">import</span> imagemin <span class="keyword">from</span> <span class="string">&#x27;gulp-imagemin&#x27;</span></span><br><span class="line"><span class="keyword">import</span> babel <span class="keyword">from</span> <span class="string">&#x27;gulp-babel&#x27;</span></span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;minify-html&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/**/*.html&#x27;</span>)</span><br><span class="line">    .pipe(htmlclean(&#123;</span><br><span class="line">      <span class="attr">protect</span>: <span class="regexp">/&lt;\!--%fooTemplate\b.*?%--&gt;/g</span>,</span><br><span class="line">      edit: <span class="function">(<span class="params">html</span>) =&gt;</span> &#123; <span class="keyword">return</span> html.replace(<span class="regexp">/\begg(s?)\b/ig</span>, <span class="string">&#x27;omelet$1&#x27;</span>); &#125;</span><br><span class="line">    &#125;))</span><br><span class="line">    .pipe(htmlmin(&#123;</span><br><span class="line">      <span class="attr">removeComments</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">collapseWhitespace</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">collapseBooleanAttributes</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">removeEmptyAttributes</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">removeScriptTypeAttributes</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">removeStyleLinkTypeAttributes</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">minifyJS</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">minifyCSS</span>: <span class="literal">true</span>,</span><br><span class="line">    &#125;))</span><br><span class="line">    .on(<span class="string">&#x27;error&#x27;</span>, <span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">&#x27;html Error!&#x27;</span>, err.message);</span><br><span class="line">      <span class="built_in">this</span>.end();</span><br><span class="line">    &#125;)</span><br><span class="line">    .pipe(gulp.dest(<span class="string">&#x27;./public&#x27;</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">&#x27;clean-css&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/**/*.css&#x27;</span>)</span><br><span class="line">    .pipe(cleancss())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">&#x27;./public&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">&#x27;minify-js&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/js/**/*.js&#x27;</span>)</span><br><span class="line">    .pipe(uglify())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">&#x27;./public&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">&#x27;minify-images&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/images/**/*.*&#x27;</span>)</span><br><span class="line">    .pipe(imagemin())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">&#x27;./public/images&#x27;</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">&#x27;default&#x27;</span>, gulp.parallel(<span class="string">&#x27;minify-html&#x27;</span>, <span class="string">&#x27;clean-css&#x27;</span>, <span class="string">&#x27;minify-js&#x27;</span>, <span class="string">&#x27;minify-images&#x27;</span>, <span class="function">(<span class="params">done</span>) =&gt;</span> &#123;</span><br><span class="line">  done();</span><br><span class="line">&#125;));</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>由于是 es6 语法， 需要使用 babel 转译。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install --save-dev gulp-babel @babel/register @babel/preset-env @babel/core</span><br></pre></td></tr></table></figure>
-<p>创建<code>.babel.json</code> 文件，添加内容如下：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;presets&quot;</span>: [</span><br><span class="line">    <span class="string">&quot;@babel/env&quot;</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">&quot;plugins&quot;</span>: []</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>终端执行如下命令即可：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g &amp;&amp; gulp</span><br></pre></td></tr></table></figure>
-
-<p>如有报错，可以尝试删除<code>node_modules</code>文件，然后重新执行<code>npm install</code>。</p>
-<h2 id="在博客中插入音频与视频"><a href="#在博客中插入音频与视频" class="headerlink" title="在博客中插入音频与视频"></a>在博客中插入音频与视频</h2><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><h4 id="更快捷的方案一"><a href="#更快捷的方案一" class="headerlink" title="更快捷的方案一"></a>更快捷的方案一</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">marginwidth</span>=<span class="string">&quot;0&quot;</span> <span class="attr">marginheight</span>=<span class="string">&quot;0&quot;</span> <span class="attr">width</span>=<span class="string">430</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">&quot;XXX&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=430 height=86 src="https://music.xyang.xin/%E5%9C%A8%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E7%9B%B8%E9%81%87.mp3"></iframe>
-
-<h4 id="更强大的方案二（Github）"><a href="#更强大的方案二（Github）" class="headerlink" title="更强大的方案二（Github）"></a>更强大的方案二（<a href="https://github.com/MoePlayer/hexo-tag-aplayer#usage">Github</a>）</h4><h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><h4 id="更快捷的标签方式"><a href="#更快捷的标签方式" class="headerlink" title="更快捷的标签方式"></a>更快捷的标签方式</h4><p>iframe 将web页嵌入到另一个网页</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">&quot;854&quot;</span> <span class="attr">height</span>=<span class="string">&quot;480&quot;</span> <span class="attr">src</span>=<span class="string">&quot;//player.bilibili.com/player.html?aid=51918958&amp;cid=90895494&amp;page=1&quot;</span> <span class="attr">scrolling</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">framespacing</span>=<span class="string">&quot;0&quot;</span> <span class="attr">allowfullscreen</span>=<span class="string">&quot;true&quot;</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<iframe width="854" height="480" src="//player.bilibili.com/player.html?aid=51918958&cid=90895494&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<h4 id="更强大的-hexo-tag-dplayer-插件"><a href="#更强大的-hexo-tag-dplayer-插件" class="headerlink" title="更强大的 hexo-tag-dplayer 插件"></a>更强大的 <a href="https://github.com/MoePlayer/hexo-tag-dplayer">hexo-tag-dplayer</a> 插件</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-tag-dplayer --save</span><br></pre></td></tr></table></figure>
-
-<h3 id="PDF"><a href="#PDF" class="headerlink" title="PDF"></a>PDF</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">object</span> <span class="attr">data</span>=<span class="string">&quot;mypdf.pdf&quot;</span> <span class="attr">type</span>=<span class="string">&quot;application/pdf&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">width</span>=<span class="string">&quot;800&quot;</span> <span class="attr">height</span>=<span class="string">&quot;1200&quot;</span> <span class="attr">typemustmatch</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>You don&#x27;t have a PDF plugin, but you can <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;myfile.pdf&quot;</span>&gt;</span>download the PDF file.<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/%E5%85%B6%E4%BB%96%E5%B5%8C%E5%85%A5%E6%8A%80%E6%9C%AF">从对象到iframe - 其他嵌入技术 - 学习 Web 开发 | MDN</a><br><a href="https://luanzhuxian.github.io/post/e5ac3b51.html">使用 Gulp 压缩 Hexo | 栾铸显的博客</a><br><a href="https://shuoit.net/tech-notes/use-gulp-to-speed-hexo-1547999542.html">引入gulp压缩整站资源进一步提高写作效率 - 说IT</a></p>
+<h2 id="好话"><a href="#好话" class="headerlink" title="好话"></a>好话</h2><blockquote>
+<p>听见好话一定要多长心眼，好话会让你做出的决策违背初心，待后知后觉，晚矣。</p>
+</blockquote>
+<p>投票软件多少是有漏洞的，从开发人员的角度利用漏洞刷票是很容易被发现，且破坏比赛的公平度的。很多亲人朋友呢很支持我，感觉一个投票闹得挺辛苦的。就不得不在群里向主办方反馈，不一会儿开发投票软件公司的老总进来了，也不说是解决问题。</p>
+<p>主办方第一轮给出的结果，随便找个理由，说没有刷票行为。<br>网络投票看是否刷票，一般都是看着某一天投票数是否波动过大，尤其是最后一天，或者票数数量过多，咱们开始怀疑刷票。然而这都只是怀疑，技术部门要是不想解决也是没办法的。<br>然而当投票网站上有访问量和投票数那就不一样了，当投票数大于访问量？这是什么怪物？页面都没被访问，你又是怎么点击投票按钮的，这就是异常刷票了。</p>
+<p>这种情况主办方如果不证明是系统漏洞，抑或是抓出一个有刷票行为的队伍来，那这个主办方麻烦就大了，网络舆情还是很管用的。</p>
+<p>后面主办方不得不抓出了一个，五天投票，前面四天总共几十票，最后一天下午飙几万的队伍。据肉眼观察肯定是不止一个的。</p>
+<p>但是同时那个老总私聊到我，简单的说“本科进决赛很优秀了，有时间聊一下”。再加上我本身对这软件公司是没有敌意的，因为系统安全性技术比较难，本身抱着的态度就是能找出刷票的队伍，解决问题就行了。</p>
+<p>他这一句话导致的最终结果就是，简单的将刷票最厉害的队伍解决了，而放下了第一轮结果所公布的无赖行为和更多的不公平性的愤懑。</p>
+<p>一句好话让我对公平性诉求，从解决，到最简单的解决。</p>
+<h2 id="解决生活中的难题"><a href="#解决生活中的难题" class="headerlink" title="解决生活中的难题"></a>解决生活中的难题</h2><p>倘若有条件自己给自己安排一件难题，例如考研究生、公务员，不是生活强加给我们的，那便是为了多一种生活体验。抱着解决问题的心态去攻坚克难，坚持下去完整的度过有计划的每一天便是一种胜利。</p>
+<h2 id="为什么不同"><a href="#为什么不同" class="headerlink" title="为什么不同"></a>为什么不同</h2><p>假若我们抱怨，抱怨自己没有出生在名门旺族，抱怨自己没有一个好看的脸蛋。然而人之所以是自己，正是源于这些后天难以更改的不同之处。</p>
 ]]></content>
       <categories>
-        <category>信息技术</category>
+        <category>思想文化</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
+        <tag>人生</tag>
       </tags>
   </entry>
   <entry>
@@ -591,18 +543,6 @@
       </tags>
   </entry>
   <entry>
-    <title>journal-2019-02-15</title>
-    <url>/journal-2019-02-15/</url>
-    <content><![CDATA[<h2 id="小孩成长与人才发展"><a href="#小孩成长与人才发展" class="headerlink" title="小孩成长与人才发展"></a>小孩成长与人才发展</h2><p>小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。</p>
-<p>孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。</p>
-<p>国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。</p>
-<p>参考：<a href="http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm">《基层减负 不是简单做减法》《求是》2019/03 </a></p>
-]]></content>
-      <categories>
-        <category>思想文化</category>
-      </categories>
-  </entry>
-  <entry>
     <title>编程语言之 Java</title>
     <url>/java-language/</url>
     <content><![CDATA[<h1 id="Integer-parseInt-与-Integer-valueOf-的比较"><a href="#Integer-parseInt-与-Integer-valueOf-的比较" class="headerlink" title="Integer.parseInt() 与 Integer.valueOf() 的比较"></a>Integer.parseInt() 与 Integer.valueOf() 的比较</h1><p>Integer.parseInt() 和 Integer.valueOf() 都是用来 将String转换为Int的。</p>
@@ -623,6 +563,66 @@
       </categories>
       <tags>
         <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>journal-2019-02-15</title>
+    <url>/journal-2019-02-15/</url>
+    <content><![CDATA[<h2 id="小孩成长与人才发展"><a href="#小孩成长与人才发展" class="headerlink" title="小孩成长与人才发展"></a>小孩成长与人才发展</h2><p>小孩是懵懂的，从家长的角度要注重其过程，从过程推导孩子的优良，若不观其过程，孩子成绩差的原因只会被家长归纳为，天资不聪、贪玩等。</p>
+<p>孩子成年，便有了一定的目标与发展方向，此时我们需要更偏向于观其结果。因为老一辈人平庸，不一定孩子平庸；老一辈人罪恶，不一定孩子罪恶。尽可能将我们的善传递给孩子，对孩子的奉献，是人类奉献精神最简单的体现。</p>
+<p>国家之于人才也是如此，人才之初便是懵懂的，对其评判更应注重其过程，关注其现实的影响力。在“痕迹管理”等考核方法仍有缺陷的情况下，运用互联网的技术手段实现更优良的行业考核制度，将技术与社会紧密连结。</p>
+<p>参考：<a href="http://www.qstheory.cn/dukan/qs/2019-02/01/c_1124054691.htm">《基层减负 不是简单做减法》《求是》2019/03 </a></p>
+]]></content>
+      <categories>
+        <category>思想文化</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hexo 博客进阶</title>
+    <url>/hexo-advance/</url>
+    <content><![CDATA[<h2 id="文章简介"><a href="#文章简介" class="headerlink" title="文章简介"></a>文章简介</h2><p>本文介绍 Hexo 博客的一些进阶操作。</p>
+<ul>
+<li>解决 Github Pages 不被百度抓取的问题；</li>
+<li>使用 gulp 压缩资源，实现访问加速。</li>
+<li>在博客中添加音频和视频；<span id="more"></span>
+<h2 id="Github-Pages-不被百度抓取的方法"><a href="#Github-Pages-不被百度抓取的方法" class="headerlink" title="Github Pages 不被百度抓取的方法"></a>Github Pages 不被百度抓取的方法</h2>并通过域名 CNAME 实现国内外分流，<h3 id="Coding-Pages"><a href="#Coding-Pages" class="headerlink" title="Coding Pages"></a>Coding Pages</h3><a href="https://help.coding.net/docs/devops/cd/static-website.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE">CODING 静态网站服务 - CODING 帮助中心</a></li>
+</ul>
+<h3 id="私有的-OSS"><a href="#私有的-OSS" class="headerlink" title="私有的 OSS"></a>私有的 OSS</h3><p>以阿里云oss为例<br><img data-src="https://images.xyang.xin/2020-04/1586841854.png" alt="开通子目录首页"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-oss</span><br></pre></td></tr></table></figure>
+<p><code>_config.yml</code> 配置</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">oss</span></span><br><span class="line">  <span class="attr">accessKeyId:</span> <span class="string">&lt;your</span> <span class="string">accessKeyId&gt;</span></span><br><span class="line">  <span class="attr">accessKeySecret:</span> <span class="string">&lt;your</span> <span class="string">accessKeySecret&gt;</span></span><br><span class="line">  <span class="attr">bucket:</span> <span class="string">&lt;your</span> <span class="string">bucket&gt;</span></span><br><span class="line">  <span class="attr">region:</span> <span class="string">&lt;your</span> <span class="string">region&gt;</span></span><br></pre></td></tr></table></figure>
+<p>  其中 region 以北京地区的 oss 为例填 <code>oss-cn-beijing</code></p>
+<h2 id="使用-gulp-压缩资源"><a href="#使用-gulp-压缩资源" class="headerlink" title="使用 gulp 压缩资源"></a>使用 gulp 压缩资源</h2><p>使用 gulp 压缩资源，提高访问速度。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install gulp-cli -g</span><br><span class="line">npm install gulp gulp-htmlclean gulp-htmlmin gulp-imagemin gulp-clean-css gulp-uglify --save-dev</span><br></pre></td></tr></table></figure>
+
+<p>项目根目录新建<code>gulpfile.babel.js</code>，添加如下内容：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> gulp <span class="keyword">from</span> <span class="string">&#x27;gulp&#x27;</span></span><br><span class="line"><span class="keyword">import</span> cleancss <span class="keyword">from</span> <span class="string">&#x27;gulp-clean-css&#x27;</span></span><br><span class="line"><span class="keyword">import</span> uglify <span class="keyword">from</span> <span class="string">&#x27;gulp-uglify-es&#x27;</span></span><br><span class="line"><span class="keyword">import</span> htmlmin <span class="keyword">from</span> <span class="string">&#x27;gulp-htmlmin&#x27;</span></span><br><span class="line"><span class="keyword">import</span> htmlclean <span class="keyword">from</span> <span class="string">&#x27;gulp-htmlclean&#x27;</span></span><br><span class="line"><span class="keyword">import</span> imagemin <span class="keyword">from</span> <span class="string">&#x27;gulp-imagemin&#x27;</span></span><br><span class="line"><span class="keyword">import</span> babel <span class="keyword">from</span> <span class="string">&#x27;gulp-babel&#x27;</span></span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;minify-html&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/**/*.html&#x27;</span>)</span><br><span class="line">    .pipe(htmlclean(&#123;</span><br><span class="line">      <span class="attr">protect</span>: <span class="regexp">/&lt;\!--%fooTemplate\b.*?%--&gt;/g</span>,</span><br><span class="line">      edit: <span class="function">(<span class="params">html</span>) =&gt;</span> &#123; <span class="keyword">return</span> html.replace(<span class="regexp">/\begg(s?)\b/ig</span>, <span class="string">&#x27;omelet$1&#x27;</span>); &#125;</span><br><span class="line">    &#125;))</span><br><span class="line">    .pipe(htmlmin(&#123;</span><br><span class="line">      <span class="attr">removeComments</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">collapseWhitespace</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">collapseBooleanAttributes</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">removeEmptyAttributes</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">removeScriptTypeAttributes</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">removeStyleLinkTypeAttributes</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">minifyJS</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">minifyCSS</span>: <span class="literal">true</span>,</span><br><span class="line">    &#125;))</span><br><span class="line">    .on(<span class="string">&#x27;error&#x27;</span>, <span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">&#x27;html Error!&#x27;</span>, err.message);</span><br><span class="line">      <span class="built_in">this</span>.end();</span><br><span class="line">    &#125;)</span><br><span class="line">    .pipe(gulp.dest(<span class="string">&#x27;./public&#x27;</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">&#x27;clean-css&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/**/*.css&#x27;</span>)</span><br><span class="line">    .pipe(cleancss())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">&#x27;./public&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">&#x27;minify-js&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/js/**/*.js&#x27;</span>)</span><br><span class="line">    .pipe(uglify())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">&#x27;./public&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">&#x27;minify-images&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/images/**/*.*&#x27;</span>)</span><br><span class="line">    .pipe(imagemin())</span><br><span class="line">    .pipe(gulp.dest(<span class="string">&#x27;./public/images&#x27;</span>))</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">&#x27;default&#x27;</span>, gulp.parallel(<span class="string">&#x27;minify-html&#x27;</span>, <span class="string">&#x27;clean-css&#x27;</span>, <span class="string">&#x27;minify-js&#x27;</span>, <span class="string">&#x27;minify-images&#x27;</span>, <span class="function">(<span class="params">done</span>) =&gt;</span> &#123;</span><br><span class="line">  done();</span><br><span class="line">&#125;));</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>由于是 es6 语法， 需要使用 babel 转译。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install --save-dev gulp-babel @babel/register @babel/preset-env @babel/core</span><br></pre></td></tr></table></figure>
+<p>创建<code>.babel.json</code> 文件，添加内容如下：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;presets&quot;</span>: [</span><br><span class="line">    <span class="string">&quot;@babel/env&quot;</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">&quot;plugins&quot;</span>: []</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>终端执行如下命令即可：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g &amp;&amp; gulp</span><br></pre></td></tr></table></figure>
+
+<p>如有报错，可以尝试删除<code>node_modules</code>文件，然后重新执行<code>npm install</code>。</p>
+<h2 id="在博客中插入音频与视频"><a href="#在博客中插入音频与视频" class="headerlink" title="在博客中插入音频与视频"></a>在博客中插入音频与视频</h2><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><h4 id="更快捷的方案一"><a href="#更快捷的方案一" class="headerlink" title="更快捷的方案一"></a>更快捷的方案一</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">marginwidth</span>=<span class="string">&quot;0&quot;</span> <span class="attr">marginheight</span>=<span class="string">&quot;0&quot;</span> <span class="attr">width</span>=<span class="string">430</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">&quot;XXX&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=430 height=86 src="https://music.xyang.xin/%E5%9C%A8%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E7%9B%B8%E9%81%87.mp3"></iframe>
+
+<h4 id="更强大的方案二（Github）"><a href="#更强大的方案二（Github）" class="headerlink" title="更强大的方案二（Github）"></a>更强大的方案二（<a href="https://github.com/MoePlayer/hexo-tag-aplayer#usage">Github</a>）</h4><h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><h4 id="更快捷的标签方式"><a href="#更快捷的标签方式" class="headerlink" title="更快捷的标签方式"></a>更快捷的标签方式</h4><p>iframe 将web页嵌入到另一个网页</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">&quot;854&quot;</span> <span class="attr">height</span>=<span class="string">&quot;480&quot;</span> <span class="attr">src</span>=<span class="string">&quot;//player.bilibili.com/player.html?aid=51918958&amp;cid=90895494&amp;page=1&quot;</span> <span class="attr">scrolling</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">framespacing</span>=<span class="string">&quot;0&quot;</span> <span class="attr">allowfullscreen</span>=<span class="string">&quot;true&quot;</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<iframe width="854" height="480" src="//player.bilibili.com/player.html?aid=51918958&cid=90895494&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h4 id="更强大的-hexo-tag-dplayer-插件"><a href="#更强大的-hexo-tag-dplayer-插件" class="headerlink" title="更强大的 hexo-tag-dplayer 插件"></a>更强大的 <a href="https://github.com/MoePlayer/hexo-tag-dplayer">hexo-tag-dplayer</a> 插件</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-tag-dplayer --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="PDF"><a href="#PDF" class="headerlink" title="PDF"></a>PDF</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">object</span> <span class="attr">data</span>=<span class="string">&quot;mypdf.pdf&quot;</span> <span class="attr">type</span>=<span class="string">&quot;application/pdf&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">width</span>=<span class="string">&quot;800&quot;</span> <span class="attr">height</span>=<span class="string">&quot;1200&quot;</span> <span class="attr">typemustmatch</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>You don&#x27;t have a PDF plugin, but you can <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;myfile.pdf&quot;</span>&gt;</span>download the PDF file.<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/%E5%85%B6%E4%BB%96%E5%B5%8C%E5%85%A5%E6%8A%80%E6%9C%AF">从对象到iframe - 其他嵌入技术 - 学习 Web 开发 | MDN</a><br><a href="https://luanzhuxian.github.io/post/e5ac3b51.html">使用 Gulp 压缩 Hexo | 栾铸显的博客</a><br><a href="https://shuoit.net/tech-notes/use-gulp-to-speed-hexo-1547999542.html">引入gulp压缩整站资源进一步提高写作效率 - 说IT</a></p>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -789,19 +789,6 @@
       </tags>
   </entry>
   <entry>
-    <title>鲁迅</title>
-    <url>/luxun/</url>
-    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
-<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
-]]></content>
-      <categories>
-        <category>思想文化</category>
-      </categories>
-      <tags>
-        <tag>鲁迅</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>切换 Shell 需谨慎</title>
     <url>/linux-user/</url>
     <content><![CDATA[<h2 id="系统环境介绍"><a href="#系统环境介绍" class="headerlink" title="系统环境介绍"></a>系统环境介绍</h2><p>gentoo 半吊子机。<br><img data-src="https://images.xyang.xin/2018-10/1539332010.png" alt="valid login shells"></p>
@@ -817,6 +804,19 @@
       </categories>
       <tags>
         <tag>Shell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鲁迅</title>
+    <url>/luxun/</url>
+    <content><![CDATA[<h2 id="资本"><a href="#资本" class="headerlink" title="资本"></a>资本</h2><p>凡走狗，虽或为一个资本家所豢养，其实是属于所有的资本家的，所以它遇见所有的阔人都驯良,遇见所有的穷人都狂吠。不知道谁是它的主子，真是它遇见所有阔人都驯良的原因，也就是属于资本家的证据。即使无人豢养，饿的精瘦，变成野狗了，但还是遇见所有的阔人都驯良，遇见所有的穷人都狂吠，不过这时它就愈不明白谁是主子了。</p>
+<h2 id="土壤"><a href="#土壤" class="headerlink" title="土壤"></a>土壤</h2><p>天才并不是自生自长在深林荒野里的怪物，是由可以使天才生长的民众产生，长育出来的，所以没有这种民众，就没有天才。有一回拿破仑过 Alps 山，说，“我比 Alps 山还要高！”这何等英伟，然而不要忘记他后面跟着许多兵；倘没有兵，那只有被山那面的敌人捉住或者赶回，他的举动，言语，都离了英雄的界线，要归入疯子一类了。所以我想，在要求天才的产生之前，应该先要求可以使天才生长的民众。————譬如想有乔木，想看好花，一定要有好土；没有土，便没有花木了；所以土实在较花木还重要。花木非有土不可，正同拿破仑非有好兵不可一样。</p>
+]]></content>
+      <categories>
+        <category>思想文化</category>
+      </categories>
+      <tags>
+        <tag>鲁迅</tag>
       </tags>
   </entry>
   <entry>
@@ -967,6 +967,49 @@
       </tags>
   </entry>
   <entry>
+    <title>Mac 小问题 —— iCloud 未响应</title>
+    <url>/macos-problems/</url>
+    <content><![CDATA[<p>使用 iCloud Drive 将文件上传到云端，防止数据丢失，同时可以实现多台设备的协同工作。但是在使用 iCloud Drive 的过程中我遇到了程序未响应，iCoud 文件上传阻塞的问题。</p>
+<span id="more"></span>
+
+<h2 id="Finder-无法打开或持续未响应"><a href="#Finder-无法打开或持续未响应" class="headerlink" title="Finder 无法打开或持续未响应"></a>Finder 无法打开或持续未响应</h2><p>解决办法：<br>磁盘工具 -&gt; Macintosh HD（系统盘）-&gt; 急救<br>磁盘工具在以下路径：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">/System/Applications/Utilities/Disk Utility.app</span><br></pre></td></tr></table></figure>
+
+<p>急救操作不会对你的电脑造成任何损害，甚至还有所优化。</p>
+<h2 id="打开-iCloud-云盘文件夹极其缓慢"><a href="#打开-iCloud-云盘文件夹极其缓慢" class="headerlink" title="打开 iCloud 云盘文件夹极其缓慢"></a>打开 iCloud 云盘文件夹极其缓慢</h2><p>遇到的问题是：在访达中点击iCloud云盘系统就会出现转圈圈的标志，使用快捷键<code>command+alt+esc</code>（强制退出应用程序）就会看到访达处于未响应状态，这个时间会持续很久。</p>
+<p>解决办法：<br>系统偏好 -&gt; Apple ID -&gt; 取消勾选iCloud云盘 -&gt; 保留副本 -&gt; 重新勾选iCloud云盘</p>
+<p>此操作造成的后果是mac需要很长的一段时间和云端同步，这取决于你icloud存储的文件大小，并不会影响其他。</p>
+<h2 id="文件无法上传排查"><a href="#文件无法上传排查" class="headerlink" title="文件无法上传排查"></a>文件无法上传排查</h2><p>iCloud 连续几天几夜也没同步完，经过诸多排查，例如，修改 DNS：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">114.114.114.114</span><br><span class="line">8.8.8.8</span><br></pre></td></tr></table></figure>
+<p>不仅没起作用，还影响了访问其他网页。最后删除 DNS 配置，刷新 DNS 缓存：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ 2$ sudo killall -HUP mDNSResponder</span><br></pre></td></tr></table></figure>
+
+<p>最后排查出是因为，我开发代码的工作目录都设置在了 iCloud 云盘里，文件体积虽然不大，却有上万个细小的文件，不知道是不是 iCloud 设置了某种限制，导致上传阻塞，最后将代码都移出 iCloud 问题就解决了。</p>
+<p>后面又卡住了，收获到一个命令通过这个命令可以查看 iCloud 同步进度：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ brctl log -w</span><br></pre></td></tr></table></figure>
+<p>虽然没看懂运行的是什么，但是能够看到一直有东西在执行。<br>通过以下三个命令对 icloud 进行重置：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 杀死icloud同步进程</span><br><span class="line">$ sudo killall bird</span><br><span class="line"># 删除 icloud 的配置文件</span><br><span class="line">$ sudo rm -rf ~/Library/Application\ Support/CloudDocs</span><br><span class="line"># 立刻关机</span><br><span class="line">$ sudo shutdown -r now</span><br></pre></td></tr></table></figure>
+<p>不必担心文件丢失，效果与关闭重新关闭icloud同步类似。重新开启电脑后可以通过前面说到的命令查看 iCloud 同步的进度。</p>
+<p>也可以直接使用下面的脚本：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line"></span><br><span class="line">if [[ $EUID -eq 0 ]]; then</span><br><span class="line">    echo &quot;Killing bird.&quot;</span><br><span class="line">    killall bird</span><br><span class="line">    echo &quot;Removing CloudDocs&quot;</span><br><span class="line">    cd ~/Library/Application\ Support</span><br><span class="line">    rm -rf CloudDocs</span><br><span class="line">    echo &quot;Immediately rebooting!&quot;</span><br><span class="line">    shutdown -r now</span><br><span class="line">else</span><br><span class="line">    echo &quot;</span><br><span class="line">    This script needs run as sudo. </span><br><span class="line">    Use CAUTION when doing so.</span><br><span class="line">    You accept full responsibility using this script.</span><br><span class="line">    You should know what it&#x27;s doing BEFORE you run it.</span><br><span class="line">    &quot;</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+
+<p>不必南辕北辙，越过中国的防火墙，iCloud 中国用户的文件存储在贵州云，而网上所谓的要获取验证文件，获取验证文件有香港的服务器。最后的任务就是等，我是让电脑喝着咖啡持续跑了接近一整天才同步完成的。</p>
+<h2 id="Mac-无法同步-iPhone-剪贴板数据"><a href="#Mac-无法同步-iPhone-剪贴板数据" class="headerlink" title="Mac 无法同步 iPhone 剪贴板数据"></a>Mac 无法同步 iPhone 剪贴板数据</h2><p>iPhone 可以将 Mac 复制的内容，同步下来，而 Mac 不行。<br>解决办法：退出 iPhone 账号，并重新登陆。</p>
+<h2 id="AirDrop-隔空投送文件传送"><a href="#AirDrop-隔空投送文件传送" class="headerlink" title="AirDrop 隔空投送文件传送"></a>AirDrop 隔空投送文件传送</h2><p>从 Mac 通过 AirDrop 传送文件至 iPhone，iPhone 必须有 App 可以打开传输文件格式的文件，否则文件将被遗弃。而我们需要传输一些特殊格式的文件的时候，我们可以将其压缩为 zip，这个时候 iPhone 就会接受了。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
+<li><a href="https://apple.stackexchange.com/questions/313716/icloud-drive-wont-sync-on-mac">macos - iCloud Drive Won’t Sync on Mac - Ask Different</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>MacOS</tag>
+        <tag>Finder</tag>
+        <tag>iCloud</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>学习 CSS 时忽视的几个知识点</title>
     <url>/note-things-i-wish-id-known-about-css/</url>
     <content><![CDATA[<p><a href="https://cssfordesigners.com/articles/things-i-wish-id-known-about-css">Things I Wish I’d Known About CSS</a></p>
@@ -1043,49 +1086,6 @@
       <tags>
         <tag>css</tag>
         <tag>note</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mac 小问题 —— iCloud 未响应</title>
-    <url>/macos-problems/</url>
-    <content><![CDATA[<p>使用 iCloud Drive 将文件上传到云端，防止数据丢失，同时可以实现多台设备的协同工作。但是在使用 iCloud Drive 的过程中我遇到了程序未响应，iCoud 文件上传阻塞的问题。</p>
-<span id="more"></span>
-
-<h2 id="Finder-无法打开或持续未响应"><a href="#Finder-无法打开或持续未响应" class="headerlink" title="Finder 无法打开或持续未响应"></a>Finder 无法打开或持续未响应</h2><p>解决办法：<br>磁盘工具 -&gt; Macintosh HD（系统盘）-&gt; 急救<br>磁盘工具在以下路径：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">/System/Applications/Utilities/Disk Utility.app</span><br></pre></td></tr></table></figure>
-
-<p>急救操作不会对你的电脑造成任何损害，甚至还有所优化。</p>
-<h2 id="打开-iCloud-云盘文件夹极其缓慢"><a href="#打开-iCloud-云盘文件夹极其缓慢" class="headerlink" title="打开 iCloud 云盘文件夹极其缓慢"></a>打开 iCloud 云盘文件夹极其缓慢</h2><p>遇到的问题是：在访达中点击iCloud云盘系统就会出现转圈圈的标志，使用快捷键<code>command+alt+esc</code>（强制退出应用程序）就会看到访达处于未响应状态，这个时间会持续很久。</p>
-<p>解决办法：<br>系统偏好 -&gt; Apple ID -&gt; 取消勾选iCloud云盘 -&gt; 保留副本 -&gt; 重新勾选iCloud云盘</p>
-<p>此操作造成的后果是mac需要很长的一段时间和云端同步，这取决于你icloud存储的文件大小，并不会影响其他。</p>
-<h2 id="文件无法上传排查"><a href="#文件无法上传排查" class="headerlink" title="文件无法上传排查"></a>文件无法上传排查</h2><p>iCloud 连续几天几夜也没同步完，经过诸多排查，例如，修改 DNS：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">114.114.114.114</span><br><span class="line">8.8.8.8</span><br></pre></td></tr></table></figure>
-<p>不仅没起作用，还影响了访问其他网页。最后删除 DNS 配置，刷新 DNS 缓存：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ 2$ sudo killall -HUP mDNSResponder</span><br></pre></td></tr></table></figure>
-
-<p>最后排查出是因为，我开发代码的工作目录都设置在了 iCloud 云盘里，文件体积虽然不大，却有上万个细小的文件，不知道是不是 iCloud 设置了某种限制，导致上传阻塞，最后将代码都移出 iCloud 问题就解决了。</p>
-<p>后面又卡住了，收获到一个命令通过这个命令可以查看 iCloud 同步进度：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ brctl log -w</span><br></pre></td></tr></table></figure>
-<p>虽然没看懂运行的是什么，但是能够看到一直有东西在执行。<br>通过以下三个命令对 icloud 进行重置：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 杀死icloud同步进程</span><br><span class="line">$ sudo killall bird</span><br><span class="line"># 删除 icloud 的配置文件</span><br><span class="line">$ sudo rm -rf ~/Library/Application\ Support/CloudDocs</span><br><span class="line"># 立刻关机</span><br><span class="line">$ sudo shutdown -r now</span><br></pre></td></tr></table></figure>
-<p>不必担心文件丢失，效果与关闭重新关闭icloud同步类似。重新开启电脑后可以通过前面说到的命令查看 iCloud 同步的进度。</p>
-<p>也可以直接使用下面的脚本：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line"></span><br><span class="line">if [[ $EUID -eq 0 ]]; then</span><br><span class="line">    echo &quot;Killing bird.&quot;</span><br><span class="line">    killall bird</span><br><span class="line">    echo &quot;Removing CloudDocs&quot;</span><br><span class="line">    cd ~/Library/Application\ Support</span><br><span class="line">    rm -rf CloudDocs</span><br><span class="line">    echo &quot;Immediately rebooting!&quot;</span><br><span class="line">    shutdown -r now</span><br><span class="line">else</span><br><span class="line">    echo &quot;</span><br><span class="line">    This script needs run as sudo. </span><br><span class="line">    Use CAUTION when doing so.</span><br><span class="line">    You accept full responsibility using this script.</span><br><span class="line">    You should know what it&#x27;s doing BEFORE you run it.</span><br><span class="line">    &quot;</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
-
-<p>不必南辕北辙，越过中国的防火墙，iCloud 中国用户的文件存储在贵州云，而网上所谓的要获取验证文件，获取验证文件有香港的服务器。最后的任务就是等，我是让电脑喝着咖啡持续跑了接近一整天才同步完成的。</p>
-<h2 id="Mac-无法同步-iPhone-剪贴板数据"><a href="#Mac-无法同步-iPhone-剪贴板数据" class="headerlink" title="Mac 无法同步 iPhone 剪贴板数据"></a>Mac 无法同步 iPhone 剪贴板数据</h2><p>iPhone 可以将 Mac 复制的内容，同步下来，而 Mac 不行。<br>解决办法：退出 iPhone 账号，并重新登陆。</p>
-<h2 id="AirDrop-隔空投送文件传送"><a href="#AirDrop-隔空投送文件传送" class="headerlink" title="AirDrop 隔空投送文件传送"></a>AirDrop 隔空投送文件传送</h2><p>从 Mac 通过 AirDrop 传送文件至 iPhone，iPhone 必须有 App 可以打开传输文件格式的文件，否则文件将被遗弃。而我们需要传输一些特殊格式的文件的时候，我们可以将其压缩为 zip，这个时候 iPhone 就会接受了。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
-<li><a href="https://apple.stackexchange.com/questions/313716/icloud-drive-wont-sync-on-mac">macos - iCloud Drive Won’t Sync on Mac - Ask Different</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>MacOS</tag>
-        <tag>Finder</tag>
-        <tag>iCloud</tag>
       </tags>
   </entry>
   <entry>
@@ -1367,60 +1367,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Vim 自动补全之 YCM</title>
-    <url>/shell-java/</url>
-    <content><![CDATA[<p>IDEA 打开得太慢了，我需要一款轻量级的 IDE，不想装其他乱七八糟的编译器咋办？搞事情！</p>
-<span id="more"></span>
-<h2 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h2><p>sublime 通过简单的配置后可以实现 java 代码的高亮提示和编译功能，并且大多编译错误也能基本上精确到行。<br>然而 sublime 内置的终端无法输入，虽然在日常的算法中输入操作很少涉及，, 但还是很不爽。</p>
-<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>这里需要一定的 Vim 基础，新手请执行 <code>vimtutor</code> 查看 Vim 官方教程，再继续往后看。<br>在终端通过 java 命令即可实现 java 代码的编译与运行。<br>vim 不过起到的是编辑器的作用。<br>对于编辑器我们不仅有高亮的基本要求，同样也需要基本的代码补全功能, Vim 的 YCM 插件能较好的实现代码补全功能。<br>下面介绍通过 vim 的 vim-plug 插件管理器 来安装 YCM 。</p>
-<h2 id="预备工作"><a href="#预备工作" class="headerlink" title="预备工作"></a>预备工作</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br><span class="line">brew install cmake vim</span><br></pre></td></tr></table></figure>
-
-<h2 id="vim-plug-安装"><a href="#vim-plug-安装" class="headerlink" title="vim-plug 安装"></a>vim-plug 安装</h2><p><a href="https://github.com/junegunn/vim-plug">junegunn/vim-plug</a></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -fLo ~/.vim/autoload/plug.vim --create-dirs \</span><br><span class="line">    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</span><br></pre></td></tr></table></figure>
-<h2 id="安装-YCM"><a href="#安装-YCM" class="headerlink" title="安装 YCM"></a>安装 YCM</h2><p><a href="https://github.com/Valloric/YouCompleteMe">YCM Github</a></p>
-<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>YCM 可通过 vim-plug 下载，而安装使用则需要进一步的编译。</p>
-<p>在 .vimrc 文件中添加 <code>Plug &#39;Valloric/YouCompleteMe&#39; </code> 再执行 :PluginInstall 即可。</p>
-<h3 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h3><p>YCM 基于 cmake 进行编译的，所以在安装之前如下命令先通过 brew 安装 cmake。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --java-completer</span><br></pre></td></tr></table></figure>
-<p>请使用 python3 。</p>
-<p>安装好之后，由于我的 python3 缺乏很多依赖性，通过以下命令检验 python 所缺乏的依赖。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe/third_party/ycmd</span><br><span class="line">cp ycmd/default_settings.json . &amp; python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
-<p>如果输出如下，是 python 环境的问题考虑重启然后重装：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[1]    8629 segmentation fault  python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
-<p>若有如下报错：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ModuleNotFoundError: No module named &#x27;bottle&#x27;</span><br><span class="line">ModuleNotFoundError: No module named &#x27;waitress&#x27;</span><br></pre></td></tr></table></figure>
-<p>逐句执行 <code>pip3 install bottle</code> <code>pip3 install waitress</code>即可解决。<br>如果显示是：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">No module named &#x27;ycm_core&#x27;</span><br></pre></td></tr></table></figure>
-<p>是没有问题的</p>
-<h2 id="YCM-安装-C-family-的自动补全"><a href="#YCM-安装-C-family-的自动补全" class="headerlink" title="YCM 安装 C-family 的自动补全"></a>YCM 安装 C-family 的自动补全</h2><h3 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --clang-completer</span><br></pre></td></tr></table></figure>
-<h3 id="安装-ycm-gennerator"><a href="#安装-ycm-gennerator" class="headerlink" title="安装 ycm-gennerator"></a>安装 ycm-gennerator</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Plugin &#x27;rdnetto/YCM-Generator&#x27;</span><br></pre></td></tr></table></figure>
-<h3 id="生成-ycm-extra-conf-py-文件到-YCM-中"><a href="#生成-ycm-extra-conf-py-文件到-YCM-中" class="headerlink" title="生成 .ycm_extra_conf.py 文件到 YCM 中"></a>生成 .ycm_extra_conf.py 文件到 YCM 中</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python3 .ycm_extra_conf.py ~/.vim/plugged/YouCompleteMe/third_party/ycmd</span><br></pre></td></tr></table></figure>
-<h3 id="在-vimrc-中添加"><a href="#在-vimrc-中添加" class="headerlink" title="在 ~/.vimrc 中添加"></a>在 ~/.vimrc 中添加</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">let g:ycm_global_ycm_extra_conf = &#x27;～/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py&#x27;</span><br></pre></td></tr></table></figure>
-
-<h2 id="go-语言"><a href="#go-语言" class="headerlink" title="go 语言"></a>go 语言</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --go-completer</span><br></pre></td></tr></table></figure>
-
-<h2 id="其他语言参数"><a href="#其他语言参数" class="headerlink" title="其他语言参数"></a>其他语言参数</h2><ul>
-<li>C family support: <code>python3 ./install.py --clang-completer</code></li>
-<li>C# support: <code>python3 ./install.py --cs-completer </code>（install Mono with Homebrew or by downloading the <a href="http://www.mono-project.com/docs/getting-started/install/mac/">Mono macOS package</a> ）</li>
-<li>Go support: <code>python3 ./install.py --go-completer</code> </li>
-<li>JavaScript and TypeScript support: <code>python3 ./install.py --ts-completer</code> </li>
-<li>Rust support: <code>python3 ./install.py --rust-completer</code></li>
-<li>Java support: <code>python3 ./install.py --java-completer</code></li>
-</ul>
-<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:PlugUpdate</span><br></pre></td></tr></table></figure>
-<p>或</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">git clean -f</span><br><span class="line">git pull</span><br><span class="line">git submodule update --recursive --init</span><br><span class="line">./install.py --go-completer</span><br></pre></td></tr></table></figure>
-
-<h2 id="错误解决"><a href="#错误解决" class="headerlink" title="错误解决"></a>错误解决</h2><p>升级 catalina 后 brew 安装的 python3 执行异常，解决方案如下：<br><a href="https://forums.developer.apple.com/thread/119429">My application crashed with invalid load of lib… |Apple Developer Forums</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#!/bin/zsh</span><br><span class="line">brew update &amp; brew upgrade &amp; brew install openssl</span><br><span class="line">cd /usr/local/Cellar/openssl/1.0.2t/lib</span><br><span class="line">sudo cp libssl.1.0.0.dylib libcrypto.1.0.0.dylib /usr/local/lib/</span><br><span class="line">cd /usr/local/lib</span><br><span class="line">mv libssl.dylib libssl_bak.dylib</span><br><span class="line">mv libcrypto.dylib libcrypto_bak.dylib</span><br><span class="line">sudo ln -s libssl.1.0.0.dylib libssl.dylib</span><br><span class="line">sudo ln -s libcrypto.1.0.0.dylib libcrypto.dylib</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>开发工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>搜索引擎使用技巧</title>
     <url>/se-operators/</url>
     <content><![CDATA[<p><img data-src="http://images.xyang.xin/2020%2F05%2F29%2F1590724982.png?x-oss-process=style/title_800" alt="1590724982.png"></p>
@@ -1514,6 +1460,60 @@
       </tags>
   </entry>
   <entry>
+    <title>Vim 自动补全之 YCM</title>
+    <url>/shell-java/</url>
+    <content><![CDATA[<p>IDEA 打开得太慢了，我需要一款轻量级的 IDE，不想装其他乱七八糟的编译器咋办？搞事情！</p>
+<span id="more"></span>
+<h2 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h2><p>sublime 通过简单的配置后可以实现 java 代码的高亮提示和编译功能，并且大多编译错误也能基本上精确到行。<br>然而 sublime 内置的终端无法输入，虽然在日常的算法中输入操作很少涉及，, 但还是很不爽。</p>
+<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>这里需要一定的 Vim 基础，新手请执行 <code>vimtutor</code> 查看 Vim 官方教程，再继续往后看。<br>在终端通过 java 命令即可实现 java 代码的编译与运行。<br>vim 不过起到的是编辑器的作用。<br>对于编辑器我们不仅有高亮的基本要求，同样也需要基本的代码补全功能, Vim 的 YCM 插件能较好的实现代码补全功能。<br>下面介绍通过 vim 的 vim-plug 插件管理器 来安装 YCM 。</p>
+<h2 id="预备工作"><a href="#预备工作" class="headerlink" title="预备工作"></a>预备工作</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br><span class="line">brew install cmake vim</span><br></pre></td></tr></table></figure>
+
+<h2 id="vim-plug-安装"><a href="#vim-plug-安装" class="headerlink" title="vim-plug 安装"></a>vim-plug 安装</h2><p><a href="https://github.com/junegunn/vim-plug">junegunn/vim-plug</a></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -fLo ~/.vim/autoload/plug.vim --create-dirs \</span><br><span class="line">    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</span><br></pre></td></tr></table></figure>
+<h2 id="安装-YCM"><a href="#安装-YCM" class="headerlink" title="安装 YCM"></a>安装 YCM</h2><p><a href="https://github.com/Valloric/YouCompleteMe">YCM Github</a></p>
+<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>YCM 可通过 vim-plug 下载，而安装使用则需要进一步的编译。</p>
+<p>在 .vimrc 文件中添加 <code>Plug &#39;Valloric/YouCompleteMe&#39; </code> 再执行 :PluginInstall 即可。</p>
+<h3 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h3><p>YCM 基于 cmake 进行编译的，所以在安装之前如下命令先通过 brew 安装 cmake。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --java-completer</span><br></pre></td></tr></table></figure>
+<p>请使用 python3 。</p>
+<p>安装好之后，由于我的 python3 缺乏很多依赖性，通过以下命令检验 python 所缺乏的依赖。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe/third_party/ycmd</span><br><span class="line">cp ycmd/default_settings.json . &amp; python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
+<p>如果输出如下，是 python 环境的问题考虑重启然后重装：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[1]    8629 segmentation fault  python3 ycmd --options_file default_settings.json</span><br></pre></td></tr></table></figure>
+<p>若有如下报错：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ModuleNotFoundError: No module named &#x27;bottle&#x27;</span><br><span class="line">ModuleNotFoundError: No module named &#x27;waitress&#x27;</span><br></pre></td></tr></table></figure>
+<p>逐句执行 <code>pip3 install bottle</code> <code>pip3 install waitress</code>即可解决。<br>如果显示是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">No module named &#x27;ycm_core&#x27;</span><br></pre></td></tr></table></figure>
+<p>是没有问题的</p>
+<h2 id="YCM-安装-C-family-的自动补全"><a href="#YCM-安装-C-family-的自动补全" class="headerlink" title="YCM 安装 C-family 的自动补全"></a>YCM 安装 C-family 的自动补全</h2><h3 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --clang-completer</span><br></pre></td></tr></table></figure>
+<h3 id="安装-ycm-gennerator"><a href="#安装-ycm-gennerator" class="headerlink" title="安装 ycm-gennerator"></a>安装 ycm-gennerator</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Plugin &#x27;rdnetto/YCM-Generator&#x27;</span><br></pre></td></tr></table></figure>
+<h3 id="生成-ycm-extra-conf-py-文件到-YCM-中"><a href="#生成-ycm-extra-conf-py-文件到-YCM-中" class="headerlink" title="生成 .ycm_extra_conf.py 文件到 YCM 中"></a>生成 .ycm_extra_conf.py 文件到 YCM 中</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python3 .ycm_extra_conf.py ~/.vim/plugged/YouCompleteMe/third_party/ycmd</span><br></pre></td></tr></table></figure>
+<h3 id="在-vimrc-中添加"><a href="#在-vimrc-中添加" class="headerlink" title="在 ~/.vimrc 中添加"></a>在 ~/.vimrc 中添加</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">let g:ycm_global_ycm_extra_conf = &#x27;～/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py&#x27;</span><br></pre></td></tr></table></figure>
+
+<h2 id="go-语言"><a href="#go-语言" class="headerlink" title="go 语言"></a>go 语言</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">python3 ./install.py --go-completer</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他语言参数"><a href="#其他语言参数" class="headerlink" title="其他语言参数"></a>其他语言参数</h2><ul>
+<li>C family support: <code>python3 ./install.py --clang-completer</code></li>
+<li>C# support: <code>python3 ./install.py --cs-completer </code>（install Mono with Homebrew or by downloading the <a href="http://www.mono-project.com/docs/getting-started/install/mac/">Mono macOS package</a> ）</li>
+<li>Go support: <code>python3 ./install.py --go-completer</code> </li>
+<li>JavaScript and TypeScript support: <code>python3 ./install.py --ts-completer</code> </li>
+<li>Rust support: <code>python3 ./install.py --rust-completer</code></li>
+<li>Java support: <code>python3 ./install.py --java-completer</code></li>
+</ul>
+<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:PlugUpdate</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~/.vim/plugged/YouCompleteMe</span><br><span class="line">git clean -f</span><br><span class="line">git pull</span><br><span class="line">git submodule update --recursive --init</span><br><span class="line">./install.py --go-completer</span><br></pre></td></tr></table></figure>
+
+<h2 id="错误解决"><a href="#错误解决" class="headerlink" title="错误解决"></a>错误解决</h2><p>升级 catalina 后 brew 安装的 python3 执行异常，解决方案如下：<br><a href="https://forums.developer.apple.com/thread/119429">My application crashed with invalid load of lib… |Apple Developer Forums</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#!/bin/zsh</span><br><span class="line">brew update &amp; brew upgrade &amp; brew install openssl</span><br><span class="line">cd /usr/local/Cellar/openssl/1.0.2t/lib</span><br><span class="line">sudo cp libssl.1.0.0.dylib libcrypto.1.0.0.dylib /usr/local/lib/</span><br><span class="line">cd /usr/local/lib</span><br><span class="line">mv libssl.dylib libssl_bak.dylib</span><br><span class="line">mv libcrypto.dylib libcrypto_bak.dylib</span><br><span class="line">sudo ln -s libssl.1.0.0.dylib libssl.dylib</span><br><span class="line">sudo ln -s libcrypto.1.0.0.dylib libcrypto.dylib</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>开发工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SSM 错误集锦</title>
     <url>/ssm-Error/</url>
     <content><![CDATA[<ol>
@@ -1541,6 +1541,21 @@
 <li>原因：tomcat 升级导致路径改变</li>
 <li>解决办法：Idea 在 Edit Configuration 中修改 tomcat 路径至 libexec</li>
 </ul>
+]]></content>
+      <categories>
+        <category>信息技术</category>
+      </categories>
+      <tags>
+        <tag>ssm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SSM 问题集锦</title>
+    <url>/ssm-question/</url>
+    <content><![CDATA[<h1 id="SSM-问题集锦"><a href="#SSM-问题集锦" class="headerlink" title="SSM 问题集锦"></a>SSM 问题集锦</h1><h2 id="SSM-基础的搭建过程"><a href="#SSM-基础的搭建过程" class="headerlink" title="SSM 基础的搭建过程"></a>SSM 基础的搭建过程</h2><p><a href="https://blog.csdn.net/yangxinyujy/article/details/80656771">IntelliJ IDEA 创建 Maven 管理下的 SSM 项目基础全过程</a><br><a href="https://github.com/yangxinyujy/ssmdemo">yangxinyujy/ssmdemo: ssm 基础框架</a></p>
+<span id="more"></span>
+
+<h2 id="Tomcat-部署时-war-和-war-exploded-区别"><a href="#Tomcat-部署时-war-和-war-exploded-区别" class="headerlink" title="Tomcat 部署时 war 和 war exploded 区别"></a>Tomcat 部署时 war 和 war exploded 区别</h2><p>war 模式：将WEB工程以包的形式上传到服务器，可以称之为是发布模式，这是先打成 war 包，再发布；<br>war exploded模式：将 WEB 工程以当前文件夹的位置关系上传到服务器，通过直接把文件夹、jsp 页面 、classes 等,移到 Tomcat 部署文件夹里面的方式，进行加载部署。因此这种方式支持热部署，一般在开发的时候也是用这种方式。</p>
 ]]></content>
       <categories>
         <category>信息技术</category>
@@ -1606,18 +1621,34 @@
       </tags>
   </entry>
   <entry>
-    <title>SSM 问题集锦</title>
-    <url>/ssm-question/</url>
-    <content><![CDATA[<h1 id="SSM-问题集锦"><a href="#SSM-问题集锦" class="headerlink" title="SSM 问题集锦"></a>SSM 问题集锦</h1><h2 id="SSM-基础的搭建过程"><a href="#SSM-基础的搭建过程" class="headerlink" title="SSM 基础的搭建过程"></a>SSM 基础的搭建过程</h2><p><a href="https://blog.csdn.net/yangxinyujy/article/details/80656771">IntelliJ IDEA 创建 Maven 管理下的 SSM 项目基础全过程</a><br><a href="https://github.com/yangxinyujy/ssmdemo">yangxinyujy/ssmdemo: ssm 基础框架</a></p>
+    <title>vim 多文件类型自动补全方案</title>
+    <url>/vim-multiple-filetype-deoplete/</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
+<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
 <span id="more"></span>
-
-<h2 id="Tomcat-部署时-war-和-war-exploded-区别"><a href="#Tomcat-部署时-war-和-war-exploded-区别" class="headerlink" title="Tomcat 部署时 war 和 war exploded 区别"></a>Tomcat 部署时 war 和 war exploded 区别</h2><p>war 模式：将WEB工程以包的形式上传到服务器，可以称之为是发布模式，这是先打成 war 包，再发布；<br>war exploded模式：将 WEB 工程以当前文件夹的位置关系上传到服务器，通过直接把文件夹、jsp 页面 、classes 等,移到 Tomcat 部署文件夹里面的方式，进行加载部署。因此这种方式支持热部署，一般在开发的时候也是用这种方式。</p>
+<p>其中的 filetype on 表示：</p>
+<blockquote>
+<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
+</blockquote>
+<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
+<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
+<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">&#x27;nvim&#x27;</span>)</span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span>, &#123; <span class="string">&#x27;do&#x27;</span>: <span class="string">&#x27;:UpdateRemotePlugins&#x27;</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/nvim-yarp&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/vim-hug-neovim-rpc&#x27;</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">&#x27;Shougo/context_filetype.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">&#x27;g:context_filetype#same_filetypes&#x27;</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;javascript&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;script&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/script&gt;&#x27;</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;css&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;style&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/style&gt;&#x27;</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;functions&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;css&#x27;</span>: [<span class="string">&#x27;csscomplete#CompleteCSS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: [<span class="string">&#x27;javascriptcomplete#CompleteJS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;html&#x27;</span>: [<span class="string">&#x27;htmlcomplete#CompleteTags&#x27;</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;input_patterns&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: <span class="string">&#x27;[^. *\t]\.\w*&#x27;</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">&quot; 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">&quot;\&lt;C-n&gt;&quot;</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">&quot;\&lt;TAB&gt;&quot;</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> &quot;&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">&#x27;.&#x27;</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">&#x27;\s&#x27;</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">&quot;&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
+<p>执行 :PlugInstall</p>
+<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
+<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">&#x27;range&#x27;</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">&#x27;filetype&#x27;</span>: <span class="string">&#x27;css&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
+<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
+<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
 ]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
       <tags>
-        <tag>ssm</tag>
+        <tag>vim</tag>
+        <tag>multiple filetype</tag>
       </tags>
   </entry>
   <entry>
@@ -1747,37 +1778,6 @@
       </categories>
       <tags>
         <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vim 多文件类型自动补全方案</title>
-    <url>/vim-multiple-filetype-deoplete/</url>
-    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>多文件类型也可以叫混合文件类型(multiple filetype), 比如 HTML 里面写 CSS, JS 代码，虽然不提倡，但偶尔也有这个需求。</p>
-<p>根据常识，我们知道，往往针对不同的文本类型，vim 或其插件，会出发不同的事件，例如特定的语法高亮、特定的语法检测、特定的自动补全方案等。<br>几乎每个 vim user 的 vimrc 中都会有如下配置：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<p>其中的 filetype on 表示：</p>
-<blockquote>
-<p>每次一个新的或者已经存在的文件被编辑时，Vim 会试图识别文件的类型，并设置’filetype’ 选项。同时，也触发 FileType 事件。该事件可以设置语法高亮，特定选项，等等。———— 出自 《vim 参考手册》，译者: Willis、tocer</p>
-</blockquote>
-<p>那么是否能直接通过修改文件的 filetype 值实现多文件类型的自动补全呢？ 答案是否定的，因为这将引起语法检测，语法高亮等一系列的变化，这是我们所不能接受的。</p>
-<p>github 上已经有人大致实现了这个功能，主要通过 <code>deoplete.nvim</code> 和 <code>context_filetype.vim</code>两个插件。都是一个作者写的，前者提供一个可扩展的 vim 自动补全框架，后者支持前者实现多文件类型自动补全。</p>
-<h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><p>修改 <code>.vimrc</code> 文件如下：<br>（下面提供的插件安装方式都是基于 <code>vim-plug</code> 的。不要再用 <code>vundle</code> 了，因为它目前不支持多线程，下载插件很慢。）</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">has</span>(<span class="string">&#x27;nvim&#x27;</span>)</span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span>, &#123; <span class="string">&#x27;do&#x27;</span>: <span class="string">&#x27;:UpdateRemotePlugins&#x27;</span> &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  Plug <span class="string">&#x27;Shougo/deoplete.nvim&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/nvim-yarp&#x27;</span></span><br><span class="line">  Plug <span class="string">&#x27;roxma/vim-hug-neovim-rpc&#x27;</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">Plug <span class="string">&#x27;Shougo/context_filetype.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; context_filetype.vim 插件的配置</span></span><br><span class="line"><span class="keyword">if</span> !exists(<span class="string">&#x27;g:context_filetype#same_filetypes&#x27;</span>)</span><br><span class="line">  <span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes = &#123;&#125;</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:context_filetype</span>#filetypes.svelte = [</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;javascript&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;script&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/script&gt;&#x27;</span>&#125;,</span><br><span class="line">\ &#123;<span class="string">&#x27;filetype&#x27;</span> :<span class="string">&#x27;css&#x27;</span>, <span class="string">&#x27;start&#x27;</span>: <span class="string">&#x27;&lt;style&gt;&#x27;</span>, <span class="string">&#x27;end&#x27;</span>: <span class="string">&#x27;&lt;/style&gt;&#x27;</span>&#125;,</span><br><span class="line">\ ]</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; deoplete.nvim 插件的配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:deoplete</span>#enable_at_startup = <span class="number">1</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave,CompleteDone * <span class="keyword">if</span> <span class="built_in">pumvisible</span>() == <span class="number">0</span> | <span class="keyword">pclose</span> | <span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;functions&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;css&#x27;</span>: [<span class="string">&#x27;csscomplete#CompleteCSS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: [<span class="string">&#x27;javascriptcomplete#CompleteJS&#x27;</span>],</span><br><span class="line">\ <span class="string">&#x27;html&#x27;</span>: [<span class="string">&#x27;htmlcomplete#CompleteTags&#x27;</span>],</span><br><span class="line">\&#125;)</span><br><span class="line"><span class="keyword">call</span> deoplete#custom#var(<span class="string">&#x27;omni&#x27;</span>, <span class="string">&#x27;input_patterns&#x27;</span>, &#123;</span><br><span class="line">\ <span class="string">&#x27;javascript&#x27;</span>: <span class="string">&#x27;[^. *\t]\.\w*&#x27;</span>,</span><br><span class="line">\ &#125;)</span><br><span class="line"><span class="comment">&quot; 支持 &lt;tab&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="symbol">&lt;silent&gt;</span><span class="symbol">&lt;expr&gt;</span> <span class="symbol">&lt;TAB&gt;</span> <span class="built_in">pumvisible</span>() ? <span class="string">&quot;\&lt;C-n&gt;&quot;</span> :</span><br><span class="line">\ <span class="symbol">&lt;SID&gt;</span>check_back_space() ? <span class="string">&quot;\&lt;TAB&gt;&quot;</span> :</span><br><span class="line">\ deoplete#mappings#manual_complete()</span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">s</span>:<span class="title">check_back_space</span><span class="params">()</span> <span class="title">abort</span> &quot;&#123;&#123;&#123;</span></span><br><span class="line">  <span class="keyword">let</span> <span class="keyword">col</span> = <span class="keyword">col</span>(<span class="string">&#x27;.&#x27;</span>) - <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> !col || <span class="built_in">getline</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="keyword">col</span> - <span class="number">1</span>]  =~ <span class="string">&#x27;\s&#x27;</span></span><br><span class="line"><span class="keyword">endfunction</span><span class="comment">&quot;&#125;&#125;&#125;</span></span><br></pre></td></tr></table></figure>
-<p>执行 :PlugInstall</p>
-<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>作为一个 <code>vimscript</code> 还没入门的新手，看了大半天代码，了解如下：</p>
-<p><code>context_filetype.vim</code> 插件，通过 <code>context_filetype#get()</code> 入口函数在光标处于<code>&lt;style&gt; &lt;/style&gt;</code>范围内时，返回如下格式的字典：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">&#x27;range&#x27;</span>: [[<span class="number">9</span>, <span class="number">1</span>], [<span class="number">12</span>, <span class="number">4</span>]], <span class="string">&#x27;filetype&#x27;</span>: <span class="string">&#x27;css&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
-<p>该字典含义为 {范围：[ 标签起始位置，标签结束位置 ]，文件类型 }</p>
-<p>但是我没有明白 <code>deoplete.nvim</code> 是如何使用这个接口的。</p>
-<p>作者让我看 <a href="https://github.com/Shougo/deoplete.nvim/blob/master/rplugin/python3/deoplete/context.py">context.py</a> 这段代码，我只能弱弱的回复一个”Thanks”。</p>
-]]></content>
-      <categories>
-        <category>信息技术</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-        <tag>multiple filetype</tag>
       </tags>
   </entry>
   <entry>
@@ -1920,7 +1920,7 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>--owner=”Bot Wrangler <a href="mailto:&#98;&#119;&#64;&#101;&#120;&#x61;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#109;">&#98;&#119;&#64;&#101;&#120;&#x61;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#109;</a>“</td>
+<td>--owner=”Bot Wrangler <a href="mailto:&#98;&#x77;&#64;&#x65;&#x78;&#x61;&#109;&#x70;&#108;&#x65;&#46;&#x63;&#111;&#x6d;">&#98;&#x77;&#64;&#x65;&#x78;&#x61;&#109;&#x70;&#108;&#x65;&#46;&#x63;&#111;&#x6d;</a>“</td>
 <td>Bot owner, e.g. “Bot Wrangler <a href="mailto:bw@example.com">bw@example.com</a>”</td>
 </tr>
 <tr>
@@ -2377,7 +2377,125 @@
 <p>如果你部署到 Heroku 或者使用 foreman，你需要确保在 <code>Procfile</code> 中携带<code>-a campfire</code> 被调用：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">web: bin/hubot -a campfire -n Hubot</span><br></pre></td></tr></table></figure>
 
-<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4>]]></content>
+<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p>适配器需要以下环境变量：</p>
+<ul>
+<li><code>HUBOT_CAMPFIRE_ACCOUNT</code></li>
+<li><code>HUBOT_CAMPFIRE_TOKEN</code></li>
+<li><code>HUBOT_CAMPFIRE_ROOMS</code></li>
+</ul>
+<h5 id="Campfire-API-令牌"><a href="#Campfire-API-令牌" class="headerlink" title="Campfire API 令牌"></a>Campfire API 令牌</h5><p>这可以通过登录您的 hubot 的帐户，点击 <code>My Info</code> 链接来找到， 并记下 API 令牌。</p>
+<h5 id="Campfire-房间号"><a href="#Campfire-房间号" class="headerlink" title="Campfire 房间号"></a>Campfire 房间号</h5><p>如果你加入了你希望你的hubot加入的房间，你可以看见在URL中的房间的数字 ID。记下你想你的 hubot 加入的每个房间 ID。</p>
+<h5 id="Campfire-账户"><a href="#Campfire-账户" class="headerlink" title="Campfire 账户"></a>Campfire 账户</h5><p>这只是您访问 Campfire 帐户的域名的第一部分。例如，如果您的 Campfire 是<code>hubot.campfirenow.com</code>，你的二级域名是<code>hubot</code>。记下这个二级域名。</p>
+<h5 id="在-Heroku-上配置环境变量"><a href="#在-Heroku-上配置环境变量" class="headerlink" title="在 Heroku 上配置环境变量"></a>在 Heroku 上配置环境变量</h5><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> heroku config:<span class="built_in">set</span> HUBOT_CAMPFIRE_TOKEN=<span class="string">&quot;...&quot;</span></span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> heroku config:<span class="built_in">set</span> HUBOT_CAMPFIRE_ROOMS=<span class="string">&quot;123,321&quot;</span></span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> heroku config:<span class="built_in">set</span> HUBOT_CAMPFIRE_ACCOUNT=<span class="string">&quot;...&quot;</span></span></span><br></pre></td></tr></table></figure>
+
+<h5 id="在-Unix-上配置环境变量"><a href="#在-Unix-上配置环境变量" class="headerlink" title="在 Unix 上配置环境变量"></a>在 Unix 上配置环境变量</h5><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">export</span> HUBOT_CAMPFIRE_TOKEN=<span class="string">&quot;...&quot;</span></span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">export</span> HUBOT_CAMPFIRE_ROOMS=<span class="string">&quot;123,321&quot;</span></span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">export</span> HUBOT_CAMPFIRE_ACCOUNT=<span class="string">&quot;...&quot;</span></span></span><br></pre></td></tr></table></figure>
+
+<h5 id="在-Windows-上配置环境变量"><a href="#在-Windows-上配置环境变量" class="headerlink" title="在 Windows 上配置环境变量"></a>在 Windows 上配置环境变量</h5><p>使用 PowerShell：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">setx HUBOT_CAMPFIRE_TOKEN &quot;...&quot; /m</span><br><span class="line"></span><br><span class="line">setx HUBOT_CAMPFIRE_ROOMS &quot;123,321&quot; /m</span><br><span class="line"></span><br><span class="line">setx HUBOT_CAMPFIRE_ACCOUNT &quot;...&quot; /m</span><br></pre></td></tr></table></figure>
+
+<h3 id="Shell-适配器"><a href="#Shell-适配器" class="headerlink" title="Shell 适配器"></a>Shell 适配器</h3><p>Shell 适配器提供一个简单的读取打印循环，用于与本地 hubot 进行交互。它可用于在hubot 上使用脚本之前测试脚本。</p>
+<h4 id="起步-1"><a href="#起步-1" class="headerlink" title="起步"></a>起步</h4><p>要使用外壳适配器，您可以在运行 hubot 时简单地省略 -a 选项，因为它默认会使用 Shell 适配器。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> bin/hubot</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="配置-1"><a href="#配置-1" class="headerlink" title="配置"></a>配置</h4><p>这个适配器不需要任何配置。</p>
+<p>它支持两个环境变量以支持作为不同的用户测试脚本：</p>
+<ul>
+<li>HUBOT_SHELL_USER_ID: default is 1</li>
+<li>HUBOT_SHELL_USER_NAME: default is Shell</li>
+</ul>
+<h3 id="开发适配器"><a href="#开发适配器" class="headerlink" title="开发适配器"></a>开发适配器</h3><h4 id="适配器基础"><a href="#适配器基础" class="headerlink" title="适配器基础"></a>适配器基础</h4><p>所有适配器继承自在 <code>src/adapter.coffee</code> 文件中的适配器类。有明确的你想去重写的方法。下面是扩展适配器类的基本桩代码：</p>
+<figure class="highlight coffee"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Sample</span> <span class="keyword">extends</span> <span class="title">Adapter</span></span></span><br><span class="line"></span><br><span class="line">  constructor: <span class="function">-&gt;</span></span><br><span class="line">    <span class="built_in">super</span></span><br><span class="line">    @robot.logger.info <span class="string">&quot;Constructor&quot;</span></span><br><span class="line"></span><br><span class="line">  send: <span class="function"><span class="params">(envelope, strings...)</span> -&gt;</span></span><br><span class="line">    @robot.logger.info <span class="string">&quot;Send&quot;</span></span><br><span class="line"></span><br><span class="line">  reply: <span class="function"><span class="params">(envelope, strings...)</span> -&gt;</span></span><br><span class="line">    @robot.logger.info <span class="string">&quot;Reply&quot;</span></span><br><span class="line"></span><br><span class="line">  run: <span class="function">-&gt;</span></span><br><span class="line">    @robot.logger.info <span class="string">&quot;Run&quot;</span></span><br><span class="line">    @emit <span class="string">&quot;connected&quot;</span></span><br><span class="line">    user = <span class="keyword">new</span> User <span class="number">1001</span>, name: <span class="string">&#x27;Sample User&#x27;</span></span><br><span class="line">    message = <span class="keyword">new</span> TextMessage user, <span class="string">&#x27;Some Sample Message&#x27;</span>, <span class="string">&#x27;MSG-001&#x27;</span></span><br><span class="line">    @robot.receive message</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">exports</span>.use = <span class="function"><span class="params">(robot)</span> -&gt;</span></span><br><span class="line">  <span class="keyword">new</span> Sample robot</span><br></pre></td></tr></table></figure>
+
+<h4 id="配置您的开发环境"><a href="#配置您的开发环境" class="headerlink" title="配置您的开发环境"></a>配置您的开发环境</h4><ol>
+<li>为您的适配器<code>hubot-sample</code>创建一个新的文件夹。<ul>
+<li><code>mkdir hubot-sample</code></li>
+</ul>
+</li>
+<li>切换您的工作路径到<code>hubot-sample</code><ul>
+<li><code>cd hubot-sample</code></li>
+</ul>
+</li>
+<li>运行<code>npm init</code>去创建您的 package.json<ul>
+<li>确保入口是<code>src/sample.coffee</code></li>
+</ul>
+</li>
+<li>添加您的<code>.gitignore</code>去包含<code>node_modules</code>。</li>
+<li>编辑 <code>src/sample.coffee</code> 文件为您的适配器去包含上述的桩代码。</li>
+<li>编辑<code>package.json</code>去为hubot添加 peer 依赖。 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;dependencies&quot;</span>: &#123;</span><br><span class="line">&#125;,</span><br><span class="line"><span class="string">&quot;peerDependencies&quot;</span>: &#123;</span><br><span class="line">  <span class="attr">&quot;hubot&quot;</span>: <span class="string">&quot;&gt;=2.0&quot;</span></span><br><span class="line">&#125;,</span><br><span class="line"><span class="string">&quot;devDependencies&quot;</span>: &#123;</span><br><span class="line">  <span class="attr">&quot;coffee-script&quot;</span>: <span class="string">&quot;&gt;=1.2.0&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>用<code>yo hubot</code><a href="https://hubot.github.com/docs/">命令</a>生成您的hubot。</li>
+<li>切换工作目录到<code>hubot</code>你在第七步创建的。</li>
+<li>现在执行<code>npm link</code>去添加您的适配器到<code>hubot</code><ul>
+<li><code>npm link ../hubot-sample</code></li>
+</ul>
+</li>
+<li>运行<code>hubot -a sample</code>。</li>
+</ol>
+<h4 id="Gochas"><a href="#Gochas" class="headerlink" title="Gochas"></a>Gochas</h4><p>在 node 社区有一个开放的议题围绕<a href="https://github.com/npm/npm/issues/5875">npm 链接的 peer 依赖不工作</a>。要让我们的项目工作，您的代码需要做一些小的修改。</p>
+<ol>
+<li>引入您的 <code>hubot-sample</code> 适配器，添加下面的代码： <figure class="highlight coffee"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span></span><br><span class="line">  &#123;Robot,Adapter,TextMessage,User&#125; = <span class="built_in">require</span> <span class="string">&#x27;hubot&#x27;</span></span><br><span class="line"><span class="keyword">catch</span></span><br><span class="line">  prequire = <span class="built_in">require</span>(<span class="string">&#x27;parent-require&#x27;</span>)</span><br><span class="line">  &#123;Robot,Adapter,TextMessage,User&#125; = prequire <span class="string">&#x27;hubot&#x27;</span></span><br></pre></td></tr></table></figure></li>
+<li>在您的<code>hubot-sample</code>文件夹，修改<code>package.json</code>去包含下面的依赖以至于这种自定义导入机制将起作用 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;dependencies&quot;</span>: &#123;</span><br><span class="line">  <span class="attr">&quot;parent-require&quot;</span>: <span class="string">&quot;^1.0.0&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>现在尝试再运行<code>hubot -a sample</code>并看到引入正常加载了。</li>
+<li>一旦这工作正常，您可以根据您认为合适的情况构建适配器的功能。看看其他一些适配器，获取一些实现想法。<ul>
+<li>一旦通过 <code>npm</code> 进行打包和部署，您就不再需要在 <code>hubot</code> 中的依赖性了，因为 peer 依赖应该作为官方模块工作。</li>
+</ul>
+</li>
+</ol>
+<h2 id="部署-1"><a href="#部署-1" class="headerlink" title="部署"></a>部署</h2><h3 id="部署到-Heroku"><a href="#部署到-Heroku" class="headerlink" title="部署到 Heroku"></a>部署到 Heroku</h3><p>如果你一直跟着<a href="https://hubot.github.com/docs/">官方文档</a>到了这里，是时候部署了，这样你就不仅在你的本地机器能使用它了。<a href="http://www.heroku.com/">Heroku</a>是部署hubot的最简单和支持的方式。</p>
+<p>安装 <a href="https://toolbelt.heroku.com/">Heroku Toolbelt</a> 去开始，然后跟着他们的“Getting Started”操作指南，包括第一次登录：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ heroku login</span><br><span class="line">Enter your Heroku credentials.</span><br><span class="line">Email: youremail@example.com</span><br><span class="line">Password:</span><br><span class="line">Could not find an existing public key.</span><br><span class="line">Would you like to generate one? [Yn]</span><br><span class="line">Generating new SSH public key.</span><br><span class="line">Uploading ssh public key /Users/you/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<p>在新的 hubot 目录中，请确保您创建了 git 仓库，并且您的代码已经被 commit：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git init</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git add .</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git commit -m <span class="string">&quot;Initial commit&quot;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>创建一个 Heroku 应用：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> heroku create</span></span><br><span class="line">Creating rosemary-britches-123... done, stack is cedar</span><br><span class="line">http://rosemary-britches-123.herokuapp.com/ | git@heroku.com:rosemary-britches-123.git</span><br><span class="line">Git remote heroku added</span><br></pre></td></tr></table></figure>
+
+<p>在您部署应用之前，您需要配置一些环境变量，供 hubot 使用。您需要的特定变量取决于您正在使用的适配器和脚本。对于 Campfire，没有其它脚本的话，你需要去设置以下环境变量：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> heroku config:<span class="built_in">set</span> HUBOT_CAMPFIRE_ACCOUNT=yourcampfireaccount</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> heroku config:<span class="built_in">set</span> HUBOT_CAMPFIRE_TOKEN=yourcampfiretoken</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> heroku config:<span class="built_in">set</span> HUBOT_CAMPFIRE_ROOMS=comma,separated,list,of,rooms,to,join</span></span><br></pre></td></tr></table></figure>
+
+<p>此时，您已准备好部署并开始聊天。使用 Heroku，就是执行 git push：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git push heroku master</span></span><br></pre></td></tr></table></figure>
+
+<p>您会看到一些文本飞过，最终是成功的。此时您应该可以在您配置的聊天室，看见您的机器人。如果没有，您可以看一看日志去调试：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> heroku logs</span></span><br></pre></td></tr></table></figure>
+
+<p>如果您对您的 hubot 做了一些改变，在 push 它们之前，commit 一下就好：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git commit -am <span class="string">&quot;Awesome scripts OMG&quot;</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git push heroku master</span></span><br></pre></td></tr></table></figure>
+
+<p>一些脚本需要 redis 来运行，Heroku 提供一个叫 <a href="https://addons.heroku.com/rediscloud">Redis Cloud</a> 的附加装置，它是有免费计划的。使用它：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> heroku addons:create rediscloud</span></span><br></pre></td></tr></table></figure>
+
+<p>在Heroku上的免费的dyno在<a href="https://devcenter.heroku.com/articles/dyno-sleeping">不活跃30分钟后将休眠</a>。那意味着您的hubot将离开聊天室并且仅重新加入当它获得流量。这是极度不方便的因为大多数交互都是通过聊天完成的，hubot 必须在线、在房间里回复消息。解决这个问题的一个临时方案是，你可以使用<a href="https://github.com/hubot-scripts/hubot-heroku-keepalive">hubot-heroku-keepalive</a>脚本，它可以让您免费的dyno活跃时间提升到18小时每天。如果你不想你的 hubot 休眠，你可能就需要<a href="https://www.heroku.com/pricing">升级到 Heroku 的 bobby 计划</a>。</p>
+<h3 id="部署到-Unix"><a href="#部署到-Unix" class="headerlink" title="部署到 Unix"></a>部署到 Unix</h3><p>由于 Linux 的变种很多，以及 UNIX，因此 hubot 团队很难拥有规范文档，用于安装和部署到每个版本。因此，这试图概述部署所需的内容。</p>
+<p>有3个主要的东西去部署和运行 hubot：</p>
+<ul>
+<li>node 和 npm</li>
+<li>在服务器上更新源代码的方法</li>
+<li>启动 hubot 的方法， 在崩溃时启动它， 并在代码更新时重新启动它</li>
+</ul>
+<h4 id="node-和-npm"><a href="#node-和-npm" class="headerlink" title="node 和 npm"></a>node 和 npm</h4><p>首先，您的 UNIX 服务器将需要 node 和 npm。查看node.js 的 wiki：<a href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager">通过包管理器安装 Node.js</a>，<a href="https://github.com/joyent/node/wiki/Installation#building-on-gnulinux-and-other-unix">在 GNU/Linux 和 其它 UNIX 上编译</a>。</p>
+<h4 id="在服务器上更新代码"><a href="#在服务器上更新代码" class="headerlink" title="在服务器上更新代码"></a>在服务器上更新代码</h4><p>更新 hubot 代码的最简单方法是对 hubot 的源代码进行 git checkout（您在阅读<a href="https://hubot.github.com/docs/">官方文档</a>期间创建的源代码，而不是 github/hubot 仓库），只需 git pull 即可获取更改。这可能感觉不够优雅，但是刚开始的时候是有用的。</p>
+<p>如果您有 Ruby 背景，使用 <a href="https://github.com/capistrano/capistrano">capistrano</a> 会让您感到更舒服。</p>
+<p>如果您有 <a href="http://www.chef.io/chef/">Chef</a> 背景，有一个用于管理部署的<a href="https://docs.chef.io/resource_deploy.html">部署</a>资源。</p>
+<h4 id="启动、停止和重启-hubot"><a href="#启动、停止和重启-hubot" class="headerlink" title="启动、停止和重启 hubot"></a>启动、停止和重启 hubot</h4><p>每个hubot安装有一个<code>bin/hubot</code>脚本来处理启动hubot。您可以在服务器上的 git checkout 处运行此命令，但是您可能会遭遇一些问题：</p>
+<ul>
+<li>你断开终端连接，hubot 挂掉</li>
+<li>hubot 因为一些原因挂掉，不会自己重新启动</li>
+<li>它不会开机自启</li>
+</ul>
+<p>要处理断开连接，你可以在<a href="http://www.gnu.org/software/screen/">screen session</a>中运行<code>bin/hubot</code>，或者使用<a href="http://linux.die.net/man/1/nohup">nohup</a>。</p>
+<p>要处理 hubot 挂掉，和自动重启，你可以想象运行<code>bin/hubot</code>在一个<a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-7.html#ss7.3">bash while 循环</a>。但真的，你可能想要一些进程监控工具， 如 <a href="http://mmonit.com/monit/">monit</a>、<a href="http://godrb.com/">god</a>、<a href="https://github.com/arya/bluepill">bluepill</a>、<a href="http://upstart.ubuntu.com/">upstart</a>、<a href="http://smarden.org/runit/">runit</a>、 <a href="http://freedesktop.org/wiki/Software/systemd/">systemd</a>。</p>
+<p>要处理开机自启，您可以创建适合 UNIX 分发的初始化脚本。如果您正在使用上面的进程监控工具之一，请确保它在启动时启动。有关配置<a href="https://github.com/github/hubot/tree/master/examples">示例</a>，请参阅示例。</p>
+<h4 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h4><p>本文档有意淡化强烈建议。不过在高层次上，强烈建议避免任何过于手动和不可复现的东西。尽可能使用操作系统的包和工具，并使用适当的部署工具来更新 hubot，以及进程管理以保持 hubot 的运行。</p>
+<h3 id="部署到-Windows"><a href="#部署到-Windows" class="headerlink" title="部署到 Windows"></a>部署到 Windows</h3><p>尚未完全测试 —— 你的历程可能有所不同（YMMV）</p>
+<p>在 Windows 机器上，有四个主要的部署运行 hubot 的步骤：</p>
+<ul>
+<li>node 和 npm</li>
+<li>在服务器上更新源代码的方法</li>
+<li>为 hubot 设置环境变量</li>
+<li>启动 hubot， 在崩溃时启动它，在代码更新时重新启动它的方法</li>
+</ul>
+<h3 id="部署到-Azure"><a href="#部署到-Azure" class="headerlink" title="部署到 Azure"></a>部署到 Azure</h3>]]></content>
       <categories>
         <category>信息技术</category>
       </categories>
