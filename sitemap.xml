@@ -368,6 +368,13 @@
   </url>
   
   <url>
+    <loc>http://blog.xyang.xin/tags/CSS/</loc>
+    <lastmod>2021-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.xyang.xin/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2021-09-07</lastmod>
     <changefreq>daily</changefreq>
@@ -376,20 +383,6 @@
   
   <url>
     <loc>http://blog.xyang.xin/tags/%E9%98%85%E8%AF%BB/</loc>
-    <lastmod>2021-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/tags/%E5%86%99%E4%BD%9C/</loc>
-    <lastmod>2021-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.xyang.xin/tags/CSS/</loc>
     <lastmod>2021-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -453,6 +446,13 @@
   
   <url>
     <loc>http://blog.xyang.xin/tags/java/</loc>
+    <lastmod>2021-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.xyang.xin/tags/%E5%86%99%E4%BD%9C/</loc>
     <lastmod>2021-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -536,14 +536,14 @@
   </url>
   
   <url>
-    <loc>http://blog.xyang.xin/tags/%E5%8C%85%E7%AE%A1%E7%90%86/</loc>
+    <loc>http://blog.xyang.xin/tags/%E4%BB%A3%E7%90%86/</loc>
     <lastmod>2021-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.xyang.xin/tags/%E4%BB%A3%E7%90%86/</loc>
+    <loc>http://blog.xyang.xin/tags/%E5%8C%85%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2021-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -606,14 +606,14 @@
   </url>
   
   <url>
-    <loc>http://blog.xyang.xin/tags/multiple-filetype/</loc>
+    <loc>http://blog.xyang.xin/tags/%E4%B8%80%E5%A4%A9%E4%B8%80%E4%B8%AA-vim-%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2021-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.xyang.xin/tags/%E4%B8%80%E5%A4%A9%E4%B8%80%E4%B8%AA-vim-%E6%8F%92%E4%BB%B6/</loc>
+    <loc>http://blog.xyang.xin/tags/multiple-filetype/</loc>
     <lastmod>2021-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
