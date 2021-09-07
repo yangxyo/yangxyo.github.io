@@ -424,13 +424,6 @@
   </url>
   
   <url>
-    <loc>http://blog.xyang.xin/tags/hexo/</loc>
-    <lastmod>2021-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.xyang.xin/tags/Github/</loc>
     <lastmod>2021-09-07</lastmod>
     <changefreq>daily</changefreq>
@@ -439,6 +432,13 @@
   
   <url>
     <loc>http://blog.xyang.xin/tags/git-svn/</loc>
+    <lastmod>2021-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.xyang.xin/tags/hexo/</loc>
     <lastmod>2021-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
