@@ -191,15 +191,16 @@
     <link href="http://blog.xyang.xin/vim-plugin-everday-1/"/>
     <id>http://blog.xyang.xin/vim-plugin-everday-1/</id>
     <published>2020-06-28T12:03:02.000Z</published>
-    <updated>2021-08-22T09:15:24.750Z</updated>
+    <updated>2021-09-07T14:05:07.628Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img data-src=&quot;https://images.xyang.xin/2020%2F06%2F28%2Fscreenshot.png?x-oss-process=style/title_800&quot; alt=&quot;screenshot.png&quot;&gt;&lt;br&gt;在此截图你可以看见：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;183-184 行是新建的；&lt;/li&gt;
 &lt;li&gt;186-187 行有所变动；&lt;/li&gt;
-&lt;li&gt;在底部的预览区中显示改动情况（&lt;leader&gt;hp）。&lt;br&gt;(&lt;a href=&quot;https://github.com/airblade/vim-gitgutter&quot;&gt;出处&lt;/a&gt;)&lt;br&gt;&lt;a href=&quot;https://github.com/airblade/vim-gitgutter&quot;&gt;airblade/vim-gitgutter&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;在底部的预览区中显示改动情况（&lt;leader&gt;hp）。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;(&lt;a href=&quot;https://github.com/airblade/vim-gitgutter&quot;&gt;出处&lt;/a&gt;)&lt;a href=&quot;https://github.com/airblade/vim-gitgutter&quot;&gt;airblade/vim-gitgutter&lt;/a&gt; &lt;/p&gt;
 &lt;p&gt;在 vim 标志栏（sign column，行号左边的一列，通常为隐藏状态）中显示 git diff（git 差异）&lt;/p&gt;</summary>
     
     
